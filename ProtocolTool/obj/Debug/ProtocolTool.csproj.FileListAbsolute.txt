@@ -1,0 +1,8 @@
+G:\Projects\AmilyServerBase\APublish\协议工具\协议工具.exe.config
+G:\Projects\AmilyServerBase\APublish\协议工具\协议工具.exe
+G:\Projects\AmilyServerBase\APublish\协议工具\协议工具.pdb
+G:\Projects\AmilyServerBase\ProtocolTool\obj\Debug\ProtocolTool.csprojResolveAssemblyReference.cache
+G:\Projects\AmilyServerBase\ProtocolTool\obj\Debug\ProtocolTool.csproj.ResolveComReference.cache
+G:\Projects\AmilyServerBase\ProtocolTool\obj\Debug\ProtocolTool.csproj.CoreCompileInputs.cache
+G:\Projects\AmilyServerBase\ProtocolTool\obj\Debug\协议工具.exe
+G:\Projects\AmilyServerBase\ProtocolTool\obj\Debug\协议工具.pdb

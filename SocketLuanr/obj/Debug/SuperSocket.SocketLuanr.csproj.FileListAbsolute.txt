@@ -1,0 +1,6 @@
+G:\Projects\AmilyServerBase\APublish\SuperSocket.SocketLuanr.dll
+G:\Projects\AmilyServerBase\APublish\SuperSocket.SocketLuanr.pdb
+G:\Projects\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.csprojResolveAssemblyReference.cache
+G:\Projects\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.csproj.CoreCompileInputs.cache
+G:\Projects\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.dll
+G:\Projects\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.pdb
