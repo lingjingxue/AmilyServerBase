@@ -63,13 +63,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converter.cs" />
+    <Compile Include="HtmlConverter.cs" />
+    <Compile Include="LuaConverter.cs" />
     <Compile Include="Data.cs" />
+    <Compile Include="LuaPub.cs" />
+    <Compile Include="LuaTemplate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pub.cs" />
     <Compile Include="Reader.cs" />
     <Compile Include="Template.cs" />
     <Compile Include="Util.cs" />
+    <Compile Include="WordConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

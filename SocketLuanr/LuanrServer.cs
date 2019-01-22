@@ -16,9 +16,9 @@ namespace SuperSocket.SocketLuanr
         /// 服务器配置
         /// </summary>
         /// <returns></returns>
-        public static ServerConfig GetConfig(int port, string encoding)
+        public static ServerConfig GetConfig(int port, string encoding, SocketMode mode = SocketMode.Tcp)
         {
-            if (DateTime.Now >= new DateTime(2019, 1, 1))
+            if (DateTime.Now >= new DateTime(2030, 1, 1))
             {
                 return null;
             }
@@ -29,6 +29,7 @@ namespace SuperSocket.SocketLuanr
             serConfig.SendBufferSize = 409600;
             serConfig.MaxRequestLength = 409600;
             serConfig.MaxConnectionNumber = 4096;
+            serConfig.Mode = mode;
 
             return serConfig;
         }

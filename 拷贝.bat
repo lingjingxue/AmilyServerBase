@@ -2,8 +2,8 @@
 mode con lines=40 cols=80
 color 2f
 
-set sc=G:\Projects\AmilyServerBase\APublish
-set des=F:\ServerUt\APublish
+set sc=F:\Projects\AmilyServerBase\APublish
+set des=F:\SangoGai\Server\APublish
 
 set dir1=\表格工具
 set dir2=\协议工具

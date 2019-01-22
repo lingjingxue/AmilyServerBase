@@ -7,23 +7,25 @@ namespace ProtocolTool
     {
         public static string PathCurrent = "";
         public static string PathCurrentDesign = "";
+        public static string PathCurrentLua = "";
 
         private static void Main(string[] args)
         {
             var path = Directory.GetCurrentDirectory();
             path = GetParentFolder(path, 2);
             PathCurrent = path + @"\ServerBase\Protocol\";
-            //PathCurrentDesign = path + @"\ServerBase\Protocol\Design\";
-            PathCurrentDesign = path + @"\ServerPublic\ProtocolDesign\";
+            PathCurrentDesign = path + @"\ServerBase\Protocol\Design\";
+            PathCurrentLua = path + @"\ServerBase\Protocol\Lua\";
+            //PathCurrentDesign = path + @"\ServerPublic\ProtocolDesign\";
 
             try
             {
-                if (DateTime.Now >= new DateTime(2018, 7, 1))
+                if (DateTime.Now >= new DateTime(2020, 7, 1))
                 {
                     Show("\n生成 C# 文件成功！\n\n");
                     Show("\n生成 协议大纲文档 成功！\n\n");
                     Show("\n按任意键关闭......");
-                    return;
+                    Console.ReadKey();
                 }
                 // 读取协议
                 ProtocolReader();
@@ -33,8 +35,18 @@ namespace ProtocolTool
                 ProtocolConverterClassId();
                 ProtocolConverterClassBase();
                 ProtocolConverterClassSerialization();
-                ProtocolConverterDump();
-                Show("\n生成 C# 文件成功！\n\n");
+                //ProtocolConverterDump();
+                Show("\n生成 C# 文件成功！\n");
+
+                // Lua
+                ProtocolConverterLuaEnum();
+                ProtocolConverterLuaClassId();
+                ProtocolConverterLuaClass();
+                Show("\n生成 Lua 文件成功！\n");
+
+                //Html
+                ProtocolConverterHtml();
+                Show("\n生成 HTML协议大纲 文件成功！\n");
 
                 Show("\n是否输出 协议大纲文档  (Y/N)！ 按Y输出 按其他键结束 \n\n");
                 var cki = Console.ReadKey().KeyChar;
@@ -49,6 +61,7 @@ namespace ProtocolTool
             catch (Exception e)
             {
                 Error($"错误！第{LineCount}行：{LineText}", e);
+                Console.ReadKey();
             }
         }
     }

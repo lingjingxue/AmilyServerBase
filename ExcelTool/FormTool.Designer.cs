@@ -49,6 +49,8 @@
             this.button11 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -87,7 +89,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(625, 12);
+            this.button4.Location = new System.Drawing.Point(625, 14);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 23);
             this.button4.TabIndex = 4;
@@ -97,7 +99,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(13, 42);
+            this.button5.Location = new System.Drawing.Point(16, 44);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 23);
             this.button5.TabIndex = 5;
@@ -107,7 +109,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(625, 42);
+            this.button6.Location = new System.Drawing.Point(625, 44);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(100, 23);
             this.button6.TabIndex = 6;
@@ -119,28 +121,28 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(119, 12);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(500, 23);
+            this.textBox2.Size = new System.Drawing.Size(500, 27);
             this.textBox2.TabIndex = 8;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(731, 12);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(500, 23);
+            this.textBox3.Size = new System.Drawing.Size(500, 27);
             this.textBox3.TabIndex = 9;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(119, 42);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(500, 23);
+            this.textBox4.Size = new System.Drawing.Size(500, 27);
             this.textBox4.TabIndex = 10;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(731, 42);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(500, 23);
+            this.textBox5.Size = new System.Drawing.Size(500, 27);
             this.textBox5.TabIndex = 11;
             // 
             // dataGridView1
@@ -154,10 +156,10 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 159);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 225);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(1227, 643);
+            this.dataGridView1.Size = new System.Drawing.Size(1227, 627);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -204,7 +206,7 @@
             // progressBar1
             // 
             this.progressBar1.BackColor = System.Drawing.SystemColors.Window;
-            this.progressBar1.Location = new System.Drawing.Point(12, 130);
+            this.progressBar1.Location = new System.Drawing.Point(12, 196);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(1218, 23);
             this.progressBar1.TabIndex = 17;
@@ -230,7 +232,7 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button8);
-            this.panel1.Location = new System.Drawing.Point(13, 71);
+            this.panel1.Location = new System.Drawing.Point(13, 137);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1218, 53);
             this.panel1.TabIndex = 19;
@@ -246,11 +248,30 @@
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(119, 75);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(500, 27);
+            this.textBox1.TabIndex = 20;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(13, 77);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(100, 23);
+            this.button10.TabIndex = 21;
+            this.button10.Text = "选择目录Json";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // FormTool
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1252, 814);
+            this.ClientSize = new System.Drawing.Size(1252, 864);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dataGridView1);
@@ -298,6 +319,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewButtonColumn Column3;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button10;
     }
 }
 

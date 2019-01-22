@@ -10,7 +10,11 @@ namespace ProtocolTool
         private static void ProtocolReader()
         {
             Show("ProtocolReader");
-            foreach (string ptlname in Directory.GetFileSystemEntries(PathCurrentDesign))
+            ProtocolReaderDir(PathCurrentDesign);
+        }
+        private static void ProtocolReaderDir(string path)
+        {
+            foreach (string ptlname in Directory.GetFileSystemEntries(path))
             {
                 if (File.Exists(ptlname))
                 {
@@ -20,21 +24,32 @@ namespace ProtocolTool
                     }
                 }
             }
+            foreach (string ptlname in Directory.GetDirectories(path))
+            {
+                ProtocolReaderDir(ptlname);
+            }
         }
 
         private static void ProtocolReaderFile(string ptlname)
         {
             Show($"读取文件：{ptlname}");
-            FileStream fs_PTL = new FileStream(ptlname, FileMode.Open);
-            StreamReader sr_PTL = new StreamReader(fs_PTL, Encoding.Default);
-
-            while ((LineText = sr_PTL.ReadLine()) != null)
+            try
             {
-                LineCount++;
-                ProtocolReaderLine();
-            }
+                FileStream fs_PTL = new FileStream(ptlname, FileMode.Open);
+                StreamReader sr_PTL = new StreamReader(fs_PTL, Encoding.Default);
 
-            sr_PTL.Close();
+                while ((LineText = sr_PTL.ReadLine()) != null)
+                {
+                    LineCount++;
+                    ProtocolReaderLine();
+                }
+
+                sr_PTL.Close();
+            }
+            catch (Exception ex)
+            {
+                Error($"ProtocolReaderFile 错误！第{LineCount}行：{LineText}", ex);
+            }
         }
 
         private static void ProtocolReaderLine()

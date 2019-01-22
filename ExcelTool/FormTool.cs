@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using NPOI.SS.UserModel;        //NPOI
 using NPOI.XSSF.UserModel;      //NPOI
 using System.Threading;
+using static ExcelTool.XGlobal;
 
 namespace ExcelTool
 {
@@ -24,10 +25,13 @@ namespace ExcelTool
         public string PathResult = "";
         public string PathGlobalId = "";
 
+        public string PathHtml = "";
+
         public string PathExcel = "";
         public string PathClass = "";
         public string PathXml = "";
         public string PathJson = "";
+        public string PathLua = "";
 
         public class XFileInfo
         {
@@ -35,6 +39,7 @@ namespace ExcelTool
             public TimeSpan Ts;
             public bool Need = true;
             public int rowindex = 0;
+            public EValidType ValidType = EValidType.公共;
             public XFileInfo(string name)
             {
                 Name = name;
@@ -49,12 +54,20 @@ namespace ExcelTool
 
         public StringBuilder SbClassServer = new StringBuilder();
 
-
+        public enum EValidType
+        {
+            无效的 = 0,
+            公共 = 1,
+            仅服务器 = 2,
+            仅客户端 = 3,
+        }
 
         public class PageInfo
         {
             public string Name;
-            public int ServerClientOnly;
+            public string NameCn;
+            public string NameFile;
+            public EValidType ValidType = EValidType.公共;
             public List<string> HeadC;
             public List<string> Head;
             public List<string> HeadEnum;
@@ -65,7 +78,8 @@ namespace ExcelTool
             public PageInfo(string name)
             {
                 Name = name;
-                ServerClientOnly = 0; //0=All 1=ServerOnly
+                NameCn = name;
+                ValidType = EValidType.公共;
 
                 HeadC = new List<string>();
                 Head = new List<string>();
@@ -89,6 +103,7 @@ namespace ExcelTool
         }
 
         public Dictionary<string, PageInfo> DictPages = new Dictionary<string, PageInfo>();
+        public Dictionary<string, List<PageInfo>> DictFilePages = new Dictionary<string, List<PageInfo>>();
 
         public FormTool()
         {
@@ -100,10 +115,13 @@ namespace ExcelTool
             PathCurrent = Directory.GetCurrentDirectory();
             PathCurrent = XGlobal.GetParentFolder(PathCurrent);
 
+            PathHtml = PathCurrent + @"\Config";
+
             textBox2.Text = PathExcel = PathCurrent + @"\Config\Excel";
             textBox3.Text = PathClass = PathCurrent + @"\Config\Class";
             textBox4.Text = PathXml = PathCurrent + @"\Config\Xml";
             textBox5.Text = PathJson = PathCurrent + @"\Config\Json";
+            textBox1.Text = PathLua = PathCurrent + @"\Config\Lua";
 
             //PathEnum = PathExcel + @"\e公共枚举.xlsx";
             PathEnum = PathExcel + @"\A_公共枚举.xlsx";
@@ -114,6 +132,26 @@ namespace ExcelTool
         {
             panel1.Enabled = value;
             dataGridView1.Enabled = value;
+        }
+        private void GetFileList(string path, EValidType ValidType)
+        {
+            if (Directory.Exists(path))
+            {
+                foreach (string filename in Directory.GetFileSystemEntries(path))
+                {
+                    if (File.Exists(filename))
+                    {
+                        string filename_excel = Path.GetFileNameWithoutExtension(filename);
+                        string firs = filename_excel.Substring(0, 1);
+                        if (firs != "A")
+                        {
+                            XFileInfo finfo = new XFileInfo(filename);
+                            finfo.ValidType = ValidType;
+                            DictFiles.Add(finfo.Name, finfo);
+                        }
+                    }
+                }
+            }
         }
         private void UpdateFileList()
         {
@@ -141,7 +179,7 @@ namespace ExcelTool
         }
         private void UpdateprogressBar1()
         {
-            progressBar1.Maximum = DictFiles.Count + 5;
+            progressBar1.Maximum = DictFiles.Count + 15;
             progressBar1.Value = 0;
         }
         public void UpdateFileTs(XFileInfo fileinfo, TimeSpan ts)
@@ -184,28 +222,17 @@ namespace ExcelTool
         private void button1_Click(object sender, EventArgs e)
         {
             DictFiles.Clear();
-            if (Directory.Exists(PathExcel))
-            {
-                foreach (string filename in Directory.GetFileSystemEntries(PathExcel))
-                {
-                    if (File.Exists(filename))
-                    {
-                        string filename_excel = Path.GetFileNameWithoutExtension(filename);
-                        string firs = filename_excel.Substring(0, 1);
-                        if (firs != "A")
-                        {
-                            XFileInfo finfo = new XFileInfo(filename);
-                            DictFiles.Add(finfo.Name, finfo);
-                        }
-                    }
-                }
-            }
+
+            GetFileList(PathExcel, EValidType.公共);
+            GetFileList(PathExcel + @"\服务器", EValidType.仅服务器);
+            GetFileList(PathExcel + @"\客户端", EValidType.仅客户端);
+
             UpdateFileList();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (DateTime.Now >= new DateTime(2018, 7, 1))
+            if (DateTime.Now >= new DateTime(2020, 7, 1))
             {
                 return;
             }
@@ -240,12 +267,18 @@ namespace ExcelTool
                 MessageBox.Show($"导入文档路径< {PathJson} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            if (!Directory.Exists(PathLua))
+            {
+                MessageBox.Show($"导入文档路径< {PathLua} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             SetEnabled(false);
 
             XGlobal.EmptyFolder(PathClass);
             XGlobal.EmptyFolder(PathXml);
             XGlobal.EmptyFolder(PathJson);
+            XGlobal.EmptyFolder(PathLua);
 
             try
             {
@@ -302,6 +335,17 @@ namespace ExcelTool
             if (fbd.SelectedPath != string.Empty)
             {
                 textBox5.Text = PathJson = fbd.SelectedPath;
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            var fbd = new FolderBrowserDialog();
+            fbd.SelectedPath = PathLua;
+            fbd.ShowDialog();
+            if (fbd.SelectedPath != string.Empty)
+            {
+                textBox1.Text = PathLua = fbd.SelectedPath;
             }
         }
 
@@ -406,12 +450,12 @@ namespace ExcelTool
             //ReadResults();
             //progressBar1.Increment(1);
 
-            //全局常数
-            ReadGlobalIds();
-            progressBar1.Increment(1);
+            ////全局常数
+            //ReadGlobalIds();
+            //progressBar1.Increment(1);
 
             DictPages.Clear();
-
+            DictFilePages.Clear();
             foreach (var nn in DictFiles.Values)
             {
                 if (nn.Need)
@@ -421,7 +465,24 @@ namespace ExcelTool
                 progressBar1.Increment(1);
             }
 
-            TransferClass();
+            TransferHtml();
+            progressBar1.Increment(1);
+
+            TransferClassServer();
+            progressBar1.Increment(1);
+            TransferClassServerConf();
+            progressBar1.Increment(1);
+            TransferClassServerConfRead();
+            progressBar1.Increment(1);
+
+            TransferClassClient();
+            progressBar1.Increment(1);
+            TransferClassClientConf();
+            progressBar1.Increment(1);
+            TransferClassClientConfRead();
+            progressBar1.Increment(1);
+
+            TransferClassClientLua();
             progressBar1.Increment(1);
 
             Transfers();
@@ -443,7 +504,7 @@ namespace ExcelTool
                 ISheet sheetenum = wk.GetSheetAt(0);
 
                 rows = sheetenum.LastRowNum;
-                int enumcols = 120;
+                int enumcols = 240;
                 for (int j = 0; (j + 2) <= enumcols; j += 3)
                 {
                     IRow rowdictk = sheetenum.GetRow(1);
@@ -582,7 +643,6 @@ namespace ExcelTool
                 }
             }
         }
-
         public void ReadFile(XFileInfo fileinfo)
         {
             string path_excel = fileinfo.Name;
@@ -601,20 +661,23 @@ namespace ExcelTool
                     string sheetName = sheet.SheetName;
                     string[] nodes = sheetName.Split(new string[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
 
+                    bool 导出枚举 = false;
                     string pagename = sheet.SheetName;
+                    string pagenamecn = sheet.SheetName;
                     if (nodes.Length >= 2)
                     {
                         pagename = nodes[1];
+                        pagenamecn = nodes[0];
+                        if (pagenamecn[0] == 'e' || pagenamecn[0] == 'E')
+                        {
+                            导出枚举 = true;
+                        }
                     }
 
                     var page = new PageInfo(pagename);
-                    if (pagename.Length > 3)
-                    {
-                        if (pagename.Substring(0, 3) == "Sys")
-                        {
-                            page.ServerClientOnly = 1;
-                        }
-                    }
+                    page.NameCn = pagenamecn;
+                    page.NameFile = Path.GetFileName(path_excel);
+                    page.ValidType = fileinfo.ValidType;
 
                     IRow rowHeadC = sheet.GetRow(1);
                     if (rowHeadC == null)
@@ -744,141 +807,494 @@ namespace ExcelTool
                     if (page.IsLegal())
                     {
                         DictPages.Add(page.Name, page);
+
+                        if (!DictFilePages.TryGetValue(page.NameFile, out var filepages))
+                        {
+                            filepages = new List<PageInfo>();
+                            DictFilePages[page.NameFile] = filepages;
+                        }
+                        filepages.Add(page);
+                    }
+
+                    if (导出枚举)
+                    {
+                        string DictKey = "EnumAAA";
+                        ICell cell = rowHead.GetCell(0);
+                        if (cell != null)
+                        {
+                            DictKey = cell.StringCellValue;
+                        }
+                        else
+                        {
+                            page.Head.Add("");
+                            page.HeadEnum.Add("");
+                        }
+
+                        int j = 0;
+                        Dictionary<string, string> DictList = new Dictionary<string, string>();
+                        for (int i = 5; i <= sheet.LastRowNum; i++)
+                        {
+                            IRow rowdictv = sheet.GetRow(i);
+                            if (rowdictv == null)
+                            {
+                                continue;
+                            }
+                            ICell cell1 = rowdictv.GetCell(j);
+                            ICell cell2 = rowdictv.GetCell(j + 1);
+                            if (cell1 == null || cell2 == null)
+                            {
+                                continue;
+                            }
+                            string enumK = cell2.ToString();
+                            string enumV = cell1.ToString();
+                            if (enumK == "" || enumV == "")
+                            {
+                                continue;
+                            }
+                            if (!DictList.ContainsKey(enumK))
+                            {
+                                DictList.Add(enumK, enumV);
+                            }
+                        }
+                        DictListEnums.Add(DictKey, DictList);
                     }
                 }
             }
             UpdateFileTs(fileinfo, DateTime.Now - time_start);
         }
-
-        public void TransferClass()
+        public void TransferHtml()
         {
-            if (true)
+            string Template_Html = @"<!DOCTYPE html>
+<html>
+<head>
+<link rel=""stylesheet"" href=""http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"" >
+<script src = ""http://code.jquery.com/jquery-1.8.3.min.js""></script >
+<script src=""http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"" ></script>
+</head>
+<body>
+
+<div data-role=""page"" id=""pageone"" >
+    <div data-role=""header"" >
+        <h1>表格结构</h1>
+    </div>
+
+    <div data-role=""content"" >
+
+$CONTENT$
+
+    </div>
+  
+    <div data-role=""footer"" >
+        <h1>完</h1>
+    </div>
+</div> 
+
+</body>
+</html>
+
+";
+            var sb = new StringBuilder();
+
+            foreach (var kvp1 in DictFilePages)
             {
-                var sb = new StringBuilder();
-
-                sb.Append($"using System.Collections.Generic;\r\n\r\n");
-
-                foreach (var nn in DictPages.Values)
+                //sb.Append($"<div data-role=\"collapsible\">\r\n");
+                sb.Append($"<h3>文件：{kvp1.Key}</h3>\r\n");
+                foreach (var item in kvp1.Value)
                 {
-                    sb.Append($"public class {nn.Name}\r\n{{\r\n");
-                    for (int iii = 0; iii < nn.Head.Count; iii++)
-                    {
-                        if (nn.Head[iii] == "")
-                        {
-                            continue;
-                        }
-                        if (nn.TypeClient[iii] == "")
-                        {
-                            continue;
-                        }
-                        sb.Append($"\tpublic readonly {nn.TypeClient[iii]} {nn.Head[iii]};\r\n");
-                    }
-                    sb.Append($"}}\r\n");
+                    sb.Append($"<p>页面：{item.NameCn} {item.Name} 有效列：{item.HeadC.Count} 有效行：{item.ListValue.Count}</p>\r\n");
                 }
-
-                foreach (var kvp in DictListEnums)
-                {
-                    sb.Append($"public enum E{kvp.Key}\r\n");
-                    sb.Append($"{{\r\n");
-                    long min = 0, max = 0;
-                    foreach (var kvp2 in kvp.Value)
-                    {
-                        sb.Append($"\t{kvp2.Key} = {kvp2.Value},\r\n");
-                        long.TryParse(kvp2.Value, out long tempmax);
-                        min = Math.Min(min, tempmax);
-                        max = Math.Max(max, tempmax);
-                    }
-                    //if (kvp.Key != "ServerType")
-                    //{
-                    //    sb.Append($"\tMin = {min},\r\n");
-                    //    sb.Append($"\tMax = {max},\r\n");
-                    //    sb.Append($"\tCount = {kvp.Value.Count},\r\n");
-                    //}
-                    sb.Append($"}}\r\n");
-                }
-
-                string path_class = PathClass + "\\" + "ClassClient.cs";
-                XGlobal.DeleteFile(path_class);
-                FileStream fs_class = new FileStream(path_class, FileMode.OpenOrCreate);
-                StreamWriter sw_class = new StreamWriter(fs_class);
-                sw_class.Write(sb);
-                sw_class.Close();
+                //sb.Append($"</div>\r\n");
             }
-            if (true)
+
+            string txt = Template_Html;
+            string path_html = PathHtml + "\\" + "表格结构.html";
+            XGlobal.DeleteFile(path_html);
+            FileStream fs_class = new FileStream(path_html, FileMode.OpenOrCreate);
+            StreamWriter sw_class = new StreamWriter(fs_class, new System.Text.UTF8Encoding(false));
+            txt = txt.Replace("$CONTENT$", sb.ToString());
+            sw_class.Write(txt);
+            sw_class.Close();
+        }
+        public void TransferClassServer()
+        {
+            var sb = new StringBuilder();
+
+            sb.Append($"using System.Collections.Generic;\r\n\r\n");
+            sb.Append($"namespace ServerBase.Config\r\n{{\r\n");
+
+            foreach (var nn in DictPages.Values)
             {
-                var sb = new StringBuilder();
-
-                sb.Append($"using System.Collections.Generic;\r\n\r\n");
-                sb.Append($"namespace ServerBase.Config\r\n{{\r\n");
-
-                foreach (var nn in DictPages.Values)
+                if (!(nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅服务器))
                 {
-                    sb.Append($"\tpublic class {nn.Name} : IConfigBase\r\n\t{{\r\n");
-                    for (int iii = 0; iii < nn.Head.Count; iii++)
-                    {
-                        if (nn.Head[iii] == "")
-                        {
-                            continue;
-                        }
-                        if (nn.TypeServer[iii] == "")
-                        {
-                            continue;
-                        }
-                        string tp = nn.TypeServer[iii];
-                        switch (tp)
-                        {
-                            case "List<string>":
-                            case "List<int>":
-                            case "List<long>":
-                            case "List<float>":
-                            case "Dictionary<string,string>":
-                            case "Dictionary<int,int>":
-                            case "Dictionary<long,long>":
-                            case "Dictionary<string, string>":
-                            case "Dictionary<int, int>":
-                            case "Dictionary<long, long>":
-                                sb.Append($"\t\tpublic {tp} {nn.Head[iii]} = new {tp}(); //{nn.HeadC[iii]}\r\n");
-                                break;
-                            default:
-                                sb.Append($"\t\tpublic {nn.TypeServer[iii]} {nn.Head[iii]}; //{nn.HeadC[iii]}\r\n");
-                                break;
-                        }
-                    }
-                    string getkey = "Id";
-                    try { getkey = nn.Head[0]; } catch { }
-                    sb.Append($"\t\tpublic object GetKey() {{ return {getkey}; }}\r\n");
-                    sb.Append($"\t}}\r\n");
+                    continue;
                 }
-
-                foreach (var kvp in DictListEnums)
+                sb.Append($"\tpublic class {nn.Name} : IConfigBase\t// {nn.NameFile}\r\n\t{{\r\n");
+                for (int iii = 0; iii < nn.Head.Count; iii++)
                 {
-                    sb.Append($"\tpublic enum E{kvp.Key}\r\n");
-                    sb.Append($"\t{{\r\n");
-                    long min = 0, max = 0;
-                    foreach (var kvp2 in kvp.Value)
+                    if (nn.Head[iii] == "")
                     {
-                        sb.Append($"\t\t{kvp2.Key} = {kvp2.Value},\r\n");
-                        long.TryParse(kvp2.Value, out long tempmax);
-                        min = Math.Min(min, tempmax);
-                        max = Math.Max(max, tempmax);
+                        continue;
                     }
-                    //if (kvp.Key != "ServerType")
-                    //{
-                    //    sb.Append($"\t\tMin = {min},\r\n");
-                    //    sb.Append($"\t\tMax = {max},\r\n");
-                    //    sb.Append($"\t\tCount = {kvp.Value.Count},\r\n");
-                    //}
-                    sb.Append($"\t}}\r\n");
+                    if (nn.TypeServer[iii] == "")
+                    {
+                        continue;
+                    }
+                    string tp = nn.TypeServer[iii];
+                    switch (tp)
+                    {
+                        case "List<string>":
+                        case "List<int>":
+                        case "List<long>":
+                        case "List<float>":
+                        case "Dictionary<string,string>":
+                        case "Dictionary<int,int>":
+                        case "Dictionary<long,long>":
+                        case "Dictionary<string, string>":
+                        case "Dictionary<int, int>":
+                        case "Dictionary<long, long>":
+                            sb.Append($"\t\tpublic {tp} {nn.Head[iii]} = new {tp}(); //{nn.HeadC[iii]}\r\n");
+                            break;
+                        default:
+                            sb.Append($"\t\tpublic {nn.TypeServer[iii]} {nn.Head[iii]}; //{nn.HeadC[iii]}\r\n");
+                            break;
+                    }
+                }
+                string getkey = "Id";
+                try { getkey = nn.Head[0]; } catch { }
+                sb.Append($"\t\tpublic object GetKey() {{ return {getkey}; }}\r\n");
+                sb.Append($"\t}}\r\n");
+            }
+
+            foreach (var kvp in DictListEnums)
+            {
+                sb.Append($"\tpublic enum E{kvp.Key}\r\n");
+                sb.Append($"\t{{\r\n");
+                long min = 0, max = 0;
+                foreach (var kvp2 in kvp.Value)
+                {
+                    sb.Append($"\t\t{kvp2.Key} = {kvp2.Value},\r\n");
+                    long.TryParse(kvp2.Value, out long tempmax);
+                    min = Math.Min(min, tempmax);
+                    max = Math.Max(max, tempmax);
+                }
+                sb.Append($"\t}}\r\n");
+            }
+            sb.Append($"}}\r\n");
+
+            string path_class = PathClass + "\\" + "ClassServer.cs";
+            XGlobal.DeleteFile(path_class);
+            FileStream fs_class = new FileStream(path_class, FileMode.OpenOrCreate);
+            StreamWriter sw_class = new StreamWriter(fs_class, Encoding.Unicode);
+            sw_class.Write(sb);
+            sw_class.Close();
+        }
+        public void TransferClassServerConf()
+        {
+            var sb = new StringBuilder();
+
+            sb.Append($"using System.Collections.Generic;\r\n");
+            sb.Append($"using UtilLib;\r\n\r\n");
+            sb.Append($"namespace ServerBase.Config\r\n{{\r\n");
+            sb.Append($"\tpublic static partial class Conf\r\n\t{{\r\n");
+
+            foreach (var nn in DictPages.Values)
+            {
+                if (!(nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅服务器))
+                {
+                    continue;
+                }
+                sb.Append($"\t\t//{nn.NameCn}\t// {nn.NameFile}\r\n");
+                var confname = nn.Name.Replace("Config", "Conf");
+                var keytype = nn.TypeServer[0];
+                sb.Append($"\t\tpublic static Dictionary<{keytype}, {nn.Name}> {confname} = new Dictionary<{keytype}, {nn.Name}>();\r\n");
+            }
+
+            sb.Append($"\t}}\r\n");
+            sb.Append($"}}\r\n");
+
+            string path_class = PathClass + "\\" + "ClassServerConf.cs";
+            XGlobal.DeleteFile(path_class);
+            FileStream fs_class = new FileStream(path_class, FileMode.OpenOrCreate);
+            StreamWriter sw_class = new StreamWriter(fs_class, Encoding.Unicode);
+            sw_class.Write(sb);
+            sw_class.Close();
+        }
+        public void TransferClassServerConfRead()
+        {
+            var sb = new StringBuilder();
+
+            sb.Append($"using System.Collections.Generic;\r\n");
+            sb.Append($"using UtilLib;\r\n\r\n");
+            sb.Append($"namespace ServerBase.Config\r\n{{\r\n");
+            sb.Append($"\tpublic static partial class Conf\r\n\t{{\r\n");
+            sb.Append($"\t\tpublic static bool InitConfSettings()\r\n\t\t{{\r\n");
+
+            sb.Append($"\t\t\tbool result = true;\r\n\r\n");
+            foreach (var nn in DictPages.Values)
+            {
+                if (!(nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅服务器))
+                {
+                    continue;
+                }
+                sb.Append($"\t\t\t//{nn.NameCn}\r\n");
+                var confname = nn.Name.Replace("Config", "Conf");
+                sb.Append($"\t\t\tif (result) {{ result = ReadConfig(typeof({nn.Name}).Name, ref {confname}); }}\r\n");
+            }
+            sb.Append($"\r\n\t\t\tif (result) {{ result = InitConfSettingsExt(); }}\r\n\r\n");
+            sb.Append($"\t\t\treturn result;\r\n");
+
+            sb.Append($"\t\t}}\r\n");
+            sb.Append($"\t}}\r\n");
+            sb.Append($"}}\r\n");
+
+            string path_class = PathClass + "\\" + "ClassServerConfRead.cs";
+            XGlobal.DeleteFile(path_class);
+            FileStream fs_class = new FileStream(path_class, FileMode.OpenOrCreate);
+            StreamWriter sw_class = new StreamWriter(fs_class, Encoding.Unicode);
+            sw_class.Write(sb);
+            sw_class.Close();
+        }
+        //public void TransferClassClient()
+        //{
+        //    var sb = new StringBuilder();
+
+        //    sb.Append($"using System.Collections.Generic;\r\n\r\n");
+
+        //    foreach (var nn in DictPages.Values)
+        //    {
+        //        if (!(nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅客户端))
+        //        {
+        //            continue;
+        //        }
+        //        sb.Append($"public class {nn.Name}\r\n{{\r\n");
+        //        for (int iii = 0; iii < nn.Head.Count; iii++)
+        //        {
+        //            if (nn.Head[iii] == "")
+        //            {
+        //                continue;
+        //            }
+        //            if (nn.TypeClient[iii] == "")
+        //            {
+        //                continue;
+        //            }
+        //            //sb.Append($"\tpublic readonly {nn.TypeClient[iii]} {nn.Head[iii]};\r\n");
+        //            sb.Append($"\tpublic {nn.TypeClient[iii]} {nn.Head[iii]};\r\n");
+        //        }
+        //        sb.Append($"}}\r\n");
+        //    }
+
+        //    foreach (var kvp in DictListEnums)
+        //    {
+        //        sb.Append($"public enum E{kvp.Key}\r\n");
+        //        sb.Append($"{{\r\n");
+        //        long min = 0, max = 0;
+        //        foreach (var kvp2 in kvp.Value)
+        //        {
+        //            sb.Append($"\t{kvp2.Key} = {kvp2.Value},\r\n");
+        //            long.TryParse(kvp2.Value, out long tempmax);
+        //            min = Math.Min(min, tempmax);
+        //            max = Math.Max(max, tempmax);
+        //        }
+        //        sb.Append($"}}\r\n");
+        //    }
+
+        //    string path_class = PathClass + "\\" + "ClassClient.cs";
+        //    XGlobal.DeleteFile(path_class);
+        //    FileStream fs_class = new FileStream(path_class, FileMode.OpenOrCreate);
+        //    StreamWriter sw_class = new StreamWriter(fs_class);
+        //    sw_class.Write(sb);
+        //    sw_class.Close();
+        //}
+        public void TransferClassClient()
+        {
+            var sb = new StringBuilder();
+
+            sb.Append($"using System.Collections.Generic;\r\n\r\n");
+            sb.Append($"namespace ServerBase.Config\r\n{{\r\n");
+
+            foreach (var nn in DictPages.Values)
+            {
+                if (!(nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅客户端))
+                {
+                    continue;
+                }
+                sb.Append($"\tpublic class {nn.Name} : IConfigBase\t// {nn.NameFile}\r\n\t{{\r\n");
+                for (int iii = 0; iii < nn.Head.Count; iii++)
+                {
+                    if (nn.Head[iii] == "")
+                    {
+                        continue;
+                    }
+                    if (nn.TypeServer[iii] == "")
+                    {
+                        continue;
+                    }
+                    string tp = nn.TypeServer[iii];
+                    switch (tp)
+                    {
+                        case "List<string>":
+                        case "List<int>":
+                        case "List<long>":
+                        case "List<float>":
+                        case "Dictionary<string,string>":
+                        case "Dictionary<int,int>":
+                        case "Dictionary<long,long>":
+                        case "Dictionary<string, string>":
+                        case "Dictionary<int, int>":
+                        case "Dictionary<long, long>":
+                            sb.Append($"\t\tpublic {tp} {nn.Head[iii]} = new {tp}(); //{nn.HeadC[iii]}\r\n");
+                            break;
+                        default:
+                            sb.Append($"\t\tpublic {nn.TypeServer[iii]} {nn.Head[iii]}; //{nn.HeadC[iii]}\r\n");
+                            break;
+                    }
+                }
+                string getkey = "Id";
+                try { getkey = nn.Head[0]; } catch { }
+                sb.Append($"\t\tpublic object GetKey() {{ return {getkey}; }}\r\n");
+                sb.Append($"\t}}\r\n");
+            }
+
+            foreach (var kvp in DictListEnums)
+            {
+                sb.Append($"\tpublic enum E{kvp.Key}\r\n");
+                sb.Append($"\t{{\r\n");
+                long min = 0, max = 0;
+                foreach (var kvp2 in kvp.Value)
+                {
+                    sb.Append($"\t\t{kvp2.Key} = {kvp2.Value},\r\n");
+                    long.TryParse(kvp2.Value, out long tempmax);
+                    min = Math.Min(min, tempmax);
+                    max = Math.Max(max, tempmax);
+                }
+                sb.Append($"\t}}\r\n");
+            }
+            sb.Append($"}}\r\n");
+
+            string path_class = PathClass + "\\" + "ClassClient.cs";
+            XGlobal.DeleteFile(path_class);
+            FileStream fs_class = new FileStream(path_class, FileMode.OpenOrCreate);
+            StreamWriter sw_class = new StreamWriter(fs_class, Encoding.Unicode);
+            sw_class.Write(sb);
+            sw_class.Close();
+        }
+        public void TransferClassClientConf()
+        {
+            var sb = new StringBuilder();
+
+            sb.Append($"using System.Collections.Generic;\r\n");
+            sb.Append($"using UtilLib;\r\n\r\n");
+            sb.Append($"namespace ServerBase.Config\r\n{{\r\n");
+            sb.Append($"\tpublic static partial class Conf\r\n\t{{\r\n");
+
+            foreach (var nn in DictPages.Values)
+            {
+                if (!(nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅客户端))
+                {
+                    continue;
+                }
+                sb.Append($"\t\t//{nn.NameCn}\t// {nn.NameFile}\r\n");
+                var confname = nn.Name.Replace("Config", "Conf");
+                var keytype = nn.TypeServer[0];
+                sb.Append($"\t\tpublic static Dictionary<{keytype}, {nn.Name}> {confname} = new Dictionary<{keytype}, {nn.Name}>();\r\n");
+            }
+
+            sb.Append($"\t}}\r\n");
+            sb.Append($"}}\r\n");
+
+            string path_class = PathClass + "\\" + "ClassClientConf.cs";
+            XGlobal.DeleteFile(path_class);
+            FileStream fs_class = new FileStream(path_class, FileMode.OpenOrCreate);
+            StreamWriter sw_class = new StreamWriter(fs_class, Encoding.Unicode);
+            sw_class.Write(sb);
+            sw_class.Close();
+        }
+        public void TransferClassClientConfRead()
+        {
+            var sb = new StringBuilder();
+
+            sb.Append($"using System.Collections.Generic;\r\n");
+            sb.Append($"using UtilLib;\r\n\r\n");
+            sb.Append($"namespace ServerBase.Config\r\n{{\r\n");
+            sb.Append($"\tpublic static partial class Conf\r\n\t{{\r\n");
+            sb.Append($"\t\tpublic static bool InitConfSettings()\r\n\t\t{{\r\n");
+
+            sb.Append($"\t\t\tbool result = true;\r\n\r\n");
+            foreach (var nn in DictPages.Values)
+            {
+                if (!(nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅客户端))
+                {
+                    continue;
+                }
+                sb.Append($"\t\t\t//{nn.NameCn}\r\n");
+                var confname = nn.Name.Replace("Config", "Conf");
+                sb.Append($"\t\t\tif (result) {{ result = ReadConfig(typeof({nn.Name}).Name, ref {confname}); }}\r\n");
+            }
+            sb.Append($"\r\n\t\t\tif (result) {{ result = InitConfSettingsExt(); }}\r\n\r\n");
+            sb.Append($"\t\t\treturn result;\r\n");
+
+            sb.Append($"\t\t}}\r\n");
+            sb.Append($"\t}}\r\n");
+            sb.Append($"}}\r\n");
+
+            string path_class = PathClass + "\\" + "ClassClientConfRead.cs";
+            XGlobal.DeleteFile(path_class);
+            FileStream fs_class = new FileStream(path_class, FileMode.OpenOrCreate);
+            StreamWriter sw_class = new StreamWriter(fs_class, Encoding.Unicode);
+            sw_class.Write(sb);
+            sw_class.Close();
+        }
+        public void TransferClassClientLua()
+        {
+            var sb = new StringBuilder();
+
+            sb.Append($"using System.Collections.Generic;\r\n\r\n");
+            sb.Append($"using XLua;\r\n\r\n");
+
+            foreach (var nn in DictPages.Values)
+            {
+                if (!(nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅客户端))
+                {
+                    continue;
+                }
+                sb.Append($"[CSharpCallLua]\r\n");
+                sb.Append($"public interface {nn.Name}\r\n{{\r\n");
+                for (int iii = 0; iii < nn.Head.Count; iii++)
+                {
+                    if (nn.Head[iii] == "")
+                    {
+                        continue;
+                    }
+                    if (nn.TypeClient[iii] == "")
+                    {
+                        continue;
+                    }
+                    sb.Append($"\t{nn.TypeClient[iii]} {nn.Head[iii]} {{ get; }}\r\n");
                 }
                 sb.Append($"}}\r\n");
-
-                string path_class = PathClass + "\\" + "ClassServer.cs";
-                XGlobal.DeleteFile(path_class);
-                FileStream fs_class = new FileStream(path_class, FileMode.OpenOrCreate);
-                StreamWriter sw_class = new StreamWriter(fs_class, Encoding.Unicode);
-                sw_class.Write(sb);
-                sw_class.Close();
             }
+
+            foreach (var kvp in DictListEnums)
+            {
+                sb.Append($"public enum E{kvp.Key}\r\n");
+                sb.Append($"{{\r\n");
+                long min = 0, max = 0;
+                foreach (var kvp2 in kvp.Value)
+                {
+                    sb.Append($"\t{kvp2.Key} = {kvp2.Value},\r\n");
+                    long.TryParse(kvp2.Value, out long tempmax);
+                    min = Math.Min(min, tempmax);
+                    max = Math.Max(max, tempmax);
+                }
+                sb.Append($"}}\r\n");
+            }
+
+            string path_class = PathClass + "\\" + "ClassClientLua.cs";
+            XGlobal.DeleteFile(path_class);
+            FileStream fs_class = new FileStream(path_class, FileMode.OpenOrCreate);
+            StreamWriter sw_class = new StreamWriter(fs_class);
+            sw_class.Write(sb);
+            sw_class.Close();
         }
 
         public void Transfers()
@@ -887,18 +1303,24 @@ namespace ExcelTool
             {
                 var sbXml = new StringBuilder();
                 var sbJson = new StringBuilder();
+                var sbLua = new StringBuilder();
 
                 sbXml.Append($"<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n");
                 sbXml.Append($"<{Xml_head}>\r\n");
 
                 sbJson.Append("{\r\n");
 
+                sbLua.Append($"{nn.Name}=\r\n{{\r\n");
+
                 var listdataJson = new List<string>();
+                var listdataLua = new List<string>();
+
                 foreach (var nnn in nn.ListValue)
                 {
                     sbXml.Append($"\t<{Xml_node}>\r\n");
 
                     var listnodeJson = new List<string>();
+                    var listnodeLua = new List<string>();
                     for (int iii = 0; iii < nn.Head.Count; iii++)
                     {
                         if (nn.Head[iii] == "")
@@ -912,7 +1334,7 @@ namespace ExcelTool
                         }
 
                         string nodeJson = "";
-                        if (nn.TypeClient[iii] == "int" || nn.TypeClient[iii] == "float" || nn.TypeClient[iii] == "double")
+                        if (nn.TypeClient[iii] == "int" || nn.TypeClient[iii] == "long" || nn.TypeClient[iii] == "float" || nn.TypeClient[iii] == "double")
                         {
                             nodeJson = $"\t\t\"{nn.Head[iii]}\":{nnn[iii]}";
                         }
@@ -921,9 +1343,23 @@ namespace ExcelTool
                             nodeJson = $"\t\t\"{nn.Head[iii]}\":\"{nnn[iii]}\"";
                         }
                         listnodeJson.Add(nodeJson);
+
+                        string nodeLua = "";
+                        if (nn.TypeClient[iii] == "int" || nn.TypeClient[iii] == "long" || nn.TypeClient[iii] == "float" || nn.TypeClient[iii] == "double")
+                        {
+                            nodeLua = $"{nn.Head[iii]}={nnn[iii]}";
+                        }
+                        else
+                        {
+                            nodeLua = $"{nn.Head[iii]}=\"{nnn[iii]}\"";
+                        }
+                        listnodeLua.Add(nodeLua);
                     }
-                    string data = $"\t\"{nnn[0]}\":{{\r\n{string.Join(",\r\n", listnodeJson)}\r\n\t}}";
-                    listdataJson.Add(data);
+                    string dataJson = $"\t\"{nnn[0]}\":{{\r\n{string.Join(",\r\n", listnodeJson)}\r\n\t}}";
+                    listdataJson.Add(dataJson);
+
+                    string dataLua = $"[\"{nnn[0]}\"]={{{string.Join(",", listnodeLua)},}}";
+                    listdataLua.Add(dataLua);
 
                     sbXml.Append($"\t</{Xml_node}>\r\n");
                 }
@@ -933,21 +1369,41 @@ namespace ExcelTool
                 sbJson.Append(string.Join(",\r\n", listdataJson));
                 sbJson.Append("\r\n}\r\n");
 
-                string pathXml = $"{PathXml}\\{nn.Name}.xml";
-                XGlobal.DeleteFile(pathXml);
-                FileStream fsXml = new FileStream(pathXml, FileMode.OpenOrCreate);
-                StreamWriter swXml = new StreamWriter(fsXml);
-                swXml.Write(sbXml.ToString());
-                swXml.Close();
+                sbLua.Append(string.Join(",\r\n", listdataLua));
+                sbLua.Append("\r\n}\r\n");
 
-                if (nn.ServerClientOnly == 0)
+                if (nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅服务器)
                 {
-                    string pathJson = $"{PathJson}\\{nn.Name}.json";
-                    XGlobal.DeleteFile(pathJson);
-                    FileStream fsJson = new FileStream(pathJson, FileMode.OpenOrCreate);
-                    StreamWriter swJson = new StreamWriter(fsJson);
-                    swJson.Write(sbJson.ToString());
-                    swJson.Close();
+                    if (true)
+                    {
+                        string pathXml = $"{PathXml}\\{nn.Name}.xml";
+                        XGlobal.DeleteFile(pathXml);
+                        FileStream fsXml = new FileStream(pathXml, FileMode.OpenOrCreate);
+                        StreamWriter swXml = new StreamWriter(fsXml);
+                        swXml.Write(sbXml.ToString());
+                        swXml.Close();
+                    }
+                }
+                if (nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅客户端)
+                {
+                    if (true)
+                    {
+                        string pathJson = $"{PathJson}\\{nn.Name}.json";
+                        XGlobal.DeleteFile(pathJson);
+                        FileStream fsJson = new FileStream(pathJson, FileMode.OpenOrCreate);
+                        StreamWriter swJson = new StreamWriter(fsJson);
+                        swJson.Write(sbJson.ToString());
+                        swJson.Close();
+                    }
+                    if (true)
+                    {
+                        string pathLua = $"{PathLua}\\{nn.Name}.lua";
+                        XGlobal.DeleteFile(pathLua);
+                        FileStream fsLua = new FileStream(pathLua, FileMode.OpenOrCreate);
+                        StreamWriter swLua = new StreamWriter(fsLua);
+                        swLua.Write(sbLua.ToString());
+                        swLua.Close();
+                    }
                 }
             }
         }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ExcelTool
 {
-    public static class XGlobal
+    public static partial class XGlobal
     {
         /// <summary>
         /// 获取父目录

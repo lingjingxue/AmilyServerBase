@@ -220,7 +220,14 @@ namespace ProtocolTool
                     break;
 
                 default:
-                    sb.Append($"{space}{v.Body}.Serialize(ref nbs);\r\n");
+                    if (v.Ctype.Length > 0 && v.Ctype[0] == 'E')
+                    {
+                        sb.Append($"{space}nbs.Write((short){v.Body});\r\n");
+                    }
+                    else
+                    {
+                        sb.Append($"{space}{v.Body}.Serialize(ref nbs);\r\n");
+                    }
                     break;
             }
             return sb.ToString();
@@ -362,7 +369,14 @@ namespace ProtocolTool
                     break;
 
                 default:
-                    sb.Append($"{space}{v.Body}.Unserialize(ref nbs);\r\n");
+                    if (v.Ctype.Length > 0 && v.Ctype[0] == 'E')
+                    {
+                        sb.Append($"{space}if (true) {{ var etemp = nbs.ReadShort(); {v.Body} = ({v.Ctype})etemp; }}\r\n");
+                    }
+                    else
+                    {
+                        sb.Append($"{space}{v.Body}.Unserialize(ref nbs);\r\n");
+                    }
                     break;
             }
             return sb.ToString();
