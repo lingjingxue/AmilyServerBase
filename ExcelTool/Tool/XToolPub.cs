@@ -19,7 +19,6 @@ namespace ExcelTool
     {
         public static void Init()
         {
-
             PathHtml = PathCurrent + @"\Config";
 
             PathEnum = PathExcel + @"\A_公共枚举.xlsx";
