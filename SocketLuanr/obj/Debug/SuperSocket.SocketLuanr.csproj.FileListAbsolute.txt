@@ -5,3 +5,10 @@ F:\Projects\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.csproj
 F:\Projects\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.csproj.CopyComplete
 F:\Projects\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.dll
 F:\Projects\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.pdb
+C:\AmilyServerBase\APublish\SuperSocket.SocketLuanr.dll
+C:\AmilyServerBase\APublish\SuperSocket.SocketLuanr.pdb
+C:\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.csprojAssemblyReference.cache
+C:\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.csproj.CoreCompileInputs.cache
+C:\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.csproj.CopyComplete
+C:\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.dll
+C:\AmilyServerBase\SocketLuanr\obj\Debug\SuperSocket.SocketLuanr.pdb
