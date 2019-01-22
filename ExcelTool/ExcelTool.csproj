@@ -71,7 +71,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tool\XToolLua.cs" />
+    <Compile Include="Tool\XToolHtml.cs" />
+    <Compile Include="Tool\XToolEnum.cs" />
+    <Compile Include="Tool\XToolPub.cs" />
+    <Compile Include="Tool\XToolClass.cs" />
+    <Compile Include="Tool\XToolData.cs" />
     <Compile Include="XGlobal.cs" />
+    <Compile Include="Tool\XTool.cs" />
     <EmbeddedResource Include="FormTool.resx">
       <DependentUpon>FormTool.cs</DependentUpon>
     </EmbeddedResource>

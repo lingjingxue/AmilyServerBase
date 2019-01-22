@@ -16,7 +16,8 @@ namespace ExcelTool
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTool());
+            XTool.FTool = new FormTool();
+            Application.Run(XTool.FTool);
         }
     }
 }
