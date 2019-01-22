@@ -257,12 +257,12 @@ function LuaCLS_PlayerData:Unserialize(nbs)
     self.Name = nbs:ReadString()
     self.Score = nbs:ReadLong()
     self.Level = nbs:ReadInt()
-    local var2939 = nbs:ReadInt()
-    for i = 1, var2939 do
-        local var2940 = nbs:ReadInt()
-        local var2941 = LuaCLS_WarriorInfo.new()
-        var2941:Unserialize(nbs)
-        self.DictArenaWarrior:Add(var2940, var2941)
+    local var2941 = nbs:ReadInt()
+    for i = 1, var2941 do
+        local var2942 = nbs:ReadInt()
+        local var2943 = LuaCLS_WarriorInfo.new()
+        var2943:Unserialize(nbs)
+        self.DictArenaWarrior:Add(var2942, var2943)
     end
     self.Signature = nbs:ReadString()
     self.GuildName = nbs:ReadString()
@@ -289,10 +289,10 @@ end
 function LuaCLS_GameLog:Unserialize(nbs)
     self.GameLogTime = nbs:ReadDateTime()
     self.GameLogType = nbs:ReadShort()
-    local var2946 = nbs:ReadInt()
-    for i = 1, var2946 do
-        local var2947 = nbs:ReadString()
-        self.Args:Add(var2947)
+    local var2948 = nbs:ReadInt()
+    for i = 1, var2948 do
+        local var2949 = nbs:ReadString()
+        self.Args:Add(var2949)
     end
 end
 -- LuaCLS_GameLog end
@@ -644,11 +644,11 @@ function LuaG2C_Login_ListState:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var2960 = nbs:ReadInt()
-    for i = 1, var2960 do
-        local var2961 = LuaCLS_LoginStateInfo.new()
-        var2961:Unserialize(nbs)
-        self.ListState:Add(var2961)
+    local var2962 = nbs:ReadInt()
+    for i = 1, var2962 do
+        local var2963 = LuaCLS_LoginStateInfo.new()
+        var2963:Unserialize(nbs)
+        self.ListState:Add(var2963)
     end
 end
 -- LuaG2C_Login_ListState end
@@ -828,6 +828,8 @@ function LuaCLS_Info_Misc:ctor()
     self.ListGuildCityAlliance = List:New(Luaint)    -- 同盟城池
     self.WelfareIsOpen = false    -- 福利开启
     self.WelfareNoticeNum = 0    -- 福利完成数目
+    self.Acitvity7DayLoginIsOpen = false    -- 七日登录开启
+    self.Acitvity7DayLoginCanGet = false    -- 七日登录可领
 end
 function LuaCLS_Info_Misc:Serialize(nbs)
     nbs:WriteInt(#self.dictFlagClient)
@@ -862,14 +864,16 @@ function LuaCLS_Info_Misc:Serialize(nbs)
     end
     nbs:WriteBool(self.WelfareIsOpen)
     nbs:WriteInt(self.WelfareNoticeNum)
+    nbs:WriteBool(self.Acitvity7DayLoginIsOpen)
+    nbs:WriteBool(self.Acitvity7DayLoginCanGet)
     return nbs
 end
 function LuaCLS_Info_Misc:Unserialize(nbs)
-    local var2995 = nbs:ReadInt()
-    for i = 1, var2995 do
-        local var2996 = nbs:ReadInt()
-        local var2997 = nbs:ReadInt()
-        self.dictFlagClient:Add(var2996, var2997)
+    local var2997 = nbs:ReadInt()
+    for i = 1, var2997 do
+        local var2998 = nbs:ReadInt()
+        local var2999 = nbs:ReadInt()
+        self.dictFlagClient:Add(var2998, var2999)
     end
     self.WoodFull = nbs:ReadBool()
     self.IronFull = nbs:ReadBool()
@@ -884,23 +888,25 @@ function LuaCLS_Info_Misc:Unserialize(nbs)
     self.bFriend = nbs:ReadBool()
     self.bChat = nbs:ReadBool()
     self.TickTimeRegister = nbs:ReadLong()
-    local var3011 = nbs:ReadInt()
-    for i = 1, var3011 do
-        local var3012 = nbs:ReadLong()
-        self.ListAlliance:Add(var3012)
-    end
     local var3013 = nbs:ReadInt()
     for i = 1, var3013 do
-        local var3014 = nbs:ReadInt()
-        self.ListGuildCityMy:Add(var3014)
+        local var3014 = nbs:ReadLong()
+        self.ListAlliance:Add(var3014)
     end
     local var3015 = nbs:ReadInt()
     for i = 1, var3015 do
         local var3016 = nbs:ReadInt()
-        self.ListGuildCityAlliance:Add(var3016)
+        self.ListGuildCityMy:Add(var3016)
+    end
+    local var3017 = nbs:ReadInt()
+    for i = 1, var3017 do
+        local var3018 = nbs:ReadInt()
+        self.ListGuildCityAlliance:Add(var3018)
     end
     self.WelfareIsOpen = nbs:ReadBool()
     self.WelfareNoticeNum = nbs:ReadInt()
+    self.Acitvity7DayLoginIsOpen = nbs:ReadBool()
+    self.Acitvity7DayLoginCanGet = nbs:ReadBool()
 end
 -- LuaCLS_Info_Misc end
 
@@ -943,11 +949,11 @@ function LuaG2C_Info_GetAll:Unserialize(buffer)
     self.Shuttle = nbs:ReadString()
     self.InfoBase:Unserialize(nbs)
     self.InfoMisc:Unserialize(nbs)
-    local var3021 = nbs:ReadInt()
-    for i = 1, var3021 do
-        local var3022 = LuaCLS_ItemInfo.new()
-        var3022:Unserialize(nbs)
-        self.ListItem:Add(var3022)
+    local var3025 = nbs:ReadInt()
+    for i = 1, var3025 do
+        local var3026 = LuaCLS_ItemInfo.new()
+        var3026:Unserialize(nbs)
+        self.ListItem:Add(var3026)
     end
 end
 -- LuaG2C_Info_GetAll end
@@ -990,11 +996,11 @@ function LuaG2C_Info_PushItem:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3025 = nbs:ReadInt()
-    for i = 1, var3025 do
-        local var3026 = LuaCLS_ItemInfo.new()
-        var3026:Unserialize(nbs)
-        self.ListItem:Add(var3026)
+    local var3029 = nbs:ReadInt()
+    for i = 1, var3029 do
+        local var3030 = LuaCLS_ItemInfo.new()
+        var3030:Unserialize(nbs)
+        self.ListItem:Add(var3030)
     end
 end
 -- LuaG2C_Info_PushItem end
@@ -1017,12 +1023,12 @@ function LuaG2C_Info_PushEquip:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.PageIndex = nbs:ReadInt()
-    local var3028 = nbs:ReadInt()
-    for i = 1, var3028 do
-        local var3029 = nbs:ReadLong()
-        local var3030 = LuaCLS_EquipInfo.new()
-        var3030:Unserialize(nbs)
-        self.DictEquip:Add(var3029, var3030)
+    local var3032 = nbs:ReadInt()
+    for i = 1, var3032 do
+        local var3033 = nbs:ReadLong()
+        local var3034 = LuaCLS_EquipInfo.new()
+        var3034:Unserialize(nbs)
+        self.DictEquip:Add(var3033, var3034)
     end
 end
 -- LuaG2C_Info_PushEquip end
@@ -1045,11 +1051,11 @@ function LuaG2C_Info_PushWarrior:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.PageIndex = nbs:ReadInt()
-    local var3032 = nbs:ReadInt()
-    for i = 1, var3032 do
-        local var3033 = LuaCLS_WarriorInfo.new()
-        var3033:Unserialize(nbs)
-        self.ListWarrior:Add(var3033)
+    local var3036 = nbs:ReadInt()
+    for i = 1, var3036 do
+        local var3037 = LuaCLS_WarriorInfo.new()
+        var3037:Unserialize(nbs)
+        self.ListWarrior:Add(var3037)
     end
 end
 -- LuaG2C_Info_PushWarrior end
@@ -1129,23 +1135,23 @@ function LuaG2C_Info_PushUpdate:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3040 = nbs:ReadInt()
-    for i = 1, var3040 do
-        local var3041 = LuaCLS_UpdateInfoItem.new()
-        var3041:Unserialize(nbs)
-        self.ListUpdateItem:Add(var3041)
-    end
-    local var3042 = nbs:ReadInt()
-    for i = 1, var3042 do
-        local var3043 = LuaCLS_UpdateInfoEquip.new()
-        var3043:Unserialize(nbs)
-        self.ListUpdateEquip:Add(var3043)
-    end
     local var3044 = nbs:ReadInt()
     for i = 1, var3044 do
-        local var3045 = LuaCLS_UpdateInfoWarrior.new()
+        local var3045 = LuaCLS_UpdateInfoItem.new()
         var3045:Unserialize(nbs)
-        self.ListUpdateWarrior:Add(var3045)
+        self.ListUpdateItem:Add(var3045)
+    end
+    local var3046 = nbs:ReadInt()
+    for i = 1, var3046 do
+        local var3047 = LuaCLS_UpdateInfoEquip.new()
+        var3047:Unserialize(nbs)
+        self.ListUpdateEquip:Add(var3047)
+    end
+    local var3048 = nbs:ReadInt()
+    for i = 1, var3048 do
+        local var3049 = LuaCLS_UpdateInfoWarrior.new()
+        var3049:Unserialize(nbs)
+        self.ListUpdateWarrior:Add(var3049)
     end
 end
 -- LuaG2C_Info_PushUpdate end
@@ -1542,10 +1548,10 @@ function LuaG2C_Notice_Activity:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3058 = nbs:ReadInt()
-    for i = 1, var3058 do
-        local var3059 = nbs:ReadString()
-        self.ListText:Add(var3059)
+    local var3062 = nbs:ReadInt()
+    for i = 1, var3062 do
+        local var3063 = nbs:ReadString()
+        self.ListText:Add(var3063)
     end
 end
 -- LuaG2C_Notice_Activity end
@@ -1644,11 +1650,11 @@ function LuaCLS_MailInfoDetails:Unserialize(nbs)
     self.Id = nbs:ReadLong()
     self.MailInfo:Unserialize(nbs)
     self.Body = nbs:ReadString()
-    local var3077 = nbs:ReadInt()
-    for i = 1, var3077 do
-        local var3078 = LuaCLS_AwardItem.new()
-        var3078:Unserialize(nbs)
-        self.listAward:Add(var3078)
+    local var3081 = nbs:ReadInt()
+    for i = 1, var3081 do
+        local var3082 = LuaCLS_AwardItem.new()
+        var3082:Unserialize(nbs)
+        self.listAward:Add(var3082)
     end
 end
 -- LuaCLS_MailInfoDetails end
@@ -1713,19 +1719,19 @@ end
 function LuaCLS_SystemMailInfoSend:Unserialize(nbs)
     self.Id = nbs:ReadLong()
     self.TargetType = nbs:ReadShort()
-    local var3086 = nbs:ReadInt()
-    for i = 1, var3086 do
-        local var3087 = nbs:ReadString()
-        self.ListTarget:Add(var3087)
+    local var3090 = nbs:ReadInt()
+    for i = 1, var3090 do
+        local var3091 = nbs:ReadString()
+        self.ListTarget:Add(var3091)
     end
     self.Title = nbs:ReadString()
     self.Body = nbs:ReadString()
     self.SenderName = nbs:ReadString()
-    local var3091 = nbs:ReadInt()
-    for i = 1, var3091 do
-        local var3092 = LuaCLS_AwardItem.new()
-        var3092:Unserialize(nbs)
-        self.ListAttachments:Add(var3092)
+    local var3095 = nbs:ReadInt()
+    for i = 1, var3095 do
+        local var3096 = LuaCLS_AwardItem.new()
+        var3096:Unserialize(nbs)
+        self.ListAttachments:Add(var3096)
     end
 end
 -- LuaCLS_SystemMailInfoSend end
@@ -1765,11 +1771,11 @@ function LuaG2C_Mail_List:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3093 = nbs:ReadInt()
-    for i = 1, var3093 do
-        local var3094 = LuaCLS_MailInfo.new()
-        var3094:Unserialize(nbs)
-        self.ListMail:Add(var3094)
+    local var3097 = nbs:ReadInt()
+    for i = 1, var3097 do
+        local var3098 = LuaCLS_MailInfo.new()
+        var3098:Unserialize(nbs)
+        self.ListMail:Add(var3098)
     end
 end
 -- LuaG2C_Mail_List end
@@ -1856,11 +1862,11 @@ function LuaG2C_Mail_Get:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.Id = nbs:ReadLong()
-    local var3098 = nbs:ReadInt()
-    for i = 1, var3098 do
-        local var3099 = LuaCLS_AwardItem.new()
-        var3099:Unserialize(nbs)
-        self.listAward:Add(var3099)
+    local var3102 = nbs:ReadInt()
+    for i = 1, var3102 do
+        local var3103 = LuaCLS_AwardItem.new()
+        var3103:Unserialize(nbs)
+        self.listAward:Add(var3103)
     end
 end
 -- LuaG2C_Mail_Get end
@@ -1900,11 +1906,11 @@ function LuaG2C_Mail_GetAll:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3100 = nbs:ReadInt()
-    for i = 1, var3100 do
-        local var3101 = LuaCLS_AwardItem.new()
-        var3101:Unserialize(nbs)
-        self.listAward:Add(var3101)
+    local var3104 = nbs:ReadInt()
+    for i = 1, var3104 do
+        local var3105 = LuaCLS_AwardItem.new()
+        var3105:Unserialize(nbs)
+        self.listAward:Add(var3105)
     end
 end
 -- LuaG2C_Mail_GetAll end
@@ -1987,11 +1993,11 @@ function LuaG2C_Mail_DeleteReaded:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3103 = nbs:ReadInt()
-    for i = 1, var3103 do
-        local var3104 = LuaCLS_MailInfo.new()
-        var3104:Unserialize(nbs)
-        self.ListMail:Add(var3104)
+    local var3107 = nbs:ReadInt()
+    for i = 1, var3107 do
+        local var3108 = LuaCLS_MailInfo.new()
+        var3108:Unserialize(nbs)
+        self.ListMail:Add(var3108)
     end
 end
 -- LuaG2C_Mail_DeleteReaded end
@@ -2142,11 +2148,11 @@ function LuaCLS_ChatList:Serialize(nbs)
 end
 function LuaCLS_ChatList:Unserialize(nbs)
     self.Info:Unserialize(nbs)
-    local var3115 = nbs:ReadInt()
-    for i = 1, var3115 do
-        local var3116 = LuaCLS_ChatMsg.new()
-        var3116:Unserialize(nbs)
-        self.ListChatMsgs:Add(var3116)
+    local var3119 = nbs:ReadInt()
+    for i = 1, var3119 do
+        local var3120 = LuaCLS_ChatMsg.new()
+        var3120:Unserialize(nbs)
+        self.ListChatMsgs:Add(var3120)
     end
 end
 -- LuaCLS_ChatList end
@@ -2210,11 +2216,11 @@ function LuaG2C_Chat_Receive:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3117 = nbs:ReadInt()
-    for i = 1, var3117 do
-        local var3118 = LuaCLS_ChatMsg.new()
-        var3118:Unserialize(nbs)
-        self.ListChatMsgs:Add(var3118)
+    local var3121 = nbs:ReadInt()
+    for i = 1, var3121 do
+        local var3122 = LuaCLS_ChatMsg.new()
+        var3122:Unserialize(nbs)
+        self.ListChatMsgs:Add(var3122)
     end
 end
 -- LuaG2C_Chat_Receive end
@@ -2254,12 +2260,12 @@ function LuaG2C_Chat_GetPrivateChat:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3119 = nbs:ReadInt()
-    for i = 1, var3119 do
-        local var3120 = nbs:ReadLong()
-        local var3121 = LuaCLS_ChatList.new()
-        var3121:Unserialize(nbs)
-        self.DictChatInfo:Add(var3120, var3121)
+    local var3123 = nbs:ReadInt()
+    for i = 1, var3123 do
+        local var3124 = nbs:ReadLong()
+        local var3125 = LuaCLS_ChatList.new()
+        var3125:Unserialize(nbs)
+        self.DictChatInfo:Add(var3124, var3125)
     end
 end
 -- LuaG2C_Chat_GetPrivateChat end
@@ -2374,11 +2380,11 @@ function LuaG2C_Friend_List:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3130 = nbs:ReadInt()
-    for i = 1, var3130 do
-        local var3131 = LuaCLS_FriendInfo.new()
-        var3131:Unserialize(nbs)
-        self.ListItem:Add(var3131)
+    local var3134 = nbs:ReadInt()
+    for i = 1, var3134 do
+        local var3135 = LuaCLS_FriendInfo.new()
+        var3135:Unserialize(nbs)
+        self.ListItem:Add(var3135)
     end
 end
 -- LuaG2C_Friend_List end
@@ -2418,11 +2424,11 @@ function LuaG2C_Friend_ListApply:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3132 = nbs:ReadInt()
-    for i = 1, var3132 do
-        local var3133 = LuaCLS_FriendInfo.new()
-        var3133:Unserialize(nbs)
-        self.ListItem:Add(var3133)
+    local var3136 = nbs:ReadInt()
+    for i = 1, var3136 do
+        local var3137 = LuaCLS_FriendInfo.new()
+        var3137:Unserialize(nbs)
+        self.ListItem:Add(var3137)
     end
 end
 -- LuaG2C_Friend_ListApply end
@@ -2462,11 +2468,11 @@ function LuaG2C_Friend_ListRecommend:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3134 = nbs:ReadInt()
-    for i = 1, var3134 do
-        local var3135 = LuaCLS_FriendInfo.new()
-        var3135:Unserialize(nbs)
-        self.ListItem:Add(var3135)
+    local var3138 = nbs:ReadInt()
+    for i = 1, var3138 do
+        local var3139 = LuaCLS_FriendInfo.new()
+        var3139:Unserialize(nbs)
+        self.ListItem:Add(var3139)
     end
 end
 -- LuaG2C_Friend_ListRecommend end
@@ -2784,26 +2790,26 @@ function LuaG2C_Map_ListCity:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3144 = nbs:ReadInt()
-    for i = 1, var3144 do
-        local var3145 = LuaCLS_MapCitySimple.new()
-        var3145:Unserialize(nbs)
-        self.ListCity:Add(var3145)
-    end
-    local var3146 = nbs:ReadInt()
-    for i = 1, var3146 do
-        local var3147 = nbs:ReadLong()
-        self.ListAlliance:Add(var3147)
-    end
     local var3148 = nbs:ReadInt()
     for i = 1, var3148 do
-        local var3149 = nbs:ReadInt()
-        self.ListGuildCityMy:Add(var3149)
+        local var3149 = LuaCLS_MapCitySimple.new()
+        var3149:Unserialize(nbs)
+        self.ListCity:Add(var3149)
     end
     local var3150 = nbs:ReadInt()
     for i = 1, var3150 do
-        local var3151 = nbs:ReadInt()
-        self.ListGuildCityAlliance:Add(var3151)
+        local var3151 = nbs:ReadLong()
+        self.ListAlliance:Add(var3151)
+    end
+    local var3152 = nbs:ReadInt()
+    for i = 1, var3152 do
+        local var3153 = nbs:ReadInt()
+        self.ListGuildCityMy:Add(var3153)
+    end
+    local var3154 = nbs:ReadInt()
+    for i = 1, var3154 do
+        local var3155 = nbs:ReadInt()
+        self.ListGuildCityAlliance:Add(var3155)
     end
 end
 -- LuaG2C_Map_ListCity end
@@ -2928,11 +2934,11 @@ function LuaG2C_Map_ListMyCity:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3159 = nbs:ReadInt()
-    for i = 1, var3159 do
-        local var3160 = LuaCLS_MapMyCityInfo.new()
-        var3160:Unserialize(nbs)
-        self.ListMyCity:Add(var3160)
+    local var3163 = nbs:ReadInt()
+    for i = 1, var3163 do
+        local var3164 = LuaCLS_MapMyCityInfo.new()
+        var3164:Unserialize(nbs)
+        self.ListMyCity:Add(var3164)
     end
 end
 -- LuaG2C_Map_ListMyCity end
@@ -2991,11 +2997,11 @@ function LuaG2C_Item_List:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3163 = nbs:ReadInt()
-    for i = 1, var3163 do
-        local var3164 = LuaCLS_ItemInfo.new()
-        var3164:Unserialize(nbs)
-        self.ListItem:Add(var3164)
+    local var3167 = nbs:ReadInt()
+    for i = 1, var3167 do
+        local var3168 = LuaCLS_ItemInfo.new()
+        var3168:Unserialize(nbs)
+        self.ListItem:Add(var3168)
     end
 end
 -- LuaG2C_Item_List end
@@ -3039,11 +3045,11 @@ function LuaG2C_Item_Sell:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3165 = nbs:ReadInt()
-    for i = 1, var3165 do
-        local var3166 = LuaCLS_ItemInfo.new()
-        var3166:Unserialize(nbs)
-        self.ListItem:Add(var3166)
+    local var3169 = nbs:ReadInt()
+    for i = 1, var3169 do
+        local var3170 = LuaCLS_ItemInfo.new()
+        var3170:Unserialize(nbs)
+        self.ListItem:Add(var3170)
     end
 end
 -- LuaG2C_Item_Sell end
@@ -3092,17 +3098,17 @@ function LuaG2C_Item_Use:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.Type = nbs:ReadInt()
-    local var3168 = nbs:ReadInt()
-    for i = 1, var3168 do
-        local var3169 = LuaCLS_ItemInfo.new()
-        var3169:Unserialize(nbs)
-        self.ListItem:Add(var3169)
+    local var3172 = nbs:ReadInt()
+    for i = 1, var3172 do
+        local var3173 = LuaCLS_ItemInfo.new()
+        var3173:Unserialize(nbs)
+        self.ListItem:Add(var3173)
     end
-    local var3170 = nbs:ReadInt()
-    for i = 1, var3170 do
-        local var3171 = LuaCLS_AwardItem.new()
-        var3171:Unserialize(nbs)
-        self.ListAward:Add(var3171)
+    local var3174 = nbs:ReadInt()
+    for i = 1, var3174 do
+        local var3175 = LuaCLS_AwardItem.new()
+        var3175:Unserialize(nbs)
+        self.ListAward:Add(var3175)
     end
 end
 -- LuaG2C_Item_Use end
@@ -3144,11 +3150,11 @@ function LuaG2C_Item_ResourcesList:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3172 = nbs:ReadInt()
-    for i = 1, var3172 do
-        local var3173 = LuaCLS_ItemInfo.new()
-        var3173:Unserialize(nbs)
-        self.ListItem:Add(var3173)
+    local var3176 = nbs:ReadInt()
+    for i = 1, var3176 do
+        local var3177 = LuaCLS_ItemInfo.new()
+        var3177:Unserialize(nbs)
+        self.ListItem:Add(var3177)
     end
 end
 -- LuaG2C_Item_ResourcesList end
@@ -3196,17 +3202,17 @@ function LuaG2C_Item_ResourcesUse:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3174 = nbs:ReadInt()
-    for i = 1, var3174 do
-        local var3175 = LuaCLS_ItemInfo.new()
-        var3175:Unserialize(nbs)
-        self.ListItem:Add(var3175)
+    local var3178 = nbs:ReadInt()
+    for i = 1, var3178 do
+        local var3179 = LuaCLS_ItemInfo.new()
+        var3179:Unserialize(nbs)
+        self.ListItem:Add(var3179)
     end
-    local var3176 = nbs:ReadInt()
-    for i = 1, var3176 do
-        local var3177 = LuaCLS_AwardItem.new()
-        var3177:Unserialize(nbs)
-        self.ListAward:Add(var3177)
+    local var3180 = nbs:ReadInt()
+    for i = 1, var3180 do
+        local var3181 = LuaCLS_AwardItem.new()
+        var3181:Unserialize(nbs)
+        self.ListAward:Add(var3181)
     end
 end
 -- LuaG2C_Item_ResourcesUse end
@@ -3253,17 +3259,17 @@ function LuaG2C_Item_ResourcesBuy:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3178 = nbs:ReadInt()
-    for i = 1, var3178 do
-        local var3179 = LuaCLS_ItemInfo.new()
-        var3179:Unserialize(nbs)
-        self.ListItem:Add(var3179)
+    local var3182 = nbs:ReadInt()
+    for i = 1, var3182 do
+        local var3183 = LuaCLS_ItemInfo.new()
+        var3183:Unserialize(nbs)
+        self.ListItem:Add(var3183)
     end
-    local var3180 = nbs:ReadInt()
-    for i = 1, var3180 do
-        local var3181 = LuaCLS_AwardItem.new()
-        var3181:Unserialize(nbs)
-        self.ListAward:Add(var3181)
+    local var3184 = nbs:ReadInt()
+    for i = 1, var3184 do
+        local var3185 = LuaCLS_AwardItem.new()
+        var3185:Unserialize(nbs)
+        self.ListAward:Add(var3185)
     end
 end
 -- LuaG2C_Item_ResourcesBuy end
@@ -3315,11 +3321,11 @@ function LuaG2C_Item_CombatUse:Unserialize(buffer)
     self.Id = nbs:ReadInt()
     self.Count = nbs:ReadInt()
     self.CombatType = nbs:ReadInt()
-    local var3185 = nbs:ReadInt()
-    for i = 1, var3185 do
-        local var3186 = LuaCLS_ItemInfo.new()
-        var3186:Unserialize(nbs)
-        self.ListItem:Add(var3186)
+    local var3189 = nbs:ReadInt()
+    for i = 1, var3189 do
+        local var3190 = LuaCLS_ItemInfo.new()
+        var3190:Unserialize(nbs)
+        self.ListItem:Add(var3190)
     end
 end
 -- LuaG2C_Item_CombatUse end
@@ -3381,18 +3387,18 @@ function LuaCLS_EquipInfo:Unserialize(nbs)
     self.ConfigId = nbs:ReadInt()
     self.EquipType = nbs:ReadInt()
     self.Intensify = nbs:ReadInt()
-    local var3194 = nbs:ReadInt()
-    for i = 1, var3194 do
-        local var3195 = nbs:ReadInt()
-        local var3196 = nbs:ReadFloat()
-        self.CombatProperty:Add(var3195, var3196)
-    end
-    self.MarkName = nbs:ReadString()
     local var3198 = nbs:ReadInt()
     for i = 1, var3198 do
-        local var3199 = LuaCLS_EquipSuffix.new()
-        var3199:Unserialize(nbs)
-        self.SuffixProperty:Add(var3199)
+        local var3199 = nbs:ReadInt()
+        local var3200 = nbs:ReadFloat()
+        self.CombatProperty:Add(var3199, var3200)
+    end
+    self.MarkName = nbs:ReadString()
+    local var3202 = nbs:ReadInt()
+    for i = 1, var3202 do
+        local var3203 = LuaCLS_EquipSuffix.new()
+        var3203:Unserialize(nbs)
+        self.SuffixProperty:Add(var3203)
     end
 end
 -- LuaCLS_EquipInfo end
@@ -3434,12 +3440,12 @@ function LuaG2C_Equip_List:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.PageIndex = nbs:ReadInt()
-    local var3201 = nbs:ReadInt()
-    for i = 1, var3201 do
-        local var3202 = nbs:ReadLong()
-        local var3203 = LuaCLS_EquipInfo.new()
-        var3203:Unserialize(nbs)
-        self.DictEquip:Add(var3202, var3203)
+    local var3205 = nbs:ReadInt()
+    for i = 1, var3205 do
+        local var3206 = nbs:ReadLong()
+        local var3207 = LuaCLS_EquipInfo.new()
+        var3207:Unserialize(nbs)
+        self.DictEquip:Add(var3206, var3207)
     end
 end
 -- LuaG2C_Equip_List end
@@ -3483,19 +3489,19 @@ function LuaG2C_Equip_WarriorList:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3204 = nbs:ReadInt()
-    for i = 1, var3204 do
-        local var3205 = nbs:ReadInt()
-        local var3206 = LuaCLS_EquipInfo.new()
-        var3206:Unserialize(nbs)
-        self.DictEquiped:Add(var3205, var3206)
+    local var3208 = nbs:ReadInt()
+    for i = 1, var3208 do
+        local var3209 = nbs:ReadInt()
+        local var3210 = LuaCLS_EquipInfo.new()
+        var3210:Unserialize(nbs)
+        self.DictEquiped:Add(var3209, var3210)
     end
-    local var3207 = nbs:ReadInt()
-    for i = 1, var3207 do
-        local var3208 = nbs:ReadLong()
-        local var3209 = LuaCLS_EquipInfo.new()
-        var3209:Unserialize(nbs)
-        self.DictEquip:Add(var3208, var3209)
+    local var3211 = nbs:ReadInt()
+    for i = 1, var3211 do
+        local var3212 = nbs:ReadLong()
+        local var3213 = LuaCLS_EquipInfo.new()
+        var3213:Unserialize(nbs)
+        self.DictEquip:Add(var3212, var3213)
     end
     self.WarriorInfo:Unserialize(nbs)
 end
@@ -3536,12 +3542,12 @@ function LuaG2C_Equip_WarriorAll:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3211 = nbs:ReadInt()
-    for i = 1, var3211 do
-        local var3212 = nbs:ReadLong()
-        local var3213 = LuaCLS_EquipInfo.new()
-        var3213:Unserialize(nbs)
-        self.DictEquip:Add(var3212, var3213)
+    local var3215 = nbs:ReadInt()
+    for i = 1, var3215 do
+        local var3216 = nbs:ReadLong()
+        local var3217 = LuaCLS_EquipInfo.new()
+        var3217:Unserialize(nbs)
+        self.DictEquip:Add(var3216, var3217)
     end
 end
 -- LuaG2C_Equip_WarriorAll end
@@ -3587,19 +3593,19 @@ function LuaG2C_Equip_WarriorWield:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3214 = nbs:ReadInt()
-    for i = 1, var3214 do
-        local var3215 = nbs:ReadInt()
-        local var3216 = LuaCLS_EquipInfo.new()
-        var3216:Unserialize(nbs)
-        self.DictEquiped:Add(var3215, var3216)
+    local var3218 = nbs:ReadInt()
+    for i = 1, var3218 do
+        local var3219 = nbs:ReadInt()
+        local var3220 = LuaCLS_EquipInfo.new()
+        var3220:Unserialize(nbs)
+        self.DictEquiped:Add(var3219, var3220)
     end
-    local var3217 = nbs:ReadInt()
-    for i = 1, var3217 do
-        local var3218 = nbs:ReadLong()
-        local var3219 = LuaCLS_EquipInfo.new()
-        var3219:Unserialize(nbs)
-        self.DictEquip:Add(var3218, var3219)
+    local var3221 = nbs:ReadInt()
+    for i = 1, var3221 do
+        local var3222 = nbs:ReadLong()
+        local var3223 = LuaCLS_EquipInfo.new()
+        var3223:Unserialize(nbs)
+        self.DictEquip:Add(var3222, var3223)
     end
     self.WarriorInfo:Unserialize(nbs)
 end
@@ -3646,19 +3652,19 @@ function LuaG2C_Equip_WarriorRemove:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3221 = nbs:ReadInt()
-    for i = 1, var3221 do
-        local var3222 = nbs:ReadInt()
-        local var3223 = LuaCLS_EquipInfo.new()
-        var3223:Unserialize(nbs)
-        self.DictEquiped:Add(var3222, var3223)
+    local var3225 = nbs:ReadInt()
+    for i = 1, var3225 do
+        local var3226 = nbs:ReadInt()
+        local var3227 = LuaCLS_EquipInfo.new()
+        var3227:Unserialize(nbs)
+        self.DictEquiped:Add(var3226, var3227)
     end
-    local var3224 = nbs:ReadInt()
-    for i = 1, var3224 do
-        local var3225 = nbs:ReadLong()
-        local var3226 = LuaCLS_EquipInfo.new()
-        var3226:Unserialize(nbs)
-        self.DictEquip:Add(var3225, var3226)
+    local var3228 = nbs:ReadInt()
+    for i = 1, var3228 do
+        local var3229 = nbs:ReadLong()
+        local var3230 = LuaCLS_EquipInfo.new()
+        var3230:Unserialize(nbs)
+        self.DictEquip:Add(var3229, var3230)
     end
     self.WarriorInfo:Unserialize(nbs)
 end
@@ -3704,11 +3710,11 @@ function LuaG2C_Equip_WarriorResolve:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3228 = nbs:ReadInt()
-    for i = 1, var3228 do
-        local var3229 = LuaCLS_AwardItem.new()
-        var3229:Unserialize(nbs)
-        self.ListAward:Add(var3229)
+    local var3232 = nbs:ReadInt()
+    for i = 1, var3232 do
+        local var3233 = LuaCLS_AwardItem.new()
+        var3233:Unserialize(nbs)
+        self.ListAward:Add(var3233)
     end
 end
 -- LuaG2C_Equip_WarriorResolve end
@@ -3834,11 +3840,11 @@ function LuaG2C_Equip_Intensify:Unserialize(buffer)
     self.Shuttle = nbs:ReadString()
     self.IntensityInfo:Unserialize(nbs)
     self.IntensifyResult = nbs:ReadInt()
-    local var3233 = nbs:ReadInt()
-    for i = 1, var3233 do
-        local var3234 = LuaCLS_AwardItem.new()
-        var3234:Unserialize(nbs)
-        self.AwardItem:Add(var3234)
+    local var3237 = nbs:ReadInt()
+    for i = 1, var3237 do
+        local var3238 = LuaCLS_AwardItem.new()
+        var3238:Unserialize(nbs)
+        self.AwardItem:Add(var3238)
     end
 end
 -- LuaG2C_Equip_Intensify end
@@ -3888,11 +3894,11 @@ function LuaCLS_EquipIntensifyInfo:Unserialize(nbs)
     self.IntensityInte = nbs:ReadFloat()
     self.IntensityHp = nbs:ReadInt()
     self.Gold = nbs:ReadInt()
-    local var3245 = nbs:ReadInt()
-    for i = 1, var3245 do
-        local var3246 = LuaCLS_ItemNeedInfo.new()
-        var3246:Unserialize(nbs)
-        self.ListItemNeedInfo:Add(var3246)
+    local var3249 = nbs:ReadInt()
+    for i = 1, var3249 do
+        local var3250 = LuaCLS_ItemNeedInfo.new()
+        var3250:Unserialize(nbs)
+        self.ListItemNeedInfo:Add(var3250)
     end
 end
 -- LuaCLS_EquipIntensifyInfo end
@@ -3941,11 +3947,11 @@ end
 function LuaCLS_WarriorCollect:Unserialize(nbs)
     self.CollectId = nbs:ReadInt()
     self.Valid = nbs:ReadBool()
-    local var3252 = nbs:ReadInt()
-    for i = 1, var3252 do
-        local var3253 = nbs:ReadInt()
-        local var3254 = nbs:ReadBool()
-        self.DictHas:Add(var3253, var3254)
+    local var3256 = nbs:ReadInt()
+    for i = 1, var3256 do
+        local var3257 = nbs:ReadInt()
+        local var3258 = nbs:ReadBool()
+        self.DictHas:Add(var3257, var3258)
     end
 end
 -- LuaCLS_WarriorCollect end
@@ -4054,11 +4060,11 @@ function LuaCLS_WarriorInfo:Unserialize(nbs)
     self.InArmy = nbs:ReadBool()
     self.InAffairs = nbs:ReadBool()
     self.InGrab = nbs:ReadBool()
-    local var3268 = nbs:ReadInt()
-    for i = 1, var3268 do
-        local var3269 = LuaCLS_SkillInfo.new()
-        var3269:Unserialize(nbs)
-        self.ListSkill:Add(var3269)
+    local var3272 = nbs:ReadInt()
+    for i = 1, var3272 do
+        local var3273 = LuaCLS_SkillInfo.new()
+        var3273:Unserialize(nbs)
+        self.ListSkill:Add(var3273)
     end
     self.AdvanceLv = nbs:ReadInt()
     self.BaseAtk = nbs:ReadFloat()
@@ -4066,41 +4072,41 @@ function LuaCLS_WarriorInfo:Unserialize(nbs)
     self.BaseHp = nbs:ReadInt()
     self.BaseInte = nbs:ReadFloat()
     self.BaseBreak = nbs:ReadFloat()
-    local var3276 = nbs:ReadInt()
-    for i = 1, var3276 do
-        local var3277 = nbs:ReadInt()
-        local var3278 = nbs:ReadFloat()
-        self.CombatProperty:Add(var3277, var3278)
+    local var3280 = nbs:ReadInt()
+    for i = 1, var3280 do
+        local var3281 = nbs:ReadInt()
+        local var3282 = nbs:ReadFloat()
+        self.CombatProperty:Add(var3281, var3282)
     end
     self.CurrentHp = nbs:ReadInt()
     self.CombatPower = nbs:ReadInt()
-    local var3281 = nbs:ReadInt()
-    for i = 1, var3281 do
-        local var3282 = nbs:ReadInt()
-        local var3283 = LuaCLS_EquipInfo.new()
-        var3283:Unserialize(nbs)
-        self.DictEquiped:Add(var3282, var3283)
+    local var3285 = nbs:ReadInt()
+    for i = 1, var3285 do
+        local var3286 = nbs:ReadInt()
+        local var3287 = LuaCLS_EquipInfo.new()
+        var3287:Unserialize(nbs)
+        self.DictEquiped:Add(var3286, var3287)
     end
     self.Satr = nbs:ReadInt()
     self.WakeLevel = nbs:ReadInt()
-    local var3286 = nbs:ReadInt()
-    for i = 1, var3286 do
-        local var3287 = nbs:ReadInt()
-        local var3288 = nbs:ReadInt()
-        self.DictWake:Add(var3287, var3288)
+    local var3290 = nbs:ReadInt()
+    for i = 1, var3290 do
+        local var3291 = nbs:ReadInt()
+        local var3292 = nbs:ReadInt()
+        self.DictWake:Add(var3291, var3292)
     end
-    local var3289 = nbs:ReadInt()
-    for i = 1, var3289 do
-        local var3290 = nbs:ReadInt()
-        local var3291 = nbs:ReadFloat()
-        self.DictStremgthen:Add(var3290, var3291)
+    local var3293 = nbs:ReadInt()
+    for i = 1, var3293 do
+        local var3294 = nbs:ReadInt()
+        local var3295 = nbs:ReadFloat()
+        self.DictStremgthen:Add(var3294, var3295)
     end
-    local var3292 = nbs:ReadInt()
-    for i = 1, var3292 do
-        local var3293 = nbs:ReadInt()
-        local var3294 = LuaCLS_WarriorCollect.new()
-        var3294:Unserialize(nbs)
-        self.DictWarriorCollect:Add(var3293, var3294)
+    local var3296 = nbs:ReadInt()
+    for i = 1, var3296 do
+        local var3297 = nbs:ReadInt()
+        local var3298 = LuaCLS_WarriorCollect.new()
+        var3298:Unserialize(nbs)
+        self.DictWarriorCollect:Add(var3297, var3298)
     end
 end
 -- LuaCLS_WarriorInfo end
@@ -4141,16 +4147,16 @@ function LuaG2C_Warrior_WarriorList:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3295 = nbs:ReadInt()
-    for i = 1, var3295 do
-        local var3296 = LuaCLS_WarriorInfo.new()
-        var3296:Unserialize(nbs)
-        self.ListWarrior:Add(var3296)
+    local var3299 = nbs:ReadInt()
+    for i = 1, var3299 do
+        local var3300 = LuaCLS_WarriorInfo.new()
+        var3300:Unserialize(nbs)
+        self.ListWarrior:Add(var3300)
     end
-    local var3297 = nbs:ReadInt()
-    for i = 1, var3297 do
-        local var3298 = nbs:ReadLong()
-        self.ListInBattle:Add(var3298)
+    local var3301 = nbs:ReadInt()
+    for i = 1, var3301 do
+        local var3302 = nbs:ReadLong()
+        self.ListInBattle:Add(var3302)
     end
 end
 -- LuaG2C_Warrior_WarriorList end
@@ -4386,11 +4392,11 @@ function LuaG2C_Warrior_ImproveInfo:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3304 = nbs:ReadInt()
-    for i = 1, var3304 do
-        local var3305 = LuaCLS_ItemInfo.new()
-        var3305:Unserialize(nbs)
-        self.ListItem:Add(var3305)
+    local var3308 = nbs:ReadInt()
+    for i = 1, var3308 do
+        local var3309 = LuaCLS_ItemInfo.new()
+        var3309:Unserialize(nbs)
+        self.ListItem:Add(var3309)
     end
 end
 -- LuaG2C_Warrior_ImproveInfo end
@@ -4602,11 +4608,11 @@ function LuaG2C_Warrior_WakeInfo:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3306 = nbs:ReadInt()
-    for i = 1, var3306 do
-        local var3307 = LuaCLS_ItemNeedInfo.new()
-        var3307:Unserialize(nbs)
-        self.ListItemNeedInfo:Add(var3307)
+    local var3310 = nbs:ReadInt()
+    for i = 1, var3310 do
+        local var3311 = LuaCLS_ItemNeedInfo.new()
+        var3311:Unserialize(nbs)
+        self.ListItemNeedInfo:Add(var3311)
     end
     self.maxStoryId = nbs:ReadInt()
 end
@@ -4812,12 +4818,12 @@ function LuaG2C_BuildingPlayer_List:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3329 = nbs:ReadInt()
-    for i = 1, var3329 do
-        local var3330 = nbs:ReadInt()
-        local var3331 = LuaCLS_BuildingPlayerInfo.new()
-        var3331:Unserialize(nbs)
-        self.DictBuilding:Add(var3330, var3331)
+    local var3333 = nbs:ReadInt()
+    for i = 1, var3333 do
+        local var3334 = nbs:ReadInt()
+        local var3335 = LuaCLS_BuildingPlayerInfo.new()
+        var3335:Unserialize(nbs)
+        self.DictBuilding:Add(var3334, var3335)
     end
 end
 -- LuaG2C_BuildingPlayer_List end
@@ -4838,12 +4844,12 @@ function LuaG2C_BuildingPlayer_PushInfoSimple:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3332 = nbs:ReadInt()
-    for i = 1, var3332 do
-        local var3333 = nbs:ReadInt()
-        local var3334 = LuaCLS_BuildingPlayerInfoSimple.new()
-        var3334:Unserialize(nbs)
-        self.DictBuilding:Add(var3333, var3334)
+    local var3336 = nbs:ReadInt()
+    for i = 1, var3336 do
+        local var3337 = nbs:ReadInt()
+        local var3338 = LuaCLS_BuildingPlayerInfoSimple.new()
+        var3338:Unserialize(nbs)
+        self.DictBuilding:Add(var3337, var3338)
     end
 end
 -- LuaG2C_BuildingPlayer_PushInfoSimple end
@@ -4926,12 +4932,12 @@ function LuaG2C_BuildingPlayer_HarvestAll:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3337 = nbs:ReadInt()
-    for i = 1, var3337 do
-        local var3338 = nbs:ReadInt()
-        local var3339 = LuaCLS_BuildingPlayerInfo.new()
-        var3339:Unserialize(nbs)
-        self.DictBuilding:Add(var3338, var3339)
+    local var3341 = nbs:ReadInt()
+    for i = 1, var3341 do
+        local var3342 = nbs:ReadInt()
+        local var3343 = LuaCLS_BuildingPlayerInfo.new()
+        var3343:Unserialize(nbs)
+        self.DictBuilding:Add(var3342, var3343)
     end
 end
 -- LuaG2C_BuildingPlayer_HarvestAll end
@@ -5019,11 +5025,11 @@ function LuaCLS_SmithSimple:Serialize(nbs)
 end
 function LuaCLS_SmithSimple:Unserialize(nbs)
     self.Id = nbs:ReadInt()
-    local var3343 = nbs:ReadInt()
-    for i = 1, var3343 do
-        local var3344 = LuaCLS_ItemNeedInfo.new()
-        var3344:Unserialize(nbs)
-        self.ListItemNeedInfo:Add(var3344)
+    local var3347 = nbs:ReadInt()
+    for i = 1, var3347 do
+        local var3348 = LuaCLS_ItemNeedInfo.new()
+        var3348:Unserialize(nbs)
+        self.ListItemNeedInfo:Add(var3348)
     end
     self.Lock = nbs:ReadBool()
     self.num = nbs:ReadInt()
@@ -5065,12 +5071,12 @@ function LuaG2C_Smith_Start:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3347 = nbs:ReadInt()
-    for i = 1, var3347 do
-        local var3348 = nbs:ReadInt()
-        local var3349 = LuaCLS_SmithSimple.new()
-        var3349:Unserialize(nbs)
-        self.DicSmithInfo:Add(var3348, var3349)
+    local var3351 = nbs:ReadInt()
+    for i = 1, var3351 do
+        local var3352 = nbs:ReadInt()
+        local var3353 = LuaCLS_SmithSimple.new()
+        var3353:Unserialize(nbs)
+        self.DicSmithInfo:Add(var3352, var3353)
     end
 end
 -- LuaG2C_Smith_Start end
@@ -5115,17 +5121,17 @@ function LuaG2C_Smith_Do:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3350 = nbs:ReadInt()
-    for i = 1, var3350 do
-        local var3351 = LuaCLS_AwardItem.new()
-        var3351:Unserialize(nbs)
-        self.Items:Add(var3351)
+    local var3354 = nbs:ReadInt()
+    for i = 1, var3354 do
+        local var3355 = LuaCLS_AwardItem.new()
+        var3355:Unserialize(nbs)
+        self.Items:Add(var3355)
     end
-    local var3352 = nbs:ReadInt()
-    for i = 1, var3352 do
-        local var3353 = LuaCLS_EquipInfo.new()
-        var3353:Unserialize(nbs)
-        self.EquipInfo:Add(var3353)
+    local var3356 = nbs:ReadInt()
+    for i = 1, var3356 do
+        local var3357 = LuaCLS_EquipInfo.new()
+        var3357:Unserialize(nbs)
+        self.EquipInfo:Add(var3357)
     end
 end
 -- LuaG2C_Smith_Do end
@@ -5196,12 +5202,12 @@ function LuaG2C_Science_List:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3360 = nbs:ReadInt()
-    for i = 1, var3360 do
-        local var3361 = nbs:ReadInt()
-        local var3362 = LuaCLS_ScienceInfo.new()
-        var3362:Unserialize(nbs)
-        self.DictScience:Add(var3361, var3362)
+    local var3364 = nbs:ReadInt()
+    for i = 1, var3364 do
+        local var3365 = nbs:ReadInt()
+        local var3366 = LuaCLS_ScienceInfo.new()
+        var3366:Unserialize(nbs)
+        self.DictScience:Add(var3365, var3366)
     end
 end
 -- LuaG2C_Science_List end
@@ -5525,11 +5531,11 @@ function LuaG2C_Player_SpeedupInfo:Unserialize(buffer)
     self.Shuttle = nbs:ReadString()
     self.EndMs = nbs:ReadLong()
     self.CompleteNeed = nbs:ReadLong()
-    local var3379 = nbs:ReadInt()
-    for i = 1, var3379 do
-        local var3380 = LuaCLS_ItemInfo.new()
-        var3380:Unserialize(nbs)
-        self.ListItem:Add(var3380)
+    local var3383 = nbs:ReadInt()
+    for i = 1, var3383 do
+        local var3384 = LuaCLS_ItemInfo.new()
+        var3384:Unserialize(nbs)
+        self.ListItem:Add(var3384)
     end
 end
 -- LuaG2C_Player_SpeedupInfo end
@@ -5702,11 +5708,11 @@ function LuaG2C_Player_SpeedupBuy:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3385 = nbs:ReadInt()
-    for i = 1, var3385 do
-        local var3386 = LuaCLS_ItemInfo.new()
-        var3386:Unserialize(nbs)
-        self.ListItem:Add(var3386)
+    local var3389 = nbs:ReadInt()
+    for i = 1, var3389 do
+        local var3390 = LuaCLS_ItemInfo.new()
+        var3390:Unserialize(nbs)
+        self.ListItem:Add(var3390)
     end
 end
 -- LuaG2C_Player_SpeedupBuy end
@@ -5765,11 +5771,11 @@ function LuaG2C_Player_Speedup:Unserialize(buffer)
     self.Building:Unserialize(nbs)
     self.RecruitInfo:Unserialize(nbs)
     self.ScienceInfo:Unserialize(nbs)
-    local var3391 = nbs:ReadInt()
-    for i = 1, var3391 do
-        local var3392 = LuaCLS_ItemInfo.new()
-        var3392:Unserialize(nbs)
-        self.ListItem:Add(var3392)
+    local var3395 = nbs:ReadInt()
+    for i = 1, var3395 do
+        local var3396 = LuaCLS_ItemInfo.new()
+        var3396:Unserialize(nbs)
+        self.ListItem:Add(var3396)
     end
     self.EndMs = nbs:ReadLong()
     self.CompleteNeed = nbs:ReadLong()
@@ -5956,12 +5962,12 @@ function LuaG2C_City_ListCity:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.CapitalCity = nbs:ReadInt()
-    local var3412 = nbs:ReadInt()
-    for i = 1, var3412 do
-        local var3413 = nbs:ReadInt()
-        local var3414 = LuaCLS_CityInfoBase.new()
-        var3414:Unserialize(nbs)
-        self.DictCity:Add(var3413, var3414)
+    local var3416 = nbs:ReadInt()
+    for i = 1, var3416 do
+        local var3417 = nbs:ReadInt()
+        local var3418 = LuaCLS_CityInfoBase.new()
+        var3418:Unserialize(nbs)
+        self.DictCity:Add(var3417, var3418)
     end
 end
 -- LuaG2C_City_ListCity end
@@ -6061,12 +6067,12 @@ function LuaCLS_CityBuildingInfo:Unserialize(nbs)
     self.Pos = nbs:ReadInt()
     self.BuildingType = nbs:ReadInt()
     self.Level = nbs:ReadInt()
-    local var3425 = nbs:ReadInt()
-    for i = 1, var3425 do
-        local var3426 = nbs:ReadInt()
-        local var3427 = LuaCLS_BuildingItemNeedInfo.new()
-        var3427:Unserialize(nbs)
-        self.DictNeedInfo:Add(var3426, var3427)
+    local var3429 = nbs:ReadInt()
+    for i = 1, var3429 do
+        local var3430 = nbs:ReadInt()
+        local var3431 = LuaCLS_BuildingItemNeedInfo.new()
+        var3431:Unserialize(nbs)
+        self.DictNeedInfo:Add(var3430, var3431)
     end
 end
 -- LuaCLS_CityBuildingInfo end
@@ -6108,12 +6114,12 @@ function LuaG2C_CityBuilding_List:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3428 = nbs:ReadInt()
-    for i = 1, var3428 do
-        local var3429 = nbs:ReadInt()
-        local var3430 = LuaCLS_CityBuildingInfo.new()
-        var3430:Unserialize(nbs)
-        self.DictBuilding:Add(var3429, var3430)
+    local var3432 = nbs:ReadInt()
+    for i = 1, var3432 do
+        local var3433 = nbs:ReadInt()
+        local var3434 = LuaCLS_CityBuildingInfo.new()
+        var3434:Unserialize(nbs)
+        self.DictBuilding:Add(var3433, var3434)
     end
 end
 -- LuaG2C_CityBuilding_List end
@@ -6200,12 +6206,12 @@ function LuaCLS_CampWallInfo:Unserialize(nbs)
     self.Bowls = nbs:ReadInt()
     self.Frise = nbs:ReadInt()
     self.Trap = nbs:ReadInt()
-    local var3438 = nbs:ReadInt()
-    for i = 1, var3438 do
-        local var3439 = nbs:ReadInt()
-        local var3440 = LuaCLS_ItemNeedInfo.new()
-        var3440:Unserialize(nbs)
-        self.DictNeedInfo:Add(var3439, var3440)
+    local var3442 = nbs:ReadInt()
+    for i = 1, var3442 do
+        local var3443 = nbs:ReadInt()
+        local var3444 = LuaCLS_ItemNeedInfo.new()
+        var3444:Unserialize(nbs)
+        self.DictNeedInfo:Add(var3443, var3444)
     end
 end
 -- LuaCLS_CampWallInfo end
@@ -6232,12 +6238,12 @@ end
 function LuaCLS_WallInfo:Unserialize(nbs)
     self.Uid = nbs:ReadInt()
     self.Level = nbs:ReadInt()
-    local var3443 = nbs:ReadInt()
-    for i = 1, var3443 do
-        local var3444 = nbs:ReadInt()
-        local var3445 = LuaCLS_CampWallInfo.new()
-        var3445:Unserialize(nbs)
-        self.DictCampWall:Add(var3444, var3445)
+    local var3447 = nbs:ReadInt()
+    for i = 1, var3447 do
+        local var3448 = nbs:ReadInt()
+        local var3449 = LuaCLS_CampWallInfo.new()
+        var3449:Unserialize(nbs)
+        self.DictCampWall:Add(var3448, var3449)
     end
 end
 -- LuaCLS_WallInfo end
@@ -6430,12 +6436,12 @@ function LuaCLS_CampInfo:Serialize(nbs)
 end
 function LuaCLS_CampInfo:Unserialize(nbs)
     self.Uid = nbs:ReadInt()
-    local var3461 = nbs:ReadInt()
-    for i = 1, var3461 do
-        local var3462 = nbs:ReadInt()
-        local var3463 = LuaCLS_CampNpcInfo.new()
-        var3463:Unserialize(nbs)
-        self.DictCampNpc:Add(var3462, var3463)
+    local var3465 = nbs:ReadInt()
+    for i = 1, var3465 do
+        local var3466 = nbs:ReadInt()
+        local var3467 = LuaCLS_CampNpcInfo.new()
+        var3467:Unserialize(nbs)
+        self.DictCampNpc:Add(var3466, var3467)
     end
 end
 -- LuaCLS_CampInfo end
@@ -6479,12 +6485,12 @@ function LuaG2C_Camp_Info:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.CityUid = nbs:ReadInt()
-    local var3465 = nbs:ReadInt()
-    for i = 1, var3465 do
-        local var3466 = nbs:ReadInt()
-        local var3467 = LuaCLS_CampInfo.new()
-        var3467:Unserialize(nbs)
-        self.DictCamp:Add(var3466, var3467)
+    local var3469 = nbs:ReadInt()
+    for i = 1, var3469 do
+        local var3470 = nbs:ReadInt()
+        local var3471 = LuaCLS_CampInfo.new()
+        var3471:Unserialize(nbs)
+        self.DictCamp:Add(var3470, var3471)
     end
 end
 -- LuaG2C_Camp_Info end
@@ -6530,17 +6536,17 @@ function LuaG2C_City_ShopInfo:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.CityUid = nbs:ReadInt()
-    local var3469 = nbs:ReadInt()
-    for i = 1, var3469 do
-        local var3470 = LuaCLS_ShopGoodsInfo.new()
-        var3470:Unserialize(nbs)
-        self.GoodsInfo:Add(var3470)
+    local var3473 = nbs:ReadInt()
+    for i = 1, var3473 do
+        local var3474 = LuaCLS_ShopGoodsInfo.new()
+        var3474:Unserialize(nbs)
+        self.GoodsInfo:Add(var3474)
     end
-    local var3471 = nbs:ReadInt()
-    for i = 1, var3471 do
-        local var3472 = nbs:ReadInt()
-        local var3473 = nbs:ReadInt()
-        self.SpecialtyGoodsInfo:Add(var3472, var3473)
+    local var3475 = nbs:ReadInt()
+    for i = 1, var3475 do
+        local var3476 = nbs:ReadInt()
+        local var3477 = nbs:ReadInt()
+        self.SpecialtyGoodsInfo:Add(var3476, var3477)
     end
     self.Contribution = nbs:ReadInt()
 end
@@ -6590,19 +6596,19 @@ function LuaG2C_City_ShopBuy:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3475 = nbs:ReadInt()
-    for i = 1, var3475 do
-        local var3476 = LuaCLS_ShopGoodsInfo.new()
-        var3476:Unserialize(nbs)
-        self.GoodsInfo:Add(var3476)
+    local var3479 = nbs:ReadInt()
+    for i = 1, var3479 do
+        local var3480 = LuaCLS_ShopGoodsInfo.new()
+        var3480:Unserialize(nbs)
+        self.GoodsInfo:Add(var3480)
     end
     self.Contribution = nbs:ReadInt()
     self.CityUid = nbs:ReadInt()
-    local var3479 = nbs:ReadInt()
-    for i = 1, var3479 do
-        local var3480 = nbs:ReadInt()
-        local var3481 = nbs:ReadInt()
-        self.SpecialtyGoodsInfo:Add(var3480, var3481)
+    local var3483 = nbs:ReadInt()
+    for i = 1, var3483 do
+        local var3484 = nbs:ReadInt()
+        local var3485 = nbs:ReadInt()
+        self.SpecialtyGoodsInfo:Add(var3484, var3485)
     end
 end
 -- LuaG2C_City_ShopBuy end
@@ -6628,12 +6634,12 @@ function LuaCLS_ShopPageInfo:Serialize(nbs)
 end
 function LuaCLS_ShopPageInfo:Unserialize(nbs)
     self.Id = nbs:ReadInt()
-    local var3483 = nbs:ReadInt()
-    for i = 1, var3483 do
-        local var3484 = nbs:ReadInt()
-        local var3485 = LuaCLS_ShopGoodsInfo.new()
-        var3485:Unserialize(nbs)
-        self.DictGoods:Add(var3484, var3485)
+    local var3487 = nbs:ReadInt()
+    for i = 1, var3487 do
+        local var3488 = nbs:ReadInt()
+        local var3489 = LuaCLS_ShopGoodsInfo.new()
+        var3489:Unserialize(nbs)
+        self.DictGoods:Add(var3488, var3489)
     end
     self.Cooldown = nbs:ReadInt()
 end
@@ -6698,12 +6704,12 @@ function LuaG2C_Shop_List:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3490 = nbs:ReadInt()
-    for i = 1, var3490 do
-        local var3491 = nbs:ReadInt()
-        local var3492 = LuaCLS_ShopPageInfo.new()
-        var3492:Unserialize(nbs)
-        self.DictPage:Add(var3491, var3492)
+    local var3494 = nbs:ReadInt()
+    for i = 1, var3494 do
+        local var3495 = nbs:ReadInt()
+        local var3496 = LuaCLS_ShopPageInfo.new()
+        var3496:Unserialize(nbs)
+        self.DictPage:Add(var3495, var3496)
     end
     self.RefreshTotal = nbs:ReadInt()
     self.RefreshCost = nbs:ReadInt()
@@ -6749,12 +6755,12 @@ function LuaG2C_Shop_Buy:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3495 = nbs:ReadInt()
-    for i = 1, var3495 do
-        local var3496 = nbs:ReadInt()
-        local var3497 = LuaCLS_ShopPageInfo.new()
-        var3497:Unserialize(nbs)
-        self.DictPage:Add(var3496, var3497)
+    local var3499 = nbs:ReadInt()
+    for i = 1, var3499 do
+        local var3500 = nbs:ReadInt()
+        local var3501 = LuaCLS_ShopPageInfo.new()
+        var3501:Unserialize(nbs)
+        self.DictPage:Add(var3500, var3501)
     end
 end
 -- LuaG2C_Shop_Buy end
@@ -6841,12 +6847,12 @@ function LuaG2C_Refresh_Diamond_Store:Unserialize(buffer)
     self.Shuttle = nbs:ReadString()
     self.RefreshTotal = nbs:ReadInt()
     self.RefreshCost = nbs:ReadInt()
-    local var3501 = nbs:ReadInt()
-    for i = 1, var3501 do
-        local var3502 = nbs:ReadInt()
-        local var3503 = LuaCLS_ShopPageInfo.new()
-        var3503:Unserialize(nbs)
-        self.DictPage:Add(var3502, var3503)
+    local var3505 = nbs:ReadInt()
+    for i = 1, var3505 do
+        local var3506 = nbs:ReadInt()
+        local var3507 = LuaCLS_ShopPageInfo.new()
+        var3507:Unserialize(nbs)
+        self.DictPage:Add(var3506, var3507)
     end
 end
 -- LuaG2C_Refresh_Diamond_Store end
@@ -7038,11 +7044,11 @@ function LuaG2C_Exchange_List:Unserialize(buffer)
     self.DesignMode = nbs:ReadInt()
     self.PageIndex = nbs:ReadInt()
     self.DesignCount = nbs:ReadInt()
-    local var3521 = nbs:ReadInt()
-    for i = 1, var3521 do
-        local var3522 = LuaCLS_DesignInfo.new()
-        var3522:Unserialize(nbs)
-        self.ListDesign:Add(var3522)
+    local var3525 = nbs:ReadInt()
+    for i = 1, var3525 do
+        local var3526 = LuaCLS_DesignInfo.new()
+        var3526:Unserialize(nbs)
+        self.ListDesign:Add(var3526)
     end
     self.TransactionInfo:Unserialize(nbs)
 end
@@ -7247,11 +7253,11 @@ function LuaG2C_GetTransactionLogList:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.Type = nbs:ReadInt()
-    local var3533 = nbs:ReadInt()
-    for i = 1, var3533 do
-        local var3534 = LuaCLS_TransactionLog.new()
-        var3534:Unserialize(nbs)
-        self.ListTransactionLog:Add(var3534)
+    local var3537 = nbs:ReadInt()
+    for i = 1, var3537 do
+        local var3538 = LuaCLS_TransactionLog.new()
+        var3538:Unserialize(nbs)
+        self.ListTransactionLog:Add(var3538)
     end
 end
 -- LuaG2C_GetTransactionLogList end
@@ -7357,12 +7363,12 @@ function LuaG2C_Auction_ListItem:Unserialize(buffer)
     self.SubType = nbs:ReadInt()
     self.PageIndex = nbs:ReadInt()
     self.TotalCount = nbs:ReadInt()
-    local var3548 = nbs:ReadInt()
-    for i = 1, var3548 do
-        local var3549 = nbs:ReadLong()
-        local var3550 = LuaCLS_AuctionInfoItem.new()
-        var3550:Unserialize(nbs)
-        self.DictItem:Add(var3549, var3550)
+    local var3552 = nbs:ReadInt()
+    for i = 1, var3552 do
+        local var3553 = nbs:ReadLong()
+        local var3554 = LuaCLS_AuctionInfoItem.new()
+        var3554:Unserialize(nbs)
+        self.DictItem:Add(var3553, var3554)
     end
 end
 -- LuaG2C_Auction_ListItem end
@@ -7566,12 +7572,12 @@ function LuaG2C_Auction_ListEquip:Unserialize(buffer)
     self.SubType = nbs:ReadInt()
     self.PageIndex = nbs:ReadInt()
     self.TotalCount = nbs:ReadInt()
-    local var3562 = nbs:ReadInt()
-    for i = 1, var3562 do
-        local var3563 = nbs:ReadLong()
-        local var3564 = LuaCLS_AuctionInfoEquip.new()
-        var3564:Unserialize(nbs)
-        self.DictEquip:Add(var3563, var3564)
+    local var3566 = nbs:ReadInt()
+    for i = 1, var3566 do
+        local var3567 = nbs:ReadLong()
+        local var3568 = LuaCLS_AuctionInfoEquip.new()
+        var3568:Unserialize(nbs)
+        self.DictEquip:Add(var3567, var3568)
     end
 end
 -- LuaG2C_Auction_ListEquip end
@@ -7773,12 +7779,12 @@ function LuaG2C_Auction_ListWarrior:Unserialize(buffer)
     self.SubType = nbs:ReadInt()
     self.PageIndex = nbs:ReadInt()
     self.TotalCount = nbs:ReadInt()
-    local var3575 = nbs:ReadInt()
-    for i = 1, var3575 do
-        local var3576 = nbs:ReadLong()
-        local var3577 = LuaCLS_AuctionInfoWarrior.new()
-        var3577:Unserialize(nbs)
-        self.DictWarrior:Add(var3576, var3577)
+    local var3579 = nbs:ReadInt()
+    for i = 1, var3579 do
+        local var3580 = nbs:ReadLong()
+        local var3581 = LuaCLS_AuctionInfoWarrior.new()
+        var3581:Unserialize(nbs)
+        self.DictWarrior:Add(var3580, var3581)
     end
 end
 -- LuaG2C_Auction_ListWarrior end
@@ -7947,26 +7953,26 @@ function LuaG2C_Auction_Search:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3581 = nbs:ReadInt()
-    for i = 1, var3581 do
-        local var3582 = nbs:ReadLong()
-        local var3583 = LuaCLS_AuctionInfoItem.new()
-        var3583:Unserialize(nbs)
-        self.DictItem:Add(var3582, var3583)
+    local var3585 = nbs:ReadInt()
+    for i = 1, var3585 do
+        local var3586 = nbs:ReadLong()
+        local var3587 = LuaCLS_AuctionInfoItem.new()
+        var3587:Unserialize(nbs)
+        self.DictItem:Add(var3586, var3587)
     end
-    local var3584 = nbs:ReadInt()
-    for i = 1, var3584 do
-        local var3585 = nbs:ReadLong()
-        local var3586 = LuaCLS_AuctionInfoEquip.new()
-        var3586:Unserialize(nbs)
-        self.DictEquip:Add(var3585, var3586)
+    local var3588 = nbs:ReadInt()
+    for i = 1, var3588 do
+        local var3589 = nbs:ReadLong()
+        local var3590 = LuaCLS_AuctionInfoEquip.new()
+        var3590:Unserialize(nbs)
+        self.DictEquip:Add(var3589, var3590)
     end
-    local var3587 = nbs:ReadInt()
-    for i = 1, var3587 do
-        local var3588 = nbs:ReadLong()
-        local var3589 = LuaCLS_AuctionInfoWarrior.new()
-        var3589:Unserialize(nbs)
-        self.DictWarrior:Add(var3588, var3589)
+    local var3591 = nbs:ReadInt()
+    for i = 1, var3591 do
+        local var3592 = nbs:ReadLong()
+        local var3593 = LuaCLS_AuctionInfoWarrior.new()
+        var3593:Unserialize(nbs)
+        self.DictWarrior:Add(var3592, var3593)
     end
 end
 -- LuaG2C_Auction_Search end
@@ -8038,11 +8044,11 @@ function LuaG2C_Auction_GetLog:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.AuctionLogType = nbs:ReadInt()
-    local var3596 = nbs:ReadInt()
-    for i = 1, var3596 do
-        local var3597 = LuaCLS_AuctionLog.new()
-        var3597:Unserialize(nbs)
-        self.ListAuctionLog:Add(var3597)
+    local var3600 = nbs:ReadInt()
+    for i = 1, var3600 do
+        local var3601 = LuaCLS_AuctionLog.new()
+        var3601:Unserialize(nbs)
+        self.ListAuctionLog:Add(var3601)
     end
 end
 -- LuaG2C_Auction_GetLog end
@@ -8125,11 +8131,11 @@ function LuaG2C_Draw_Luck:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3599 = nbs:ReadInt()
-    for i = 1, var3599 do
-        local var3600 = LuaCLS_AwardItem.new()
-        var3600:Unserialize(nbs)
-        self.ListAward:Add(var3600)
+    local var3603 = nbs:ReadInt()
+    for i = 1, var3603 do
+        local var3604 = LuaCLS_AwardItem.new()
+        var3604:Unserialize(nbs)
+        self.ListAward:Add(var3604)
     end
 end
 -- LuaG2C_Draw_Luck end
@@ -8169,11 +8175,11 @@ function LuaG2C_Draw_GetAward:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3601 = nbs:ReadInt()
-    for i = 1, var3601 do
-        local var3602 = LuaCLS_AwardItem.new()
-        var3602:Unserialize(nbs)
-        self.ListAward:Add(var3602)
+    local var3605 = nbs:ReadInt()
+    for i = 1, var3605 do
+        local var3606 = LuaCLS_AwardItem.new()
+        var3606:Unserialize(nbs)
+        self.ListAward:Add(var3606)
     end
 end
 -- LuaG2C_Draw_GetAward end
@@ -8217,11 +8223,11 @@ function LuaG2C_Cdkey_Use:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.Cdkey = nbs:ReadString()
-    local var3604 = nbs:ReadInt()
-    for i = 1, var3604 do
-        local var3605 = LuaCLS_AwardItem.new()
-        var3605:Unserialize(nbs)
-        self.ListAward:Add(var3605)
+    local var3608 = nbs:ReadInt()
+    for i = 1, var3608 do
+        local var3609 = LuaCLS_AwardItem.new()
+        var3609:Unserialize(nbs)
+        self.ListAward:Add(var3609)
     end
 end
 -- LuaG2C_Cdkey_Use end
@@ -8298,11 +8304,11 @@ function LuaG2C_Top_Toplist:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3612 = nbs:ReadInt()
-    for i = 1, var3612 do
-        local var3613 = LuaCLS_TopData.new()
-        var3613:Unserialize(nbs)
-        self.TopDataList:Add(var3613)
+    local var3616 = nbs:ReadInt()
+    for i = 1, var3616 do
+        local var3617 = LuaCLS_TopData.new()
+        var3617:Unserialize(nbs)
+        self.TopDataList:Add(var3617)
     end
     self.playerTopData:Unserialize(nbs)
     self.type = nbs:ReadInt()
@@ -8425,11 +8431,11 @@ function LuaG2C_Task_List:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.TaskType = nbs:ReadByte()
-    local var3626 = nbs:ReadInt()
-    for i = 1, var3626 do
-        local var3627 = LuaCLS_TaskInfo.new()
-        var3627:Unserialize(nbs)
-        self.ListTask:Add(var3627)
+    local var3630 = nbs:ReadInt()
+    for i = 1, var3630 do
+        local var3631 = LuaCLS_TaskInfo.new()
+        var3631:Unserialize(nbs)
+        self.ListTask:Add(var3631)
     end
 end
 -- LuaG2C_Task_List end
@@ -8473,11 +8479,11 @@ function LuaG2C_Task_Get:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3628 = nbs:ReadInt()
-    for i = 1, var3628 do
-        local var3629 = LuaCLS_AwardItem.new()
-        var3629:Unserialize(nbs)
-        self.ListAward:Add(var3629)
+    local var3632 = nbs:ReadInt()
+    for i = 1, var3632 do
+        local var3633 = LuaCLS_AwardItem.new()
+        var3633:Unserialize(nbs)
+        self.ListAward:Add(var3633)
     end
 end
 -- LuaG2C_Task_Get end
@@ -8519,11 +8525,11 @@ function LuaG2C_Task_GetAll:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3630 = nbs:ReadInt()
-    for i = 1, var3630 do
-        local var3631 = LuaCLS_AwardItem.new()
-        var3631:Unserialize(nbs)
-        self.ListAward:Add(var3631)
+    local var3634 = nbs:ReadInt()
+    for i = 1, var3634 do
+        local var3635 = LuaCLS_AwardItem.new()
+        var3635:Unserialize(nbs)
+        self.ListAward:Add(var3635)
     end
 end
 -- LuaG2C_Task_GetAll end
@@ -8565,18 +8571,18 @@ function LuaG2C_Task_Everyday:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3632 = nbs:ReadInt()
-    for i = 1, var3632 do
-        local var3633 = LuaCLS_TaskInfo.new()
-        var3633:Unserialize(nbs)
-        self.ListTask:Add(var3633)
+    local var3636 = nbs:ReadInt()
+    for i = 1, var3636 do
+        local var3637 = LuaCLS_TaskInfo.new()
+        var3637:Unserialize(nbs)
+        self.ListTask:Add(var3637)
     end
     self.Activity = nbs:ReadInt()
-    local var3635 = nbs:ReadInt()
-    for i = 1, var3635 do
-        local var3636 = nbs:ReadInt()
-        local var3637 = nbs:ReadInt()
-        self.DictTaskActivity:Add(var3636, var3637)
+    local var3639 = nbs:ReadInt()
+    for i = 1, var3639 do
+        local var3640 = nbs:ReadInt()
+        local var3641 = nbs:ReadInt()
+        self.DictTaskActivity:Add(var3640, var3641)
     end
 end
 -- LuaG2C_Task_Everyday end
@@ -8618,11 +8624,11 @@ function LuaG2C_Task_EverydayAward:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3638 = nbs:ReadInt()
-    for i = 1, var3638 do
-        local var3639 = LuaCLS_AwardItem.new()
-        var3639:Unserialize(nbs)
-        self.ListAward:Add(var3639)
+    local var3642 = nbs:ReadInt()
+    for i = 1, var3642 do
+        local var3643 = LuaCLS_AwardItem.new()
+        var3643:Unserialize(nbs)
+        self.ListAward:Add(var3643)
     end
 end
 -- LuaG2C_Task_EverydayAward end
@@ -8734,11 +8740,11 @@ function LuaG2C_Sign:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.SignInfo:Unserialize(nbs)
-    local var3648 = nbs:ReadInt()
-    for i = 1, var3648 do
-        local var3649 = LuaCLS_AwardItem.new()
-        var3649:Unserialize(nbs)
-        self.ListAward:Add(var3649)
+    local var3652 = nbs:ReadInt()
+    for i = 1, var3652 do
+        local var3653 = LuaCLS_AwardItem.new()
+        var3653:Unserialize(nbs)
+        self.ListAward:Add(var3653)
     end
 end
 -- LuaG2C_Sign end
@@ -8780,11 +8786,11 @@ function LuaG2C_ReSign:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.SignInfo:Unserialize(nbs)
-    local var3651 = nbs:ReadInt()
-    for i = 1, var3651 do
-        local var3652 = LuaCLS_AwardItem.new()
-        var3652:Unserialize(nbs)
-        self.ListAward:Add(var3652)
+    local var3655 = nbs:ReadInt()
+    for i = 1, var3655 do
+        local var3656 = LuaCLS_AwardItem.new()
+        var3656:Unserialize(nbs)
+        self.ListAward:Add(var3656)
     end
 end
 -- LuaG2C_ReSign end
@@ -8843,11 +8849,11 @@ function LuaG2C_Buff_Info:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3655 = nbs:ReadInt()
-    for i = 1, var3655 do
-        local var3656 = LuaCLS_BuffInfo.new()
-        var3656:Unserialize(nbs)
-        self.Info:Add(var3656)
+    local var3659 = nbs:ReadInt()
+    for i = 1, var3659 do
+        local var3660 = LuaCLS_BuffInfo.new()
+        var3660:Unserialize(nbs)
+        self.Info:Add(var3660)
     end
 end
 -- LuaG2C_Buff_Info end
@@ -8910,12 +8916,12 @@ function LuaG2C_Acitvity_List:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3661 = nbs:ReadInt()
-    for i = 1, var3661 do
-        local var3662 = nbs:ReadInt()
-        local var3663 = LuaCLS_AcitvityInfo.new()
-        var3663:Unserialize(nbs)
-        self.ListInfo:Add(var3662, var3663)
+    local var3665 = nbs:ReadInt()
+    for i = 1, var3665 do
+        local var3666 = nbs:ReadInt()
+        local var3667 = LuaCLS_AcitvityInfo.new()
+        var3667:Unserialize(nbs)
+        self.ListInfo:Add(var3666, var3667)
     end
 end
 -- LuaG2C_Acitvity_List end
@@ -8996,11 +9002,11 @@ function LuaG2C_Acitvity_7Day:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3666 = nbs:ReadInt()
-    for i = 1, var3666 do
-        local var3667 = LuaCLS_TaskInfo.new()
-        var3667:Unserialize(nbs)
-        self.ListTask:Add(var3667)
+    local var3670 = nbs:ReadInt()
+    for i = 1, var3670 do
+        local var3671 = LuaCLS_TaskInfo.new()
+        var3671:Unserialize(nbs)
+        self.ListTask:Add(var3671)
     end
 end
 -- LuaG2C_Acitvity_7Day end
@@ -9042,11 +9048,11 @@ function LuaG2C_Acitvity_7DayGet:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3668 = nbs:ReadInt()
-    for i = 1, var3668 do
-        local var3669 = LuaCLS_AwardItem.new()
-        var3669:Unserialize(nbs)
-        self.ListAward:Add(var3669)
+    local var3672 = nbs:ReadInt()
+    for i = 1, var3672 do
+        local var3673 = LuaCLS_AwardItem.new()
+        var3673:Unserialize(nbs)
+        self.ListAward:Add(var3673)
     end
 end
 -- LuaG2C_Acitvity_7DayGet end
@@ -9086,11 +9092,11 @@ function LuaG2C_Acitvity_7DayLoginInfo:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3670 = nbs:ReadInt()
-    for i = 1, var3670 do
-        local var3671 = nbs:ReadInt()
-        local var3672 = nbs:ReadByte()
-        self.DictData:Add(var3671, var3672)
+    local var3674 = nbs:ReadInt()
+    for i = 1, var3674 do
+        local var3675 = nbs:ReadInt()
+        local var3676 = nbs:ReadByte()
+        self.DictData:Add(var3675, var3676)
     end
 end
 -- LuaG2C_Acitvity_7DayLoginInfo end
@@ -9132,11 +9138,11 @@ function LuaG2C_Acitvity_7DayLoginGet:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3673 = nbs:ReadInt()
-    for i = 1, var3673 do
-        local var3674 = LuaCLS_AwardItem.new()
-        var3674:Unserialize(nbs)
-        self.ListAward:Add(var3674)
+    local var3677 = nbs:ReadInt()
+    for i = 1, var3677 do
+        local var3678 = LuaCLS_AwardItem.new()
+        var3678:Unserialize(nbs)
+        self.ListAward:Add(var3678)
     end
 end
 -- LuaG2C_Acitvity_7DayLoginGet end
@@ -9192,12 +9198,12 @@ function LuaCLS_WelfareInfo:Unserialize(nbs)
     self.IsOpen = nbs:ReadBool()
     self.TimeOpen = nbs:ReadDateTime()
     self.TimeEnd = nbs:ReadDateTime()
-    local var3683 = nbs:ReadInt()
-    for i = 1, var3683 do
-        local var3684 = nbs:ReadInt()
-        local var3685 = LuaCLS_WelfareTaskInfo.new()
-        var3685:Unserialize(nbs)
-        self.ListTask:Add(var3684, var3685)
+    local var3687 = nbs:ReadInt()
+    for i = 1, var3687 do
+        local var3688 = nbs:ReadInt()
+        local var3689 = LuaCLS_WelfareTaskInfo.new()
+        var3689:Unserialize(nbs)
+        self.ListTask:Add(var3688, var3689)
     end
 end
 -- LuaCLS_WelfareInfo end
@@ -9237,12 +9243,12 @@ function LuaG2C_Welfare_Info:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3686 = nbs:ReadInt()
-    for i = 1, var3686 do
-        local var3687 = nbs:ReadInt()
-        local var3688 = LuaCLS_WelfareInfo.new()
-        var3688:Unserialize(nbs)
-        self.ListInfo:Add(var3687, var3688)
+    local var3690 = nbs:ReadInt()
+    for i = 1, var3690 do
+        local var3691 = nbs:ReadInt()
+        local var3692 = LuaCLS_WelfareInfo.new()
+        var3692:Unserialize(nbs)
+        self.ListInfo:Add(var3691, var3692)
     end
 end
 -- LuaG2C_Welfare_Info end
@@ -9286,11 +9292,11 @@ function LuaG2C_Welfare_Award:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.Id = nbs:ReadInt()
-    local var3690 = nbs:ReadInt()
-    for i = 1, var3690 do
-        local var3691 = LuaCLS_AwardItem.new()
-        var3691:Unserialize(nbs)
-        self.ListAward:Add(var3691)
+    local var3694 = nbs:ReadInt()
+    for i = 1, var3694 do
+        local var3695 = LuaCLS_AwardItem.new()
+        var3695:Unserialize(nbs)
+        self.ListAward:Add(var3695)
     end
 end
 -- LuaG2C_Welfare_Award end
@@ -9444,11 +9450,11 @@ function LuaG2C_Guild_List:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3717 = nbs:ReadInt()
-    for i = 1, var3717 do
-        local var3718 = LuaCLS_GuildInfoBase.new()
-        var3718:Unserialize(nbs)
-        self.ListGuildInfoBase:Add(var3718)
+    local var3721 = nbs:ReadInt()
+    for i = 1, var3721 do
+        local var3722 = LuaCLS_GuildInfoBase.new()
+        var3722:Unserialize(nbs)
+        self.ListGuildInfoBase:Add(var3722)
     end
     self.CdCanJoin = nbs:ReadTimeSpan()
 end
@@ -9723,11 +9729,11 @@ function LuaG2C_Guild_ListApply:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3721 = nbs:ReadInt()
-    for i = 1, var3721 do
-        local var3722 = LuaCLS_PubPlayerBase.new()
-        var3722:Unserialize(nbs)
-        self.ListApply:Add(var3722)
+    local var3725 = nbs:ReadInt()
+    for i = 1, var3725 do
+        local var3726 = LuaCLS_PubPlayerBase.new()
+        var3726:Unserialize(nbs)
+        self.ListApply:Add(var3726)
     end
 end
 -- LuaG2C_Guild_ListApply end
@@ -9838,11 +9844,11 @@ function LuaG2C_Guild_ListMbs:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3730 = nbs:ReadInt()
-    for i = 1, var3730 do
-        local var3731 = LuaCLS_GuildMbsInfo.new()
-        var3731:Unserialize(nbs)
-        self.ListMember:Add(var3731)
+    local var3734 = nbs:ReadInt()
+    for i = 1, var3734 do
+        local var3735 = LuaCLS_GuildMbsInfo.new()
+        var3735:Unserialize(nbs)
+        self.ListMember:Add(var3735)
     end
 end
 -- LuaG2C_Guild_ListMbs end
@@ -9882,11 +9888,11 @@ function LuaG2C_Guild_ListLogRecord:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3732 = nbs:ReadInt()
-    for i = 1, var3732 do
-        local var3733 = LuaCLS_GameLog.new()
-        var3733:Unserialize(nbs)
-        self.ListLog:Add(var3733)
+    local var3736 = nbs:ReadInt()
+    for i = 1, var3736 do
+        local var3737 = LuaCLS_GameLog.new()
+        var3737:Unserialize(nbs)
+        self.ListLog:Add(var3737)
     end
 end
 -- LuaG2C_Guild_ListLogRecord end
@@ -10084,17 +10090,17 @@ function LuaG2C_Guild_DonateInfo:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3734 = nbs:ReadInt()
-    for i = 1, var3734 do
-        local var3735 = LuaCLS_GameLog.new()
-        var3735:Unserialize(nbs)
-        self.ListLog:Add(var3735)
+    local var3738 = nbs:ReadInt()
+    for i = 1, var3738 do
+        local var3739 = LuaCLS_GameLog.new()
+        var3739:Unserialize(nbs)
+        self.ListLog:Add(var3739)
     end
-    local var3736 = nbs:ReadInt()
-    for i = 1, var3736 do
-        local var3737 = nbs:ReadInt()
-        local var3738 = nbs:ReadInt()
-        self.DictDonateCount:Add(var3737, var3738)
+    local var3740 = nbs:ReadInt()
+    for i = 1, var3740 do
+        local var3741 = nbs:ReadInt()
+        local var3742 = nbs:ReadInt()
+        self.DictDonateCount:Add(var3741, var3742)
     end
     self.Contribution = nbs:ReadInt()
 end
@@ -10182,11 +10188,11 @@ function LuaG2C_Guild_ListDiplomacy:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3744 = nbs:ReadInt()
-    for i = 1, var3744 do
-        local var3745 = LuaCLS_GuildInfoBase.new()
-        var3745:Unserialize(nbs)
-        self.ListGuildInfoBase:Add(var3745)
+    local var3748 = nbs:ReadInt()
+    for i = 1, var3748 do
+        local var3749 = LuaCLS_GuildInfoBase.new()
+        var3749:Unserialize(nbs)
+        self.ListGuildInfoBase:Add(var3749)
     end
 end
 -- LuaG2C_Guild_ListDiplomacy end
@@ -10228,11 +10234,11 @@ function LuaG2C_Guild_SearchName:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3746 = nbs:ReadInt()
-    for i = 1, var3746 do
-        local var3747 = LuaCLS_GuildInfoBase.new()
-        var3747:Unserialize(nbs)
-        self.ListGuildInfoBase:Add(var3747)
+    local var3750 = nbs:ReadInt()
+    for i = 1, var3750 do
+        local var3751 = LuaCLS_GuildInfoBase.new()
+        var3751:Unserialize(nbs)
+        self.ListGuildInfoBase:Add(var3751)
     end
 end
 -- LuaG2C_Guild_SearchName end
@@ -10272,11 +10278,11 @@ function LuaG2C_Guild_ListAllianceApply:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3748 = nbs:ReadInt()
-    for i = 1, var3748 do
-        local var3749 = LuaCLS_GuildInfoBase.new()
-        var3749:Unserialize(nbs)
-        self.ListGuildInfoBase:Add(var3749)
+    local var3752 = nbs:ReadInt()
+    for i = 1, var3752 do
+        local var3753 = LuaCLS_GuildInfoBase.new()
+        var3753:Unserialize(nbs)
+        self.ListGuildInfoBase:Add(var3753)
     end
 end
 -- LuaG2C_Guild_ListAllianceApply end
@@ -10437,11 +10443,11 @@ function LuaG2C_Guild_ListCity:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.CapitalCity = nbs:ReadInt()
-    local var3751 = nbs:ReadInt()
-    for i = 1, var3751 do
-        local var3752 = LuaCLS_CityInfo4Guild.new()
-        var3752:Unserialize(nbs)
-        self.ListCity:Add(var3752)
+    local var3755 = nbs:ReadInt()
+    for i = 1, var3755 do
+        local var3756 = LuaCLS_CityInfo4Guild.new()
+        var3756:Unserialize(nbs)
+        self.ListCity:Add(var3756)
     end
 end
 -- LuaG2C_Guild_ListCity end
@@ -10600,11 +10606,11 @@ function LuaG2C_Guild_ListLogSituation:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3753 = nbs:ReadInt()
-    for i = 1, var3753 do
-        local var3754 = LuaCLS_GameLog.new()
-        var3754:Unserialize(nbs)
-        self.ListLog:Add(var3754)
+    local var3757 = nbs:ReadInt()
+    for i = 1, var3757 do
+        local var3758 = LuaCLS_GameLog.new()
+        var3758:Unserialize(nbs)
+        self.ListLog:Add(var3758)
     end
 end
 -- LuaG2C_Guild_ListLogSituation end
@@ -10672,11 +10678,11 @@ function LuaG2C_Guild_ListTop:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3760 = nbs:ReadInt()
-    for i = 1, var3760 do
-        local var3761 = LuaCLS_GuildTopInfo.new()
-        var3761:Unserialize(nbs)
-        self.ListTop:Add(var3761)
+    local var3764 = nbs:ReadInt()
+    for i = 1, var3764 do
+        local var3765 = LuaCLS_GuildTopInfo.new()
+        var3765:Unserialize(nbs)
+        self.ListTop:Add(var3765)
     end
 end
 -- LuaG2C_Guild_ListTop end
@@ -10769,11 +10775,11 @@ function LuaCLS_RedPacket:Unserialize(nbs)
     self.SurplusNumber = nbs:ReadInt()
     self.Owner:Unserialize(nbs)
     self.TimeEnd = nbs:ReadInt()
-    local var3777 = nbs:ReadInt()
-    for i = 1, var3777 do
-        local var3778 = LuaCLS_RedPacketMember.new()
-        var3778:Unserialize(nbs)
-        self.ListMember:Add(var3778)
+    local var3781 = nbs:ReadInt()
+    for i = 1, var3781 do
+        local var3782 = LuaCLS_RedPacketMember.new()
+        var3782:Unserialize(nbs)
+        self.ListMember:Add(var3782)
     end
     self.Txt = nbs:ReadString()
 end
@@ -10816,11 +10822,11 @@ function LuaG2C_Red_Packet_List:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.GetMax = nbs:ReadInt()
-    local var3781 = nbs:ReadInt()
-    for i = 1, var3781 do
-        local var3782 = LuaCLS_RedPacketsInfo.new()
-        var3782:Unserialize(nbs)
-        self.Info:Add(var3782)
+    local var3785 = nbs:ReadInt()
+    for i = 1, var3785 do
+        local var3786 = LuaCLS_RedPacketsInfo.new()
+        var3786:Unserialize(nbs)
+        self.Info:Add(var3786)
     end
 end
 -- LuaG2C_Red_Packet_List end
@@ -10929,11 +10935,11 @@ function LuaG2C_Red_Packet_Receive:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.Info:Unserialize(nbs)
-    local var3786 = nbs:ReadInt()
-    for i = 1, var3786 do
-        local var3787 = LuaCLS_RedPacketsInfo.new()
-        var3787:Unserialize(nbs)
-        self.InfoList:Add(var3787)
+    local var3790 = nbs:ReadInt()
+    for i = 1, var3790 do
+        local var3791 = LuaCLS_RedPacketsInfo.new()
+        var3791:Unserialize(nbs)
+        self.InfoList:Add(var3791)
     end
 end
 -- LuaG2C_Red_Packet_Receive end
@@ -11146,11 +11152,11 @@ function LuaG2C_MansionBoss_Top:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3805 = nbs:ReadInt()
-    for i = 1, var3805 do
-        local var3806 = LuaCLS_MansionBoss_PlayerInfo.new()
-        var3806:Unserialize(nbs)
-        self.TopPlayers:Add(var3806)
+    local var3809 = nbs:ReadInt()
+    for i = 1, var3809 do
+        local var3810 = LuaCLS_MansionBoss_PlayerInfo.new()
+        var3810:Unserialize(nbs)
+        self.TopPlayers:Add(var3810)
     end
     self.player:Unserialize(nbs)
     self.Rank = nbs:ReadInt()
@@ -11308,16 +11314,16 @@ function LuaG2C_MansionBoss_Buff:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3809 = nbs:ReadInt()
-    for i = 1, var3809 do
-        local var3810 = nbs:ReadInt()
-        self.BuffIds:Add(var3810)
+    local var3813 = nbs:ReadInt()
+    for i = 1, var3813 do
+        local var3814 = nbs:ReadInt()
+        self.BuffIds:Add(var3814)
     end
-    local var3811 = nbs:ReadInt()
-    for i = 1, var3811 do
-        local var3812 = nbs:ReadInt()
-        local var3813 = nbs:ReadLong()
-        self.CurBuff:Add(var3812, var3813)
+    local var3815 = nbs:ReadInt()
+    for i = 1, var3815 do
+        local var3816 = nbs:ReadInt()
+        local var3817 = nbs:ReadLong()
+        self.CurBuff:Add(var3816, var3817)
     end
     self.FuYu = nbs:ReadLong()
 end
@@ -11342,11 +11348,11 @@ function LuaCLS_Liveness_Info:Serialize(nbs)
 end
 function LuaCLS_Liveness_Info:Unserialize(nbs)
     self.Num = nbs:ReadInt()
-    local var3816 = nbs:ReadInt()
-    for i = 1, var3816 do
-        local var3817 = nbs:ReadInt()
-        local var3818 = nbs:ReadBool()
-        self.DictAwardState:Add(var3817, var3818)
+    local var3820 = nbs:ReadInt()
+    for i = 1, var3820 do
+        local var3821 = nbs:ReadInt()
+        local var3822 = nbs:ReadBool()
+        self.DictAwardState:Add(var3821, var3822)
     end
 end
 -- LuaCLS_Liveness_Info end
@@ -11388,12 +11394,12 @@ function LuaG2C_Guild_GetActive:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3819 = nbs:ReadInt()
-    for i = 1, var3819 do
-        local var3820 = nbs:ReadInt()
-        local var3821 = LuaCLS_Liveness_Info.new()
-        var3821:Unserialize(nbs)
-        self.DictLivenessInfo:Add(var3820, var3821)
+    local var3823 = nbs:ReadInt()
+    for i = 1, var3823 do
+        local var3824 = nbs:ReadInt()
+        local var3825 = LuaCLS_Liveness_Info.new()
+        var3825:Unserialize(nbs)
+        self.DictLivenessInfo:Add(var3824, var3825)
     end
 end
 -- LuaG2C_Guild_GetActive end
@@ -11438,18 +11444,18 @@ function LuaG2C_Guild_ActiveAward:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3822 = nbs:ReadInt()
-    for i = 1, var3822 do
-        local var3823 = LuaCLS_AwardItem.new()
-        var3823:Unserialize(nbs)
-        self.ListAward:Add(var3823)
+    local var3826 = nbs:ReadInt()
+    for i = 1, var3826 do
+        local var3827 = LuaCLS_AwardItem.new()
+        var3827:Unserialize(nbs)
+        self.ListAward:Add(var3827)
     end
-    local var3824 = nbs:ReadInt()
-    for i = 1, var3824 do
-        local var3825 = nbs:ReadInt()
-        local var3826 = LuaCLS_Liveness_Info.new()
-        var3826:Unserialize(nbs)
-        self.DictLivenessInfo:Add(var3825, var3826)
+    local var3828 = nbs:ReadInt()
+    for i = 1, var3828 do
+        local var3829 = nbs:ReadInt()
+        local var3830 = LuaCLS_Liveness_Info.new()
+        var3830:Unserialize(nbs)
+        self.DictLivenessInfo:Add(var3829, var3830)
     end
 end
 -- LuaG2C_Guild_ActiveAward end
@@ -11490,18 +11496,18 @@ function LuaG2C_Guild_ActiveAwardAll:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3827 = nbs:ReadInt()
-    for i = 1, var3827 do
-        local var3828 = LuaCLS_AwardItem.new()
-        var3828:Unserialize(nbs)
-        self.ListAward:Add(var3828)
+    local var3831 = nbs:ReadInt()
+    for i = 1, var3831 do
+        local var3832 = LuaCLS_AwardItem.new()
+        var3832:Unserialize(nbs)
+        self.ListAward:Add(var3832)
     end
-    local var3829 = nbs:ReadInt()
-    for i = 1, var3829 do
-        local var3830 = nbs:ReadInt()
-        local var3831 = LuaCLS_Liveness_Info.new()
-        var3831:Unserialize(nbs)
-        self.DictLivenessInfo:Add(var3830, var3831)
+    local var3833 = nbs:ReadInt()
+    for i = 1, var3833 do
+        local var3834 = nbs:ReadInt()
+        local var3835 = LuaCLS_Liveness_Info.new()
+        var3835:Unserialize(nbs)
+        self.DictLivenessInfo:Add(var3834, var3835)
     end
 end
 -- LuaG2C_Guild_ActiveAwardAll end
@@ -11541,10 +11547,10 @@ function LuaG2C_Guild_ScienceInfo:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3832 = nbs:ReadInt()
-    for i = 1, var3832 do
-        local var3833 = nbs:ReadInt()
-        self.ListTechnology:Add(var3833)
+    local var3836 = nbs:ReadInt()
+    for i = 1, var3836 do
+        local var3837 = nbs:ReadInt()
+        self.ListTechnology:Add(var3837)
     end
 end
 -- LuaG2C_Guild_ScienceInfo end
@@ -11611,11 +11617,11 @@ function LuaCLS_GuildShopInfo:Serialize(nbs)
     return nbs
 end
 function LuaCLS_GuildShopInfo:Unserialize(nbs)
-    local var3834 = nbs:ReadInt()
-    for i = 1, var3834 do
-        local var3835 = LuaCLS_ShopGoodsInfo.new()
-        var3835:Unserialize(nbs)
-        self.GoodsInfo:Add(var3835)
+    local var3838 = nbs:ReadInt()
+    for i = 1, var3838 do
+        local var3839 = LuaCLS_ShopGoodsInfo.new()
+        var3839:Unserialize(nbs)
+        self.GoodsInfo:Add(var3839)
     end
     self.Contribution = nbs:ReadInt()
     self.RefreshFreeTotal = nbs:ReadInt()
@@ -11803,11 +11809,11 @@ function LuaG2C_GuildSalary_ListMbs:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.DtAutoBalance = nbs:ReadDateTime()
-    local var3847 = nbs:ReadInt()
-    for i = 1, var3847 do
-        local var3848 = LuaCLS_GuildSalaryMbsInfo.new()
-        var3848:Unserialize(nbs)
-        self.ListMember:Add(var3848)
+    local var3851 = nbs:ReadInt()
+    for i = 1, var3851 do
+        local var3852 = LuaCLS_GuildSalaryMbsInfo.new()
+        var3852:Unserialize(nbs)
+        self.ListMember:Add(var3852)
     end
 end
 -- LuaG2C_GuildSalary_ListMbs end
@@ -11853,11 +11859,11 @@ function LuaG2C_GuildSalary_Pay:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3849 = nbs:ReadInt()
-    for i = 1, var3849 do
-        local var3850 = nbs:ReadLong()
-        local var3851 = nbs:ReadInt()
-        self.DictPay:Add(var3850, var3851)
+    local var3853 = nbs:ReadInt()
+    for i = 1, var3853 do
+        local var3854 = nbs:ReadLong()
+        local var3855 = nbs:ReadInt()
+        self.DictPay:Add(var3854, var3855)
     end
 end
 -- LuaG2C_GuildSalary_Pay end
@@ -11925,11 +11931,11 @@ function LuaG2C_GuildSalary_ListCity:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3857 = nbs:ReadInt()
-    for i = 1, var3857 do
-        local var3858 = LuaCLS_GuildSalaryCityInfo.new()
-        var3858:Unserialize(nbs)
-        self.ListCity:Add(var3858)
+    local var3861 = nbs:ReadInt()
+    for i = 1, var3861 do
+        local var3862 = LuaCLS_GuildSalaryCityInfo.new()
+        var3862:Unserialize(nbs)
+        self.ListCity:Add(var3862)
     end
 end
 -- LuaG2C_GuildSalary_ListCity end
@@ -11996,11 +12002,11 @@ function LuaCLS_GoddessInfo:Unserialize(nbs)
     self.OtherId = nbs:ReadLong()
     self.OtherName = nbs:ReadString()
     self.FreeTime = nbs:ReadDateTime()
-    local var3871 = nbs:ReadInt()
-    for i = 1, var3871 do
-        local var3872 = LuaCLS_GoddessArmy.new()
-        var3872:Unserialize(nbs)
-        self.ArmyInfo:Add(var3872)
+    local var3875 = nbs:ReadInt()
+    for i = 1, var3875 do
+        local var3876 = LuaCLS_GoddessArmy.new()
+        var3876:Unserialize(nbs)
+        self.ArmyInfo:Add(var3876)
     end
 end
 -- LuaCLS_GoddessInfo end
@@ -12059,11 +12065,11 @@ function LuaG2C_Goddess_Seniority:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3875 = nbs:ReadInt()
-    for i = 1, var3875 do
-        local var3876 = LuaCLS_GuildMbsInfo.new()
-        var3876:Unserialize(nbs)
-        self.Info:Add(var3876)
+    local var3879 = nbs:ReadInt()
+    for i = 1, var3879 do
+        local var3880 = LuaCLS_GuildMbsInfo.new()
+        var3880:Unserialize(nbs)
+        self.Info:Add(var3880)
     end
 end
 -- LuaG2C_Goddess_Seniority end
@@ -12106,17 +12112,17 @@ function LuaG2C_Goddess_GetInfo:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.Info:Unserialize(nbs)
-    local var3878 = nbs:ReadInt()
-    for i = 1, var3878 do
-        local var3879 = LuaCLS_GoddessDonate.new()
-        var3879:Unserialize(nbs)
-        self.DonateInfo:Add(var3879)
+    local var3882 = nbs:ReadInt()
+    for i = 1, var3882 do
+        local var3883 = LuaCLS_GoddessDonate.new()
+        var3883:Unserialize(nbs)
+        self.DonateInfo:Add(var3883)
     end
-    local var3880 = nbs:ReadInt()
-    for i = 1, var3880 do
-        local var3881 = nbs:ReadInt()
-        local var3882 = nbs:ReadInt()
-        self.DictDonate:Add(var3881, var3882)
+    local var3884 = nbs:ReadInt()
+    for i = 1, var3884 do
+        local var3885 = nbs:ReadInt()
+        local var3886 = nbs:ReadInt()
+        self.DictDonate:Add(var3885, var3886)
     end
 end
 -- LuaG2C_Goddess_GetInfo end
@@ -12206,17 +12212,17 @@ function LuaG2C_Goddess_Donate:Unserialize(buffer)
     self.Advance = nbs:ReadInt()
     self.Level = nbs:ReadInt()
     self.Exp = nbs:ReadInt()
-    local var3887 = nbs:ReadInt()
-    for i = 1, var3887 do
-        local var3888 = LuaCLS_GoddessDonate.new()
-        var3888:Unserialize(nbs)
-        self.DonateInfo:Add(var3888)
+    local var3891 = nbs:ReadInt()
+    for i = 1, var3891 do
+        local var3892 = LuaCLS_GoddessDonate.new()
+        var3892:Unserialize(nbs)
+        self.DonateInfo:Add(var3892)
     end
-    local var3889 = nbs:ReadInt()
-    for i = 1, var3889 do
-        local var3890 = nbs:ReadInt()
-        local var3891 = nbs:ReadInt()
-        self.DictDonate:Add(var3890, var3891)
+    local var3893 = nbs:ReadInt()
+    for i = 1, var3893 do
+        local var3894 = nbs:ReadInt()
+        local var3895 = nbs:ReadInt()
+        self.DictDonate:Add(var3894, var3895)
     end
 end
 -- LuaG2C_Goddess_Donate end
@@ -12261,17 +12267,17 @@ function LuaG2C_Goddess_Save:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.Info:Unserialize(nbs)
-    local var3893 = nbs:ReadInt()
-    for i = 1, var3893 do
-        local var3894 = LuaCLS_GoddessDonate.new()
-        var3894:Unserialize(nbs)
-        self.DonateInfo:Add(var3894)
+    local var3897 = nbs:ReadInt()
+    for i = 1, var3897 do
+        local var3898 = LuaCLS_GoddessDonate.new()
+        var3898:Unserialize(nbs)
+        self.DonateInfo:Add(var3898)
     end
-    local var3895 = nbs:ReadInt()
-    for i = 1, var3895 do
-        local var3896 = nbs:ReadInt()
-        local var3897 = nbs:ReadInt()
-        self.DictDonate:Add(var3896, var3897)
+    local var3899 = nbs:ReadInt()
+    for i = 1, var3899 do
+        local var3900 = nbs:ReadInt()
+        local var3901 = nbs:ReadInt()
+        self.DictDonate:Add(var3900, var3901)
     end
 end
 -- LuaG2C_Goddess_Save end
@@ -12378,11 +12384,11 @@ function LuaCLS_ArmyInfo:Serialize(nbs)
 end
 function LuaCLS_ArmyInfo:Unserialize(nbs)
     self.ArmyId = nbs:ReadInt()
-    local var3900 = nbs:ReadInt()
-    for i = 1, var3900 do
-        local var3901 = nbs:ReadInt()
-        local var3902 = nbs:ReadLong()
-        self.DictWarrior:Add(var3901, var3902)
+    local var3904 = nbs:ReadInt()
+    for i = 1, var3904 do
+        local var3905 = nbs:ReadInt()
+        local var3906 = nbs:ReadLong()
+        self.DictWarrior:Add(var3905, var3906)
     end
 end
 -- LuaCLS_ArmyInfo end
@@ -12409,12 +12415,12 @@ end
 function LuaCLS_PveTypeArmyInfo:Unserialize(nbs)
     self.PveType = nbs:ReadInt()
     self.PveArmyId = nbs:ReadInt()
-    local var3905 = nbs:ReadInt()
-    for i = 1, var3905 do
-        local var3906 = nbs:ReadInt()
-        local var3907 = LuaCLS_ArmyInfo.new()
-        var3907:Unserialize(nbs)
-        self.DictArmyInfo:Add(var3906, var3907)
+    local var3909 = nbs:ReadInt()
+    for i = 1, var3909 do
+        local var3910 = nbs:ReadInt()
+        local var3911 = LuaCLS_ArmyInfo.new()
+        var3911:Unserialize(nbs)
+        self.DictArmyInfo:Add(var3910, var3911)
     end
 end
 -- LuaCLS_PveTypeArmyInfo end
@@ -12460,12 +12466,12 @@ function LuaG2C_Pve_ArmyInfo:Unserialize(buffer)
     self.Shuttle = nbs:ReadString()
     self.PveType = nbs:ReadInt()
     self.PveArmyId = nbs:ReadInt()
-    local var3910 = nbs:ReadInt()
-    for i = 1, var3910 do
-        local var3911 = nbs:ReadInt()
-        local var3912 = LuaCLS_ArmyInfo.new()
-        var3912:Unserialize(nbs)
-        self.DictArmyInfo:Add(var3911, var3912)
+    local var3914 = nbs:ReadInt()
+    for i = 1, var3914 do
+        local var3915 = nbs:ReadInt()
+        local var3916 = LuaCLS_ArmyInfo.new()
+        var3916:Unserialize(nbs)
+        self.DictArmyInfo:Add(var3915, var3916)
     end
 end
 -- LuaG2C_Pve_ArmyInfo end
@@ -12564,12 +12570,12 @@ function LuaG2C_Pve_GoBattle:Unserialize(buffer)
     self.PveType = nbs:ReadInt()
     self.BattleId = nbs:ReadInt()
     self.BattleCode = nbs:ReadLong()
-    local var3917 = nbs:ReadInt()
-    for i = 1, var3917 do
-        local var3918 = nbs:ReadInt()
-        local var3919 = LuaCLS_WarriorInfo.new()
-        var3919:Unserialize(nbs)
-        self.DictWarrior:Add(var3918, var3919)
+    local var3921 = nbs:ReadInt()
+    for i = 1, var3921 do
+        local var3922 = nbs:ReadInt()
+        local var3923 = LuaCLS_WarriorInfo.new()
+        var3923:Unserialize(nbs)
+        self.DictWarrior:Add(var3922, var3923)
     end
 end
 -- LuaG2C_Pve_GoBattle end
@@ -12592,12 +12598,12 @@ function LuaG2C_Pve_BattleBalance:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.PveType = nbs:ReadInt()
-    local var3921 = nbs:ReadInt()
-    for i = 1, var3921 do
-        local var3922 = nbs:ReadInt()
-        local var3923 = LuaCLS_WarriorInfo.new()
-        var3923:Unserialize(nbs)
-        self.DictWarrior:Add(var3922, var3923)
+    local var3925 = nbs:ReadInt()
+    for i = 1, var3925 do
+        local var3926 = nbs:ReadInt()
+        local var3927 = LuaCLS_WarriorInfo.new()
+        var3927:Unserialize(nbs)
+        self.DictWarrior:Add(var3926, var3927)
     end
 end
 -- LuaG2C_Pve_BattleBalance end
@@ -12619,10 +12625,10 @@ function LuaCLS_StoryState:Serialize(nbs)
     return nbs
 end
 function LuaCLS_StoryState:Unserialize(nbs)
-    local var3924 = nbs:ReadInt()
-    for i = 1, var3924 do
-        local var3925 = nbs:ReadBool()
-        self.ListState:Add(var3925)
+    local var3928 = nbs:ReadInt()
+    for i = 1, var3928 do
+        local var3929 = nbs:ReadBool()
+        self.ListState:Add(var3929)
     end
     self.Ticks = nbs:ReadInt()
 end
@@ -12669,19 +12675,19 @@ function LuaG2C_GameLevelStory_Info:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3927 = nbs:ReadInt()
-    for i = 1, var3927 do
-        local var3928 = nbs:ReadInt()
-        local var3929 = LuaCLS_StoryState.new()
-        var3929:Unserialize(nbs)
-        self.DicStory:Add(var3928, var3929)
+    local var3931 = nbs:ReadInt()
+    for i = 1, var3931 do
+        local var3932 = nbs:ReadInt()
+        local var3933 = LuaCLS_StoryState.new()
+        var3933:Unserialize(nbs)
+        self.DicStory:Add(var3932, var3933)
     end
     self.Power = nbs:ReadInt()
     self.RecoveryTime = nbs:ReadLong()
-    local var3932 = nbs:ReadInt()
-    for i = 1, var3932 do
-        local var3933 = nbs:ReadBool()
-        self.ListReward:Add(var3933)
+    local var3936 = nbs:ReadInt()
+    for i = 1, var3936 do
+        local var3937 = nbs:ReadBool()
+        self.ListReward:Add(var3937)
     end
     self.BuyCount = nbs:ReadInt()
 end
@@ -12780,11 +12786,11 @@ function LuaG2C_GameLevelStory_Balance:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3936 = nbs:ReadInt()
-    for i = 1, var3936 do
-        local var3937 = LuaCLS_AwardItem.new()
-        var3937:Unserialize(nbs)
-        self.ListAward:Add(var3937)
+    local var3940 = nbs:ReadInt()
+    for i = 1, var3940 do
+        local var3941 = LuaCLS_AwardItem.new()
+        var3941:Unserialize(nbs)
+        self.ListAward:Add(var3941)
     end
 end
 -- LuaG2C_GameLevelStory_Balance end
@@ -12828,11 +12834,11 @@ function LuaG2C_GameLevelStory_Reward:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3938 = nbs:ReadInt()
-    for i = 1, var3938 do
-        local var3939 = LuaCLS_AwardItem.new()
-        var3939:Unserialize(nbs)
-        self.ListAward:Add(var3939)
+    local var3942 = nbs:ReadInt()
+    for i = 1, var3942 do
+        local var3943 = LuaCLS_AwardItem.new()
+        var3943:Unserialize(nbs)
+        self.ListAward:Add(var3943)
     end
 end
 -- LuaG2C_GameLevelStory_Reward end
@@ -12987,11 +12993,11 @@ function LuaG2C_Tower_Info:Unserialize(buffer)
     self.TowerToken = nbs:ReadInt()
     self.TowerTokenMax = nbs:ReadInt()
     self.TowerTokenOnceUse = nbs:ReadInt()
-    local var3953 = nbs:ReadInt()
-    for i = 1, var3953 do
-        local var3954 = LuaCLS_TowerInfo.new()
-        var3954:Unserialize(nbs)
-        self.ListTowerInfo:Add(var3954)
+    local var3957 = nbs:ReadInt()
+    for i = 1, var3957 do
+        local var3958 = LuaCLS_TowerInfo.new()
+        var3958:Unserialize(nbs)
+        self.ListTowerInfo:Add(var3958)
     end
 end
 -- LuaG2C_Tower_Info end
@@ -13090,11 +13096,11 @@ function LuaG2C_Tower_BattleEnd:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.Id = nbs:ReadInt()
-    local var3957 = nbs:ReadInt()
-    for i = 1, var3957 do
-        local var3958 = LuaCLS_AwardItem.new()
-        var3958:Unserialize(nbs)
-        self.ListAward:Add(var3958)
+    local var3961 = nbs:ReadInt()
+    for i = 1, var3961 do
+        local var3962 = LuaCLS_AwardItem.new()
+        var3962:Unserialize(nbs)
+        self.ListAward:Add(var3962)
     end
 end
 -- LuaG2C_Tower_BattleEnd end
@@ -13181,11 +13187,11 @@ function LuaG2C_Arena_Info:Unserialize(buffer)
     self.MatchTicks = nbs:ReadInt()
     self.MaxTicks = nbs:ReadInt()
     self.BuyMatchTicks = nbs:ReadInt()
-    local var3972 = nbs:ReadInt()
-    for i = 1, var3972 do
-        local var3973 = LuaCLS_ArenaTopData.new()
-        var3973:Unserialize(nbs)
-        self.ArenaMatchPlayers:Add(var3973)
+    local var3976 = nbs:ReadInt()
+    for i = 1, var3976 do
+        local var3977 = LuaCLS_ArenaTopData.new()
+        var3977:Unserialize(nbs)
+        self.ArenaMatchPlayers:Add(var3977)
     end
     self.TsEnd = nbs:ReadLong()
 end
@@ -13227,11 +13233,11 @@ function LuaG2C_Arena_TOP:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3975 = nbs:ReadInt()
-    for i = 1, var3975 do
-        local var3976 = LuaCLS_ArenaTopData.new()
-        var3976:Unserialize(nbs)
-        self.ListArenaTopData:Add(var3976)
+    local var3979 = nbs:ReadInt()
+    for i = 1, var3979 do
+        local var3980 = LuaCLS_ArenaTopData.new()
+        var3980:Unserialize(nbs)
+        self.ListArenaTopData:Add(var3980)
     end
     self.PlayerData:Unserialize(nbs)
 end
@@ -13313,11 +13319,11 @@ function LuaG2C_ArenaMatch_Battle:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.StageId = nbs:ReadInt()
-    local var3979 = nbs:ReadInt()
-    for i = 1, var3979 do
-        local var3980 = LuaCLS_WarriorInfo.new()
-        var3980:Unserialize(nbs)
-        self.ListWarriorOther:Add(var3980)
+    local var3983 = nbs:ReadInt()
+    for i = 1, var3983 do
+        local var3984 = LuaCLS_WarriorInfo.new()
+        var3984:Unserialize(nbs)
+        self.ListWarriorOther:Add(var3984)
     end
 end
 -- LuaG2C_ArenaMatch_Battle end
@@ -13365,11 +13371,11 @@ function LuaG2C_ArenaMatch_Balance:Unserialize(buffer)
     self.Shuttle = nbs:ReadString()
     self.PlayerRank = nbs:ReadInt()
     self.PlayerNewRank = nbs:ReadInt()
-    local var3983 = nbs:ReadInt()
-    for i = 1, var3983 do
-        local var3984 = LuaCLS_AwardItem.new()
-        var3984:Unserialize(nbs)
-        self.AwardItem:Add(var3984)
+    local var3987 = nbs:ReadInt()
+    for i = 1, var3987 do
+        local var3988 = LuaCLS_AwardItem.new()
+        var3988:Unserialize(nbs)
+        self.AwardItem:Add(var3988)
     end
 end
 -- LuaG2C_ArenaMatch_Balance end
@@ -13443,11 +13449,11 @@ function LuaG2C_ArenaBattleReport:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3992 = nbs:ReadInt()
-    for i = 1, var3992 do
-        local var3993 = LuaCLS_ArenaBattleReport.new()
-        var3993:Unserialize(nbs)
-        self.ArenaBattleReportList:Add(var3993)
+    local var3996 = nbs:ReadInt()
+    for i = 1, var3996 do
+        local var3997 = LuaCLS_ArenaBattleReport.new()
+        var3997:Unserialize(nbs)
+        self.ArenaBattleReportList:Add(var3997)
     end
 end
 -- LuaG2C_ArenaBattleReport end
@@ -13526,12 +13532,12 @@ function LuaG2C_Arena_Defense:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var3995 = nbs:ReadInt()
-    for i = 1, var3995 do
-        local var3996 = nbs:ReadInt()
-        local var3997 = LuaCLS_WarriorInfo.new()
-        var3997:Unserialize(nbs)
-        self.DictWarriorInfo:Add(var3996, var3997)
+    local var3999 = nbs:ReadInt()
+    for i = 1, var3999 do
+        local var4000 = nbs:ReadInt()
+        local var4001 = LuaCLS_WarriorInfo.new()
+        var4001:Unserialize(nbs)
+        self.DictWarriorInfo:Add(var4000, var4001)
     end
 end
 -- LuaG2C_Arena_Defense end
@@ -13761,23 +13767,23 @@ function LuaG2C_Bank_WarZone:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4012 = nbs:ReadInt()
-    for i = 1, var4012 do
-        local var4013 = LuaCLS_WarZoneInfo.new()
-        var4013:Unserialize(nbs)
-        self.ListWarZone:Add(var4013)
+    local var4016 = nbs:ReadInt()
+    for i = 1, var4016 do
+        local var4017 = LuaCLS_WarZoneInfo.new()
+        var4017:Unserialize(nbs)
+        self.ListWarZone:Add(var4017)
     end
-    local var4014 = nbs:ReadInt()
-    for i = 1, var4014 do
-        local var4015 = LuaCLS_BankCountryTop.new()
-        var4015:Unserialize(nbs)
-        self.ListContribution:Add(var4015)
+    local var4018 = nbs:ReadInt()
+    for i = 1, var4018 do
+        local var4019 = LuaCLS_BankCountryTop.new()
+        var4019:Unserialize(nbs)
+        self.ListContribution:Add(var4019)
     end
     self.CountryId = nbs:ReadInt()
-    local var4017 = nbs:ReadInt()
-    for i = 1, var4017 do
-        local var4018 = nbs:ReadBool()
-        self.ListWelfareState:Add(var4018)
+    local var4021 = nbs:ReadInt()
+    for i = 1, var4021 do
+        local var4022 = nbs:ReadBool()
+        self.ListWelfareState:Add(var4022)
     end
     self.RecoveryTime = nbs:ReadLong()
     self.Ticks = nbs:ReadLong()
@@ -13822,16 +13828,16 @@ function LuaG2C_Bank_WarZoneAward:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4021 = nbs:ReadInt()
-    for i = 1, var4021 do
-        local var4022 = LuaCLS_AwardItem.new()
-        var4022:Unserialize(nbs)
-        self.ListAward:Add(var4022)
+    local var4025 = nbs:ReadInt()
+    for i = 1, var4025 do
+        local var4026 = LuaCLS_AwardItem.new()
+        var4026:Unserialize(nbs)
+        self.ListAward:Add(var4026)
     end
-    local var4023 = nbs:ReadInt()
-    for i = 1, var4023 do
-        local var4024 = nbs:ReadBool()
-        self.ListWelfareState:Add(var4024)
+    local var4027 = nbs:ReadInt()
+    for i = 1, var4027 do
+        local var4028 = nbs:ReadBool()
+        self.ListWelfareState:Add(var4028)
     end
 end
 -- LuaG2C_Bank_WarZoneAward end
@@ -13918,11 +13924,11 @@ function LuaG2C_Bank_WarZoneBalance:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4025 = nbs:ReadInt()
-    for i = 1, var4025 do
-        local var4026 = LuaCLS_AwardItem.new()
-        var4026:Unserialize(nbs)
-        self.ListAward:Add(var4026)
+    local var4029 = nbs:ReadInt()
+    for i = 1, var4029 do
+        local var4030 = LuaCLS_AwardItem.new()
+        var4030:Unserialize(nbs)
+        self.ListAward:Add(var4030)
     end
 end
 -- LuaG2C_Bank_WarZoneBalance end
@@ -14046,11 +14052,11 @@ function LuaG2C_Bank_RobberBalance:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4028 = nbs:ReadInt()
-    for i = 1, var4028 do
-        local var4029 = LuaCLS_AwardItem.new()
-        var4029:Unserialize(nbs)
-        self.ListAward:Add(var4029)
+    local var4032 = nbs:ReadInt()
+    for i = 1, var4032 do
+        local var4033 = LuaCLS_AwardItem.new()
+        var4033:Unserialize(nbs)
+        self.ListAward:Add(var4033)
     end
 end
 -- LuaG2C_Bank_RobberBalance end
@@ -14127,17 +14133,17 @@ function LuaG2C_Bank_Top:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4037 = nbs:ReadInt()
-    for i = 1, var4037 do
-        local var4038 = LuaCLS_BankTop.new()
-        var4038:Unserialize(nbs)
-        self.ListGuildTop:Add(var4038)
+    local var4041 = nbs:ReadInt()
+    for i = 1, var4041 do
+        local var4042 = LuaCLS_BankTop.new()
+        var4042:Unserialize(nbs)
+        self.ListGuildTop:Add(var4042)
     end
-    local var4039 = nbs:ReadInt()
-    for i = 1, var4039 do
-        local var4040 = LuaCLS_BankTop.new()
-        var4040:Unserialize(nbs)
-        self.ListPlayerTop:Add(var4040)
+    local var4043 = nbs:ReadInt()
+    for i = 1, var4043 do
+        local var4044 = LuaCLS_BankTop.new()
+        var4044:Unserialize(nbs)
+        self.ListPlayerTop:Add(var4044)
     end
 end
 -- LuaG2C_Bank_Top end
@@ -14168,17 +14174,17 @@ end
 function LuaCLS_BankCountryTop:Unserialize(nbs)
     self.Countryid = nbs:ReadInt()
     self.HurtHp = nbs:ReadLong()
-    local var4043 = nbs:ReadInt()
-    for i = 1, var4043 do
-        local var4044 = LuaCLS_PlayerData.new()
-        var4044:Unserialize(nbs)
-        self.TopThree:Add(var4044)
+    local var4047 = nbs:ReadInt()
+    for i = 1, var4047 do
+        local var4048 = LuaCLS_PlayerData.new()
+        var4048:Unserialize(nbs)
+        self.TopThree:Add(var4048)
     end
-    local var4045 = nbs:ReadInt()
-    for i = 1, var4045 do
-        local var4046 = LuaCLS_BankTop.new()
-        var4046:Unserialize(nbs)
-        self.ListPlayerTop:Add(var4046)
+    local var4049 = nbs:ReadInt()
+    for i = 1, var4049 do
+        local var4050 = LuaCLS_BankTop.new()
+        var4050:Unserialize(nbs)
+        self.ListPlayerTop:Add(var4050)
     end
 end
 -- LuaCLS_BankCountryTop end
@@ -14218,11 +14224,11 @@ function LuaG2C_Bank_TopCountry:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4047 = nbs:ReadInt()
-    for i = 1, var4047 do
-        local var4048 = LuaCLS_BankCountryTop.new()
-        var4048:Unserialize(nbs)
-        self.ListTop:Add(var4048)
+    local var4051 = nbs:ReadInt()
+    for i = 1, var4051 do
+        local var4052 = LuaCLS_BankCountryTop.new()
+        var4052:Unserialize(nbs)
+        self.ListTop:Add(var4052)
     end
 end
 -- LuaG2C_Bank_TopCountry end
@@ -14297,15 +14303,15 @@ function LuaCLS_Affairs:Unserialize(nbs)
     self.State = nbs:ReadInt()
     self.StartTime = nbs:ReadDateTime()
     self.EndTime = nbs:ReadDateTime()
-    local var4063 = nbs:ReadInt()
-    for i = 1, var4063 do
-        local var4064 = nbs:ReadInt()
-        self.ListJob:Add(var4064)
+    local var4067 = nbs:ReadInt()
+    for i = 1, var4067 do
+        local var4068 = nbs:ReadInt()
+        self.ListJob:Add(var4068)
     end
-    local var4065 = nbs:ReadInt()
-    for i = 1, var4065 do
-        local var4066 = nbs:ReadLong()
-        self.ListWarrior:Add(var4066)
+    local var4069 = nbs:ReadInt()
+    for i = 1, var4069 do
+        local var4070 = nbs:ReadLong()
+        self.ListWarrior:Add(var4070)
     end
 end
 -- LuaCLS_Affairs end
@@ -14345,11 +14351,11 @@ function LuaG2C_Affairs_List:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4067 = nbs:ReadInt()
-    for i = 1, var4067 do
-        local var4068 = LuaCLS_Affairs.new()
-        var4068:Unserialize(nbs)
-        self.ListAffairs:Add(var4068)
+    local var4071 = nbs:ReadInt()
+    for i = 1, var4071 do
+        local var4072 = LuaCLS_Affairs.new()
+        var4072:Unserialize(nbs)
+        self.ListAffairs:Add(var4072)
     end
 end
 -- LuaG2C_Affairs_List end
@@ -14437,11 +14443,11 @@ function LuaG2C_Affairs_Award:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4070 = nbs:ReadInt()
-    for i = 1, var4070 do
-        local var4071 = LuaCLS_AwardItem.new()
-        var4071:Unserialize(nbs)
-        self.ListAward:Add(var4071)
+    local var4074 = nbs:ReadInt()
+    for i = 1, var4074 do
+        local var4075 = LuaCLS_AwardItem.new()
+        var4075:Unserialize(nbs)
+        self.ListAward:Add(var4075)
     end
 end
 -- LuaG2C_Affairs_Award end
@@ -14496,11 +14502,11 @@ function LuaCLS_Grab_ArmyInfo:Unserialize(nbs)
     self.PalyerId = nbs:ReadLong()
     self.Name = nbs:ReadString()
     self.GuildName = nbs:ReadString()
-    local var4077 = nbs:ReadInt()
-    for i = 1, var4077 do
-        local var4078 = nbs:ReadInt()
-        local var4079 = nbs:ReadLong()
-        self.DictWarrior:Add(var4078, var4079)
+    local var4081 = nbs:ReadInt()
+    for i = 1, var4081 do
+        local var4082 = nbs:ReadInt()
+        local var4083 = nbs:ReadLong()
+        self.DictWarrior:Add(var4082, var4083)
     end
     self.BeginTime = nbs:ReadDateTime()
     self.EndTime = nbs:ReadDateTime()
@@ -14550,11 +14556,11 @@ function LuaG2C_Grab_List:Unserialize(buffer)
     self.Shuttle = nbs:ReadString()
     self.Buy = nbs:ReadInt()
     self.Total = nbs:ReadInt()
-    local var4084 = nbs:ReadInt()
-    for i = 1, var4084 do
-        local var4085 = LuaCLS_Grab_ArmyInfo.new()
-        var4085:Unserialize(nbs)
-        self.ListItem:Add(var4085)
+    local var4088 = nbs:ReadInt()
+    for i = 1, var4088 do
+        local var4089 = LuaCLS_Grab_ArmyInfo.new()
+        var4089:Unserialize(nbs)
+        self.ListItem:Add(var4089)
     end
 end
 -- LuaG2C_Grab_List end
@@ -14596,11 +14602,11 @@ function LuaG2C_Grab_Battle:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4086 = nbs:ReadInt()
-    for i = 1, var4086 do
-        local var4087 = LuaCLS_WarriorInfo.new()
-        var4087:Unserialize(nbs)
-        self.ListWarriorOther:Add(var4087)
+    local var4090 = nbs:ReadInt()
+    for i = 1, var4090 do
+        local var4091 = LuaCLS_WarriorInfo.new()
+        var4091:Unserialize(nbs)
+        self.ListWarriorOther:Add(var4091)
     end
 end
 -- LuaG2C_Grab_Battle end
@@ -14705,12 +14711,12 @@ function LuaG2C_Grab_Info:Unserialize(buffer)
     self.PalyerId = nbs:ReadLong()
     self.Name = nbs:ReadString()
     self.GuildName = nbs:ReadString()
-    local var4093 = nbs:ReadInt()
-    for i = 1, var4093 do
-        local var4094 = nbs:ReadInt()
-        local var4095 = LuaCLS_WarriorInfo.new()
-        var4095:Unserialize(nbs)
-        self.DictWarrior:Add(var4094, var4095)
+    local var4097 = nbs:ReadInt()
+    for i = 1, var4097 do
+        local var4098 = nbs:ReadInt()
+        local var4099 = LuaCLS_WarriorInfo.new()
+        var4099:Unserialize(nbs)
+        self.DictWarrior:Add(var4098, var4099)
     end
     self.EndTime = nbs:ReadDateTime()
 end
@@ -14792,11 +14798,11 @@ function LuaG2C_Grab_Mine:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4098 = nbs:ReadInt()
-    for i = 1, var4098 do
-        local var4099 = LuaCLS_Grab_ArmyInfo.new()
-        var4099:Unserialize(nbs)
-        self.ListItem:Add(var4099)
+    local var4102 = nbs:ReadInt()
+    for i = 1, var4102 do
+        local var4103 = LuaCLS_Grab_ArmyInfo.new()
+        var4103:Unserialize(nbs)
+        self.ListItem:Add(var4103)
     end
 end
 -- LuaG2C_Grab_Mine end
@@ -14889,12 +14895,12 @@ end
 function LuaCLS_BanditsInfo:Unserialize(nbs)
     self.BanditsBuyTimes = nbs:ReadInt()
     self.BanditsCount = nbs:ReadInt()
-    local var4108 = nbs:ReadInt()
-    for i = 1, var4108 do
-        local var4109 = nbs:ReadInt()
-        local var4110 = LuaCLS_BanditsArmyInfo.new()
-        var4110:Unserialize(nbs)
-        self.DictBandits:Add(var4109, var4110)
+    local var4112 = nbs:ReadInt()
+    for i = 1, var4112 do
+        local var4113 = nbs:ReadInt()
+        local var4114 = LuaCLS_BanditsArmyInfo.new()
+        var4114:Unserialize(nbs)
+        self.DictBandits:Add(var4113, var4114)
     end
 end
 -- LuaCLS_BanditsInfo end
@@ -15031,11 +15037,11 @@ function LuaG2C_Bandits_BattleEnd:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.Uid = nbs:ReadInt()
-    local var4115 = nbs:ReadInt()
-    for i = 1, var4115 do
-        local var4116 = LuaCLS_AwardItem.new()
-        var4116:Unserialize(nbs)
-        self.ListAward:Add(var4116)
+    local var4119 = nbs:ReadInt()
+    for i = 1, var4119 do
+        local var4120 = LuaCLS_AwardItem.new()
+        var4120:Unserialize(nbs)
+        self.ListAward:Add(var4120)
     end
     self.BanditsInfo:Unserialize(nbs)
 end
@@ -15162,12 +15168,12 @@ function LuaG2C_Supply_Supply:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4121 = nbs:ReadInt()
-    for i = 1, var4121 do
-        local var4122 = nbs:ReadLong()
-        local var4123 = LuaCLS_WarriorInfo.new()
-        var4123:Unserialize(nbs)
-        self.DictWarrior:Add(var4122, var4123)
+    local var4125 = nbs:ReadInt()
+    for i = 1, var4125 do
+        local var4126 = nbs:ReadLong()
+        local var4127 = LuaCLS_WarriorInfo.new()
+        var4127:Unserialize(nbs)
+        self.DictWarrior:Add(var4126, var4127)
     end
 end
 -- LuaG2C_Supply_Supply end
@@ -15212,12 +15218,12 @@ function LuaG2C_Supply_SupplyAuto:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4124 = nbs:ReadInt()
-    for i = 1, var4124 do
-        local var4125 = nbs:ReadLong()
-        local var4126 = LuaCLS_WarriorInfo.new()
-        var4126:Unserialize(nbs)
-        self.DictWarrior:Add(var4125, var4126)
+    local var4128 = nbs:ReadInt()
+    for i = 1, var4128 do
+        local var4129 = nbs:ReadLong()
+        local var4130 = LuaCLS_WarriorInfo.new()
+        var4130:Unserialize(nbs)
+        self.DictWarrior:Add(var4129, var4130)
     end
 end
 -- LuaG2C_Supply_SupplyAuto end
@@ -15320,28 +15326,28 @@ function LuaG2C_Strategy_Map:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4138 = nbs:ReadInt()
-    for i = 1, var4138 do
-        local var4139 = nbs:ReadInt()
-        local var4140 = LuaCLS_StrategyCityInfo.new()
-        var4140:Unserialize(nbs)
-        self.DictCity:Add(var4139, var4140)
-    end
-    self.MetroPvpInfo:Unserialize(nbs)
     local var4142 = nbs:ReadInt()
     for i = 1, var4142 do
-        local var4143 = nbs:ReadLong()
-        self.ListAlliance:Add(var4143)
+        local var4143 = nbs:ReadInt()
+        local var4144 = LuaCLS_StrategyCityInfo.new()
+        var4144:Unserialize(nbs)
+        self.DictCity:Add(var4143, var4144)
     end
-    local var4144 = nbs:ReadInt()
-    for i = 1, var4144 do
-        local var4145 = nbs:ReadInt()
-        self.ListGuildCityMy:Add(var4145)
-    end
+    self.MetroPvpInfo:Unserialize(nbs)
     local var4146 = nbs:ReadInt()
     for i = 1, var4146 do
-        local var4147 = nbs:ReadInt()
-        self.ListGuildCityAlliance:Add(var4147)
+        local var4147 = nbs:ReadLong()
+        self.ListAlliance:Add(var4147)
+    end
+    local var4148 = nbs:ReadInt()
+    for i = 1, var4148 do
+        local var4149 = nbs:ReadInt()
+        self.ListGuildCityMy:Add(var4149)
+    end
+    local var4150 = nbs:ReadInt()
+    for i = 1, var4150 do
+        local var4151 = nbs:ReadInt()
+        self.ListGuildCityAlliance:Add(var4151)
     end
     self.BanditsInfo:Unserialize(nbs)
 end
@@ -15409,10 +15415,10 @@ end
 function LuaCLS_StrategyFightCampInfo:Unserialize(nbs)
     self.Uid = nbs:ReadInt()
     self.WallHp:Unserialize(nbs)
-    local var4152 = nbs:ReadInt()
-    for i = 1, var4152 do
-        local var4153 = nbs:ReadString()
-        self.ListLastAttacker:Add(var4153)
+    local var4156 = nbs:ReadInt()
+    for i = 1, var4156 do
+        local var4157 = nbs:ReadString()
+        self.ListLastAttacker:Add(var4157)
     end
 end
 -- LuaCLS_StrategyFightCampInfo end
@@ -15439,12 +15445,12 @@ end
 function LuaCLS_StrategyFightInfo:Unserialize(nbs)
     self.Uid = nbs:ReadInt()
     self.CityInfoBase:Unserialize(nbs)
-    local var4156 = nbs:ReadInt()
-    for i = 1, var4156 do
-        local var4157 = nbs:ReadInt()
-        local var4158 = LuaCLS_StrategyFightCampInfo.new()
-        var4158:Unserialize(nbs)
-        self.DictCamp:Add(var4157, var4158)
+    local var4160 = nbs:ReadInt()
+    for i = 1, var4160 do
+        local var4161 = nbs:ReadInt()
+        local var4162 = LuaCLS_StrategyFightCampInfo.new()
+        var4162:Unserialize(nbs)
+        self.DictCamp:Add(var4161, var4162)
     end
 end
 -- LuaCLS_StrategyFightInfo end
@@ -15550,12 +15556,12 @@ function LuaG2C_Strategy_NotifyRefreshCitys:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4164 = nbs:ReadInt()
-    for i = 1, var4164 do
-        local var4165 = nbs:ReadInt()
-        local var4166 = LuaCLS_StrategyCityInfo.new()
-        var4166:Unserialize(nbs)
-        self.DictCity:Add(var4165, var4166)
+    local var4168 = nbs:ReadInt()
+    for i = 1, var4168 do
+        local var4169 = nbs:ReadInt()
+        local var4170 = LuaCLS_StrategyCityInfo.new()
+        var4170:Unserialize(nbs)
+        self.DictCity:Add(var4169, var4170)
     end
 end
 -- LuaG2C_Strategy_NotifyRefreshCitys end
@@ -15803,12 +15809,12 @@ end
 function LuaCLS_CampNpc:Unserialize(nbs)
     self.NpcUid = nbs:ReadInt()
     self.StageId = nbs:ReadInt()
-    local var4187 = nbs:ReadInt()
-    for i = 1, var4187 do
-        local var4188 = nbs:ReadInt()
-        local var4189 = LuaCLS_CampNpcMonster.new()
-        var4189:Unserialize(nbs)
-        self.DictMonster:Add(var4188, var4189)
+    local var4191 = nbs:ReadInt()
+    for i = 1, var4191 do
+        local var4192 = nbs:ReadInt()
+        local var4193 = LuaCLS_CampNpcMonster.new()
+        var4193:Unserialize(nbs)
+        self.DictMonster:Add(var4192, var4193)
     end
 end
 -- LuaCLS_CampNpc end
@@ -15921,11 +15927,11 @@ function LuaG2C_Strategy_AttackWallBalance:Unserialize(buffer)
     self.Pin = nbs:ReadLong()
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
-    local var4190 = nbs:ReadInt()
-    for i = 1, var4190 do
-        local var4191 = LuaCLS_AwardItem.new()
-        var4191:Unserialize(nbs)
-        self.ListAwardFirst:Add(var4191)
+    local var4194 = nbs:ReadInt()
+    for i = 1, var4194 do
+        local var4195 = LuaCLS_AwardItem.new()
+        var4195:Unserialize(nbs)
+        self.ListAwardFirst:Add(var4195)
     end
 end
 -- LuaG2C_Strategy_AttackWallBalance end
@@ -16003,11 +16009,11 @@ function LuaG2C_Strategy_AttackPlayerBalance:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.BattleUid = nbs:ReadInt()
-    local var4194 = nbs:ReadInt()
-    for i = 1, var4194 do
-        local var4195 = nbs:ReadLong()
-        local var4196 = nbs:ReadBool()
-        self.DictBattleResult:Add(var4195, var4196)
+    local var4198 = nbs:ReadInt()
+    for i = 1, var4198 do
+        local var4199 = nbs:ReadLong()
+        local var4200 = nbs:ReadBool()
+        self.DictBattleResult:Add(var4199, var4200)
     end
 end
 -- LuaG2C_Strategy_AttackPlayerBalance end
@@ -16136,11 +16142,11 @@ function LuaG2C_Metro_TopScore:Unserialize(buffer)
     self.Shuttle = nbs:ReadString()
     self.Uid = nbs:ReadInt()
     self.ScoreMy:Unserialize(nbs)
-    local var4209 = nbs:ReadInt()
-    for i = 1, var4209 do
-        local var4210 = LuaCLS_MetroTopScoreNode.new()
-        var4210:Unserialize(nbs)
-        self.ListScore:Add(var4210)
+    local var4213 = nbs:ReadInt()
+    for i = 1, var4213 do
+        local var4214 = LuaCLS_MetroTopScoreNode.new()
+        var4214:Unserialize(nbs)
+        self.ListScore:Add(var4214)
     end
 end
 -- LuaG2C_Metro_TopScore end
@@ -16316,11 +16322,11 @@ function LuaG2C_Metro_AttackPlayerBalance:Unserialize(buffer)
     self.Puid = nbs:ReadLong()
     self.Shuttle = nbs:ReadString()
     self.BattleUid = nbs:ReadInt()
-    local var4216 = nbs:ReadInt()
-    for i = 1, var4216 do
-        local var4217 = nbs:ReadLong()
-        local var4218 = nbs:ReadBool()
-        self.DictBattleResult:Add(var4217, var4218)
+    local var4220 = nbs:ReadInt()
+    for i = 1, var4220 do
+        local var4221 = nbs:ReadLong()
+        local var4222 = nbs:ReadBool()
+        self.DictBattleResult:Add(var4221, var4222)
     end
 end
 -- LuaG2C_Metro_AttackPlayerBalance end
@@ -16350,12 +16356,12 @@ function LuaCLS_BattlePlayer:Unserialize(nbs)
     self.Puid = nbs:ReadLong()
     self.Name = nbs:ReadString()
     self.IsReady = nbs:ReadBool()
-    local var4222 = nbs:ReadInt()
-    for i = 1, var4222 do
-        local var4223 = nbs:ReadInt()
-        local var4224 = LuaCLS_WarriorInfo.new()
-        var4224:Unserialize(nbs)
-        self.DictWarrior:Add(var4223, var4224)
+    local var4226 = nbs:ReadInt()
+    for i = 1, var4226 do
+        local var4227 = nbs:ReadInt()
+        local var4228 = LuaCLS_WarriorInfo.new()
+        var4228:Unserialize(nbs)
+        self.DictWarrior:Add(var4227, var4228)
     end
 end
 -- LuaCLS_BattlePlayer end
@@ -16515,18 +16521,18 @@ function LuaCLS_ForwardData:Serialize(nbs)
 end
 function LuaCLS_ForwardData:Unserialize(nbs)
     self.Status = nbs:ReadShort()
-    local var4234 = nbs:ReadInt()
-    for i = 1, var4234 do
-        local var4235 = nbs:ReadString()
-        local var4236 = nbs:ReadString()
-        self.DictStatusData:Add(var4235, var4236)
-    end
-    self.Action = nbs:ReadShort()
     local var4238 = nbs:ReadInt()
     for i = 1, var4238 do
         local var4239 = nbs:ReadString()
         local var4240 = nbs:ReadString()
-        self.DictActionData:Add(var4239, var4240)
+        self.DictStatusData:Add(var4239, var4240)
+    end
+    self.Action = nbs:ReadShort()
+    local var4242 = nbs:ReadInt()
+    for i = 1, var4242 do
+        local var4243 = nbs:ReadString()
+        local var4244 = nbs:ReadString()
+        self.DictActionData:Add(var4243, var4244)
     end
 end
 -- LuaCLS_ForwardData end
@@ -16698,19 +16704,19 @@ end
 function LuaCLS_GmMailInfo:Unserialize(nbs)
     self.Id = nbs:ReadLong()
     self.TargetType = nbs:ReadShort()
-    local var4246 = nbs:ReadInt()
-    for i = 1, var4246 do
-        local var4247 = nbs:ReadString()
-        self.ListTarget:Add(var4247)
+    local var4250 = nbs:ReadInt()
+    for i = 1, var4250 do
+        local var4251 = nbs:ReadString()
+        self.ListTarget:Add(var4251)
     end
     self.Title = nbs:ReadString()
     self.Body = nbs:ReadString()
     self.SenderName = nbs:ReadString()
-    local var4251 = nbs:ReadInt()
-    for i = 1, var4251 do
-        local var4252 = LuaCLS_AwardItem.new()
-        var4252:Unserialize(nbs)
-        self.ListAttachments:Add(var4252)
+    local var4255 = nbs:ReadInt()
+    for i = 1, var4255 do
+        local var4256 = LuaCLS_AwardItem.new()
+        var4256:Unserialize(nbs)
+        self.ListAttachments:Add(var4256)
     end
 end
 -- LuaCLS_GmMailInfo end

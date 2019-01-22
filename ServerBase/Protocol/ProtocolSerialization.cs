@@ -1384,6 +1384,8 @@ namespace ServerBase.Protocol
             }
             nbs.Write(WelfareIsOpen);
             nbs.Write(WelfareNoticeNum);
+            nbs.Write(Acitvity7DayLoginIsOpen);
+            nbs.Write(Acitvity7DayLoginCanGet);
         }
         public void Unserialize(ref NetBitStream nbs)
         {
@@ -1422,6 +1424,8 @@ namespace ServerBase.Protocol
             }
             nbs.Read(out WelfareIsOpen);
             nbs.Read(out WelfareNoticeNum);
+            nbs.Read(out Acitvity7DayLoginIsOpen);
+            nbs.Read(out Acitvity7DayLoginCanGet);
         }
     };
     /// <summary>
@@ -1503,10 +1507,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             InfoBase.Unserialize(ref nbs);
             InfoMisc.Unserialize(ref nbs);
-            int var186 = nbs.ReadInt();
-            for (int k = 0; k < var186; k++)
+            int var188 = nbs.ReadInt();
+            for (int k = 0; k < var188; k++)
             {
-                var var187 = new CLS_ItemInfo(); var187.Unserialize(ref nbs);ListItem.Add(var187);
+                var var189 = new CLS_ItemInfo(); var189.Unserialize(ref nbs);ListItem.Add(var189);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -1533,10 +1537,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             InfoBase.Unserialize(ref nbs);
             InfoMisc.Unserialize(ref nbs);
-            int var190 = nbs.ReadInt();
-            for (int k = 0; k < var190; k++)
+            int var192 = nbs.ReadInt();
+            for (int k = 0; k < var192; k++)
             {
-                var var191 = new CLS_ItemInfo(); var191.Unserialize(ref nbs);ListItem.Add(var191);
+                var var193 = new CLS_ItemInfo(); var193.Unserialize(ref nbs);ListItem.Add(var193);
             }
         }
     };
@@ -1623,10 +1627,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var196 = nbs.ReadInt();
-            for (int k = 0; k < var196; k++)
+            int var198 = nbs.ReadInt();
+            for (int k = 0; k < var198; k++)
             {
-                var var197 = new CLS_ItemInfo(); var197.Unserialize(ref nbs);ListItem.Add(var197);
+                var var199 = new CLS_ItemInfo(); var199.Unserialize(ref nbs);ListItem.Add(var199);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -1649,10 +1653,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var198 = nbs.ReadInt();
-            for (int k = 0; k < var198; k++)
+            int var200 = nbs.ReadInt();
+            for (int k = 0; k < var200; k++)
             {
-                var var199 = new CLS_ItemInfo(); var199.Unserialize(ref nbs);ListItem.Add(var199);
+                var var201 = new CLS_ItemInfo(); var201.Unserialize(ref nbs);ListItem.Add(var201);
             }
         }
     };
@@ -1689,10 +1693,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out PageIndex);
-            int var201 = nbs.ReadInt();
-            for (int k = 0; k < var201; k++)
+            int var203 = nbs.ReadInt();
+            for (int k = 0; k < var203; k++)
             {
-                long var202 = nbs.ReadLong(); var var203 = new CLS_EquipInfo(); var203.Unserialize(ref nbs); DictEquip.Add(var202, var203); 
+                long var204 = nbs.ReadLong(); var var205 = new CLS_EquipInfo(); var205.Unserialize(ref nbs); DictEquip.Add(var204, var205); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -1717,10 +1721,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out PageIndex);
-            int var205 = nbs.ReadInt();
-            for (int k = 0; k < var205; k++)
+            int var207 = nbs.ReadInt();
+            for (int k = 0; k < var207; k++)
             {
-                long var206 = nbs.ReadLong(); var var207 = new CLS_EquipInfo(); var207.Unserialize(ref nbs); DictEquip.Add(var206, var207); 
+                long var208 = nbs.ReadLong(); var var209 = new CLS_EquipInfo(); var209.Unserialize(ref nbs); DictEquip.Add(var208, var209); 
             }
         }
     };
@@ -1757,10 +1761,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out PageIndex);
-            int var209 = nbs.ReadInt();
-            for (int k = 0; k < var209; k++)
+            int var211 = nbs.ReadInt();
+            for (int k = 0; k < var211; k++)
             {
-                var var210 = new CLS_WarriorInfo(); var210.Unserialize(ref nbs);ListWarrior.Add(var210);
+                var var212 = new CLS_WarriorInfo(); var212.Unserialize(ref nbs);ListWarrior.Add(var212);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -1785,10 +1789,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out PageIndex);
-            int var212 = nbs.ReadInt();
-            for (int k = 0; k < var212; k++)
+            int var214 = nbs.ReadInt();
+            for (int k = 0; k < var214; k++)
             {
-                var var213 = new CLS_WarriorInfo(); var213.Unserialize(ref nbs);ListWarrior.Add(var213);
+                var var215 = new CLS_WarriorInfo(); var215.Unserialize(ref nbs);ListWarrior.Add(var215);
             }
         }
     };
@@ -1881,20 +1885,20 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var220 = nbs.ReadInt();
-            for (int k = 0; k < var220; k++)
-            {
-                var var221 = new CLS_UpdateInfoItem(); var221.Unserialize(ref nbs);ListUpdateItem.Add(var221);
-            }
             int var222 = nbs.ReadInt();
             for (int k = 0; k < var222; k++)
             {
-                var var223 = new CLS_UpdateInfoEquip(); var223.Unserialize(ref nbs);ListUpdateEquip.Add(var223);
+                var var223 = new CLS_UpdateInfoItem(); var223.Unserialize(ref nbs);ListUpdateItem.Add(var223);
             }
             int var224 = nbs.ReadInt();
             for (int k = 0; k < var224; k++)
             {
-                var var225 = new CLS_UpdateInfoWarrior(); var225.Unserialize(ref nbs);ListUpdateWarrior.Add(var225);
+                var var225 = new CLS_UpdateInfoEquip(); var225.Unserialize(ref nbs);ListUpdateEquip.Add(var225);
+            }
+            int var226 = nbs.ReadInt();
+            for (int k = 0; k < var226; k++)
+            {
+                var var227 = new CLS_UpdateInfoWarrior(); var227.Unserialize(ref nbs);ListUpdateWarrior.Add(var227);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -1927,20 +1931,20 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var226 = nbs.ReadInt();
-            for (int k = 0; k < var226; k++)
-            {
-                var var227 = new CLS_UpdateInfoItem(); var227.Unserialize(ref nbs);ListUpdateItem.Add(var227);
-            }
             int var228 = nbs.ReadInt();
             for (int k = 0; k < var228; k++)
             {
-                var var229 = new CLS_UpdateInfoEquip(); var229.Unserialize(ref nbs);ListUpdateEquip.Add(var229);
+                var var229 = new CLS_UpdateInfoItem(); var229.Unserialize(ref nbs);ListUpdateItem.Add(var229);
             }
             int var230 = nbs.ReadInt();
             for (int k = 0; k < var230; k++)
             {
-                var var231 = new CLS_UpdateInfoWarrior(); var231.Unserialize(ref nbs);ListUpdateWarrior.Add(var231);
+                var var231 = new CLS_UpdateInfoEquip(); var231.Unserialize(ref nbs);ListUpdateEquip.Add(var231);
+            }
+            int var232 = nbs.ReadInt();
+            for (int k = 0; k < var232; k++)
+            {
+                var var233 = new CLS_UpdateInfoWarrior(); var233.Unserialize(ref nbs);ListUpdateWarrior.Add(var233);
             }
         }
     };
@@ -2271,10 +2275,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var248 = nbs.ReadInt();
-            for (int k = 0; k < var248; k++)
+            int var250 = nbs.ReadInt();
+            for (int k = 0; k < var250; k++)
             {
-                byte var249 = nbs.ReadByte();HeadData.Add(var249);
+                byte var251 = nbs.ReadByte();HeadData.Add(var251);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -2297,10 +2301,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var250 = nbs.ReadInt();
-            for (int k = 0; k < var250; k++)
+            int var252 = nbs.ReadInt();
+            for (int k = 0; k < var252; k++)
             {
-                byte var251 = nbs.ReadByte();HeadData.Add(var251);
+                byte var253 = nbs.ReadByte();HeadData.Add(var253);
             }
         }
     };
@@ -2863,10 +2867,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var274 = nbs.ReadInt();
-            for (int k = 0; k < var274; k++)
+            int var276 = nbs.ReadInt();
+            for (int k = 0; k < var276; k++)
             {
-                string var275 = nbs.ReadString();ListText.Add(var275);
+                string var277 = nbs.ReadString();ListText.Add(var277);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -2889,10 +2893,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var276 = nbs.ReadInt();
-            for (int k = 0; k < var276; k++)
+            int var278 = nbs.ReadInt();
+            for (int k = 0; k < var278; k++)
             {
-                string var277 = nbs.ReadString();ListText.Add(var277);
+                string var279 = nbs.ReadString();ListText.Add(var279);
             }
         }
     };
@@ -3007,10 +3011,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Id);
             MailInfo.Unserialize(ref nbs);
             nbs.Read(out Body);
-            int var298 = nbs.ReadInt();
-            for (int k = 0; k < var298; k++)
+            int var300 = nbs.ReadInt();
+            for (int k = 0; k < var300; k++)
             {
-                var var299 = new CLS_AwardItem(); var299.Unserialize(ref nbs);listAward.Add(var299);
+                var var301 = new CLS_AwardItem(); var301.Unserialize(ref nbs);listAward.Add(var301);
             }
         }
     };
@@ -3063,18 +3067,18 @@ namespace ServerBase.Protocol
         {
             nbs.Read(out Id);
             nbs.Read(out TargetType);
-            int var307 = nbs.ReadInt();
-            for (int k = 0; k < var307; k++)
+            int var309 = nbs.ReadInt();
+            for (int k = 0; k < var309; k++)
             {
-                string var308 = nbs.ReadString();ListTarget.Add(var308);
+                string var310 = nbs.ReadString();ListTarget.Add(var310);
             }
             nbs.Read(out Title);
             nbs.Read(out Body);
             nbs.Read(out SenderName);
-            int var312 = nbs.ReadInt();
-            for (int k = 0; k < var312; k++)
+            int var314 = nbs.ReadInt();
+            for (int k = 0; k < var314; k++)
             {
-                var var313 = new CLS_AwardItem(); var313.Unserialize(ref nbs);ListAttachments.Add(var313);
+                var var315 = new CLS_AwardItem(); var315.Unserialize(ref nbs);ListAttachments.Add(var315);
             }
         }
     };
@@ -3153,10 +3157,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var314 = nbs.ReadInt();
-            for (int k = 0; k < var314; k++)
+            int var316 = nbs.ReadInt();
+            for (int k = 0; k < var316; k++)
             {
-                var var315 = new CLS_MailInfo(); var315.Unserialize(ref nbs);ListMail.Add(var315);
+                var var317 = new CLS_MailInfo(); var317.Unserialize(ref nbs);ListMail.Add(var317);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -3179,10 +3183,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var316 = nbs.ReadInt();
-            for (int k = 0; k < var316; k++)
+            int var318 = nbs.ReadInt();
+            for (int k = 0; k < var318; k++)
             {
-                var var317 = new CLS_MailInfo(); var317.Unserialize(ref nbs);ListMail.Add(var317);
+                var var319 = new CLS_MailInfo(); var319.Unserialize(ref nbs);ListMail.Add(var319);
             }
         }
     };
@@ -3367,10 +3371,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var327 = nbs.ReadInt();
-            for (int k = 0; k < var327; k++)
+            int var329 = nbs.ReadInt();
+            for (int k = 0; k < var329; k++)
             {
-                var var328 = new CLS_AwardItem(); var328.Unserialize(ref nbs);listAward.Add(var328);
+                var var330 = new CLS_AwardItem(); var330.Unserialize(ref nbs);listAward.Add(var330);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -3395,10 +3399,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var330 = nbs.ReadInt();
-            for (int k = 0; k < var330; k++)
+            int var332 = nbs.ReadInt();
+            for (int k = 0; k < var332; k++)
             {
-                var var331 = new CLS_AwardItem(); var331.Unserialize(ref nbs);listAward.Add(var331);
+                var var333 = new CLS_AwardItem(); var333.Unserialize(ref nbs);listAward.Add(var333);
             }
         }
     };
@@ -3477,10 +3481,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var332 = nbs.ReadInt();
-            for (int k = 0; k < var332; k++)
+            int var334 = nbs.ReadInt();
+            for (int k = 0; k < var334; k++)
             {
-                var var333 = new CLS_AwardItem(); var333.Unserialize(ref nbs);listAward.Add(var333);
+                var var335 = new CLS_AwardItem(); var335.Unserialize(ref nbs);listAward.Add(var335);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -3503,10 +3507,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var334 = nbs.ReadInt();
-            for (int k = 0; k < var334; k++)
+            int var336 = nbs.ReadInt();
+            for (int k = 0; k < var336; k++)
             {
-                var var335 = new CLS_AwardItem(); var335.Unserialize(ref nbs);listAward.Add(var335);
+                var var337 = new CLS_AwardItem(); var337.Unserialize(ref nbs);listAward.Add(var337);
             }
         }
     };
@@ -3685,10 +3689,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var342 = nbs.ReadInt();
-            for (int k = 0; k < var342; k++)
+            int var344 = nbs.ReadInt();
+            for (int k = 0; k < var344; k++)
             {
-                var var343 = new CLS_MailInfo(); var343.Unserialize(ref nbs);ListMail.Add(var343);
+                var var345 = new CLS_MailInfo(); var345.Unserialize(ref nbs);ListMail.Add(var345);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -3711,10 +3715,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var344 = nbs.ReadInt();
-            for (int k = 0; k < var344; k++)
+            int var346 = nbs.ReadInt();
+            for (int k = 0; k < var346; k++)
             {
-                var var345 = new CLS_MailInfo(); var345.Unserialize(ref nbs);ListMail.Add(var345);
+                var var347 = new CLS_MailInfo(); var347.Unserialize(ref nbs);ListMail.Add(var347);
             }
         }
     };
@@ -3965,10 +3969,10 @@ namespace ServerBase.Protocol
         public void Unserialize(ref NetBitStream nbs)
         {
             Info.Unserialize(ref nbs);
-            int var362 = nbs.ReadInt();
-            for (int k = 0; k < var362; k++)
+            int var364 = nbs.ReadInt();
+            for (int k = 0; k < var364; k++)
             {
-                var var363 = new CLS_ChatMsg(); var363.Unserialize(ref nbs);ListChatMsgs.Add(var363);
+                var var365 = new CLS_ChatMsg(); var365.Unserialize(ref nbs);ListChatMsgs.Add(var365);
             }
         }
     };
@@ -4103,10 +4107,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var370 = nbs.ReadInt();
-            for (int k = 0; k < var370; k++)
+            int var372 = nbs.ReadInt();
+            for (int k = 0; k < var372; k++)
             {
-                var var371 = new CLS_ChatMsg(); var371.Unserialize(ref nbs);ListChatMsgs.Add(var371);
+                var var373 = new CLS_ChatMsg(); var373.Unserialize(ref nbs);ListChatMsgs.Add(var373);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -4129,10 +4133,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var372 = nbs.ReadInt();
-            for (int k = 0; k < var372; k++)
+            int var374 = nbs.ReadInt();
+            for (int k = 0; k < var374; k++)
             {
-                var var373 = new CLS_ChatMsg(); var373.Unserialize(ref nbs);ListChatMsgs.Add(var373);
+                var var375 = new CLS_ChatMsg(); var375.Unserialize(ref nbs);ListChatMsgs.Add(var375);
             }
         }
     };
@@ -4211,10 +4215,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var374 = nbs.ReadInt();
-            for (int k = 0; k < var374; k++)
+            int var376 = nbs.ReadInt();
+            for (int k = 0; k < var376; k++)
             {
-                long var375 = nbs.ReadLong(); var var376 = new CLS_ChatList(); var376.Unserialize(ref nbs); DictChatInfo.Add(var375, var376); 
+                long var377 = nbs.ReadLong(); var var378 = new CLS_ChatList(); var378.Unserialize(ref nbs); DictChatInfo.Add(var377, var378); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -4237,10 +4241,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var377 = nbs.ReadInt();
-            for (int k = 0; k < var377; k++)
+            int var379 = nbs.ReadInt();
+            for (int k = 0; k < var379; k++)
             {
-                long var378 = nbs.ReadLong(); var var379 = new CLS_ChatList(); var379.Unserialize(ref nbs); DictChatInfo.Add(var378, var379); 
+                long var380 = nbs.ReadLong(); var var381 = new CLS_ChatList(); var381.Unserialize(ref nbs); DictChatInfo.Add(var380, var381); 
             }
         }
     };
@@ -4441,10 +4445,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var391 = nbs.ReadInt();
-            for (int k = 0; k < var391; k++)
+            int var393 = nbs.ReadInt();
+            for (int k = 0; k < var393; k++)
             {
-                var var392 = new CLS_FriendInfo(); var392.Unserialize(ref nbs);ListItem.Add(var392);
+                var var394 = new CLS_FriendInfo(); var394.Unserialize(ref nbs);ListItem.Add(var394);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -4467,10 +4471,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var393 = nbs.ReadInt();
-            for (int k = 0; k < var393; k++)
+            int var395 = nbs.ReadInt();
+            for (int k = 0; k < var395; k++)
             {
-                var var394 = new CLS_FriendInfo(); var394.Unserialize(ref nbs);ListItem.Add(var394);
+                var var396 = new CLS_FriendInfo(); var396.Unserialize(ref nbs);ListItem.Add(var396);
             }
         }
     };
@@ -4549,10 +4553,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var395 = nbs.ReadInt();
-            for (int k = 0; k < var395; k++)
+            int var397 = nbs.ReadInt();
+            for (int k = 0; k < var397; k++)
             {
-                var var396 = new CLS_FriendInfo(); var396.Unserialize(ref nbs);ListItem.Add(var396);
+                var var398 = new CLS_FriendInfo(); var398.Unserialize(ref nbs);ListItem.Add(var398);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -4575,10 +4579,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var397 = nbs.ReadInt();
-            for (int k = 0; k < var397; k++)
+            int var399 = nbs.ReadInt();
+            for (int k = 0; k < var399; k++)
             {
-                var var398 = new CLS_FriendInfo(); var398.Unserialize(ref nbs);ListItem.Add(var398);
+                var var400 = new CLS_FriendInfo(); var400.Unserialize(ref nbs);ListItem.Add(var400);
             }
         }
     };
@@ -4657,10 +4661,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var399 = nbs.ReadInt();
-            for (int k = 0; k < var399; k++)
+            int var401 = nbs.ReadInt();
+            for (int k = 0; k < var401; k++)
             {
-                var var400 = new CLS_FriendInfo(); var400.Unserialize(ref nbs);ListItem.Add(var400);
+                var var402 = new CLS_FriendInfo(); var402.Unserialize(ref nbs);ListItem.Add(var402);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -4683,10 +4687,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var401 = nbs.ReadInt();
-            for (int k = 0; k < var401; k++)
+            int var403 = nbs.ReadInt();
+            for (int k = 0; k < var403; k++)
             {
-                var var402 = new CLS_FriendInfo(); var402.Unserialize(ref nbs);ListItem.Add(var402);
+                var var404 = new CLS_FriendInfo(); var404.Unserialize(ref nbs);ListItem.Add(var404);
             }
         }
     };
@@ -5392,25 +5396,25 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var439 = nbs.ReadInt();
-            for (int k = 0; k < var439; k++)
-            {
-                var var440 = new CLS_MapCitySimple(); var440.Unserialize(ref nbs);ListCity.Add(var440);
-            }
             int var441 = nbs.ReadInt();
             for (int k = 0; k < var441; k++)
             {
-                long var442 = nbs.ReadLong();ListAlliance.Add(var442);
+                var var442 = new CLS_MapCitySimple(); var442.Unserialize(ref nbs);ListCity.Add(var442);
             }
             int var443 = nbs.ReadInt();
             for (int k = 0; k < var443; k++)
             {
-                int var444 = nbs.ReadInt();ListGuildCityMy.Add(var444);
+                long var444 = nbs.ReadLong();ListAlliance.Add(var444);
             }
             int var445 = nbs.ReadInt();
             for (int k = 0; k < var445; k++)
             {
-                int var446 = nbs.ReadInt();ListGuildCityAlliance.Add(var446);
+                int var446 = nbs.ReadInt();ListGuildCityMy.Add(var446);
+            }
+            int var447 = nbs.ReadInt();
+            for (int k = 0; k < var447; k++)
+            {
+                int var448 = nbs.ReadInt();ListGuildCityAlliance.Add(var448);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -5448,25 +5452,25 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var447 = nbs.ReadInt();
-            for (int k = 0; k < var447; k++)
-            {
-                var var448 = new CLS_MapCitySimple(); var448.Unserialize(ref nbs);ListCity.Add(var448);
-            }
             int var449 = nbs.ReadInt();
             for (int k = 0; k < var449; k++)
             {
-                long var450 = nbs.ReadLong();ListAlliance.Add(var450);
+                var var450 = new CLS_MapCitySimple(); var450.Unserialize(ref nbs);ListCity.Add(var450);
             }
             int var451 = nbs.ReadInt();
             for (int k = 0; k < var451; k++)
             {
-                int var452 = nbs.ReadInt();ListGuildCityMy.Add(var452);
+                long var452 = nbs.ReadLong();ListAlliance.Add(var452);
             }
             int var453 = nbs.ReadInt();
             for (int k = 0; k < var453; k++)
             {
-                int var454 = nbs.ReadInt();ListGuildCityAlliance.Add(var454);
+                int var454 = nbs.ReadInt();ListGuildCityMy.Add(var454);
+            }
+            int var455 = nbs.ReadInt();
+            for (int k = 0; k < var455; k++)
+            {
+                int var456 = nbs.ReadInt();ListGuildCityAlliance.Add(var456);
             }
         }
     };
@@ -5677,10 +5681,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var465 = nbs.ReadInt();
-            for (int k = 0; k < var465; k++)
+            int var467 = nbs.ReadInt();
+            for (int k = 0; k < var467; k++)
             {
-                var var466 = new CLS_MapMyCityInfo(); var466.Unserialize(ref nbs);ListMyCity.Add(var466);
+                var var468 = new CLS_MapMyCityInfo(); var468.Unserialize(ref nbs);ListMyCity.Add(var468);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -5703,10 +5707,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var467 = nbs.ReadInt();
-            for (int k = 0; k < var467; k++)
+            int var469 = nbs.ReadInt();
+            for (int k = 0; k < var469; k++)
             {
-                var var468 = new CLS_MapMyCityInfo(); var468.Unserialize(ref nbs);ListMyCity.Add(var468);
+                var var470 = new CLS_MapMyCityInfo(); var470.Unserialize(ref nbs);ListMyCity.Add(var470);
             }
         }
     };
@@ -5801,10 +5805,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var471 = nbs.ReadInt();
-            for (int k = 0; k < var471; k++)
+            int var473 = nbs.ReadInt();
+            for (int k = 0; k < var473; k++)
             {
-                var var472 = new CLS_ItemInfo(); var472.Unserialize(ref nbs);ListItem.Add(var472);
+                var var474 = new CLS_ItemInfo(); var474.Unserialize(ref nbs);ListItem.Add(var474);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -5827,10 +5831,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var473 = nbs.ReadInt();
-            for (int k = 0; k < var473; k++)
+            int var475 = nbs.ReadInt();
+            for (int k = 0; k < var475; k++)
             {
-                var var474 = new CLS_ItemInfo(); var474.Unserialize(ref nbs);ListItem.Add(var474);
+                var var476 = new CLS_ItemInfo(); var476.Unserialize(ref nbs);ListItem.Add(var476);
             }
         }
     };
@@ -5917,10 +5921,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var479 = nbs.ReadInt();
-            for (int k = 0; k < var479; k++)
+            int var481 = nbs.ReadInt();
+            for (int k = 0; k < var481; k++)
             {
-                var var480 = new CLS_ItemInfo(); var480.Unserialize(ref nbs);ListItem.Add(var480);
+                var var482 = new CLS_ItemInfo(); var482.Unserialize(ref nbs);ListItem.Add(var482);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -5943,10 +5947,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var481 = nbs.ReadInt();
-            for (int k = 0; k < var481; k++)
+            int var483 = nbs.ReadInt();
+            for (int k = 0; k < var483; k++)
             {
-                var var482 = new CLS_ItemInfo(); var482.Unserialize(ref nbs);ListItem.Add(var482);
+                var var484 = new CLS_ItemInfo(); var484.Unserialize(ref nbs);ListItem.Add(var484);
             }
         }
     };
@@ -6044,15 +6048,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Type);
-            int var490 = nbs.ReadInt();
-            for (int k = 0; k < var490; k++)
-            {
-                var var491 = new CLS_ItemInfo(); var491.Unserialize(ref nbs);ListItem.Add(var491);
-            }
             int var492 = nbs.ReadInt();
             for (int k = 0; k < var492; k++)
             {
-                var var493 = new CLS_AwardItem(); var493.Unserialize(ref nbs);ListAward.Add(var493);
+                var var493 = new CLS_ItemInfo(); var493.Unserialize(ref nbs);ListItem.Add(var493);
+            }
+            int var494 = nbs.ReadInt();
+            for (int k = 0; k < var494; k++)
+            {
+                var var495 = new CLS_AwardItem(); var495.Unserialize(ref nbs);ListAward.Add(var495);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -6082,15 +6086,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Type);
-            int var495 = nbs.ReadInt();
-            for (int k = 0; k < var495; k++)
-            {
-                var var496 = new CLS_ItemInfo(); var496.Unserialize(ref nbs);ListItem.Add(var496);
-            }
             int var497 = nbs.ReadInt();
             for (int k = 0; k < var497; k++)
             {
-                var var498 = new CLS_AwardItem(); var498.Unserialize(ref nbs);ListAward.Add(var498);
+                var var498 = new CLS_ItemInfo(); var498.Unserialize(ref nbs);ListItem.Add(var498);
+            }
+            int var499 = nbs.ReadInt();
+            for (int k = 0; k < var499; k++)
+            {
+                var var500 = new CLS_AwardItem(); var500.Unserialize(ref nbs);ListAward.Add(var500);
             }
         }
     };
@@ -6173,10 +6177,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var501 = nbs.ReadInt();
-            for (int k = 0; k < var501; k++)
+            int var503 = nbs.ReadInt();
+            for (int k = 0; k < var503; k++)
             {
-                var var502 = new CLS_ItemInfo(); var502.Unserialize(ref nbs);ListItem.Add(var502);
+                var var504 = new CLS_ItemInfo(); var504.Unserialize(ref nbs);ListItem.Add(var504);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -6199,10 +6203,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var503 = nbs.ReadInt();
-            for (int k = 0; k < var503; k++)
+            int var505 = nbs.ReadInt();
+            for (int k = 0; k < var505; k++)
             {
-                var var504 = new CLS_ItemInfo(); var504.Unserialize(ref nbs);ListItem.Add(var504);
+                var var506 = new CLS_ItemInfo(); var506.Unserialize(ref nbs);ListItem.Add(var506);
             }
         }
     };
@@ -6238,10 +6242,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var505 = nbs.ReadInt();
-            for (int k = 0; k < var505; k++)
+            int var507 = nbs.ReadInt();
+            for (int k = 0; k < var507; k++)
             {
-                var var506 = new CLS_ItemInfo(); var506.Unserialize(ref nbs);Items.Add(var506);
+                var var508 = new CLS_ItemInfo(); var508.Unserialize(ref nbs);Items.Add(var508);
             }
             nbs.Read(out Type);
         }
@@ -6266,10 +6270,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var508 = nbs.ReadInt();
-            for (int k = 0; k < var508; k++)
+            int var510 = nbs.ReadInt();
+            for (int k = 0; k < var510; k++)
             {
-                var var509 = new CLS_ItemInfo(); var509.Unserialize(ref nbs);Items.Add(var509);
+                var var511 = new CLS_ItemInfo(); var511.Unserialize(ref nbs);Items.Add(var511);
             }
             nbs.Read(out Type);
         }
@@ -6310,15 +6314,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var511 = nbs.ReadInt();
-            for (int k = 0; k < var511; k++)
-            {
-                var var512 = new CLS_ItemInfo(); var512.Unserialize(ref nbs);ListItem.Add(var512);
-            }
             int var513 = nbs.ReadInt();
             for (int k = 0; k < var513; k++)
             {
-                var var514 = new CLS_AwardItem(); var514.Unserialize(ref nbs);ListAward.Add(var514);
+                var var514 = new CLS_ItemInfo(); var514.Unserialize(ref nbs);ListItem.Add(var514);
+            }
+            int var515 = nbs.ReadInt();
+            for (int k = 0; k < var515; k++)
+            {
+                var var516 = new CLS_AwardItem(); var516.Unserialize(ref nbs);ListAward.Add(var516);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -6346,15 +6350,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var515 = nbs.ReadInt();
-            for (int k = 0; k < var515; k++)
-            {
-                var var516 = new CLS_ItemInfo(); var516.Unserialize(ref nbs);ListItem.Add(var516);
-            }
             int var517 = nbs.ReadInt();
             for (int k = 0; k < var517; k++)
             {
-                var var518 = new CLS_AwardItem(); var518.Unserialize(ref nbs);ListAward.Add(var518);
+                var var518 = new CLS_ItemInfo(); var518.Unserialize(ref nbs);ListItem.Add(var518);
+            }
+            int var519 = nbs.ReadInt();
+            for (int k = 0; k < var519; k++)
+            {
+                var var520 = new CLS_AwardItem(); var520.Unserialize(ref nbs);ListAward.Add(var520);
             }
         }
     };
@@ -6450,15 +6454,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var525 = nbs.ReadInt();
-            for (int k = 0; k < var525; k++)
-            {
-                var var526 = new CLS_ItemInfo(); var526.Unserialize(ref nbs);ListItem.Add(var526);
-            }
             int var527 = nbs.ReadInt();
             for (int k = 0; k < var527; k++)
             {
-                var var528 = new CLS_AwardItem(); var528.Unserialize(ref nbs);ListAward.Add(var528);
+                var var528 = new CLS_ItemInfo(); var528.Unserialize(ref nbs);ListItem.Add(var528);
+            }
+            int var529 = nbs.ReadInt();
+            for (int k = 0; k < var529; k++)
+            {
+                var var530 = new CLS_AwardItem(); var530.Unserialize(ref nbs);ListAward.Add(var530);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -6486,15 +6490,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var529 = nbs.ReadInt();
-            for (int k = 0; k < var529; k++)
-            {
-                var var530 = new CLS_ItemInfo(); var530.Unserialize(ref nbs);ListItem.Add(var530);
-            }
             int var531 = nbs.ReadInt();
             for (int k = 0; k < var531; k++)
             {
-                var var532 = new CLS_AwardItem(); var532.Unserialize(ref nbs);ListAward.Add(var532);
+                var var532 = new CLS_ItemInfo(); var532.Unserialize(ref nbs);ListItem.Add(var532);
+            }
+            int var533 = nbs.ReadInt();
+            for (int k = 0; k < var533; k++)
+            {
+                var var534 = new CLS_AwardItem(); var534.Unserialize(ref nbs);ListAward.Add(var534);
             }
         }
     };
@@ -6591,10 +6595,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Id);
             nbs.Read(out Count);
             nbs.Read(out CombatType);
-            int var542 = nbs.ReadInt();
-            for (int k = 0; k < var542; k++)
+            int var544 = nbs.ReadInt();
+            for (int k = 0; k < var544; k++)
             {
-                var var543 = new CLS_ItemInfo(); var543.Unserialize(ref nbs);ListItem.Add(var543);
+                var var545 = new CLS_ItemInfo(); var545.Unserialize(ref nbs);ListItem.Add(var545);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -6623,10 +6627,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Id);
             nbs.Read(out Count);
             nbs.Read(out CombatType);
-            int var547 = nbs.ReadInt();
-            for (int k = 0; k < var547; k++)
+            int var549 = nbs.ReadInt();
+            for (int k = 0; k < var549; k++)
             {
-                var var548 = new CLS_ItemInfo(); var548.Unserialize(ref nbs);ListItem.Add(var548);
+                var var550 = new CLS_ItemInfo(); var550.Unserialize(ref nbs);ListItem.Add(var550);
             }
         }
     };
@@ -6677,16 +6681,16 @@ namespace ServerBase.Protocol
             nbs.Read(out ConfigId);
             nbs.Read(out EquipType);
             nbs.Read(out Intensify);
-            int var556 = nbs.ReadInt();
-            for (int k = 0; k < var556; k++)
+            int var558 = nbs.ReadInt();
+            for (int k = 0; k < var558; k++)
             {
-                int var557 = nbs.ReadInt(); float var558 = nbs.ReadFloat(); CombatProperty.Add(var557, var558); 
+                int var559 = nbs.ReadInt(); float var560 = nbs.ReadFloat(); CombatProperty.Add(var559, var560); 
             }
             nbs.Read(out MarkName);
-            int var560 = nbs.ReadInt();
-            for (int k = 0; k < var560; k++)
+            int var562 = nbs.ReadInt();
+            for (int k = 0; k < var562; k++)
             {
-                var var561 = new CLS_EquipSuffix(); var561.Unserialize(ref nbs);SuffixProperty.Add(var561);
+                var var563 = new CLS_EquipSuffix(); var563.Unserialize(ref nbs);SuffixProperty.Add(var563);
             }
         }
     };
@@ -6767,10 +6771,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out PageIndex);
-            int var563 = nbs.ReadInt();
-            for (int k = 0; k < var563; k++)
+            int var565 = nbs.ReadInt();
+            for (int k = 0; k < var565; k++)
             {
-                long var564 = nbs.ReadLong(); var var565 = new CLS_EquipInfo(); var565.Unserialize(ref nbs); DictEquip.Add(var564, var565); 
+                long var566 = nbs.ReadLong(); var var567 = new CLS_EquipInfo(); var567.Unserialize(ref nbs); DictEquip.Add(var566, var567); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -6795,10 +6799,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out PageIndex);
-            int var567 = nbs.ReadInt();
-            for (int k = 0; k < var567; k++)
+            int var569 = nbs.ReadInt();
+            for (int k = 0; k < var569; k++)
             {
-                long var568 = nbs.ReadLong(); var var569 = new CLS_EquipInfo(); var569.Unserialize(ref nbs); DictEquip.Add(var568, var569); 
+                long var570 = nbs.ReadLong(); var var571 = new CLS_EquipInfo(); var571.Unserialize(ref nbs); DictEquip.Add(var570, var571); 
             }
         }
     };
@@ -6887,15 +6891,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var572 = nbs.ReadInt();
-            for (int k = 0; k < var572; k++)
+            int var574 = nbs.ReadInt();
+            for (int k = 0; k < var574; k++)
             {
-                int var573 = nbs.ReadInt(); var var574 = new CLS_EquipInfo(); var574.Unserialize(ref nbs); DictEquiped.Add(var573, var574); 
+                int var575 = nbs.ReadInt(); var var576 = new CLS_EquipInfo(); var576.Unserialize(ref nbs); DictEquiped.Add(var575, var576); 
             }
-            int var575 = nbs.ReadInt();
-            for (int k = 0; k < var575; k++)
+            int var577 = nbs.ReadInt();
+            for (int k = 0; k < var577; k++)
             {
-                long var576 = nbs.ReadLong(); var var577 = new CLS_EquipInfo(); var577.Unserialize(ref nbs); DictEquip.Add(var576, var577); 
+                long var578 = nbs.ReadLong(); var var579 = new CLS_EquipInfo(); var579.Unserialize(ref nbs); DictEquip.Add(var578, var579); 
             }
             WarriorInfo.Unserialize(ref nbs);
         }
@@ -6925,15 +6929,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var579 = nbs.ReadInt();
-            for (int k = 0; k < var579; k++)
+            int var581 = nbs.ReadInt();
+            for (int k = 0; k < var581; k++)
             {
-                int var580 = nbs.ReadInt(); var var581 = new CLS_EquipInfo(); var581.Unserialize(ref nbs); DictEquiped.Add(var580, var581); 
+                int var582 = nbs.ReadInt(); var var583 = new CLS_EquipInfo(); var583.Unserialize(ref nbs); DictEquiped.Add(var582, var583); 
             }
-            int var582 = nbs.ReadInt();
-            for (int k = 0; k < var582; k++)
+            int var584 = nbs.ReadInt();
+            for (int k = 0; k < var584; k++)
             {
-                long var583 = nbs.ReadLong(); var var584 = new CLS_EquipInfo(); var584.Unserialize(ref nbs); DictEquip.Add(var583, var584); 
+                long var585 = nbs.ReadLong(); var var586 = new CLS_EquipInfo(); var586.Unserialize(ref nbs); DictEquip.Add(var585, var586); 
             }
             WarriorInfo.Unserialize(ref nbs);
         }
@@ -7013,10 +7017,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var586 = nbs.ReadInt();
-            for (int k = 0; k < var586; k++)
+            int var588 = nbs.ReadInt();
+            for (int k = 0; k < var588; k++)
             {
-                long var587 = nbs.ReadLong(); var var588 = new CLS_EquipInfo(); var588.Unserialize(ref nbs); DictEquip.Add(var587, var588); 
+                long var589 = nbs.ReadLong(); var var590 = new CLS_EquipInfo(); var590.Unserialize(ref nbs); DictEquip.Add(var589, var590); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -7039,10 +7043,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var589 = nbs.ReadInt();
-            for (int k = 0; k < var589; k++)
+            int var591 = nbs.ReadInt();
+            for (int k = 0; k < var591; k++)
             {
-                long var590 = nbs.ReadLong(); var var591 = new CLS_EquipInfo(); var591.Unserialize(ref nbs); DictEquip.Add(var590, var591); 
+                long var592 = nbs.ReadLong(); var var593 = new CLS_EquipInfo(); var593.Unserialize(ref nbs); DictEquip.Add(var592, var593); 
             }
         }
     };
@@ -7135,15 +7139,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var596 = nbs.ReadInt();
-            for (int k = 0; k < var596; k++)
+            int var598 = nbs.ReadInt();
+            for (int k = 0; k < var598; k++)
             {
-                int var597 = nbs.ReadInt(); var var598 = new CLS_EquipInfo(); var598.Unserialize(ref nbs); DictEquiped.Add(var597, var598); 
+                int var599 = nbs.ReadInt(); var var600 = new CLS_EquipInfo(); var600.Unserialize(ref nbs); DictEquiped.Add(var599, var600); 
             }
-            int var599 = nbs.ReadInt();
-            for (int k = 0; k < var599; k++)
+            int var601 = nbs.ReadInt();
+            for (int k = 0; k < var601; k++)
             {
-                long var600 = nbs.ReadLong(); var var601 = new CLS_EquipInfo(); var601.Unserialize(ref nbs); DictEquip.Add(var600, var601); 
+                long var602 = nbs.ReadLong(); var var603 = new CLS_EquipInfo(); var603.Unserialize(ref nbs); DictEquip.Add(var602, var603); 
             }
             WarriorInfo.Unserialize(ref nbs);
         }
@@ -7173,15 +7177,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var603 = nbs.ReadInt();
-            for (int k = 0; k < var603; k++)
+            int var605 = nbs.ReadInt();
+            for (int k = 0; k < var605; k++)
             {
-                int var604 = nbs.ReadInt(); var var605 = new CLS_EquipInfo(); var605.Unserialize(ref nbs); DictEquiped.Add(var604, var605); 
+                int var606 = nbs.ReadInt(); var var607 = new CLS_EquipInfo(); var607.Unserialize(ref nbs); DictEquiped.Add(var606, var607); 
             }
-            int var606 = nbs.ReadInt();
-            for (int k = 0; k < var606; k++)
+            int var608 = nbs.ReadInt();
+            for (int k = 0; k < var608; k++)
             {
-                long var607 = nbs.ReadLong(); var var608 = new CLS_EquipInfo(); var608.Unserialize(ref nbs); DictEquip.Add(var607, var608); 
+                long var609 = nbs.ReadLong(); var var610 = new CLS_EquipInfo(); var610.Unserialize(ref nbs); DictEquip.Add(var609, var610); 
             }
             WarriorInfo.Unserialize(ref nbs);
         }
@@ -7275,15 +7279,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var614 = nbs.ReadInt();
-            for (int k = 0; k < var614; k++)
+            int var616 = nbs.ReadInt();
+            for (int k = 0; k < var616; k++)
             {
-                int var615 = nbs.ReadInt(); var var616 = new CLS_EquipInfo(); var616.Unserialize(ref nbs); DictEquiped.Add(var615, var616); 
+                int var617 = nbs.ReadInt(); var var618 = new CLS_EquipInfo(); var618.Unserialize(ref nbs); DictEquiped.Add(var617, var618); 
             }
-            int var617 = nbs.ReadInt();
-            for (int k = 0; k < var617; k++)
+            int var619 = nbs.ReadInt();
+            for (int k = 0; k < var619; k++)
             {
-                long var618 = nbs.ReadLong(); var var619 = new CLS_EquipInfo(); var619.Unserialize(ref nbs); DictEquip.Add(var618, var619); 
+                long var620 = nbs.ReadLong(); var var621 = new CLS_EquipInfo(); var621.Unserialize(ref nbs); DictEquip.Add(var620, var621); 
             }
             WarriorInfo.Unserialize(ref nbs);
         }
@@ -7313,15 +7317,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var621 = nbs.ReadInt();
-            for (int k = 0; k < var621; k++)
+            int var623 = nbs.ReadInt();
+            for (int k = 0; k < var623; k++)
             {
-                int var622 = nbs.ReadInt(); var var623 = new CLS_EquipInfo(); var623.Unserialize(ref nbs); DictEquiped.Add(var622, var623); 
+                int var624 = nbs.ReadInt(); var var625 = new CLS_EquipInfo(); var625.Unserialize(ref nbs); DictEquiped.Add(var624, var625); 
             }
-            int var624 = nbs.ReadInt();
-            for (int k = 0; k < var624; k++)
+            int var626 = nbs.ReadInt();
+            for (int k = 0; k < var626; k++)
             {
-                long var625 = nbs.ReadLong(); var var626 = new CLS_EquipInfo(); var626.Unserialize(ref nbs); DictEquip.Add(var625, var626); 
+                long var627 = nbs.ReadLong(); var var628 = new CLS_EquipInfo(); var628.Unserialize(ref nbs); DictEquip.Add(var627, var628); 
             }
             WarriorInfo.Unserialize(ref nbs);
         }
@@ -7357,10 +7361,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var628 = nbs.ReadInt();
-            for (int k = 0; k < var628; k++)
+            int var630 = nbs.ReadInt();
+            for (int k = 0; k < var630; k++)
             {
-                long var629 = nbs.ReadLong();Id.Add(var629);
+                long var631 = nbs.ReadLong();Id.Add(var631);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -7383,10 +7387,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var630 = nbs.ReadInt();
-            for (int k = 0; k < var630; k++)
+            int var632 = nbs.ReadInt();
+            for (int k = 0; k < var632; k++)
             {
-                long var631 = nbs.ReadLong();Id.Add(var631);
+                long var633 = nbs.ReadLong();Id.Add(var633);
             }
         }
     };
@@ -7421,10 +7425,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var632 = nbs.ReadInt();
-            for (int k = 0; k < var632; k++)
+            int var634 = nbs.ReadInt();
+            for (int k = 0; k < var634; k++)
             {
-                var var633 = new CLS_AwardItem(); var633.Unserialize(ref nbs);ListAward.Add(var633);
+                var var635 = new CLS_AwardItem(); var635.Unserialize(ref nbs);ListAward.Add(var635);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -7447,10 +7451,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var634 = nbs.ReadInt();
-            for (int k = 0; k < var634; k++)
+            int var636 = nbs.ReadInt();
+            for (int k = 0; k < var636; k++)
             {
-                var var635 = new CLS_AwardItem(); var635.Unserialize(ref nbs);ListAward.Add(var635);
+                var var637 = new CLS_AwardItem(); var637.Unserialize(ref nbs);ListAward.Add(var637);
             }
         }
     };
@@ -7725,10 +7729,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             IntensityInfo.Unserialize(ref nbs);
             nbs.Read(out IntensifyResult);
-            int var646 = nbs.ReadInt();
-            for (int k = 0; k < var646; k++)
+            int var648 = nbs.ReadInt();
+            for (int k = 0; k < var648; k++)
             {
-                var var647 = new CLS_AwardItem(); var647.Unserialize(ref nbs);AwardItem.Add(var647);
+                var var649 = new CLS_AwardItem(); var649.Unserialize(ref nbs);AwardItem.Add(var649);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -7755,10 +7759,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             IntensityInfo.Unserialize(ref nbs);
             nbs.Read(out IntensifyResult);
-            int var650 = nbs.ReadInt();
-            for (int k = 0; k < var650; k++)
+            int var652 = nbs.ReadInt();
+            for (int k = 0; k < var652; k++)
             {
-                var var651 = new CLS_AwardItem(); var651.Unserialize(ref nbs);AwardItem.Add(var651);
+                var var653 = new CLS_AwardItem(); var653.Unserialize(ref nbs);AwardItem.Add(var653);
             }
         }
     };
@@ -7797,10 +7801,10 @@ namespace ServerBase.Protocol
             nbs.Read(out IntensityInte);
             nbs.Read(out IntensityHp);
             nbs.Read(out Gold);
-            int var662 = nbs.ReadInt();
-            for (int k = 0; k < var662; k++)
+            int var664 = nbs.ReadInt();
+            for (int k = 0; k < var664; k++)
             {
-                var var663 = new CLS_ItemNeedInfo(); var663.Unserialize(ref nbs);ListItemNeedInfo.Add(var663);
+                var var665 = new CLS_ItemNeedInfo(); var665.Unserialize(ref nbs);ListItemNeedInfo.Add(var665);
             }
         }
     };
@@ -7841,10 +7845,10 @@ namespace ServerBase.Protocol
         {
             nbs.Read(out CollectId);
             nbs.Read(out Valid);
-            int var669 = nbs.ReadInt();
-            for (int k = 0; k < var669; k++)
+            int var671 = nbs.ReadInt();
+            for (int k = 0; k < var671; k++)
             {
-                int var670 = nbs.ReadInt(); bool var671 = nbs.ReadBool(); DictHas.Add(var670, var671); 
+                int var672 = nbs.ReadInt(); bool var673 = nbs.ReadBool(); DictHas.Add(var672, var673); 
             }
         }
     };
@@ -7924,10 +7928,10 @@ namespace ServerBase.Protocol
             nbs.Read(out InArmy);
             nbs.Read(out InAffairs);
             nbs.Read(out InGrab);
-            int var685 = nbs.ReadInt();
-            for (int k = 0; k < var685; k++)
+            int var687 = nbs.ReadInt();
+            for (int k = 0; k < var687; k++)
             {
-                var var686 = new CLS_SkillInfo(); var686.Unserialize(ref nbs);ListSkill.Add(var686);
+                var var688 = new CLS_SkillInfo(); var688.Unserialize(ref nbs);ListSkill.Add(var688);
             }
             nbs.Read(out AdvanceLv);
             nbs.Read(out BaseAtk);
@@ -7935,34 +7939,34 @@ namespace ServerBase.Protocol
             nbs.Read(out BaseHp);
             nbs.Read(out BaseInte);
             nbs.Read(out BaseBreak);
-            int var693 = nbs.ReadInt();
-            for (int k = 0; k < var693; k++)
+            int var695 = nbs.ReadInt();
+            for (int k = 0; k < var695; k++)
             {
-                int var694 = nbs.ReadInt(); float var695 = nbs.ReadFloat(); CombatProperty.Add(var694, var695); 
+                int var696 = nbs.ReadInt(); float var697 = nbs.ReadFloat(); CombatProperty.Add(var696, var697); 
             }
             nbs.Read(out CurrentHp);
             nbs.Read(out CombatPower);
-            int var698 = nbs.ReadInt();
-            for (int k = 0; k < var698; k++)
+            int var700 = nbs.ReadInt();
+            for (int k = 0; k < var700; k++)
             {
-                int var699 = nbs.ReadInt(); var var700 = new CLS_EquipInfo(); var700.Unserialize(ref nbs); DictEquiped.Add(var699, var700); 
+                int var701 = nbs.ReadInt(); var var702 = new CLS_EquipInfo(); var702.Unserialize(ref nbs); DictEquiped.Add(var701, var702); 
             }
             nbs.Read(out Satr);
             nbs.Read(out WakeLevel);
-            int var703 = nbs.ReadInt();
-            for (int k = 0; k < var703; k++)
+            int var705 = nbs.ReadInt();
+            for (int k = 0; k < var705; k++)
             {
-                int var704 = nbs.ReadInt(); int var705 = nbs.ReadInt(); DictWake.Add(var704, var705); 
+                int var706 = nbs.ReadInt(); int var707 = nbs.ReadInt(); DictWake.Add(var706, var707); 
             }
-            int var706 = nbs.ReadInt();
-            for (int k = 0; k < var706; k++)
+            int var708 = nbs.ReadInt();
+            for (int k = 0; k < var708; k++)
             {
-                int var707 = nbs.ReadInt(); float var708 = nbs.ReadFloat(); DictStremgthen.Add(var707, var708); 
+                int var709 = nbs.ReadInt(); float var710 = nbs.ReadFloat(); DictStremgthen.Add(var709, var710); 
             }
-            int var709 = nbs.ReadInt();
-            for (int k = 0; k < var709; k++)
+            int var711 = nbs.ReadInt();
+            for (int k = 0; k < var711; k++)
             {
-                int var710 = nbs.ReadInt(); var var711 = new CLS_WarriorCollect(); var711.Unserialize(ref nbs); DictWarriorCollect.Add(var710, var711); 
+                int var712 = nbs.ReadInt(); var var713 = new CLS_WarriorCollect(); var713.Unserialize(ref nbs); DictWarriorCollect.Add(var712, var713); 
             }
         }
     };
@@ -8046,15 +8050,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var712 = nbs.ReadInt();
-            for (int k = 0; k < var712; k++)
-            {
-                var var713 = new CLS_WarriorInfo(); var713.Unserialize(ref nbs);ListWarrior.Add(var713);
-            }
             int var714 = nbs.ReadInt();
             for (int k = 0; k < var714; k++)
             {
-                long var715 = nbs.ReadLong();ListInBattle.Add(var715);
+                var var715 = new CLS_WarriorInfo(); var715.Unserialize(ref nbs);ListWarrior.Add(var715);
+            }
+            int var716 = nbs.ReadInt();
+            for (int k = 0; k < var716; k++)
+            {
+                long var717 = nbs.ReadLong();ListInBattle.Add(var717);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -8082,15 +8086,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var716 = nbs.ReadInt();
-            for (int k = 0; k < var716; k++)
-            {
-                var var717 = new CLS_WarriorInfo(); var717.Unserialize(ref nbs);ListWarrior.Add(var717);
-            }
             int var718 = nbs.ReadInt();
             for (int k = 0; k < var718; k++)
             {
-                long var719 = nbs.ReadLong();ListInBattle.Add(var719);
+                var var719 = new CLS_WarriorInfo(); var719.Unserialize(ref nbs);ListWarrior.Add(var719);
+            }
+            int var720 = nbs.ReadInt();
+            for (int k = 0; k < var720; k++)
+            {
+                long var721 = nbs.ReadLong();ListInBattle.Add(var721);
             }
         }
     };
@@ -8223,10 +8227,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var725 = nbs.ReadInt();
-            for (int k = 0; k < var725; k++)
+            int var727 = nbs.ReadInt();
+            for (int k = 0; k < var727; k++)
             {
-                long var726 = nbs.ReadLong();MateriaWarriorID.Add(var726);
+                long var728 = nbs.ReadLong();MateriaWarriorID.Add(var728);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -8251,10 +8255,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var728 = nbs.ReadInt();
-            for (int k = 0; k < var728; k++)
+            int var730 = nbs.ReadInt();
+            for (int k = 0; k < var730; k++)
             {
-                long var729 = nbs.ReadLong();MateriaWarriorID.Add(var729);
+                long var731 = nbs.ReadLong();MateriaWarriorID.Add(var731);
             }
         }
     };
@@ -8435,10 +8439,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var737 = nbs.ReadInt();
-            for (int k = 0; k < var737; k++)
+            int var739 = nbs.ReadInt();
+            for (int k = 0; k < var739; k++)
             {
-                long var738 = nbs.ReadLong();ListWarrior.Add(var738);
+                long var740 = nbs.ReadLong();ListWarrior.Add(var740);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -8463,10 +8467,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var740 = nbs.ReadInt();
-            for (int k = 0; k < var740; k++)
+            int var742 = nbs.ReadInt();
+            for (int k = 0; k < var742; k++)
             {
-                long var741 = nbs.ReadLong();ListWarrior.Add(var741);
+                long var743 = nbs.ReadLong();ListWarrior.Add(var743);
             }
         }
     };
@@ -8645,10 +8649,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var748 = nbs.ReadInt();
-            for (int k = 0; k < var748; k++)
+            int var750 = nbs.ReadInt();
+            for (int k = 0; k < var750; k++)
             {
-                var var749 = new CLS_ItemInfo(); var749.Unserialize(ref nbs);ListItem.Add(var749);
+                var var751 = new CLS_ItemInfo(); var751.Unserialize(ref nbs);ListItem.Add(var751);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -8671,10 +8675,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var750 = nbs.ReadInt();
-            for (int k = 0; k < var750; k++)
+            int var752 = nbs.ReadInt();
+            for (int k = 0; k < var752; k++)
             {
-                var var751 = new CLS_ItemInfo(); var751.Unserialize(ref nbs);ListItem.Add(var751);
+                var var753 = new CLS_ItemInfo(); var753.Unserialize(ref nbs);ListItem.Add(var753);
             }
         }
     };
@@ -8807,10 +8811,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var757 = nbs.ReadInt();
-            for (int k = 0; k < var757; k++)
+            int var759 = nbs.ReadInt();
+            for (int k = 0; k < var759; k++)
             {
-                long var758 = nbs.ReadLong();MateriaWarriorID.Add(var758);
+                long var760 = nbs.ReadLong();MateriaWarriorID.Add(var760);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -8835,10 +8839,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var760 = nbs.ReadInt();
-            for (int k = 0; k < var760; k++)
+            int var762 = nbs.ReadInt();
+            for (int k = 0; k < var762; k++)
             {
-                long var761 = nbs.ReadLong();MateriaWarriorID.Add(var761);
+                long var763 = nbs.ReadLong();MateriaWarriorID.Add(var763);
             }
         }
     };
@@ -9162,10 +9166,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var774 = nbs.ReadInt();
-            for (int k = 0; k < var774; k++)
+            int var776 = nbs.ReadInt();
+            for (int k = 0; k < var776; k++)
             {
-                var var775 = new CLS_ItemNeedInfo(); var775.Unserialize(ref nbs);ListItemNeedInfo.Add(var775);
+                var var777 = new CLS_ItemNeedInfo(); var777.Unserialize(ref nbs);ListItemNeedInfo.Add(var777);
             }
             nbs.Read(out maxStoryId);
         }
@@ -9190,10 +9194,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var777 = nbs.ReadInt();
-            for (int k = 0; k < var777; k++)
+            int var779 = nbs.ReadInt();
+            for (int k = 0; k < var779; k++)
             {
-                var var778 = new CLS_ItemNeedInfo(); var778.Unserialize(ref nbs);ListItemNeedInfo.Add(var778);
+                var var780 = new CLS_ItemNeedInfo(); var780.Unserialize(ref nbs);ListItemNeedInfo.Add(var780);
             }
             nbs.Read(out maxStoryId);
         }
@@ -9321,10 +9325,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var782 = nbs.ReadInt();
-            for (int k = 0; k < var782; k++)
+            int var784 = nbs.ReadInt();
+            for (int k = 0; k < var784; k++)
             {
-                long var783 = nbs.ReadLong();ListIds.Add(var783);
+                long var785 = nbs.ReadLong();ListIds.Add(var785);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -9347,10 +9351,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var784 = nbs.ReadInt();
-            for (int k = 0; k < var784; k++)
+            int var786 = nbs.ReadInt();
+            for (int k = 0; k < var786; k++)
             {
-                long var785 = nbs.ReadLong();ListIds.Add(var785);
+                long var787 = nbs.ReadLong();ListIds.Add(var787);
             }
         }
     };
@@ -9539,10 +9543,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var807 = nbs.ReadInt();
-            for (int k = 0; k < var807; k++)
+            int var809 = nbs.ReadInt();
+            for (int k = 0; k < var809; k++)
             {
-                int var808 = nbs.ReadInt(); var var809 = new CLS_BuildingPlayerInfo(); var809.Unserialize(ref nbs); DictBuilding.Add(var808, var809); 
+                int var810 = nbs.ReadInt(); var var811 = new CLS_BuildingPlayerInfo(); var811.Unserialize(ref nbs); DictBuilding.Add(var810, var811); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -9565,10 +9569,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var810 = nbs.ReadInt();
-            for (int k = 0; k < var810; k++)
+            int var812 = nbs.ReadInt();
+            for (int k = 0; k < var812; k++)
             {
-                int var811 = nbs.ReadInt(); var var812 = new CLS_BuildingPlayerInfo(); var812.Unserialize(ref nbs); DictBuilding.Add(var811, var812); 
+                int var813 = nbs.ReadInt(); var var814 = new CLS_BuildingPlayerInfo(); var814.Unserialize(ref nbs); DictBuilding.Add(var813, var814); 
             }
         }
     };
@@ -9603,10 +9607,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var813 = nbs.ReadInt();
-            for (int k = 0; k < var813; k++)
+            int var815 = nbs.ReadInt();
+            for (int k = 0; k < var815; k++)
             {
-                int var814 = nbs.ReadInt(); var var815 = new CLS_BuildingPlayerInfoSimple(); var815.Unserialize(ref nbs); DictBuilding.Add(var814, var815); 
+                int var816 = nbs.ReadInt(); var var817 = new CLS_BuildingPlayerInfoSimple(); var817.Unserialize(ref nbs); DictBuilding.Add(var816, var817); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -9629,10 +9633,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var816 = nbs.ReadInt();
-            for (int k = 0; k < var816; k++)
+            int var818 = nbs.ReadInt();
+            for (int k = 0; k < var818; k++)
             {
-                int var817 = nbs.ReadInt(); var var818 = new CLS_BuildingPlayerInfoSimple(); var818.Unserialize(ref nbs); DictBuilding.Add(var817, var818); 
+                int var819 = nbs.ReadInt(); var var820 = new CLS_BuildingPlayerInfoSimple(); var820.Unserialize(ref nbs); DictBuilding.Add(var819, var820); 
             }
         }
     };
@@ -9811,10 +9815,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var825 = nbs.ReadInt();
-            for (int k = 0; k < var825; k++)
+            int var827 = nbs.ReadInt();
+            for (int k = 0; k < var827; k++)
             {
-                int var826 = nbs.ReadInt(); var var827 = new CLS_BuildingPlayerInfo(); var827.Unserialize(ref nbs); DictBuilding.Add(var826, var827); 
+                int var828 = nbs.ReadInt(); var var829 = new CLS_BuildingPlayerInfo(); var829.Unserialize(ref nbs); DictBuilding.Add(var828, var829); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -9837,10 +9841,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var828 = nbs.ReadInt();
-            for (int k = 0; k < var828; k++)
+            int var830 = nbs.ReadInt();
+            for (int k = 0; k < var830; k++)
             {
-                int var829 = nbs.ReadInt(); var var830 = new CLS_BuildingPlayerInfo(); var830.Unserialize(ref nbs); DictBuilding.Add(var829, var830); 
+                int var831 = nbs.ReadInt(); var var832 = new CLS_BuildingPlayerInfo(); var832.Unserialize(ref nbs); DictBuilding.Add(var831, var832); 
             }
         }
     };
@@ -10007,10 +10011,10 @@ namespace ServerBase.Protocol
         public void Unserialize(ref NetBitStream nbs)
         {
             nbs.Read(out Id);
-            int var838 = nbs.ReadInt();
-            for (int k = 0; k < var838; k++)
+            int var840 = nbs.ReadInt();
+            for (int k = 0; k < var840; k++)
             {
-                var var839 = new CLS_ItemNeedInfo(); var839.Unserialize(ref nbs);ListItemNeedInfo.Add(var839);
+                var var841 = new CLS_ItemNeedInfo(); var841.Unserialize(ref nbs);ListItemNeedInfo.Add(var841);
             }
             nbs.Read(out Lock);
             nbs.Read(out num);
@@ -10091,10 +10095,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var842 = nbs.ReadInt();
-            for (int k = 0; k < var842; k++)
+            int var844 = nbs.ReadInt();
+            for (int k = 0; k < var844; k++)
             {
-                int var843 = nbs.ReadInt(); var var844 = new CLS_SmithSimple(); var844.Unserialize(ref nbs); DicSmithInfo.Add(var843, var844); 
+                int var845 = nbs.ReadInt(); var var846 = new CLS_SmithSimple(); var846.Unserialize(ref nbs); DicSmithInfo.Add(var845, var846); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -10117,10 +10121,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var845 = nbs.ReadInt();
-            for (int k = 0; k < var845; k++)
+            int var847 = nbs.ReadInt();
+            for (int k = 0; k < var847; k++)
             {
-                int var846 = nbs.ReadInt(); var var847 = new CLS_SmithSimple(); var847.Unserialize(ref nbs); DicSmithInfo.Add(var846, var847); 
+                int var848 = nbs.ReadInt(); var var849 = new CLS_SmithSimple(); var849.Unserialize(ref nbs); DicSmithInfo.Add(var848, var849); 
             }
         }
     };
@@ -10212,15 +10216,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var852 = nbs.ReadInt();
-            for (int k = 0; k < var852; k++)
-            {
-                var var853 = new CLS_AwardItem(); var853.Unserialize(ref nbs);Items.Add(var853);
-            }
             int var854 = nbs.ReadInt();
             for (int k = 0; k < var854; k++)
             {
-                var var855 = new CLS_EquipInfo(); var855.Unserialize(ref nbs);EquipInfo.Add(var855);
+                var var855 = new CLS_AwardItem(); var855.Unserialize(ref nbs);Items.Add(var855);
+            }
+            int var856 = nbs.ReadInt();
+            for (int k = 0; k < var856; k++)
+            {
+                var var857 = new CLS_EquipInfo(); var857.Unserialize(ref nbs);EquipInfo.Add(var857);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -10248,15 +10252,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var856 = nbs.ReadInt();
-            for (int k = 0; k < var856; k++)
-            {
-                var var857 = new CLS_AwardItem(); var857.Unserialize(ref nbs);Items.Add(var857);
-            }
             int var858 = nbs.ReadInt();
             for (int k = 0; k < var858; k++)
             {
-                var var859 = new CLS_EquipInfo(); var859.Unserialize(ref nbs);EquipInfo.Add(var859);
+                var var859 = new CLS_AwardItem(); var859.Unserialize(ref nbs);Items.Add(var859);
+            }
+            int var860 = nbs.ReadInt();
+            for (int k = 0; k < var860; k++)
+            {
+                var var861 = new CLS_EquipInfo(); var861.Unserialize(ref nbs);EquipInfo.Add(var861);
             }
         }
     };
@@ -10359,10 +10363,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var866 = nbs.ReadInt();
-            for (int k = 0; k < var866; k++)
+            int var868 = nbs.ReadInt();
+            for (int k = 0; k < var868; k++)
             {
-                int var867 = nbs.ReadInt(); var var868 = new CLS_ScienceInfo(); var868.Unserialize(ref nbs); DictScience.Add(var867, var868); 
+                int var869 = nbs.ReadInt(); var var870 = new CLS_ScienceInfo(); var870.Unserialize(ref nbs); DictScience.Add(var869, var870); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -10385,10 +10389,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var869 = nbs.ReadInt();
-            for (int k = 0; k < var869; k++)
+            int var871 = nbs.ReadInt();
+            for (int k = 0; k < var871; k++)
             {
-                int var870 = nbs.ReadInt(); var var871 = new CLS_ScienceInfo(); var871.Unserialize(ref nbs); DictScience.Add(var870, var871); 
+                int var872 = nbs.ReadInt(); var var873 = new CLS_ScienceInfo(); var873.Unserialize(ref nbs); DictScience.Add(var872, var873); 
             }
         }
     };
@@ -11091,10 +11095,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out EndMs);
             nbs.Read(out CompleteNeed);
-            int var914 = nbs.ReadInt();
-            for (int k = 0; k < var914; k++)
+            int var916 = nbs.ReadInt();
+            for (int k = 0; k < var916; k++)
             {
-                var var915 = new CLS_ItemInfo(); var915.Unserialize(ref nbs);ListItem.Add(var915);
+                var var917 = new CLS_ItemInfo(); var917.Unserialize(ref nbs);ListItem.Add(var917);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -11121,10 +11125,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out EndMs);
             nbs.Read(out CompleteNeed);
-            int var918 = nbs.ReadInt();
-            for (int k = 0; k < var918; k++)
+            int var920 = nbs.ReadInt();
+            for (int k = 0; k < var920; k++)
             {
-                var var919 = new CLS_ItemInfo(); var919.Unserialize(ref nbs);ListItem.Add(var919);
+                var var921 = new CLS_ItemInfo(); var921.Unserialize(ref nbs);ListItem.Add(var921);
             }
         }
     };
@@ -11511,10 +11515,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var942 = nbs.ReadInt();
-            for (int k = 0; k < var942; k++)
+            int var944 = nbs.ReadInt();
+            for (int k = 0; k < var944; k++)
             {
-                var var943 = new CLS_ItemInfo(); var943.Unserialize(ref nbs);ListItem.Add(var943);
+                var var945 = new CLS_ItemInfo(); var945.Unserialize(ref nbs);ListItem.Add(var945);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -11537,10 +11541,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var944 = nbs.ReadInt();
-            for (int k = 0; k < var944; k++)
+            int var946 = nbs.ReadInt();
+            for (int k = 0; k < var946; k++)
             {
-                var var945 = new CLS_ItemInfo(); var945.Unserialize(ref nbs);ListItem.Add(var945);
+                var var947 = new CLS_ItemInfo(); var947.Unserialize(ref nbs);ListItem.Add(var947);
             }
         }
     };
@@ -11578,10 +11582,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var947 = nbs.ReadInt();
-            for (int k = 0; k < var947; k++)
+            int var949 = nbs.ReadInt();
+            for (int k = 0; k < var949; k++)
             {
-                var var948 = new CLS_ItemInfo(); var948.Unserialize(ref nbs);Items.Add(var948);
+                var var950 = new CLS_ItemInfo(); var950.Unserialize(ref nbs);Items.Add(var950);
             }
             nbs.Read(out Type);
         }
@@ -11608,10 +11612,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var951 = nbs.ReadInt();
-            for (int k = 0; k < var951; k++)
+            int var953 = nbs.ReadInt();
+            for (int k = 0; k < var953; k++)
             {
-                var var952 = new CLS_ItemInfo(); var952.Unserialize(ref nbs);Items.Add(var952);
+                var var954 = new CLS_ItemInfo(); var954.Unserialize(ref nbs);Items.Add(var954);
             }
             nbs.Read(out Type);
         }
@@ -11657,10 +11661,10 @@ namespace ServerBase.Protocol
             Building.Unserialize(ref nbs);
             RecruitInfo.Unserialize(ref nbs);
             ScienceInfo.Unserialize(ref nbs);
-            int var958 = nbs.ReadInt();
-            for (int k = 0; k < var958; k++)
+            int var960 = nbs.ReadInt();
+            for (int k = 0; k < var960; k++)
             {
-                var var959 = new CLS_ItemInfo(); var959.Unserialize(ref nbs);ListItem.Add(var959);
+                var var961 = new CLS_ItemInfo(); var961.Unserialize(ref nbs);ListItem.Add(var961);
             }
             nbs.Read(out EndMs);
             nbs.Read(out CompleteNeed);
@@ -11695,10 +11699,10 @@ namespace ServerBase.Protocol
             Building.Unserialize(ref nbs);
             RecruitInfo.Unserialize(ref nbs);
             ScienceInfo.Unserialize(ref nbs);
-            int var966 = nbs.ReadInt();
-            for (int k = 0; k < var966; k++)
+            int var968 = nbs.ReadInt();
+            for (int k = 0; k < var968; k++)
             {
-                var var967 = new CLS_ItemInfo(); var967.Unserialize(ref nbs);ListItem.Add(var967);
+                var var969 = new CLS_ItemInfo(); var969.Unserialize(ref nbs);ListItem.Add(var969);
             }
             nbs.Read(out EndMs);
             nbs.Read(out CompleteNeed);
@@ -12031,10 +12035,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out CapitalCity);
-            int var996 = nbs.ReadInt();
-            for (int k = 0; k < var996; k++)
+            int var998 = nbs.ReadInt();
+            for (int k = 0; k < var998; k++)
             {
-                int var997 = nbs.ReadInt(); var var998 = new CLS_CityInfoBase(); var998.Unserialize(ref nbs); DictCity.Add(var997, var998); 
+                int var999 = nbs.ReadInt(); var var1000 = new CLS_CityInfoBase(); var1000.Unserialize(ref nbs); DictCity.Add(var999, var1000); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -12059,10 +12063,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out CapitalCity);
-            int var1000 = nbs.ReadInt();
-            for (int k = 0; k < var1000; k++)
+            int var1002 = nbs.ReadInt();
+            for (int k = 0; k < var1002; k++)
             {
-                int var1001 = nbs.ReadInt(); var var1002 = new CLS_CityInfoBase(); var1002.Unserialize(ref nbs); DictCity.Add(var1001, var1002); 
+                int var1003 = nbs.ReadInt(); var var1004 = new CLS_CityInfoBase(); var1004.Unserialize(ref nbs); DictCity.Add(var1003, var1004); 
             }
         }
     };
@@ -12211,10 +12215,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pos);
             nbs.Read(out BuildingType);
             nbs.Read(out Level);
-            int var1018 = nbs.ReadInt();
-            for (int k = 0; k < var1018; k++)
+            int var1020 = nbs.ReadInt();
+            for (int k = 0; k < var1020; k++)
             {
-                int var1019 = nbs.ReadInt(); var var1020 = new CLS_BuildingItemNeedInfo(); var1020.Unserialize(ref nbs); DictNeedInfo.Add(var1019, var1020); 
+                int var1021 = nbs.ReadInt(); var var1022 = new CLS_BuildingItemNeedInfo(); var1022.Unserialize(ref nbs); DictNeedInfo.Add(var1021, var1022); 
             }
         }
     };
@@ -12297,10 +12301,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1023 = nbs.ReadInt();
-            for (int k = 0; k < var1023; k++)
+            int var1025 = nbs.ReadInt();
+            for (int k = 0; k < var1025; k++)
             {
-                int var1024 = nbs.ReadInt(); var var1025 = new CLS_CityBuildingInfo(); var1025.Unserialize(ref nbs); DictBuilding.Add(var1024, var1025); 
+                int var1026 = nbs.ReadInt(); var var1027 = new CLS_CityBuildingInfo(); var1027.Unserialize(ref nbs); DictBuilding.Add(var1026, var1027); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -12323,10 +12327,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1026 = nbs.ReadInt();
-            for (int k = 0; k < var1026; k++)
+            int var1028 = nbs.ReadInt();
+            for (int k = 0; k < var1028; k++)
             {
-                int var1027 = nbs.ReadInt(); var var1028 = new CLS_CityBuildingInfo(); var1028.Unserialize(ref nbs); DictBuilding.Add(var1027, var1028); 
+                int var1029 = nbs.ReadInt(); var var1030 = new CLS_CityBuildingInfo(); var1030.Unserialize(ref nbs); DictBuilding.Add(var1029, var1030); 
             }
         }
     };
@@ -12365,10 +12369,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out Uid);
             nbs.Read(out Pos);
-            int var1031 = nbs.ReadInt();
-            for (int k = 0; k < var1031; k++)
+            int var1033 = nbs.ReadInt();
+            for (int k = 0; k < var1033; k++)
             {
-                int var1032 = nbs.ReadInt(); int var1033 = nbs.ReadInt(); DictBuildUse.Add(var1032, var1033); 
+                int var1034 = nbs.ReadInt(); int var1035 = nbs.ReadInt(); DictBuildUse.Add(var1034, var1035); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -12395,10 +12399,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out Uid);
             nbs.Read(out Pos);
-            int var1036 = nbs.ReadInt();
-            for (int k = 0; k < var1036; k++)
+            int var1038 = nbs.ReadInt();
+            for (int k = 0; k < var1038; k++)
             {
-                int var1037 = nbs.ReadInt(); int var1038 = nbs.ReadInt(); DictBuildUse.Add(var1037, var1038); 
+                int var1039 = nbs.ReadInt(); int var1040 = nbs.ReadInt(); DictBuildUse.Add(var1039, var1040); 
             }
         }
     };
@@ -12477,10 +12481,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Bowls);
             nbs.Read(out Frise);
             nbs.Read(out Trap);
-            int var1047 = nbs.ReadInt();
-            for (int k = 0; k < var1047; k++)
+            int var1049 = nbs.ReadInt();
+            for (int k = 0; k < var1049; k++)
             {
-                int var1048 = nbs.ReadInt(); var var1049 = new CLS_ItemNeedInfo(); var1049.Unserialize(ref nbs); DictNeedInfo.Add(var1048, var1049); 
+                int var1050 = nbs.ReadInt(); var var1051 = new CLS_ItemNeedInfo(); var1051.Unserialize(ref nbs); DictNeedInfo.Add(var1050, var1051); 
             }
         }
     };
@@ -12503,10 +12507,10 @@ namespace ServerBase.Protocol
         {
             nbs.Read(out Uid);
             nbs.Read(out Level);
-            int var1052 = nbs.ReadInt();
-            for (int k = 0; k < var1052; k++)
+            int var1054 = nbs.ReadInt();
+            for (int k = 0; k < var1054; k++)
             {
-                int var1053 = nbs.ReadInt(); var var1054 = new CLS_CampWallInfo(); var1054.Unserialize(ref nbs); DictCampWall.Add(var1053, var1054); 
+                int var1055 = nbs.ReadInt(); var var1056 = new CLS_CampWallInfo(); var1056.Unserialize(ref nbs); DictCampWall.Add(var1055, var1056); 
             }
         }
     };
@@ -12879,10 +12883,10 @@ namespace ServerBase.Protocol
         public void Unserialize(ref NetBitStream nbs)
         {
             nbs.Read(out Uid);
-            int var1094 = nbs.ReadInt();
-            for (int k = 0; k < var1094; k++)
+            int var1096 = nbs.ReadInt();
+            for (int k = 0; k < var1096; k++)
             {
-                int var1095 = nbs.ReadInt(); var var1096 = new CLS_CampNpcInfo(); var1096.Unserialize(ref nbs); DictCampNpc.Add(var1095, var1096); 
+                int var1097 = nbs.ReadInt(); var var1098 = new CLS_CampNpcInfo(); var1098.Unserialize(ref nbs); DictCampNpc.Add(var1097, var1098); 
             }
         }
     };
@@ -12967,10 +12971,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out CityUid);
-            int var1100 = nbs.ReadInt();
-            for (int k = 0; k < var1100; k++)
+            int var1102 = nbs.ReadInt();
+            for (int k = 0; k < var1102; k++)
             {
-                int var1101 = nbs.ReadInt(); var var1102 = new CLS_CampInfo(); var1102.Unserialize(ref nbs); DictCamp.Add(var1101, var1102); 
+                int var1103 = nbs.ReadInt(); var var1104 = new CLS_CampInfo(); var1104.Unserialize(ref nbs); DictCamp.Add(var1103, var1104); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -12995,10 +12999,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out CityUid);
-            int var1104 = nbs.ReadInt();
-            for (int k = 0; k < var1104; k++)
+            int var1106 = nbs.ReadInt();
+            for (int k = 0; k < var1106; k++)
             {
-                int var1105 = nbs.ReadInt(); var var1106 = new CLS_CampInfo(); var1106.Unserialize(ref nbs); DictCamp.Add(var1105, var1106); 
+                int var1107 = nbs.ReadInt(); var var1108 = new CLS_CampInfo(); var1108.Unserialize(ref nbs); DictCamp.Add(var1107, var1108); 
             }
         }
     };
@@ -13089,15 +13093,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out CityUid);
-            int var1110 = nbs.ReadInt();
-            for (int k = 0; k < var1110; k++)
-            {
-                var var1111 = new CLS_ShopGoodsInfo(); var1111.Unserialize(ref nbs);GoodsInfo.Add(var1111);
-            }
             int var1112 = nbs.ReadInt();
             for (int k = 0; k < var1112; k++)
             {
-                int var1113 = nbs.ReadInt(); int var1114 = nbs.ReadInt(); SpecialtyGoodsInfo.Add(var1113, var1114); 
+                var var1113 = new CLS_ShopGoodsInfo(); var1113.Unserialize(ref nbs);GoodsInfo.Add(var1113);
+            }
+            int var1114 = nbs.ReadInt();
+            for (int k = 0; k < var1114; k++)
+            {
+                int var1115 = nbs.ReadInt(); int var1116 = nbs.ReadInt(); SpecialtyGoodsInfo.Add(var1115, var1116); 
             }
             nbs.Read(out Contribution);
         }
@@ -13129,15 +13133,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out CityUid);
-            int var1117 = nbs.ReadInt();
-            for (int k = 0; k < var1117; k++)
-            {
-                var var1118 = new CLS_ShopGoodsInfo(); var1118.Unserialize(ref nbs);GoodsInfo.Add(var1118);
-            }
             int var1119 = nbs.ReadInt();
             for (int k = 0; k < var1119; k++)
             {
-                int var1120 = nbs.ReadInt(); int var1121 = nbs.ReadInt(); SpecialtyGoodsInfo.Add(var1120, var1121); 
+                var var1120 = new CLS_ShopGoodsInfo(); var1120.Unserialize(ref nbs);GoodsInfo.Add(var1120);
+            }
+            int var1121 = nbs.ReadInt();
+            for (int k = 0; k < var1121; k++)
+            {
+                int var1122 = nbs.ReadInt(); int var1123 = nbs.ReadInt(); SpecialtyGoodsInfo.Add(var1122, var1123); 
             }
             nbs.Read(out Contribution);
         }
@@ -13236,17 +13240,17 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1129 = nbs.ReadInt();
-            for (int k = 0; k < var1129; k++)
+            int var1131 = nbs.ReadInt();
+            for (int k = 0; k < var1131; k++)
             {
-                var var1130 = new CLS_ShopGoodsInfo(); var1130.Unserialize(ref nbs);GoodsInfo.Add(var1130);
+                var var1132 = new CLS_ShopGoodsInfo(); var1132.Unserialize(ref nbs);GoodsInfo.Add(var1132);
             }
             nbs.Read(out Contribution);
             nbs.Read(out CityUid);
-            int var1133 = nbs.ReadInt();
-            for (int k = 0; k < var1133; k++)
+            int var1135 = nbs.ReadInt();
+            for (int k = 0; k < var1135; k++)
             {
-                int var1134 = nbs.ReadInt(); int var1135 = nbs.ReadInt(); SpecialtyGoodsInfo.Add(var1134, var1135); 
+                int var1136 = nbs.ReadInt(); int var1137 = nbs.ReadInt(); SpecialtyGoodsInfo.Add(var1136, var1137); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -13276,17 +13280,17 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1136 = nbs.ReadInt();
-            for (int k = 0; k < var1136; k++)
+            int var1138 = nbs.ReadInt();
+            for (int k = 0; k < var1138; k++)
             {
-                var var1137 = new CLS_ShopGoodsInfo(); var1137.Unserialize(ref nbs);GoodsInfo.Add(var1137);
+                var var1139 = new CLS_ShopGoodsInfo(); var1139.Unserialize(ref nbs);GoodsInfo.Add(var1139);
             }
             nbs.Read(out Contribution);
             nbs.Read(out CityUid);
-            int var1140 = nbs.ReadInt();
-            for (int k = 0; k < var1140; k++)
+            int var1142 = nbs.ReadInt();
+            for (int k = 0; k < var1142; k++)
             {
-                int var1141 = nbs.ReadInt(); int var1142 = nbs.ReadInt(); SpecialtyGoodsInfo.Add(var1141, var1142); 
+                int var1143 = nbs.ReadInt(); int var1144 = nbs.ReadInt(); SpecialtyGoodsInfo.Add(var1143, var1144); 
             }
         }
     };
@@ -13308,10 +13312,10 @@ namespace ServerBase.Protocol
         public void Unserialize(ref NetBitStream nbs)
         {
             nbs.Read(out Id);
-            int var1144 = nbs.ReadInt();
-            for (int k = 0; k < var1144; k++)
+            int var1146 = nbs.ReadInt();
+            for (int k = 0; k < var1146; k++)
             {
-                int var1145 = nbs.ReadInt(); var var1146 = new CLS_ShopGoodsInfo(); var1146.Unserialize(ref nbs); DictGoods.Add(var1145, var1146); 
+                int var1147 = nbs.ReadInt(); var var1148 = new CLS_ShopGoodsInfo(); var1148.Unserialize(ref nbs); DictGoods.Add(var1147, var1148); 
             }
             nbs.Read(out Cooldown);
         }
@@ -13411,10 +13415,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1151 = nbs.ReadInt();
-            for (int k = 0; k < var1151; k++)
+            int var1153 = nbs.ReadInt();
+            for (int k = 0; k < var1153; k++)
             {
-                int var1152 = nbs.ReadInt(); var var1153 = new CLS_ShopPageInfo(); var1153.Unserialize(ref nbs); DictPage.Add(var1152, var1153); 
+                int var1154 = nbs.ReadInt(); var var1155 = new CLS_ShopPageInfo(); var1155.Unserialize(ref nbs); DictPage.Add(var1154, var1155); 
             }
             nbs.Read(out RefreshTotal);
             nbs.Read(out RefreshCost);
@@ -13441,10 +13445,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1156 = nbs.ReadInt();
-            for (int k = 0; k < var1156; k++)
+            int var1158 = nbs.ReadInt();
+            for (int k = 0; k < var1158; k++)
             {
-                int var1157 = nbs.ReadInt(); var var1158 = new CLS_ShopPageInfo(); var1158.Unserialize(ref nbs); DictPage.Add(var1157, var1158); 
+                int var1159 = nbs.ReadInt(); var var1160 = new CLS_ShopPageInfo(); var1160.Unserialize(ref nbs); DictPage.Add(var1159, var1160); 
             }
             nbs.Read(out RefreshTotal);
             nbs.Read(out RefreshCost);
@@ -13533,10 +13537,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1165 = nbs.ReadInt();
-            for (int k = 0; k < var1165; k++)
+            int var1167 = nbs.ReadInt();
+            for (int k = 0; k < var1167; k++)
             {
-                int var1166 = nbs.ReadInt(); var var1167 = new CLS_ShopPageInfo(); var1167.Unserialize(ref nbs); DictPage.Add(var1166, var1167); 
+                int var1168 = nbs.ReadInt(); var var1169 = new CLS_ShopPageInfo(); var1169.Unserialize(ref nbs); DictPage.Add(var1168, var1169); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -13559,10 +13563,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1168 = nbs.ReadInt();
-            for (int k = 0; k < var1168; k++)
+            int var1170 = nbs.ReadInt();
+            for (int k = 0; k < var1170; k++)
             {
-                int var1169 = nbs.ReadInt(); var var1170 = new CLS_ShopPageInfo(); var1170.Unserialize(ref nbs); DictPage.Add(var1169, var1170); 
+                int var1171 = nbs.ReadInt(); var var1172 = new CLS_ShopPageInfo(); var1172.Unserialize(ref nbs); DictPage.Add(var1171, var1172); 
             }
         }
     };
@@ -13745,10 +13749,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out RefreshTotal);
             nbs.Read(out RefreshCost);
-            int var1179 = nbs.ReadInt();
-            for (int k = 0; k < var1179; k++)
+            int var1181 = nbs.ReadInt();
+            for (int k = 0; k < var1181; k++)
             {
-                int var1180 = nbs.ReadInt(); var var1181 = new CLS_ShopPageInfo(); var1181.Unserialize(ref nbs); DictPage.Add(var1180, var1181); 
+                int var1182 = nbs.ReadInt(); var var1183 = new CLS_ShopPageInfo(); var1183.Unserialize(ref nbs); DictPage.Add(var1182, var1183); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -13775,10 +13779,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out RefreshTotal);
             nbs.Read(out RefreshCost);
-            int var1184 = nbs.ReadInt();
-            for (int k = 0; k < var1184; k++)
+            int var1186 = nbs.ReadInt();
+            for (int k = 0; k < var1186; k++)
             {
-                int var1185 = nbs.ReadInt(); var var1186 = new CLS_ShopPageInfo(); var1186.Unserialize(ref nbs); DictPage.Add(var1185, var1186); 
+                int var1187 = nbs.ReadInt(); var var1188 = new CLS_ShopPageInfo(); var1188.Unserialize(ref nbs); DictPage.Add(var1187, var1188); 
             }
         }
     };
@@ -14118,10 +14122,10 @@ namespace ServerBase.Protocol
             nbs.Read(out DesignMode);
             nbs.Read(out PageIndex);
             nbs.Read(out DesignCount);
-            int var1217 = nbs.ReadInt();
-            for (int k = 0; k < var1217; k++)
+            int var1219 = nbs.ReadInt();
+            for (int k = 0; k < var1219; k++)
             {
-                var var1218 = new CLS_DesignInfo(); var1218.Unserialize(ref nbs);ListDesign.Add(var1218);
+                var var1220 = new CLS_DesignInfo(); var1220.Unserialize(ref nbs);ListDesign.Add(var1220);
             }
             TransactionInfo.Unserialize(ref nbs);
         }
@@ -14154,10 +14158,10 @@ namespace ServerBase.Protocol
             nbs.Read(out DesignMode);
             nbs.Read(out PageIndex);
             nbs.Read(out DesignCount);
-            int var1224 = nbs.ReadInt();
-            for (int k = 0; k < var1224; k++)
+            int var1226 = nbs.ReadInt();
+            for (int k = 0; k < var1226; k++)
             {
-                var var1225 = new CLS_DesignInfo(); var1225.Unserialize(ref nbs);ListDesign.Add(var1225);
+                var var1227 = new CLS_DesignInfo(); var1227.Unserialize(ref nbs);ListDesign.Add(var1227);
             }
             TransactionInfo.Unserialize(ref nbs);
         }
@@ -14575,10 +14579,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Type);
-            int var1258 = nbs.ReadInt();
-            for (int k = 0; k < var1258; k++)
+            int var1260 = nbs.ReadInt();
+            for (int k = 0; k < var1260; k++)
             {
-                var var1259 = new CLS_TransactionLog(); var1259.Unserialize(ref nbs);ListTransactionLog.Add(var1259);
+                var var1261 = new CLS_TransactionLog(); var1261.Unserialize(ref nbs);ListTransactionLog.Add(var1261);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -14603,10 +14607,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Type);
-            int var1261 = nbs.ReadInt();
-            for (int k = 0; k < var1261; k++)
+            int var1263 = nbs.ReadInt();
+            for (int k = 0; k < var1263; k++)
             {
-                var var1262 = new CLS_TransactionLog(); var1262.Unserialize(ref nbs);ListTransactionLog.Add(var1262);
+                var var1264 = new CLS_TransactionLog(); var1264.Unserialize(ref nbs);ListTransactionLog.Add(var1264);
             }
         }
     };
@@ -14751,10 +14755,10 @@ namespace ServerBase.Protocol
             nbs.Read(out SubType);
             nbs.Read(out PageIndex);
             nbs.Read(out TotalCount);
-            int var1284 = nbs.ReadInt();
-            for (int k = 0; k < var1284; k++)
+            int var1286 = nbs.ReadInt();
+            for (int k = 0; k < var1286; k++)
             {
-                long var1285 = nbs.ReadLong(); var var1286 = new CLS_AuctionInfoItem(); var1286.Unserialize(ref nbs); DictItem.Add(var1285, var1286); 
+                long var1287 = nbs.ReadLong(); var var1288 = new CLS_AuctionInfoItem(); var1288.Unserialize(ref nbs); DictItem.Add(var1287, var1288); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -14787,10 +14791,10 @@ namespace ServerBase.Protocol
             nbs.Read(out SubType);
             nbs.Read(out PageIndex);
             nbs.Read(out TotalCount);
-            int var1292 = nbs.ReadInt();
-            for (int k = 0; k < var1292; k++)
+            int var1294 = nbs.ReadInt();
+            for (int k = 0; k < var1294; k++)
             {
-                long var1293 = nbs.ReadLong(); var var1294 = new CLS_AuctionInfoItem(); var1294.Unserialize(ref nbs); DictItem.Add(var1293, var1294); 
+                long var1295 = nbs.ReadLong(); var var1296 = new CLS_AuctionInfoItem(); var1296.Unserialize(ref nbs); DictItem.Add(var1295, var1296); 
             }
         }
     };
@@ -15207,10 +15211,10 @@ namespace ServerBase.Protocol
             nbs.Read(out SubType);
             nbs.Read(out PageIndex);
             nbs.Read(out TotalCount);
-            int var1326 = nbs.ReadInt();
-            for (int k = 0; k < var1326; k++)
+            int var1328 = nbs.ReadInt();
+            for (int k = 0; k < var1328; k++)
             {
-                long var1327 = nbs.ReadLong(); var var1328 = new CLS_AuctionInfoEquip(); var1328.Unserialize(ref nbs); DictEquip.Add(var1327, var1328); 
+                long var1329 = nbs.ReadLong(); var var1330 = new CLS_AuctionInfoEquip(); var1330.Unserialize(ref nbs); DictEquip.Add(var1329, var1330); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -15243,10 +15247,10 @@ namespace ServerBase.Protocol
             nbs.Read(out SubType);
             nbs.Read(out PageIndex);
             nbs.Read(out TotalCount);
-            int var1334 = nbs.ReadInt();
-            for (int k = 0; k < var1334; k++)
+            int var1336 = nbs.ReadInt();
+            for (int k = 0; k < var1336; k++)
             {
-                long var1335 = nbs.ReadLong(); var var1336 = new CLS_AuctionInfoEquip(); var1336.Unserialize(ref nbs); DictEquip.Add(var1335, var1336); 
+                long var1337 = nbs.ReadLong(); var var1338 = new CLS_AuctionInfoEquip(); var1338.Unserialize(ref nbs); DictEquip.Add(var1337, var1338); 
             }
         }
     };
@@ -15659,10 +15663,10 @@ namespace ServerBase.Protocol
             nbs.Read(out SubType);
             nbs.Read(out PageIndex);
             nbs.Read(out TotalCount);
-            int var1366 = nbs.ReadInt();
-            for (int k = 0; k < var1366; k++)
+            int var1368 = nbs.ReadInt();
+            for (int k = 0; k < var1368; k++)
             {
-                long var1367 = nbs.ReadLong(); var var1368 = new CLS_AuctionInfoWarrior(); var1368.Unserialize(ref nbs); DictWarrior.Add(var1367, var1368); 
+                long var1369 = nbs.ReadLong(); var var1370 = new CLS_AuctionInfoWarrior(); var1370.Unserialize(ref nbs); DictWarrior.Add(var1369, var1370); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -15695,10 +15699,10 @@ namespace ServerBase.Protocol
             nbs.Read(out SubType);
             nbs.Read(out PageIndex);
             nbs.Read(out TotalCount);
-            int var1374 = nbs.ReadInt();
-            for (int k = 0; k < var1374; k++)
+            int var1376 = nbs.ReadInt();
+            for (int k = 0; k < var1376; k++)
             {
-                long var1375 = nbs.ReadLong(); var var1376 = new CLS_AuctionInfoWarrior(); var1376.Unserialize(ref nbs); DictWarrior.Add(var1375, var1376); 
+                long var1377 = nbs.ReadLong(); var var1378 = new CLS_AuctionInfoWarrior(); var1378.Unserialize(ref nbs); DictWarrior.Add(var1377, var1378); 
             }
         }
     };
@@ -16083,20 +16087,20 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1393 = nbs.ReadInt();
-            for (int k = 0; k < var1393; k++)
+            int var1395 = nbs.ReadInt();
+            for (int k = 0; k < var1395; k++)
             {
-                long var1394 = nbs.ReadLong(); var var1395 = new CLS_AuctionInfoItem(); var1395.Unserialize(ref nbs); DictItem.Add(var1394, var1395); 
+                long var1396 = nbs.ReadLong(); var var1397 = new CLS_AuctionInfoItem(); var1397.Unserialize(ref nbs); DictItem.Add(var1396, var1397); 
             }
-            int var1396 = nbs.ReadInt();
-            for (int k = 0; k < var1396; k++)
+            int var1398 = nbs.ReadInt();
+            for (int k = 0; k < var1398; k++)
             {
-                long var1397 = nbs.ReadLong(); var var1398 = new CLS_AuctionInfoEquip(); var1398.Unserialize(ref nbs); DictEquip.Add(var1397, var1398); 
+                long var1399 = nbs.ReadLong(); var var1400 = new CLS_AuctionInfoEquip(); var1400.Unserialize(ref nbs); DictEquip.Add(var1399, var1400); 
             }
-            int var1399 = nbs.ReadInt();
-            for (int k = 0; k < var1399; k++)
+            int var1401 = nbs.ReadInt();
+            for (int k = 0; k < var1401; k++)
             {
-                long var1400 = nbs.ReadLong(); var var1401 = new CLS_AuctionInfoWarrior(); var1401.Unserialize(ref nbs); DictWarrior.Add(var1400, var1401); 
+                long var1402 = nbs.ReadLong(); var var1403 = new CLS_AuctionInfoWarrior(); var1403.Unserialize(ref nbs); DictWarrior.Add(var1402, var1403); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -16129,20 +16133,20 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1402 = nbs.ReadInt();
-            for (int k = 0; k < var1402; k++)
+            int var1404 = nbs.ReadInt();
+            for (int k = 0; k < var1404; k++)
             {
-                long var1403 = nbs.ReadLong(); var var1404 = new CLS_AuctionInfoItem(); var1404.Unserialize(ref nbs); DictItem.Add(var1403, var1404); 
+                long var1405 = nbs.ReadLong(); var var1406 = new CLS_AuctionInfoItem(); var1406.Unserialize(ref nbs); DictItem.Add(var1405, var1406); 
             }
-            int var1405 = nbs.ReadInt();
-            for (int k = 0; k < var1405; k++)
+            int var1407 = nbs.ReadInt();
+            for (int k = 0; k < var1407; k++)
             {
-                long var1406 = nbs.ReadLong(); var var1407 = new CLS_AuctionInfoEquip(); var1407.Unserialize(ref nbs); DictEquip.Add(var1406, var1407); 
+                long var1408 = nbs.ReadLong(); var var1409 = new CLS_AuctionInfoEquip(); var1409.Unserialize(ref nbs); DictEquip.Add(var1408, var1409); 
             }
-            int var1408 = nbs.ReadInt();
-            for (int k = 0; k < var1408; k++)
+            int var1410 = nbs.ReadInt();
+            for (int k = 0; k < var1410; k++)
             {
-                long var1409 = nbs.ReadLong(); var var1410 = new CLS_AuctionInfoWarrior(); var1410.Unserialize(ref nbs); DictWarrior.Add(var1409, var1410); 
+                long var1411 = nbs.ReadLong(); var var1412 = new CLS_AuctionInfoWarrior(); var1412.Unserialize(ref nbs); DictWarrior.Add(var1411, var1412); 
             }
         }
     };
@@ -16249,10 +16253,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out AuctionLogType);
-            int var1419 = nbs.ReadInt();
-            for (int k = 0; k < var1419; k++)
+            int var1421 = nbs.ReadInt();
+            for (int k = 0; k < var1421; k++)
             {
-                var var1420 = new CLS_AuctionLog(); var1420.Unserialize(ref nbs);ListAuctionLog.Add(var1420);
+                var var1422 = new CLS_AuctionLog(); var1422.Unserialize(ref nbs);ListAuctionLog.Add(var1422);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -16277,10 +16281,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out AuctionLogType);
-            int var1422 = nbs.ReadInt();
-            for (int k = 0; k < var1422; k++)
+            int var1424 = nbs.ReadInt();
+            for (int k = 0; k < var1424; k++)
             {
-                var var1423 = new CLS_AuctionLog(); var1423.Unserialize(ref nbs);ListAuctionLog.Add(var1423);
+                var var1425 = new CLS_AuctionLog(); var1425.Unserialize(ref nbs);ListAuctionLog.Add(var1425);
             }
         }
     };
@@ -16459,10 +16463,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1430 = nbs.ReadInt();
-            for (int k = 0; k < var1430; k++)
+            int var1432 = nbs.ReadInt();
+            for (int k = 0; k < var1432; k++)
             {
-                var var1431 = new CLS_AwardItem(); var1431.Unserialize(ref nbs);ListAward.Add(var1431);
+                var var1433 = new CLS_AwardItem(); var1433.Unserialize(ref nbs);ListAward.Add(var1433);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -16485,10 +16489,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1432 = nbs.ReadInt();
-            for (int k = 0; k < var1432; k++)
+            int var1434 = nbs.ReadInt();
+            for (int k = 0; k < var1434; k++)
             {
-                var var1433 = new CLS_AwardItem(); var1433.Unserialize(ref nbs);ListAward.Add(var1433);
+                var var1435 = new CLS_AwardItem(); var1435.Unserialize(ref nbs);ListAward.Add(var1435);
             }
         }
     };
@@ -16567,10 +16571,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1434 = nbs.ReadInt();
-            for (int k = 0; k < var1434; k++)
+            int var1436 = nbs.ReadInt();
+            for (int k = 0; k < var1436; k++)
             {
-                var var1435 = new CLS_AwardItem(); var1435.Unserialize(ref nbs);ListAward.Add(var1435);
+                var var1437 = new CLS_AwardItem(); var1437.Unserialize(ref nbs);ListAward.Add(var1437);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -16593,10 +16597,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1436 = nbs.ReadInt();
-            for (int k = 0; k < var1436; k++)
+            int var1438 = nbs.ReadInt();
+            for (int k = 0; k < var1438; k++)
             {
-                var var1437 = new CLS_AwardItem(); var1437.Unserialize(ref nbs);ListAward.Add(var1437);
+                var var1439 = new CLS_AwardItem(); var1439.Unserialize(ref nbs);ListAward.Add(var1439);
             }
         }
     };
@@ -16681,10 +16685,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Cdkey);
-            int var1441 = nbs.ReadInt();
-            for (int k = 0; k < var1441; k++)
+            int var1443 = nbs.ReadInt();
+            for (int k = 0; k < var1443; k++)
             {
-                var var1442 = new CLS_AwardItem(); var1442.Unserialize(ref nbs);ListAward.Add(var1442);
+                var var1444 = new CLS_AwardItem(); var1444.Unserialize(ref nbs);ListAward.Add(var1444);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -16709,10 +16713,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Cdkey);
-            int var1444 = nbs.ReadInt();
-            for (int k = 0; k < var1444; k++)
+            int var1446 = nbs.ReadInt();
+            for (int k = 0; k < var1446; k++)
             {
-                var var1445 = new CLS_AwardItem(); var1445.Unserialize(ref nbs);ListAward.Add(var1445);
+                var var1447 = new CLS_AwardItem(); var1447.Unserialize(ref nbs);ListAward.Add(var1447);
             }
         }
     };
@@ -16825,10 +16829,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1456 = nbs.ReadInt();
-            for (int k = 0; k < var1456; k++)
+            int var1458 = nbs.ReadInt();
+            for (int k = 0; k < var1458; k++)
             {
-                var var1457 = new CLS_TopData(); var1457.Unserialize(ref nbs);TopDataList.Add(var1457);
+                var var1459 = new CLS_TopData(); var1459.Unserialize(ref nbs);TopDataList.Add(var1459);
             }
             playerTopData.Unserialize(ref nbs);
             nbs.Read(out type);
@@ -16855,10 +16859,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1460 = nbs.ReadInt();
-            for (int k = 0; k < var1460; k++)
+            int var1462 = nbs.ReadInt();
+            for (int k = 0; k < var1462; k++)
             {
-                var var1461 = new CLS_TopData(); var1461.Unserialize(ref nbs);TopDataList.Add(var1461);
+                var var1463 = new CLS_TopData(); var1463.Unserialize(ref nbs);TopDataList.Add(var1463);
             }
             playerTopData.Unserialize(ref nbs);
             nbs.Read(out type);
@@ -17079,10 +17083,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out TaskType);
-            int var1484 = nbs.ReadInt();
-            for (int k = 0; k < var1484; k++)
+            int var1486 = nbs.ReadInt();
+            for (int k = 0; k < var1486; k++)
             {
-                var var1485 = new CLS_TaskInfo(); var1485.Unserialize(ref nbs);ListTask.Add(var1485);
+                var var1487 = new CLS_TaskInfo(); var1487.Unserialize(ref nbs);ListTask.Add(var1487);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -17107,10 +17111,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out TaskType);
-            int var1487 = nbs.ReadInt();
-            for (int k = 0; k < var1487; k++)
+            int var1489 = nbs.ReadInt();
+            for (int k = 0; k < var1489; k++)
             {
-                var var1488 = new CLS_TaskInfo(); var1488.Unserialize(ref nbs);ListTask.Add(var1488);
+                var var1490 = new CLS_TaskInfo(); var1490.Unserialize(ref nbs);ListTask.Add(var1490);
             }
         }
     };
@@ -17197,10 +17201,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1493 = nbs.ReadInt();
-            for (int k = 0; k < var1493; k++)
+            int var1495 = nbs.ReadInt();
+            for (int k = 0; k < var1495; k++)
             {
-                var var1494 = new CLS_AwardItem(); var1494.Unserialize(ref nbs);ListAward.Add(var1494);
+                var var1496 = new CLS_AwardItem(); var1496.Unserialize(ref nbs);ListAward.Add(var1496);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -17223,10 +17227,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1495 = nbs.ReadInt();
-            for (int k = 0; k < var1495; k++)
+            int var1497 = nbs.ReadInt();
+            for (int k = 0; k < var1497; k++)
             {
-                var var1496 = new CLS_AwardItem(); var1496.Unserialize(ref nbs);ListAward.Add(var1496);
+                var var1498 = new CLS_AwardItem(); var1498.Unserialize(ref nbs);ListAward.Add(var1498);
             }
         }
     };
@@ -17309,10 +17313,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1499 = nbs.ReadInt();
-            for (int k = 0; k < var1499; k++)
+            int var1501 = nbs.ReadInt();
+            for (int k = 0; k < var1501; k++)
             {
-                var var1500 = new CLS_AwardItem(); var1500.Unserialize(ref nbs);ListAward.Add(var1500);
+                var var1502 = new CLS_AwardItem(); var1502.Unserialize(ref nbs);ListAward.Add(var1502);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -17335,10 +17339,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1501 = nbs.ReadInt();
-            for (int k = 0; k < var1501; k++)
+            int var1503 = nbs.ReadInt();
+            for (int k = 0; k < var1503; k++)
             {
-                var var1502 = new CLS_AwardItem(); var1502.Unserialize(ref nbs);ListAward.Add(var1502);
+                var var1504 = new CLS_AwardItem(); var1504.Unserialize(ref nbs);ListAward.Add(var1504);
             }
         }
     };
@@ -17423,16 +17427,16 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1503 = nbs.ReadInt();
-            for (int k = 0; k < var1503; k++)
+            int var1505 = nbs.ReadInt();
+            for (int k = 0; k < var1505; k++)
             {
-                var var1504 = new CLS_TaskInfo(); var1504.Unserialize(ref nbs);ListTask.Add(var1504);
+                var var1506 = new CLS_TaskInfo(); var1506.Unserialize(ref nbs);ListTask.Add(var1506);
             }
             nbs.Read(out Activity);
-            int var1506 = nbs.ReadInt();
-            for (int k = 0; k < var1506; k++)
+            int var1508 = nbs.ReadInt();
+            for (int k = 0; k < var1508; k++)
             {
-                int var1507 = nbs.ReadInt(); int var1508 = nbs.ReadInt(); DictTaskActivity.Add(var1507, var1508); 
+                int var1509 = nbs.ReadInt(); int var1510 = nbs.ReadInt(); DictTaskActivity.Add(var1509, var1510); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -17461,16 +17465,16 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1509 = nbs.ReadInt();
-            for (int k = 0; k < var1509; k++)
+            int var1511 = nbs.ReadInt();
+            for (int k = 0; k < var1511; k++)
             {
-                var var1510 = new CLS_TaskInfo(); var1510.Unserialize(ref nbs);ListTask.Add(var1510);
+                var var1512 = new CLS_TaskInfo(); var1512.Unserialize(ref nbs);ListTask.Add(var1512);
             }
             nbs.Read(out Activity);
-            int var1512 = nbs.ReadInt();
-            for (int k = 0; k < var1512; k++)
+            int var1514 = nbs.ReadInt();
+            for (int k = 0; k < var1514; k++)
             {
-                int var1513 = nbs.ReadInt(); int var1514 = nbs.ReadInt(); DictTaskActivity.Add(var1513, var1514); 
+                int var1515 = nbs.ReadInt(); int var1516 = nbs.ReadInt(); DictTaskActivity.Add(var1515, var1516); 
             }
         }
     };
@@ -17553,10 +17557,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1517 = nbs.ReadInt();
-            for (int k = 0; k < var1517; k++)
+            int var1519 = nbs.ReadInt();
+            for (int k = 0; k < var1519; k++)
             {
-                var var1518 = new CLS_AwardItem(); var1518.Unserialize(ref nbs);ListAward.Add(var1518);
+                var var1520 = new CLS_AwardItem(); var1520.Unserialize(ref nbs);ListAward.Add(var1520);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -17579,10 +17583,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1519 = nbs.ReadInt();
-            for (int k = 0; k < var1519; k++)
+            int var1521 = nbs.ReadInt();
+            for (int k = 0; k < var1521; k++)
             {
-                var var1520 = new CLS_AwardItem(); var1520.Unserialize(ref nbs);ListAward.Add(var1520);
+                var var1522 = new CLS_AwardItem(); var1522.Unserialize(ref nbs);ListAward.Add(var1522);
             }
         }
     };
@@ -17779,10 +17783,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             SignInfo.Unserialize(ref nbs);
-            int var1530 = nbs.ReadInt();
-            for (int k = 0; k < var1530; k++)
+            int var1532 = nbs.ReadInt();
+            for (int k = 0; k < var1532; k++)
             {
-                var var1531 = new CLS_AwardItem(); var1531.Unserialize(ref nbs);ListAward.Add(var1531);
+                var var1533 = new CLS_AwardItem(); var1533.Unserialize(ref nbs);ListAward.Add(var1533);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -17807,10 +17811,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             SignInfo.Unserialize(ref nbs);
-            int var1533 = nbs.ReadInt();
-            for (int k = 0; k < var1533; k++)
+            int var1535 = nbs.ReadInt();
+            for (int k = 0; k < var1535; k++)
             {
-                var var1534 = new CLS_AwardItem(); var1534.Unserialize(ref nbs);ListAward.Add(var1534);
+                var var1536 = new CLS_AwardItem(); var1536.Unserialize(ref nbs);ListAward.Add(var1536);
             }
         }
     };
@@ -17891,10 +17895,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             SignInfo.Unserialize(ref nbs);
-            int var1536 = nbs.ReadInt();
-            for (int k = 0; k < var1536; k++)
+            int var1538 = nbs.ReadInt();
+            for (int k = 0; k < var1538; k++)
             {
-                var var1537 = new CLS_AwardItem(); var1537.Unserialize(ref nbs);ListAward.Add(var1537);
+                var var1539 = new CLS_AwardItem(); var1539.Unserialize(ref nbs);ListAward.Add(var1539);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -17919,10 +17923,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             SignInfo.Unserialize(ref nbs);
-            int var1539 = nbs.ReadInt();
-            for (int k = 0; k < var1539; k++)
+            int var1541 = nbs.ReadInt();
+            for (int k = 0; k < var1541; k++)
             {
-                var var1540 = new CLS_AwardItem(); var1540.Unserialize(ref nbs);ListAward.Add(var1540);
+                var var1542 = new CLS_AwardItem(); var1542.Unserialize(ref nbs);ListAward.Add(var1542);
             }
         }
     };
@@ -18017,10 +18021,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1543 = nbs.ReadInt();
-            for (int k = 0; k < var1543; k++)
+            int var1545 = nbs.ReadInt();
+            for (int k = 0; k < var1545; k++)
             {
-                var var1544 = new CLS_BuffInfo(); var1544.Unserialize(ref nbs);Info.Add(var1544);
+                var var1546 = new CLS_BuffInfo(); var1546.Unserialize(ref nbs);Info.Add(var1546);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -18043,10 +18047,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1545 = nbs.ReadInt();
-            for (int k = 0; k < var1545; k++)
+            int var1547 = nbs.ReadInt();
+            for (int k = 0; k < var1547; k++)
             {
-                var var1546 = new CLS_BuffInfo(); var1546.Unserialize(ref nbs);Info.Add(var1546);
+                var var1548 = new CLS_BuffInfo(); var1548.Unserialize(ref nbs);Info.Add(var1548);
             }
         }
     };
@@ -18145,10 +18149,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1551 = nbs.ReadInt();
-            for (int k = 0; k < var1551; k++)
+            int var1553 = nbs.ReadInt();
+            for (int k = 0; k < var1553; k++)
             {
-                int var1552 = nbs.ReadInt(); var var1553 = new CLS_AcitvityInfo(); var1553.Unserialize(ref nbs); ListInfo.Add(var1552, var1553); 
+                int var1554 = nbs.ReadInt(); var var1555 = new CLS_AcitvityInfo(); var1555.Unserialize(ref nbs); ListInfo.Add(var1554, var1555); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -18171,10 +18175,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1554 = nbs.ReadInt();
-            for (int k = 0; k < var1554; k++)
+            int var1556 = nbs.ReadInt();
+            for (int k = 0; k < var1556; k++)
             {
-                int var1555 = nbs.ReadInt(); var var1556 = new CLS_AcitvityInfo(); var1556.Unserialize(ref nbs); ListInfo.Add(var1555, var1556); 
+                int var1557 = nbs.ReadInt(); var var1558 = new CLS_AcitvityInfo(); var1558.Unserialize(ref nbs); ListInfo.Add(var1557, var1558); 
             }
         }
     };
@@ -18349,10 +18353,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1561 = nbs.ReadInt();
-            for (int k = 0; k < var1561; k++)
+            int var1563 = nbs.ReadInt();
+            for (int k = 0; k < var1563; k++)
             {
-                var var1562 = new CLS_TaskInfo(); var1562.Unserialize(ref nbs);ListTask.Add(var1562);
+                var var1564 = new CLS_TaskInfo(); var1564.Unserialize(ref nbs);ListTask.Add(var1564);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -18375,10 +18379,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1563 = nbs.ReadInt();
-            for (int k = 0; k < var1563; k++)
+            int var1565 = nbs.ReadInt();
+            for (int k = 0; k < var1565; k++)
             {
-                var var1564 = new CLS_TaskInfo(); var1564.Unserialize(ref nbs);ListTask.Add(var1564);
+                var var1566 = new CLS_TaskInfo(); var1566.Unserialize(ref nbs);ListTask.Add(var1566);
             }
         }
     };
@@ -18461,10 +18465,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1567 = nbs.ReadInt();
-            for (int k = 0; k < var1567; k++)
+            int var1569 = nbs.ReadInt();
+            for (int k = 0; k < var1569; k++)
             {
-                var var1568 = new CLS_AwardItem(); var1568.Unserialize(ref nbs);ListAward.Add(var1568);
+                var var1570 = new CLS_AwardItem(); var1570.Unserialize(ref nbs);ListAward.Add(var1570);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -18487,10 +18491,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1569 = nbs.ReadInt();
-            for (int k = 0; k < var1569; k++)
+            int var1571 = nbs.ReadInt();
+            for (int k = 0; k < var1571; k++)
             {
-                var var1570 = new CLS_AwardItem(); var1570.Unserialize(ref nbs);ListAward.Add(var1570);
+                var var1572 = new CLS_AwardItem(); var1572.Unserialize(ref nbs);ListAward.Add(var1572);
             }
         }
     };
@@ -18569,10 +18573,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1571 = nbs.ReadInt();
-            for (int k = 0; k < var1571; k++)
+            int var1573 = nbs.ReadInt();
+            for (int k = 0; k < var1573; k++)
             {
-                int var1572 = nbs.ReadInt(); byte var1573 = nbs.ReadByte(); DictData.Add(var1572, var1573); 
+                int var1574 = nbs.ReadInt(); byte var1575 = nbs.ReadByte(); DictData.Add(var1574, var1575); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -18595,10 +18599,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1574 = nbs.ReadInt();
-            for (int k = 0; k < var1574; k++)
+            int var1576 = nbs.ReadInt();
+            for (int k = 0; k < var1576; k++)
             {
-                int var1575 = nbs.ReadInt(); byte var1576 = nbs.ReadByte(); DictData.Add(var1575, var1576); 
+                int var1577 = nbs.ReadInt(); byte var1578 = nbs.ReadByte(); DictData.Add(var1577, var1578); 
             }
         }
     };
@@ -18681,10 +18685,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1579 = nbs.ReadInt();
-            for (int k = 0; k < var1579; k++)
+            int var1581 = nbs.ReadInt();
+            for (int k = 0; k < var1581; k++)
             {
-                var var1580 = new CLS_AwardItem(); var1580.Unserialize(ref nbs);ListAward.Add(var1580);
+                var var1582 = new CLS_AwardItem(); var1582.Unserialize(ref nbs);ListAward.Add(var1582);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -18707,10 +18711,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1581 = nbs.ReadInt();
-            for (int k = 0; k < var1581; k++)
+            int var1583 = nbs.ReadInt();
+            for (int k = 0; k < var1583; k++)
             {
-                var var1582 = new CLS_AwardItem(); var1582.Unserialize(ref nbs);ListAward.Add(var1582);
+                var var1584 = new CLS_AwardItem(); var1584.Unserialize(ref nbs);ListAward.Add(var1584);
             }
         }
     };
@@ -18757,10 +18761,10 @@ namespace ServerBase.Protocol
             nbs.Read(out IsOpen);
             nbs.Read(out TimeOpen);
             nbs.Read(out TimeEnd);
-            int var1591 = nbs.ReadInt();
-            for (int k = 0; k < var1591; k++)
+            int var1593 = nbs.ReadInt();
+            for (int k = 0; k < var1593; k++)
             {
-                int var1592 = nbs.ReadInt(); var var1593 = new CLS_WelfareTaskInfo(); var1593.Unserialize(ref nbs); ListTask.Add(var1592, var1593); 
+                int var1594 = nbs.ReadInt(); var var1595 = new CLS_WelfareTaskInfo(); var1595.Unserialize(ref nbs); ListTask.Add(var1594, var1595); 
             }
         }
     };
@@ -18839,10 +18843,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1594 = nbs.ReadInt();
-            for (int k = 0; k < var1594; k++)
+            int var1596 = nbs.ReadInt();
+            for (int k = 0; k < var1596; k++)
             {
-                int var1595 = nbs.ReadInt(); var var1596 = new CLS_WelfareInfo(); var1596.Unserialize(ref nbs); ListInfo.Add(var1595, var1596); 
+                int var1597 = nbs.ReadInt(); var var1598 = new CLS_WelfareInfo(); var1598.Unserialize(ref nbs); ListInfo.Add(var1597, var1598); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -18865,10 +18869,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1597 = nbs.ReadInt();
-            for (int k = 0; k < var1597; k++)
+            int var1599 = nbs.ReadInt();
+            for (int k = 0; k < var1599; k++)
             {
-                int var1598 = nbs.ReadInt(); var var1599 = new CLS_WelfareInfo(); var1599.Unserialize(ref nbs); ListInfo.Add(var1598, var1599); 
+                int var1600 = nbs.ReadInt(); var var1601 = new CLS_WelfareInfo(); var1601.Unserialize(ref nbs); ListInfo.Add(var1600, var1601); 
             }
         }
     };
@@ -18953,10 +18957,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var1603 = nbs.ReadInt();
-            for (int k = 0; k < var1603; k++)
+            int var1605 = nbs.ReadInt();
+            for (int k = 0; k < var1605; k++)
             {
-                var var1604 = new CLS_AwardItem(); var1604.Unserialize(ref nbs);ListAward.Add(var1604);
+                var var1606 = new CLS_AwardItem(); var1606.Unserialize(ref nbs);ListAward.Add(var1606);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -18981,10 +18985,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var1606 = nbs.ReadInt();
-            for (int k = 0; k < var1606; k++)
+            int var1608 = nbs.ReadInt();
+            for (int k = 0; k < var1608; k++)
             {
-                var var1607 = new CLS_AwardItem(); var1607.Unserialize(ref nbs);ListAward.Add(var1607);
+                var var1609 = new CLS_AwardItem(); var1609.Unserialize(ref nbs);ListAward.Add(var1609);
             }
         }
     };
@@ -19150,10 +19154,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1633 = nbs.ReadInt();
-            for (int k = 0; k < var1633; k++)
+            int var1635 = nbs.ReadInt();
+            for (int k = 0; k < var1635; k++)
             {
-                var var1634 = new CLS_GuildInfoBase(); var1634.Unserialize(ref nbs);ListGuildInfoBase.Add(var1634);
+                var var1636 = new CLS_GuildInfoBase(); var1636.Unserialize(ref nbs);ListGuildInfoBase.Add(var1636);
             }
             nbs.Read(out CdCanJoin);
         }
@@ -19178,10 +19182,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1636 = nbs.ReadInt();
-            for (int k = 0; k < var1636; k++)
+            int var1638 = nbs.ReadInt();
+            for (int k = 0; k < var1638; k++)
             {
-                var var1637 = new CLS_GuildInfoBase(); var1637.Unserialize(ref nbs);ListGuildInfoBase.Add(var1637);
+                var var1639 = new CLS_GuildInfoBase(); var1639.Unserialize(ref nbs);ListGuildInfoBase.Add(var1639);
             }
             nbs.Read(out CdCanJoin);
         }
@@ -19813,10 +19817,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1651 = nbs.ReadInt();
-            for (int k = 0; k < var1651; k++)
+            int var1653 = nbs.ReadInt();
+            for (int k = 0; k < var1653; k++)
             {
-                var var1652 = new CLS_PubPlayerBase(); var1652.Unserialize(ref nbs);ListApply.Add(var1652);
+                var var1654 = new CLS_PubPlayerBase(); var1654.Unserialize(ref nbs);ListApply.Add(var1654);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -19839,10 +19843,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1653 = nbs.ReadInt();
-            for (int k = 0; k < var1653; k++)
+            int var1655 = nbs.ReadInt();
+            for (int k = 0; k < var1655; k++)
             {
-                var var1654 = new CLS_PubPlayerBase(); var1654.Unserialize(ref nbs);ListApply.Add(var1654);
+                var var1656 = new CLS_PubPlayerBase(); var1656.Unserialize(ref nbs);ListApply.Add(var1656);
             }
         }
     };
@@ -20049,10 +20053,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1669 = nbs.ReadInt();
-            for (int k = 0; k < var1669; k++)
+            int var1671 = nbs.ReadInt();
+            for (int k = 0; k < var1671; k++)
             {
-                var var1670 = new CLS_GuildMbsInfo(); var1670.Unserialize(ref nbs);ListMember.Add(var1670);
+                var var1672 = new CLS_GuildMbsInfo(); var1672.Unserialize(ref nbs);ListMember.Add(var1672);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -20075,10 +20079,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1671 = nbs.ReadInt();
-            for (int k = 0; k < var1671; k++)
+            int var1673 = nbs.ReadInt();
+            for (int k = 0; k < var1673; k++)
             {
-                var var1672 = new CLS_GuildMbsInfo(); var1672.Unserialize(ref nbs);ListMember.Add(var1672);
+                var var1674 = new CLS_GuildMbsInfo(); var1674.Unserialize(ref nbs);ListMember.Add(var1674);
             }
         }
     };
@@ -20157,10 +20161,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1673 = nbs.ReadInt();
-            for (int k = 0; k < var1673; k++)
+            int var1675 = nbs.ReadInt();
+            for (int k = 0; k < var1675; k++)
             {
-                var var1674 = new CLS_GameLog(); var1674.Unserialize(ref nbs);ListLog.Add(var1674);
+                var var1676 = new CLS_GameLog(); var1676.Unserialize(ref nbs);ListLog.Add(var1676);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -20183,10 +20187,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1675 = nbs.ReadInt();
-            for (int k = 0; k < var1675; k++)
+            int var1677 = nbs.ReadInt();
+            for (int k = 0; k < var1677; k++)
             {
-                var var1676 = new CLS_GameLog(); var1676.Unserialize(ref nbs);ListLog.Add(var1676);
+                var var1678 = new CLS_GameLog(); var1678.Unserialize(ref nbs);ListLog.Add(var1678);
             }
         }
     };
@@ -20639,15 +20643,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1685 = nbs.ReadInt();
-            for (int k = 0; k < var1685; k++)
-            {
-                var var1686 = new CLS_GameLog(); var1686.Unserialize(ref nbs);ListLog.Add(var1686);
-            }
             int var1687 = nbs.ReadInt();
             for (int k = 0; k < var1687; k++)
             {
-                int var1688 = nbs.ReadInt(); int var1689 = nbs.ReadInt(); DictDonateCount.Add(var1688, var1689); 
+                var var1688 = new CLS_GameLog(); var1688.Unserialize(ref nbs);ListLog.Add(var1688);
+            }
+            int var1689 = nbs.ReadInt();
+            for (int k = 0; k < var1689; k++)
+            {
+                int var1690 = nbs.ReadInt(); int var1691 = nbs.ReadInt(); DictDonateCount.Add(var1690, var1691); 
             }
             nbs.Read(out Contribution);
         }
@@ -20677,15 +20681,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1691 = nbs.ReadInt();
-            for (int k = 0; k < var1691; k++)
-            {
-                var var1692 = new CLS_GameLog(); var1692.Unserialize(ref nbs);ListLog.Add(var1692);
-            }
             int var1693 = nbs.ReadInt();
             for (int k = 0; k < var1693; k++)
             {
-                int var1694 = nbs.ReadInt(); int var1695 = nbs.ReadInt(); DictDonateCount.Add(var1694, var1695); 
+                var var1694 = new CLS_GameLog(); var1694.Unserialize(ref nbs);ListLog.Add(var1694);
+            }
+            int var1695 = nbs.ReadInt();
+            for (int k = 0; k < var1695; k++)
+            {
+                int var1696 = nbs.ReadInt(); int var1697 = nbs.ReadInt(); DictDonateCount.Add(var1696, var1697); 
             }
             nbs.Read(out Contribution);
         }
@@ -20873,10 +20877,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1707 = nbs.ReadInt();
-            for (int k = 0; k < var1707; k++)
+            int var1709 = nbs.ReadInt();
+            for (int k = 0; k < var1709; k++)
             {
-                var var1708 = new CLS_GuildInfoBase(); var1708.Unserialize(ref nbs);ListGuildInfoBase.Add(var1708);
+                var var1710 = new CLS_GuildInfoBase(); var1710.Unserialize(ref nbs);ListGuildInfoBase.Add(var1710);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -20899,10 +20903,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1709 = nbs.ReadInt();
-            for (int k = 0; k < var1709; k++)
+            int var1711 = nbs.ReadInt();
+            for (int k = 0; k < var1711; k++)
             {
-                var var1710 = new CLS_GuildInfoBase(); var1710.Unserialize(ref nbs);ListGuildInfoBase.Add(var1710);
+                var var1712 = new CLS_GuildInfoBase(); var1712.Unserialize(ref nbs);ListGuildInfoBase.Add(var1712);
             }
         }
     };
@@ -20985,10 +20989,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1713 = nbs.ReadInt();
-            for (int k = 0; k < var1713; k++)
+            int var1715 = nbs.ReadInt();
+            for (int k = 0; k < var1715; k++)
             {
-                var var1714 = new CLS_GuildInfoBase(); var1714.Unserialize(ref nbs);ListGuildInfoBase.Add(var1714);
+                var var1716 = new CLS_GuildInfoBase(); var1716.Unserialize(ref nbs);ListGuildInfoBase.Add(var1716);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -21011,10 +21015,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1715 = nbs.ReadInt();
-            for (int k = 0; k < var1715; k++)
+            int var1717 = nbs.ReadInt();
+            for (int k = 0; k < var1717; k++)
             {
-                var var1716 = new CLS_GuildInfoBase(); var1716.Unserialize(ref nbs);ListGuildInfoBase.Add(var1716);
+                var var1718 = new CLS_GuildInfoBase(); var1718.Unserialize(ref nbs);ListGuildInfoBase.Add(var1718);
             }
         }
     };
@@ -21093,10 +21097,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1717 = nbs.ReadInt();
-            for (int k = 0; k < var1717; k++)
+            int var1719 = nbs.ReadInt();
+            for (int k = 0; k < var1719; k++)
             {
-                var var1718 = new CLS_GuildInfoBase(); var1718.Unserialize(ref nbs);ListGuildInfoBase.Add(var1718);
+                var var1720 = new CLS_GuildInfoBase(); var1720.Unserialize(ref nbs);ListGuildInfoBase.Add(var1720);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -21119,10 +21123,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1719 = nbs.ReadInt();
-            for (int k = 0; k < var1719; k++)
+            int var1721 = nbs.ReadInt();
+            for (int k = 0; k < var1721; k++)
             {
-                var var1720 = new CLS_GuildInfoBase(); var1720.Unserialize(ref nbs);ListGuildInfoBase.Add(var1720);
+                var var1722 = new CLS_GuildInfoBase(); var1722.Unserialize(ref nbs);ListGuildInfoBase.Add(var1722);
             }
         }
     };
@@ -21483,10 +21487,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out CapitalCity);
-            int var1730 = nbs.ReadInt();
-            for (int k = 0; k < var1730; k++)
+            int var1732 = nbs.ReadInt();
+            for (int k = 0; k < var1732; k++)
             {
-                var var1731 = new CLS_CityInfo4Guild(); var1731.Unserialize(ref nbs);ListCity.Add(var1731);
+                var var1733 = new CLS_CityInfo4Guild(); var1733.Unserialize(ref nbs);ListCity.Add(var1733);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -21511,10 +21515,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out CapitalCity);
-            int var1733 = nbs.ReadInt();
-            for (int k = 0; k < var1733; k++)
+            int var1735 = nbs.ReadInt();
+            for (int k = 0; k < var1735; k++)
             {
-                var var1734 = new CLS_CityInfo4Guild(); var1734.Unserialize(ref nbs);ListCity.Add(var1734);
+                var var1736 = new CLS_CityInfo4Guild(); var1736.Unserialize(ref nbs);ListCity.Add(var1736);
             }
         }
     };
@@ -21873,10 +21877,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1743 = nbs.ReadInt();
-            for (int k = 0; k < var1743; k++)
+            int var1745 = nbs.ReadInt();
+            for (int k = 0; k < var1745; k++)
             {
-                var var1744 = new CLS_GameLog(); var1744.Unserialize(ref nbs);ListLog.Add(var1744);
+                var var1746 = new CLS_GameLog(); var1746.Unserialize(ref nbs);ListLog.Add(var1746);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -21899,10 +21903,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1745 = nbs.ReadInt();
-            for (int k = 0; k < var1745; k++)
+            int var1747 = nbs.ReadInt();
+            for (int k = 0; k < var1747; k++)
             {
-                var var1746 = new CLS_GameLog(); var1746.Unserialize(ref nbs);ListLog.Add(var1746);
+                var var1748 = new CLS_GameLog(); var1748.Unserialize(ref nbs);ListLog.Add(var1748);
             }
         }
     };
@@ -22003,10 +22007,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1752 = nbs.ReadInt();
-            for (int k = 0; k < var1752; k++)
+            int var1754 = nbs.ReadInt();
+            for (int k = 0; k < var1754; k++)
             {
-                var var1753 = new CLS_GuildTopInfo(); var1753.Unserialize(ref nbs);ListTop.Add(var1753);
+                var var1755 = new CLS_GuildTopInfo(); var1755.Unserialize(ref nbs);ListTop.Add(var1755);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -22029,10 +22033,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1754 = nbs.ReadInt();
-            for (int k = 0; k < var1754; k++)
+            int var1756 = nbs.ReadInt();
+            for (int k = 0; k < var1756; k++)
             {
-                var var1755 = new CLS_GuildTopInfo(); var1755.Unserialize(ref nbs);ListTop.Add(var1755);
+                var var1757 = new CLS_GuildTopInfo(); var1757.Unserialize(ref nbs);ListTop.Add(var1757);
             }
         }
     };
@@ -22106,10 +22110,10 @@ namespace ServerBase.Protocol
             nbs.Read(out SurplusNumber);
             Owner.Unserialize(ref nbs);
             nbs.Read(out TimeEnd);
-            int var1771 = nbs.ReadInt();
-            for (int k = 0; k < var1771; k++)
+            int var1773 = nbs.ReadInt();
+            for (int k = 0; k < var1773; k++)
             {
-                var var1772 = new CLS_RedPacketMember(); var1772.Unserialize(ref nbs);ListMember.Add(var1772);
+                var var1774 = new CLS_RedPacketMember(); var1774.Unserialize(ref nbs);ListMember.Add(var1774);
             }
             nbs.Read(out Txt);
         }
@@ -22191,10 +22195,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out GetMax);
-            int var1775 = nbs.ReadInt();
-            for (int k = 0; k < var1775; k++)
+            int var1777 = nbs.ReadInt();
+            for (int k = 0; k < var1777; k++)
             {
-                var var1776 = new CLS_RedPacketsInfo(); var1776.Unserialize(ref nbs);Info.Add(var1776);
+                var var1778 = new CLS_RedPacketsInfo(); var1778.Unserialize(ref nbs);Info.Add(var1778);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -22219,10 +22223,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out GetMax);
-            int var1778 = nbs.ReadInt();
-            for (int k = 0; k < var1778; k++)
+            int var1780 = nbs.ReadInt();
+            for (int k = 0; k < var1780; k++)
             {
-                var var1779 = new CLS_RedPacketsInfo(); var1779.Unserialize(ref nbs);Info.Add(var1779);
+                var var1781 = new CLS_RedPacketsInfo(); var1781.Unserialize(ref nbs);Info.Add(var1781);
             }
         }
     };
@@ -22459,10 +22463,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             Info.Unserialize(ref nbs);
-            int var1793 = nbs.ReadInt();
-            for (int k = 0; k < var1793; k++)
+            int var1795 = nbs.ReadInt();
+            for (int k = 0; k < var1795; k++)
             {
-                var var1794 = new CLS_RedPacketsInfo(); var1794.Unserialize(ref nbs);InfoList.Add(var1794);
+                var var1796 = new CLS_RedPacketsInfo(); var1796.Unserialize(ref nbs);InfoList.Add(var1796);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -22487,10 +22491,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             Info.Unserialize(ref nbs);
-            int var1796 = nbs.ReadInt();
-            for (int k = 0; k < var1796; k++)
+            int var1798 = nbs.ReadInt();
+            for (int k = 0; k < var1798; k++)
             {
-                var var1797 = new CLS_RedPacketsInfo(); var1797.Unserialize(ref nbs);InfoList.Add(var1797);
+                var var1799 = new CLS_RedPacketsInfo(); var1799.Unserialize(ref nbs);InfoList.Add(var1799);
             }
         }
     };
@@ -22921,10 +22925,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1835 = nbs.ReadInt();
-            for (int k = 0; k < var1835; k++)
+            int var1837 = nbs.ReadInt();
+            for (int k = 0; k < var1837; k++)
             {
-                var var1836 = new CLS_MansionBoss_PlayerInfo(); var1836.Unserialize(ref nbs);TopPlayers.Add(var1836);
+                var var1838 = new CLS_MansionBoss_PlayerInfo(); var1838.Unserialize(ref nbs);TopPlayers.Add(var1838);
             }
             player.Unserialize(ref nbs);
             nbs.Read(out Rank);
@@ -22951,10 +22955,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1839 = nbs.ReadInt();
-            for (int k = 0; k < var1839; k++)
+            int var1841 = nbs.ReadInt();
+            for (int k = 0; k < var1841; k++)
             {
-                var var1840 = new CLS_MansionBoss_PlayerInfo(); var1840.Unserialize(ref nbs);TopPlayers.Add(var1840);
+                var var1842 = new CLS_MansionBoss_PlayerInfo(); var1842.Unserialize(ref nbs);TopPlayers.Add(var1842);
             }
             player.Unserialize(ref nbs);
             nbs.Read(out Rank);
@@ -23092,10 +23096,10 @@ namespace ServerBase.Protocol
             nbs.Read(out HurtHp);
             nbs.Read(out BattleKey);
             nbs.Read(out PlayerExpendHp);
-            int var1849 = nbs.ReadInt();
-            for (int k = 0; k < var1849; k++)
+            int var1851 = nbs.ReadInt();
+            for (int k = 0; k < var1851; k++)
             {
-                long var1850 = nbs.ReadLong(); int var1851 = nbs.ReadInt(); DictExpendHp.Add(var1850, var1851); 
+                long var1852 = nbs.ReadLong(); int var1853 = nbs.ReadInt(); DictExpendHp.Add(var1852, var1853); 
             }
             nbs.Read(out State);
         }
@@ -23128,10 +23132,10 @@ namespace ServerBase.Protocol
             nbs.Read(out HurtHp);
             nbs.Read(out BattleKey);
             nbs.Read(out PlayerExpendHp);
-            int var1857 = nbs.ReadInt();
-            for (int k = 0; k < var1857; k++)
+            int var1859 = nbs.ReadInt();
+            for (int k = 0; k < var1859; k++)
             {
-                long var1858 = nbs.ReadLong(); int var1859 = nbs.ReadInt(); DictExpendHp.Add(var1858, var1859); 
+                long var1860 = nbs.ReadLong(); int var1861 = nbs.ReadInt(); DictExpendHp.Add(var1860, var1861); 
             }
             nbs.Read(out State);
         }
@@ -23313,15 +23317,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1865 = nbs.ReadInt();
-            for (int k = 0; k < var1865; k++)
-            {
-                int var1866 = nbs.ReadInt();BuffIds.Add(var1866);
-            }
             int var1867 = nbs.ReadInt();
             for (int k = 0; k < var1867; k++)
             {
-                int var1868 = nbs.ReadInt(); long var1869 = nbs.ReadLong(); CurBuff.Add(var1868, var1869); 
+                int var1868 = nbs.ReadInt();BuffIds.Add(var1868);
+            }
+            int var1869 = nbs.ReadInt();
+            for (int k = 0; k < var1869; k++)
+            {
+                int var1870 = nbs.ReadInt(); long var1871 = nbs.ReadLong(); CurBuff.Add(var1870, var1871); 
             }
             nbs.Read(out FuYu);
         }
@@ -23351,15 +23355,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1871 = nbs.ReadInt();
-            for (int k = 0; k < var1871; k++)
-            {
-                int var1872 = nbs.ReadInt();BuffIds.Add(var1872);
-            }
             int var1873 = nbs.ReadInt();
             for (int k = 0; k < var1873; k++)
             {
-                int var1874 = nbs.ReadInt(); long var1875 = nbs.ReadLong(); CurBuff.Add(var1874, var1875); 
+                int var1874 = nbs.ReadInt();BuffIds.Add(var1874);
+            }
+            int var1875 = nbs.ReadInt();
+            for (int k = 0; k < var1875; k++)
+            {
+                int var1876 = nbs.ReadInt(); long var1877 = nbs.ReadLong(); CurBuff.Add(var1876, var1877); 
             }
             nbs.Read(out FuYu);
         }
@@ -23381,10 +23385,10 @@ namespace ServerBase.Protocol
         public void Unserialize(ref NetBitStream nbs)
         {
             nbs.Read(out Num);
-            int var1878 = nbs.ReadInt();
-            for (int k = 0; k < var1878; k++)
+            int var1880 = nbs.ReadInt();
+            for (int k = 0; k < var1880; k++)
             {
-                int var1879 = nbs.ReadInt(); bool var1880 = nbs.ReadBool(); DictAwardState.Add(var1879, var1880); 
+                int var1881 = nbs.ReadInt(); bool var1882 = nbs.ReadBool(); DictAwardState.Add(var1881, var1882); 
             }
         }
     };
@@ -23467,10 +23471,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1883 = nbs.ReadInt();
-            for (int k = 0; k < var1883; k++)
+            int var1885 = nbs.ReadInt();
+            for (int k = 0; k < var1885; k++)
             {
-                int var1884 = nbs.ReadInt(); var var1885 = new CLS_Liveness_Info(); var1885.Unserialize(ref nbs); DictLivenessInfo.Add(var1884, var1885); 
+                int var1886 = nbs.ReadInt(); var var1887 = new CLS_Liveness_Info(); var1887.Unserialize(ref nbs); DictLivenessInfo.Add(var1886, var1887); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -23493,10 +23497,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1886 = nbs.ReadInt();
-            for (int k = 0; k < var1886; k++)
+            int var1888 = nbs.ReadInt();
+            for (int k = 0; k < var1888; k++)
             {
-                int var1887 = nbs.ReadInt(); var var1888 = new CLS_Liveness_Info(); var1888.Unserialize(ref nbs); DictLivenessInfo.Add(var1887, var1888); 
+                int var1889 = nbs.ReadInt(); var var1890 = new CLS_Liveness_Info(); var1890.Unserialize(ref nbs); DictLivenessInfo.Add(var1889, var1890); 
             }
         }
     };
@@ -23588,15 +23592,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1893 = nbs.ReadInt();
-            for (int k = 0; k < var1893; k++)
-            {
-                var var1894 = new CLS_AwardItem(); var1894.Unserialize(ref nbs);ListAward.Add(var1894);
-            }
             int var1895 = nbs.ReadInt();
             for (int k = 0; k < var1895; k++)
             {
-                int var1896 = nbs.ReadInt(); var var1897 = new CLS_Liveness_Info(); var1897.Unserialize(ref nbs); DictLivenessInfo.Add(var1896, var1897); 
+                var var1896 = new CLS_AwardItem(); var1896.Unserialize(ref nbs);ListAward.Add(var1896);
+            }
+            int var1897 = nbs.ReadInt();
+            for (int k = 0; k < var1897; k++)
+            {
+                int var1898 = nbs.ReadInt(); var var1899 = new CLS_Liveness_Info(); var1899.Unserialize(ref nbs); DictLivenessInfo.Add(var1898, var1899); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -23624,15 +23628,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1898 = nbs.ReadInt();
-            for (int k = 0; k < var1898; k++)
-            {
-                var var1899 = new CLS_AwardItem(); var1899.Unserialize(ref nbs);ListAward.Add(var1899);
-            }
             int var1900 = nbs.ReadInt();
             for (int k = 0; k < var1900; k++)
             {
-                int var1901 = nbs.ReadInt(); var var1902 = new CLS_Liveness_Info(); var1902.Unserialize(ref nbs); DictLivenessInfo.Add(var1901, var1902); 
+                var var1901 = new CLS_AwardItem(); var1901.Unserialize(ref nbs);ListAward.Add(var1901);
+            }
+            int var1902 = nbs.ReadInt();
+            for (int k = 0; k < var1902; k++)
+            {
+                int var1903 = nbs.ReadInt(); var var1904 = new CLS_Liveness_Info(); var1904.Unserialize(ref nbs); DictLivenessInfo.Add(var1903, var1904); 
             }
         }
     };
@@ -23716,15 +23720,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1903 = nbs.ReadInt();
-            for (int k = 0; k < var1903; k++)
-            {
-                var var1904 = new CLS_AwardItem(); var1904.Unserialize(ref nbs);ListAward.Add(var1904);
-            }
             int var1905 = nbs.ReadInt();
             for (int k = 0; k < var1905; k++)
             {
-                int var1906 = nbs.ReadInt(); var var1907 = new CLS_Liveness_Info(); var1907.Unserialize(ref nbs); DictLivenessInfo.Add(var1906, var1907); 
+                var var1906 = new CLS_AwardItem(); var1906.Unserialize(ref nbs);ListAward.Add(var1906);
+            }
+            int var1907 = nbs.ReadInt();
+            for (int k = 0; k < var1907; k++)
+            {
+                int var1908 = nbs.ReadInt(); var var1909 = new CLS_Liveness_Info(); var1909.Unserialize(ref nbs); DictLivenessInfo.Add(var1908, var1909); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -23752,15 +23756,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1908 = nbs.ReadInt();
-            for (int k = 0; k < var1908; k++)
-            {
-                var var1909 = new CLS_AwardItem(); var1909.Unserialize(ref nbs);ListAward.Add(var1909);
-            }
             int var1910 = nbs.ReadInt();
             for (int k = 0; k < var1910; k++)
             {
-                int var1911 = nbs.ReadInt(); var var1912 = new CLS_Liveness_Info(); var1912.Unserialize(ref nbs); DictLivenessInfo.Add(var1911, var1912); 
+                var var1911 = new CLS_AwardItem(); var1911.Unserialize(ref nbs);ListAward.Add(var1911);
+            }
+            int var1912 = nbs.ReadInt();
+            for (int k = 0; k < var1912; k++)
+            {
+                int var1913 = nbs.ReadInt(); var var1914 = new CLS_Liveness_Info(); var1914.Unserialize(ref nbs); DictLivenessInfo.Add(var1913, var1914); 
             }
         }
     };
@@ -23839,10 +23843,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1913 = nbs.ReadInt();
-            for (int k = 0; k < var1913; k++)
+            int var1915 = nbs.ReadInt();
+            for (int k = 0; k < var1915; k++)
             {
-                int var1914 = nbs.ReadInt();ListTechnology.Add(var1914);
+                int var1916 = nbs.ReadInt();ListTechnology.Add(var1916);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -23865,10 +23869,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1915 = nbs.ReadInt();
-            for (int k = 0; k < var1915; k++)
+            int var1917 = nbs.ReadInt();
+            for (int k = 0; k < var1917; k++)
             {
-                int var1916 = nbs.ReadInt();ListTechnology.Add(var1916);
+                int var1918 = nbs.ReadInt();ListTechnology.Add(var1918);
             }
         }
     };
@@ -23983,10 +23987,10 @@ namespace ServerBase.Protocol
         }
         public void Unserialize(ref NetBitStream nbs)
         {
-            int var1919 = nbs.ReadInt();
-            for (int k = 0; k < var1919; k++)
+            int var1921 = nbs.ReadInt();
+            for (int k = 0; k < var1921; k++)
             {
-                var var1920 = new CLS_ShopGoodsInfo(); var1920.Unserialize(ref nbs);GoodsInfo.Add(var1920);
+                var var1922 = new CLS_ShopGoodsInfo(); var1922.Unserialize(ref nbs);GoodsInfo.Add(var1922);
             }
             nbs.Read(out Contribution);
             nbs.Read(out RefreshFreeTotal);
@@ -24373,10 +24377,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out DtAutoBalance);
-            int var1939 = nbs.ReadInt();
-            for (int k = 0; k < var1939; k++)
+            int var1941 = nbs.ReadInt();
+            for (int k = 0; k < var1941; k++)
             {
-                var var1940 = new CLS_GuildSalaryMbsInfo(); var1940.Unserialize(ref nbs);ListMember.Add(var1940);
+                var var1942 = new CLS_GuildSalaryMbsInfo(); var1942.Unserialize(ref nbs);ListMember.Add(var1942);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -24401,10 +24405,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out DtAutoBalance);
-            int var1942 = nbs.ReadInt();
-            for (int k = 0; k < var1942; k++)
+            int var1944 = nbs.ReadInt();
+            for (int k = 0; k < var1944; k++)
             {
-                var var1943 = new CLS_GuildSalaryMbsInfo(); var1943.Unserialize(ref nbs);ListMember.Add(var1943);
+                var var1945 = new CLS_GuildSalaryMbsInfo(); var1945.Unserialize(ref nbs);ListMember.Add(var1945);
             }
         }
     };
@@ -24439,10 +24443,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1944 = nbs.ReadInt();
-            for (int k = 0; k < var1944; k++)
+            int var1946 = nbs.ReadInt();
+            for (int k = 0; k < var1946; k++)
             {
-                long var1945 = nbs.ReadLong(); int var1946 = nbs.ReadInt(); DictPay.Add(var1945, var1946); 
+                long var1947 = nbs.ReadLong(); int var1948 = nbs.ReadInt(); DictPay.Add(var1947, var1948); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -24465,10 +24469,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1947 = nbs.ReadInt();
-            for (int k = 0; k < var1947; k++)
+            int var1949 = nbs.ReadInt();
+            for (int k = 0; k < var1949; k++)
             {
-                long var1948 = nbs.ReadLong(); int var1949 = nbs.ReadInt(); DictPay.Add(var1948, var1949); 
+                long var1950 = nbs.ReadLong(); int var1951 = nbs.ReadInt(); DictPay.Add(var1950, var1951); 
             }
         }
     };
@@ -24503,10 +24507,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1950 = nbs.ReadInt();
-            for (int k = 0; k < var1950; k++)
+            int var1952 = nbs.ReadInt();
+            for (int k = 0; k < var1952; k++)
             {
-                long var1951 = nbs.ReadLong(); int var1952 = nbs.ReadInt(); DictPay.Add(var1951, var1952); 
+                long var1953 = nbs.ReadLong(); int var1954 = nbs.ReadInt(); DictPay.Add(var1953, var1954); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -24529,10 +24533,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1953 = nbs.ReadInt();
-            for (int k = 0; k < var1953; k++)
+            int var1955 = nbs.ReadInt();
+            for (int k = 0; k < var1955; k++)
             {
-                long var1954 = nbs.ReadLong(); int var1955 = nbs.ReadInt(); DictPay.Add(var1954, var1955); 
+                long var1956 = nbs.ReadLong(); int var1957 = nbs.ReadInt(); DictPay.Add(var1956, var1957); 
             }
         }
     };
@@ -24633,10 +24637,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1961 = nbs.ReadInt();
-            for (int k = 0; k < var1961; k++)
+            int var1963 = nbs.ReadInt();
+            for (int k = 0; k < var1963; k++)
             {
-                var var1962 = new CLS_GuildSalaryCityInfo(); var1962.Unserialize(ref nbs);ListCity.Add(var1962);
+                var var1964 = new CLS_GuildSalaryCityInfo(); var1964.Unserialize(ref nbs);ListCity.Add(var1964);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -24659,10 +24663,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1963 = nbs.ReadInt();
-            for (int k = 0; k < var1963; k++)
+            int var1965 = nbs.ReadInt();
+            for (int k = 0; k < var1965; k++)
             {
-                var var1964 = new CLS_GuildSalaryCityInfo(); var1964.Unserialize(ref nbs);ListCity.Add(var1964);
+                var var1966 = new CLS_GuildSalaryCityInfo(); var1966.Unserialize(ref nbs);ListCity.Add(var1966);
             }
         }
     };
@@ -24717,10 +24721,10 @@ namespace ServerBase.Protocol
             nbs.Read(out OtherId);
             nbs.Read(out OtherName);
             nbs.Read(out FreeTime);
-            int var1977 = nbs.ReadInt();
-            for (int k = 0; k < var1977; k++)
+            int var1979 = nbs.ReadInt();
+            for (int k = 0; k < var1979; k++)
             {
-                var var1978 = new CLS_GoddessArmy(); var1978.Unserialize(ref nbs);ArmyInfo.Add(var1978);
+                var var1980 = new CLS_GoddessArmy(); var1980.Unserialize(ref nbs);ArmyInfo.Add(var1980);
             }
         }
     };
@@ -24815,10 +24819,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1981 = nbs.ReadInt();
-            for (int k = 0; k < var1981; k++)
+            int var1983 = nbs.ReadInt();
+            for (int k = 0; k < var1983; k++)
             {
-                var var1982 = new CLS_GuildMbsInfo(); var1982.Unserialize(ref nbs);Info.Add(var1982);
+                var var1984 = new CLS_GuildMbsInfo(); var1984.Unserialize(ref nbs);Info.Add(var1984);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -24841,10 +24845,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var1983 = nbs.ReadInt();
-            for (int k = 0; k < var1983; k++)
+            int var1985 = nbs.ReadInt();
+            for (int k = 0; k < var1985; k++)
             {
-                var var1984 = new CLS_GuildMbsInfo(); var1984.Unserialize(ref nbs);Info.Add(var1984);
+                var var1986 = new CLS_GuildMbsInfo(); var1986.Unserialize(ref nbs);Info.Add(var1986);
             }
         }
     };
@@ -24930,15 +24934,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             Info.Unserialize(ref nbs);
-            int var1986 = nbs.ReadInt();
-            for (int k = 0; k < var1986; k++)
-            {
-                var var1987 = new CLS_GoddessDonate(); var1987.Unserialize(ref nbs);DonateInfo.Add(var1987);
-            }
             int var1988 = nbs.ReadInt();
             for (int k = 0; k < var1988; k++)
             {
-                int var1989 = nbs.ReadInt(); int var1990 = nbs.ReadInt(); DictDonate.Add(var1989, var1990); 
+                var var1989 = new CLS_GoddessDonate(); var1989.Unserialize(ref nbs);DonateInfo.Add(var1989);
+            }
+            int var1990 = nbs.ReadInt();
+            for (int k = 0; k < var1990; k++)
+            {
+                int var1991 = nbs.ReadInt(); int var1992 = nbs.ReadInt(); DictDonate.Add(var1991, var1992); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -24968,15 +24972,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             Info.Unserialize(ref nbs);
-            int var1992 = nbs.ReadInt();
-            for (int k = 0; k < var1992; k++)
-            {
-                var var1993 = new CLS_GoddessDonate(); var1993.Unserialize(ref nbs);DonateInfo.Add(var1993);
-            }
             int var1994 = nbs.ReadInt();
             for (int k = 0; k < var1994; k++)
             {
-                int var1995 = nbs.ReadInt(); int var1996 = nbs.ReadInt(); DictDonate.Add(var1995, var1996); 
+                var var1995 = new CLS_GoddessDonate(); var1995.Unserialize(ref nbs);DonateInfo.Add(var1995);
+            }
+            int var1996 = nbs.ReadInt();
+            for (int k = 0; k < var1996; k++)
+            {
+                int var1997 = nbs.ReadInt(); int var1998 = nbs.ReadInt(); DictDonate.Add(var1997, var1998); 
             }
         }
     };
@@ -25166,15 +25170,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Advance);
             nbs.Read(out Level);
             nbs.Read(out Exp);
-            int var2006 = nbs.ReadInt();
-            for (int k = 0; k < var2006; k++)
-            {
-                var var2007 = new CLS_GoddessDonate(); var2007.Unserialize(ref nbs);DonateInfo.Add(var2007);
-            }
             int var2008 = nbs.ReadInt();
             for (int k = 0; k < var2008; k++)
             {
-                int var2009 = nbs.ReadInt(); int var2010 = nbs.ReadInt(); DictDonate.Add(var2009, var2010); 
+                var var2009 = new CLS_GoddessDonate(); var2009.Unserialize(ref nbs);DonateInfo.Add(var2009);
+            }
+            int var2010 = nbs.ReadInt();
+            for (int k = 0; k < var2010; k++)
+            {
+                int var2011 = nbs.ReadInt(); int var2012 = nbs.ReadInt(); DictDonate.Add(var2011, var2012); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -25208,15 +25212,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Advance);
             nbs.Read(out Level);
             nbs.Read(out Exp);
-            int var2014 = nbs.ReadInt();
-            for (int k = 0; k < var2014; k++)
-            {
-                var var2015 = new CLS_GoddessDonate(); var2015.Unserialize(ref nbs);DonateInfo.Add(var2015);
-            }
             int var2016 = nbs.ReadInt();
             for (int k = 0; k < var2016; k++)
             {
-                int var2017 = nbs.ReadInt(); int var2018 = nbs.ReadInt(); DictDonate.Add(var2017, var2018); 
+                var var2017 = new CLS_GoddessDonate(); var2017.Unserialize(ref nbs);DonateInfo.Add(var2017);
+            }
+            int var2018 = nbs.ReadInt();
+            for (int k = 0; k < var2018; k++)
+            {
+                int var2019 = nbs.ReadInt(); int var2020 = nbs.ReadInt(); DictDonate.Add(var2019, var2020); 
             }
         }
     };
@@ -25306,15 +25310,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             Info.Unserialize(ref nbs);
-            int var2022 = nbs.ReadInt();
-            for (int k = 0; k < var2022; k++)
-            {
-                var var2023 = new CLS_GoddessDonate(); var2023.Unserialize(ref nbs);DonateInfo.Add(var2023);
-            }
             int var2024 = nbs.ReadInt();
             for (int k = 0; k < var2024; k++)
             {
-                int var2025 = nbs.ReadInt(); int var2026 = nbs.ReadInt(); DictDonate.Add(var2025, var2026); 
+                var var2025 = new CLS_GoddessDonate(); var2025.Unserialize(ref nbs);DonateInfo.Add(var2025);
+            }
+            int var2026 = nbs.ReadInt();
+            for (int k = 0; k < var2026; k++)
+            {
+                int var2027 = nbs.ReadInt(); int var2028 = nbs.ReadInt(); DictDonate.Add(var2027, var2028); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -25344,15 +25348,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             Info.Unserialize(ref nbs);
-            int var2028 = nbs.ReadInt();
-            for (int k = 0; k < var2028; k++)
-            {
-                var var2029 = new CLS_GoddessDonate(); var2029.Unserialize(ref nbs);DonateInfo.Add(var2029);
-            }
             int var2030 = nbs.ReadInt();
             for (int k = 0; k < var2030; k++)
             {
-                int var2031 = nbs.ReadInt(); int var2032 = nbs.ReadInt(); DictDonate.Add(var2031, var2032); 
+                var var2031 = new CLS_GoddessDonate(); var2031.Unserialize(ref nbs);DonateInfo.Add(var2031);
+            }
+            int var2032 = nbs.ReadInt();
+            for (int k = 0; k < var2032; k++)
+            {
+                int var2033 = nbs.ReadInt(); int var2034 = nbs.ReadInt(); DictDonate.Add(var2033, var2034); 
             }
         }
     };
@@ -25483,10 +25487,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2037 = nbs.ReadInt();
-            for (int k = 0; k < var2037; k++)
+            int var2039 = nbs.ReadInt();
+            for (int k = 0; k < var2039; k++)
             {
-                long var2038 = nbs.ReadLong();ListInBattle.Add(var2038);
+                long var2040 = nbs.ReadLong();ListInBattle.Add(var2040);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -25509,10 +25513,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2039 = nbs.ReadInt();
-            for (int k = 0; k < var2039; k++)
+            int var2041 = nbs.ReadInt();
+            for (int k = 0; k < var2041; k++)
             {
-                long var2040 = nbs.ReadLong();ListInBattle.Add(var2040);
+                long var2042 = nbs.ReadLong();ListInBattle.Add(var2042);
             }
         }
     };
@@ -25577,10 +25581,10 @@ namespace ServerBase.Protocol
         public void Unserialize(ref NetBitStream nbs)
         {
             nbs.Read(out ArmyId);
-            int var2042 = nbs.ReadInt();
-            for (int k = 0; k < var2042; k++)
+            int var2044 = nbs.ReadInt();
+            for (int k = 0; k < var2044; k++)
             {
-                int var2043 = nbs.ReadInt(); long var2044 = nbs.ReadLong(); DictWarrior.Add(var2043, var2044); 
+                int var2045 = nbs.ReadInt(); long var2046 = nbs.ReadLong(); DictWarrior.Add(var2045, var2046); 
             }
         }
     };
@@ -25603,10 +25607,10 @@ namespace ServerBase.Protocol
         {
             nbs.Read(out PveType);
             nbs.Read(out PveArmyId);
-            int var2047 = nbs.ReadInt();
-            for (int k = 0; k < var2047; k++)
+            int var2049 = nbs.ReadInt();
+            for (int k = 0; k < var2049; k++)
             {
-                int var2048 = nbs.ReadInt(); var var2049 = new CLS_ArmyInfo(); var2049.Unserialize(ref nbs); DictArmyInfo.Add(var2048, var2049); 
+                int var2050 = nbs.ReadInt(); var var2051 = new CLS_ArmyInfo(); var2051.Unserialize(ref nbs); DictArmyInfo.Add(var2050, var2051); 
             }
         }
     };
@@ -25693,10 +25697,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out PveType);
             nbs.Read(out PveArmyId);
-            int var2054 = nbs.ReadInt();
-            for (int k = 0; k < var2054; k++)
+            int var2056 = nbs.ReadInt();
+            for (int k = 0; k < var2056; k++)
             {
-                int var2055 = nbs.ReadInt(); var var2056 = new CLS_ArmyInfo(); var2056.Unserialize(ref nbs); DictArmyInfo.Add(var2055, var2056); 
+                int var2057 = nbs.ReadInt(); var var2058 = new CLS_ArmyInfo(); var2058.Unserialize(ref nbs); DictArmyInfo.Add(var2057, var2058); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -25723,10 +25727,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out PveType);
             nbs.Read(out PveArmyId);
-            int var2059 = nbs.ReadInt();
-            for (int k = 0; k < var2059; k++)
+            int var2061 = nbs.ReadInt();
+            for (int k = 0; k < var2061; k++)
             {
-                int var2060 = nbs.ReadInt(); var var2061 = new CLS_ArmyInfo(); var2061.Unserialize(ref nbs); DictArmyInfo.Add(var2060, var2061); 
+                int var2062 = nbs.ReadInt(); var var2063 = new CLS_ArmyInfo(); var2063.Unserialize(ref nbs); DictArmyInfo.Add(var2062, var2063); 
             }
         }
     };
@@ -25765,10 +25769,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out PveType);
             nbs.Read(out PveArmyId);
-            int var2064 = nbs.ReadInt();
-            for (int k = 0; k < var2064; k++)
+            int var2066 = nbs.ReadInt();
+            for (int k = 0; k < var2066; k++)
             {
-                int var2065 = nbs.ReadInt(); var var2066 = new CLS_ArmyInfo(); var2066.Unserialize(ref nbs); DictArmyInfo.Add(var2065, var2066); 
+                int var2067 = nbs.ReadInt(); var var2068 = new CLS_ArmyInfo(); var2068.Unserialize(ref nbs); DictArmyInfo.Add(var2067, var2068); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -25795,10 +25799,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out PveType);
             nbs.Read(out PveArmyId);
-            int var2069 = nbs.ReadInt();
-            for (int k = 0; k < var2069; k++)
+            int var2071 = nbs.ReadInt();
+            for (int k = 0; k < var2071; k++)
             {
-                int var2070 = nbs.ReadInt(); var var2071 = new CLS_ArmyInfo(); var2071.Unserialize(ref nbs); DictArmyInfo.Add(var2070, var2071); 
+                int var2072 = nbs.ReadInt(); var var2073 = new CLS_ArmyInfo(); var2073.Unserialize(ref nbs); DictArmyInfo.Add(var2072, var2073); 
             }
         }
     };
@@ -25939,10 +25943,10 @@ namespace ServerBase.Protocol
             nbs.Read(out PveType);
             nbs.Read(out BattleId);
             nbs.Read(out BattleCode);
-            int var2081 = nbs.ReadInt();
-            for (int k = 0; k < var2081; k++)
+            int var2083 = nbs.ReadInt();
+            for (int k = 0; k < var2083; k++)
             {
-                int var2082 = nbs.ReadInt(); var var2083 = new CLS_WarriorInfo(); var2083.Unserialize(ref nbs); DictWarrior.Add(var2082, var2083); 
+                int var2084 = nbs.ReadInt(); var var2085 = new CLS_WarriorInfo(); var2085.Unserialize(ref nbs); DictWarrior.Add(var2084, var2085); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -25971,10 +25975,10 @@ namespace ServerBase.Protocol
             nbs.Read(out PveType);
             nbs.Read(out BattleId);
             nbs.Read(out BattleCode);
-            int var2087 = nbs.ReadInt();
-            for (int k = 0; k < var2087; k++)
+            int var2089 = nbs.ReadInt();
+            for (int k = 0; k < var2089; k++)
             {
-                int var2088 = nbs.ReadInt(); var var2089 = new CLS_WarriorInfo(); var2089.Unserialize(ref nbs); DictWarrior.Add(var2088, var2089); 
+                int var2090 = nbs.ReadInt(); var var2091 = new CLS_WarriorInfo(); var2091.Unserialize(ref nbs); DictWarrior.Add(var2090, var2091); 
             }
         }
     };
@@ -26011,10 +26015,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out PveType);
-            int var2091 = nbs.ReadInt();
-            for (int k = 0; k < var2091; k++)
+            int var2093 = nbs.ReadInt();
+            for (int k = 0; k < var2093; k++)
             {
-                int var2092 = nbs.ReadInt(); var var2093 = new CLS_WarriorInfo(); var2093.Unserialize(ref nbs); DictWarrior.Add(var2092, var2093); 
+                int var2094 = nbs.ReadInt(); var var2095 = new CLS_WarriorInfo(); var2095.Unserialize(ref nbs); DictWarrior.Add(var2094, var2095); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -26039,10 +26043,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out PveType);
-            int var2095 = nbs.ReadInt();
-            for (int k = 0; k < var2095; k++)
+            int var2097 = nbs.ReadInt();
+            for (int k = 0; k < var2097; k++)
             {
-                int var2096 = nbs.ReadInt(); var var2097 = new CLS_WarriorInfo(); var2097.Unserialize(ref nbs); DictWarrior.Add(var2096, var2097); 
+                int var2098 = nbs.ReadInt(); var var2099 = new CLS_WarriorInfo(); var2099.Unserialize(ref nbs); DictWarrior.Add(var2098, var2099); 
             }
         }
     };
@@ -26062,10 +26066,10 @@ namespace ServerBase.Protocol
         }
         public void Unserialize(ref NetBitStream nbs)
         {
-            int var2098 = nbs.ReadInt();
-            for (int k = 0; k < var2098; k++)
+            int var2100 = nbs.ReadInt();
+            for (int k = 0; k < var2100; k++)
             {
-                bool var2099 = nbs.ReadBool();ListState.Add(var2099);
+                bool var2101 = nbs.ReadBool();ListState.Add(var2101);
             }
             nbs.Read(out Ticks);
         }
@@ -26157,17 +26161,17 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2103 = nbs.ReadInt();
-            for (int k = 0; k < var2103; k++)
+            int var2105 = nbs.ReadInt();
+            for (int k = 0; k < var2105; k++)
             {
-                int var2104 = nbs.ReadInt(); var var2105 = new CLS_StoryState(); var2105.Unserialize(ref nbs); DicStory.Add(var2104, var2105); 
+                int var2106 = nbs.ReadInt(); var var2107 = new CLS_StoryState(); var2107.Unserialize(ref nbs); DicStory.Add(var2106, var2107); 
             }
             nbs.Read(out Power);
             nbs.Read(out RecoveryTime);
-            int var2108 = nbs.ReadInt();
-            for (int k = 0; k < var2108; k++)
+            int var2110 = nbs.ReadInt();
+            for (int k = 0; k < var2110; k++)
             {
-                bool var2109 = nbs.ReadBool();ListReward.Add(var2109);
+                bool var2111 = nbs.ReadBool();ListReward.Add(var2111);
             }
             nbs.Read(out BuyCount);
         }
@@ -26199,17 +26203,17 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2111 = nbs.ReadInt();
-            for (int k = 0; k < var2111; k++)
+            int var2113 = nbs.ReadInt();
+            for (int k = 0; k < var2113; k++)
             {
-                int var2112 = nbs.ReadInt(); var var2113 = new CLS_StoryState(); var2113.Unserialize(ref nbs); DicStory.Add(var2112, var2113); 
+                int var2114 = nbs.ReadInt(); var var2115 = new CLS_StoryState(); var2115.Unserialize(ref nbs); DicStory.Add(var2114, var2115); 
             }
             nbs.Read(out Power);
             nbs.Read(out RecoveryTime);
-            int var2116 = nbs.ReadInt();
-            for (int k = 0; k < var2116; k++)
+            int var2118 = nbs.ReadInt();
+            for (int k = 0; k < var2118; k++)
             {
-                bool var2117 = nbs.ReadBool();ListReward.Add(var2117);
+                bool var2119 = nbs.ReadBool();ListReward.Add(var2119);
             }
             nbs.Read(out BuyCount);
         }
@@ -26351,15 +26355,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out BattleKey);
             nbs.Read(out PlayerExpendHp);
-            int var2125 = nbs.ReadInt();
-            for (int k = 0; k < var2125; k++)
+            int var2127 = nbs.ReadInt();
+            for (int k = 0; k < var2127; k++)
             {
-                long var2126 = nbs.ReadLong(); int var2127 = nbs.ReadInt(); DictExpendHp.Add(var2126, var2127); 
+                long var2128 = nbs.ReadLong(); int var2129 = nbs.ReadInt(); DictExpendHp.Add(var2128, var2129); 
             }
-            int var2128 = nbs.ReadInt();
-            for (int k = 0; k < var2128; k++)
+            int var2130 = nbs.ReadInt();
+            for (int k = 0; k < var2130; k++)
             {
-                bool var2129 = nbs.ReadBool();ListState.Add(var2129);
+                bool var2131 = nbs.ReadBool();ListState.Add(var2131);
             }
             nbs.Read(out State);
         }
@@ -26393,15 +26397,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out BattleKey);
             nbs.Read(out PlayerExpendHp);
-            int var2133 = nbs.ReadInt();
-            for (int k = 0; k < var2133; k++)
+            int var2135 = nbs.ReadInt();
+            for (int k = 0; k < var2135; k++)
             {
-                long var2134 = nbs.ReadLong(); int var2135 = nbs.ReadInt(); DictExpendHp.Add(var2134, var2135); 
+                long var2136 = nbs.ReadLong(); int var2137 = nbs.ReadInt(); DictExpendHp.Add(var2136, var2137); 
             }
-            int var2136 = nbs.ReadInt();
-            for (int k = 0; k < var2136; k++)
+            int var2138 = nbs.ReadInt();
+            for (int k = 0; k < var2138; k++)
             {
-                bool var2137 = nbs.ReadBool();ListState.Add(var2137);
+                bool var2139 = nbs.ReadBool();ListState.Add(var2139);
             }
             nbs.Read(out State);
         }
@@ -26437,10 +26441,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2139 = nbs.ReadInt();
-            for (int k = 0; k < var2139; k++)
+            int var2141 = nbs.ReadInt();
+            for (int k = 0; k < var2141; k++)
             {
-                var var2140 = new CLS_AwardItem(); var2140.Unserialize(ref nbs);ListAward.Add(var2140);
+                var var2142 = new CLS_AwardItem(); var2142.Unserialize(ref nbs);ListAward.Add(var2142);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -26463,10 +26467,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2141 = nbs.ReadInt();
-            for (int k = 0; k < var2141; k++)
+            int var2143 = nbs.ReadInt();
+            for (int k = 0; k < var2143; k++)
             {
-                var var2142 = new CLS_AwardItem(); var2142.Unserialize(ref nbs);ListAward.Add(var2142);
+                var var2144 = new CLS_AwardItem(); var2144.Unserialize(ref nbs);ListAward.Add(var2144);
             }
         }
     };
@@ -26553,10 +26557,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2147 = nbs.ReadInt();
-            for (int k = 0; k < var2147; k++)
+            int var2149 = nbs.ReadInt();
+            for (int k = 0; k < var2149; k++)
             {
-                var var2148 = new CLS_AwardItem(); var2148.Unserialize(ref nbs);ListAward.Add(var2148);
+                var var2150 = new CLS_AwardItem(); var2150.Unserialize(ref nbs);ListAward.Add(var2150);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -26579,10 +26583,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2149 = nbs.ReadInt();
-            for (int k = 0; k < var2149; k++)
+            int var2151 = nbs.ReadInt();
+            for (int k = 0; k < var2151; k++)
             {
-                var var2150 = new CLS_AwardItem(); var2150.Unserialize(ref nbs);ListAward.Add(var2150);
+                var var2152 = new CLS_AwardItem(); var2152.Unserialize(ref nbs);ListAward.Add(var2152);
             }
         }
     };
@@ -26889,10 +26893,10 @@ namespace ServerBase.Protocol
             nbs.Read(out TowerToken);
             nbs.Read(out TowerTokenMax);
             nbs.Read(out TowerTokenOnceUse);
-            int var2171 = nbs.ReadInt();
-            for (int k = 0; k < var2171; k++)
+            int var2173 = nbs.ReadInt();
+            for (int k = 0; k < var2173; k++)
             {
-                var var2172 = new CLS_TowerInfo(); var2172.Unserialize(ref nbs);ListTowerInfo.Add(var2172);
+                var var2174 = new CLS_TowerInfo(); var2174.Unserialize(ref nbs);ListTowerInfo.Add(var2174);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -26923,10 +26927,10 @@ namespace ServerBase.Protocol
             nbs.Read(out TowerToken);
             nbs.Read(out TowerTokenMax);
             nbs.Read(out TowerTokenOnceUse);
-            int var2177 = nbs.ReadInt();
-            for (int k = 0; k < var2177; k++)
+            int var2179 = nbs.ReadInt();
+            for (int k = 0; k < var2179; k++)
             {
-                var var2178 = new CLS_TowerInfo(); var2178.Unserialize(ref nbs);ListTowerInfo.Add(var2178);
+                var var2180 = new CLS_TowerInfo(); var2180.Unserialize(ref nbs);ListTowerInfo.Add(var2180);
             }
         }
     };
@@ -27065,10 +27069,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Id);
             nbs.Read(out BattleKey);
             nbs.Read(out PlayerExpendHp);
-            int var2186 = nbs.ReadInt();
-            for (int k = 0; k < var2186; k++)
+            int var2188 = nbs.ReadInt();
+            for (int k = 0; k < var2188; k++)
             {
-                long var2187 = nbs.ReadLong(); int var2188 = nbs.ReadInt(); DictExpendHp.Add(var2187, var2188); 
+                long var2189 = nbs.ReadLong(); int var2190 = nbs.ReadInt(); DictExpendHp.Add(var2189, var2190); 
             }
             nbs.Read(out State);
             nbs.Read(out BattleRecord);
@@ -27101,10 +27105,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Id);
             nbs.Read(out BattleKey);
             nbs.Read(out PlayerExpendHp);
-            int var2194 = nbs.ReadInt();
-            for (int k = 0; k < var2194; k++)
+            int var2196 = nbs.ReadInt();
+            for (int k = 0; k < var2196; k++)
             {
-                long var2195 = nbs.ReadLong(); int var2196 = nbs.ReadInt(); DictExpendHp.Add(var2195, var2196); 
+                long var2197 = nbs.ReadLong(); int var2198 = nbs.ReadInt(); DictExpendHp.Add(var2197, var2198); 
             }
             nbs.Read(out State);
             nbs.Read(out BattleRecord);
@@ -27143,10 +27147,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var2200 = nbs.ReadInt();
-            for (int k = 0; k < var2200; k++)
+            int var2202 = nbs.ReadInt();
+            for (int k = 0; k < var2202; k++)
             {
-                var var2201 = new CLS_AwardItem(); var2201.Unserialize(ref nbs);ListAward.Add(var2201);
+                var var2203 = new CLS_AwardItem(); var2203.Unserialize(ref nbs);ListAward.Add(var2203);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -27171,10 +27175,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Id);
-            int var2203 = nbs.ReadInt();
-            for (int k = 0; k < var2203; k++)
+            int var2205 = nbs.ReadInt();
+            for (int k = 0; k < var2205; k++)
             {
-                var var2204 = new CLS_AwardItem(); var2204.Unserialize(ref nbs);ListAward.Add(var2204);
+                var var2206 = new CLS_AwardItem(); var2206.Unserialize(ref nbs);ListAward.Add(var2206);
             }
         }
     };
@@ -27292,10 +27296,10 @@ namespace ServerBase.Protocol
             nbs.Read(out MatchTicks);
             nbs.Read(out MaxTicks);
             nbs.Read(out BuyMatchTicks);
-            int var2218 = nbs.ReadInt();
-            for (int k = 0; k < var2218; k++)
+            int var2220 = nbs.ReadInt();
+            for (int k = 0; k < var2220; k++)
             {
-                var var2219 = new CLS_ArenaTopData(); var2219.Unserialize(ref nbs);ArenaMatchPlayers.Add(var2219);
+                var var2221 = new CLS_ArenaTopData(); var2221.Unserialize(ref nbs);ArenaMatchPlayers.Add(var2221);
             }
             nbs.Read(out TsEnd);
         }
@@ -27332,10 +27336,10 @@ namespace ServerBase.Protocol
             nbs.Read(out MatchTicks);
             nbs.Read(out MaxTicks);
             nbs.Read(out BuyMatchTicks);
-            int var2227 = nbs.ReadInt();
-            for (int k = 0; k < var2227; k++)
+            int var2229 = nbs.ReadInt();
+            for (int k = 0; k < var2229; k++)
             {
-                var var2228 = new CLS_ArenaTopData(); var2228.Unserialize(ref nbs);ArenaMatchPlayers.Add(var2228);
+                var var2230 = new CLS_ArenaTopData(); var2230.Unserialize(ref nbs);ArenaMatchPlayers.Add(var2230);
             }
             nbs.Read(out TsEnd);
         }
@@ -27416,10 +27420,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2230 = nbs.ReadInt();
-            for (int k = 0; k < var2230; k++)
+            int var2232 = nbs.ReadInt();
+            for (int k = 0; k < var2232; k++)
             {
-                var var2231 = new CLS_ArenaTopData(); var2231.Unserialize(ref nbs);ListArenaTopData.Add(var2231);
+                var var2233 = new CLS_ArenaTopData(); var2233.Unserialize(ref nbs);ListArenaTopData.Add(var2233);
             }
             PlayerData.Unserialize(ref nbs);
         }
@@ -27444,10 +27448,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2233 = nbs.ReadInt();
-            for (int k = 0; k < var2233; k++)
+            int var2235 = nbs.ReadInt();
+            for (int k = 0; k < var2235; k++)
             {
-                var var2234 = new CLS_ArenaTopData(); var2234.Unserialize(ref nbs);ListArenaTopData.Add(var2234);
+                var var2236 = new CLS_ArenaTopData(); var2236.Unserialize(ref nbs);ListArenaTopData.Add(var2236);
             }
             PlayerData.Unserialize(ref nbs);
         }
@@ -27621,10 +27625,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out StageId);
-            int var2239 = nbs.ReadInt();
-            for (int k = 0; k < var2239; k++)
+            int var2241 = nbs.ReadInt();
+            for (int k = 0; k < var2241; k++)
             {
-                var var2240 = new CLS_WarriorInfo(); var2240.Unserialize(ref nbs);ListWarriorOther.Add(var2240);
+                var var2242 = new CLS_WarriorInfo(); var2242.Unserialize(ref nbs);ListWarriorOther.Add(var2242);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -27649,10 +27653,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out StageId);
-            int var2242 = nbs.ReadInt();
-            for (int k = 0; k < var2242; k++)
+            int var2244 = nbs.ReadInt();
+            for (int k = 0; k < var2244; k++)
             {
-                var var2243 = new CLS_WarriorInfo(); var2243.Unserialize(ref nbs);ListWarriorOther.Add(var2243);
+                var var2245 = new CLS_WarriorInfo(); var2245.Unserialize(ref nbs);ListWarriorOther.Add(var2245);
             }
         }
     };
@@ -27743,10 +27747,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out PlayerRank);
             nbs.Read(out PlayerNewRank);
-            int var2250 = nbs.ReadInt();
-            for (int k = 0; k < var2250; k++)
+            int var2252 = nbs.ReadInt();
+            for (int k = 0; k < var2252; k++)
             {
-                var var2251 = new CLS_AwardItem(); var2251.Unserialize(ref nbs);AwardItem.Add(var2251);
+                var var2253 = new CLS_AwardItem(); var2253.Unserialize(ref nbs);AwardItem.Add(var2253);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -27773,10 +27777,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out PlayerRank);
             nbs.Read(out PlayerNewRank);
-            int var2254 = nbs.ReadInt();
-            for (int k = 0; k < var2254; k++)
+            int var2256 = nbs.ReadInt();
+            for (int k = 0; k < var2256; k++)
             {
-                var var2255 = new CLS_AwardItem(); var2255.Unserialize(ref nbs);AwardItem.Add(var2255);
+                var var2257 = new CLS_AwardItem(); var2257.Unserialize(ref nbs);AwardItem.Add(var2257);
             }
         }
     };
@@ -27881,10 +27885,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2263 = nbs.ReadInt();
-            for (int k = 0; k < var2263; k++)
+            int var2265 = nbs.ReadInt();
+            for (int k = 0; k < var2265; k++)
             {
-                var var2264 = new CLS_ArenaBattleReport(); var2264.Unserialize(ref nbs);ArenaBattleReportList.Add(var2264);
+                var var2266 = new CLS_ArenaBattleReport(); var2266.Unserialize(ref nbs);ArenaBattleReportList.Add(var2266);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -27907,10 +27911,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2265 = nbs.ReadInt();
-            for (int k = 0; k < var2265; k++)
+            int var2267 = nbs.ReadInt();
+            for (int k = 0; k < var2267; k++)
             {
-                var var2266 = new CLS_ArenaBattleReport(); var2266.Unserialize(ref nbs);ArenaBattleReportList.Add(var2266);
+                var var2268 = new CLS_ArenaBattleReport(); var2268.Unserialize(ref nbs);ArenaBattleReportList.Add(var2268);
             }
         }
     };
@@ -28081,10 +28085,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2269 = nbs.ReadInt();
-            for (int k = 0; k < var2269; k++)
+            int var2271 = nbs.ReadInt();
+            for (int k = 0; k < var2271; k++)
             {
-                int var2270 = nbs.ReadInt(); var var2271 = new CLS_WarriorInfo(); var2271.Unserialize(ref nbs); DictWarriorInfo.Add(var2270, var2271); 
+                int var2272 = nbs.ReadInt(); var var2273 = new CLS_WarriorInfo(); var2273.Unserialize(ref nbs); DictWarriorInfo.Add(var2272, var2273); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -28107,10 +28111,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2272 = nbs.ReadInt();
-            for (int k = 0; k < var2272; k++)
+            int var2274 = nbs.ReadInt();
+            for (int k = 0; k < var2274; k++)
             {
-                int var2273 = nbs.ReadInt(); var var2274 = new CLS_WarriorInfo(); var2274.Unserialize(ref nbs); DictWarriorInfo.Add(var2273, var2274); 
+                int var2275 = nbs.ReadInt(); var var2276 = new CLS_WarriorInfo(); var2276.Unserialize(ref nbs); DictWarriorInfo.Add(var2275, var2276); 
             }
         }
     };
@@ -28145,10 +28149,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2275 = nbs.ReadInt();
-            for (int k = 0; k < var2275; k++)
+            int var2277 = nbs.ReadInt();
+            for (int k = 0; k < var2277; k++)
             {
-                int var2276 = nbs.ReadInt(); long var2277 = nbs.ReadLong(); DictDefenses.Add(var2276, var2277); 
+                int var2278 = nbs.ReadInt(); long var2279 = nbs.ReadLong(); DictDefenses.Add(var2278, var2279); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -28171,10 +28175,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2278 = nbs.ReadInt();
-            for (int k = 0; k < var2278; k++)
+            int var2280 = nbs.ReadInt();
+            for (int k = 0; k < var2280; k++)
             {
-                int var2279 = nbs.ReadInt(); long var2280 = nbs.ReadLong(); DictDefenses.Add(var2279, var2280); 
+                int var2281 = nbs.ReadInt(); long var2282 = nbs.ReadLong(); DictDefenses.Add(var2281, var2282); 
             }
         }
     };
@@ -28546,21 +28550,21 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2299 = nbs.ReadInt();
-            for (int k = 0; k < var2299; k++)
-            {
-                var var2300 = new CLS_WarZoneInfo(); var2300.Unserialize(ref nbs);ListWarZone.Add(var2300);
-            }
             int var2301 = nbs.ReadInt();
             for (int k = 0; k < var2301; k++)
             {
-                var var2302 = new CLS_BankCountryTop(); var2302.Unserialize(ref nbs);ListContribution.Add(var2302);
+                var var2302 = new CLS_WarZoneInfo(); var2302.Unserialize(ref nbs);ListWarZone.Add(var2302);
+            }
+            int var2303 = nbs.ReadInt();
+            for (int k = 0; k < var2303; k++)
+            {
+                var var2304 = new CLS_BankCountryTop(); var2304.Unserialize(ref nbs);ListContribution.Add(var2304);
             }
             nbs.Read(out CountryId);
-            int var2304 = nbs.ReadInt();
-            for (int k = 0; k < var2304; k++)
+            int var2306 = nbs.ReadInt();
+            for (int k = 0; k < var2306; k++)
             {
-                bool var2305 = nbs.ReadBool();ListWelfareState.Add(var2305);
+                bool var2307 = nbs.ReadBool();ListWelfareState.Add(var2307);
             }
             nbs.Read(out RecoveryTime);
             nbs.Read(out Ticks);
@@ -28598,21 +28602,21 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2308 = nbs.ReadInt();
-            for (int k = 0; k < var2308; k++)
-            {
-                var var2309 = new CLS_WarZoneInfo(); var2309.Unserialize(ref nbs);ListWarZone.Add(var2309);
-            }
             int var2310 = nbs.ReadInt();
             for (int k = 0; k < var2310; k++)
             {
-                var var2311 = new CLS_BankCountryTop(); var2311.Unserialize(ref nbs);ListContribution.Add(var2311);
+                var var2311 = new CLS_WarZoneInfo(); var2311.Unserialize(ref nbs);ListWarZone.Add(var2311);
+            }
+            int var2312 = nbs.ReadInt();
+            for (int k = 0; k < var2312; k++)
+            {
+                var var2313 = new CLS_BankCountryTop(); var2313.Unserialize(ref nbs);ListContribution.Add(var2313);
             }
             nbs.Read(out CountryId);
-            int var2313 = nbs.ReadInt();
-            for (int k = 0; k < var2313; k++)
+            int var2315 = nbs.ReadInt();
+            for (int k = 0; k < var2315; k++)
             {
-                bool var2314 = nbs.ReadBool();ListWelfareState.Add(var2314);
+                bool var2316 = nbs.ReadBool();ListWelfareState.Add(var2316);
             }
             nbs.Read(out RecoveryTime);
             nbs.Read(out Ticks);
@@ -28702,15 +28706,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2319 = nbs.ReadInt();
-            for (int k = 0; k < var2319; k++)
-            {
-                var var2320 = new CLS_AwardItem(); var2320.Unserialize(ref nbs);ListAward.Add(var2320);
-            }
             int var2321 = nbs.ReadInt();
             for (int k = 0; k < var2321; k++)
             {
-                bool var2322 = nbs.ReadBool();ListWelfareState.Add(var2322);
+                var var2322 = new CLS_AwardItem(); var2322.Unserialize(ref nbs);ListAward.Add(var2322);
+            }
+            int var2323 = nbs.ReadInt();
+            for (int k = 0; k < var2323; k++)
+            {
+                bool var2324 = nbs.ReadBool();ListWelfareState.Add(var2324);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -28738,15 +28742,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2323 = nbs.ReadInt();
-            for (int k = 0; k < var2323; k++)
-            {
-                var var2324 = new CLS_AwardItem(); var2324.Unserialize(ref nbs);ListAward.Add(var2324);
-            }
             int var2325 = nbs.ReadInt();
             for (int k = 0; k < var2325; k++)
             {
-                bool var2326 = nbs.ReadBool();ListWelfareState.Add(var2326);
+                var var2326 = new CLS_AwardItem(); var2326.Unserialize(ref nbs);ListAward.Add(var2326);
+            }
+            int var2327 = nbs.ReadInt();
+            for (int k = 0; k < var2327; k++)
+            {
+                bool var2328 = nbs.ReadBool();ListWelfareState.Add(var2328);
             }
         }
     };
@@ -28933,10 +28937,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2337 = nbs.ReadInt();
-            for (int k = 0; k < var2337; k++)
+            int var2339 = nbs.ReadInt();
+            for (int k = 0; k < var2339; k++)
             {
-                var var2338 = new CLS_AwardItem(); var2338.Unserialize(ref nbs);ListAward.Add(var2338);
+                var var2340 = new CLS_AwardItem(); var2340.Unserialize(ref nbs);ListAward.Add(var2340);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -28959,10 +28963,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2339 = nbs.ReadInt();
-            for (int k = 0; k < var2339; k++)
+            int var2341 = nbs.ReadInt();
+            for (int k = 0; k < var2341; k++)
             {
-                var var2340 = new CLS_AwardItem(); var2340.Unserialize(ref nbs);ListAward.Add(var2340);
+                var var2342 = new CLS_AwardItem(); var2342.Unserialize(ref nbs);ListAward.Add(var2342);
             }
         }
     };
@@ -29237,10 +29241,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2351 = nbs.ReadInt();
-            for (int k = 0; k < var2351; k++)
+            int var2353 = nbs.ReadInt();
+            for (int k = 0; k < var2353; k++)
             {
-                var var2352 = new CLS_AwardItem(); var2352.Unserialize(ref nbs);ListAward.Add(var2352);
+                var var2354 = new CLS_AwardItem(); var2354.Unserialize(ref nbs);ListAward.Add(var2354);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -29263,10 +29267,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2353 = nbs.ReadInt();
-            for (int k = 0; k < var2353; k++)
+            int var2355 = nbs.ReadInt();
+            for (int k = 0; k < var2355; k++)
             {
-                var var2354 = new CLS_AwardItem(); var2354.Unserialize(ref nbs);ListAward.Add(var2354);
+                var var2356 = new CLS_AwardItem(); var2356.Unserialize(ref nbs);ListAward.Add(var2356);
             }
         }
     };
@@ -29380,15 +29384,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2364 = nbs.ReadInt();
-            for (int k = 0; k < var2364; k++)
-            {
-                var var2365 = new CLS_BankTop(); var2365.Unserialize(ref nbs);ListGuildTop.Add(var2365);
-            }
             int var2366 = nbs.ReadInt();
             for (int k = 0; k < var2366; k++)
             {
-                var var2367 = new CLS_BankTop(); var2367.Unserialize(ref nbs);ListPlayerTop.Add(var2367);
+                var var2367 = new CLS_BankTop(); var2367.Unserialize(ref nbs);ListGuildTop.Add(var2367);
+            }
+            int var2368 = nbs.ReadInt();
+            for (int k = 0; k < var2368; k++)
+            {
+                var var2369 = new CLS_BankTop(); var2369.Unserialize(ref nbs);ListPlayerTop.Add(var2369);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -29416,15 +29420,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2368 = nbs.ReadInt();
-            for (int k = 0; k < var2368; k++)
-            {
-                var var2369 = new CLS_BankTop(); var2369.Unserialize(ref nbs);ListGuildTop.Add(var2369);
-            }
             int var2370 = nbs.ReadInt();
             for (int k = 0; k < var2370; k++)
             {
-                var var2371 = new CLS_BankTop(); var2371.Unserialize(ref nbs);ListPlayerTop.Add(var2371);
+                var var2371 = new CLS_BankTop(); var2371.Unserialize(ref nbs);ListGuildTop.Add(var2371);
+            }
+            int var2372 = nbs.ReadInt();
+            for (int k = 0; k < var2372; k++)
+            {
+                var var2373 = new CLS_BankTop(); var2373.Unserialize(ref nbs);ListPlayerTop.Add(var2373);
             }
         }
     };
@@ -29452,15 +29456,15 @@ namespace ServerBase.Protocol
         {
             nbs.Read(out Countryid);
             nbs.Read(out HurtHp);
-            int var2374 = nbs.ReadInt();
-            for (int k = 0; k < var2374; k++)
-            {
-                var var2375 = new CLS_PlayerData(); var2375.Unserialize(ref nbs);TopThree.Add(var2375);
-            }
             int var2376 = nbs.ReadInt();
             for (int k = 0; k < var2376; k++)
             {
-                var var2377 = new CLS_BankTop(); var2377.Unserialize(ref nbs);ListPlayerTop.Add(var2377);
+                var var2377 = new CLS_PlayerData(); var2377.Unserialize(ref nbs);TopThree.Add(var2377);
+            }
+            int var2378 = nbs.ReadInt();
+            for (int k = 0; k < var2378; k++)
+            {
+                var var2379 = new CLS_BankTop(); var2379.Unserialize(ref nbs);ListPlayerTop.Add(var2379);
             }
         }
     };
@@ -29539,10 +29543,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2378 = nbs.ReadInt();
-            for (int k = 0; k < var2378; k++)
+            int var2380 = nbs.ReadInt();
+            for (int k = 0; k < var2380; k++)
             {
-                var var2379 = new CLS_BankCountryTop(); var2379.Unserialize(ref nbs);ListTop.Add(var2379);
+                var var2381 = new CLS_BankCountryTop(); var2381.Unserialize(ref nbs);ListTop.Add(var2381);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -29565,10 +29569,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2380 = nbs.ReadInt();
-            for (int k = 0; k < var2380; k++)
+            int var2382 = nbs.ReadInt();
+            for (int k = 0; k < var2382; k++)
             {
-                var var2381 = new CLS_BankCountryTop(); var2381.Unserialize(ref nbs);ListTop.Add(var2381);
+                var var2383 = new CLS_BankCountryTop(); var2383.Unserialize(ref nbs);ListTop.Add(var2383);
             }
         }
     };
@@ -29632,15 +29636,15 @@ namespace ServerBase.Protocol
             nbs.Read(out State);
             nbs.Read(out StartTime);
             nbs.Read(out EndTime);
-            int var2396 = nbs.ReadInt();
-            for (int k = 0; k < var2396; k++)
-            {
-                int var2397 = nbs.ReadInt();ListJob.Add(var2397);
-            }
             int var2398 = nbs.ReadInt();
             for (int k = 0; k < var2398; k++)
             {
-                long var2399 = nbs.ReadLong();ListWarrior.Add(var2399);
+                int var2399 = nbs.ReadInt();ListJob.Add(var2399);
+            }
+            int var2400 = nbs.ReadInt();
+            for (int k = 0; k < var2400; k++)
+            {
+                long var2401 = nbs.ReadLong();ListWarrior.Add(var2401);
             }
         }
     };
@@ -29719,10 +29723,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2400 = nbs.ReadInt();
-            for (int k = 0; k < var2400; k++)
+            int var2402 = nbs.ReadInt();
+            for (int k = 0; k < var2402; k++)
             {
-                var var2401 = new CLS_Affairs(); var2401.Unserialize(ref nbs);ListAffairs.Add(var2401);
+                var var2403 = new CLS_Affairs(); var2403.Unserialize(ref nbs);ListAffairs.Add(var2403);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -29745,10 +29749,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2402 = nbs.ReadInt();
-            for (int k = 0; k < var2402; k++)
+            int var2404 = nbs.ReadInt();
+            for (int k = 0; k < var2404; k++)
             {
-                var var2403 = new CLS_Affairs(); var2403.Unserialize(ref nbs);ListAffairs.Add(var2403);
+                var var2405 = new CLS_Affairs(); var2405.Unserialize(ref nbs);ListAffairs.Add(var2405);
             }
         }
     };
@@ -29785,10 +29789,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out AffairsIndex);
-            int var2405 = nbs.ReadInt();
-            for (int k = 0; k < var2405; k++)
+            int var2407 = nbs.ReadInt();
+            for (int k = 0; k < var2407; k++)
             {
-                long var2406 = nbs.ReadLong();ListWarrior.Add(var2406);
+                long var2408 = nbs.ReadLong();ListWarrior.Add(var2408);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -29813,10 +29817,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out AffairsIndex);
-            int var2408 = nbs.ReadInt();
-            for (int k = 0; k < var2408; k++)
+            int var2410 = nbs.ReadInt();
+            for (int k = 0; k < var2410; k++)
             {
-                long var2409 = nbs.ReadLong();ListWarrior.Add(var2409);
+                long var2411 = nbs.ReadLong();ListWarrior.Add(var2411);
             }
         }
     };
@@ -29947,10 +29951,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2414 = nbs.ReadInt();
-            for (int k = 0; k < var2414; k++)
+            int var2416 = nbs.ReadInt();
+            for (int k = 0; k < var2416; k++)
             {
-                var var2415 = new CLS_AwardItem(); var2415.Unserialize(ref nbs);ListAward.Add(var2415);
+                var var2417 = new CLS_AwardItem(); var2417.Unserialize(ref nbs);ListAward.Add(var2417);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -29973,10 +29977,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2416 = nbs.ReadInt();
-            for (int k = 0; k < var2416; k++)
+            int var2418 = nbs.ReadInt();
+            for (int k = 0; k < var2418; k++)
             {
-                var var2417 = new CLS_AwardItem(); var2417.Unserialize(ref nbs);ListAward.Add(var2417);
+                var var2419 = new CLS_AwardItem(); var2419.Unserialize(ref nbs);ListAward.Add(var2419);
             }
         }
     };
@@ -30053,10 +30057,10 @@ namespace ServerBase.Protocol
             nbs.Read(out PalyerId);
             nbs.Read(out Name);
             nbs.Read(out GuildName);
-            int var2424 = nbs.ReadInt();
-            for (int k = 0; k < var2424; k++)
+            int var2426 = nbs.ReadInt();
+            for (int k = 0; k < var2426; k++)
             {
-                int var2425 = nbs.ReadInt(); long var2426 = nbs.ReadLong(); DictWarrior.Add(var2425, var2426); 
+                int var2427 = nbs.ReadInt(); long var2428 = nbs.ReadLong(); DictWarrior.Add(var2427, var2428); 
             }
             nbs.Read(out BeginTime);
             nbs.Read(out EndTime);
@@ -30149,10 +30153,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out Buy);
             nbs.Read(out Total);
-            int var2435 = nbs.ReadInt();
-            for (int k = 0; k < var2435; k++)
+            int var2437 = nbs.ReadInt();
+            for (int k = 0; k < var2437; k++)
             {
-                var var2436 = new CLS_Grab_ArmyInfo(); var2436.Unserialize(ref nbs);ListItem.Add(var2436);
+                var var2438 = new CLS_Grab_ArmyInfo(); var2438.Unserialize(ref nbs);ListItem.Add(var2438);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -30179,10 +30183,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out Buy);
             nbs.Read(out Total);
-            int var2439 = nbs.ReadInt();
-            for (int k = 0; k < var2439; k++)
+            int var2441 = nbs.ReadInt();
+            for (int k = 0; k < var2441; k++)
             {
-                var var2440 = new CLS_Grab_ArmyInfo(); var2440.Unserialize(ref nbs);ListItem.Add(var2440);
+                var var2442 = new CLS_Grab_ArmyInfo(); var2442.Unserialize(ref nbs);ListItem.Add(var2442);
             }
         }
     };
@@ -30265,10 +30269,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2443 = nbs.ReadInt();
-            for (int k = 0; k < var2443; k++)
+            int var2445 = nbs.ReadInt();
+            for (int k = 0; k < var2445; k++)
             {
-                var var2444 = new CLS_WarriorInfo(); var2444.Unserialize(ref nbs);ListWarriorOther.Add(var2444);
+                var var2446 = new CLS_WarriorInfo(); var2446.Unserialize(ref nbs);ListWarriorOther.Add(var2446);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -30291,10 +30295,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2445 = nbs.ReadInt();
-            for (int k = 0; k < var2445; k++)
+            int var2447 = nbs.ReadInt();
+            for (int k = 0; k < var2447; k++)
             {
-                var var2446 = new CLS_WarriorInfo(); var2446.Unserialize(ref nbs);ListWarriorOther.Add(var2446);
+                var var2448 = new CLS_WarriorInfo(); var2448.Unserialize(ref nbs);ListWarriorOther.Add(var2448);
             }
         }
     };
@@ -30338,15 +30342,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out BattleUid);
             nbs.Read(out BattleResult);
-            int var2449 = nbs.ReadInt();
-            for (int k = 0; k < var2449; k++)
+            int var2451 = nbs.ReadInt();
+            for (int k = 0; k < var2451; k++)
             {
-                long var2450 = nbs.ReadLong(); int var2451 = nbs.ReadInt(); DictExpendHpAtt.Add(var2450, var2451); 
+                long var2452 = nbs.ReadLong(); int var2453 = nbs.ReadInt(); DictExpendHpAtt.Add(var2452, var2453); 
             }
-            int var2452 = nbs.ReadInt();
-            for (int k = 0; k < var2452; k++)
+            int var2454 = nbs.ReadInt();
+            for (int k = 0; k < var2454; k++)
             {
-                long var2453 = nbs.ReadLong(); int var2454 = nbs.ReadInt(); DictExpendHpDef.Add(var2453, var2454); 
+                long var2455 = nbs.ReadLong(); int var2456 = nbs.ReadInt(); DictExpendHpDef.Add(var2455, var2456); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -30378,15 +30382,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out BattleUid);
             nbs.Read(out BattleResult);
-            int var2457 = nbs.ReadInt();
-            for (int k = 0; k < var2457; k++)
+            int var2459 = nbs.ReadInt();
+            for (int k = 0; k < var2459; k++)
             {
-                long var2458 = nbs.ReadLong(); int var2459 = nbs.ReadInt(); DictExpendHpAtt.Add(var2458, var2459); 
+                long var2460 = nbs.ReadLong(); int var2461 = nbs.ReadInt(); DictExpendHpAtt.Add(var2460, var2461); 
             }
-            int var2460 = nbs.ReadInt();
-            for (int k = 0; k < var2460; k++)
+            int var2462 = nbs.ReadInt();
+            for (int k = 0; k < var2462; k++)
             {
-                long var2461 = nbs.ReadLong(); int var2462 = nbs.ReadInt(); DictExpendHpDef.Add(var2461, var2462); 
+                long var2463 = nbs.ReadLong(); int var2464 = nbs.ReadInt(); DictExpendHpDef.Add(var2463, var2464); 
             }
         }
     };
@@ -30526,10 +30530,10 @@ namespace ServerBase.Protocol
             nbs.Read(out PalyerId);
             nbs.Read(out Name);
             nbs.Read(out GuildName);
-            int var2471 = nbs.ReadInt();
-            for (int k = 0; k < var2471; k++)
+            int var2473 = nbs.ReadInt();
+            for (int k = 0; k < var2473; k++)
             {
-                int var2472 = nbs.ReadInt(); var var2473 = new CLS_WarriorInfo(); var2473.Unserialize(ref nbs); DictWarrior.Add(var2472, var2473); 
+                int var2474 = nbs.ReadInt(); var var2475 = new CLS_WarriorInfo(); var2475.Unserialize(ref nbs); DictWarrior.Add(var2474, var2475); 
             }
             nbs.Read(out EndTime);
         }
@@ -30562,10 +30566,10 @@ namespace ServerBase.Protocol
             nbs.Read(out PalyerId);
             nbs.Read(out Name);
             nbs.Read(out GuildName);
-            int var2479 = nbs.ReadInt();
-            for (int k = 0; k < var2479; k++)
+            int var2481 = nbs.ReadInt();
+            for (int k = 0; k < var2481; k++)
             {
-                int var2480 = nbs.ReadInt(); var var2481 = new CLS_WarriorInfo(); var2481.Unserialize(ref nbs); DictWarrior.Add(var2480, var2481); 
+                int var2482 = nbs.ReadInt(); var var2483 = new CLS_WarriorInfo(); var2483.Unserialize(ref nbs); DictWarrior.Add(var2482, var2483); 
             }
             nbs.Read(out EndTime);
         }
@@ -30741,10 +30745,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2487 = nbs.ReadInt();
-            for (int k = 0; k < var2487; k++)
+            int var2489 = nbs.ReadInt();
+            for (int k = 0; k < var2489; k++)
             {
-                var var2488 = new CLS_Grab_ArmyInfo(); var2488.Unserialize(ref nbs);ListItem.Add(var2488);
+                var var2490 = new CLS_Grab_ArmyInfo(); var2490.Unserialize(ref nbs);ListItem.Add(var2490);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -30767,10 +30771,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2489 = nbs.ReadInt();
-            for (int k = 0; k < var2489; k++)
+            int var2491 = nbs.ReadInt();
+            for (int k = 0; k < var2491; k++)
             {
-                var var2490 = new CLS_Grab_ArmyInfo(); var2490.Unserialize(ref nbs);ListItem.Add(var2490);
+                var var2492 = new CLS_Grab_ArmyInfo(); var2492.Unserialize(ref nbs);ListItem.Add(var2492);
             }
         }
     };
@@ -30909,10 +30913,10 @@ namespace ServerBase.Protocol
         {
             nbs.Read(out BanditsBuyTimes);
             nbs.Read(out BanditsCount);
-            int var2501 = nbs.ReadInt();
-            for (int k = 0; k < var2501; k++)
+            int var2503 = nbs.ReadInt();
+            for (int k = 0; k < var2503; k++)
             {
-                int var2502 = nbs.ReadInt(); var var2503 = new CLS_BanditsArmyInfo(); var2503.Unserialize(ref nbs); DictBandits.Add(var2502, var2503); 
+                int var2504 = nbs.ReadInt(); var var2505 = new CLS_BanditsArmyInfo(); var2505.Unserialize(ref nbs); DictBandits.Add(var2504, var2505); 
             }
         }
     };
@@ -31145,10 +31149,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Uid);
             nbs.Read(out BattleKey);
             nbs.Read(out State);
-            int var2515 = nbs.ReadInt();
-            for (int k = 0; k < var2515; k++)
+            int var2517 = nbs.ReadInt();
+            for (int k = 0; k < var2517; k++)
             {
-                long var2516 = nbs.ReadLong(); int var2517 = nbs.ReadInt(); DictExpendHp.Add(var2516, var2517); 
+                long var2518 = nbs.ReadLong(); int var2519 = nbs.ReadInt(); DictExpendHp.Add(var2518, var2519); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -31177,10 +31181,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Uid);
             nbs.Read(out BattleKey);
             nbs.Read(out State);
-            int var2521 = nbs.ReadInt();
-            for (int k = 0; k < var2521; k++)
+            int var2523 = nbs.ReadInt();
+            for (int k = 0; k < var2523; k++)
             {
-                long var2522 = nbs.ReadLong(); int var2523 = nbs.ReadInt(); DictExpendHp.Add(var2522, var2523); 
+                long var2524 = nbs.ReadLong(); int var2525 = nbs.ReadInt(); DictExpendHp.Add(var2524, var2525); 
             }
         }
     };
@@ -31218,10 +31222,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Uid);
-            int var2525 = nbs.ReadInt();
-            for (int k = 0; k < var2525; k++)
+            int var2527 = nbs.ReadInt();
+            for (int k = 0; k < var2527; k++)
             {
-                var var2526 = new CLS_AwardItem(); var2526.Unserialize(ref nbs);ListAward.Add(var2526);
+                var var2528 = new CLS_AwardItem(); var2528.Unserialize(ref nbs);ListAward.Add(var2528);
             }
             BanditsInfo.Unserialize(ref nbs);
         }
@@ -31248,10 +31252,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Uid);
-            int var2529 = nbs.ReadInt();
-            for (int k = 0; k < var2529; k++)
+            int var2531 = nbs.ReadInt();
+            for (int k = 0; k < var2531; k++)
             {
-                var var2530 = new CLS_AwardItem(); var2530.Unserialize(ref nbs);ListAward.Add(var2530);
+                var var2532 = new CLS_AwardItem(); var2532.Unserialize(ref nbs);ListAward.Add(var2532);
             }
             BanditsInfo.Unserialize(ref nbs);
         }
@@ -31475,10 +31479,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2538 = nbs.ReadInt();
-            for (int k = 0; k < var2538; k++)
+            int var2540 = nbs.ReadInt();
+            for (int k = 0; k < var2540; k++)
             {
-                long var2539 = nbs.ReadLong(); int var2540 = nbs.ReadInt(); DictWarrior.Add(var2539, var2540); 
+                long var2541 = nbs.ReadLong(); int var2542 = nbs.ReadInt(); DictWarrior.Add(var2541, var2542); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -31501,10 +31505,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2541 = nbs.ReadInt();
-            for (int k = 0; k < var2541; k++)
+            int var2543 = nbs.ReadInt();
+            for (int k = 0; k < var2543; k++)
             {
-                long var2542 = nbs.ReadLong(); int var2543 = nbs.ReadInt(); DictWarrior.Add(var2542, var2543); 
+                long var2544 = nbs.ReadLong(); int var2545 = nbs.ReadInt(); DictWarrior.Add(var2544, var2545); 
             }
         }
     };
@@ -31539,10 +31543,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2544 = nbs.ReadInt();
-            for (int k = 0; k < var2544; k++)
+            int var2546 = nbs.ReadInt();
+            for (int k = 0; k < var2546; k++)
             {
-                long var2545 = nbs.ReadLong(); var var2546 = new CLS_WarriorInfo(); var2546.Unserialize(ref nbs); DictWarrior.Add(var2545, var2546); 
+                long var2547 = nbs.ReadLong(); var var2548 = new CLS_WarriorInfo(); var2548.Unserialize(ref nbs); DictWarrior.Add(var2547, var2548); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -31565,10 +31569,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2547 = nbs.ReadInt();
-            for (int k = 0; k < var2547; k++)
+            int var2549 = nbs.ReadInt();
+            for (int k = 0; k < var2549; k++)
             {
-                long var2548 = nbs.ReadLong(); var var2549 = new CLS_WarriorInfo(); var2549.Unserialize(ref nbs); DictWarrior.Add(var2548, var2549); 
+                long var2550 = nbs.ReadLong(); var var2551 = new CLS_WarriorInfo(); var2551.Unserialize(ref nbs); DictWarrior.Add(var2550, var2551); 
             }
         }
     };
@@ -31603,10 +31607,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2550 = nbs.ReadInt();
-            for (int k = 0; k < var2550; k++)
+            int var2552 = nbs.ReadInt();
+            for (int k = 0; k < var2552; k++)
             {
-                long var2551 = nbs.ReadLong();ListWarrior.Add(var2551);
+                long var2553 = nbs.ReadLong();ListWarrior.Add(var2553);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -31629,10 +31633,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2552 = nbs.ReadInt();
-            for (int k = 0; k < var2552; k++)
+            int var2554 = nbs.ReadInt();
+            for (int k = 0; k < var2554; k++)
             {
-                long var2553 = nbs.ReadLong();ListWarrior.Add(var2553);
+                long var2555 = nbs.ReadLong();ListWarrior.Add(var2555);
             }
         }
     };
@@ -31667,10 +31671,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2554 = nbs.ReadInt();
-            for (int k = 0; k < var2554; k++)
+            int var2556 = nbs.ReadInt();
+            for (int k = 0; k < var2556; k++)
             {
-                long var2555 = nbs.ReadLong(); var var2556 = new CLS_WarriorInfo(); var2556.Unserialize(ref nbs); DictWarrior.Add(var2555, var2556); 
+                long var2557 = nbs.ReadLong(); var var2558 = new CLS_WarriorInfo(); var2558.Unserialize(ref nbs); DictWarrior.Add(var2557, var2558); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -31693,10 +31697,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2557 = nbs.ReadInt();
-            for (int k = 0; k < var2557; k++)
+            int var2559 = nbs.ReadInt();
+            for (int k = 0; k < var2559; k++)
             {
-                long var2558 = nbs.ReadLong(); var var2559 = new CLS_WarriorInfo(); var2559.Unserialize(ref nbs); DictWarrior.Add(var2558, var2559); 
+                long var2560 = nbs.ReadLong(); var var2561 = new CLS_WarriorInfo(); var2561.Unserialize(ref nbs); DictWarrior.Add(var2560, var2561); 
             }
         }
     };
@@ -31838,26 +31842,26 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2571 = nbs.ReadInt();
-            for (int k = 0; k < var2571; k++)
+            int var2573 = nbs.ReadInt();
+            for (int k = 0; k < var2573; k++)
             {
-                int var2572 = nbs.ReadInt(); var var2573 = new CLS_StrategyCityInfo(); var2573.Unserialize(ref nbs); DictCity.Add(var2572, var2573); 
+                int var2574 = nbs.ReadInt(); var var2575 = new CLS_StrategyCityInfo(); var2575.Unserialize(ref nbs); DictCity.Add(var2574, var2575); 
             }
             MetroPvpInfo.Unserialize(ref nbs);
-            int var2575 = nbs.ReadInt();
-            for (int k = 0; k < var2575; k++)
-            {
-                long var2576 = nbs.ReadLong();ListAlliance.Add(var2576);
-            }
             int var2577 = nbs.ReadInt();
             for (int k = 0; k < var2577; k++)
             {
-                int var2578 = nbs.ReadInt();ListGuildCityMy.Add(var2578);
+                long var2578 = nbs.ReadLong();ListAlliance.Add(var2578);
             }
             int var2579 = nbs.ReadInt();
             for (int k = 0; k < var2579; k++)
             {
-                int var2580 = nbs.ReadInt();ListGuildCityAlliance.Add(var2580);
+                int var2580 = nbs.ReadInt();ListGuildCityMy.Add(var2580);
+            }
+            int var2581 = nbs.ReadInt();
+            for (int k = 0; k < var2581; k++)
+            {
+                int var2582 = nbs.ReadInt();ListGuildCityAlliance.Add(var2582);
             }
             BanditsInfo.Unserialize(ref nbs);
         }
@@ -31898,26 +31902,26 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2582 = nbs.ReadInt();
-            for (int k = 0; k < var2582; k++)
+            int var2584 = nbs.ReadInt();
+            for (int k = 0; k < var2584; k++)
             {
-                int var2583 = nbs.ReadInt(); var var2584 = new CLS_StrategyCityInfo(); var2584.Unserialize(ref nbs); DictCity.Add(var2583, var2584); 
+                int var2585 = nbs.ReadInt(); var var2586 = new CLS_StrategyCityInfo(); var2586.Unserialize(ref nbs); DictCity.Add(var2585, var2586); 
             }
             MetroPvpInfo.Unserialize(ref nbs);
-            int var2586 = nbs.ReadInt();
-            for (int k = 0; k < var2586; k++)
-            {
-                long var2587 = nbs.ReadLong();ListAlliance.Add(var2587);
-            }
             int var2588 = nbs.ReadInt();
             for (int k = 0; k < var2588; k++)
             {
-                int var2589 = nbs.ReadInt();ListGuildCityMy.Add(var2589);
+                long var2589 = nbs.ReadLong();ListAlliance.Add(var2589);
             }
             int var2590 = nbs.ReadInt();
             for (int k = 0; k < var2590; k++)
             {
-                int var2591 = nbs.ReadInt();ListGuildCityAlliance.Add(var2591);
+                int var2591 = nbs.ReadInt();ListGuildCityMy.Add(var2591);
+            }
+            int var2592 = nbs.ReadInt();
+            for (int k = 0; k < var2592; k++)
+            {
+                int var2593 = nbs.ReadInt();ListGuildCityAlliance.Add(var2593);
             }
             BanditsInfo.Unserialize(ref nbs);
         }
@@ -32037,10 +32041,10 @@ namespace ServerBase.Protocol
         {
             nbs.Read(out Uid);
             WallHp.Unserialize(ref nbs);
-            int var2599 = nbs.ReadInt();
-            for (int k = 0; k < var2599; k++)
+            int var2601 = nbs.ReadInt();
+            for (int k = 0; k < var2601; k++)
             {
-                string var2600 = nbs.ReadString();ListLastAttacker.Add(var2600);
+                string var2602 = nbs.ReadString();ListLastAttacker.Add(var2602);
             }
         }
     };
@@ -32063,10 +32067,10 @@ namespace ServerBase.Protocol
         {
             nbs.Read(out Uid);
             CityInfoBase.Unserialize(ref nbs);
-            int var2603 = nbs.ReadInt();
-            for (int k = 0; k < var2603; k++)
+            int var2605 = nbs.ReadInt();
+            for (int k = 0; k < var2605; k++)
             {
-                int var2604 = nbs.ReadInt(); var var2605 = new CLS_StrategyFightCampInfo(); var2605.Unserialize(ref nbs); DictCamp.Add(var2604, var2605); 
+                int var2606 = nbs.ReadInt(); var var2607 = new CLS_StrategyFightCampInfo(); var2607.Unserialize(ref nbs); DictCamp.Add(var2606, var2607); 
             }
         }
     };
@@ -32301,10 +32305,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2618 = nbs.ReadInt();
-            for (int k = 0; k < var2618; k++)
+            int var2620 = nbs.ReadInt();
+            for (int k = 0; k < var2620; k++)
             {
-                int var2619 = nbs.ReadInt(); var var2620 = new CLS_StrategyCityInfo(); var2620.Unserialize(ref nbs); DictCity.Add(var2619, var2620); 
+                int var2621 = nbs.ReadInt(); var var2622 = new CLS_StrategyCityInfo(); var2622.Unserialize(ref nbs); DictCity.Add(var2621, var2622); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -32327,10 +32331,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2621 = nbs.ReadInt();
-            for (int k = 0; k < var2621; k++)
+            int var2623 = nbs.ReadInt();
+            for (int k = 0; k < var2623; k++)
             {
-                int var2622 = nbs.ReadInt(); var var2623 = new CLS_StrategyCityInfo(); var2623.Unserialize(ref nbs); DictCity.Add(var2622, var2623); 
+                int var2624 = nbs.ReadInt(); var var2625 = new CLS_StrategyCityInfo(); var2625.Unserialize(ref nbs); DictCity.Add(var2624, var2625); 
             }
         }
     };
@@ -32843,10 +32847,10 @@ namespace ServerBase.Protocol
         {
             nbs.Read(out NpcUid);
             nbs.Read(out StageId);
-            int var2667 = nbs.ReadInt();
-            for (int k = 0; k < var2667; k++)
+            int var2669 = nbs.ReadInt();
+            for (int k = 0; k < var2669; k++)
             {
-                int var2668 = nbs.ReadInt(); var var2669 = new CLS_CampNpcMonster(); var2669.Unserialize(ref nbs); DictMonster.Add(var2668, var2669); 
+                int var2670 = nbs.ReadInt(); var var2671 = new CLS_CampNpcMonster(); var2671.Unserialize(ref nbs); DictMonster.Add(var2670, var2671); 
             }
         }
     };
@@ -32896,15 +32900,15 @@ namespace ServerBase.Protocol
             nbs.Read(out CityUid);
             nbs.Read(out CampUid);
             nbs.Read(out NpcUid);
-            int var2675 = nbs.ReadInt();
-            for (int k = 0; k < var2675; k++)
+            int var2677 = nbs.ReadInt();
+            for (int k = 0; k < var2677; k++)
             {
-                int var2676 = nbs.ReadInt(); var var2677 = new CLS_CampNpcMonster(); var2677.Unserialize(ref nbs); DictMonster.Add(var2676, var2677); 
+                int var2678 = nbs.ReadInt(); var var2679 = new CLS_CampNpcMonster(); var2679.Unserialize(ref nbs); DictMonster.Add(var2678, var2679); 
             }
-            int var2678 = nbs.ReadInt();
-            for (int k = 0; k < var2678; k++)
+            int var2680 = nbs.ReadInt();
+            for (int k = 0; k < var2680; k++)
             {
-                long var2679 = nbs.ReadLong(); int var2680 = nbs.ReadInt(); DictExpendHp.Add(var2679, var2680); 
+                long var2681 = nbs.ReadLong(); int var2682 = nbs.ReadInt(); DictExpendHp.Add(var2681, var2682); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -32942,15 +32946,15 @@ namespace ServerBase.Protocol
             nbs.Read(out CityUid);
             nbs.Read(out CampUid);
             nbs.Read(out NpcUid);
-            int var2686 = nbs.ReadInt();
-            for (int k = 0; k < var2686; k++)
+            int var2688 = nbs.ReadInt();
+            for (int k = 0; k < var2688; k++)
             {
-                int var2687 = nbs.ReadInt(); var var2688 = new CLS_CampNpcMonster(); var2688.Unserialize(ref nbs); DictMonster.Add(var2687, var2688); 
+                int var2689 = nbs.ReadInt(); var var2690 = new CLS_CampNpcMonster(); var2690.Unserialize(ref nbs); DictMonster.Add(var2689, var2690); 
             }
-            int var2689 = nbs.ReadInt();
-            for (int k = 0; k < var2689; k++)
+            int var2691 = nbs.ReadInt();
+            for (int k = 0; k < var2691; k++)
             {
-                long var2690 = nbs.ReadLong(); int var2691 = nbs.ReadInt(); DictExpendHp.Add(var2690, var2691); 
+                long var2692 = nbs.ReadLong(); int var2693 = nbs.ReadInt(); DictExpendHp.Add(var2692, var2693); 
             }
         }
     };
@@ -33037,10 +33041,10 @@ namespace ServerBase.Protocol
             nbs.Read(out CityUid);
             nbs.Read(out CampUid);
             nbs.Read(out WallHpDamage);
-            int var2696 = nbs.ReadInt();
-            for (int k = 0; k < var2696; k++)
+            int var2698 = nbs.ReadInt();
+            for (int k = 0; k < var2698; k++)
             {
-                long var2697 = nbs.ReadLong(); int var2698 = nbs.ReadInt(); DictExpendHp.Add(var2697, var2698); 
+                long var2699 = nbs.ReadLong(); int var2700 = nbs.ReadInt(); DictExpendHp.Add(var2699, var2700); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -33071,10 +33075,10 @@ namespace ServerBase.Protocol
             nbs.Read(out CityUid);
             nbs.Read(out CampUid);
             nbs.Read(out WallHpDamage);
-            int var2703 = nbs.ReadInt();
-            for (int k = 0; k < var2703; k++)
+            int var2705 = nbs.ReadInt();
+            for (int k = 0; k < var2705; k++)
             {
-                long var2704 = nbs.ReadLong(); int var2705 = nbs.ReadInt(); DictExpendHp.Add(var2704, var2705); 
+                long var2706 = nbs.ReadLong(); int var2707 = nbs.ReadInt(); DictExpendHp.Add(var2706, var2707); 
             }
         }
     };
@@ -33109,10 +33113,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2706 = nbs.ReadInt();
-            for (int k = 0; k < var2706; k++)
+            int var2708 = nbs.ReadInt();
+            for (int k = 0; k < var2708; k++)
             {
-                var var2707 = new CLS_AwardItem(); var2707.Unserialize(ref nbs);ListAwardFirst.Add(var2707);
+                var var2709 = new CLS_AwardItem(); var2709.Unserialize(ref nbs);ListAwardFirst.Add(var2709);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -33135,10 +33139,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2708 = nbs.ReadInt();
-            for (int k = 0; k < var2708; k++)
+            int var2710 = nbs.ReadInt();
+            for (int k = 0; k < var2710; k++)
             {
-                var var2709 = new CLS_AwardItem(); var2709.Unserialize(ref nbs);ListAwardFirst.Add(var2709);
+                var var2711 = new CLS_AwardItem(); var2711.Unserialize(ref nbs);ListAwardFirst.Add(var2711);
             }
         }
     };
@@ -33230,15 +33234,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out BattleUid);
             nbs.Read(out BattleResult);
-            int var2714 = nbs.ReadInt();
-            for (int k = 0; k < var2714; k++)
+            int var2716 = nbs.ReadInt();
+            for (int k = 0; k < var2716; k++)
             {
-                long var2715 = nbs.ReadLong(); int var2716 = nbs.ReadInt(); DictExpendHpAtt.Add(var2715, var2716); 
+                long var2717 = nbs.ReadLong(); int var2718 = nbs.ReadInt(); DictExpendHpAtt.Add(var2717, var2718); 
             }
-            int var2717 = nbs.ReadInt();
-            for (int k = 0; k < var2717; k++)
+            int var2719 = nbs.ReadInt();
+            for (int k = 0; k < var2719; k++)
             {
-                long var2718 = nbs.ReadLong(); int var2719 = nbs.ReadInt(); DictExpendHpDef.Add(var2718, var2719); 
+                long var2720 = nbs.ReadLong(); int var2721 = nbs.ReadInt(); DictExpendHpDef.Add(var2720, var2721); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -33270,15 +33274,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out BattleUid);
             nbs.Read(out BattleResult);
-            int var2722 = nbs.ReadInt();
-            for (int k = 0; k < var2722; k++)
+            int var2724 = nbs.ReadInt();
+            for (int k = 0; k < var2724; k++)
             {
-                long var2723 = nbs.ReadLong(); int var2724 = nbs.ReadInt(); DictExpendHpAtt.Add(var2723, var2724); 
+                long var2725 = nbs.ReadLong(); int var2726 = nbs.ReadInt(); DictExpendHpAtt.Add(var2725, var2726); 
             }
-            int var2725 = nbs.ReadInt();
-            for (int k = 0; k < var2725; k++)
+            int var2727 = nbs.ReadInt();
+            for (int k = 0; k < var2727; k++)
             {
-                long var2726 = nbs.ReadLong(); int var2727 = nbs.ReadInt(); DictExpendHpDef.Add(var2726, var2727); 
+                long var2728 = nbs.ReadLong(); int var2729 = nbs.ReadInt(); DictExpendHpDef.Add(var2728, var2729); 
             }
         }
     };
@@ -33315,10 +33319,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out BattleUid);
-            int var2729 = nbs.ReadInt();
-            for (int k = 0; k < var2729; k++)
+            int var2731 = nbs.ReadInt();
+            for (int k = 0; k < var2731; k++)
             {
-                long var2730 = nbs.ReadLong(); bool var2731 = nbs.ReadBool(); DictBattleResult.Add(var2730, var2731); 
+                long var2732 = nbs.ReadLong(); bool var2733 = nbs.ReadBool(); DictBattleResult.Add(var2732, var2733); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -33343,10 +33347,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out BattleUid);
-            int var2733 = nbs.ReadInt();
-            for (int k = 0; k < var2733; k++)
+            int var2735 = nbs.ReadInt();
+            for (int k = 0; k < var2735; k++)
             {
-                long var2734 = nbs.ReadLong(); bool var2735 = nbs.ReadBool(); DictBattleResult.Add(var2734, var2735); 
+                long var2736 = nbs.ReadLong(); bool var2737 = nbs.ReadBool(); DictBattleResult.Add(var2736, var2737); 
             }
         }
     };
@@ -33535,10 +33539,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out Uid);
             ScoreMy.Unserialize(ref nbs);
-            int var2751 = nbs.ReadInt();
-            for (int k = 0; k < var2751; k++)
+            int var2753 = nbs.ReadInt();
+            for (int k = 0; k < var2753; k++)
             {
-                var var2752 = new CLS_MetroTopScoreNode(); var2752.Unserialize(ref nbs);ListScore.Add(var2752);
+                var var2754 = new CLS_MetroTopScoreNode(); var2754.Unserialize(ref nbs);ListScore.Add(var2754);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -33565,10 +33569,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out Uid);
             ScoreMy.Unserialize(ref nbs);
-            int var2755 = nbs.ReadInt();
-            for (int k = 0; k < var2755; k++)
+            int var2757 = nbs.ReadInt();
+            for (int k = 0; k < var2757; k++)
             {
-                var var2756 = new CLS_MetroTopScoreNode(); var2756.Unserialize(ref nbs);ListScore.Add(var2756);
+                var var2758 = new CLS_MetroTopScoreNode(); var2758.Unserialize(ref nbs);ListScore.Add(var2758);
             }
         }
     };
@@ -33896,15 +33900,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out BattleUid);
             nbs.Read(out BattleResult);
-            int var2769 = nbs.ReadInt();
-            for (int k = 0; k < var2769; k++)
+            int var2771 = nbs.ReadInt();
+            for (int k = 0; k < var2771; k++)
             {
-                long var2770 = nbs.ReadLong(); int var2771 = nbs.ReadInt(); DictExpendHpAtt.Add(var2770, var2771); 
+                long var2772 = nbs.ReadLong(); int var2773 = nbs.ReadInt(); DictExpendHpAtt.Add(var2772, var2773); 
             }
-            int var2772 = nbs.ReadInt();
-            for (int k = 0; k < var2772; k++)
+            int var2774 = nbs.ReadInt();
+            for (int k = 0; k < var2774; k++)
             {
-                long var2773 = nbs.ReadLong(); int var2774 = nbs.ReadInt(); DictExpendHpDef.Add(var2773, var2774); 
+                long var2775 = nbs.ReadLong(); int var2776 = nbs.ReadInt(); DictExpendHpDef.Add(var2775, var2776); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -33936,15 +33940,15 @@ namespace ServerBase.Protocol
             nbs.Read(out Shuttle);
             nbs.Read(out BattleUid);
             nbs.Read(out BattleResult);
-            int var2777 = nbs.ReadInt();
-            for (int k = 0; k < var2777; k++)
+            int var2779 = nbs.ReadInt();
+            for (int k = 0; k < var2779; k++)
             {
-                long var2778 = nbs.ReadLong(); int var2779 = nbs.ReadInt(); DictExpendHpAtt.Add(var2778, var2779); 
+                long var2780 = nbs.ReadLong(); int var2781 = nbs.ReadInt(); DictExpendHpAtt.Add(var2780, var2781); 
             }
-            int var2780 = nbs.ReadInt();
-            for (int k = 0; k < var2780; k++)
+            int var2782 = nbs.ReadInt();
+            for (int k = 0; k < var2782; k++)
             {
-                long var2781 = nbs.ReadLong(); int var2782 = nbs.ReadInt(); DictExpendHpDef.Add(var2781, var2782); 
+                long var2783 = nbs.ReadLong(); int var2784 = nbs.ReadInt(); DictExpendHpDef.Add(var2783, var2784); 
             }
         }
     };
@@ -33981,10 +33985,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out BattleUid);
-            int var2784 = nbs.ReadInt();
-            for (int k = 0; k < var2784; k++)
+            int var2786 = nbs.ReadInt();
+            for (int k = 0; k < var2786; k++)
             {
-                long var2785 = nbs.ReadLong(); bool var2786 = nbs.ReadBool(); DictBattleResult.Add(var2785, var2786); 
+                long var2787 = nbs.ReadLong(); bool var2788 = nbs.ReadBool(); DictBattleResult.Add(var2787, var2788); 
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -34009,10 +34013,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out BattleUid);
-            int var2788 = nbs.ReadInt();
-            for (int k = 0; k < var2788; k++)
+            int var2790 = nbs.ReadInt();
+            for (int k = 0; k < var2790; k++)
             {
-                long var2789 = nbs.ReadLong(); bool var2790 = nbs.ReadBool(); DictBattleResult.Add(var2789, var2790); 
+                long var2791 = nbs.ReadLong(); bool var2792 = nbs.ReadBool(); DictBattleResult.Add(var2791, var2792); 
             }
         }
     };
@@ -34037,10 +34041,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Name);
             nbs.Read(out IsReady);
-            int var2794 = nbs.ReadInt();
-            for (int k = 0; k < var2794; k++)
+            int var2796 = nbs.ReadInt();
+            for (int k = 0; k < var2796; k++)
             {
-                int var2795 = nbs.ReadInt(); var var2796 = new CLS_WarriorInfo(); var2796.Unserialize(ref nbs); DictWarrior.Add(var2795, var2796); 
+                int var2797 = nbs.ReadInt(); var var2798 = new CLS_WarriorInfo(); var2798.Unserialize(ref nbs); DictWarrior.Add(var2797, var2798); 
             }
         }
     };
@@ -34317,16 +34321,16 @@ namespace ServerBase.Protocol
         public void Unserialize(ref NetBitStream nbs)
         {
             nbs.Read(out Status);
-            int var2807 = nbs.ReadInt();
-            for (int k = 0; k < var2807; k++)
+            int var2809 = nbs.ReadInt();
+            for (int k = 0; k < var2809; k++)
             {
-                string var2808 = nbs.ReadString(); string var2809 = nbs.ReadString(); DictStatusData.Add(var2808, var2809); 
+                string var2810 = nbs.ReadString(); string var2811 = nbs.ReadString(); DictStatusData.Add(var2810, var2811); 
             }
             nbs.Read(out Action);
-            int var2811 = nbs.ReadInt();
-            for (int k = 0; k < var2811; k++)
+            int var2813 = nbs.ReadInt();
+            for (int k = 0; k < var2813; k++)
             {
-                string var2812 = nbs.ReadString(); string var2813 = nbs.ReadString(); DictActionData.Add(var2812, var2813); 
+                string var2814 = nbs.ReadString(); string var2815 = nbs.ReadString(); DictActionData.Add(var2814, var2815); 
             }
         }
     };
@@ -34691,10 +34695,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Cmd);
-            int var2847 = nbs.ReadInt();
-            for (int k = 0; k < var2847; k++)
+            int var2849 = nbs.ReadInt();
+            for (int k = 0; k < var2849; k++)
             {
-                string var2848 = nbs.ReadString();Args.Add(var2848);
+                string var2850 = nbs.ReadString();Args.Add(var2850);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -34719,10 +34723,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Cmd);
-            int var2850 = nbs.ReadInt();
-            for (int k = 0; k < var2850; k++)
+            int var2852 = nbs.ReadInt();
+            for (int k = 0; k < var2852; k++)
             {
-                string var2851 = nbs.ReadString();Args.Add(var2851);
+                string var2853 = nbs.ReadString();Args.Add(var2853);
             }
         }
     };
@@ -34759,10 +34763,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Cmd);
-            int var2853 = nbs.ReadInt();
-            for (int k = 0; k < var2853; k++)
+            int var2855 = nbs.ReadInt();
+            for (int k = 0; k < var2855; k++)
             {
-                string var2854 = nbs.ReadString();Args.Add(var2854);
+                string var2856 = nbs.ReadString();Args.Add(var2856);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -34787,10 +34791,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
             nbs.Read(out Cmd);
-            int var2856 = nbs.ReadInt();
-            for (int k = 0; k < var2856; k++)
+            int var2858 = nbs.ReadInt();
+            for (int k = 0; k < var2858; k++)
             {
-                string var2857 = nbs.ReadString();Args.Add(var2857);
+                string var2859 = nbs.ReadString();Args.Add(var2859);
             }
         }
     };
@@ -34869,10 +34873,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2858 = nbs.ReadInt();
-            for (int k = 0; k < var2858; k++)
+            int var2860 = nbs.ReadInt();
+            for (int k = 0; k < var2860; k++)
             {
-                var var2859 = new CLS_MailInfoDetails(); var2859.Unserialize(ref nbs);ListMail.Add(var2859);
+                var var2861 = new CLS_MailInfoDetails(); var2861.Unserialize(ref nbs);ListMail.Add(var2861);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -34895,10 +34899,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2860 = nbs.ReadInt();
-            for (int k = 0; k < var2860; k++)
+            int var2862 = nbs.ReadInt();
+            for (int k = 0; k < var2862; k++)
             {
-                var var2861 = new CLS_MailInfoDetails(); var2861.Unserialize(ref nbs);ListMail.Add(var2861);
+                var var2863 = new CLS_MailInfoDetails(); var2863.Unserialize(ref nbs);ListMail.Add(var2863);
             }
         }
     };
@@ -34929,18 +34933,18 @@ namespace ServerBase.Protocol
         {
             nbs.Read(out Id);
             nbs.Read(out TargetType);
-            int var2864 = nbs.ReadInt();
-            for (int k = 0; k < var2864; k++)
+            int var2866 = nbs.ReadInt();
+            for (int k = 0; k < var2866; k++)
             {
-                string var2865 = nbs.ReadString();ListTarget.Add(var2865);
+                string var2867 = nbs.ReadString();ListTarget.Add(var2867);
             }
             nbs.Read(out Title);
             nbs.Read(out Body);
             nbs.Read(out SenderName);
-            int var2869 = nbs.ReadInt();
-            for (int k = 0; k < var2869; k++)
+            int var2871 = nbs.ReadInt();
+            for (int k = 0; k < var2871; k++)
             {
-                var var2870 = new CLS_AwardItem(); var2870.Unserialize(ref nbs);ListAttachments.Add(var2870);
+                var var2872 = new CLS_AwardItem(); var2872.Unserialize(ref nbs);ListAttachments.Add(var2872);
             }
         }
     };
@@ -35319,10 +35323,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2889 = nbs.ReadInt();
-            for (int k = 0; k < var2889; k++)
+            int var2891 = nbs.ReadInt();
+            for (int k = 0; k < var2891; k++)
             {
-                var var2890 = new CLS_WarZoneInfo(); var2890.Unserialize(ref nbs);Infos.Add(var2890);
+                var var2892 = new CLS_WarZoneInfo(); var2892.Unserialize(ref nbs);Infos.Add(var2892);
             }
         }
         public void Serialize(ref NetBitStream nbs)
@@ -35345,10 +35349,10 @@ namespace ServerBase.Protocol
             nbs.Read(out Pin);
             nbs.Read(out Puid);
             nbs.Read(out Shuttle);
-            int var2891 = nbs.ReadInt();
-            for (int k = 0; k < var2891; k++)
+            int var2893 = nbs.ReadInt();
+            for (int k = 0; k < var2893; k++)
             {
-                var var2892 = new CLS_WarZoneInfo(); var2892.Unserialize(ref nbs);Infos.Add(var2892);
+                var var2894 = new CLS_WarZoneInfo(); var2894.Unserialize(ref nbs);Infos.Add(var2894);
             }
         }
     };

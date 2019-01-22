@@ -437,6 +437,10 @@ namespace ServerBase.Protocol
         public bool WelfareIsOpen = false;
         [Desc("福利完成数目")]
         public int WelfareNoticeNum = 0;
+        [Desc("七日登录开启")]
+        public bool Acitvity7DayLoginIsOpen = false;
+        [Desc("七日登录可领")]
+        public bool Acitvity7DayLoginCanGet = false;
     };
     [Desc("请求 玩家全部信息")]
     public partial class C2G_Info_GetAll : ProtocolMsgBase, INbsSerializer
