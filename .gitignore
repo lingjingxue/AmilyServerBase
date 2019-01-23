@@ -1,4 +1,5 @@
 .vs/*
 bin/
 obj/
-
+/APublish/表格工具/*
+/APublish/协议工具/*
