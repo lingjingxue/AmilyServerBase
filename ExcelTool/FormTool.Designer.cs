@@ -40,6 +40,9 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -51,9 +54,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -177,6 +177,25 @@
             this.dataGridView1.Size = new System.Drawing.Size(1563, 683);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "文件";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 1200;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "导出耗时";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "开关";
+            this.Column3.Name = "Column3";
+            this.Column3.Text = "开关";
+            this.Column3.UseColumnTextForButtonValue = true;
             // 
             // button7
             // 
@@ -310,25 +329,6 @@
             this.label1.Size = new System.Drawing.Size(88, 25);
             this.label1.TabIndex = 23;
             this.label1.Text = "选择语言";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "文件";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 1200;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "导出耗时";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "开关";
-            this.Column3.Name = "Column3";
-            this.Column3.Text = "开关";
-            this.Column3.UseColumnTextForButtonValue = true;
             // 
             // FormTool
             // 
