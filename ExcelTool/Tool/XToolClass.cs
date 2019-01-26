@@ -67,7 +67,7 @@ namespace ExcelTool
                 sb.Append($"\t}}\r\n");
             }
 
-            foreach (var kvp in DictListEnums)
+            foreach (var kvp in DictDictEnums)
             {
                 sb.Append($"\tpublic enum E{kvp.Key}\r\n");
                 sb.Append($"\t{{\r\n");
@@ -218,7 +218,7 @@ namespace ExcelTool
                 sb.Append($"\t}}\r\n");
             }
 
-            foreach (var kvp in DictListEnums)
+            foreach (var kvp in DictDictEnums)
             {
                 sb.Append($"\tpublic enum E{kvp.Key}\r\n");
                 sb.Append($"\t{{\r\n");

@@ -22,8 +22,6 @@ namespace ExcelTool
             PathHtml = PathCurrent + @"\Config";
 
             PathEnum = PathExcel + @"\A_公共枚举.xlsx";
-            PathResult = PathExcel + @"\F_返回码.xlsx";
-            PathGlobalId = PathExcel + @"\Q_全局常数.xlsx";
         }
         public static void GetFileList(string path, EValidType ValidType)
         {
@@ -34,8 +32,7 @@ namespace ExcelTool
                     if (File.Exists(filename))
                     {
                         string filename_excel = Path.GetFileNameWithoutExtension(filename);
-                        string firs = filename_excel.Substring(0, 1);
-                        if (firs != "A")
+                        if (!filename_excel.Equals("A_公共枚举"))
                         {
                             XFileInfo finfo = new XFileInfo(filename);
                             finfo.ValidType = ValidType;

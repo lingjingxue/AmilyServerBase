@@ -42,9 +42,14 @@ namespace ExcelTool
 
             XTool.Init();
         }
+        public void MessageBoxShow(string text, string caption, MessageBoxButtons buttons, MessageBoxIcon icon)
+        {
+            MessageBox.Show(text, caption, buttons, icon);
+        }
         private void SetEnabled(bool value = true)
         {
-            panel1.Enabled = value;
+            button1.Enabled = value;
+            button2.Enabled = value;
             dataGridView1.Enabled = value;
         }
         
@@ -59,15 +64,7 @@ namespace ExcelTool
                 int rowindex = dgv.Rows.Add();
                 item.rowindex = rowindex;
                 dgv.Rows[rowindex].Cells[0].Value = item.Name;
-                dgv.Rows[rowindex].Cells[1].Value = $"{item.Ts.TotalMilliseconds} ms";
-                if (item.Need)
-                {
-                    dgv.Rows[rowindex].Cells[1].Style.BackColor = Color.Green;
-                }
-                else
-                {
-                    dgv.Rows[rowindex].Cells[1].Style.BackColor = Color.Gray;
-                }
+                dgv.Rows[rowindex].Cells[1].Value = item.Ts.ToString();
             }
 
             UpdateprogressBar1();
@@ -82,38 +79,10 @@ namespace ExcelTool
             try
             {
                 var dgv = dataGridView1;
-                dgv.Rows[fileinfo.rowindex].Cells[1].Value = $"{ts.TotalMilliseconds} ms";
+                dgv.Rows[fileinfo.rowindex].Cells[1].Value = ts.ToString();
             }
             catch { }
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            var dgv = dataGridView1;
-            if (dgv.Columns[e.ColumnIndex].Name.Equals("Column3"))
-            {
-                try
-                {
-                    var row = dgv.Rows[e.RowIndex];
-                    string name = (string)(row.Cells[0].Value);
-                    if (DictFiles.ContainsKey(name))
-                    {
-                        var old = DictFiles[name].Need;
-                        var need = DictFiles[name].Need = !old;
-                        var cell = dgv[e.ColumnIndex - 1, e.RowIndex];
-                        if (need)
-                        {
-                            cell.Style.BackColor = Color.Green;
-                        }
-                        else
-                        {
-                            cell.Style.BackColor = Color.Gray;
-                        }
-                    }
-                }
-                catch { }
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             DictFiles.Clear();
@@ -133,38 +102,35 @@ namespace ExcelTool
             }
 
             UpdateprogressBar1();
-            var ageCoun = (from s in DictFiles.Values
-                           select s.Need)
-                           .Count(a => a == true);
-            if (ageCoun <= 0)
+            if (DictFiles.Count <= 0)
             {
-                MessageBox.Show($"需要导出的列表为空！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxShow($"需要导出的列表为空！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!Directory.Exists(PathExcel))
             {
-                MessageBox.Show($"导入文档路径< {PathExcel} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxShow($"导入文档路径< {PathExcel} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (!Directory.Exists(PathClass))
             {
-                MessageBox.Show($"导入文档路径< {PathClass} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxShow($"导入文档路径< {PathClass} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (!Directory.Exists(PathXml))
             {
-                MessageBox.Show($"导入文档路径< {PathXml} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxShow($"导入文档路径< {PathXml} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (!Directory.Exists(PathJson))
             {
-                MessageBox.Show($"导入文档路径< {PathJson} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxShow($"导入文档路径< {PathJson} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (!Directory.Exists(PathLua))
             {
-                MessageBox.Show($"导入文档路径< {PathLua} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxShow($"导入文档路径< {PathLua} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -181,11 +147,11 @@ namespace ExcelTool
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"导出失败，请重试！错误 ({ex.Message})", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxShow($"导出失败，请重试！错误 ({ex.Message})", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Thread.Sleep(1000);
-            MessageBox.Show($"导出完成！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBoxShow($"导出完成！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             SetEnabled(true);
         }
 
@@ -244,57 +210,6 @@ namespace ExcelTool
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            foreach (var item in DictFiles.Values)
-            {
-                item.Need = true;
-            }
-            UpdateFileList();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            foreach (var item in DictFiles.Values)
-            {
-                item.Need = false;
-            }
-            UpdateFileList();
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            DictFiles.Clear();
-            UpdateFileList();
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            var ofd = new OpenFileDialog();
-            ofd.Filter = "Excel文件(*.xls;*.xlsx)|*.xls;*.xlsx|所有文件|*.*";
-            ofd.ValidateNames = true;
-            ofd.CheckPathExists = true;
-            ofd.CheckFileExists = true;
-            ofd.Multiselect = true;
-            ofd.InitialDirectory = PathExcel;
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                foreach (string filename in ofd.FileNames)
-                {
-                    if (File.Exists(filename))
-                    {
-                        string filename_excel = Path.GetFileNameWithoutExtension(filename);
-                        string firs = filename_excel.Substring(0, 1);
-                        if (firs != "A")
-                        {
-                            XFileInfo finfo = new XFileInfo(filename);
-                            DictFiles[finfo.Name] = finfo;
-                        }
-                    }
-                }
-                UpdateFileList();
-            }
-        }
 
         #region 导出
 
@@ -310,10 +225,7 @@ namespace ExcelTool
             DictFilePages.Clear();
             foreach (var nn in DictFiles.Values)
             {
-                if (nn.Need)
-                {
-                    ReadFile(nn);
-                }
+                ReadFile(nn);
                 progressBar1.Increment(1);
             }
 
@@ -490,7 +402,7 @@ namespace ExcelTool
 
                             if (!string.IsNullOrEmpty(page.HeadEnum[k]))
                             {
-                                if (DictListEnums.TryGetValue(page.HeadEnum[k], out var DictList))
+                                if (DictDictEnums.TryGetValue(page.HeadEnum[k], out var DictList))
                                 {
                                     if (DictList.ContainsKey(s_value))
                                     {
@@ -554,7 +466,7 @@ namespace ExcelTool
                                 DictList.Add(enumK, enumV);
                             }
                         }
-                        DictListEnums.Add(DictKey, DictList);
+                        DictDictEnums.Add(DictKey, DictList);
                     }
                 }
             }

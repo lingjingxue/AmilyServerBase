@@ -19,7 +19,7 @@ namespace ExcelTool
     {
         public static void ReadEnums()
         {
-            DictListEnums.Clear();
+            DictDictEnums.Clear();
 
             if (File.Exists(PathEnum))
             {
@@ -73,12 +73,26 @@ namespace ExcelTool
                             {
                                 continue;
                             }
-                            if (!DictList.ContainsKey(enumK))
+                            if (DictList.ContainsKey(enumK))
                             {
-                                DictList.Add(enumK, enumV);
+                                XTool.FTool.MessageBoxShow($"重复的枚举表Key {DictKey} {enumK}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                continue;
                             }
+                            if (DictList.ContainsKey(enumV))
+                            {
+                                XTool.FTool.MessageBoxShow($"重复的枚举表Value {DictKey} {enumV}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                continue;
+                            }
+                            DictList[enumK] = enumV;
                         }
-                        DictListEnums.Add(DictKey, DictList);
+                        if (DictDictEnums.ContainsKey(DictKey))
+                        {
+                            XTool.FTool.MessageBoxShow($"重复的枚举表类型 {DictKey}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            DictDictEnums[DictKey] = DictList;
+                        }
                     }
                 }
             }

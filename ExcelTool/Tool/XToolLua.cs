@@ -59,7 +59,7 @@ namespace ExcelTool
                 sb.Append($"}}\r\n");
             }
 
-            foreach (var kvp in DictListEnums)
+            foreach (var kvp in DictDictEnums)
             {
                 sb.Append($"public enum E{kvp.Key}\r\n");
                 sb.Append($"{{\r\n");

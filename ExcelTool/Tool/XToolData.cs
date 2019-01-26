@@ -33,10 +33,10 @@ namespace ExcelTool
         public static string PathJson = "";
         public static string PathLua = "";
 
-
+        //文件列表
         public static Dictionary<string, XFileInfo> DictFiles = new Dictionary<string, XFileInfo>();
         //枚举列表
-        public static Dictionary<string, Dictionary<string, string>> DictListEnums = new Dictionary<string, Dictionary<string, string>>();
+        public static Dictionary<string, Dictionary<string, string>> DictDictEnums = new Dictionary<string, Dictionary<string, string>>();
 
         public static StringBuilder SbClassServer = new StringBuilder();
 
@@ -61,14 +61,12 @@ namespace ExcelTool
         {
             public string Name;
             public TimeSpan Ts;
-            public bool Need = true;
             public int rowindex = 0;
             public EValidType ValidType = EValidType.公共;
             public XFileInfo(string name)
             {
                 Name = name;
                 Ts = new TimeSpan();
-                Need = true;
                 rowindex = 0;
             }
         }
