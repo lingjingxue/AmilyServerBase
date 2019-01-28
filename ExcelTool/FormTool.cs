@@ -339,8 +339,8 @@ namespace ExcelTool
                     {
                         page = new PageInfo(pagename);
                     }
-                    page.NameCn += $"{pagenamecn}";
-                    page.NameFile += $"{Path.GetFileName(path_excel)}";
+                    page.NameCn += $"{pagenamecn} ";
+                    page.NameFile += $"{Path.GetFileName(path_excel)} ";
                     page.ValidType = fileinfo.ValidType;
 
                     if (newpage)
