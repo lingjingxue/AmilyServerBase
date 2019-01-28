@@ -40,14 +40,14 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button10 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button1.Location = new System.Drawing.Point(11, 165);
+            this.button1.Location = new System.Drawing.Point(668, 79);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 58);
@@ -67,7 +67,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(163, 165);
+            this.button2.Location = new System.Drawing.Point(821, 79);
             this.button2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(143, 58);
@@ -162,19 +162,31 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(8, 264);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 200);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(1363, 586);
+            this.dataGridView1.Size = new System.Drawing.Size(1363, 650);
             this.dataGridView1.TabIndex = 12;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "文件";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 1050;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "导出耗时";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 250;
             // 
             // progressBar1
             // 
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar1.BackColor = System.Drawing.SystemColors.Window;
-            this.progressBar1.Location = new System.Drawing.Point(11, 229);
+            this.progressBar1.Location = new System.Drawing.Point(11, 165);
             this.progressBar1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(1359, 29);
@@ -213,8 +225,10 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox1);
@@ -239,31 +253,17 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "选择语言";
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "文件";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 1050;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "导出耗时";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 250;
-            // 
             // FormTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1384, 861);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FormTool";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "表格工具";

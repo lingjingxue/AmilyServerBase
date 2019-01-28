@@ -26,6 +26,8 @@ namespace ExcelTool
 
         private void FormTool_Load(object sender, EventArgs e)
         {
+            Control.CheckForIllegalCrossThreadCalls = false;
+
             PathCurrent = Directory.GetCurrentDirectory();
             PathCurrent = XGlobal.GetParentFolder(PathCurrent);
 
@@ -209,8 +211,6 @@ namespace ExcelTool
                 textBox1.Text = PathLua = fbd.SelectedPath;
             }
         }
-
-
         #region 导出
 
         public string GetLang => (comboBox1.Text);
@@ -223,12 +223,44 @@ namespace ExcelTool
 
             DictPages.Clear();
             DictFilePages.Clear();
-            foreach (var nn in DictFiles.Values)
+
+            bool 使用多线程 = false;
+
+            if (使用多线程)
             {
-                ReadFile(nn);
-                progressBar1.Increment(1);
+                foreach (var nn in DictFiles.Values)
+                {
+                    Task task = Task.Run(() => {
+                        ReadFile(nn);
+                        nn.Read = true;
+                        progressBar1.Increment(1);
+                    });
+                }
+            }
+            else
+            {
+                foreach (var nn in DictFiles.Values)
+                {
+                    ReadFile(nn);
+                    nn.Read = true;
+                    progressBar1.Increment(1);
+                }
             }
 
+            bool 读取完成 = false;
+            while (!读取完成)
+            {
+                读取完成 = DictFiles.Values.All(it => it.Read);
+                if (读取完成)
+                {
+                    TransferOutput();
+                }
+                Thread.Sleep(200);
+            }
+        }
+
+        public void TransferOutput()
+        {
             TransferHtml();
             progressBar1.Increment(1);
 
@@ -249,7 +281,7 @@ namespace ExcelTool
             TransferClassClientLua();
             progressBar1.Increment(1);
 
-            Transfers();
+            TransferData();
             progressBar1.Value = progressBar1.Maximum;
         }
 
@@ -416,7 +448,7 @@ namespace ExcelTool
                     }
                     if (page.IsLegal())
                     {
-                        DictPages.Add(page.Name, page);
+                        DictPages[page.Name] = page;
 
                         if (!DictFilePages.TryGetValue(page.NameFile, out var filepages))
                         {
@@ -461,12 +493,26 @@ namespace ExcelTool
                             {
                                 continue;
                             }
-                            if (!DictList.ContainsKey(enumK))
+                            if (DictList.ContainsKey(enumK))
                             {
-                                DictList.Add(enumK, enumV);
+                                XTool.FTool.MessageBoxShow($"重复的枚举表Key {DictKey} {enumK}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                continue;
                             }
+                            if (DictList.ContainsKey(enumV))
+                            {
+                                XTool.FTool.MessageBoxShow($"重复的枚举表Value {DictKey} {enumV}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                continue;
+                            }
+                            DictList[enumK] = enumV;
                         }
-                        DictDictEnums.Add(DictKey, DictList);
+                        if (DictDictEnums.ContainsKey(DictKey))
+                        {
+                            XTool.FTool.MessageBoxShow($"重复的枚举表类型 {DictKey}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            DictDictEnums[DictKey] = DictList;
+                        }
                     }
                 }
             }

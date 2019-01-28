@@ -17,7 +17,7 @@ namespace ExcelTool
 {
     public static partial class XTool
     {
-        public static void Transfers()
+        public static void TransferData()
         {
             foreach (var nn in DictPages.Values)
             {

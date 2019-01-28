@@ -12,6 +12,7 @@ using NPOI.SS.UserModel;        //NPOI
 using NPOI.XSSF.UserModel;      //NPOI
 using System.Threading;
 using static ExcelTool.XGlobal;
+using System.Collections.Concurrent;
 
 namespace ExcelTool
 {
@@ -36,7 +37,7 @@ namespace ExcelTool
         //文件列表
         public static Dictionary<string, XFileInfo> DictFiles = new Dictionary<string, XFileInfo>();
         //枚举列表
-        public static Dictionary<string, Dictionary<string, string>> DictDictEnums = new Dictionary<string, Dictionary<string, string>>();
+        public static ConcurrentDictionary<string, Dictionary<string, string>> DictDictEnums = new ConcurrentDictionary<string, Dictionary<string, string>>();
 
         public static StringBuilder SbClassServer = new StringBuilder();
 
@@ -44,8 +45,8 @@ namespace ExcelTool
 
 
 
-        public static Dictionary<string, PageInfo> DictPages = new Dictionary<string, PageInfo>();
-        public static Dictionary<string, List<PageInfo>> DictFilePages = new Dictionary<string, List<PageInfo>>();
+        public static ConcurrentDictionary<string, PageInfo> DictPages = new ConcurrentDictionary<string, PageInfo>();
+        public static ConcurrentDictionary<string, List<PageInfo>> DictFilePages = new ConcurrentDictionary<string, List<PageInfo>>();
 
 
         public static FormTool FTool;
@@ -63,11 +64,13 @@ namespace ExcelTool
             public TimeSpan Ts;
             public int rowindex = 0;
             public EValidType ValidType = EValidType.公共;
+            public bool Read = false;
             public XFileInfo(string name)
             {
                 Name = name;
                 Ts = new TimeSpan();
                 rowindex = 0;
+                Read = false;
             }
         }
         public class PageInfo
