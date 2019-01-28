@@ -54,9 +54,12 @@ $CONTENT$
             {
                 //sb.Append($"<div data-role=\"collapsible\">\r\n");
                 sb.Append($"<h3>文件：{kvp1.Key}</h3>\r\n");
-                foreach (var item in kvp1.Value)
+                foreach (var itemname in kvp1.Value)
                 {
-                    sb.Append($"<p>页面：{item.NameCn} {item.Name} 有效列：{item.HeadC.Count} 有效行：{item.ListValue.Count}</p>\r\n");
+                    if (DictPages.TryGetValue(itemname, out var item))
+                    {
+                        sb.Append($"<p>页面：{item.NameCn} {item.Name} 有效列：{item.HeadC.Count} 有效行：{item.ListValue.Count}</p>\r\n");
+                    }
                 }
                 //sb.Append($"</div>\r\n");
             }

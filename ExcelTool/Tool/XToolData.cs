@@ -46,7 +46,7 @@ namespace ExcelTool
 
 
         public static ConcurrentDictionary<string, PageInfo> DictPages = new ConcurrentDictionary<string, PageInfo>();
-        public static ConcurrentDictionary<string, List<PageInfo>> DictFilePages = new ConcurrentDictionary<string, List<PageInfo>>();
+        public static ConcurrentDictionary<string, List<string>> DictFilePages = new ConcurrentDictionary<string, List<string>>();
 
 
         public static FormTool FTool;
@@ -75,9 +75,9 @@ namespace ExcelTool
         }
         public class PageInfo
         {
-            public string Name;
-            public string NameCn;
-            public string NameFile;
+            public string Name = "";
+            public string NameCn = "";
+            public string NameFile = "";
             public EValidType ValidType = EValidType.公共;
             public List<string> HeadC;
             public List<string> Head;
@@ -89,7 +89,6 @@ namespace ExcelTool
             public PageInfo(string name)
             {
                 Name = name;
-                NameCn = name;
                 ValidType = EValidType.公共;
 
                 HeadC = new List<string>();

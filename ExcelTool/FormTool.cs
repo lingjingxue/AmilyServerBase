@@ -13,6 +13,7 @@ using NPOI.XSSF.UserModel;      //NPOI
 using System.Threading;
 using static ExcelTool.XGlobal;
 using static ExcelTool.XTool;
+using System.Diagnostics;
 
 namespace ExcelTool
 {
@@ -27,6 +28,8 @@ namespace ExcelTool
         private void FormTool_Load(object sender, EventArgs e)
         {
             Control.CheckForIllegalCrossThreadCalls = false;
+
+            label2.Text = "";
 
             PathCurrent = Directory.GetCurrentDirectory();
             PathCurrent = XGlobal.GetParentFolder(PathCurrent);
@@ -68,13 +71,6 @@ namespace ExcelTool
                 dgv.Rows[rowindex].Cells[0].Value = item.Name;
                 dgv.Rows[rowindex].Cells[1].Value = item.Ts.ToString();
             }
-
-            UpdateprogressBar1();
-        }
-        private void UpdateprogressBar1()
-        {
-            progressBar1.Maximum = DictFiles.Count + 15;
-            progressBar1.Value = 0;
         }
         public void UpdateFileTs(XFileInfo fileinfo, TimeSpan ts)
         {
@@ -172,7 +168,6 @@ namespace ExcelTool
                 return;
             }
 
-            UpdateprogressBar1();
             if (DictFiles.Count <= 0)
             {
                 MessageBoxShow($"需要导出的列表为空！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -223,11 +218,20 @@ namespace ExcelTool
 
         }
 
+        public static Stopwatch BenchmarkStopwatch;
+
+        public void ThreadMethod(object obj)
+        {
+            XFileInfo nn = obj as XFileInfo;
+            ReadFile(nn);
+            nn.Read = true;
+        }
         public void TransferFiles()
         {
+            BenchmarkStopwatch = Stopwatch.StartNew();
+
             //枚举表
             ReadEnums();
-            progressBar1.Increment(1);
 
             DictPages.Clear();
             DictFilePages.Clear();
@@ -238,11 +242,12 @@ namespace ExcelTool
             {
                 foreach (var nn in DictFiles.Values)
                 {
-                    Task task = Task.Run(() => {
-                        ReadFile(nn);
-                        nn.Read = true;
-                        progressBar1.Increment(1);
-                    });
+                    //Task task = Task.Run(() => {
+                    //    ReadFile(nn);
+                    //    nn.Read = true;
+                    //});
+                    Thread thread = new Thread(new ParameterizedThreadStart(ThreadMethod));
+                    thread.Start(nn);
                 }
             }
             else
@@ -251,7 +256,6 @@ namespace ExcelTool
                 {
                     ReadFile(nn);
                     nn.Read = true;
-                    progressBar1.Increment(1);
                 }
             }
 
@@ -270,28 +274,25 @@ namespace ExcelTool
         public void TransferOutput()
         {
             TransferHtml();
-            progressBar1.Increment(1);
 
             TransferClassServer();
-            progressBar1.Increment(1);
+
             TransferClassServerConf();
-            progressBar1.Increment(1);
+
             TransferClassServerConfRead();
-            progressBar1.Increment(1);
 
             TransferClassClient();
-            progressBar1.Increment(1);
+
             TransferClassClientConf();
-            progressBar1.Increment(1);
+
             TransferClassClientConfRead();
-            progressBar1.Increment(1);
 
             TransferClassClientLua();
-            progressBar1.Increment(1);
 
             TransferData();
-            progressBar1.Value = progressBar1.Maximum;
 
+            BenchmarkStopwatch.Stop();
+            label2.Text = $"耗时 {BenchmarkStopwatch.ElapsedMilliseconds} 毫秒";
 
             Thread.Sleep(1000);
             MessageBoxShow($"导出完成！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -329,94 +330,162 @@ namespace ExcelTool
                         }
                     }
 
-                    var page = new PageInfo(pagename);
-                    page.NameCn = pagenamecn;
-                    page.NameFile = Path.GetFileName(path_excel);
+                    bool newpage = true;
+                    if (DictPages.TryGetValue(pagename, out var page))
+                    {
+                        newpage = false;
+                    }
+                    else
+                    {
+                        page = new PageInfo(pagename);
+                    }
+                    page.NameCn += $"{pagenamecn}";
+                    page.NameFile += $"{Path.GetFileName(path_excel)}";
                     page.ValidType = fileinfo.ValidType;
 
-                    IRow rowHeadC = sheet.GetRow(1);
-                    if (rowHeadC == null)
+                    if (newpage)
                     {
-                        continue;
-                    }
-                    for (int k = 0; k <= rowHeadC.LastCellNum; k++)
-                    {
-                        ICell cell = rowHeadC.GetCell(k);
-                        if (cell != null)
+                        IRow rowHeadC = sheet.GetRow(1);
+                        if (rowHeadC == null)
                         {
-                            page.HeadC.Add(cell.ToString());
+                            continue;
                         }
-                        else
+                        for (int k = 0; k <= rowHeadC.LastCellNum; k++)
                         {
-                            page.HeadC.Add("");
-                        }
-                    }
-                    IRow rowHead = sheet.GetRow(2);
-                    if (rowHead == null)
-                    {
-                        continue;
-                    }
-                    for (int k = 0; k <= rowHead.LastCellNum; k++)
-                    {
-                        ICell cell = rowHead.GetCell(k);
-                        if (cell != null)
-                        {
-                            string strheadenum = cell.ToString();
-                            string[] strheadenumnodes = strheadenum.Split(new string[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
-                            if (strheadenumnodes.Length >= 2)
+                            ICell cell = rowHeadC.GetCell(k);
+                            if (cell != null)
                             {
-                                page.Head.Add(strheadenumnodes[0]);
-                                page.HeadEnum.Add(strheadenumnodes[1]);
+                                page.HeadC.Add(cell.ToString());
                             }
                             else
                             {
-                                page.Head.Add(strheadenum);
-                                page.HeadEnum.Add(strheadenum);
+                                page.HeadC.Add("");
                             }
                         }
-                        else
+                        IRow rowHead = sheet.GetRow(2);
+                        if (rowHead == null)
                         {
-                            page.Head.Add("");
-                            page.HeadEnum.Add("");
+                            continue;
                         }
-                    }
-                    IRow rowTypeClient = sheet.GetRow(3);
-                    if (rowTypeClient == null)
-                    {
-                        continue;
-                    }
-                    for (int k = 0; k <= page.Head.Count; k++)
-                    {
-                        ICell cell = rowTypeClient.GetCell(k);
-                        if (cell != null)
+                        for (int k = 0; k <= rowHead.LastCellNum; k++)
                         {
-                            string TypeClient = cell.ToString();
-                            if (TypeClient == "float")
+                            ICell cell = rowHead.GetCell(k);
+                            if (cell != null)
                             {
-                                TypeClient = "double";
+                                string strheadenum = cell.ToString();
+                                string[] strheadenumnodes = strheadenum.Split(new string[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
+                                if (strheadenumnodes.Length >= 2)
+                                {
+                                    page.Head.Add(strheadenumnodes[0]);
+                                    page.HeadEnum.Add(strheadenumnodes[1]);
+                                }
+                                else
+                                {
+                                    page.Head.Add(strheadenum);
+                                    page.HeadEnum.Add(strheadenum);
+                                }
                             }
-                            page.TypeClient.Add(TypeClient);
+                            else
+                            {
+                                page.Head.Add("");
+                                page.HeadEnum.Add("");
+                            }
                         }
-                        else
+                        IRow rowTypeClient = sheet.GetRow(3);
+                        if (rowTypeClient == null)
                         {
-                            page.TypeClient.Add("");
+                            continue;
                         }
-                    }
-                    IRow rowTypeServer = sheet.GetRow(4);
-                    if (rowTypeServer == null)
-                    {
-                        continue;
-                    }
-                    for (int k = 0; k <= page.Head.Count; k++)
-                    {
-                        ICell cell = rowTypeServer.GetCell(k);
-                        if (cell != null)
+                        for (int k = 0; k <= page.Head.Count; k++)
                         {
-                            page.TypeServer.Add(cell.ToString());
+                            ICell cell = rowTypeClient.GetCell(k);
+                            if (cell != null)
+                            {
+                                string TypeClient = cell.ToString();
+                                if (TypeClient == "float")
+                                {
+                                    TypeClient = "double";
+                                }
+                                page.TypeClient.Add(TypeClient);
+                            }
+                            else
+                            {
+                                page.TypeClient.Add("");
+                            }
                         }
-                        else
+                        IRow rowTypeServer = sheet.GetRow(4);
+                        if (rowTypeServer == null)
                         {
-                            page.TypeServer.Add("");
+                            continue;
+                        }
+                        for (int k = 0; k <= page.Head.Count; k++)
+                        {
+                            ICell cell = rowTypeServer.GetCell(k);
+                            if (cell != null)
+                            {
+                                page.TypeServer.Add(cell.ToString());
+                            }
+                            else
+                            {
+                                page.TypeServer.Add("");
+                            }
+                        }
+
+                        if (导出枚举)
+                        {
+                            string DictKey = "EnumAAA";
+                            ICell cell = rowHead.GetCell(0);
+                            if (cell != null)
+                            {
+                                DictKey = cell.StringCellValue;
+                            }
+                            else
+                            {
+                                page.Head.Add("");
+                                page.HeadEnum.Add("");
+                            }
+
+                            int j = 0;
+                            Dictionary<string, string> DictList = new Dictionary<string, string>();
+                            for (int i = 5; i <= sheet.LastRowNum; i++)
+                            {
+                                IRow rowdictv = sheet.GetRow(i);
+                                if (rowdictv == null)
+                                {
+                                    continue;
+                                }
+                                ICell cell1 = rowdictv.GetCell(j);
+                                ICell cell2 = rowdictv.GetCell(j + 1);
+                                if (cell1 == null || cell2 == null)
+                                {
+                                    continue;
+                                }
+                                string enumK = cell2.ToString();
+                                string enumV = cell1.ToString();
+                                if (enumK == "" || enumV == "")
+                                {
+                                    continue;
+                                }
+                                if (DictList.ContainsKey(enumK))
+                                {
+                                    XTool.FTool.MessageBoxShow($"重复的枚举表Key {DictKey} {enumK}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    continue;
+                                }
+                                if (DictList.ContainsKey(enumV))
+                                {
+                                    XTool.FTool.MessageBoxShow($"重复的枚举表Value {DictKey} {enumV}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    continue;
+                                }
+                                DictList[enumK] = enumV;
+                            }
+                            if (DictDictEnums.ContainsKey(DictKey))
+                            {
+                                XTool.FTool.MessageBoxShow($"重复的枚举表类型 {DictKey}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            else
+                            {
+                                DictDictEnums[DictKey] = DictList;
+                            }
                         }
                     }
 
@@ -465,68 +534,12 @@ namespace ExcelTool
 
                         if (!DictFilePages.TryGetValue(page.NameFile, out var filepages))
                         {
-                            filepages = new List<PageInfo>();
+                            filepages = new List<string>();
                             DictFilePages[page.NameFile] = filepages;
                         }
-                        filepages.Add(page);
+                        filepages.Add(page.Name);
                     }
-
-                    if (导出枚举)
-                    {
-                        string DictKey = "EnumAAA";
-                        ICell cell = rowHead.GetCell(0);
-                        if (cell != null)
-                        {
-                            DictKey = cell.StringCellValue;
-                        }
-                        else
-                        {
-                            page.Head.Add("");
-                            page.HeadEnum.Add("");
-                        }
-
-                        int j = 0;
-                        Dictionary<string, string> DictList = new Dictionary<string, string>();
-                        for (int i = 5; i <= sheet.LastRowNum; i++)
-                        {
-                            IRow rowdictv = sheet.GetRow(i);
-                            if (rowdictv == null)
-                            {
-                                continue;
-                            }
-                            ICell cell1 = rowdictv.GetCell(j);
-                            ICell cell2 = rowdictv.GetCell(j + 1);
-                            if (cell1 == null || cell2 == null)
-                            {
-                                continue;
-                            }
-                            string enumK = cell2.ToString();
-                            string enumV = cell1.ToString();
-                            if (enumK == "" || enumV == "")
-                            {
-                                continue;
-                            }
-                            if (DictList.ContainsKey(enumK))
-                            {
-                                XTool.FTool.MessageBoxShow($"重复的枚举表Key {DictKey} {enumK}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                continue;
-                            }
-                            if (DictList.ContainsKey(enumV))
-                            {
-                                XTool.FTool.MessageBoxShow($"重复的枚举表Value {DictKey} {enumV}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                continue;
-                            }
-                            DictList[enumK] = enumV;
-                        }
-                        if (DictDictEnums.ContainsKey(DictKey))
-                        {
-                            XTool.FTool.MessageBoxShow($"重复的枚举表类型 {DictKey}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                        else
-                        {
-                            DictDictEnums[DictKey] = DictList;
-                        }
-                    }
+                   
                 }
             }
             UpdateFileTs(fileinfo, DateTime.Now - time_start);
