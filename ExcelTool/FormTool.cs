@@ -98,63 +98,14 @@ namespace ExcelTool
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (DateTime.Now >= new DateTime(2020, 7, 1))
-            {
-                return;
-            }
-
-            UpdateprogressBar1();
-            if (DictFiles.Count <= 0)
-            {
-                MessageBoxShow($"需要导出的列表为空！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (!Directory.Exists(PathExcel))
-            {
-                MessageBoxShow($"导入文档路径< {PathExcel} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (!Directory.Exists(PathClass))
-            {
-                MessageBoxShow($"导入文档路径< {PathClass} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (!Directory.Exists(PathXml))
-            {
-                MessageBoxShow($"导入文档路径< {PathXml} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (!Directory.Exists(PathJson))
-            {
-                MessageBoxShow($"导入文档路径< {PathJson} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (!Directory.Exists(PathLua))
-            {
-                MessageBoxShow($"导入文档路径< {PathLua} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            SetEnabled(false);
-
-            XGlobal.EmptyFolder(PathClass);
-            XGlobal.EmptyFolder(PathXml);
-            XGlobal.EmptyFolder(PathJson);
-            XGlobal.EmptyFolder(PathLua);
-
-            try
-            {
-                TransferFiles();
-            }
-            catch (Exception ex)
-            {
-                MessageBoxShow($"导出失败，请重试！错误 ({ex.Message})", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            Thread.Sleep(1000);
-            MessageBoxShow($"导出完成！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            SetEnabled(true);
+            使用多线程 = false;
+            开始导出();
+            
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            使用多线程 = true;
+            开始导出();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -212,8 +163,65 @@ namespace ExcelTool
             }
         }
         #region 导出
-
+        bool 使用多线程 = false;
         public string GetLang => (comboBox1.Text);
+        public void 开始导出()
+        {
+            if (DateTime.Now >= new DateTime(2020, 7, 1))
+            {
+                return;
+            }
+
+            UpdateprogressBar1();
+            if (DictFiles.Count <= 0)
+            {
+                MessageBoxShow($"需要导出的列表为空！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Directory.Exists(PathExcel))
+            {
+                MessageBoxShow($"导入文档路径< {PathExcel} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!Directory.Exists(PathClass))
+            {
+                MessageBoxShow($"导入文档路径< {PathClass} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!Directory.Exists(PathXml))
+            {
+                MessageBoxShow($"导入文档路径< {PathXml} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!Directory.Exists(PathJson))
+            {
+                MessageBoxShow($"导入文档路径< {PathJson} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!Directory.Exists(PathLua))
+            {
+                MessageBoxShow($"导入文档路径< {PathLua} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            SetEnabled(false);
+
+            XGlobal.EmptyFolder(PathClass);
+            XGlobal.EmptyFolder(PathXml);
+            XGlobal.EmptyFolder(PathJson);
+            XGlobal.EmptyFolder(PathLua);
+
+            try
+            {
+                TransferFiles();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxShow($"导出失败，请重试！错误 ({ex.Message})", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
 
         public void TransferFiles()
         {
@@ -224,7 +232,7 @@ namespace ExcelTool
             DictPages.Clear();
             DictFilePages.Clear();
 
-            bool 使用多线程 = false;
+            
 
             if (使用多线程)
             {
@@ -283,6 +291,11 @@ namespace ExcelTool
 
             TransferData();
             progressBar1.Value = progressBar1.Maximum;
+
+
+            Thread.Sleep(1000);
+            MessageBoxShow($"导出完成！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            SetEnabled(true);
         }
 
         public void ReadFile(XFileInfo fileinfo)
@@ -520,5 +533,6 @@ namespace ExcelTool
         }
         #endregion
 
+        
     }
 }

@@ -47,6 +47,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -225,6 +226,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.button3);
@@ -243,6 +245,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1360, 149);
             this.panel2.TabIndex = 23;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Lime;
+            this.button7.Location = new System.Drawing.Point(974, 79);
+            this.button7.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(143, 58);
+            this.button7.TabIndex = 24;
+            this.button7.Text = "开始导出(快速)";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label1
             // 
@@ -296,6 +310,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Button button7;
     }
 }
 
