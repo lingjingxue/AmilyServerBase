@@ -85,9 +85,11 @@ namespace ExcelTool
         {
             DictFiles.Clear();
 
-            GetFileList(PathExcel, EValidType.公共);
-            GetFileList(PathExcel + @"\服务器", EValidType.仅服务器);
-            GetFileList(PathExcel + @"\客户端", EValidType.仅客户端);
+            //GetFileList(PathExcel, EValidType.公共);
+            //GetFileList(PathExcel + @"\服务器", EValidType.仅服务器);
+            //GetFileList(PathExcel + @"\客户端", EValidType.仅客户端);
+
+            GetFileList(PathExcel);
 
             UpdateFileList();
         }
@@ -339,8 +341,9 @@ namespace ExcelTool
                     {
                         page = new PageInfo(pagename);
                     }
+                    var NameFile = Path.GetFileName(path_excel);
                     page.NameCn += $"{pagenamecn} ";
-                    page.NameFile += $"{Path.GetFileName(path_excel)} ";
+                    page.NameFile += $"{NameFile} ";
                     page.ValidType = fileinfo.ValidType;
 
                     if (newpage)
@@ -532,10 +535,10 @@ namespace ExcelTool
                     {
                         DictPages[page.Name] = page;
 
-                        if (!DictFilePages.TryGetValue(page.NameFile, out var filepages))
+                        if (!DictFilePages.TryGetValue(NameFile, out var filepages))
                         {
                             filepages = new List<string>();
-                            DictFilePages[page.NameFile] = filepages;
+                            DictFilePages[NameFile] = filepages;
                         }
                         filepages.Add(page.Name);
                     }

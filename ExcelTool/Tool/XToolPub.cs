@@ -23,12 +23,61 @@ namespace ExcelTool
 
             PathEnum = PathExcel + @"\A_公共枚举.xlsx";
         }
-        public static void GetFileList(string path, EValidType ValidType)
+        //public static void GetFileList(string path, EValidType ValidType)
+        //{
+        //    if (Directory.Exists(path))
+        //    {
+        //        foreach (string filename in Directory.GetFileSystemEntries(path))
+        //        {
+        //            if (File.Exists(filename))
+        //            {
+        //                string filename_excel = Path.GetFileNameWithoutExtension(filename);
+        //                if (!filename_excel.Equals("A_公共枚举"))
+        //                {
+        //                    XFileInfo finfo = new XFileInfo(filename);
+        //                    finfo.ValidType = ValidType;
+        //                    DictFiles.Add(finfo.Name, finfo);
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
+        public static void GetFileList(string path)
         {
             if (Directory.Exists(path))
             {
+                foreach (var dirname in Directory.GetDirectories(path))
+                {
+                    EValidType ValidType = EValidType.公共;
+                    if (dirname.Contains("备份"))
+                    {
+                        continue;
+                    }
+                    if (dirname.Contains("服务器"))
+                    {
+                        ValidType = EValidType.仅服务器;
+                    }
+                    else if (dirname.Contains("客户端"))
+                    {
+                        ValidType = EValidType.仅客户端;
+                    }
+                    foreach (string filename in Directory.GetFileSystemEntries(dirname))
+                    {
+                        if (File.Exists(filename))
+                        {
+                            string filename_excel = Path.GetFileNameWithoutExtension(filename);
+                            if (!filename_excel.Equals("A_公共枚举"))
+                            {
+                                XFileInfo finfo = new XFileInfo(filename);
+                                finfo.ValidType = ValidType;
+                                DictFiles.Add(finfo.Name, finfo);
+                            }
+                        }
+                    }
+                }
                 foreach (string filename in Directory.GetFileSystemEntries(path))
                 {
+                    EValidType ValidType = EValidType.公共;
                     if (File.Exists(filename))
                     {
                         string filename_excel = Path.GetFileNameWithoutExtension(filename);
