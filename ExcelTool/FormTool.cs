@@ -35,17 +35,21 @@ namespace ExcelTool
             PathCurrent = XGlobal.GetParentFolder(PathCurrent);
 
             textBox2.Text = PathExcel = PathCurrent + @"\Config\Excel";
-            textBox3.Text = PathClass = PathCurrent + @"\Config\Class";
-            textBox4.Text = PathXml = PathCurrent + @"\Config\Xml";
-            textBox5.Text = PathJson = PathCurrent + @"\Config\Json";
-            textBox1.Text = PathLua = PathCurrent + @"\Config\Lua";
+            textBox1.Text = PathOutput = PathCurrent + @"\Config";
+            PathClass = PathOutput + @"\Class";
+            PathXml = PathOutput + @"\Xml";
+            PathJson = PathOutput + @"\Json";
+            PathLua = PathOutput + @"\Lua";
+
+            PathEnum = PathExcel + @"\A_公共枚举.xlsx";
 
             comboBox1.Items.Add("LangChs");
             comboBox1.Items.Add("LangEn");
             comboBox1.Items.Add("LangKo");
             comboBox1.SelectedIndex = 0;
 
-            XTool.Init();
+            FlushClient fc = new FlushClient(ThreadFunction);
+            fc.BeginInvoke(null, null);
         }
         public void MessageBoxShow(string text, string caption, MessageBoxButtons buttons, MessageBoxIcon icon)
         {
@@ -116,48 +120,18 @@ namespace ExcelTool
                 textBox2.Text = PathExcel = fbd.SelectedPath;
             }
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            var fbd = new FolderBrowserDialog();
-            fbd.SelectedPath = PathClass;
-            fbd.ShowDialog();
-            if (fbd.SelectedPath != string.Empty)
-            {
-                textBox3.Text = PathClass = fbd.SelectedPath;
-            }
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            var fbd = new FolderBrowserDialog();
-            fbd.SelectedPath = PathXml;
-            fbd.ShowDialog();
-            if (fbd.SelectedPath != string.Empty)
-            {
-                textBox4.Text = PathXml = fbd.SelectedPath;
-            }
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            var fbd = new FolderBrowserDialog();
-            fbd.SelectedPath = PathJson;
-            fbd.ShowDialog();
-            if (fbd.SelectedPath != string.Empty)
-            {
-                textBox5.Text = PathJson = fbd.SelectedPath;
-            }
-        }
-
         private void button10_Click(object sender, EventArgs e)
         {
             var fbd = new FolderBrowserDialog();
-            fbd.SelectedPath = PathLua;
+            fbd.SelectedPath = PathOutput;
             fbd.ShowDialog();
             if (fbd.SelectedPath != string.Empty)
             {
-                textBox1.Text = PathLua = fbd.SelectedPath;
+                textBox1.Text = PathOutput = fbd.SelectedPath;
+                PathClass = PathOutput + @"\Class";
+                PathXml = PathOutput + @"\Xml";
+                PathJson = PathOutput + @"\Json";
+                PathLua = PathOutput + @"\Lua";
             }
         }
         #region 导出
@@ -181,26 +155,15 @@ namespace ExcelTool
                 MessageBoxShow($"导入文档路径< {PathExcel} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (!Directory.Exists(PathClass))
+            if (!Directory.Exists(PathOutput))
             {
-                MessageBoxShow($"导入文档路径< {PathClass} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxShow($"导出文档路径< {PathOutput} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (!Directory.Exists(PathXml))
-            {
-                MessageBoxShow($"导入文档路径< {PathXml} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (!Directory.Exists(PathJson))
-            {
-                MessageBoxShow($"导入文档路径< {PathJson} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (!Directory.Exists(PathLua))
-            {
-                MessageBoxShow($"导入文档路径< {PathLua} >并不存在！请重新设置！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            if (!Directory.Exists(PathClass)) { Directory.CreateDirectory(PathClass); }
+            if (!Directory.Exists(PathXml)) { Directory.CreateDirectory(PathXml); }
+            if (!Directory.Exists(PathJson)) { Directory.CreateDirectory(PathJson); }
+            if (!Directory.Exists(PathLua)) { Directory.CreateDirectory(PathLua); }
 
             SetEnabled(false);
 
@@ -220,6 +183,22 @@ namespace ExcelTool
 
         }
 
+        public int progressBar1Value = 0;
+        public int progressBar1Max = 0;
+        public int progressBar1ValueAdd(int v = 1)
+        {
+            progressBar1Value += v; progressBar1Value = Math.Min(progressBar1Value, progressBar1Max); return progressBar1Value;
+        }
+        private delegate void FlushClient();//代理 
+        private void ThreadFunction()
+        {
+            while (true)
+            {
+                progressBar1.Value = progressBar1Value;
+                Thread.Sleep(100);
+            }
+        }
+
         public static Stopwatch BenchmarkStopwatch;
 
         public void ThreadMethod(object obj)
@@ -227,13 +206,19 @@ namespace ExcelTool
             XFileInfo nn = obj as XFileInfo;
             ReadFile(nn);
             nn.Read = true;
+            progressBar1ValueAdd();
         }
         public void TransferFiles()
         {
             BenchmarkStopwatch = Stopwatch.StartNew();
 
+            progressBar1Value = 2;
+            progressBar1Max = DictFiles.Count + 12;
+            progressBar1.Maximum = progressBar1Max;
+
             //枚举表
             ReadEnums();
+            progressBar1ValueAdd();
 
             DictPages.Clear();
             DictFilePages.Clear();
@@ -258,6 +243,7 @@ namespace ExcelTool
                 {
                     ReadFile(nn);
                     nn.Read = true;
+                    progressBar1ValueAdd();
                 }
             }
 
@@ -276,22 +262,31 @@ namespace ExcelTool
         public void TransferOutput()
         {
             TransferHtml();
+            progressBar1ValueAdd();
 
             TransferClassServer();
+            progressBar1ValueAdd();
 
             TransferClassServerConf();
+            progressBar1ValueAdd();
 
             TransferClassServerConfRead();
+            progressBar1ValueAdd();
 
             TransferClassClient();
+            progressBar1ValueAdd();
 
             TransferClassClientConf();
+            progressBar1ValueAdd();
 
             TransferClassClientConfRead();
+            progressBar1ValueAdd();
 
             TransferClassClientLua();
+            progressBar1ValueAdd();
 
             TransferData();
+            progressBar1Value = progressBar1Max;
 
             BenchmarkStopwatch.Stop();
             label2.Text = $"耗时 {BenchmarkStopwatch.ElapsedMilliseconds} 毫秒";
@@ -547,6 +542,7 @@ namespace ExcelTool
             }
             UpdateFileTs(fileinfo, DateTime.Now - time_start);
         }
+
         #endregion
 
         

@@ -65,7 +65,7 @@ $CONTENT$
             }
 
             string txt = Template_Html;
-            string path_html = PathHtml + "\\" + "表格结构.html";
+            string path_html = PathOutput + @"\表格结构.html";
             XGlobal.DeleteFile(path_html);
             FileStream fs_class = new FileStream(path_html, FileMode.OpenOrCreate);
             StreamWriter sw_class = new StreamWriter(fs_class, new System.Text.UTF8Encoding(false));

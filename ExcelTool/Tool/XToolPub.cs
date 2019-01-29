@@ -17,31 +17,6 @@ namespace ExcelTool
 {
     public static partial class XTool
     {
-        public static void Init()
-        {
-            PathHtml = PathCurrent + @"\Config";
-
-            PathEnum = PathExcel + @"\A_公共枚举.xlsx";
-        }
-        //public static void GetFileList(string path, EValidType ValidType)
-        //{
-        //    if (Directory.Exists(path))
-        //    {
-        //        foreach (string filename in Directory.GetFileSystemEntries(path))
-        //        {
-        //            if (File.Exists(filename))
-        //            {
-        //                string filename_excel = Path.GetFileNameWithoutExtension(filename);
-        //                if (!filename_excel.Equals("A_公共枚举"))
-        //                {
-        //                    XFileInfo finfo = new XFileInfo(filename);
-        //                    finfo.ValidType = ValidType;
-        //                    DictFiles.Add(finfo.Name, finfo);
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
         public static void GetFileList(string path)
         {
             if (Directory.Exists(path))

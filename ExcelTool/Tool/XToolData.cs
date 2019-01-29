@@ -26,9 +26,8 @@ namespace ExcelTool
         public static string PathResult = "";
         public static string PathGlobalId = "";
 
-        public static string PathHtml = "";
-
         public static string PathExcel = "";
+        public static string PathOutput = "";
         public static string PathClass = "";
         public static string PathXml = "";
         public static string PathJson = "";
