@@ -36,7 +36,8 @@ namespace ExcelTool
         //文件列表
         public static Dictionary<string, XFileInfo> DictFiles = new Dictionary<string, XFileInfo>();
         //枚举列表
-        public static ConcurrentDictionary<string, Dictionary<string, string>> DictDictEnums = new ConcurrentDictionary<string, Dictionary<string, string>>();
+        public static ConcurrentDictionary<string, Dictionary<string, string>> CDictDictEnums = new ConcurrentDictionary<string, Dictionary<string, string>>();
+        public static Dictionary<string, Dictionary<string, string>> DictDictEnums = new Dictionary<string, Dictionary<string, string>>();
 
         public static StringBuilder SbClassServer = new StringBuilder();
 
@@ -44,7 +45,8 @@ namespace ExcelTool
 
 
 
-        public static ConcurrentDictionary<string, PageInfo> DictPages = new ConcurrentDictionary<string, PageInfo>();
+        public static ConcurrentDictionary<string, PageInfo> CDictPages = new ConcurrentDictionary<string, PageInfo>();
+        public static Dictionary<string, PageInfo> DictPages = new Dictionary<string, PageInfo>();
         public static ConcurrentDictionary<string, List<string>> DictFilePages = new ConcurrentDictionary<string, List<string>>();
 
 

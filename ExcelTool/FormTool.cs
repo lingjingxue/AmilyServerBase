@@ -220,7 +220,7 @@ namespace ExcelTool
             ReadEnums();
             progressBar1ValueAdd();
 
-            DictPages.Clear();
+            CDictPages.Clear();
             DictFilePages.Clear();
 
             
@@ -253,6 +253,8 @@ namespace ExcelTool
                 读取完成 = DictFiles.Values.All(it => it.Read);
                 if (读取完成)
                 {
+                    DictDictEnums = new Dictionary<string, Dictionary<string, string>>(CDictDictEnums);
+                    DictPages = new Dictionary<string, PageInfo>(CDictPages);
                     TransferOutput();
                 }
                 Thread.Sleep(200);
@@ -328,7 +330,7 @@ namespace ExcelTool
                     }
 
                     bool newpage = true;
-                    if (DictPages.TryGetValue(pagename, out var page))
+                    if (CDictPages.TryGetValue(pagename, out var page))
                     {
                         newpage = false;
                     }
@@ -476,13 +478,13 @@ namespace ExcelTool
                                 }
                                 DictList[enumK] = enumV;
                             }
-                            if (DictDictEnums.ContainsKey(DictKey))
+                            if (CDictDictEnums.ContainsKey(DictKey))
                             {
                                 XTool.FTool.MessageBoxShow($"重复的枚举表类型 {DictKey}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                             else
                             {
-                                DictDictEnums[DictKey] = DictList;
+                                CDictDictEnums[DictKey] = DictList;
                             }
                         }
                     }
@@ -514,7 +516,7 @@ namespace ExcelTool
 
                             if (!string.IsNullOrEmpty(page.HeadEnum[k]))
                             {
-                                if (DictDictEnums.TryGetValue(page.HeadEnum[k], out var DictList))
+                                if (CDictDictEnums.TryGetValue(page.HeadEnum[k], out var DictList))
                                 {
                                     if (DictList.ContainsKey(s_value))
                                     {
@@ -528,7 +530,7 @@ namespace ExcelTool
                     }
                     if (page.IsLegal())
                     {
-                        DictPages[page.Name] = page;
+                        CDictPages[page.Name] = page;
 
                         if (!DictFilePages.TryGetValue(NameFile, out var filepages))
                         {
