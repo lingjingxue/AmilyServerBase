@@ -29,7 +29,7 @@ namespace ExcelTool
         {
             Control.CheckForIllegalCrossThreadCalls = false;
 
-            label2.Text = "";
+            toolStripStatusLabel1.Text = "";
 
             PathCurrent = Directory.GetCurrentDirectory();
             PathCurrent = XGlobal.GetParentFolder(PathCurrent);
@@ -48,8 +48,8 @@ namespace ExcelTool
             comboBox1.Items.Add("LangKo");
             comboBox1.SelectedIndex = 0;
 
-            FlushClient fc = new FlushClient(ThreadFunction);
-            fc.BeginInvoke(null, null);
+            //FlushClient fc = new FlushClient(ThreadFunction);
+            //fc.BeginInvoke(null, null);
         }
         public void MessageBoxShow(string text, string caption, MessageBoxButtons buttons, MessageBoxIcon icon)
         {
@@ -183,21 +183,24 @@ namespace ExcelTool
 
         }
 
-        public int progressBar1Value = 0;
-        public int progressBar1Max = 0;
+        public static int progressBar1Value = 0;
+        public static int progressBar1Max = 0;
         public int progressBar1ValueAdd(int v = 1)
         {
-            progressBar1Value += v; progressBar1Value = Math.Min(progressBar1Value, progressBar1Max); return progressBar1Value;
+            progressBar1Value += v;
+            progressBar1Value = Math.Min(progressBar1Value, progressBar1Max);
+            toolStripProgressBar1.Value = progressBar1Value;
+            return progressBar1Value;
         }
-        private delegate void FlushClient();//代理 
-        private void ThreadFunction()
-        {
-            while (true)
-            {
-                progressBar1.Value = progressBar1Value;
-                Thread.Sleep(100);
-            }
-        }
+        //private delegate void FlushClient();//代理 
+        //private void ThreadFunction()
+        //{
+        //    while (true)
+        //    {
+        //        //toolStripProgressBar1.Value = progressBar1Value;
+        //        //Thread.Sleep(100);
+        //    }
+        //}
 
         public static Stopwatch BenchmarkStopwatch;
 
@@ -212,9 +215,9 @@ namespace ExcelTool
         {
             BenchmarkStopwatch = Stopwatch.StartNew();
 
-            progressBar1Value = 2;
-            progressBar1Max = DictFiles.Count + 12;
-            progressBar1.Maximum = progressBar1Max;
+            progressBar1Value = 0;
+            progressBar1Max = DictFiles.Count;
+            toolStripProgressBar1.Maximum = progressBar1Max;
 
             //枚举表
             ReadEnums();
@@ -295,11 +298,13 @@ namespace ExcelTool
             progressBar1Value = progressBar1Max;
 
             BenchmarkStopwatch.Stop();
-            label2.Text = $"耗时 {BenchmarkStopwatch.ElapsedMilliseconds} 毫秒";
+            toolStripStatusLabel1.Text = $"耗时 {BenchmarkStopwatch.ElapsedMilliseconds} 毫秒";
 
             Thread.Sleep(1000);
             MessageBoxShow($"导出完成！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             SetEnabled(true);
+
+            progressBar1ValueAdd(0);
         }
 
         public void ReadFile(XFileInfo fileinfo)
