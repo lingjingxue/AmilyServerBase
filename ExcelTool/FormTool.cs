@@ -253,8 +253,12 @@ namespace ExcelTool
                 读取完成 = DictFiles.Values.All(it => it.Read);
                 if (读取完成)
                 {
-                    DictDictEnums = new Dictionary<string, Dictionary<string, string>>(CDictDictEnums);
-                    DictPages = new Dictionary<string, PageInfo>(CDictPages);
+                    //DictDictEnums = new Dictionary<string, Dictionary<string, string>>(CDictDictEnums);
+                    //DictPages = new Dictionary<string, PageInfo>(CDictPages);
+
+                    DictDictEnums = (from it in CDictDictEnums orderby it.Key ascending select it).ToDictionary(it=>it.Key, it => it.Value);
+                    DictPages = (from it in CDictPages orderby it.Key ascending select it).ToDictionary(it=>it.Key, it => it.Value);
+
                     TransferOutput();
                 }
                 Thread.Sleep(200);
