@@ -53,11 +53,12 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(5, 3);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.button1.Name = "button1";
             this.tableLayoutPanel3.SetRowSpan(this.button1, 3);
-            this.button1.Size = new System.Drawing.Size(110, 108);
+            this.button1.Size = new System.Drawing.Size(110, 114);
             this.button1.TabIndex = 0;
             this.button1.Text = "获取列表";
             this.button1.UseVisualStyleBackColor = false;
@@ -149,11 +150,12 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Lime;
+            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button7.Location = new System.Drawing.Point(245, 3);
             this.button7.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.button7.Name = "button7";
             this.tableLayoutPanel3.SetRowSpan(this.button7, 3);
-            this.button7.Size = new System.Drawing.Size(110, 108);
+            this.button7.Size = new System.Drawing.Size(110, 114);
             this.button7.TabIndex = 24;
             this.button7.Text = "开始导出(快速)";
             this.button7.UseVisualStyleBackColor = false;
@@ -225,11 +227,12 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Location = new System.Drawing.Point(125, 3);
             this.button2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.button2.Name = "button2";
             this.tableLayoutPanel3.SetRowSpan(this.button2, 3);
-            this.button2.Size = new System.Drawing.Size(110, 108);
+            this.button2.Size = new System.Drawing.Size(110, 114);
             this.button2.TabIndex = 1;
             this.button2.Text = "开始导出";
             this.button2.UseVisualStyleBackColor = false;
