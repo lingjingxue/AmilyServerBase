@@ -140,7 +140,7 @@ namespace ToolExcel
         private void SetEnabled(bool value = true)
         {
         }
-        bool 使用多线程 = true;
+        bool 使用多线程 = false;
         public void 开始导出()
         {
             if (DateTime.Now >= new DateTime(2020, 7, 1))
@@ -554,11 +554,6 @@ namespace ToolExcel
                 }
             }
             fileinfo.Ts = DateTime.Now - time_start;
-            DataGridFile.Dispatcher.BeginInvoke(new Action<System.Windows.Controls.DataGrid>(UpdateDataGrid), DataGridFile);
-        }
-        private void UpdateDataGrid(System.Windows.Controls.DataGrid dg)
-        {
-            dg.Items.Refresh();
         }
 
 
