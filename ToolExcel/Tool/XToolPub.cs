@@ -11,11 +11,17 @@ using NPOI.SS.UserModel;        //NPOI
 using NPOI.XSSF.UserModel;      //NPOI
 using System.Threading;
 using static ToolExcel.XGlobal;
+using System.Windows;
 
 namespace ToolExcel
 {
     public static partial class XTool
     {
+        public static void MessageBoxShow(string text, string caption, MessageBoxButton buttons = MessageBoxButton.OK, MessageBoxImage icon = MessageBoxImage.Error)
+        {
+            FTool.MessageBoxShow(text, caption, buttons, icon);
+        }
+
         public static void GetFileList(string path)
         {
             if (Directory.Exists(path))

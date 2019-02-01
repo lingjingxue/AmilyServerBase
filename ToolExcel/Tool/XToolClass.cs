@@ -36,11 +36,11 @@ namespace ToolExcel
                     {
                         continue;
                     }
-                    if (nn.TypeServer[iii] == "")
+                    string tp = nn.TypeServer[iii];
+                    if (tp == "")
                     {
                         continue;
                     }
-                    string tp = nn.TypeServer[iii];
                     switch (tp)
                     {
                         case "List<string>":
@@ -56,7 +56,7 @@ namespace ToolExcel
                             sb.Append($"\t\tpublic {tp} {nn.Head[iii]} = new {tp}(); //{nn.HeadC[iii]}\r\n");
                             break;
                         default:
-                            sb.Append($"\t\tpublic {nn.TypeServer[iii]} {nn.Head[iii]}; //{nn.HeadC[iii]}\r\n");
+                            sb.Append($"\t\tpublic {tp} {nn.Head[iii]}; //{nn.HeadC[iii]}\r\n");
                             break;
                     }
                 }
@@ -168,6 +168,10 @@ namespace ToolExcel
                 {
                     continue;
                 }
+                if (nn.Name == "ConfigMailText")
+                {
+
+                }
                 sb.Append($"\tpublic class {nn.Name} : IConfigBase\t// {nn.NameFile}\r\n\t{{\r\n");
                 for (int iii = 0; iii < nn.Head.Count; iii++)
                 {
@@ -176,7 +180,8 @@ namespace ToolExcel
                     {
                         continue;
                     }
-                    if (nn.TypeClient[iii] == "")
+                    string tp = nn.TypeClient[iii];
+                    if (tp == "")
                     {
                         continue;
                     }
@@ -191,7 +196,6 @@ namespace ToolExcel
                             continue;
                         }
                     }
-                    string tp = nn.TypeClient[iii];
                     switch (tp)
                     {
                         case "List<string>":
@@ -207,7 +211,7 @@ namespace ToolExcel
                             sb.Append($"\t\tpublic {tp} {head} = new {tp}(); //{nn.HeadC[iii]}\r\n");
                             break;
                         default:
-                            sb.Append($"\t\tpublic {nn.TypeClient[iii]} {head}; //{nn.HeadC[iii]}\r\n");
+                            sb.Append($"\t\tpublic {tp} {head}; //{nn.HeadC[iii]}\r\n");
                             break;
                     }
                 }

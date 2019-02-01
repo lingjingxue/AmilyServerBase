@@ -9,7 +9,7 @@
     <Grid>
         <Grid Height="100" Margin="0,0,0,0" VerticalAlignment="Top">
             <Button x:Name="ButtonGetList" Content="获取列表" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="100" FontSize="20" Click="ButtonGetList_Click"/>
-            <Button x:Name="ButtonExportAll" Content="全部导出" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="100" Margin="100,0,0,0" FontSize="20"/>
+            <Button x:Name="ButtonExportAll" Content="全部导出" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="100" Margin="100,0,0,0" FontSize="20" Click="ButtonExportAll_Click"/>
             <Label Content="本地化语言" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" Height="50" Width="200" FontSize="20" VerticalContentAlignment="Center"/>
             <ComboBox x:Name="ComboBoxLang" HorizontalAlignment="Left" Margin="200,50,0,0" VerticalAlignment="Top" Width="200" Height="50" FontSize="20" VerticalContentAlignment="Center"/>
             <Button x:Name="ButtonPathExcel" Content="选择目录Excel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="50" FontSize="20" Margin="400,0,0,0" Click="ButtonPathExcel_Click"/>
@@ -17,7 +17,7 @@
             <TextBox x:Name="TextBoxExcel" Height="50" Margin="600,0,0,0" TextWrapping="Wrap" Text="321321" VerticalAlignment="Top" FontSize="20" IsReadOnly="True" VerticalContentAlignment="Center"/>
             <TextBox x:Name="TextBoxOutput" Height="50" Margin="600,50,0,0" Text="32312" VerticalAlignment="Top" FontSize="20" IsReadOnly="True" TextWrapping="Wrap" VerticalContentAlignment="Center"/>
         </Grid>
-        <DataGrid x:Name="DataGridFile" Margin="0,100,0,0" CanUserAddRows="False" AutoGenerateColumns="False">
+        <DataGrid x:Name="DataGridFile" Margin="0,140,0,0" CanUserAddRows="False" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ClipboardContentBinding="{x:Null}" Header="文件" IsReadOnly="True"/>
                 <DataGridTextColumn Binding="{Binding Ts, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ClipboardContentBinding="{x:Null}" Header="导出耗时" IsReadOnly="True" Width="200"/>
@@ -30,5 +30,6 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
+        <ProgressBar x:Name="ProgressBarAll" Margin="0,100,0,0" VerticalAlignment="Top" Height="40"/>
     </Grid>
 </Window>

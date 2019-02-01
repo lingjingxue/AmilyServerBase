@@ -75,19 +75,19 @@ namespace ToolExcel
                             }
                             if (DictList.ContainsKey(enumK))
                             {
-                                XTool.FTool.MessageBoxShow($"重复的枚举表Key {DictKey} {enumK}", "提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                                MessageBoxShow($"重复的枚举表Key {DictKey} {enumK}", "提示");
                                 continue;
                             }
                             if (DictList.ContainsKey(enumV))
                             {
-                                XTool.FTool.MessageBoxShow($"重复的枚举表Value {DictKey} {enumV}", "提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                                MessageBoxShow($"重复的枚举表Value {DictKey} {enumV}", "提示");
                                 continue;
                             }
                             DictList[enumK] = enumV;
                         }
                         if (CDictDictEnums.ContainsKey(DictKey))
                         {
-                            XTool.FTool.MessageBoxShow($"重复的枚举表类型 {DictKey}", "提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                            MessageBoxShow($"重复的枚举表类型 {DictKey}", "提示");
                         }
                         else
                         {
