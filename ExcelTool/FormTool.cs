@@ -19,7 +19,8 @@ namespace ExcelTool
 {
     public partial class FormTool : Form
     {
-        
+        bool 允许快速导出 = false;
+
         public FormTool()
         {
             InitializeComponent();
@@ -28,6 +29,9 @@ namespace ExcelTool
         private void FormTool_Load(object sender, EventArgs e)
         {
             Control.CheckForIllegalCrossThreadCalls = false;
+
+            button7.Enabled = 允许快速导出;
+            button7.Visible = 允许快速导出;
 
             toolStripStatusLabel1.Text = "";
 

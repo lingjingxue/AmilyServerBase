@@ -25,10 +25,6 @@ namespace SuperSocket.SocketLuanr
             var serConfig = new ServerConfig();
             serConfig.Port = port;
             serConfig.TextEncoding = encoding;
-            serConfig.ReceiveBufferSize = 409600;
-            serConfig.SendBufferSize = 409600;
-            serConfig.MaxRequestLength = 409600;
-            serConfig.MaxConnectionNumber = 4096;
             serConfig.Mode = mode;
 
             return serConfig;
