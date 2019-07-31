@@ -118,7 +118,10 @@ namespace ExcelTool
         {
             return text == FTool.GetLang;
         }
+
+
         
+
 
     }
 }

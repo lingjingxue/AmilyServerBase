@@ -5,8 +5,16 @@
 		<Name>账号长度最小</Name>
 		<Desc>账号长度最小</Desc>
 		<Value>6</Value>
+		<GlobalId>1</GlobalId>
+		<Name>账号长度最小</Name>
+		<Desc>账号长度最小</Desc>
+		<Value>6</Value>
 	</Node>
 	<Node>
+		<GlobalId>2</GlobalId>
+		<Name>账号长度最大</Name>
+		<Desc>账号长度最大</Desc>
+		<Value>12</Value>
 		<GlobalId>2</GlobalId>
 		<Name>账号长度最大</Name>
 		<Desc>账号长度最大</Desc>
@@ -17,8 +25,16 @@
 		<Name>密码长度最小</Name>
 		<Desc>密码长度最小</Desc>
 		<Value>6</Value>
+		<GlobalId>3</GlobalId>
+		<Name>密码长度最小</Name>
+		<Desc>密码长度最小</Desc>
+		<Value>6</Value>
 	</Node>
 	<Node>
+		<GlobalId>4</GlobalId>
+		<Name>密码长度最大</Name>
+		<Desc>密码长度最大</Desc>
+		<Value>12</Value>
 		<GlobalId>4</GlobalId>
 		<Name>密码长度最大</Name>
 		<Desc>密码长度最大</Desc>
@@ -29,8 +45,16 @@
 		<Name>昵称长度最小</Name>
 		<Desc>昵称长度最小</Desc>
 		<Value>2</Value>
+		<GlobalId>5</GlobalId>
+		<Name>昵称长度最小</Name>
+		<Desc>昵称长度最小</Desc>
+		<Value>2</Value>
 	</Node>
 	<Node>
+		<GlobalId>6</GlobalId>
+		<Name>昵称长度最大</Name>
+		<Desc>昵称长度最大</Desc>
+		<Value>6</Value>
 		<GlobalId>6</GlobalId>
 		<Name>昵称长度最大</Name>
 		<Desc>昵称长度最大</Desc>
@@ -41,8 +65,16 @@
 		<Name>0</Name>
 		<Desc>0</Desc>
 		<Value>0</Value>
+		<GlobalId>7</GlobalId>
+		<Name>0</Name>
+		<Desc>0</Desc>
+		<Value>0</Value>
 	</Node>
 	<Node>
+		<GlobalId>8</GlobalId>
+		<Name>默认英雄列表</Name>
+		<Desc>默认英雄列表</Desc>
+		<Value>101001|101002|101003|101004|101005|102001|102002|102003|102004|102005|102006|102007|102008|102009|102010</Value>
 		<GlobalId>8</GlobalId>
 		<Name>默认英雄列表</Name>
 		<Desc>默认英雄列表</Desc>
@@ -53,8 +85,16 @@
 		<Name>0</Name>
 		<Desc>0</Desc>
 		<Value>0</Value>
+		<GlobalId>9</GlobalId>
+		<Name>0</Name>
+		<Desc>0</Desc>
+		<Value>0</Value>
 	</Node>
 	<Node>
+		<GlobalId>10</GlobalId>
+		<Name>最大突破等级</Name>
+		<Desc>最大突破等级，暂定为9</Desc>
+		<Value>9</Value>
 		<GlobalId>10</GlobalId>
 		<Name>最大突破等级</Name>
 		<Desc>最大突破等级，暂定为9</Desc>
@@ -65,8 +105,16 @@
 		<Name>最大星级</Name>
 		<Desc>最大星级，暂定为6</Desc>
 		<Value>6</Value>
+		<GlobalId>11</GlobalId>
+		<Name>最大星级</Name>
+		<Desc>最大星级，暂定为6</Desc>
+		<Value>6</Value>
 	</Node>
 	<Node>
+		<GlobalId>12</GlobalId>
+		<Name>最大重铸等级</Name>
+		<Desc>最大重铸等级，暂定为9</Desc>
+		<Value>9</Value>
 		<GlobalId>12</GlobalId>
 		<Name>最大重铸等级</Name>
 		<Desc>最大重铸等级，暂定为9</Desc>
@@ -77,8 +125,16 @@
 		<Name>0</Name>
 		<Desc>0</Desc>
 		<Value>0</Value>
+		<GlobalId>13</GlobalId>
+		<Name>0</Name>
+		<Desc>0</Desc>
+		<Value>0</Value>
 	</Node>
 	<Node>
+		<GlobalId>14</GlobalId>
+		<Name>防御系数</Name>
+		<Desc>暂定为100</Desc>
+		<Value>100</Value>
 		<GlobalId>14</GlobalId>
 		<Name>防御系数</Name>
 		<Desc>暂定为100</Desc>
@@ -89,8 +145,16 @@
 		<Name>闪避系数</Name>
 		<Desc>暂定为100</Desc>
 		<Value>100</Value>
+		<GlobalId>15</GlobalId>
+		<Name>闪避系数</Name>
+		<Desc>暂定为100</Desc>
+		<Value>100</Value>
 	</Node>
 	<Node>
+		<GlobalId>16</GlobalId>
+		<Name>王者系数</Name>
+		<Desc>暂定为0.01</Desc>
+		<Value>0.01</Value>
 		<GlobalId>16</GlobalId>
 		<Name>王者系数</Name>
 		<Desc>暂定为0.01</Desc>
@@ -101,8 +165,16 @@
 		<Name>普攻系数1</Name>
 		<Desc>暂定为0.2</Desc>
 		<Value>0.2</Value>
+		<GlobalId>17</GlobalId>
+		<Name>普攻系数1</Name>
+		<Desc>暂定为0.2</Desc>
+		<Value>0.2</Value>
 	</Node>
 	<Node>
+		<GlobalId>18</GlobalId>
+		<Name>普攻系数2</Name>
+		<Desc>暂定为0.1</Desc>
+		<Value>0.1</Value>
 		<GlobalId>18</GlobalId>
 		<Name>普攻系数2</Name>
 		<Desc>暂定为0.1</Desc>
@@ -113,8 +185,16 @@
 		<Name>先攻增加暴击伤害系数</Name>
 		<Desc>暂定为0.005</Desc>
 		<Value>0.005</Value>
+		<GlobalId>19</GlobalId>
+		<Name>先攻增加暴击伤害系数</Name>
+		<Desc>暂定为0.005</Desc>
+		<Value>0.005</Value>
 	</Node>
 	<Node>
+		<GlobalId>20</GlobalId>
+		<Name>闪避增加恢复效果系数</Name>
+		<Desc>暂定为0.005</Desc>
+		<Value>0.005</Value>
 		<GlobalId>20</GlobalId>
 		<Name>闪避增加恢复效果系数</Name>
 		<Desc>暂定为0.005</Desc>
@@ -125,8 +205,16 @@
 		<Name>最小伤害值</Name>
 		<Desc>暂定为1</Desc>
 		<Value>1</Value>
+		<GlobalId>21</GlobalId>
+		<Name>最小伤害值</Name>
+		<Desc>暂定为1</Desc>
+		<Value>1</Value>
 	</Node>
 	<Node>
+		<GlobalId>22</GlobalId>
+		<Name>0</Name>
+		<Desc>0</Desc>
+		<Value>0</Value>
 		<GlobalId>22</GlobalId>
 		<Name>0</Name>
 		<Desc>0</Desc>
@@ -137,8 +225,16 @@
 		<Name>抽卡积分上限</Name>
 		<Desc>0</Desc>
 		<Value>1000</Value>
+		<GlobalId>23</GlobalId>
+		<Name>抽卡积分上限</Name>
+		<Desc>0</Desc>
+		<Value>1000</Value>
 	</Node>
 	<Node>
+		<GlobalId>24</GlobalId>
+		<Name>抽卡积分赠送道具</Name>
+		<Desc>0</Desc>
+		<Value>7|219901|1</Value>
 		<GlobalId>24</GlobalId>
 		<Name>抽卡积分赠送道具</Name>
 		<Desc>0</Desc>

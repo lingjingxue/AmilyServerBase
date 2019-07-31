@@ -5,8 +5,16 @@
 		<LangChs>成功</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>0</ProtocolResult>
+		<LangChs>成功</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>1</ProtocolResult>
+		<LangChs>失败</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>1</ProtocolResult>
 		<LangChs>失败</LangChs>
 		<LangEn>0</LangEn>
@@ -17,8 +25,16 @@
 		<LangChs>异常</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>2</ProtocolResult>
+		<LangChs>异常</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>10</ProtocolResult>
+		<LangChs>服务器异常</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>10</ProtocolResult>
 		<LangChs>服务器异常</LangChs>
 		<LangEn>0</LangEn>
@@ -29,8 +45,16 @@
 		<LangChs>服务器数据库异常</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>11</ProtocolResult>
+		<LangChs>服务器数据库异常</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>12</ProtocolResult>
+		<LangChs>服务器配置文件异常</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>12</ProtocolResult>
 		<LangChs>服务器配置文件异常</LangChs>
 		<LangEn>0</LangEn>
@@ -41,8 +65,16 @@
 		<LangChs>游戏服务器未开启</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>13</ProtocolResult>
+		<LangChs>游戏服务器未开启</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>14</ProtocolResult>
+		<LangChs>平台数据库异常</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>14</ProtocolResult>
 		<LangChs>平台数据库异常</LangChs>
 		<LangEn>0</LangEn>
@@ -53,8 +85,16 @@
 		<LangChs>平台账号不存在</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>15</ProtocolResult>
+		<LangChs>平台账号不存在</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>16</ProtocolResult>
+		<LangChs>错误的平台参数</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>16</ProtocolResult>
 		<LangChs>错误的平台参数</LangChs>
 		<LangEn>0</LangEn>
@@ -65,8 +105,16 @@
 		<LangChs>平台类型错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>17</ProtocolResult>
+		<LangChs>平台类型错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>18</ProtocolResult>
+		<LangChs>平台验证失败</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>18</ProtocolResult>
 		<LangChs>平台验证失败</LangChs>
 		<LangEn>0</LangEn>
@@ -77,8 +125,16 @@
 		<LangChs>平台登录失败</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>19</ProtocolResult>
+		<LangChs>平台登录失败</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>20</ProtocolResult>
+		<LangChs>服务器拥挤</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>20</ProtocolResult>
 		<LangChs>服务器拥挤</LangChs>
 		<LangEn>0</LangEn>
@@ -89,8 +145,16 @@
 		<LangChs>服务器维护中</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>21</ProtocolResult>
+		<LangChs>服务器维护中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>22</ProtocolResult>
+		<LangChs>乱世群雄将在 12月5日10:00开启 敬请期待！</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>22</ProtocolResult>
 		<LangChs>乱世群雄将在 12月5日10:00开启 敬请期待！</LangChs>
 		<LangEn>0</LangEn>
@@ -101,8 +165,16 @@
 		<LangChs>账号被封禁</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>23</ProtocolResult>
+		<LangChs>账号被封禁</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>24</ProtocolResult>
+		<LangChs>玩家被封禁</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>24</ProtocolResult>
 		<LangChs>玩家被封禁</LangChs>
 		<LangEn>0</LangEn>
@@ -113,8 +185,16 @@
 		<LangChs>玩家被禁言</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>25</ProtocolResult>
+		<LangChs>玩家被禁言</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>26</ProtocolResult>
+		<LangChs>游戏版本不一致</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>26</ProtocolResult>
 		<LangChs>游戏版本不一致</LangChs>
 		<LangEn>0</LangEn>
@@ -125,8 +205,16 @@
 		<LangChs>服务器数据计算中</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>27</ProtocolResult>
+		<LangChs>服务器数据计算中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>50</ProtocolResult>
+		<LangChs>管理员登陆账号错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>50</ProtocolResult>
 		<LangChs>管理员登陆账号错误</LangChs>
 		<LangEn>0</LangEn>
@@ -137,8 +225,16 @@
 		<LangChs>管理员登陆密码错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>51</ProtocolResult>
+		<LangChs>管理员登陆密码错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>52</ProtocolResult>
+		<LangChs>管理员登陆账号已在线</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>52</ProtocolResult>
 		<LangChs>管理员登陆账号已在线</LangChs>
 		<LangEn>0</LangEn>
@@ -149,8 +245,16 @@
 		<LangChs>请先登录管理员账号</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>53</ProtocolResult>
+		<LangChs>请先登录管理员账号</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>54</ProtocolResult>
+		<LangChs>错误的修改类型</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>54</ProtocolResult>
 		<LangChs>错误的修改类型</LangChs>
 		<LangEn>0</LangEn>
@@ -161,8 +265,16 @@
 		<LangChs>错误的修改参数</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>55</ProtocolResult>
+		<LangChs>错误的修改参数</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>56</ProtocolResult>
+		<LangChs>返回管理员数据错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>56</ProtocolResult>
 		<LangChs>返回管理员数据错误</LangChs>
 		<LangEn>0</LangEn>
@@ -173,8 +285,16 @@
 		<LangChs>玩家不存在</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>57</ProtocolResult>
+		<LangChs>玩家不存在</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>58</ProtocolResult>
+		<LangChs>发送邮件失败</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>58</ProtocolResult>
 		<LangChs>发送邮件失败</LangChs>
 		<LangEn>0</LangEn>
@@ -185,8 +305,16 @@
 		<LangChs>玩家不在线</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>59</ProtocolResult>
+		<LangChs>玩家不在线</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>60</ProtocolResult>
+		<LangChs>修改数据失败</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>60</ProtocolResult>
 		<LangChs>修改数据失败</LangChs>
 		<LangEn>0</LangEn>
@@ -197,8 +325,16 @@
 		<LangChs>调试指令错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>61</ProtocolResult>
+		<LangChs>调试指令错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>70</ProtocolResult>
+		<LangChs>玩家已经被注册</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>70</ProtocolResult>
 		<LangChs>玩家已经被注册</LangChs>
 		<LangEn>0</LangEn>
@@ -209,8 +345,16 @@
 		<LangChs>账号不存在</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>71</ProtocolResult>
+		<LangChs>账号不存在</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>72</ProtocolResult>
+		<LangChs>密码错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>72</ProtocolResult>
 		<LangChs>密码错误</LangChs>
 		<LangEn>0</LangEn>
@@ -221,8 +365,16 @@
 		<LangChs>验证错误请重新登陆</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>73</ProtocolResult>
+		<LangChs>验证错误请重新登陆</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>74</ProtocolResult>
+		<LangChs>无玩家数据请创建角色</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>74</ProtocolResult>
 		<LangChs>无玩家数据请创建角色</LangChs>
 		<LangEn>0</LangEn>
@@ -233,8 +385,16 @@
 		<LangChs>名字已经被使用</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>75</ProtocolResult>
+		<LangChs>名字已经被使用</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>76</ProtocolResult>
+		<LangChs>账号长度不符</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>76</ProtocolResult>
 		<LangChs>账号长度不符</LangChs>
 		<LangEn>0</LangEn>
@@ -245,8 +405,16 @@
 		<LangChs>密码长度不符</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>77</ProtocolResult>
+		<LangChs>密码长度不符</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>78</ProtocolResult>
+		<LangChs>名字长度不符</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>78</ProtocolResult>
 		<LangChs>名字长度不符</LangChs>
 		<LangEn>0</LangEn>
@@ -257,8 +425,16 @@
 		<LangChs>名字长度太短</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>79</ProtocolResult>
+		<LangChs>名字长度太短</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>80</ProtocolResult>
+		<LangChs>名字长度太长</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>80</ProtocolResult>
 		<LangChs>名字长度太长</LangChs>
 		<LangEn>0</LangEn>
@@ -269,8 +445,16 @@
 		<LangChs>名字含有不合法或者不雅字符</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>81</ProtocolResult>
+		<LangChs>名字含有不合法或者不雅字符</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>82</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>82</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -281,8 +465,16 @@
 		<LangChs>类型错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>83</ProtocolResult>
+		<LangChs>类型错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>84</ProtocolResult>
+		<LangChs>文本为空</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>84</ProtocolResult>
 		<LangChs>文本为空</LangChs>
 		<LangEn>0</LangEn>
@@ -293,8 +485,16 @@
 		<LangChs>文本太长</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>85</ProtocolResult>
+		<LangChs>文本太长</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>86</ProtocolResult>
+		<LangChs>数据为空</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>86</ProtocolResult>
 		<LangChs>数据为空</LangChs>
 		<LangEn>0</LangEn>
@@ -305,8 +505,16 @@
 		<LangChs>图片数据太大</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>87</ProtocolResult>
+		<LangChs>图片数据太大</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>88</ProtocolResult>
+		<LangChs>语音数据太大</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>88</ProtocolResult>
 		<LangChs>语音数据太大</LangChs>
 		<LangEn>0</LangEn>
@@ -317,8 +525,16 @@
 		<LangChs>列表为空</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>89</ProtocolResult>
+		<LangChs>列表为空</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>100</ProtocolResult>
+		<LangChs>ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>100</ProtocolResult>
 		<LangChs>ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -329,8 +545,16 @@
 		<LangChs>配置ID错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>101</ProtocolResult>
+		<LangChs>配置ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>102</ProtocolResult>
+		<LangChs>对象ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>102</ProtocolResult>
 		<LangChs>对象ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -341,8 +565,16 @@
 		<LangChs>府ID错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>103</ProtocolResult>
+		<LangChs>府ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>110</ProtocolResult>
+		<LangChs>数量不合法</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>110</ProtocolResult>
 		<LangChs>数量不合法</LangChs>
 		<LangEn>0</LangEn>
@@ -353,8 +585,16 @@
 		<LangChs>数据类型错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>111</ProtocolResult>
+		<LangChs>数据类型错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>112</ProtocolResult>
+		<LangChs>您的等级不足!</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>112</ProtocolResult>
 		<LangChs>您的等级不足!</LangChs>
 		<LangEn>0</LangEn>
@@ -365,8 +605,16 @@
 		<LangChs>体力不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>113</ProtocolResult>
+		<LangChs>体力不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>114</ProtocolResult>
+		<LangChs>您的元宝不足!</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>114</ProtocolResult>
 		<LangChs>您的元宝不足!</LangChs>
 		<LangEn>0</LangEn>
@@ -377,8 +625,16 @@
 		<LangChs>金币不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>115</ProtocolResult>
+		<LangChs>金币不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>116</ProtocolResult>
+		<LangChs>银两不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>116</ProtocolResult>
 		<LangChs>银两不足</LangChs>
 		<LangEn>0</LangEn>
@@ -389,8 +645,16 @@
 		<LangChs>您的粮草不足!</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>117</ProtocolResult>
+		<LangChs>您的粮草不足!</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>118</ProtocolResult>
+		<LangChs>木材不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>118</ProtocolResult>
 		<LangChs>木材不足</LangChs>
 		<LangEn>0</LangEn>
@@ -401,8 +665,16 @@
 		<LangChs>您的铁矿不足!</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>119</ProtocolResult>
+		<LangChs>您的铁矿不足!</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>120</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>120</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -413,8 +685,16 @@
 		<LangChs>材料不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>121</ProtocolResult>
+		<LangChs>材料不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>122</ProtocolResult>
+		<LangChs>道具不足!</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>122</ProtocolResult>
 		<LangChs>道具不足!</LangChs>
 		<LangEn>0</LangEn>
@@ -425,8 +705,16 @@
 		<LangChs>个人贡献不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>123</ProtocolResult>
+		<LangChs>个人贡献不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>124</ProtocolResult>
+		<LangChs>您的活跃状态未达到申请条件</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>124</ProtocolResult>
 		<LangChs>您的活跃状态未达到申请条件</LangChs>
 		<LangEn>0</LangEn>
@@ -437,8 +725,16 @@
 		<LangChs>合成材料不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>125</ProtocolResult>
+		<LangChs>合成材料不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>126</ProtocolResult>
+		<LangChs>挑战次数不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>126</ProtocolResult>
 		<LangChs>挑战次数不足</LangChs>
 		<LangEn>0</LangEn>
@@ -449,8 +745,16 @@
 		<LangChs>势力资金不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>127</ProtocolResult>
+		<LangChs>势力资金不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>128</ProtocolResult>
+		<LangChs>武神积分不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>128</ProtocolResult>
 		<LangChs>武神积分不足</LangChs>
 		<LangEn>0</LangEn>
@@ -461,8 +765,16 @@
 		<LangChs>出征令不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>129</ProtocolResult>
+		<LangChs>出征令不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>130</ProtocolResult>
+		<LangChs>制作材料不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>130</ProtocolResult>
 		<LangChs>制作材料不足</LangChs>
 		<LangEn>0</LangEn>
@@ -473,8 +785,16 @@
 		<LangChs>声望不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>131</ProtocolResult>
+		<LangChs>声望不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>200</ProtocolResult>
+		<LangChs>体力已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>200</ProtocolResult>
 		<LangChs>体力已满</LangChs>
 		<LangEn>0</LangEn>
@@ -485,8 +805,16 @@
 		<LangChs>出征令已满</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>201</ProtocolResult>
+		<LangChs>出征令已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>202</ProtocolResult>
+		<LangChs>仓库粮食已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>202</ProtocolResult>
 		<LangChs>仓库粮食已满</LangChs>
 		<LangEn>0</LangEn>
@@ -497,8 +825,16 @@
 		<LangChs>仓库木头已满</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>203</ProtocolResult>
+		<LangChs>仓库木头已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>204</ProtocolResult>
+		<LangChs>仓库铁矿已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>204</ProtocolResult>
 		<LangChs>仓库铁矿已满</LangChs>
 		<LangEn>0</LangEn>
@@ -509,8 +845,16 @@
 		<LangChs>拥有装备数量已满</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>205</ProtocolResult>
+		<LangChs>拥有装备数量已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>206</ProtocolResult>
+		<LangChs>拥有武将数量已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>206</ProtocolResult>
 		<LangChs>拥有武将数量已满</LangChs>
 		<LangEn>0</LangEn>
@@ -521,8 +865,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>207</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>208</ProtocolResult>
+		<LangChs>俸禄已领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>208</ProtocolResult>
 		<LangChs>俸禄已领取</LangChs>
 		<LangEn>0</LangEn>
@@ -533,8 +885,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>209</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>210</ProtocolResult>
+		<LangChs>不可卖店</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>210</ProtocolResult>
 		<LangChs>不可卖店</LangChs>
 		<LangEn>0</LangEn>
@@ -545,8 +905,16 @@
 		<LangChs>不可交易</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>211</ProtocolResult>
+		<LangChs>不可交易</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>212</ProtocolResult>
+		<LangChs>不可使用</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>212</ProtocolResult>
 		<LangChs>不可使用</LangChs>
 		<LangEn>0</LangEn>
@@ -557,8 +925,16 @@
 		<LangChs>不可批量使用</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>213</ProtocolResult>
+		<LangChs>不可批量使用</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>214</ProtocolResult>
+		<LangChs>您没有该权限!</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>214</ProtocolResult>
 		<LangChs>您没有该权限!</LangChs>
 		<LangEn>0</LangEn>
@@ -569,8 +945,16 @@
 		<LangChs>CD未冷却</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>215</ProtocolResult>
+		<LangChs>CD未冷却</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>216</ProtocolResult>
+		<LangChs>CD已冷却</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>216</ProtocolResult>
 		<LangChs>CD已冷却</LangChs>
 		<LangEn>0</LangEn>
@@ -581,8 +965,16 @@
 		<LangChs>使用要求加入势力</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>217</ProtocolResult>
+		<LangChs>使用要求加入势力</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>218</ProtocolResult>
+		<LangChs>使用要求势力拥有城池</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>218</ProtocolResult>
 		<LangChs>使用要求势力拥有城池</LangChs>
 		<LangEn>0</LangEn>
@@ -593,8 +985,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>219</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>220</ProtocolResult>
+		<LangChs>验证错误战斗识别码</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>220</ProtocolResult>
 		<LangChs>验证错误战斗识别码</LangChs>
 		<LangEn>0</LangEn>
@@ -605,8 +1005,16 @@
 		<LangChs>验证错误战斗结果</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>221</ProtocolResult>
+		<LangChs>验证错误战斗结果</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>222</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>222</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -617,8 +1025,16 @@
 		<LangChs>关卡尚未开启</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>223</ProtocolResult>
+		<LangChs>关卡尚未开启</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>224</ProtocolResult>
+		<LangChs>关卡次数不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>224</ProtocolResult>
 		<LangChs>关卡次数不足</LangChs>
 		<LangEn>0</LangEn>
@@ -629,8 +1045,16 @@
 		<LangChs>通关三星以后才能扫荡</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>225</ProtocolResult>
+		<LangChs>通关三星以后才能扫荡</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>226</ProtocolResult>
+		<LangChs>已通过此关卡</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>226</ProtocolResult>
 		<LangChs>已通过此关卡</LangChs>
 		<LangEn>0</LangEn>
@@ -641,8 +1065,16 @@
 		<LangChs>尚未通过此关卡</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>227</ProtocolResult>
+		<LangChs>尚未通过此关卡</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>228</ProtocolResult>
+		<LangChs>事件状态不匹配</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>228</ProtocolResult>
 		<LangChs>事件状态不匹配</LangChs>
 		<LangEn>0</LangEn>
@@ -653,8 +1085,16 @@
 		<LangChs>军务积分不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>229</ProtocolResult>
+		<LangChs>军务积分不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>230</ProtocolResult>
+		<LangChs>重置材料不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>230</ProtocolResult>
 		<LangChs>重置材料不足</LangChs>
 		<LangEn>0</LangEn>
@@ -665,8 +1105,16 @@
 		<LangChs>不需要重置次数</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>231</ProtocolResult>
+		<LangChs>不需要重置次数</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>232</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>232</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -677,8 +1125,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>233</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>234</ProtocolResult>
+		<LangChs>没有这封邮件</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>234</ProtocolResult>
 		<LangChs>没有这封邮件</LangChs>
 		<LangEn>0</LangEn>
@@ -689,8 +1145,16 @@
 		<LangChs>没有附件</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>235</ProtocolResult>
+		<LangChs>没有附件</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>236</ProtocolResult>
+		<LangChs>附件已领取过</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>236</ProtocolResult>
 		<LangChs>附件已领取过</LangChs>
 		<LangEn>0</LangEn>
@@ -701,8 +1165,16 @@
 		<LangChs>错误的邮件类型</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>237</ProtocolResult>
+		<LangChs>错误的邮件类型</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>238</ProtocolResult>
+		<LangChs>只有刺史以上职位才能发送郡邮件</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>238</ProtocolResult>
 		<LangChs>只有刺史以上职位才能发送郡邮件</LangChs>
 		<LangEn>0</LangEn>
@@ -713,8 +1185,16 @@
 		<LangChs>只有知府以上职位才能发送府邮件</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>239</ProtocolResult>
+		<LangChs>只有知府以上职位才能发送府邮件</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>240</ProtocolResult>
+		<LangChs>错误的郡对象</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>240</ProtocolResult>
 		<LangChs>错误的郡对象</LangChs>
 		<LangEn>0</LangEn>
@@ -725,8 +1205,16 @@
 		<LangChs>错误的府对象</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>241</ProtocolResult>
+		<LangChs>错误的府对象</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>242</ProtocolResult>
+		<LangChs>不能给自己发邮件</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>242</ProtocolResult>
 		<LangChs>不能给自己发邮件</LangChs>
 		<LangEn>0</LangEn>
@@ -737,8 +1225,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>243</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>244</ProtocolResult>
+		<LangChs>聊天发送太快</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>244</ProtocolResult>
 		<LangChs>聊天发送太快</LangChs>
 		<LangEn>0</LangEn>
@@ -749,8 +1245,16 @@
 		<LangChs>聊天频道错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>245</ProtocolResult>
+		<LangChs>聊天频道错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>246</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>246</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -761,8 +1265,16 @@
 		<LangChs>商城ID错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>247</ProtocolResult>
+		<LangChs>商城ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>248</ProtocolResult>
+		<LangChs>快捷购买ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>248</ProtocolResult>
 		<LangChs>快捷购买ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -773,8 +1285,16 @@
 		<LangChs>已经卖完</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>249</ProtocolResult>
+		<LangChs>已经卖完</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>250</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>250</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -785,8 +1305,16 @@
 		<LangChs>建筑队列已满!</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>251</ProtocolResult>
+		<LangChs>建筑队列已满!</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>252</ProtocolResult>
+		<LangChs>已达到最高等级!</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>252</ProtocolResult>
 		<LangChs>已达到最高等级!</LangChs>
 		<LangEn>0</LangEn>
@@ -797,8 +1325,16 @@
 		<LangChs>建筑升级材料不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>253</ProtocolResult>
+		<LangChs>建筑升级材料不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>254</ProtocolResult>
+		<LangChs>建筑不在建造中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>254</ProtocolResult>
 		<LangChs>建筑不在建造中</LangChs>
 		<LangEn>0</LangEn>
@@ -809,8 +1345,16 @@
 		<LangChs>封地建筑需求玩家等级不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>255</ProtocolResult>
+		<LangChs>封地建筑需求玩家等级不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>256</ProtocolResult>
+		<LangChs>府衙等级不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>256</ProtocolResult>
 		<LangChs>府衙等级不足</LangChs>
 		<LangEn>0</LangEn>
@@ -821,8 +1365,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>257</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>258</ProtocolResult>
+		<LangChs>计策ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>258</ProtocolResult>
 		<LangChs>计策ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -833,8 +1385,16 @@
 		<LangChs>计策学习中</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>259</ProtocolResult>
+		<LangChs>计策学习中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>260</ProtocolResult>
+		<LangChs>计策不在学习中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>260</ProtocolResult>
 		<LangChs>计策不在学习中</LangChs>
 		<LangEn>0</LangEn>
@@ -845,8 +1405,16 @@
 		<LangChs>你已经拥有当前武将栏位数量</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>261</ProtocolResult>
+		<LangChs>你已经拥有当前武将栏位数量</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>262</ProtocolResult>
+		<LangChs>你尚未购买前级武将栏位数量</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>262</ProtocolResult>
 		<LangChs>你尚未购买前级武将栏位数量</LangChs>
 		<LangEn>0</LangEn>
@@ -857,8 +1425,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>263</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>264</ProtocolResult>
+		<LangChs>正在募兵中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>264</ProtocolResult>
 		<LangChs>正在募兵中</LangChs>
 		<LangEn>0</LangEn>
@@ -869,8 +1445,16 @@
 		<LangChs>不在募兵中</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>265</ProtocolResult>
+		<LangChs>不在募兵中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>266</ProtocolResult>
+		<LangChs>募兵已经完成</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>266</ProtocolResult>
 		<LangChs>募兵已经完成</LangChs>
 		<LangEn>0</LangEn>
@@ -881,8 +1465,16 @@
 		<LangChs>募兵数量过少</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>267</ProtocolResult>
+		<LangChs>募兵数量过少</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>268</ProtocolResult>
+		<LangChs>募兵数量过多</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>268</ProtocolResult>
 		<LangChs>募兵数量过多</LangChs>
 		<LangEn>0</LangEn>
@@ -893,8 +1485,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>269</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>270</ProtocolResult>
+		<LangChs>错误的武将ID</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>270</ProtocolResult>
 		<LangChs>错误的武将ID</LangChs>
 		<LangEn>0</LangEn>
@@ -905,8 +1505,16 @@
 		<LangChs>武将锁定中</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>271</ProtocolResult>
+		<LangChs>武将锁定中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>272</ProtocolResult>
+		<LangChs>武将上阵中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>272</ProtocolResult>
 		<LangChs>武将上阵中</LangChs>
 		<LangEn>0</LangEn>
@@ -917,8 +1525,16 @@
 		<LangChs>武将募兵中</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>273</ProtocolResult>
+		<LangChs>武将募兵中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>274</ProtocolResult>
+		<LangChs>武将出征中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>274</ProtocolResult>
 		<LangChs>武将出征中</LangChs>
 		<LangEn>0</LangEn>
@@ -929,8 +1545,16 @@
 		<LangChs>武将进行军务中</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>275</ProtocolResult>
+		<LangChs>武将进行军务中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>276</ProtocolResult>
+		<LangChs>兵力不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>276</ProtocolResult>
 		<LangChs>兵力不足</LangChs>
 		<LangEn>0</LangEn>
@@ -941,8 +1565,16 @@
 		<LangChs>武将身上有装备</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>277</ProtocolResult>
+		<LangChs>武将身上有装备</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>278</ProtocolResult>
+		<LangChs>武将昵称过短</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>278</ProtocolResult>
 		<LangChs>武将昵称过短</LangChs>
 		<LangEn>0</LangEn>
@@ -953,8 +1585,16 @@
 		<LangChs>武将昵称过长</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>279</ProtocolResult>
+		<LangChs>武将昵称过长</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>280</ProtocolResult>
+		<LangChs>上阵武将过多</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>280</ProtocolResult>
 		<LangChs>上阵武将过多</LangChs>
 		<LangEn>0</LangEn>
@@ -965,8 +1605,16 @@
 		<LangChs>武将经验已满</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>281</ProtocolResult>
+		<LangChs>武将经验已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>282</ProtocolResult>
+		<LangChs>武将攻击已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>282</ProtocolResult>
 		<LangChs>武将攻击已满</LangChs>
 		<LangEn>0</LangEn>
@@ -977,8 +1625,16 @@
 		<LangChs>武将防御已满</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>283</ProtocolResult>
+		<LangChs>武将防御已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>284</ProtocolResult>
+		<LangChs>武将攻城已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>284</ProtocolResult>
 		<LangChs>武将攻城已满</LangChs>
 		<LangEn>0</LangEn>
@@ -989,8 +1645,16 @@
 		<LangChs>武将谋略已满</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>285</ProtocolResult>
+		<LangChs>武将谋略已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>286</ProtocolResult>
+		<LangChs>合成武将源不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>286</ProtocolResult>
 		<LangChs>合成武将源不足</LangChs>
 		<LangEn>0</LangEn>
@@ -1001,8 +1665,16 @@
 		<LangChs>武将技能学习失败</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>287</ProtocolResult>
+		<LangChs>武将技能学习失败</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>288</ProtocolResult>
+		<LangChs>相同精英级别才能合成</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>288</ProtocolResult>
 		<LangChs>相同精英级别才能合成</LangChs>
 		<LangEn>0</LangEn>
@@ -1013,8 +1685,16 @@
 		<LangChs>武将兑换活动已过期</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>289</ProtocolResult>
+		<LangChs>武将兑换活动已过期</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>290</ProtocolResult>
+		<LangChs>兑换材料不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>290</ProtocolResult>
 		<LangChs>兑换材料不足</LangChs>
 		<LangEn>0</LangEn>
@@ -1025,8 +1705,16 @@
 		<LangChs>没有可募兵的武将</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>291</ProtocolResult>
+		<LangChs>没有可募兵的武将</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>292</ProtocolResult>
+		<LangChs>武将数量已达到最大值</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>292</ProtocolResult>
 		<LangChs>武将数量已达到最大值</LangChs>
 		<LangEn>0</LangEn>
@@ -1037,8 +1725,16 @@
 		<LangChs>神将无法合成</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>293</ProtocolResult>
+		<LangChs>神将无法合成</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>294</ProtocolResult>
+		<LangChs>武将资质已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>294</ProtocolResult>
 		<LangChs>武将资质已满</LangChs>
 		<LangEn>0</LangEn>
@@ -1049,8 +1745,16 @@
 		<LangChs>武将无法进化</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>295</ProtocolResult>
+		<LangChs>武将无法进化</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>296</ProtocolResult>
+		<LangChs>武将进阶需要更高星级</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>296</ProtocolResult>
 		<LangChs>武将进阶需要更高星级</LangChs>
 		<LangEn>0</LangEn>
@@ -1061,8 +1765,16 @@
 		<LangChs>星级已满</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>297</ProtocolResult>
+		<LangChs>星级已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>298</ProtocolResult>
+		<LangChs>材料武将ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>298</ProtocolResult>
 		<LangChs>材料武将ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -1073,8 +1785,16 @@
 		<LangChs>武将星级错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>299</ProtocolResult>
+		<LangChs>武将星级错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>300</ProtocolResult>
+		<LangChs>武将等级达到当前星级的等级上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>300</ProtocolResult>
 		<LangChs>武将等级达到当前星级的等级上限</LangChs>
 		<LangEn>0</LangEn>
@@ -1085,8 +1805,16 @@
 		<LangChs>武将正在驻守资源点</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>301</ProtocolResult>
+		<LangChs>武将正在驻守资源点</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>302</ProtocolResult>
+		<LangChs>武将重复布阵</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>302</ProtocolResult>
 		<LangChs>武将重复布阵</LangChs>
 		<LangEn>0</LangEn>
@@ -1097,8 +1825,16 @@
 		<LangChs>布阵位置错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>303</ProtocolResult>
+		<LangChs>布阵位置错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>304</ProtocolResult>
+		<LangChs>布阵类型错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>304</ProtocolResult>
 		<LangChs>布阵类型错误</LangChs>
 		<LangEn>0</LangEn>
@@ -1109,8 +1845,16 @@
 		<LangChs>前锋阵容超过上限</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>305</ProtocolResult>
+		<LangChs>前锋阵容超过上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>306</ProtocolResult>
+		<LangChs>援军阵容超过上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>306</ProtocolResult>
 		<LangChs>援军阵容超过上限</LangChs>
 		<LangEn>0</LangEn>
@@ -1121,8 +1865,16 @@
 		<LangChs>阵容编号错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>307</ProtocolResult>
+		<LangChs>阵容编号错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>308</ProtocolResult>
+		<LangChs>材料武将不能上阵</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>308</ProtocolResult>
 		<LangChs>材料武将不能上阵</LangChs>
 		<LangEn>0</LangEn>
@@ -1133,8 +1885,16 @@
 		<LangChs>武将配置ID未找到</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>309</ProtocolResult>
+		<LangChs>武将配置ID未找到</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>310</ProtocolResult>
+		<LangChs>武将征讨匪寇中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>310</ProtocolResult>
 		<LangChs>武将征讨匪寇中</LangChs>
 		<LangEn>0</LangEn>
@@ -1145,8 +1905,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>311</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>312</ProtocolResult>
+		<LangChs>任务尚未完成</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>312</ProtocolResult>
 		<LangChs>任务尚未完成</LangChs>
 		<LangEn>0</LangEn>
@@ -1157,8 +1925,16 @@
 		<LangChs>任务奖励已领取</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>313</ProtocolResult>
+		<LangChs>任务奖励已领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>314</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>314</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1169,8 +1945,16 @@
 		<LangChs>每日任务尚未完成</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>315</ProtocolResult>
+		<LangChs>每日任务尚未完成</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>316</ProtocolResult>
+		<LangChs>每日任务奖励已领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>316</ProtocolResult>
 		<LangChs>每日任务奖励已领取</LangChs>
 		<LangEn>0</LangEn>
@@ -1181,8 +1965,16 @@
 		<LangChs>每日任务活跃度奖励已领完</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>317</ProtocolResult>
+		<LangChs>每日任务活跃度奖励已领完</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>318</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>318</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1193,8 +1985,16 @@
 		<LangChs>错误的排行榜类型</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>319</ProtocolResult>
+		<LangChs>错误的排行榜类型</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>320</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>320</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1205,8 +2005,16 @@
 		<LangChs>交易类型错误.</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>321</ProtocolResult>
+		<LangChs>交易类型错误.</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>322</ProtocolResult>
+		<LangChs>交易方式错误.</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>322</ProtocolResult>
 		<LangChs>交易方式错误.</LangChs>
 		<LangEn>0</LangEn>
@@ -1217,8 +2025,16 @@
 		<LangChs>选取资源订单数目不足,请刷新界面。</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>323</ProtocolResult>
+		<LangChs>选取资源订单数目不足,请刷新界面。</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>324</ProtocolResult>
+		<LangChs>挂单数量太大</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>324</ProtocolResult>
 		<LangChs>挂单数量太大</LangChs>
 		<LangEn>0</LangEn>
@@ -1229,8 +2045,16 @@
 		<LangChs>挂单数量太小</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>325</ProtocolResult>
+		<LangChs>挂单数量太小</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>326</ProtocolResult>
+		<LangChs>挂单数量必须为{0}的倍数</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>326</ProtocolResult>
 		<LangChs>挂单数量必须为{0}的倍数</LangChs>
 		<LangEn>0</LangEn>
@@ -1241,8 +2065,16 @@
 		<LangChs>请输入资源价格</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>327</ProtocolResult>
+		<LangChs>请输入资源价格</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>328</ProtocolResult>
+		<LangChs>单价不能高于{0}分</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>328</ProtocolResult>
 		<LangChs>单价不能高于{0}分</LangChs>
 		<LangEn>0</LangEn>
@@ -1253,8 +2085,16 @@
 		<LangChs>交易数量太小</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>329</ProtocolResult>
+		<LangChs>交易数量太小</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>330</ProtocolResult>
+		<LangChs>挂单资源数目不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>330</ProtocolResult>
 		<LangChs>挂单资源数目不足</LangChs>
 		<LangEn>0</LangEn>
@@ -1265,8 +2105,16 @@
 		<LangChs>交易数量必须为{0}的倍数</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>331</ProtocolResult>
+		<LangChs>交易数量必须为{0}的倍数</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>332</ProtocolResult>
+		<LangChs>只能撤销自己的单子</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>332</ProtocolResult>
 		<LangChs>只能撤销自己的单子</LangChs>
 		<LangEn>0</LangEn>
@@ -1277,8 +2125,16 @@
 		<LangChs>不能买卖自己的交易单</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>333</ProtocolResult>
+		<LangChs>不能买卖自己的交易单</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>334</ProtocolResult>
+		<LangChs>交易单子太多</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>334</ProtocolResult>
 		<LangChs>交易单子太多</LangChs>
 		<LangEn>0</LangEn>
@@ -1289,8 +2145,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>335</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>336</ProtocolResult>
+		<LangChs>您已经学会了此技能!</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>336</ProtocolResult>
 		<LangChs>您已经学会了此技能!</LangChs>
 		<LangEn>0</LangEn>
@@ -1301,8 +2165,16 @@
 		<LangChs>错误的技能ID</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>337</ProtocolResult>
+		<LangChs>错误的技能ID</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>338</ProtocolResult>
+		<LangChs>技能槽未解锁</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>338</ProtocolResult>
 		<LangChs>技能槽未解锁</LangChs>
 		<LangEn>0</LangEn>
@@ -1313,8 +2185,16 @@
 		<LangChs>已装备{0}</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>339</ProtocolResult>
+		<LangChs>已装备{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>340</ProtocolResult>
+		<LangChs>该技能已经达到等级上限!</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>340</ProtocolResult>
 		<LangChs>该技能已经达到等级上限!</LangChs>
 		<LangEn>0</LangEn>
@@ -1325,8 +2205,16 @@
 		<LangChs>技能装备类型错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>341</ProtocolResult>
+		<LangChs>技能装备类型错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>342</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>342</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1337,8 +2225,16 @@
 		<LangChs>错误的装备ID</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>343</ProtocolResult>
+		<LangChs>错误的装备ID</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>344</ProtocolResult>
+		<LangChs>主角只能装备主角类装备</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>344</ProtocolResult>
 		<LangChs>主角只能装备主角类装备</LangChs>
 		<LangEn>0</LangEn>
@@ -1349,8 +2245,16 @@
 		<LangChs>武将只能装备武将类装备</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>345</ProtocolResult>
+		<LangChs>武将只能装备武将类装备</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>346</ProtocolResult>
+		<LangChs>这个位置没有装备</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>346</ProtocolResult>
 		<LangChs>这个位置没有装备</LangChs>
 		<LangEn>0</LangEn>
@@ -1361,8 +2265,16 @@
 		<LangChs>只有特定职业的武将才能装备</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>347</ProtocolResult>
+		<LangChs>只有特定职业的武将才能装备</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>348</ProtocolResult>
+		<LangChs>只有特定的武将才能装备</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>348</ProtocolResult>
 		<LangChs>只有特定的武将才能装备</LangChs>
 		<LangEn>0</LangEn>
@@ -1373,8 +2285,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>349</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>350</ProtocolResult>
+		<LangChs>交易对象错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>350</ProtocolResult>
 		<LangChs>交易对象错误</LangChs>
 		<LangEn>0</LangEn>
@@ -1385,8 +2305,16 @@
 		<LangChs>该物品已下架或已被购买</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>351</ProtocolResult>
+		<LangChs>该物品已下架或已被购买</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>352</ProtocolResult>
+		<LangChs>交易单子已经交易</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>352</ProtocolResult>
 		<LangChs>交易单子已经交易</LangChs>
 		<LangEn>0</LangEn>
@@ -1397,8 +2325,16 @@
 		<LangChs>不是你出售的物品</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>353</ProtocolResult>
+		<LangChs>不是你出售的物品</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>354</ProtocolResult>
+		<LangChs>不能买入自己出售的物品</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>354</ProtocolResult>
 		<LangChs>不能买入自己出售的物品</LangChs>
 		<LangEn>0</LangEn>
@@ -1409,8 +2345,16 @@
 		<LangChs>交易上架数目太大</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>355</ProtocolResult>
+		<LangChs>交易上架数目太大</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>356</ProtocolResult>
+		<LangChs>出售价格太低</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>356</ProtocolResult>
 		<LangChs>出售价格太低</LangChs>
 		<LangEn>0</LangEn>
@@ -1421,8 +2365,16 @@
 		<LangChs>交易所需服务费不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>357</ProtocolResult>
+		<LangChs>交易所需服务费不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>358</ProtocolResult>
+		<LangChs>交易买入所需元宝不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>358</ProtocolResult>
 		<LangChs>交易买入所需元宝不足</LangChs>
 		<LangEn>0</LangEn>
@@ -1433,8 +2385,16 @@
 		<LangChs>交易买入所需金币不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>359</ProtocolResult>
+		<LangChs>交易买入所需金币不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>360</ProtocolResult>
+		<LangChs>出售单子太多</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>360</ProtocolResult>
 		<LangChs>出售单子太多</LangChs>
 		<LangEn>0</LangEn>
@@ -1445,8 +2405,16 @@
 		<LangChs>武将有佩戴装备不能出售</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>361</ProtocolResult>
+		<LangChs>武将有佩戴装备不能出售</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>362</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>362</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1457,8 +2425,16 @@
 		<LangChs>装备名称过短</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>363</ProtocolResult>
+		<LangChs>装备名称过短</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>364</ProtocolResult>
+		<LangChs>装备名称过长</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>364</ProtocolResult>
 		<LangChs>装备名称过长</LangChs>
 		<LangEn>0</LangEn>
@@ -1469,8 +2445,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>365</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>366</ProtocolResult>
+		<LangChs>购买次数上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>366</ProtocolResult>
 		<LangChs>购买次数上限</LangChs>
 		<LangEn>0</LangEn>
@@ -1481,8 +2465,16 @@
 		<LangChs>强化上限</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>367</ProtocolResult>
+		<LangChs>强化上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>368</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>368</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1493,8 +2485,16 @@
 		<LangChs>赛季结束</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>369</ProtocolResult>
+		<LangChs>赛季结束</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>370</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>370</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1505,8 +2505,16 @@
 		<LangChs>不可升级</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>371</ProtocolResult>
+		<LangChs>不可升级</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>372</ProtocolResult>
+		<LangChs>解锁条件不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>372</ProtocolResult>
 		<LangChs>解锁条件不足</LangChs>
 		<LangEn>0</LangEn>
@@ -1517,8 +2525,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>373</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>374</ProtocolResult>
+		<LangChs>宝库活动未开启</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>374</ProtocolResult>
 		<LangChs>宝库活动未开启</LangChs>
 		<LangEn>0</LangEn>
@@ -1529,8 +2545,16 @@
 		<LangChs>未参与攻打宝库活动</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>375</ProtocolResult>
+		<LangChs>未参与攻打宝库活动</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>376</ProtocolResult>
+		<LangChs>您所在的势力还未报名参加活动</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>376</ProtocolResult>
 		<LangChs>您所在的势力还未报名参加活动</LangChs>
 		<LangEn>0</LangEn>
@@ -1541,8 +2565,16 @@
 		<LangChs>玩家报名无法找到战区ID</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>377</ProtocolResult>
+		<LangChs>玩家报名无法找到战区ID</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>378</ProtocolResult>
+		<LangChs>玩家身份不满足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>378</ProtocolResult>
 		<LangChs>玩家身份不满足</LangChs>
 		<LangEn>0</LangEn>
@@ -1553,8 +2585,16 @@
 		<LangChs>你已经报过名了</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>379</ProtocolResult>
+		<LangChs>你已经报过名了</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>380</ProtocolResult>
+		<LangChs>战斗验证不匹配</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>380</ProtocolResult>
 		<LangChs>战斗验证不匹配</LangChs>
 		<LangEn>0</LangEn>
@@ -1565,8 +2605,16 @@
 		<LangChs>战斗生命值错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>381</ProtocolResult>
+		<LangChs>战斗生命值错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>382</ProtocolResult>
+		<LangChs>没有到战区开启时间</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>382</ProtocolResult>
 		<LangChs>没有到战区开启时间</LangChs>
 		<LangEn>0</LangEn>
@@ -1577,8 +2625,16 @@
 		<LangChs>没有到战区报名时间</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>383</ProtocolResult>
+		<LangChs>没有到战区报名时间</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>384</ProtocolResult>
+		<LangChs>据点已经被攻破</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>384</ProtocolResult>
 		<LangChs>据点已经被攻破</LangChs>
 		<LangEn>0</LangEn>
@@ -1589,8 +2645,16 @@
 		<LangChs>战区已经关闭</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>385</ProtocolResult>
+		<LangChs>战区已经关闭</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>386</ProtocolResult>
+		<LangChs>据点没有解锁</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>386</ProtocolResult>
 		<LangChs>据点没有解锁</LangChs>
 		<LangEn>0</LangEn>
@@ -1601,8 +2665,16 @@
 		<LangChs>战区排名前三的势力才能挑战</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>387</ProtocolResult>
+		<LangChs>战区排名前三的势力才能挑战</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>388</ProtocolResult>
+		<LangChs>不在报名时间内</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>388</ProtocolResult>
 		<LangChs>不在报名时间内</LangChs>
 		<LangEn>0</LangEn>
@@ -1613,8 +2685,16 @@
 		<LangChs>剿匪活动已关闭</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>389</ProtocolResult>
+		<LangChs>剿匪活动已关闭</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>390</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>390</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1625,8 +2705,16 @@
 		<LangChs>武神令牌不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>391</ProtocolResult>
+		<LangChs>武神令牌不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>392</ProtocolResult>
+		<LangChs>武神令牌已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>392</ProtocolResult>
 		<LangChs>武神令牌已满</LangChs>
 		<LangEn>0</LangEn>
@@ -1637,8 +2725,16 @@
 		<LangChs>古塔未解锁</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>393</ProtocolResult>
+		<LangChs>古塔未解锁</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>394</ProtocolResult>
+		<LangChs>古塔已通过</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>394</ProtocolResult>
 		<LangChs>古塔已通过</LangChs>
 		<LangEn>0</LangEn>
@@ -1649,8 +2745,16 @@
 		<LangChs>古塔未通过</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>395</ProtocolResult>
+		<LangChs>古塔未通过</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>396</ProtocolResult>
+		<LangChs>古塔已领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>396</ProtocolResult>
 		<LangChs>古塔已领取</LangChs>
 		<LangEn>0</LangEn>
@@ -1661,8 +2765,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>397</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>398</ProtocolResult>
+		<LangChs>活动奖励条件未达成</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>398</ProtocolResult>
 		<LangChs>活动奖励条件未达成</LangChs>
 		<LangEn>0</LangEn>
@@ -1673,8 +2785,16 @@
 		<LangChs>活动奖励已领取</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>399</ProtocolResult>
+		<LangChs>活动奖励已领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>400</ProtocolResult>
+		<LangChs>活动奖励已兑换次数已完</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>400</ProtocolResult>
 		<LangChs>活动奖励已兑换次数已完</LangChs>
 		<LangEn>0</LangEn>
@@ -1685,8 +2805,16 @@
 		<LangChs>活动奖励已兑换道具不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>401</ProtocolResult>
+		<LangChs>活动奖励已兑换道具不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>402</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>402</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1697,8 +2825,16 @@
 		<LangChs>您已经领取了该奖励</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>403</ProtocolResult>
+		<LangChs>您已经领取了该奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>404</ProtocolResult>
+		<LangChs>您没有可以领取的奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>404</ProtocolResult>
 		<LangChs>您没有可以领取的奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -1709,8 +2845,16 @@
 		<LangChs>未达到奖励领取条件</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>405</ProtocolResult>
+		<LangChs>未达到奖励领取条件</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>406</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>406</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1721,8 +2865,16 @@
 		<LangChs>兑换码不存在</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>407</ProtocolResult>
+		<LangChs>兑换码不存在</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>408</ProtocolResult>
+		<LangChs>兑换码已过期</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>408</ProtocolResult>
 		<LangChs>兑换码已过期</LangChs>
 		<LangEn>0</LangEn>
@@ -1733,8 +2885,16 @@
 		<LangChs>兑换码已经被使用过了</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>409</ProtocolResult>
+		<LangChs>兑换码已经被使用过了</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>410</ProtocolResult>
+		<LangChs>兑换码同类型已达到使用个数上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>410</ProtocolResult>
 		<LangChs>兑换码同类型已达到使用个数上限</LangChs>
 		<LangEn>0</LangEn>
@@ -1745,8 +2905,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>411</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>412</ProtocolResult>
+		<LangChs>武将被俘中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>412</ProtocolResult>
 		<LangChs>武将被俘中</LangChs>
 		<LangEn>0</LangEn>
@@ -1757,8 +2925,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>413</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>414</ProtocolResult>
+		<LangChs>您的部队已经成为雇佣兵暂时无法进行该操作</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>414</ProtocolResult>
 		<LangChs>您的部队已经成为雇佣兵暂时无法进行该操作</LangChs>
 		<LangEn>0</LangEn>
@@ -1769,8 +2945,16 @@
 		<LangChs>错误的雇佣号</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>415</ProtocolResult>
+		<LangChs>错误的雇佣号</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>416</ProtocolResult>
+		<LangChs>不能雇佣自己</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>416</ProtocolResult>
 		<LangChs>不能雇佣自己</LangChs>
 		<LangEn>0</LangEn>
@@ -1781,8 +2965,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>417</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>418</ProtocolResult>
+		<LangChs>玩家不在队列中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>418</ProtocolResult>
 		<LangChs>玩家不在队列中</LangChs>
 		<LangEn>0</LangEn>
@@ -1793,8 +2985,16 @@
 		<LangChs>装备已被分解</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>419</ProtocolResult>
+		<LangChs>装备已被分解</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>420</ProtocolResult>
+		<LangChs>武将已被流放</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>420</ProtocolResult>
 		<LangChs>武将已被流放</LangChs>
 		<LangEn>0</LangEn>
@@ -1805,8 +3005,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>421</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>422</ProtocolResult>
+		<LangChs>七日登录奖励不可领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>422</ProtocolResult>
 		<LangChs>七日登录奖励不可领取</LangChs>
 		<LangEn>0</LangEn>
@@ -1817,8 +3025,16 @@
 		<LangChs>七日登录奖励已领取</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>423</ProtocolResult>
+		<LangChs>七日登录奖励已领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>424</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>424</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1829,8 +3045,16 @@
 		<LangChs>红包已失效</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>425</ProtocolResult>
+		<LangChs>红包已失效</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>426</ProtocolResult>
+		<LangChs>已经抢过该红包</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>426</ProtocolResult>
 		<LangChs>已经抢过该红包</LangChs>
 		<LangEn>0</LangEn>
@@ -1841,8 +3065,16 @@
 		<LangChs>该红包已抢完</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>427</ProtocolResult>
+		<LangChs>该红包已抢完</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>428</ProtocolResult>
+		<LangChs>今日发红包达到上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>428</ProtocolResult>
 		<LangChs>今日发红包达到上限</LangChs>
 		<LangEn>0</LangEn>
@@ -1853,8 +3085,16 @@
 		<LangChs>今日领红包达到上限</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>429</ProtocolResult>
+		<LangChs>今日领红包达到上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>430</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>430</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1865,8 +3105,16 @@
 		<LangChs>活动未开启</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>431</ProtocolResult>
+		<LangChs>活动未开启</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>432</ProtocolResult>
+		<LangChs>活动已结束</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>432</ProtocolResult>
 		<LangChs>活动已结束</LangChs>
 		<LangEn>0</LangEn>
@@ -1877,8 +3125,16 @@
 		<LangChs>未达到活动开启等级</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>433</ProtocolResult>
+		<LangChs>未达到活动开启等级</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>434</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>434</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1889,8 +3145,16 @@
 		<LangChs>奖励ID未找到</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>435</ProtocolResult>
+		<LangChs>奖励ID未找到</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>436</ProtocolResult>
+		<LangChs>幸运值不够</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>436</ProtocolResult>
 		<LangChs>幸运值不够</LangChs>
 		<LangEn>0</LangEn>
@@ -1901,8 +3165,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>437</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>438</ProtocolResult>
+		<LangChs>开启次数不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>438</ProtocolResult>
 		<LangChs>开启次数不足</LangChs>
 		<LangEn>0</LangEn>
@@ -1913,8 +3185,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>439</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>440</ProtocolResult>
+		<LangChs>今天已签到</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>440</ProtocolResult>
 		<LangChs>今天已签到</LangChs>
 		<LangEn>0</LangEn>
@@ -1925,8 +3205,16 @@
 		<LangChs>今天未签到</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>441</ProtocolResult>
+		<LangChs>今天未签到</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>442</ProtocolResult>
+		<LangChs>已经没有补签次数</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>442</ProtocolResult>
 		<LangChs>已经没有补签次数</LangChs>
 		<LangEn>0</LangEn>
@@ -1937,8 +3225,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>443</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>444</ProtocolResult>
+		<LangChs>刷新次数达到上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>444</ProtocolResult>
 		<LangChs>刷新次数达到上限</LangChs>
 		<LangEn>0</LangEn>
@@ -1949,8 +3245,16 @@
 		<LangChs>未知的货币类型</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>445</ProtocolResult>
+		<LangChs>未知的货币类型</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>446</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>446</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -1961,8 +3265,16 @@
 		<LangChs>武将强化达到上限</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>447</ProtocolResult>
+		<LangChs>武将强化达到上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>448</ProtocolResult>
+		<LangChs>武将等级不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>448</ProtocolResult>
 		<LangChs>武将等级不足</LangChs>
 		<LangEn>0</LangEn>
@@ -1973,8 +3285,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>449</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>450</ProtocolResult>
+		<LangChs>不需要合成</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>450</ProtocolResult>
 		<LangChs>不需要合成</LangChs>
 		<LangEn>0</LangEn>
@@ -1985,8 +3305,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>451</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>452</ProtocolResult>
+		<LangChs>条件未达到</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>452</ProtocolResult>
 		<LangChs>条件未达到</LangChs>
 		<LangEn>0</LangEn>
@@ -1997,8 +3325,16 @@
 		<LangChs>奖励已领取</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>453</ProtocolResult>
+		<LangChs>奖励已领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>454</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>454</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2009,8 +3345,16 @@
 		<LangChs>挑战已经结束</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>455</ProtocolResult>
+		<LangChs>挑战已经结束</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>456</ProtocolResult>
+		<LangChs>购买数量已达上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>456</ProtocolResult>
 		<LangChs>购买数量已达上限</LangChs>
 		<LangEn>0</LangEn>
@@ -2021,8 +3365,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>457</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>458</ProtocolResult>
+		<LangChs>体力已领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>458</ProtocolResult>
 		<LangChs>体力已领取</LangChs>
 		<LangEn>0</LangEn>
@@ -2033,8 +3385,16 @@
 		<LangChs>未到达领取时间</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>459</ProtocolResult>
+		<LangChs>未到达领取时间</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>460</ProtocolResult>
+		<LangChs>领取时间已过</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>460</ProtocolResult>
 		<LangChs>领取时间已过</LangChs>
 		<LangEn>0</LangEn>
@@ -2045,8 +3405,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>461</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>462</ProtocolResult>
+		<LangChs>即时对战</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>462</ProtocolResult>
 		<LangChs>即时对战</LangChs>
 		<LangEn>0</LangEn>
@@ -2057,8 +3425,16 @@
 		<LangChs>尚未加入对战</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>463</ProtocolResult>
+		<LangChs>尚未加入对战</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>464</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>464</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2069,8 +3445,16 @@
 		<LangChs>势力</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>465</ProtocolResult>
+		<LangChs>势力</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>466</ProtocolResult>
+		<LangChs>你已加入势力了</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>466</ProtocolResult>
 		<LangChs>你已加入势力了</LangChs>
 		<LangEn>0</LangEn>
@@ -2081,8 +3465,16 @@
 		<LangChs>你尚未加入势力</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>467</ProtocolResult>
+		<LangChs>你尚未加入势力</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>468</ProtocolResult>
+		<LangChs>势力诸侯不能脱离势力</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>468</ProtocolResult>
 		<LangChs>势力诸侯不能脱离势力</LangChs>
 		<LangEn>0</LangEn>
@@ -2093,8 +3485,16 @@
 		<LangChs>对方不是势力成员</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>469</ProtocolResult>
+		<LangChs>对方不是势力成员</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>470</ProtocolResult>
+		<LangChs>势力人数已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>470</ProtocolResult>
 		<LangChs>势力人数已满</LangChs>
 		<LangEn>0</LangEn>
@@ -2105,8 +3505,16 @@
 		<LangChs>势力加入申请通过</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>471</ProtocolResult>
+		<LangChs>势力加入申请通过</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>472</ProtocolResult>
+		<LangChs>只有诸侯才有权限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>472</ProtocolResult>
 		<LangChs>只有诸侯才有权限</LangChs>
 		<LangEn>0</LangEn>
@@ -2117,8 +3525,16 @@
 		<LangChs>只有诸侯或太守才有权限</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>473</ProtocolResult>
+		<LangChs>只有诸侯或太守才有权限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>474</ProtocolResult>
+		<LangChs>只有诸侯和太守才能同意申请</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>474</ProtocolResult>
 		<LangChs>只有诸侯和太守才能同意申请</LangChs>
 		<LangEn>0</LangEn>
@@ -2129,8 +3545,16 @@
 		<LangChs>对方不在申请列表</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>475</ProtocolResult>
+		<LangChs>对方不在申请列表</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>476</ProtocolResult>
+		<LangChs>势力不存在</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>476</ProtocolResult>
 		<LangChs>势力不存在</LangChs>
 		<LangEn>0</LangEn>
@@ -2141,8 +3565,16 @@
 		<LangChs>您刚退出势力不久不能加入新势力</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>477</ProtocolResult>
+		<LangChs>您刚退出势力不久不能加入新势力</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>478</ProtocolResult>
+		<LangChs>势力捐献ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>478</ProtocolResult>
 		<LangChs>势力捐献ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -2153,8 +3585,16 @@
 		<LangChs>对象势力已经是同盟了</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>479</ProtocolResult>
+		<LangChs>对象势力已经是同盟了</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>480</ProtocolResult>
+		<LangChs>对象势力不是同盟</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>480</ProtocolResult>
 		<LangChs>对象势力不是同盟</LangChs>
 		<LangEn>0</LangEn>
@@ -2165,8 +3605,16 @@
 		<LangChs>你的势力没有占领这个城池</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>481</ProtocolResult>
+		<LangChs>你的势力没有占领这个城池</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>482</ProtocolResult>
+		<LangChs>对方已经是这个城的太守了</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>482</ProtocolResult>
 		<LangChs>对方已经是这个城的太守了</LangChs>
 		<LangEn>0</LangEn>
@@ -2177,8 +3625,16 @@
 		<LangChs>你已经是这个城的太守了</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>483</ProtocolResult>
+		<LangChs>你已经是这个城的太守了</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>484</ProtocolResult>
+		<LangChs>您不能逐出自己</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>484</ProtocolResult>
 		<LangChs>您不能逐出自己</LangChs>
 		<LangEn>0</LangEn>
@@ -2189,8 +3645,16 @@
 		<LangChs>势力捐献次数已满</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>485</ProtocolResult>
+		<LangChs>势力捐献次数已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>486</ProtocolResult>
+		<LangChs>势力收入不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>486</ProtocolResult>
 		<LangChs>势力收入不足</LangChs>
 		<LangEn>0</LangEn>
@@ -2201,8 +3665,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>487</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>488</ProtocolResult>
+		<LangChs>圣女所属玩家ID未找到</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>488</ProtocolResult>
 		<LangChs>圣女所属玩家ID未找到</LangChs>
 		<LangEn>0</LangEn>
@@ -2213,8 +3685,16 @@
 		<LangChs>对方没有圣女资格</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>489</ProtocolResult>
+		<LangChs>对方没有圣女资格</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>490</ProtocolResult>
+		<LangChs>势力没有圣女</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>490</ProtocolResult>
 		<LangChs>势力没有圣女</LangChs>
 		<LangEn>0</LangEn>
@@ -2225,8 +3705,16 @@
 		<LangChs>圣女被俘之中</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>491</ProtocolResult>
+		<LangChs>圣女被俘之中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>492</ProtocolResult>
+		<LangChs>圣女捐献ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>492</ProtocolResult>
 		<LangChs>圣女捐献ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -2237,8 +3725,16 @@
 		<LangChs>圣女今日捐献次数已满</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>493</ProtocolResult>
+		<LangChs>圣女今日捐献次数已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>494</ProtocolResult>
+		<LangChs>圣女已达到最高等级</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>494</ProtocolResult>
 		<LangChs>圣女已达到最高等级</LangChs>
 		<LangEn>0</LangEn>
@@ -2249,8 +3745,16 @@
 		<LangChs>圣女已经被释放</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>495</ProtocolResult>
+		<LangChs>圣女已经被释放</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>496</ProtocolResult>
+		<LangChs>圣女赎回ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>496</ProtocolResult>
 		<LangChs>圣女赎回ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -2261,8 +3765,16 @@
 		<LangChs>圣女今日赎回次数已满</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>497</ProtocolResult>
+		<LangChs>圣女今日赎回次数已满</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>498</ProtocolResult>
+		<LangChs>圣女已经驻守该城</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>498</ProtocolResult>
 		<LangChs>圣女已经驻守该城</LangChs>
 		<LangEn>0</LangEn>
@@ -2273,8 +3785,16 @@
 		<LangChs>圣女卫队未完全复活</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>499</ProtocolResult>
+		<LangChs>圣女卫队未完全复活</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>500</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>500</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2285,8 +3805,16 @@
 		<LangChs>城池</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>501</ProtocolResult>
+		<LangChs>城池</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>502</ProtocolResult>
+		<LangChs>城池ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>502</ProtocolResult>
 		<LangChs>城池ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -2297,8 +3825,16 @@
 		<LangChs>守备营ID错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>503</ProtocolResult>
+		<LangChs>守备营ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>504</ProtocolResult>
+		<LangChs>守备部队ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>504</ProtocolResult>
 		<LangChs>守备部队ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -2309,8 +3845,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>505</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>506</ProtocolResult>
+		<LangChs>城池建筑升级条件不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>506</ProtocolResult>
 		<LangChs>城池建筑升级条件不足</LangChs>
 		<LangEn>0</LangEn>
@@ -2321,8 +3865,16 @@
 		<LangChs>城墙不需要修复</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>507</ProtocolResult>
+		<LangChs>城墙不需要修复</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>508</ProtocolResult>
+		<LangChs>城墙燃烧中无法修复</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>508</ProtocolResult>
 		<LangChs>城墙燃烧中无法修复</LangChs>
 		<LangEn>0</LangEn>
@@ -2333,8 +3885,16 @@
 		<LangChs>器械建造过多</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>509</ProtocolResult>
+		<LangChs>器械建造过多</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>510</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>510</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2345,8 +3905,16 @@
 		<LangChs>城池战略</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>511</ProtocolResult>
+		<LangChs>城池战略</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>512</ProtocolResult>
+		<LangChs>只能防守己方城池</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>512</ProtocolResult>
 		<LangChs>只能防守己方城池</LangChs>
 		<LangEn>0</LangEn>
@@ -2357,8 +3925,16 @@
 		<LangChs>城墙已经被攻破</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>513</ProtocolResult>
+		<LangChs>城墙已经被攻破</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>514</ProtocolResult>
+		<LangChs>只能进攻相邻的敌方城池</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>514</ProtocolResult>
 		<LangChs>只能进攻相邻的敌方城池</LangChs>
 		<LangEn>0</LangEn>
@@ -2369,8 +3945,16 @@
 		<LangChs>敌方城池在攻击保护期内</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>515</ProtocolResult>
+		<LangChs>敌方城池在攻击保护期内</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>516</ProtocolResult>
+		<LangChs>尚未攻破任意城墙无法攻击内城</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>516</ProtocolResult>
 		<LangChs>尚未攻破任意城墙无法攻击内城</LangChs>
 		<LangEn>0</LangEn>
@@ -2381,8 +3965,16 @@
 		<LangChs>城池战斗集结次数不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>517</ProtocolResult>
+		<LangChs>城池战斗集结次数不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>518</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>518</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2393,8 +3985,16 @@
 		<LangChs>不能进攻郡城</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>519</ProtocolResult>
+		<LangChs>不能进攻郡城</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>520</ProtocolResult>
+		<LangChs>不能防守郡城</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>520</ProtocolResult>
 		<LangChs>不能防守郡城</LangChs>
 		<LangEn>0</LangEn>
@@ -2405,8 +4005,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>521</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>522</ProtocolResult>
+		<LangChs>此城池不是郡城</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>522</ProtocolResult>
 		<LangChs>此城池不是郡城</LangChs>
 		<LangEn>0</LangEn>
@@ -2417,8 +4025,16 @@
 		<LangChs>郡城攻打尚未开放</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>523</ProtocolResult>
+		<LangChs>郡城攻打尚未开放</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>524</ProtocolResult>
+		<LangChs>只能匹配战斗郡城</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>524</ProtocolResult>
 		<LangChs>只能匹配战斗郡城</LangChs>
 		<LangEn>0</LangEn>
@@ -2429,8 +4045,16 @@
 		<LangChs>尚未参加郡城战斗</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>525</ProtocolResult>
+		<LangChs>尚未参加郡城战斗</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>526</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>526</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2441,8 +4065,16 @@
 		<LangChs>已经申请过好友</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>527</ProtocolResult>
+		<LangChs>已经申请过好友</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>528</ProtocolResult>
+		<LangChs>对方已经是好友</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>528</ProtocolResult>
 		<LangChs>对方已经是好友</LangChs>
 		<LangEn>0</LangEn>
@@ -2453,8 +4085,16 @@
 		<LangChs>好友数量达到上限</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>529</ProtocolResult>
+		<LangChs>好友数量达到上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>530</ProtocolResult>
+		<LangChs>今日体力领取达到上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>530</ProtocolResult>
 		<LangChs>今日体力领取达到上限</LangChs>
 		<LangEn>0</LangEn>
@@ -2465,8 +4105,16 @@
 		<LangChs>已领取过对方赠送的体力</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>531</ProtocolResult>
+		<LangChs>已领取过对方赠送的体力</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>532</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>532</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2477,8 +4125,16 @@
 		<LangChs>州ID错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>533</ProtocolResult>
+		<LangChs>州ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>534</ProtocolResult>
+		<LangChs>资源点ID错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>534</ProtocolResult>
 		<LangChs>资源点ID错误</LangChs>
 		<LangEn>0</LangEn>
@@ -2489,8 +4145,16 @@
 		<LangChs>资源类型错误</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>535</ProtocolResult>
+		<LangChs>资源类型错误</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>536</ProtocolResult>
+		<LangChs>不能挑战自己的资源点</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>536</ProtocolResult>
 		<LangChs>不能挑战自己的资源点</LangChs>
 		<LangEn>0</LangEn>
@@ -2501,8 +4165,16 @@
 		<LangChs>上阵武将已经在其他资源采集队伍中</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>537</ProtocolResult>
+		<LangChs>上阵武将已经在其他资源采集队伍中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>538</ProtocolResult>
+		<LangChs>您的进攻部队已达到上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>538</ProtocolResult>
 		<LangChs>您的进攻部队已达到上限</LangChs>
 		<LangEn>0</LangEn>
@@ -2513,8 +4185,16 @@
 		<LangChs>无法进入不属于您的势力范围</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>539</ProtocolResult>
+		<LangChs>无法进入不属于您的势力范围</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>540</ProtocolResult>
+		<LangChs>上阵武将已经在其他征讨队伍中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>540</ProtocolResult>
 		<LangChs>上阵武将已经在其他征讨队伍中</LangChs>
 		<LangEn>0</LangEn>
@@ -2525,8 +4205,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>541</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>542</ProtocolResult>
+		<LangChs>匪寇已经死亡</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>542</ProtocolResult>
 		<LangChs>匪寇已经死亡</LangChs>
 		<LangEn>0</LangEn>
@@ -2537,8 +4225,16 @@
 		<LangChs>征讨匪寇挑战次数不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>543</ProtocolResult>
+		<LangChs>征讨匪寇挑战次数不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>544</ProtocolResult>
+		<LangChs>当前匪寇已经在征讨</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>544</ProtocolResult>
 		<LangChs>当前匪寇已经在征讨</LangChs>
 		<LangEn>0</LangEn>
@@ -2549,8 +4245,16 @@
 		<LangChs>征讨队伍人数不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>545</ProtocolResult>
+		<LangChs>征讨队伍人数不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>546</ProtocolResult>
+		<LangChs>您的征讨部队已达到上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>546</ProtocolResult>
 		<LangChs>您的征讨部队已达到上限</LangChs>
 		<LangEn>0</LangEn>
@@ -2561,8 +4265,16 @@
 		<LangChs>征讨匪寇不可刷新</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>547</ProtocolResult>
+		<LangChs>征讨匪寇不可刷新</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>548</ProtocolResult>
+		<LangChs>购买金额不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>548</ProtocolResult>
 		<LangChs>购买金额不足</LangChs>
 		<LangEn>0</LangEn>
@@ -2573,8 +4285,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>549</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>550</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>550</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2585,8 +4305,16 @@
 		<LangChs>演武厅日胜场宝箱已领取</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>551</ProtocolResult>
+		<LangChs>演武厅日胜场宝箱已领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>552</ProtocolResult>
+		<LangChs>演武厅日胜场不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>552</ProtocolResult>
 		<LangChs>演武厅日胜场不足</LangChs>
 		<LangEn>0</LangEn>
@@ -2597,8 +4325,16 @@
 		<LangChs>演武厅天梯未开启</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>553</ProtocolResult>
+		<LangChs>演武厅天梯未开启</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>554</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>554</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2609,8 +4345,16 @@
 		<LangChs>未激活月卡</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>555</ProtocolResult>
+		<LangChs>未激活月卡</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>556</ProtocolResult>
+		<LangChs>月卡已失效</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>556</ProtocolResult>
 		<LangChs>月卡已失效</LangChs>
 		<LangEn>0</LangEn>
@@ -2621,8 +4365,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>557</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>558</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>558</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2633,8 +4385,16 @@
 		<LangChs>流亡军功能尚未开启</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>559</ProtocolResult>
+		<LangChs>流亡军功能尚未开启</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>560</ProtocolResult>
+		<LangChs>武将流亡军出征中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>560</ProtocolResult>
 		<LangChs>武将流亡军出征中</LangChs>
 		<LangEn>0</LangEn>
@@ -2645,8 +4405,16 @@
 		<LangChs>流亡军出征队伍达到上限</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>561</ProtocolResult>
+		<LangChs>流亡军出征队伍达到上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>562</ProtocolResult>
+		<LangChs>上阵武将已经在其他流亡军队伍中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>562</ProtocolResult>
 		<LangChs>上阵武将已经在其他流亡军队伍中</LangChs>
 		<LangEn>0</LangEn>
@@ -2657,8 +4425,16 @@
 		<LangChs>流亡军防守兵力不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>563</ProtocolResult>
+		<LangChs>流亡军防守兵力不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>564</ProtocolResult>
+		<LangChs>流亡军防守兵力超过上限</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>564</ProtocolResult>
 		<LangChs>流亡军防守兵力超过上限</LangChs>
 		<LangEn>0</LangEn>
@@ -2669,8 +4445,16 @@
 		<LangChs>流亡军正在进攻中</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>565</ProtocolResult>
+		<LangChs>流亡军正在进攻中</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>566</ProtocolResult>
+		<LangChs>流亡军进攻尚未编组队伍</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>566</ProtocolResult>
 		<LangChs>流亡军进攻尚未编组队伍</LangChs>
 		<LangEn>0</LangEn>
@@ -2681,8 +4465,16 @@
 		<LangChs>流亡军迁移目标已经被占领</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>567</ProtocolResult>
+		<LangChs>流亡军迁移目标已经被占领</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>568</ProtocolResult>
+		<LangChs>流亡军出征中不能迁移</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>568</ProtocolResult>
 		<LangChs>流亡军出征中不能迁移</LangChs>
 		<LangEn>0</LangEn>
@@ -2693,8 +4485,16 @@
 		<LangChs>流亡军迁移道具不足</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>569</ProtocolResult>
+		<LangChs>流亡军迁移道具不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>570</ProtocolResult>
+		<LangChs>流亡军进攻目标为空</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>570</ProtocolResult>
 		<LangChs>流亡军进攻目标为空</LangChs>
 		<LangEn>0</LangEn>
@@ -2705,8 +4505,16 @@
 		<LangChs>流亡军不能进攻自己</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>571</ProtocolResult>
+		<LangChs>流亡军不能进攻自己</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>572</ProtocolResult>
+		<LangChs>流亡军不能进攻已方</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>572</ProtocolResult>
 		<LangChs>流亡军不能进攻已方</LangChs>
 		<LangEn>0</LangEn>
@@ -2717,8 +4525,16 @@
 		<LangChs>流亡军侦查目标为空</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>573</ProtocolResult>
+		<LangChs>流亡军侦查目标为空</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>574</ProtocolResult>
+		<LangChs>流亡军不能侦查自己</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>574</ProtocolResult>
 		<LangChs>流亡军不能侦查自己</LangChs>
 		<LangEn>0</LangEn>
@@ -2729,8 +4545,16 @@
 		<LangChs>流亡军不能侦查已方</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>575</ProtocolResult>
+		<LangChs>流亡军不能侦查已方</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>576</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>576</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2741,8 +4565,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>577</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>578</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>578</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2753,8 +4585,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>579</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>580</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>580</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2765,8 +4605,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>581</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>582</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>582</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2777,8 +4625,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>583</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>584</ProtocolResult>
+		<LangChs>势力弹劾已发起</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>584</ProtocolResult>
 		<LangChs>势力弹劾已发起</LangChs>
 		<LangEn>0</LangEn>
@@ -2789,8 +4645,16 @@
 		<LangChs>不能发起势力弹劾</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>585</ProtocolResult>
+		<LangChs>不能发起势力弹劾</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>586</ProtocolResult>
+		<LangChs>没有发起势力弹劾</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>586</ProtocolResult>
 		<LangChs>没有发起势力弹劾</LangChs>
 		<LangEn>0</LangEn>
@@ -2801,8 +4665,16 @@
 		<LangChs>你已参与势力弹劾</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>587</ProtocolResult>
+		<LangChs>你已参与势力弹劾</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>588</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>588</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -2813,8 +4685,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>589</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>590</ProtocolResult>
+		<LangChs>势力豪礼宝箱领取经验不足</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>590</ProtocolResult>
 		<LangChs>势力豪礼宝箱领取经验不足</LangChs>
 		<LangEn>0</LangEn>
@@ -2825,14 +4705,26 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>591</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
 		<ProtocolResult>592</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<ProtocolResult>592</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<ProtocolResult>593</ProtocolResult>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<ProtocolResult>593</ProtocolResult>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>

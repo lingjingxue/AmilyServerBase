@@ -5,17 +5,53 @@
 		<Name>道具</Name>
 		<Desc>道具</Desc>
 		<TypeBag>道具</TypeBag>
+		<ListInt>1|2</ListInt>
+		<ListListInt>1_0_10|1_0_10</ListListInt>
+		<Liststring>haa|xx</Liststring>
+		<ListListstring>haha_xx|321_dd_ss</ListListstring>
+		<Id>1</Id>
+		<Name>道具</Name>
+		<Desc>道具</Desc>
+		<TypeBag>道具</TypeBag>
+		<ListInt>1|2</ListInt>
+		<ListListInt>1_0_10|1_0_10</ListListInt>
+		<Liststring>haa|xx</Liststring>
+		<ListListstring>haha_xx|321_dd_ss</ListListstring>
 	</Node>
 	<Node>
 		<Id>2</Id>
 		<Name>资源</Name>
 		<Desc>资源</Desc>
 		<TypeBag>资源</TypeBag>
+		<ListInt>1|2</ListInt>
+		<ListListInt>1_0_10|1_0_10</ListListInt>
+		<Liststring>haa|xx</Liststring>
+		<ListListstring>haha_xx|321_dd_ss</ListListstring>
+		<Id>2</Id>
+		<Name>资源</Name>
+		<Desc>资源</Desc>
+		<TypeBag>资源</TypeBag>
+		<ListInt>1|2</ListInt>
+		<ListListInt>1_0_10|1_0_10</ListListInt>
+		<Liststring>haa|xx</Liststring>
+		<ListListstring>haha_xx|321_dd_ss</ListListstring>
 	</Node>
 	<Node>
 		<Id>3</Id>
 		<Name>碎片</Name>
 		<Desc>碎片</Desc>
 		<TypeBag>碎片</TypeBag>
+		<ListInt>1|2</ListInt>
+		<ListListInt>1_0_10|1_0_10</ListListInt>
+		<Liststring>haa|xx</Liststring>
+		<ListListstring>haha_xx|321_dd_ss</ListListstring>
+		<Id>3</Id>
+		<Name>碎片</Name>
+		<Desc>碎片</Desc>
+		<TypeBag>碎片</TypeBag>
+		<ListInt>1|2</ListInt>
+		<ListListInt>1_0_10|1_0_10</ListListInt>
+		<Liststring>haa|xx</Liststring>
+		<ListListstring>haha_xx|321_dd_ss</ListListstring>
 	</Node>
 </Data>

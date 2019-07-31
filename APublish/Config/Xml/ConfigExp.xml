@@ -6,8 +6,18 @@
 		<Level>1</Level>
 		<ExpCost>1_0_10</ExpCost>
 		<PowerGrow>100</PowerGrow>
+		<Id>1</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>1</Level>
+		<ExpCost>1_0_10</ExpCost>
+		<PowerGrow>100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>2</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>2</Level>
+		<ExpCost>1_0_20</ExpCost>
+		<PowerGrow>200</PowerGrow>
 		<Id>2</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>2</Level>
@@ -20,8 +30,18 @@
 		<Level>3</Level>
 		<ExpCost>1_0_30</ExpCost>
 		<PowerGrow>300</PowerGrow>
+		<Id>3</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>3</Level>
+		<ExpCost>1_0_30</ExpCost>
+		<PowerGrow>300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>4</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>4</Level>
+		<ExpCost>1_0_40</ExpCost>
+		<PowerGrow>400</PowerGrow>
 		<Id>4</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>4</Level>
@@ -34,8 +54,18 @@
 		<Level>5</Level>
 		<ExpCost>1_0_50</ExpCost>
 		<PowerGrow>500</PowerGrow>
+		<Id>5</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>5</Level>
+		<ExpCost>1_0_50</ExpCost>
+		<PowerGrow>500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>6</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>6</Level>
+		<ExpCost>1_0_60</ExpCost>
+		<PowerGrow>600</PowerGrow>
 		<Id>6</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>6</Level>
@@ -48,8 +78,18 @@
 		<Level>7</Level>
 		<ExpCost>1_0_70</ExpCost>
 		<PowerGrow>700</PowerGrow>
+		<Id>7</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>7</Level>
+		<ExpCost>1_0_70</ExpCost>
+		<PowerGrow>700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>8</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>8</Level>
+		<ExpCost>1_0_80</ExpCost>
+		<PowerGrow>800</PowerGrow>
 		<Id>8</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>8</Level>
@@ -62,8 +102,18 @@
 		<Level>9</Level>
 		<ExpCost>1_0_90</ExpCost>
 		<PowerGrow>900</PowerGrow>
+		<Id>9</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>9</Level>
+		<ExpCost>1_0_90</ExpCost>
+		<PowerGrow>900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>10</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>10</Level>
+		<ExpCost>1_0_100</ExpCost>
+		<PowerGrow>1000</PowerGrow>
 		<Id>10</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>10</Level>
@@ -76,8 +126,18 @@
 		<Level>11</Level>
 		<ExpCost>1_0_110</ExpCost>
 		<PowerGrow>1100</PowerGrow>
+		<Id>11</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>11</Level>
+		<ExpCost>1_0_110</ExpCost>
+		<PowerGrow>1100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>12</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>12</Level>
+		<ExpCost>1_0_120</ExpCost>
+		<PowerGrow>1200</PowerGrow>
 		<Id>12</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>12</Level>
@@ -90,8 +150,18 @@
 		<Level>13</Level>
 		<ExpCost>1_0_130</ExpCost>
 		<PowerGrow>1300</PowerGrow>
+		<Id>13</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>13</Level>
+		<ExpCost>1_0_130</ExpCost>
+		<PowerGrow>1300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>14</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>14</Level>
+		<ExpCost>1_0_140</ExpCost>
+		<PowerGrow>1400</PowerGrow>
 		<Id>14</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>14</Level>
@@ -104,8 +174,18 @@
 		<Level>15</Level>
 		<ExpCost>1_0_150</ExpCost>
 		<PowerGrow>1500</PowerGrow>
+		<Id>15</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>15</Level>
+		<ExpCost>1_0_150</ExpCost>
+		<PowerGrow>1500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>16</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>16</Level>
+		<ExpCost>1_0_160</ExpCost>
+		<PowerGrow>1600</PowerGrow>
 		<Id>16</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>16</Level>
@@ -118,8 +198,18 @@
 		<Level>17</Level>
 		<ExpCost>1_0_170</ExpCost>
 		<PowerGrow>1700</PowerGrow>
+		<Id>17</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>17</Level>
+		<ExpCost>1_0_170</ExpCost>
+		<PowerGrow>1700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>18</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>18</Level>
+		<ExpCost>1_0_180</ExpCost>
+		<PowerGrow>1800</PowerGrow>
 		<Id>18</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>18</Level>
@@ -132,8 +222,18 @@
 		<Level>19</Level>
 		<ExpCost>1_0_190</ExpCost>
 		<PowerGrow>1900</PowerGrow>
+		<Id>19</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>19</Level>
+		<ExpCost>1_0_190</ExpCost>
+		<PowerGrow>1900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>20</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>20</Level>
+		<ExpCost>1_0_200</ExpCost>
+		<PowerGrow>2000</PowerGrow>
 		<Id>20</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>20</Level>
@@ -146,8 +246,18 @@
 		<Level>21</Level>
 		<ExpCost>1_0_210</ExpCost>
 		<PowerGrow>2100</PowerGrow>
+		<Id>21</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>21</Level>
+		<ExpCost>1_0_210</ExpCost>
+		<PowerGrow>2100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>22</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>22</Level>
+		<ExpCost>1_0_220</ExpCost>
+		<PowerGrow>2200</PowerGrow>
 		<Id>22</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>22</Level>
@@ -160,8 +270,18 @@
 		<Level>23</Level>
 		<ExpCost>1_0_230</ExpCost>
 		<PowerGrow>2300</PowerGrow>
+		<Id>23</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>23</Level>
+		<ExpCost>1_0_230</ExpCost>
+		<PowerGrow>2300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>24</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>24</Level>
+		<ExpCost>1_0_240</ExpCost>
+		<PowerGrow>2400</PowerGrow>
 		<Id>24</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>24</Level>
@@ -174,8 +294,18 @@
 		<Level>25</Level>
 		<ExpCost>1_0_250</ExpCost>
 		<PowerGrow>2500</PowerGrow>
+		<Id>25</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>25</Level>
+		<ExpCost>1_0_250</ExpCost>
+		<PowerGrow>2500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>26</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>26</Level>
+		<ExpCost>1_0_260</ExpCost>
+		<PowerGrow>2600</PowerGrow>
 		<Id>26</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>26</Level>
@@ -188,8 +318,18 @@
 		<Level>27</Level>
 		<ExpCost>1_0_270</ExpCost>
 		<PowerGrow>2700</PowerGrow>
+		<Id>27</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>27</Level>
+		<ExpCost>1_0_270</ExpCost>
+		<PowerGrow>2700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>28</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>28</Level>
+		<ExpCost>1_0_280</ExpCost>
+		<PowerGrow>2800</PowerGrow>
 		<Id>28</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>28</Level>
@@ -202,8 +342,18 @@
 		<Level>29</Level>
 		<ExpCost>1_0_290</ExpCost>
 		<PowerGrow>2900</PowerGrow>
+		<Id>29</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>29</Level>
+		<ExpCost>1_0_290</ExpCost>
+		<PowerGrow>2900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>30</Id>
+		<BreakLevel>1</BreakLevel>
+		<Level>30</Level>
+		<ExpCost>1_0_300</ExpCost>
+		<PowerGrow>3000</PowerGrow>
 		<Id>30</Id>
 		<BreakLevel>1</BreakLevel>
 		<Level>30</Level>
@@ -216,8 +366,18 @@
 		<Level>1</Level>
 		<ExpCost>1_0_310</ExpCost>
 		<PowerGrow>3100</PowerGrow>
+		<Id>31</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>1</Level>
+		<ExpCost>1_0_310</ExpCost>
+		<PowerGrow>3100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>32</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>2</Level>
+		<ExpCost>1_0_320</ExpCost>
+		<PowerGrow>3300</PowerGrow>
 		<Id>32</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>2</Level>
@@ -230,8 +390,18 @@
 		<Level>3</Level>
 		<ExpCost>1_0_330</ExpCost>
 		<PowerGrow>3500</PowerGrow>
+		<Id>33</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>3</Level>
+		<ExpCost>1_0_330</ExpCost>
+		<PowerGrow>3500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>34</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>4</Level>
+		<ExpCost>1_0_340</ExpCost>
+		<PowerGrow>3700</PowerGrow>
 		<Id>34</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>4</Level>
@@ -244,8 +414,18 @@
 		<Level>5</Level>
 		<ExpCost>1_0_350</ExpCost>
 		<PowerGrow>3900</PowerGrow>
+		<Id>35</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>5</Level>
+		<ExpCost>1_0_350</ExpCost>
+		<PowerGrow>3900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>36</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>6</Level>
+		<ExpCost>1_0_360</ExpCost>
+		<PowerGrow>4100</PowerGrow>
 		<Id>36</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>6</Level>
@@ -258,8 +438,18 @@
 		<Level>7</Level>
 		<ExpCost>1_0_370</ExpCost>
 		<PowerGrow>4300</PowerGrow>
+		<Id>37</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>7</Level>
+		<ExpCost>1_0_370</ExpCost>
+		<PowerGrow>4300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>38</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>8</Level>
+		<ExpCost>1_0_380</ExpCost>
+		<PowerGrow>4500</PowerGrow>
 		<Id>38</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>8</Level>
@@ -272,8 +462,18 @@
 		<Level>9</Level>
 		<ExpCost>1_0_390</ExpCost>
 		<PowerGrow>4700</PowerGrow>
+		<Id>39</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>9</Level>
+		<ExpCost>1_0_390</ExpCost>
+		<PowerGrow>4700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>40</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>10</Level>
+		<ExpCost>1_0_400</ExpCost>
+		<PowerGrow>4900</PowerGrow>
 		<Id>40</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>10</Level>
@@ -286,8 +486,18 @@
 		<Level>11</Level>
 		<ExpCost>1_0_410</ExpCost>
 		<PowerGrow>5100</PowerGrow>
+		<Id>41</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>11</Level>
+		<ExpCost>1_0_410</ExpCost>
+		<PowerGrow>5100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>42</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>12</Level>
+		<ExpCost>1_0_420</ExpCost>
+		<PowerGrow>5300</PowerGrow>
 		<Id>42</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>12</Level>
@@ -300,8 +510,18 @@
 		<Level>13</Level>
 		<ExpCost>1_0_430</ExpCost>
 		<PowerGrow>5500</PowerGrow>
+		<Id>43</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>13</Level>
+		<ExpCost>1_0_430</ExpCost>
+		<PowerGrow>5500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>44</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>14</Level>
+		<ExpCost>1_0_440</ExpCost>
+		<PowerGrow>5700</PowerGrow>
 		<Id>44</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>14</Level>
@@ -314,8 +534,18 @@
 		<Level>15</Level>
 		<ExpCost>1_0_450</ExpCost>
 		<PowerGrow>5900</PowerGrow>
+		<Id>45</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>15</Level>
+		<ExpCost>1_0_450</ExpCost>
+		<PowerGrow>5900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>46</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>16</Level>
+		<ExpCost>1_0_460</ExpCost>
+		<PowerGrow>6100</PowerGrow>
 		<Id>46</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>16</Level>
@@ -328,8 +558,18 @@
 		<Level>17</Level>
 		<ExpCost>1_0_470</ExpCost>
 		<PowerGrow>6300</PowerGrow>
+		<Id>47</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>17</Level>
+		<ExpCost>1_0_470</ExpCost>
+		<PowerGrow>6300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>48</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>18</Level>
+		<ExpCost>1_0_480</ExpCost>
+		<PowerGrow>6500</PowerGrow>
 		<Id>48</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>18</Level>
@@ -342,8 +582,18 @@
 		<Level>19</Level>
 		<ExpCost>1_0_490</ExpCost>
 		<PowerGrow>6700</PowerGrow>
+		<Id>49</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>19</Level>
+		<ExpCost>1_0_490</ExpCost>
+		<PowerGrow>6700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>50</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>20</Level>
+		<ExpCost>1_0_500</ExpCost>
+		<PowerGrow>6900</PowerGrow>
 		<Id>50</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>20</Level>
@@ -356,8 +606,18 @@
 		<Level>21</Level>
 		<ExpCost>1_0_510</ExpCost>
 		<PowerGrow>7100</PowerGrow>
+		<Id>51</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>21</Level>
+		<ExpCost>1_0_510</ExpCost>
+		<PowerGrow>7100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>52</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>22</Level>
+		<ExpCost>1_0_520</ExpCost>
+		<PowerGrow>7300</PowerGrow>
 		<Id>52</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>22</Level>
@@ -370,8 +630,18 @@
 		<Level>23</Level>
 		<ExpCost>1_0_530</ExpCost>
 		<PowerGrow>7500</PowerGrow>
+		<Id>53</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>23</Level>
+		<ExpCost>1_0_530</ExpCost>
+		<PowerGrow>7500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>54</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>24</Level>
+		<ExpCost>1_0_540</ExpCost>
+		<PowerGrow>7700</PowerGrow>
 		<Id>54</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>24</Level>
@@ -384,8 +654,18 @@
 		<Level>25</Level>
 		<ExpCost>1_0_550</ExpCost>
 		<PowerGrow>7900</PowerGrow>
+		<Id>55</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>25</Level>
+		<ExpCost>1_0_550</ExpCost>
+		<PowerGrow>7900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>56</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>26</Level>
+		<ExpCost>1_0_560</ExpCost>
+		<PowerGrow>8100</PowerGrow>
 		<Id>56</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>26</Level>
@@ -398,8 +678,18 @@
 		<Level>27</Level>
 		<ExpCost>1_0_570</ExpCost>
 		<PowerGrow>8300</PowerGrow>
+		<Id>57</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>27</Level>
+		<ExpCost>1_0_570</ExpCost>
+		<PowerGrow>8300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>58</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>28</Level>
+		<ExpCost>1_0_580</ExpCost>
+		<PowerGrow>8500</PowerGrow>
 		<Id>58</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>28</Level>
@@ -412,8 +702,18 @@
 		<Level>29</Level>
 		<ExpCost>1_0_590</ExpCost>
 		<PowerGrow>8700</PowerGrow>
+		<Id>59</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>29</Level>
+		<ExpCost>1_0_590</ExpCost>
+		<PowerGrow>8700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>60</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>30</Level>
+		<ExpCost>1_0_600</ExpCost>
+		<PowerGrow>8900</PowerGrow>
 		<Id>60</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>30</Level>
@@ -426,8 +726,18 @@
 		<Level>31</Level>
 		<ExpCost>1_0_610</ExpCost>
 		<PowerGrow>9100</PowerGrow>
+		<Id>61</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>31</Level>
+		<ExpCost>1_0_610</ExpCost>
+		<PowerGrow>9100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>62</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>32</Level>
+		<ExpCost>1_0_620</ExpCost>
+		<PowerGrow>9300</PowerGrow>
 		<Id>62</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>32</Level>
@@ -440,8 +750,18 @@
 		<Level>33</Level>
 		<ExpCost>1_0_630</ExpCost>
 		<PowerGrow>9500</PowerGrow>
+		<Id>63</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>33</Level>
+		<ExpCost>1_0_630</ExpCost>
+		<PowerGrow>9500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>64</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>34</Level>
+		<ExpCost>1_0_640</ExpCost>
+		<PowerGrow>9700</PowerGrow>
 		<Id>64</Id>
 		<BreakLevel>2</BreakLevel>
 		<Level>34</Level>
@@ -454,8 +774,18 @@
 		<Level>35</Level>
 		<ExpCost>1_0_650</ExpCost>
 		<PowerGrow>9900</PowerGrow>
+		<Id>65</Id>
+		<BreakLevel>2</BreakLevel>
+		<Level>35</Level>
+		<ExpCost>1_0_650</ExpCost>
+		<PowerGrow>9900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>66</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>1</Level>
+		<ExpCost>1_0_660</ExpCost>
+		<PowerGrow>10000</PowerGrow>
 		<Id>66</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>1</Level>
@@ -468,8 +798,18 @@
 		<Level>2</Level>
 		<ExpCost>1_0_670</ExpCost>
 		<PowerGrow>10300</PowerGrow>
+		<Id>67</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>2</Level>
+		<ExpCost>1_0_670</ExpCost>
+		<PowerGrow>10300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>68</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>3</Level>
+		<ExpCost>1_0_680</ExpCost>
+		<PowerGrow>10600</PowerGrow>
 		<Id>68</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>3</Level>
@@ -482,8 +822,18 @@
 		<Level>4</Level>
 		<ExpCost>1_0_690</ExpCost>
 		<PowerGrow>10900</PowerGrow>
+		<Id>69</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>4</Level>
+		<ExpCost>1_0_690</ExpCost>
+		<PowerGrow>10900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>70</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>5</Level>
+		<ExpCost>1_0_700</ExpCost>
+		<PowerGrow>11200</PowerGrow>
 		<Id>70</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>5</Level>
@@ -496,8 +846,18 @@
 		<Level>6</Level>
 		<ExpCost>1_0_710</ExpCost>
 		<PowerGrow>11500</PowerGrow>
+		<Id>71</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>6</Level>
+		<ExpCost>1_0_710</ExpCost>
+		<PowerGrow>11500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>72</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>7</Level>
+		<ExpCost>1_0_720</ExpCost>
+		<PowerGrow>11800</PowerGrow>
 		<Id>72</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>7</Level>
@@ -510,8 +870,18 @@
 		<Level>8</Level>
 		<ExpCost>1_0_730</ExpCost>
 		<PowerGrow>12100</PowerGrow>
+		<Id>73</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>8</Level>
+		<ExpCost>1_0_730</ExpCost>
+		<PowerGrow>12100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>74</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>9</Level>
+		<ExpCost>1_0_740</ExpCost>
+		<PowerGrow>12400</PowerGrow>
 		<Id>74</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>9</Level>
@@ -524,8 +894,18 @@
 		<Level>10</Level>
 		<ExpCost>1_0_750</ExpCost>
 		<PowerGrow>12700</PowerGrow>
+		<Id>75</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>10</Level>
+		<ExpCost>1_0_750</ExpCost>
+		<PowerGrow>12700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>76</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>11</Level>
+		<ExpCost>1_0_760</ExpCost>
+		<PowerGrow>13000</PowerGrow>
 		<Id>76</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>11</Level>
@@ -538,8 +918,18 @@
 		<Level>12</Level>
 		<ExpCost>1_0_770</ExpCost>
 		<PowerGrow>13300</PowerGrow>
+		<Id>77</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>12</Level>
+		<ExpCost>1_0_770</ExpCost>
+		<PowerGrow>13300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>78</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>13</Level>
+		<ExpCost>1_0_780</ExpCost>
+		<PowerGrow>13600</PowerGrow>
 		<Id>78</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>13</Level>
@@ -552,8 +942,18 @@
 		<Level>14</Level>
 		<ExpCost>1_0_790</ExpCost>
 		<PowerGrow>13900</PowerGrow>
+		<Id>79</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>14</Level>
+		<ExpCost>1_0_790</ExpCost>
+		<PowerGrow>13900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>80</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>15</Level>
+		<ExpCost>1_0_800</ExpCost>
+		<PowerGrow>14200</PowerGrow>
 		<Id>80</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>15</Level>
@@ -566,8 +966,18 @@
 		<Level>16</Level>
 		<ExpCost>1_0_810</ExpCost>
 		<PowerGrow>14500</PowerGrow>
+		<Id>81</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>16</Level>
+		<ExpCost>1_0_810</ExpCost>
+		<PowerGrow>14500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>82</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>17</Level>
+		<ExpCost>1_0_820</ExpCost>
+		<PowerGrow>14800</PowerGrow>
 		<Id>82</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>17</Level>
@@ -580,8 +990,18 @@
 		<Level>18</Level>
 		<ExpCost>1_0_830</ExpCost>
 		<PowerGrow>15100</PowerGrow>
+		<Id>83</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>18</Level>
+		<ExpCost>1_0_830</ExpCost>
+		<PowerGrow>15100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>84</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>19</Level>
+		<ExpCost>1_0_840</ExpCost>
+		<PowerGrow>15400</PowerGrow>
 		<Id>84</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>19</Level>
@@ -594,8 +1014,18 @@
 		<Level>20</Level>
 		<ExpCost>1_0_850</ExpCost>
 		<PowerGrow>15700</PowerGrow>
+		<Id>85</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>20</Level>
+		<ExpCost>1_0_850</ExpCost>
+		<PowerGrow>15700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>86</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>21</Level>
+		<ExpCost>1_0_860</ExpCost>
+		<PowerGrow>16000</PowerGrow>
 		<Id>86</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>21</Level>
@@ -608,8 +1038,18 @@
 		<Level>22</Level>
 		<ExpCost>1_0_870</ExpCost>
 		<PowerGrow>16300</PowerGrow>
+		<Id>87</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>22</Level>
+		<ExpCost>1_0_870</ExpCost>
+		<PowerGrow>16300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>88</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>23</Level>
+		<ExpCost>1_0_880</ExpCost>
+		<PowerGrow>16600</PowerGrow>
 		<Id>88</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>23</Level>
@@ -622,8 +1062,18 @@
 		<Level>24</Level>
 		<ExpCost>1_0_890</ExpCost>
 		<PowerGrow>16900</PowerGrow>
+		<Id>89</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>24</Level>
+		<ExpCost>1_0_890</ExpCost>
+		<PowerGrow>16900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>90</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>25</Level>
+		<ExpCost>1_0_900</ExpCost>
+		<PowerGrow>17200</PowerGrow>
 		<Id>90</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>25</Level>
@@ -636,8 +1086,18 @@
 		<Level>26</Level>
 		<ExpCost>1_0_910</ExpCost>
 		<PowerGrow>17500</PowerGrow>
+		<Id>91</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>26</Level>
+		<ExpCost>1_0_910</ExpCost>
+		<PowerGrow>17500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>92</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>27</Level>
+		<ExpCost>1_0_920</ExpCost>
+		<PowerGrow>17800</PowerGrow>
 		<Id>92</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>27</Level>
@@ -650,8 +1110,18 @@
 		<Level>28</Level>
 		<ExpCost>1_0_930</ExpCost>
 		<PowerGrow>18100</PowerGrow>
+		<Id>93</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>28</Level>
+		<ExpCost>1_0_930</ExpCost>
+		<PowerGrow>18100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>94</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>29</Level>
+		<ExpCost>1_0_940</ExpCost>
+		<PowerGrow>18400</PowerGrow>
 		<Id>94</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>29</Level>
@@ -664,8 +1134,18 @@
 		<Level>30</Level>
 		<ExpCost>1_0_950</ExpCost>
 		<PowerGrow>18700</PowerGrow>
+		<Id>95</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>30</Level>
+		<ExpCost>1_0_950</ExpCost>
+		<PowerGrow>18700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>96</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>31</Level>
+		<ExpCost>1_0_960</ExpCost>
+		<PowerGrow>19000</PowerGrow>
 		<Id>96</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>31</Level>
@@ -678,8 +1158,18 @@
 		<Level>32</Level>
 		<ExpCost>1_0_970</ExpCost>
 		<PowerGrow>19300</PowerGrow>
+		<Id>97</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>32</Level>
+		<ExpCost>1_0_970</ExpCost>
+		<PowerGrow>19300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>98</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>33</Level>
+		<ExpCost>1_0_980</ExpCost>
+		<PowerGrow>19600</PowerGrow>
 		<Id>98</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>33</Level>
@@ -692,8 +1182,18 @@
 		<Level>34</Level>
 		<ExpCost>1_0_990</ExpCost>
 		<PowerGrow>19900</PowerGrow>
+		<Id>99</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>34</Level>
+		<ExpCost>1_0_990</ExpCost>
+		<PowerGrow>19900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>100</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>35</Level>
+		<ExpCost>1_0_1000</ExpCost>
+		<PowerGrow>20200</PowerGrow>
 		<Id>100</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>35</Level>
@@ -706,8 +1206,18 @@
 		<Level>36</Level>
 		<ExpCost>1_0_1010</ExpCost>
 		<PowerGrow>20500</PowerGrow>
+		<Id>101</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>36</Level>
+		<ExpCost>1_0_1010</ExpCost>
+		<PowerGrow>20500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>102</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>37</Level>
+		<ExpCost>1_0_1020</ExpCost>
+		<PowerGrow>20800</PowerGrow>
 		<Id>102</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>37</Level>
@@ -720,8 +1230,18 @@
 		<Level>38</Level>
 		<ExpCost>1_0_1030</ExpCost>
 		<PowerGrow>21100</PowerGrow>
+		<Id>103</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>38</Level>
+		<ExpCost>1_0_1030</ExpCost>
+		<PowerGrow>21100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>104</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>39</Level>
+		<ExpCost>1_0_1040</ExpCost>
+		<PowerGrow>21400</PowerGrow>
 		<Id>104</Id>
 		<BreakLevel>3</BreakLevel>
 		<Level>39</Level>
@@ -734,8 +1254,18 @@
 		<Level>40</Level>
 		<ExpCost>1_0_1050</ExpCost>
 		<PowerGrow>21700</PowerGrow>
+		<Id>105</Id>
+		<BreakLevel>3</BreakLevel>
+		<Level>40</Level>
+		<ExpCost>1_0_1050</ExpCost>
+		<PowerGrow>21700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>106</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>1</Level>
+		<ExpCost>1_0_1060</ExpCost>
+		<PowerGrow>21800</PowerGrow>
 		<Id>106</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>1</Level>
@@ -748,8 +1278,18 @@
 		<Level>2</Level>
 		<ExpCost>1_0_1070</ExpCost>
 		<PowerGrow>22200</PowerGrow>
+		<Id>107</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>2</Level>
+		<ExpCost>1_0_1070</ExpCost>
+		<PowerGrow>22200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>108</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>3</Level>
+		<ExpCost>1_0_1080</ExpCost>
+		<PowerGrow>22600</PowerGrow>
 		<Id>108</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>3</Level>
@@ -762,8 +1302,18 @@
 		<Level>4</Level>
 		<ExpCost>1_0_1090</ExpCost>
 		<PowerGrow>23000</PowerGrow>
+		<Id>109</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>4</Level>
+		<ExpCost>1_0_1090</ExpCost>
+		<PowerGrow>23000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>110</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>5</Level>
+		<ExpCost>1_0_1100</ExpCost>
+		<PowerGrow>23400</PowerGrow>
 		<Id>110</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>5</Level>
@@ -776,8 +1326,18 @@
 		<Level>6</Level>
 		<ExpCost>1_0_1110</ExpCost>
 		<PowerGrow>23800</PowerGrow>
+		<Id>111</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>6</Level>
+		<ExpCost>1_0_1110</ExpCost>
+		<PowerGrow>23800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>112</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>7</Level>
+		<ExpCost>1_0_1120</ExpCost>
+		<PowerGrow>24200</PowerGrow>
 		<Id>112</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>7</Level>
@@ -790,8 +1350,18 @@
 		<Level>8</Level>
 		<ExpCost>1_0_1130</ExpCost>
 		<PowerGrow>24600</PowerGrow>
+		<Id>113</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>8</Level>
+		<ExpCost>1_0_1130</ExpCost>
+		<PowerGrow>24600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>114</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>9</Level>
+		<ExpCost>1_0_1140</ExpCost>
+		<PowerGrow>25000</PowerGrow>
 		<Id>114</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>9</Level>
@@ -804,8 +1374,18 @@
 		<Level>10</Level>
 		<ExpCost>1_0_1150</ExpCost>
 		<PowerGrow>25400</PowerGrow>
+		<Id>115</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>10</Level>
+		<ExpCost>1_0_1150</ExpCost>
+		<PowerGrow>25400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>116</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>11</Level>
+		<ExpCost>1_0_1160</ExpCost>
+		<PowerGrow>25800</PowerGrow>
 		<Id>116</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>11</Level>
@@ -818,8 +1398,18 @@
 		<Level>12</Level>
 		<ExpCost>1_0_1170</ExpCost>
 		<PowerGrow>26200</PowerGrow>
+		<Id>117</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>12</Level>
+		<ExpCost>1_0_1170</ExpCost>
+		<PowerGrow>26200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>118</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>13</Level>
+		<ExpCost>1_0_1180</ExpCost>
+		<PowerGrow>26600</PowerGrow>
 		<Id>118</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>13</Level>
@@ -832,8 +1422,18 @@
 		<Level>14</Level>
 		<ExpCost>1_0_1190</ExpCost>
 		<PowerGrow>27000</PowerGrow>
+		<Id>119</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>14</Level>
+		<ExpCost>1_0_1190</ExpCost>
+		<PowerGrow>27000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>120</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>15</Level>
+		<ExpCost>1_0_1200</ExpCost>
+		<PowerGrow>27400</PowerGrow>
 		<Id>120</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>15</Level>
@@ -846,8 +1446,18 @@
 		<Level>16</Level>
 		<ExpCost>1_0_1210</ExpCost>
 		<PowerGrow>27800</PowerGrow>
+		<Id>121</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>16</Level>
+		<ExpCost>1_0_1210</ExpCost>
+		<PowerGrow>27800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>122</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>17</Level>
+		<ExpCost>1_0_1220</ExpCost>
+		<PowerGrow>28200</PowerGrow>
 		<Id>122</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>17</Level>
@@ -860,8 +1470,18 @@
 		<Level>18</Level>
 		<ExpCost>1_0_1230</ExpCost>
 		<PowerGrow>28600</PowerGrow>
+		<Id>123</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>18</Level>
+		<ExpCost>1_0_1230</ExpCost>
+		<PowerGrow>28600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>124</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>19</Level>
+		<ExpCost>1_0_1240</ExpCost>
+		<PowerGrow>29000</PowerGrow>
 		<Id>124</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>19</Level>
@@ -874,8 +1494,18 @@
 		<Level>20</Level>
 		<ExpCost>1_0_1250</ExpCost>
 		<PowerGrow>29400</PowerGrow>
+		<Id>125</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>20</Level>
+		<ExpCost>1_0_1250</ExpCost>
+		<PowerGrow>29400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>126</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>21</Level>
+		<ExpCost>1_0_1260</ExpCost>
+		<PowerGrow>29800</PowerGrow>
 		<Id>126</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>21</Level>
@@ -888,8 +1518,18 @@
 		<Level>22</Level>
 		<ExpCost>1_0_1270</ExpCost>
 		<PowerGrow>30200</PowerGrow>
+		<Id>127</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>22</Level>
+		<ExpCost>1_0_1270</ExpCost>
+		<PowerGrow>30200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>128</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>23</Level>
+		<ExpCost>1_0_1280</ExpCost>
+		<PowerGrow>30600</PowerGrow>
 		<Id>128</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>23</Level>
@@ -902,8 +1542,18 @@
 		<Level>24</Level>
 		<ExpCost>1_0_1290</ExpCost>
 		<PowerGrow>31000</PowerGrow>
+		<Id>129</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>24</Level>
+		<ExpCost>1_0_1290</ExpCost>
+		<PowerGrow>31000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>130</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>25</Level>
+		<ExpCost>1_0_1300</ExpCost>
+		<PowerGrow>31400</PowerGrow>
 		<Id>130</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>25</Level>
@@ -916,8 +1566,18 @@
 		<Level>26</Level>
 		<ExpCost>1_0_1310</ExpCost>
 		<PowerGrow>31800</PowerGrow>
+		<Id>131</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>26</Level>
+		<ExpCost>1_0_1310</ExpCost>
+		<PowerGrow>31800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>132</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>27</Level>
+		<ExpCost>1_0_1320</ExpCost>
+		<PowerGrow>32200</PowerGrow>
 		<Id>132</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>27</Level>
@@ -930,8 +1590,18 @@
 		<Level>28</Level>
 		<ExpCost>1_0_1330</ExpCost>
 		<PowerGrow>32600</PowerGrow>
+		<Id>133</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>28</Level>
+		<ExpCost>1_0_1330</ExpCost>
+		<PowerGrow>32600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>134</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>29</Level>
+		<ExpCost>1_0_1340</ExpCost>
+		<PowerGrow>33000</PowerGrow>
 		<Id>134</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>29</Level>
@@ -944,8 +1614,18 @@
 		<Level>30</Level>
 		<ExpCost>1_0_1350</ExpCost>
 		<PowerGrow>33400</PowerGrow>
+		<Id>135</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>30</Level>
+		<ExpCost>1_0_1350</ExpCost>
+		<PowerGrow>33400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>136</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>31</Level>
+		<ExpCost>1_0_1360</ExpCost>
+		<PowerGrow>33800</PowerGrow>
 		<Id>136</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>31</Level>
@@ -958,8 +1638,18 @@
 		<Level>32</Level>
 		<ExpCost>1_0_1370</ExpCost>
 		<PowerGrow>34200</PowerGrow>
+		<Id>137</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>32</Level>
+		<ExpCost>1_0_1370</ExpCost>
+		<PowerGrow>34200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>138</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>33</Level>
+		<ExpCost>1_0_1380</ExpCost>
+		<PowerGrow>34600</PowerGrow>
 		<Id>138</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>33</Level>
@@ -972,8 +1662,18 @@
 		<Level>34</Level>
 		<ExpCost>1_0_1390</ExpCost>
 		<PowerGrow>35000</PowerGrow>
+		<Id>139</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>34</Level>
+		<ExpCost>1_0_1390</ExpCost>
+		<PowerGrow>35000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>140</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>35</Level>
+		<ExpCost>1_0_1400</ExpCost>
+		<PowerGrow>35400</PowerGrow>
 		<Id>140</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>35</Level>
@@ -986,8 +1686,18 @@
 		<Level>36</Level>
 		<ExpCost>1_0_1410</ExpCost>
 		<PowerGrow>35800</PowerGrow>
+		<Id>141</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>36</Level>
+		<ExpCost>1_0_1410</ExpCost>
+		<PowerGrow>35800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>142</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>37</Level>
+		<ExpCost>1_0_1420</ExpCost>
+		<PowerGrow>36200</PowerGrow>
 		<Id>142</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>37</Level>
@@ -1000,8 +1710,18 @@
 		<Level>38</Level>
 		<ExpCost>1_0_1430</ExpCost>
 		<PowerGrow>36600</PowerGrow>
+		<Id>143</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>38</Level>
+		<ExpCost>1_0_1430</ExpCost>
+		<PowerGrow>36600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>144</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>39</Level>
+		<ExpCost>1_0_1440</ExpCost>
+		<PowerGrow>37000</PowerGrow>
 		<Id>144</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>39</Level>
@@ -1014,8 +1734,18 @@
 		<Level>40</Level>
 		<ExpCost>1_0_1450</ExpCost>
 		<PowerGrow>37400</PowerGrow>
+		<Id>145</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>40</Level>
+		<ExpCost>1_0_1450</ExpCost>
+		<PowerGrow>37400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>146</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>41</Level>
+		<ExpCost>1_0_1460</ExpCost>
+		<PowerGrow>37800</PowerGrow>
 		<Id>146</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>41</Level>
@@ -1028,8 +1758,18 @@
 		<Level>42</Level>
 		<ExpCost>1_0_1470</ExpCost>
 		<PowerGrow>38200</PowerGrow>
+		<Id>147</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>42</Level>
+		<ExpCost>1_0_1470</ExpCost>
+		<PowerGrow>38200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>148</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>43</Level>
+		<ExpCost>1_0_1480</ExpCost>
+		<PowerGrow>38600</PowerGrow>
 		<Id>148</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>43</Level>
@@ -1042,8 +1782,18 @@
 		<Level>44</Level>
 		<ExpCost>1_0_1490</ExpCost>
 		<PowerGrow>39000</PowerGrow>
+		<Id>149</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>44</Level>
+		<ExpCost>1_0_1490</ExpCost>
+		<PowerGrow>39000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>150</Id>
+		<BreakLevel>4</BreakLevel>
+		<Level>45</Level>
+		<ExpCost>1_0_1500</ExpCost>
+		<PowerGrow>39400</PowerGrow>
 		<Id>150</Id>
 		<BreakLevel>4</BreakLevel>
 		<Level>45</Level>
@@ -1056,8 +1806,18 @@
 		<Level>1</Level>
 		<ExpCost>1_0_1510</ExpCost>
 		<PowerGrow>39500</PowerGrow>
+		<Id>151</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>1</Level>
+		<ExpCost>1_0_1510</ExpCost>
+		<PowerGrow>39500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>152</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>2</Level>
+		<ExpCost>1_0_1520</ExpCost>
+		<PowerGrow>40000</PowerGrow>
 		<Id>152</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>2</Level>
@@ -1070,8 +1830,18 @@
 		<Level>3</Level>
 		<ExpCost>1_0_1530</ExpCost>
 		<PowerGrow>40500</PowerGrow>
+		<Id>153</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>3</Level>
+		<ExpCost>1_0_1530</ExpCost>
+		<PowerGrow>40500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>154</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>4</Level>
+		<ExpCost>1_0_1540</ExpCost>
+		<PowerGrow>41000</PowerGrow>
 		<Id>154</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>4</Level>
@@ -1084,8 +1854,18 @@
 		<Level>5</Level>
 		<ExpCost>1_0_1550</ExpCost>
 		<PowerGrow>41500</PowerGrow>
+		<Id>155</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>5</Level>
+		<ExpCost>1_0_1550</ExpCost>
+		<PowerGrow>41500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>156</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>6</Level>
+		<ExpCost>1_0_1560</ExpCost>
+		<PowerGrow>42000</PowerGrow>
 		<Id>156</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>6</Level>
@@ -1098,8 +1878,18 @@
 		<Level>7</Level>
 		<ExpCost>1_0_1570</ExpCost>
 		<PowerGrow>42500</PowerGrow>
+		<Id>157</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>7</Level>
+		<ExpCost>1_0_1570</ExpCost>
+		<PowerGrow>42500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>158</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>8</Level>
+		<ExpCost>1_0_1580</ExpCost>
+		<PowerGrow>43000</PowerGrow>
 		<Id>158</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>8</Level>
@@ -1112,8 +1902,18 @@
 		<Level>9</Level>
 		<ExpCost>1_0_1590</ExpCost>
 		<PowerGrow>43500</PowerGrow>
+		<Id>159</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>9</Level>
+		<ExpCost>1_0_1590</ExpCost>
+		<PowerGrow>43500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>160</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>10</Level>
+		<ExpCost>1_0_1600</ExpCost>
+		<PowerGrow>44000</PowerGrow>
 		<Id>160</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>10</Level>
@@ -1126,8 +1926,18 @@
 		<Level>11</Level>
 		<ExpCost>1_0_1610</ExpCost>
 		<PowerGrow>44500</PowerGrow>
+		<Id>161</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>11</Level>
+		<ExpCost>1_0_1610</ExpCost>
+		<PowerGrow>44500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>162</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>12</Level>
+		<ExpCost>1_0_1620</ExpCost>
+		<PowerGrow>45000</PowerGrow>
 		<Id>162</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>12</Level>
@@ -1140,8 +1950,18 @@
 		<Level>13</Level>
 		<ExpCost>1_0_1630</ExpCost>
 		<PowerGrow>45500</PowerGrow>
+		<Id>163</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>13</Level>
+		<ExpCost>1_0_1630</ExpCost>
+		<PowerGrow>45500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>164</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>14</Level>
+		<ExpCost>1_0_1640</ExpCost>
+		<PowerGrow>46000</PowerGrow>
 		<Id>164</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>14</Level>
@@ -1154,8 +1974,18 @@
 		<Level>15</Level>
 		<ExpCost>1_0_1650</ExpCost>
 		<PowerGrow>46500</PowerGrow>
+		<Id>165</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>15</Level>
+		<ExpCost>1_0_1650</ExpCost>
+		<PowerGrow>46500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>166</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>16</Level>
+		<ExpCost>1_0_1660</ExpCost>
+		<PowerGrow>47000</PowerGrow>
 		<Id>166</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>16</Level>
@@ -1168,8 +1998,18 @@
 		<Level>17</Level>
 		<ExpCost>1_0_1670</ExpCost>
 		<PowerGrow>47500</PowerGrow>
+		<Id>167</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>17</Level>
+		<ExpCost>1_0_1670</ExpCost>
+		<PowerGrow>47500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>168</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>18</Level>
+		<ExpCost>1_0_1680</ExpCost>
+		<PowerGrow>48000</PowerGrow>
 		<Id>168</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>18</Level>
@@ -1182,8 +2022,18 @@
 		<Level>19</Level>
 		<ExpCost>1_0_1690</ExpCost>
 		<PowerGrow>48500</PowerGrow>
+		<Id>169</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>19</Level>
+		<ExpCost>1_0_1690</ExpCost>
+		<PowerGrow>48500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>170</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>20</Level>
+		<ExpCost>1_0_1700</ExpCost>
+		<PowerGrow>49000</PowerGrow>
 		<Id>170</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>20</Level>
@@ -1196,8 +2046,18 @@
 		<Level>21</Level>
 		<ExpCost>1_0_1710</ExpCost>
 		<PowerGrow>49500</PowerGrow>
+		<Id>171</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>21</Level>
+		<ExpCost>1_0_1710</ExpCost>
+		<PowerGrow>49500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>172</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>22</Level>
+		<ExpCost>1_0_1720</ExpCost>
+		<PowerGrow>50000</PowerGrow>
 		<Id>172</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>22</Level>
@@ -1210,8 +2070,18 @@
 		<Level>23</Level>
 		<ExpCost>1_0_1730</ExpCost>
 		<PowerGrow>50500</PowerGrow>
+		<Id>173</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>23</Level>
+		<ExpCost>1_0_1730</ExpCost>
+		<PowerGrow>50500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>174</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>24</Level>
+		<ExpCost>1_0_1740</ExpCost>
+		<PowerGrow>51000</PowerGrow>
 		<Id>174</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>24</Level>
@@ -1224,8 +2094,18 @@
 		<Level>25</Level>
 		<ExpCost>1_0_1750</ExpCost>
 		<PowerGrow>51500</PowerGrow>
+		<Id>175</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>25</Level>
+		<ExpCost>1_0_1750</ExpCost>
+		<PowerGrow>51500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>176</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>26</Level>
+		<ExpCost>1_0_1760</ExpCost>
+		<PowerGrow>52000</PowerGrow>
 		<Id>176</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>26</Level>
@@ -1238,8 +2118,18 @@
 		<Level>27</Level>
 		<ExpCost>1_0_1770</ExpCost>
 		<PowerGrow>52500</PowerGrow>
+		<Id>177</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>27</Level>
+		<ExpCost>1_0_1770</ExpCost>
+		<PowerGrow>52500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>178</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>28</Level>
+		<ExpCost>1_0_1780</ExpCost>
+		<PowerGrow>53000</PowerGrow>
 		<Id>178</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>28</Level>
@@ -1252,8 +2142,18 @@
 		<Level>29</Level>
 		<ExpCost>1_0_1790</ExpCost>
 		<PowerGrow>53500</PowerGrow>
+		<Id>179</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>29</Level>
+		<ExpCost>1_0_1790</ExpCost>
+		<PowerGrow>53500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>180</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>30</Level>
+		<ExpCost>1_0_1800</ExpCost>
+		<PowerGrow>54000</PowerGrow>
 		<Id>180</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>30</Level>
@@ -1266,8 +2166,18 @@
 		<Level>31</Level>
 		<ExpCost>1_0_1810</ExpCost>
 		<PowerGrow>54500</PowerGrow>
+		<Id>181</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>31</Level>
+		<ExpCost>1_0_1810</ExpCost>
+		<PowerGrow>54500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>182</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>32</Level>
+		<ExpCost>1_0_1820</ExpCost>
+		<PowerGrow>55000</PowerGrow>
 		<Id>182</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>32</Level>
@@ -1280,8 +2190,18 @@
 		<Level>33</Level>
 		<ExpCost>1_0_1830</ExpCost>
 		<PowerGrow>55500</PowerGrow>
+		<Id>183</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>33</Level>
+		<ExpCost>1_0_1830</ExpCost>
+		<PowerGrow>55500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>184</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>34</Level>
+		<ExpCost>1_0_1840</ExpCost>
+		<PowerGrow>56000</PowerGrow>
 		<Id>184</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>34</Level>
@@ -1294,8 +2214,18 @@
 		<Level>35</Level>
 		<ExpCost>1_0_1850</ExpCost>
 		<PowerGrow>56500</PowerGrow>
+		<Id>185</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>35</Level>
+		<ExpCost>1_0_1850</ExpCost>
+		<PowerGrow>56500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>186</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>36</Level>
+		<ExpCost>1_0_1860</ExpCost>
+		<PowerGrow>57000</PowerGrow>
 		<Id>186</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>36</Level>
@@ -1308,8 +2238,18 @@
 		<Level>37</Level>
 		<ExpCost>1_0_1870</ExpCost>
 		<PowerGrow>57500</PowerGrow>
+		<Id>187</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>37</Level>
+		<ExpCost>1_0_1870</ExpCost>
+		<PowerGrow>57500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>188</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>38</Level>
+		<ExpCost>1_0_1880</ExpCost>
+		<PowerGrow>58000</PowerGrow>
 		<Id>188</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>38</Level>
@@ -1322,8 +2262,18 @@
 		<Level>39</Level>
 		<ExpCost>1_0_1890</ExpCost>
 		<PowerGrow>58500</PowerGrow>
+		<Id>189</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>39</Level>
+		<ExpCost>1_0_1890</ExpCost>
+		<PowerGrow>58500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>190</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>40</Level>
+		<ExpCost>1_0_1900</ExpCost>
+		<PowerGrow>59000</PowerGrow>
 		<Id>190</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>40</Level>
@@ -1336,8 +2286,18 @@
 		<Level>41</Level>
 		<ExpCost>1_0_1910</ExpCost>
 		<PowerGrow>59500</PowerGrow>
+		<Id>191</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>41</Level>
+		<ExpCost>1_0_1910</ExpCost>
+		<PowerGrow>59500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>192</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>42</Level>
+		<ExpCost>1_0_1920</ExpCost>
+		<PowerGrow>60000</PowerGrow>
 		<Id>192</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>42</Level>
@@ -1350,8 +2310,18 @@
 		<Level>43</Level>
 		<ExpCost>1_0_1930</ExpCost>
 		<PowerGrow>60500</PowerGrow>
+		<Id>193</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>43</Level>
+		<ExpCost>1_0_1930</ExpCost>
+		<PowerGrow>60500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>194</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>44</Level>
+		<ExpCost>1_0_1940</ExpCost>
+		<PowerGrow>61000</PowerGrow>
 		<Id>194</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>44</Level>
@@ -1364,8 +2334,18 @@
 		<Level>45</Level>
 		<ExpCost>1_0_1950</ExpCost>
 		<PowerGrow>61500</PowerGrow>
+		<Id>195</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>45</Level>
+		<ExpCost>1_0_1950</ExpCost>
+		<PowerGrow>61500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>196</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>46</Level>
+		<ExpCost>1_0_1960</ExpCost>
+		<PowerGrow>62000</PowerGrow>
 		<Id>196</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>46</Level>
@@ -1378,8 +2358,18 @@
 		<Level>47</Level>
 		<ExpCost>1_0_1970</ExpCost>
 		<PowerGrow>62500</PowerGrow>
+		<Id>197</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>47</Level>
+		<ExpCost>1_0_1970</ExpCost>
+		<PowerGrow>62500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>198</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>48</Level>
+		<ExpCost>1_0_1980</ExpCost>
+		<PowerGrow>63000</PowerGrow>
 		<Id>198</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>48</Level>
@@ -1392,8 +2382,18 @@
 		<Level>49</Level>
 		<ExpCost>1_0_1990</ExpCost>
 		<PowerGrow>63500</PowerGrow>
+		<Id>199</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>49</Level>
+		<ExpCost>1_0_1990</ExpCost>
+		<PowerGrow>63500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>200</Id>
+		<BreakLevel>5</BreakLevel>
+		<Level>50</Level>
+		<ExpCost>1_0_2000</ExpCost>
+		<PowerGrow>64000</PowerGrow>
 		<Id>200</Id>
 		<BreakLevel>5</BreakLevel>
 		<Level>50</Level>
@@ -1406,8 +2406,18 @@
 		<Level>1</Level>
 		<ExpCost>1_0_2010</ExpCost>
 		<PowerGrow>64100</PowerGrow>
+		<Id>201</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>1</Level>
+		<ExpCost>1_0_2010</ExpCost>
+		<PowerGrow>64100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>202</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>2</Level>
+		<ExpCost>1_0_2020</ExpCost>
+		<PowerGrow>64700</PowerGrow>
 		<Id>202</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>2</Level>
@@ -1420,8 +2430,18 @@
 		<Level>3</Level>
 		<ExpCost>1_0_2030</ExpCost>
 		<PowerGrow>65300</PowerGrow>
+		<Id>203</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>3</Level>
+		<ExpCost>1_0_2030</ExpCost>
+		<PowerGrow>65300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>204</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>4</Level>
+		<ExpCost>1_0_2040</ExpCost>
+		<PowerGrow>65900</PowerGrow>
 		<Id>204</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>4</Level>
@@ -1434,8 +2454,18 @@
 		<Level>5</Level>
 		<ExpCost>1_0_2050</ExpCost>
 		<PowerGrow>66500</PowerGrow>
+		<Id>205</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>5</Level>
+		<ExpCost>1_0_2050</ExpCost>
+		<PowerGrow>66500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>206</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>6</Level>
+		<ExpCost>1_0_2060</ExpCost>
+		<PowerGrow>67100</PowerGrow>
 		<Id>206</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>6</Level>
@@ -1448,8 +2478,18 @@
 		<Level>7</Level>
 		<ExpCost>1_0_2070</ExpCost>
 		<PowerGrow>67700</PowerGrow>
+		<Id>207</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>7</Level>
+		<ExpCost>1_0_2070</ExpCost>
+		<PowerGrow>67700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>208</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>8</Level>
+		<ExpCost>1_0_2080</ExpCost>
+		<PowerGrow>68300</PowerGrow>
 		<Id>208</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>8</Level>
@@ -1462,8 +2502,18 @@
 		<Level>9</Level>
 		<ExpCost>1_0_2090</ExpCost>
 		<PowerGrow>68900</PowerGrow>
+		<Id>209</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>9</Level>
+		<ExpCost>1_0_2090</ExpCost>
+		<PowerGrow>68900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>210</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>10</Level>
+		<ExpCost>1_0_2100</ExpCost>
+		<PowerGrow>69500</PowerGrow>
 		<Id>210</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>10</Level>
@@ -1476,8 +2526,18 @@
 		<Level>11</Level>
 		<ExpCost>1_0_2110</ExpCost>
 		<PowerGrow>70100</PowerGrow>
+		<Id>211</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>11</Level>
+		<ExpCost>1_0_2110</ExpCost>
+		<PowerGrow>70100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>212</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>12</Level>
+		<ExpCost>1_0_2120</ExpCost>
+		<PowerGrow>70700</PowerGrow>
 		<Id>212</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>12</Level>
@@ -1490,8 +2550,18 @@
 		<Level>13</Level>
 		<ExpCost>1_0_2130</ExpCost>
 		<PowerGrow>71300</PowerGrow>
+		<Id>213</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>13</Level>
+		<ExpCost>1_0_2130</ExpCost>
+		<PowerGrow>71300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>214</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>14</Level>
+		<ExpCost>1_0_2140</ExpCost>
+		<PowerGrow>71900</PowerGrow>
 		<Id>214</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>14</Level>
@@ -1504,8 +2574,18 @@
 		<Level>15</Level>
 		<ExpCost>1_0_2150</ExpCost>
 		<PowerGrow>72500</PowerGrow>
+		<Id>215</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>15</Level>
+		<ExpCost>1_0_2150</ExpCost>
+		<PowerGrow>72500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>216</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>16</Level>
+		<ExpCost>1_0_2160</ExpCost>
+		<PowerGrow>73100</PowerGrow>
 		<Id>216</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>16</Level>
@@ -1518,8 +2598,18 @@
 		<Level>17</Level>
 		<ExpCost>1_0_2170</ExpCost>
 		<PowerGrow>73700</PowerGrow>
+		<Id>217</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>17</Level>
+		<ExpCost>1_0_2170</ExpCost>
+		<PowerGrow>73700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>218</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>18</Level>
+		<ExpCost>1_0_2180</ExpCost>
+		<PowerGrow>74300</PowerGrow>
 		<Id>218</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>18</Level>
@@ -1532,8 +2622,18 @@
 		<Level>19</Level>
 		<ExpCost>1_0_2190</ExpCost>
 		<PowerGrow>74900</PowerGrow>
+		<Id>219</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>19</Level>
+		<ExpCost>1_0_2190</ExpCost>
+		<PowerGrow>74900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>220</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>20</Level>
+		<ExpCost>1_0_2200</ExpCost>
+		<PowerGrow>75500</PowerGrow>
 		<Id>220</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>20</Level>
@@ -1546,8 +2646,18 @@
 		<Level>21</Level>
 		<ExpCost>1_0_2210</ExpCost>
 		<PowerGrow>76100</PowerGrow>
+		<Id>221</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>21</Level>
+		<ExpCost>1_0_2210</ExpCost>
+		<PowerGrow>76100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>222</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>22</Level>
+		<ExpCost>1_0_2220</ExpCost>
+		<PowerGrow>76700</PowerGrow>
 		<Id>222</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>22</Level>
@@ -1560,8 +2670,18 @@
 		<Level>23</Level>
 		<ExpCost>1_0_2230</ExpCost>
 		<PowerGrow>77300</PowerGrow>
+		<Id>223</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>23</Level>
+		<ExpCost>1_0_2230</ExpCost>
+		<PowerGrow>77300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>224</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>24</Level>
+		<ExpCost>1_0_2240</ExpCost>
+		<PowerGrow>77900</PowerGrow>
 		<Id>224</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>24</Level>
@@ -1574,8 +2694,18 @@
 		<Level>25</Level>
 		<ExpCost>1_0_2250</ExpCost>
 		<PowerGrow>78500</PowerGrow>
+		<Id>225</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>25</Level>
+		<ExpCost>1_0_2250</ExpCost>
+		<PowerGrow>78500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>226</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>26</Level>
+		<ExpCost>1_0_2260</ExpCost>
+		<PowerGrow>79100</PowerGrow>
 		<Id>226</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>26</Level>
@@ -1588,8 +2718,18 @@
 		<Level>27</Level>
 		<ExpCost>1_0_2270</ExpCost>
 		<PowerGrow>79700</PowerGrow>
+		<Id>227</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>27</Level>
+		<ExpCost>1_0_2270</ExpCost>
+		<PowerGrow>79700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>228</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>28</Level>
+		<ExpCost>1_0_2280</ExpCost>
+		<PowerGrow>80300</PowerGrow>
 		<Id>228</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>28</Level>
@@ -1602,8 +2742,18 @@
 		<Level>29</Level>
 		<ExpCost>1_0_2290</ExpCost>
 		<PowerGrow>80900</PowerGrow>
+		<Id>229</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>29</Level>
+		<ExpCost>1_0_2290</ExpCost>
+		<PowerGrow>80900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>230</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>30</Level>
+		<ExpCost>1_0_2300</ExpCost>
+		<PowerGrow>81500</PowerGrow>
 		<Id>230</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>30</Level>
@@ -1616,8 +2766,18 @@
 		<Level>31</Level>
 		<ExpCost>1_0_2310</ExpCost>
 		<PowerGrow>82100</PowerGrow>
+		<Id>231</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>31</Level>
+		<ExpCost>1_0_2310</ExpCost>
+		<PowerGrow>82100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>232</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>32</Level>
+		<ExpCost>1_0_2320</ExpCost>
+		<PowerGrow>82700</PowerGrow>
 		<Id>232</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>32</Level>
@@ -1630,8 +2790,18 @@
 		<Level>33</Level>
 		<ExpCost>1_0_2330</ExpCost>
 		<PowerGrow>83300</PowerGrow>
+		<Id>233</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>33</Level>
+		<ExpCost>1_0_2330</ExpCost>
+		<PowerGrow>83300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>234</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>34</Level>
+		<ExpCost>1_0_2340</ExpCost>
+		<PowerGrow>83900</PowerGrow>
 		<Id>234</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>34</Level>
@@ -1644,8 +2814,18 @@
 		<Level>35</Level>
 		<ExpCost>1_0_2350</ExpCost>
 		<PowerGrow>84500</PowerGrow>
+		<Id>235</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>35</Level>
+		<ExpCost>1_0_2350</ExpCost>
+		<PowerGrow>84500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>236</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>36</Level>
+		<ExpCost>1_0_2360</ExpCost>
+		<PowerGrow>85100</PowerGrow>
 		<Id>236</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>36</Level>
@@ -1658,8 +2838,18 @@
 		<Level>37</Level>
 		<ExpCost>1_0_2370</ExpCost>
 		<PowerGrow>85700</PowerGrow>
+		<Id>237</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>37</Level>
+		<ExpCost>1_0_2370</ExpCost>
+		<PowerGrow>85700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>238</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>38</Level>
+		<ExpCost>1_0_2380</ExpCost>
+		<PowerGrow>86300</PowerGrow>
 		<Id>238</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>38</Level>
@@ -1672,8 +2862,18 @@
 		<Level>39</Level>
 		<ExpCost>1_0_2390</ExpCost>
 		<PowerGrow>86900</PowerGrow>
+		<Id>239</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>39</Level>
+		<ExpCost>1_0_2390</ExpCost>
+		<PowerGrow>86900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>240</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>40</Level>
+		<ExpCost>1_0_2400</ExpCost>
+		<PowerGrow>87500</PowerGrow>
 		<Id>240</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>40</Level>
@@ -1686,8 +2886,18 @@
 		<Level>41</Level>
 		<ExpCost>1_0_2410</ExpCost>
 		<PowerGrow>88100</PowerGrow>
+		<Id>241</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>41</Level>
+		<ExpCost>1_0_2410</ExpCost>
+		<PowerGrow>88100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>242</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>42</Level>
+		<ExpCost>1_0_2420</ExpCost>
+		<PowerGrow>88700</PowerGrow>
 		<Id>242</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>42</Level>
@@ -1700,8 +2910,18 @@
 		<Level>43</Level>
 		<ExpCost>1_0_2430</ExpCost>
 		<PowerGrow>89300</PowerGrow>
+		<Id>243</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>43</Level>
+		<ExpCost>1_0_2430</ExpCost>
+		<PowerGrow>89300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>244</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>44</Level>
+		<ExpCost>1_0_2440</ExpCost>
+		<PowerGrow>89900</PowerGrow>
 		<Id>244</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>44</Level>
@@ -1714,8 +2934,18 @@
 		<Level>45</Level>
 		<ExpCost>1_0_2450</ExpCost>
 		<PowerGrow>90500</PowerGrow>
+		<Id>245</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>45</Level>
+		<ExpCost>1_0_2450</ExpCost>
+		<PowerGrow>90500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>246</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>46</Level>
+		<ExpCost>1_0_2460</ExpCost>
+		<PowerGrow>91100</PowerGrow>
 		<Id>246</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>46</Level>
@@ -1728,8 +2958,18 @@
 		<Level>47</Level>
 		<ExpCost>1_0_2470</ExpCost>
 		<PowerGrow>91700</PowerGrow>
+		<Id>247</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>47</Level>
+		<ExpCost>1_0_2470</ExpCost>
+		<PowerGrow>91700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>248</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>48</Level>
+		<ExpCost>1_0_2480</ExpCost>
+		<PowerGrow>92300</PowerGrow>
 		<Id>248</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>48</Level>
@@ -1742,8 +2982,18 @@
 		<Level>49</Level>
 		<ExpCost>1_0_2490</ExpCost>
 		<PowerGrow>92900</PowerGrow>
+		<Id>249</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>49</Level>
+		<ExpCost>1_0_2490</ExpCost>
+		<PowerGrow>92900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>250</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>50</Level>
+		<ExpCost>1_0_2500</ExpCost>
+		<PowerGrow>93500</PowerGrow>
 		<Id>250</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>50</Level>
@@ -1756,8 +3006,18 @@
 		<Level>51</Level>
 		<ExpCost>1_0_2510</ExpCost>
 		<PowerGrow>94100</PowerGrow>
+		<Id>251</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>51</Level>
+		<ExpCost>1_0_2510</ExpCost>
+		<PowerGrow>94100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>252</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>52</Level>
+		<ExpCost>1_0_2520</ExpCost>
+		<PowerGrow>94700</PowerGrow>
 		<Id>252</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>52</Level>
@@ -1770,8 +3030,18 @@
 		<Level>53</Level>
 		<ExpCost>1_0_2530</ExpCost>
 		<PowerGrow>95300</PowerGrow>
+		<Id>253</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>53</Level>
+		<ExpCost>1_0_2530</ExpCost>
+		<PowerGrow>95300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>254</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>54</Level>
+		<ExpCost>1_0_2540</ExpCost>
+		<PowerGrow>95900</PowerGrow>
 		<Id>254</Id>
 		<BreakLevel>6</BreakLevel>
 		<Level>54</Level>
@@ -1784,8 +3054,18 @@
 		<Level>55</Level>
 		<ExpCost>1_0_2550</ExpCost>
 		<PowerGrow>96500</PowerGrow>
+		<Id>255</Id>
+		<BreakLevel>6</BreakLevel>
+		<Level>55</Level>
+		<ExpCost>1_0_2550</ExpCost>
+		<PowerGrow>96500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>256</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>1</Level>
+		<ExpCost>1_0_2560</ExpCost>
+		<PowerGrow>96600</PowerGrow>
 		<Id>256</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>1</Level>
@@ -1798,8 +3078,18 @@
 		<Level>2</Level>
 		<ExpCost>1_0_2570</ExpCost>
 		<PowerGrow>97300</PowerGrow>
+		<Id>257</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>2</Level>
+		<ExpCost>1_0_2570</ExpCost>
+		<PowerGrow>97300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>258</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>3</Level>
+		<ExpCost>1_0_2580</ExpCost>
+		<PowerGrow>98000</PowerGrow>
 		<Id>258</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>3</Level>
@@ -1812,8 +3102,18 @@
 		<Level>4</Level>
 		<ExpCost>1_0_2590</ExpCost>
 		<PowerGrow>98700</PowerGrow>
+		<Id>259</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>4</Level>
+		<ExpCost>1_0_2590</ExpCost>
+		<PowerGrow>98700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>260</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>5</Level>
+		<ExpCost>1_0_2600</ExpCost>
+		<PowerGrow>99400</PowerGrow>
 		<Id>260</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>5</Level>
@@ -1826,8 +3126,18 @@
 		<Level>6</Level>
 		<ExpCost>1_0_2610</ExpCost>
 		<PowerGrow>100100</PowerGrow>
+		<Id>261</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>6</Level>
+		<ExpCost>1_0_2610</ExpCost>
+		<PowerGrow>100100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>262</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>7</Level>
+		<ExpCost>1_0_2620</ExpCost>
+		<PowerGrow>100800</PowerGrow>
 		<Id>262</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>7</Level>
@@ -1840,8 +3150,18 @@
 		<Level>8</Level>
 		<ExpCost>1_0_2630</ExpCost>
 		<PowerGrow>101500</PowerGrow>
+		<Id>263</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>8</Level>
+		<ExpCost>1_0_2630</ExpCost>
+		<PowerGrow>101500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>264</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>9</Level>
+		<ExpCost>1_0_2640</ExpCost>
+		<PowerGrow>102200</PowerGrow>
 		<Id>264</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>9</Level>
@@ -1854,8 +3174,18 @@
 		<Level>10</Level>
 		<ExpCost>1_0_2650</ExpCost>
 		<PowerGrow>102900</PowerGrow>
+		<Id>265</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>10</Level>
+		<ExpCost>1_0_2650</ExpCost>
+		<PowerGrow>102900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>266</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>11</Level>
+		<ExpCost>1_0_2660</ExpCost>
+		<PowerGrow>103600</PowerGrow>
 		<Id>266</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>11</Level>
@@ -1868,8 +3198,18 @@
 		<Level>12</Level>
 		<ExpCost>1_0_2670</ExpCost>
 		<PowerGrow>104300</PowerGrow>
+		<Id>267</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>12</Level>
+		<ExpCost>1_0_2670</ExpCost>
+		<PowerGrow>104300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>268</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>13</Level>
+		<ExpCost>1_0_2680</ExpCost>
+		<PowerGrow>105000</PowerGrow>
 		<Id>268</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>13</Level>
@@ -1882,8 +3222,18 @@
 		<Level>14</Level>
 		<ExpCost>1_0_2690</ExpCost>
 		<PowerGrow>105700</PowerGrow>
+		<Id>269</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>14</Level>
+		<ExpCost>1_0_2690</ExpCost>
+		<PowerGrow>105700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>270</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>15</Level>
+		<ExpCost>1_0_2700</ExpCost>
+		<PowerGrow>106400</PowerGrow>
 		<Id>270</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>15</Level>
@@ -1896,8 +3246,18 @@
 		<Level>16</Level>
 		<ExpCost>1_0_2710</ExpCost>
 		<PowerGrow>107100</PowerGrow>
+		<Id>271</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>16</Level>
+		<ExpCost>1_0_2710</ExpCost>
+		<PowerGrow>107100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>272</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>17</Level>
+		<ExpCost>1_0_2720</ExpCost>
+		<PowerGrow>107800</PowerGrow>
 		<Id>272</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>17</Level>
@@ -1910,8 +3270,18 @@
 		<Level>18</Level>
 		<ExpCost>1_0_2730</ExpCost>
 		<PowerGrow>108500</PowerGrow>
+		<Id>273</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>18</Level>
+		<ExpCost>1_0_2730</ExpCost>
+		<PowerGrow>108500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>274</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>19</Level>
+		<ExpCost>1_0_2740</ExpCost>
+		<PowerGrow>109200</PowerGrow>
 		<Id>274</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>19</Level>
@@ -1924,8 +3294,18 @@
 		<Level>20</Level>
 		<ExpCost>1_0_2750</ExpCost>
 		<PowerGrow>109900</PowerGrow>
+		<Id>275</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>20</Level>
+		<ExpCost>1_0_2750</ExpCost>
+		<PowerGrow>109900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>276</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>21</Level>
+		<ExpCost>1_0_2760</ExpCost>
+		<PowerGrow>110600</PowerGrow>
 		<Id>276</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>21</Level>
@@ -1938,8 +3318,18 @@
 		<Level>22</Level>
 		<ExpCost>1_0_2770</ExpCost>
 		<PowerGrow>111300</PowerGrow>
+		<Id>277</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>22</Level>
+		<ExpCost>1_0_2770</ExpCost>
+		<PowerGrow>111300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>278</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>23</Level>
+		<ExpCost>1_0_2780</ExpCost>
+		<PowerGrow>112000</PowerGrow>
 		<Id>278</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>23</Level>
@@ -1952,8 +3342,18 @@
 		<Level>24</Level>
 		<ExpCost>1_0_2790</ExpCost>
 		<PowerGrow>112700</PowerGrow>
+		<Id>279</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>24</Level>
+		<ExpCost>1_0_2790</ExpCost>
+		<PowerGrow>112700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>280</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>25</Level>
+		<ExpCost>1_0_2800</ExpCost>
+		<PowerGrow>113400</PowerGrow>
 		<Id>280</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>25</Level>
@@ -1966,8 +3366,18 @@
 		<Level>26</Level>
 		<ExpCost>1_0_2810</ExpCost>
 		<PowerGrow>114100</PowerGrow>
+		<Id>281</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>26</Level>
+		<ExpCost>1_0_2810</ExpCost>
+		<PowerGrow>114100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>282</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>27</Level>
+		<ExpCost>1_0_2820</ExpCost>
+		<PowerGrow>114800</PowerGrow>
 		<Id>282</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>27</Level>
@@ -1980,8 +3390,18 @@
 		<Level>28</Level>
 		<ExpCost>1_0_2830</ExpCost>
 		<PowerGrow>115500</PowerGrow>
+		<Id>283</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>28</Level>
+		<ExpCost>1_0_2830</ExpCost>
+		<PowerGrow>115500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>284</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>29</Level>
+		<ExpCost>1_0_2840</ExpCost>
+		<PowerGrow>116200</PowerGrow>
 		<Id>284</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>29</Level>
@@ -1994,8 +3414,18 @@
 		<Level>30</Level>
 		<ExpCost>1_0_2850</ExpCost>
 		<PowerGrow>116900</PowerGrow>
+		<Id>285</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>30</Level>
+		<ExpCost>1_0_2850</ExpCost>
+		<PowerGrow>116900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>286</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>31</Level>
+		<ExpCost>1_0_2860</ExpCost>
+		<PowerGrow>117600</PowerGrow>
 		<Id>286</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>31</Level>
@@ -2008,8 +3438,18 @@
 		<Level>32</Level>
 		<ExpCost>1_0_2870</ExpCost>
 		<PowerGrow>118300</PowerGrow>
+		<Id>287</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>32</Level>
+		<ExpCost>1_0_2870</ExpCost>
+		<PowerGrow>118300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>288</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>33</Level>
+		<ExpCost>1_0_2880</ExpCost>
+		<PowerGrow>119000</PowerGrow>
 		<Id>288</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>33</Level>
@@ -2022,8 +3462,18 @@
 		<Level>34</Level>
 		<ExpCost>1_0_2890</ExpCost>
 		<PowerGrow>119700</PowerGrow>
+		<Id>289</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>34</Level>
+		<ExpCost>1_0_2890</ExpCost>
+		<PowerGrow>119700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>290</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>35</Level>
+		<ExpCost>1_0_2900</ExpCost>
+		<PowerGrow>120400</PowerGrow>
 		<Id>290</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>35</Level>
@@ -2036,8 +3486,18 @@
 		<Level>36</Level>
 		<ExpCost>1_0_2910</ExpCost>
 		<PowerGrow>121100</PowerGrow>
+		<Id>291</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>36</Level>
+		<ExpCost>1_0_2910</ExpCost>
+		<PowerGrow>121100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>292</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>37</Level>
+		<ExpCost>1_0_2920</ExpCost>
+		<PowerGrow>121800</PowerGrow>
 		<Id>292</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>37</Level>
@@ -2050,8 +3510,18 @@
 		<Level>38</Level>
 		<ExpCost>1_0_2930</ExpCost>
 		<PowerGrow>122500</PowerGrow>
+		<Id>293</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>38</Level>
+		<ExpCost>1_0_2930</ExpCost>
+		<PowerGrow>122500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>294</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>39</Level>
+		<ExpCost>1_0_2940</ExpCost>
+		<PowerGrow>123200</PowerGrow>
 		<Id>294</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>39</Level>
@@ -2064,8 +3534,18 @@
 		<Level>40</Level>
 		<ExpCost>1_0_2950</ExpCost>
 		<PowerGrow>123900</PowerGrow>
+		<Id>295</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>40</Level>
+		<ExpCost>1_0_2950</ExpCost>
+		<PowerGrow>123900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>296</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>41</Level>
+		<ExpCost>1_0_2960</ExpCost>
+		<PowerGrow>124600</PowerGrow>
 		<Id>296</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>41</Level>
@@ -2078,8 +3558,18 @@
 		<Level>42</Level>
 		<ExpCost>1_0_2970</ExpCost>
 		<PowerGrow>125300</PowerGrow>
+		<Id>297</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>42</Level>
+		<ExpCost>1_0_2970</ExpCost>
+		<PowerGrow>125300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>298</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>43</Level>
+		<ExpCost>1_0_2980</ExpCost>
+		<PowerGrow>126000</PowerGrow>
 		<Id>298</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>43</Level>
@@ -2092,8 +3582,18 @@
 		<Level>44</Level>
 		<ExpCost>1_0_2990</ExpCost>
 		<PowerGrow>126700</PowerGrow>
+		<Id>299</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>44</Level>
+		<ExpCost>1_0_2990</ExpCost>
+		<PowerGrow>126700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>300</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>45</Level>
+		<ExpCost>1_0_3000</ExpCost>
+		<PowerGrow>127400</PowerGrow>
 		<Id>300</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>45</Level>
@@ -2106,8 +3606,18 @@
 		<Level>46</Level>
 		<ExpCost>1_0_3010</ExpCost>
 		<PowerGrow>128100</PowerGrow>
+		<Id>301</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>46</Level>
+		<ExpCost>1_0_3010</ExpCost>
+		<PowerGrow>128100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>302</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>47</Level>
+		<ExpCost>1_0_3020</ExpCost>
+		<PowerGrow>128800</PowerGrow>
 		<Id>302</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>47</Level>
@@ -2120,8 +3630,18 @@
 		<Level>48</Level>
 		<ExpCost>1_0_3030</ExpCost>
 		<PowerGrow>129500</PowerGrow>
+		<Id>303</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>48</Level>
+		<ExpCost>1_0_3030</ExpCost>
+		<PowerGrow>129500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>304</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>49</Level>
+		<ExpCost>1_0_3040</ExpCost>
+		<PowerGrow>130200</PowerGrow>
 		<Id>304</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>49</Level>
@@ -2134,8 +3654,18 @@
 		<Level>50</Level>
 		<ExpCost>1_0_3050</ExpCost>
 		<PowerGrow>130900</PowerGrow>
+		<Id>305</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>50</Level>
+		<ExpCost>1_0_3050</ExpCost>
+		<PowerGrow>130900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>306</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>51</Level>
+		<ExpCost>1_0_3060</ExpCost>
+		<PowerGrow>131600</PowerGrow>
 		<Id>306</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>51</Level>
@@ -2148,8 +3678,18 @@
 		<Level>52</Level>
 		<ExpCost>1_0_3070</ExpCost>
 		<PowerGrow>132300</PowerGrow>
+		<Id>307</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>52</Level>
+		<ExpCost>1_0_3070</ExpCost>
+		<PowerGrow>132300</PowerGrow>
 	</Node>
 	<Node>
+		<Id>308</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>53</Level>
+		<ExpCost>1_0_3080</ExpCost>
+		<PowerGrow>133000</PowerGrow>
 		<Id>308</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>53</Level>
@@ -2162,8 +3702,18 @@
 		<Level>54</Level>
 		<ExpCost>1_0_3090</ExpCost>
 		<PowerGrow>133700</PowerGrow>
+		<Id>309</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>54</Level>
+		<ExpCost>1_0_3090</ExpCost>
+		<PowerGrow>133700</PowerGrow>
 	</Node>
 	<Node>
+		<Id>310</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>55</Level>
+		<ExpCost>1_0_3100</ExpCost>
+		<PowerGrow>134400</PowerGrow>
 		<Id>310</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>55</Level>
@@ -2176,8 +3726,18 @@
 		<Level>56</Level>
 		<ExpCost>1_0_3110</ExpCost>
 		<PowerGrow>135100</PowerGrow>
+		<Id>311</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>56</Level>
+		<ExpCost>1_0_3110</ExpCost>
+		<PowerGrow>135100</PowerGrow>
 	</Node>
 	<Node>
+		<Id>312</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>57</Level>
+		<ExpCost>1_0_3120</ExpCost>
+		<PowerGrow>135800</PowerGrow>
 		<Id>312</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>57</Level>
@@ -2190,8 +3750,18 @@
 		<Level>58</Level>
 		<ExpCost>1_0_3130</ExpCost>
 		<PowerGrow>136500</PowerGrow>
+		<Id>313</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>58</Level>
+		<ExpCost>1_0_3130</ExpCost>
+		<PowerGrow>136500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>314</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>59</Level>
+		<ExpCost>1_0_3140</ExpCost>
+		<PowerGrow>137200</PowerGrow>
 		<Id>314</Id>
 		<BreakLevel>7</BreakLevel>
 		<Level>59</Level>
@@ -2204,8 +3774,18 @@
 		<Level>60</Level>
 		<ExpCost>1_0_3150</ExpCost>
 		<PowerGrow>137900</PowerGrow>
+		<Id>315</Id>
+		<BreakLevel>7</BreakLevel>
+		<Level>60</Level>
+		<ExpCost>1_0_3150</ExpCost>
+		<PowerGrow>137900</PowerGrow>
 	</Node>
 	<Node>
+		<Id>316</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>1</Level>
+		<ExpCost>1_0_3160</ExpCost>
+		<PowerGrow>138000</PowerGrow>
 		<Id>316</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>1</Level>
@@ -2218,8 +3798,18 @@
 		<Level>2</Level>
 		<ExpCost>1_0_3170</ExpCost>
 		<PowerGrow>138800</PowerGrow>
+		<Id>317</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>2</Level>
+		<ExpCost>1_0_3170</ExpCost>
+		<PowerGrow>138800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>318</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>3</Level>
+		<ExpCost>1_0_3180</ExpCost>
+		<PowerGrow>139600</PowerGrow>
 		<Id>318</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>3</Level>
@@ -2232,8 +3822,18 @@
 		<Level>4</Level>
 		<ExpCost>1_0_3190</ExpCost>
 		<PowerGrow>140400</PowerGrow>
+		<Id>319</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>4</Level>
+		<ExpCost>1_0_3190</ExpCost>
+		<PowerGrow>140400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>320</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>5</Level>
+		<ExpCost>1_0_3200</ExpCost>
+		<PowerGrow>141200</PowerGrow>
 		<Id>320</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>5</Level>
@@ -2246,8 +3846,18 @@
 		<Level>6</Level>
 		<ExpCost>1_0_3210</ExpCost>
 		<PowerGrow>142000</PowerGrow>
+		<Id>321</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>6</Level>
+		<ExpCost>1_0_3210</ExpCost>
+		<PowerGrow>142000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>322</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>7</Level>
+		<ExpCost>1_0_3220</ExpCost>
+		<PowerGrow>142800</PowerGrow>
 		<Id>322</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>7</Level>
@@ -2260,8 +3870,18 @@
 		<Level>8</Level>
 		<ExpCost>1_0_3230</ExpCost>
 		<PowerGrow>143600</PowerGrow>
+		<Id>323</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>8</Level>
+		<ExpCost>1_0_3230</ExpCost>
+		<PowerGrow>143600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>324</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>9</Level>
+		<ExpCost>1_0_3240</ExpCost>
+		<PowerGrow>144400</PowerGrow>
 		<Id>324</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>9</Level>
@@ -2274,8 +3894,18 @@
 		<Level>10</Level>
 		<ExpCost>1_0_3250</ExpCost>
 		<PowerGrow>145200</PowerGrow>
+		<Id>325</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>10</Level>
+		<ExpCost>1_0_3250</ExpCost>
+		<PowerGrow>145200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>326</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>11</Level>
+		<ExpCost>1_0_3260</ExpCost>
+		<PowerGrow>146000</PowerGrow>
 		<Id>326</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>11</Level>
@@ -2288,8 +3918,18 @@
 		<Level>12</Level>
 		<ExpCost>1_0_3270</ExpCost>
 		<PowerGrow>146800</PowerGrow>
+		<Id>327</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>12</Level>
+		<ExpCost>1_0_3270</ExpCost>
+		<PowerGrow>146800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>328</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>13</Level>
+		<ExpCost>1_0_3280</ExpCost>
+		<PowerGrow>147600</PowerGrow>
 		<Id>328</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>13</Level>
@@ -2302,8 +3942,18 @@
 		<Level>14</Level>
 		<ExpCost>1_0_3290</ExpCost>
 		<PowerGrow>148400</PowerGrow>
+		<Id>329</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>14</Level>
+		<ExpCost>1_0_3290</ExpCost>
+		<PowerGrow>148400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>330</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>15</Level>
+		<ExpCost>1_0_3300</ExpCost>
+		<PowerGrow>149200</PowerGrow>
 		<Id>330</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>15</Level>
@@ -2316,8 +3966,18 @@
 		<Level>16</Level>
 		<ExpCost>1_0_3310</ExpCost>
 		<PowerGrow>150000</PowerGrow>
+		<Id>331</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>16</Level>
+		<ExpCost>1_0_3310</ExpCost>
+		<PowerGrow>150000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>332</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>17</Level>
+		<ExpCost>1_0_3320</ExpCost>
+		<PowerGrow>150800</PowerGrow>
 		<Id>332</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>17</Level>
@@ -2330,8 +3990,18 @@
 		<Level>18</Level>
 		<ExpCost>1_0_3330</ExpCost>
 		<PowerGrow>151600</PowerGrow>
+		<Id>333</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>18</Level>
+		<ExpCost>1_0_3330</ExpCost>
+		<PowerGrow>151600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>334</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>19</Level>
+		<ExpCost>1_0_3340</ExpCost>
+		<PowerGrow>152400</PowerGrow>
 		<Id>334</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>19</Level>
@@ -2344,8 +4014,18 @@
 		<Level>20</Level>
 		<ExpCost>1_0_3350</ExpCost>
 		<PowerGrow>153200</PowerGrow>
+		<Id>335</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>20</Level>
+		<ExpCost>1_0_3350</ExpCost>
+		<PowerGrow>153200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>336</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>21</Level>
+		<ExpCost>1_0_3360</ExpCost>
+		<PowerGrow>154000</PowerGrow>
 		<Id>336</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>21</Level>
@@ -2358,8 +4038,18 @@
 		<Level>22</Level>
 		<ExpCost>1_0_3370</ExpCost>
 		<PowerGrow>154800</PowerGrow>
+		<Id>337</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>22</Level>
+		<ExpCost>1_0_3370</ExpCost>
+		<PowerGrow>154800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>338</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>23</Level>
+		<ExpCost>1_0_3380</ExpCost>
+		<PowerGrow>155600</PowerGrow>
 		<Id>338</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>23</Level>
@@ -2372,8 +4062,18 @@
 		<Level>24</Level>
 		<ExpCost>1_0_3390</ExpCost>
 		<PowerGrow>156400</PowerGrow>
+		<Id>339</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>24</Level>
+		<ExpCost>1_0_3390</ExpCost>
+		<PowerGrow>156400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>340</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>25</Level>
+		<ExpCost>1_0_3400</ExpCost>
+		<PowerGrow>157200</PowerGrow>
 		<Id>340</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>25</Level>
@@ -2386,8 +4086,18 @@
 		<Level>26</Level>
 		<ExpCost>1_0_3410</ExpCost>
 		<PowerGrow>158000</PowerGrow>
+		<Id>341</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>26</Level>
+		<ExpCost>1_0_3410</ExpCost>
+		<PowerGrow>158000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>342</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>27</Level>
+		<ExpCost>1_0_3420</ExpCost>
+		<PowerGrow>158800</PowerGrow>
 		<Id>342</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>27</Level>
@@ -2400,8 +4110,18 @@
 		<Level>28</Level>
 		<ExpCost>1_0_3430</ExpCost>
 		<PowerGrow>159600</PowerGrow>
+		<Id>343</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>28</Level>
+		<ExpCost>1_0_3430</ExpCost>
+		<PowerGrow>159600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>344</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>29</Level>
+		<ExpCost>1_0_3440</ExpCost>
+		<PowerGrow>160400</PowerGrow>
 		<Id>344</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>29</Level>
@@ -2414,8 +4134,18 @@
 		<Level>30</Level>
 		<ExpCost>1_0_3450</ExpCost>
 		<PowerGrow>161200</PowerGrow>
+		<Id>345</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>30</Level>
+		<ExpCost>1_0_3450</ExpCost>
+		<PowerGrow>161200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>346</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>31</Level>
+		<ExpCost>1_0_3460</ExpCost>
+		<PowerGrow>162000</PowerGrow>
 		<Id>346</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>31</Level>
@@ -2428,8 +4158,18 @@
 		<Level>32</Level>
 		<ExpCost>1_0_3470</ExpCost>
 		<PowerGrow>162800</PowerGrow>
+		<Id>347</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>32</Level>
+		<ExpCost>1_0_3470</ExpCost>
+		<PowerGrow>162800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>348</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>33</Level>
+		<ExpCost>1_0_3480</ExpCost>
+		<PowerGrow>163600</PowerGrow>
 		<Id>348</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>33</Level>
@@ -2442,8 +4182,18 @@
 		<Level>34</Level>
 		<ExpCost>1_0_3490</ExpCost>
 		<PowerGrow>164400</PowerGrow>
+		<Id>349</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>34</Level>
+		<ExpCost>1_0_3490</ExpCost>
+		<PowerGrow>164400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>350</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>35</Level>
+		<ExpCost>1_0_3500</ExpCost>
+		<PowerGrow>165200</PowerGrow>
 		<Id>350</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>35</Level>
@@ -2456,8 +4206,18 @@
 		<Level>36</Level>
 		<ExpCost>1_0_3510</ExpCost>
 		<PowerGrow>166000</PowerGrow>
+		<Id>351</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>36</Level>
+		<ExpCost>1_0_3510</ExpCost>
+		<PowerGrow>166000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>352</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>37</Level>
+		<ExpCost>1_0_3520</ExpCost>
+		<PowerGrow>166800</PowerGrow>
 		<Id>352</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>37</Level>
@@ -2470,8 +4230,18 @@
 		<Level>38</Level>
 		<ExpCost>1_0_3530</ExpCost>
 		<PowerGrow>167600</PowerGrow>
+		<Id>353</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>38</Level>
+		<ExpCost>1_0_3530</ExpCost>
+		<PowerGrow>167600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>354</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>39</Level>
+		<ExpCost>1_0_3540</ExpCost>
+		<PowerGrow>168400</PowerGrow>
 		<Id>354</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>39</Level>
@@ -2484,8 +4254,18 @@
 		<Level>40</Level>
 		<ExpCost>1_0_3550</ExpCost>
 		<PowerGrow>169200</PowerGrow>
+		<Id>355</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>40</Level>
+		<ExpCost>1_0_3550</ExpCost>
+		<PowerGrow>169200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>356</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>41</Level>
+		<ExpCost>1_0_3560</ExpCost>
+		<PowerGrow>170000</PowerGrow>
 		<Id>356</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>41</Level>
@@ -2498,8 +4278,18 @@
 		<Level>42</Level>
 		<ExpCost>1_0_3570</ExpCost>
 		<PowerGrow>170800</PowerGrow>
+		<Id>357</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>42</Level>
+		<ExpCost>1_0_3570</ExpCost>
+		<PowerGrow>170800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>358</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>43</Level>
+		<ExpCost>1_0_3580</ExpCost>
+		<PowerGrow>171600</PowerGrow>
 		<Id>358</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>43</Level>
@@ -2512,8 +4302,18 @@
 		<Level>44</Level>
 		<ExpCost>1_0_3590</ExpCost>
 		<PowerGrow>172400</PowerGrow>
+		<Id>359</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>44</Level>
+		<ExpCost>1_0_3590</ExpCost>
+		<PowerGrow>172400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>360</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>45</Level>
+		<ExpCost>1_0_3600</ExpCost>
+		<PowerGrow>173200</PowerGrow>
 		<Id>360</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>45</Level>
@@ -2526,8 +4326,18 @@
 		<Level>46</Level>
 		<ExpCost>1_0_3610</ExpCost>
 		<PowerGrow>174000</PowerGrow>
+		<Id>361</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>46</Level>
+		<ExpCost>1_0_3610</ExpCost>
+		<PowerGrow>174000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>362</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>47</Level>
+		<ExpCost>1_0_3620</ExpCost>
+		<PowerGrow>174800</PowerGrow>
 		<Id>362</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>47</Level>
@@ -2540,8 +4350,18 @@
 		<Level>48</Level>
 		<ExpCost>1_0_3630</ExpCost>
 		<PowerGrow>175600</PowerGrow>
+		<Id>363</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>48</Level>
+		<ExpCost>1_0_3630</ExpCost>
+		<PowerGrow>175600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>364</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>49</Level>
+		<ExpCost>1_0_3640</ExpCost>
+		<PowerGrow>176400</PowerGrow>
 		<Id>364</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>49</Level>
@@ -2554,8 +4374,18 @@
 		<Level>50</Level>
 		<ExpCost>1_0_3650</ExpCost>
 		<PowerGrow>177200</PowerGrow>
+		<Id>365</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>50</Level>
+		<ExpCost>1_0_3650</ExpCost>
+		<PowerGrow>177200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>366</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>51</Level>
+		<ExpCost>1_0_3660</ExpCost>
+		<PowerGrow>178000</PowerGrow>
 		<Id>366</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>51</Level>
@@ -2568,8 +4398,18 @@
 		<Level>52</Level>
 		<ExpCost>1_0_3670</ExpCost>
 		<PowerGrow>178800</PowerGrow>
+		<Id>367</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>52</Level>
+		<ExpCost>1_0_3670</ExpCost>
+		<PowerGrow>178800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>368</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>53</Level>
+		<ExpCost>1_0_3680</ExpCost>
+		<PowerGrow>179600</PowerGrow>
 		<Id>368</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>53</Level>
@@ -2582,8 +4422,18 @@
 		<Level>54</Level>
 		<ExpCost>1_0_3690</ExpCost>
 		<PowerGrow>180400</PowerGrow>
+		<Id>369</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>54</Level>
+		<ExpCost>1_0_3690</ExpCost>
+		<PowerGrow>180400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>370</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>55</Level>
+		<ExpCost>1_0_3700</ExpCost>
+		<PowerGrow>181200</PowerGrow>
 		<Id>370</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>55</Level>
@@ -2596,8 +4446,18 @@
 		<Level>56</Level>
 		<ExpCost>1_0_3710</ExpCost>
 		<PowerGrow>182000</PowerGrow>
+		<Id>371</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>56</Level>
+		<ExpCost>1_0_3710</ExpCost>
+		<PowerGrow>182000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>372</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>57</Level>
+		<ExpCost>1_0_3720</ExpCost>
+		<PowerGrow>182800</PowerGrow>
 		<Id>372</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>57</Level>
@@ -2610,8 +4470,18 @@
 		<Level>58</Level>
 		<ExpCost>1_0_3730</ExpCost>
 		<PowerGrow>183600</PowerGrow>
+		<Id>373</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>58</Level>
+		<ExpCost>1_0_3730</ExpCost>
+		<PowerGrow>183600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>374</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>59</Level>
+		<ExpCost>1_0_3740</ExpCost>
+		<PowerGrow>184400</PowerGrow>
 		<Id>374</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>59</Level>
@@ -2624,8 +4494,18 @@
 		<Level>60</Level>
 		<ExpCost>1_0_3750</ExpCost>
 		<PowerGrow>185200</PowerGrow>
+		<Id>375</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>60</Level>
+		<ExpCost>1_0_3750</ExpCost>
+		<PowerGrow>185200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>376</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>61</Level>
+		<ExpCost>1_0_3760</ExpCost>
+		<PowerGrow>186000</PowerGrow>
 		<Id>376</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>61</Level>
@@ -2638,8 +4518,18 @@
 		<Level>62</Level>
 		<ExpCost>1_0_3770</ExpCost>
 		<PowerGrow>186800</PowerGrow>
+		<Id>377</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>62</Level>
+		<ExpCost>1_0_3770</ExpCost>
+		<PowerGrow>186800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>378</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>63</Level>
+		<ExpCost>1_0_3780</ExpCost>
+		<PowerGrow>187600</PowerGrow>
 		<Id>378</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>63</Level>
@@ -2652,8 +4542,18 @@
 		<Level>64</Level>
 		<ExpCost>1_0_3790</ExpCost>
 		<PowerGrow>188400</PowerGrow>
+		<Id>379</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>64</Level>
+		<ExpCost>1_0_3790</ExpCost>
+		<PowerGrow>188400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>380</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>65</Level>
+		<ExpCost>1_0_3800</ExpCost>
+		<PowerGrow>189200</PowerGrow>
 		<Id>380</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>65</Level>
@@ -2666,8 +4566,18 @@
 		<Level>66</Level>
 		<ExpCost>1_0_3810</ExpCost>
 		<PowerGrow>190000</PowerGrow>
+		<Id>381</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>66</Level>
+		<ExpCost>1_0_3810</ExpCost>
+		<PowerGrow>190000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>382</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>67</Level>
+		<ExpCost>1_0_3820</ExpCost>
+		<PowerGrow>190800</PowerGrow>
 		<Id>382</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>67</Level>
@@ -2680,8 +4590,18 @@
 		<Level>68</Level>
 		<ExpCost>1_0_3830</ExpCost>
 		<PowerGrow>191600</PowerGrow>
+		<Id>383</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>68</Level>
+		<ExpCost>1_0_3830</ExpCost>
+		<PowerGrow>191600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>384</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>69</Level>
+		<ExpCost>1_0_3840</ExpCost>
+		<PowerGrow>192400</PowerGrow>
 		<Id>384</Id>
 		<BreakLevel>8</BreakLevel>
 		<Level>69</Level>
@@ -2694,8 +4614,18 @@
 		<Level>70</Level>
 		<ExpCost>1_0_3850</ExpCost>
 		<PowerGrow>193200</PowerGrow>
+		<Id>385</Id>
+		<BreakLevel>8</BreakLevel>
+		<Level>70</Level>
+		<ExpCost>1_0_3850</ExpCost>
+		<PowerGrow>193200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>386</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>1</Level>
+		<ExpCost>1_0_3860</ExpCost>
+		<PowerGrow>189300</PowerGrow>
 		<Id>386</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>1</Level>
@@ -2708,8 +4638,18 @@
 		<Level>2</Level>
 		<ExpCost>1_0_3870</ExpCost>
 		<PowerGrow>190200</PowerGrow>
+		<Id>387</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>2</Level>
+		<ExpCost>1_0_3870</ExpCost>
+		<PowerGrow>190200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>388</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>3</Level>
+		<ExpCost>1_0_3880</ExpCost>
+		<PowerGrow>191100</PowerGrow>
 		<Id>388</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>3</Level>
@@ -2722,8 +4662,18 @@
 		<Level>4</Level>
 		<ExpCost>1_0_3890</ExpCost>
 		<PowerGrow>192000</PowerGrow>
+		<Id>389</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>4</Level>
+		<ExpCost>1_0_3890</ExpCost>
+		<PowerGrow>192000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>390</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>5</Level>
+		<ExpCost>1_0_3900</ExpCost>
+		<PowerGrow>192900</PowerGrow>
 		<Id>390</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>5</Level>
@@ -2736,8 +4686,18 @@
 		<Level>6</Level>
 		<ExpCost>1_0_3910</ExpCost>
 		<PowerGrow>193800</PowerGrow>
+		<Id>391</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>6</Level>
+		<ExpCost>1_0_3910</ExpCost>
+		<PowerGrow>193800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>392</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>7</Level>
+		<ExpCost>1_0_3920</ExpCost>
+		<PowerGrow>194700</PowerGrow>
 		<Id>392</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>7</Level>
@@ -2750,8 +4710,18 @@
 		<Level>8</Level>
 		<ExpCost>1_0_3930</ExpCost>
 		<PowerGrow>195600</PowerGrow>
+		<Id>393</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>8</Level>
+		<ExpCost>1_0_3930</ExpCost>
+		<PowerGrow>195600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>394</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>9</Level>
+		<ExpCost>1_0_3940</ExpCost>
+		<PowerGrow>196500</PowerGrow>
 		<Id>394</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>9</Level>
@@ -2764,8 +4734,18 @@
 		<Level>10</Level>
 		<ExpCost>1_0_3950</ExpCost>
 		<PowerGrow>197400</PowerGrow>
+		<Id>395</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>10</Level>
+		<ExpCost>1_0_3950</ExpCost>
+		<PowerGrow>197400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>396</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>11</Level>
+		<ExpCost>1_0_3960</ExpCost>
+		<PowerGrow>198300</PowerGrow>
 		<Id>396</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>11</Level>
@@ -2778,8 +4758,18 @@
 		<Level>12</Level>
 		<ExpCost>1_0_3970</ExpCost>
 		<PowerGrow>199200</PowerGrow>
+		<Id>397</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>12</Level>
+		<ExpCost>1_0_3970</ExpCost>
+		<PowerGrow>199200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>398</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>13</Level>
+		<ExpCost>1_0_3980</ExpCost>
+		<PowerGrow>200100</PowerGrow>
 		<Id>398</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>13</Level>
@@ -2792,8 +4782,18 @@
 		<Level>14</Level>
 		<ExpCost>1_0_3990</ExpCost>
 		<PowerGrow>201000</PowerGrow>
+		<Id>399</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>14</Level>
+		<ExpCost>1_0_3990</ExpCost>
+		<PowerGrow>201000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>400</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>15</Level>
+		<ExpCost>1_0_4000</ExpCost>
+		<PowerGrow>201900</PowerGrow>
 		<Id>400</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>15</Level>
@@ -2806,8 +4806,18 @@
 		<Level>16</Level>
 		<ExpCost>1_0_4010</ExpCost>
 		<PowerGrow>202800</PowerGrow>
+		<Id>401</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>16</Level>
+		<ExpCost>1_0_4010</ExpCost>
+		<PowerGrow>202800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>402</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>17</Level>
+		<ExpCost>1_0_4020</ExpCost>
+		<PowerGrow>203700</PowerGrow>
 		<Id>402</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>17</Level>
@@ -2820,8 +4830,18 @@
 		<Level>18</Level>
 		<ExpCost>1_0_4030</ExpCost>
 		<PowerGrow>204600</PowerGrow>
+		<Id>403</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>18</Level>
+		<ExpCost>1_0_4030</ExpCost>
+		<PowerGrow>204600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>404</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>19</Level>
+		<ExpCost>1_0_4040</ExpCost>
+		<PowerGrow>205500</PowerGrow>
 		<Id>404</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>19</Level>
@@ -2834,8 +4854,18 @@
 		<Level>20</Level>
 		<ExpCost>1_0_4050</ExpCost>
 		<PowerGrow>206400</PowerGrow>
+		<Id>405</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>20</Level>
+		<ExpCost>1_0_4050</ExpCost>
+		<PowerGrow>206400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>406</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>21</Level>
+		<ExpCost>1_0_4060</ExpCost>
+		<PowerGrow>207300</PowerGrow>
 		<Id>406</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>21</Level>
@@ -2848,8 +4878,18 @@
 		<Level>22</Level>
 		<ExpCost>1_0_4070</ExpCost>
 		<PowerGrow>208200</PowerGrow>
+		<Id>407</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>22</Level>
+		<ExpCost>1_0_4070</ExpCost>
+		<PowerGrow>208200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>408</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>23</Level>
+		<ExpCost>1_0_4080</ExpCost>
+		<PowerGrow>209100</PowerGrow>
 		<Id>408</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>23</Level>
@@ -2862,8 +4902,18 @@
 		<Level>24</Level>
 		<ExpCost>1_0_4090</ExpCost>
 		<PowerGrow>210000</PowerGrow>
+		<Id>409</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>24</Level>
+		<ExpCost>1_0_4090</ExpCost>
+		<PowerGrow>210000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>410</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>25</Level>
+		<ExpCost>1_0_4100</ExpCost>
+		<PowerGrow>210900</PowerGrow>
 		<Id>410</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>25</Level>
@@ -2876,8 +4926,18 @@
 		<Level>26</Level>
 		<ExpCost>1_0_4110</ExpCost>
 		<PowerGrow>211800</PowerGrow>
+		<Id>411</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>26</Level>
+		<ExpCost>1_0_4110</ExpCost>
+		<PowerGrow>211800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>412</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>27</Level>
+		<ExpCost>1_0_4120</ExpCost>
+		<PowerGrow>212700</PowerGrow>
 		<Id>412</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>27</Level>
@@ -2890,8 +4950,18 @@
 		<Level>28</Level>
 		<ExpCost>1_0_4130</ExpCost>
 		<PowerGrow>213600</PowerGrow>
+		<Id>413</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>28</Level>
+		<ExpCost>1_0_4130</ExpCost>
+		<PowerGrow>213600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>414</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>29</Level>
+		<ExpCost>1_0_4140</ExpCost>
+		<PowerGrow>214500</PowerGrow>
 		<Id>414</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>29</Level>
@@ -2904,8 +4974,18 @@
 		<Level>30</Level>
 		<ExpCost>1_0_4150</ExpCost>
 		<PowerGrow>215400</PowerGrow>
+		<Id>415</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>30</Level>
+		<ExpCost>1_0_4150</ExpCost>
+		<PowerGrow>215400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>416</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>31</Level>
+		<ExpCost>1_0_4160</ExpCost>
+		<PowerGrow>216300</PowerGrow>
 		<Id>416</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>31</Level>
@@ -2918,8 +4998,18 @@
 		<Level>32</Level>
 		<ExpCost>1_0_4170</ExpCost>
 		<PowerGrow>217200</PowerGrow>
+		<Id>417</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>32</Level>
+		<ExpCost>1_0_4170</ExpCost>
+		<PowerGrow>217200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>418</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>33</Level>
+		<ExpCost>1_0_4180</ExpCost>
+		<PowerGrow>218100</PowerGrow>
 		<Id>418</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>33</Level>
@@ -2932,8 +5022,18 @@
 		<Level>34</Level>
 		<ExpCost>1_0_4190</ExpCost>
 		<PowerGrow>219000</PowerGrow>
+		<Id>419</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>34</Level>
+		<ExpCost>1_0_4190</ExpCost>
+		<PowerGrow>219000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>420</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>35</Level>
+		<ExpCost>1_0_4200</ExpCost>
+		<PowerGrow>219900</PowerGrow>
 		<Id>420</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>35</Level>
@@ -2946,8 +5046,18 @@
 		<Level>36</Level>
 		<ExpCost>1_0_4210</ExpCost>
 		<PowerGrow>220800</PowerGrow>
+		<Id>421</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>36</Level>
+		<ExpCost>1_0_4210</ExpCost>
+		<PowerGrow>220800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>422</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>37</Level>
+		<ExpCost>1_0_4220</ExpCost>
+		<PowerGrow>221700</PowerGrow>
 		<Id>422</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>37</Level>
@@ -2960,8 +5070,18 @@
 		<Level>38</Level>
 		<ExpCost>1_0_4230</ExpCost>
 		<PowerGrow>222600</PowerGrow>
+		<Id>423</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>38</Level>
+		<ExpCost>1_0_4230</ExpCost>
+		<PowerGrow>222600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>424</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>39</Level>
+		<ExpCost>1_0_4240</ExpCost>
+		<PowerGrow>223500</PowerGrow>
 		<Id>424</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>39</Level>
@@ -2974,8 +5094,18 @@
 		<Level>40</Level>
 		<ExpCost>1_0_4250</ExpCost>
 		<PowerGrow>224400</PowerGrow>
+		<Id>425</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>40</Level>
+		<ExpCost>1_0_4250</ExpCost>
+		<PowerGrow>224400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>426</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>41</Level>
+		<ExpCost>1_0_4260</ExpCost>
+		<PowerGrow>225300</PowerGrow>
 		<Id>426</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>41</Level>
@@ -2988,8 +5118,18 @@
 		<Level>42</Level>
 		<ExpCost>1_0_4270</ExpCost>
 		<PowerGrow>226200</PowerGrow>
+		<Id>427</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>42</Level>
+		<ExpCost>1_0_4270</ExpCost>
+		<PowerGrow>226200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>428</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>43</Level>
+		<ExpCost>1_0_4280</ExpCost>
+		<PowerGrow>227100</PowerGrow>
 		<Id>428</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>43</Level>
@@ -3002,8 +5142,18 @@
 		<Level>44</Level>
 		<ExpCost>1_0_4290</ExpCost>
 		<PowerGrow>228000</PowerGrow>
+		<Id>429</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>44</Level>
+		<ExpCost>1_0_4290</ExpCost>
+		<PowerGrow>228000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>430</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>45</Level>
+		<ExpCost>1_0_4300</ExpCost>
+		<PowerGrow>228900</PowerGrow>
 		<Id>430</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>45</Level>
@@ -3016,8 +5166,18 @@
 		<Level>46</Level>
 		<ExpCost>1_0_4310</ExpCost>
 		<PowerGrow>229800</PowerGrow>
+		<Id>431</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>46</Level>
+		<ExpCost>1_0_4310</ExpCost>
+		<PowerGrow>229800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>432</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>47</Level>
+		<ExpCost>1_0_4320</ExpCost>
+		<PowerGrow>230700</PowerGrow>
 		<Id>432</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>47</Level>
@@ -3030,8 +5190,18 @@
 		<Level>48</Level>
 		<ExpCost>1_0_4330</ExpCost>
 		<PowerGrow>231600</PowerGrow>
+		<Id>433</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>48</Level>
+		<ExpCost>1_0_4330</ExpCost>
+		<PowerGrow>231600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>434</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>49</Level>
+		<ExpCost>1_0_4340</ExpCost>
+		<PowerGrow>232500</PowerGrow>
 		<Id>434</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>49</Level>
@@ -3044,8 +5214,18 @@
 		<Level>50</Level>
 		<ExpCost>1_0_4350</ExpCost>
 		<PowerGrow>233400</PowerGrow>
+		<Id>435</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>50</Level>
+		<ExpCost>1_0_4350</ExpCost>
+		<PowerGrow>233400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>436</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>51</Level>
+		<ExpCost>1_0_4360</ExpCost>
+		<PowerGrow>234300</PowerGrow>
 		<Id>436</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>51</Level>
@@ -3058,8 +5238,18 @@
 		<Level>52</Level>
 		<ExpCost>1_0_4370</ExpCost>
 		<PowerGrow>235200</PowerGrow>
+		<Id>437</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>52</Level>
+		<ExpCost>1_0_4370</ExpCost>
+		<PowerGrow>235200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>438</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>53</Level>
+		<ExpCost>1_0_4380</ExpCost>
+		<PowerGrow>236100</PowerGrow>
 		<Id>438</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>53</Level>
@@ -3072,8 +5262,18 @@
 		<Level>54</Level>
 		<ExpCost>1_0_4390</ExpCost>
 		<PowerGrow>237000</PowerGrow>
+		<Id>439</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>54</Level>
+		<ExpCost>1_0_4390</ExpCost>
+		<PowerGrow>237000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>440</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>55</Level>
+		<ExpCost>1_0_4400</ExpCost>
+		<PowerGrow>237900</PowerGrow>
 		<Id>440</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>55</Level>
@@ -3086,8 +5286,18 @@
 		<Level>56</Level>
 		<ExpCost>1_0_4410</ExpCost>
 		<PowerGrow>238800</PowerGrow>
+		<Id>441</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>56</Level>
+		<ExpCost>1_0_4410</ExpCost>
+		<PowerGrow>238800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>442</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>57</Level>
+		<ExpCost>1_0_4420</ExpCost>
+		<PowerGrow>239700</PowerGrow>
 		<Id>442</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>57</Level>
@@ -3100,8 +5310,18 @@
 		<Level>58</Level>
 		<ExpCost>1_0_4430</ExpCost>
 		<PowerGrow>240600</PowerGrow>
+		<Id>443</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>58</Level>
+		<ExpCost>1_0_4430</ExpCost>
+		<PowerGrow>240600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>444</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>59</Level>
+		<ExpCost>1_0_4440</ExpCost>
+		<PowerGrow>241500</PowerGrow>
 		<Id>444</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>59</Level>
@@ -3114,8 +5334,18 @@
 		<Level>60</Level>
 		<ExpCost>1_0_4450</ExpCost>
 		<PowerGrow>242400</PowerGrow>
+		<Id>445</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>60</Level>
+		<ExpCost>1_0_4450</ExpCost>
+		<PowerGrow>242400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>446</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>61</Level>
+		<ExpCost>1_0_4460</ExpCost>
+		<PowerGrow>243300</PowerGrow>
 		<Id>446</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>61</Level>
@@ -3128,8 +5358,18 @@
 		<Level>62</Level>
 		<ExpCost>1_0_4470</ExpCost>
 		<PowerGrow>244200</PowerGrow>
+		<Id>447</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>62</Level>
+		<ExpCost>1_0_4470</ExpCost>
+		<PowerGrow>244200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>448</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>63</Level>
+		<ExpCost>1_0_4480</ExpCost>
+		<PowerGrow>245100</PowerGrow>
 		<Id>448</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>63</Level>
@@ -3142,8 +5382,18 @@
 		<Level>64</Level>
 		<ExpCost>1_0_4490</ExpCost>
 		<PowerGrow>246000</PowerGrow>
+		<Id>449</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>64</Level>
+		<ExpCost>1_0_4490</ExpCost>
+		<PowerGrow>246000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>450</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>65</Level>
+		<ExpCost>1_0_4500</ExpCost>
+		<PowerGrow>246900</PowerGrow>
 		<Id>450</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>65</Level>
@@ -3156,8 +5406,18 @@
 		<Level>66</Level>
 		<ExpCost>1_0_4510</ExpCost>
 		<PowerGrow>247800</PowerGrow>
+		<Id>451</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>66</Level>
+		<ExpCost>1_0_4510</ExpCost>
+		<PowerGrow>247800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>452</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>67</Level>
+		<ExpCost>1_0_4520</ExpCost>
+		<PowerGrow>248700</PowerGrow>
 		<Id>452</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>67</Level>
@@ -3170,8 +5430,18 @@
 		<Level>68</Level>
 		<ExpCost>1_0_4530</ExpCost>
 		<PowerGrow>249600</PowerGrow>
+		<Id>453</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>68</Level>
+		<ExpCost>1_0_4530</ExpCost>
+		<PowerGrow>249600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>454</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>69</Level>
+		<ExpCost>1_0_4540</ExpCost>
+		<PowerGrow>250500</PowerGrow>
 		<Id>454</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>69</Level>
@@ -3184,8 +5454,18 @@
 		<Level>70</Level>
 		<ExpCost>1_0_4550</ExpCost>
 		<PowerGrow>251400</PowerGrow>
+		<Id>455</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>70</Level>
+		<ExpCost>1_0_4550</ExpCost>
+		<PowerGrow>251400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>456</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>71</Level>
+		<ExpCost>1_0_4560</ExpCost>
+		<PowerGrow>252300</PowerGrow>
 		<Id>456</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>71</Level>
@@ -3198,8 +5478,18 @@
 		<Level>72</Level>
 		<ExpCost>1_0_4570</ExpCost>
 		<PowerGrow>253200</PowerGrow>
+		<Id>457</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>72</Level>
+		<ExpCost>1_0_4570</ExpCost>
+		<PowerGrow>253200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>458</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>73</Level>
+		<ExpCost>1_0_4580</ExpCost>
+		<PowerGrow>254100</PowerGrow>
 		<Id>458</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>73</Level>
@@ -3212,8 +5502,18 @@
 		<Level>74</Level>
 		<ExpCost>1_0_4590</ExpCost>
 		<PowerGrow>255000</PowerGrow>
+		<Id>459</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>74</Level>
+		<ExpCost>1_0_4590</ExpCost>
+		<PowerGrow>255000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>460</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>75</Level>
+		<ExpCost>1_0_4600</ExpCost>
+		<PowerGrow>255900</PowerGrow>
 		<Id>460</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>75</Level>
@@ -3226,8 +5526,18 @@
 		<Level>76</Level>
 		<ExpCost>1_0_4610</ExpCost>
 		<PowerGrow>256800</PowerGrow>
+		<Id>461</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>76</Level>
+		<ExpCost>1_0_4610</ExpCost>
+		<PowerGrow>256800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>462</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>77</Level>
+		<ExpCost>1_0_4620</ExpCost>
+		<PowerGrow>257700</PowerGrow>
 		<Id>462</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>77</Level>
@@ -3240,8 +5550,18 @@
 		<Level>78</Level>
 		<ExpCost>1_0_4630</ExpCost>
 		<PowerGrow>258600</PowerGrow>
+		<Id>463</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>78</Level>
+		<ExpCost>1_0_4630</ExpCost>
+		<PowerGrow>258600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>464</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>79</Level>
+		<ExpCost>1_0_4640</ExpCost>
+		<PowerGrow>259500</PowerGrow>
 		<Id>464</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>79</Level>
@@ -3254,8 +5574,18 @@
 		<Level>80</Level>
 		<ExpCost>1_0_4650</ExpCost>
 		<PowerGrow>260400</PowerGrow>
+		<Id>465</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>80</Level>
+		<ExpCost>1_0_4650</ExpCost>
+		<PowerGrow>260400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>466</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>81</Level>
+		<ExpCost>1_0_4660</ExpCost>
+		<PowerGrow>261300</PowerGrow>
 		<Id>466</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>81</Level>
@@ -3268,8 +5598,18 @@
 		<Level>82</Level>
 		<ExpCost>1_0_4670</ExpCost>
 		<PowerGrow>262200</PowerGrow>
+		<Id>467</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>82</Level>
+		<ExpCost>1_0_4670</ExpCost>
+		<PowerGrow>262200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>468</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>83</Level>
+		<ExpCost>1_0_4680</ExpCost>
+		<PowerGrow>263100</PowerGrow>
 		<Id>468</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>83</Level>
@@ -3282,8 +5622,18 @@
 		<Level>84</Level>
 		<ExpCost>1_0_4690</ExpCost>
 		<PowerGrow>264000</PowerGrow>
+		<Id>469</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>84</Level>
+		<ExpCost>1_0_4690</ExpCost>
+		<PowerGrow>264000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>470</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>85</Level>
+		<ExpCost>1_0_4700</ExpCost>
+		<PowerGrow>264900</PowerGrow>
 		<Id>470</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>85</Level>
@@ -3296,8 +5646,18 @@
 		<Level>86</Level>
 		<ExpCost>1_0_4710</ExpCost>
 		<PowerGrow>265800</PowerGrow>
+		<Id>471</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>86</Level>
+		<ExpCost>1_0_4710</ExpCost>
+		<PowerGrow>265800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>472</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>87</Level>
+		<ExpCost>1_0_4720</ExpCost>
+		<PowerGrow>266700</PowerGrow>
 		<Id>472</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>87</Level>
@@ -3310,8 +5670,18 @@
 		<Level>88</Level>
 		<ExpCost>1_0_4730</ExpCost>
 		<PowerGrow>267600</PowerGrow>
+		<Id>473</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>88</Level>
+		<ExpCost>1_0_4730</ExpCost>
+		<PowerGrow>267600</PowerGrow>
 	</Node>
 	<Node>
+		<Id>474</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>89</Level>
+		<ExpCost>1_0_4740</ExpCost>
+		<PowerGrow>268500</PowerGrow>
 		<Id>474</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>89</Level>
@@ -3324,8 +5694,18 @@
 		<Level>90</Level>
 		<ExpCost>1_0_4750</ExpCost>
 		<PowerGrow>269400</PowerGrow>
+		<Id>475</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>90</Level>
+		<ExpCost>1_0_4750</ExpCost>
+		<PowerGrow>269400</PowerGrow>
 	</Node>
 	<Node>
+		<Id>476</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>91</Level>
+		<ExpCost>1_0_4760</ExpCost>
+		<PowerGrow>270300</PowerGrow>
 		<Id>476</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>91</Level>
@@ -3338,8 +5718,18 @@
 		<Level>92</Level>
 		<ExpCost>1_0_4770</ExpCost>
 		<PowerGrow>271200</PowerGrow>
+		<Id>477</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>92</Level>
+		<ExpCost>1_0_4770</ExpCost>
+		<PowerGrow>271200</PowerGrow>
 	</Node>
 	<Node>
+		<Id>478</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>93</Level>
+		<ExpCost>1_0_4780</ExpCost>
+		<PowerGrow>272100</PowerGrow>
 		<Id>478</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>93</Level>
@@ -3352,8 +5742,18 @@
 		<Level>94</Level>
 		<ExpCost>1_0_4790</ExpCost>
 		<PowerGrow>273000</PowerGrow>
+		<Id>479</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>94</Level>
+		<ExpCost>1_0_4790</ExpCost>
+		<PowerGrow>273000</PowerGrow>
 	</Node>
 	<Node>
+		<Id>480</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>95</Level>
+		<ExpCost>1_0_4800</ExpCost>
+		<PowerGrow>273900</PowerGrow>
 		<Id>480</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>95</Level>
@@ -3366,8 +5766,18 @@
 		<Level>96</Level>
 		<ExpCost>1_0_4810</ExpCost>
 		<PowerGrow>274800</PowerGrow>
+		<Id>481</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>96</Level>
+		<ExpCost>1_0_4810</ExpCost>
+		<PowerGrow>274800</PowerGrow>
 	</Node>
 	<Node>
+		<Id>482</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>97</Level>
+		<ExpCost>1_0_4820</ExpCost>
+		<PowerGrow>275700</PowerGrow>
 		<Id>482</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>97</Level>
@@ -3380,6 +5790,11 @@
 		<Level>98</Level>
 		<ExpCost>1_0_4830</ExpCost>
 		<PowerGrow>276600</PowerGrow>
+		<Id>483</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>98</Level>
+		<ExpCost>1_0_4830</ExpCost>
+		<PowerGrow>276600</PowerGrow>
 	</Node>
 	<Node>
 		<Id>484</Id>
@@ -3387,8 +5802,18 @@
 		<Level>99</Level>
 		<ExpCost>1_0_4840</ExpCost>
 		<PowerGrow>277500</PowerGrow>
+		<Id>484</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>99</Level>
+		<ExpCost>1_0_4840</ExpCost>
+		<PowerGrow>277500</PowerGrow>
 	</Node>
 	<Node>
+		<Id>485</Id>
+		<BreakLevel>9</BreakLevel>
+		<Level>100</Level>
+		<ExpCost>1_0_4850</ExpCost>
+		<PowerGrow>278400</PowerGrow>
 		<Id>485</Id>
 		<BreakLevel>9</BreakLevel>
 		<Level>100</Level>

@@ -9,6 +9,10 @@ public interface ConfigBag
 	string Name { get; }
 	string Desc { get; }
 	int TypeBag { get; }
+	string ListInt { get; }
+	string ListListInt { get; }
+	string Liststring { get; }
+	string ListListstring { get; }
 }
 [CSharpCallLua]
 public interface ConfigBreak
@@ -132,6 +136,22 @@ public interface ConfigReforgeCost
 	string ItemCost { get; }
 }
 [CSharpCallLua]
+public interface ConfigServerGame
+{
+	int Id { get; }
+	int ServerPlatform { get; }
+	int ServerType { get; }
+	string ServerArea { get; }
+	string ServerName { get; }
+	string ServerIp { get; }
+	int ServerPort { get; }
+	int ServerStatus { get; }
+	int Recommend { get; }
+	int NewSever { get; }
+	int SeasonNum { get; }
+	int TowerVersion { get; }
+}
+[CSharpCallLua]
 public interface ConfigStarCost
 {
 	int Id { get; }
@@ -139,6 +159,12 @@ public interface ConfigStarCost
 	int StarLevel { get; }
 	string ItemCost { get; }
 	string Decomposed { get; }
+}
+[CSharpCallLua]
+public interface ConfigStrategy
+{
+	int Id { get; }
+	string Strategy { get; }
 }
 [CSharpCallLua]
 public interface GlobalConfig

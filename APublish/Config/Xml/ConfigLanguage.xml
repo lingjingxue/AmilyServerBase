@@ -4,8 +4,14 @@
 		<Id>hero_return</Id>
 		<Ch>返回</Ch>
 		<En>0</En>
+		<Id>hero_return</Id>
+		<Ch>返回</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>hero_evaluate</Id>
+		<Ch>评价</Ch>
+		<En>0</En>
 		<Id>hero_evaluate</Id>
 		<Ch>评价</Ch>
 		<En>0</En>
@@ -14,8 +20,14 @@
 		<Id>hero_skill</Id>
 		<Ch>技能</Ch>
 		<En>0</En>
+		<Id>hero_skill</Id>
+		<Ch>技能</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>hero_singleskill</Id>
+		<Ch>个人技能</Ch>
+		<En>0</En>
 		<Id>hero_singleskill</Id>
 		<Ch>个人技能</Ch>
 		<En>0</En>
@@ -24,8 +36,14 @@
 		<Id>hero_fittingskills</Id>
 		<Ch>合体技能</Ch>
 		<En>0</En>
+		<Id>hero_fittingskills</Id>
+		<Ch>合体技能</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>hero_equip</Id>
+		<Ch>装备</Ch>
+		<En>0</En>
 		<Id>hero_equip</Id>
 		<Ch>装备</Ch>
 		<En>0</En>
@@ -34,8 +52,14 @@
 		<Id>hero_tool</Id>
 		<Ch>宝具</Ch>
 		<En>0</En>
+		<Id>hero_tool</Id>
+		<Ch>宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>hero_info</Id>
+		<Ch>人物详情</Ch>
+		<En>0</En>
 		<Id>hero_info</Id>
 		<Ch>人物详情</Ch>
 		<En>0</En>
@@ -44,8 +68,14 @@
 		<Id>hero_level</Id>
 		<Ch>等级</Ch>
 		<En>0</En>
+		<Id>hero_level</Id>
+		<Ch>等级</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>hero_forge</Id>
+		<Ch>锻造</Ch>
+		<En>0</En>
 		<Id>hero_forge</Id>
 		<Ch>锻造</Ch>
 		<En>0</En>
@@ -54,8 +84,14 @@
 		<Id>hero_recast</Id>
 		<Ch>重铸</Ch>
 		<En>0</En>
+		<Id>hero_recast</Id>
+		<Ch>重铸</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>hero_sword</Id>
+		<Ch>战力</Ch>
+		<En>0</En>
 		<Id>hero_sword</Id>
 		<Ch>战力</Ch>
 		<En>0</En>
@@ -64,8 +100,14 @@
 		<Id>hero_type</Id>
 		<Ch>类型</Ch>
 		<En>0</En>
+		<Id>hero_type</Id>
+		<Ch>类型</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>hero_team</Id>
+		<Ch>合击英雄</Ch>
+		<En>0</En>
 		<Id>hero_team</Id>
 		<Ch>合击英雄</Ch>
 		<En>0</En>
@@ -74,8 +116,14 @@
 		<Id>hero_onbattle</Id>
 		<Ch>已上阵</Ch>
 		<En>0</En>
+		<Id>hero_onbattle</Id>
+		<Ch>已上阵</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>hero_have</Id>
+		<Ch>已获得</Ch>
+		<En>0</En>
 		<Id>hero_have</Id>
 		<Ch>已获得</Ch>
 		<En>0</En>
@@ -84,8 +132,14 @@
 		<Id>hero_nothave</Id>
 		<Ch>未获得</Ch>
 		<En>0</En>
+		<Id>hero_nothave</Id>
+		<Ch>未获得</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>hero_attack</Id>
+		<Ch>先攻</Ch>
+		<En>0</En>
 		<Id>hero_attack</Id>
 		<Ch>先攻</Ch>
 		<En>0</En>
@@ -94,8 +148,14 @@
 		<Id>hero_defense</Id>
 		<Ch>防御</Ch>
 		<En>0</En>
+		<Id>hero_defense</Id>
+		<Ch>防御</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>hero_evade</Id>
+		<Ch>闪避</Ch>
+		<En>0</En>
 		<Id>hero_evade</Id>
 		<Ch>闪避</Ch>
 		<En>0</En>
@@ -104,8 +164,14 @@
 		<Id>hero_king</Id>
 		<Ch>王者</Ch>
 		<En>0</En>
+		<Id>hero_king</Id>
+		<Ch>王者</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_title</Id>
+		<Ch>英雄强化</Ch>
+		<En>0</En>
 		<Id>intensify_title</Id>
 		<Ch>英雄强化</Ch>
 		<En>0</En>
@@ -114,8 +180,14 @@
 		<Id>intensify_develop</Id>
 		<Ch>培养</Ch>
 		<En>0</En>
+		<Id>intensify_develop</Id>
+		<Ch>培养</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_levelup</Id>
+		<Ch>升级</Ch>
+		<En>0</En>
 		<Id>intensify_levelup</Id>
 		<Ch>升级</Ch>
 		<En>0</En>
@@ -124,8 +196,14 @@
 		<Id>intensify_exp</Id>
 		<Ch>经验</Ch>
 		<En>0</En>
+		<Id>intensify_exp</Id>
+		<Ch>经验</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_awaken</Id>
+		<Ch>觉醒</Ch>
+		<En>0</En>
 		<Id>intensify_awaken</Id>
 		<Ch>觉醒</Ch>
 		<En>0</En>
@@ -134,8 +212,14 @@
 		<Id>intensify_consume</Id>
 		<Ch>消耗</Ch>
 		<En>0</En>
+		<Id>intensify_consume</Id>
+		<Ch>消耗</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_dimensional</Id>
+		<Ch>四维详情</Ch>
+		<En>0</En>
 		<Id>intensify_dimensional</Id>
 		<Ch>四维详情</Ch>
 		<En>0</En>
@@ -144,8 +228,14 @@
 		<Id>intensify_star</Id>
 		<Ch>升星</Ch>
 		<En>0</En>
+		<Id>intensify_star</Id>
+		<Ch>升星</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_sort</Id>
+		<Ch>排序</Ch>
+		<En>0</En>
 		<Id>intensify_sort</Id>
 		<Ch>排序</Ch>
 		<En>0</En>
@@ -154,8 +244,14 @@
 		<Id>intensify_whole</Id>
 		<Ch>全部</Ch>
 		<En>0</En>
+		<Id>intensify_whole</Id>
+		<Ch>全部</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_green</Id>
+		<Ch>绿色</Ch>
+		<En>0</En>
 		<Id>intensify_green</Id>
 		<Ch>绿色</Ch>
 		<En>0</En>
@@ -164,8 +260,14 @@
 		<Id>intensify_blue</Id>
 		<Ch>蓝色</Ch>
 		<En>0</En>
+		<Id>intensify_blue</Id>
+		<Ch>蓝色</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_purple</Id>
+		<Ch>紫色</Ch>
+		<En>0</En>
 		<Id>intensify_purple</Id>
 		<Ch>紫色</Ch>
 		<En>0</En>
@@ -174,8 +276,14 @@
 		<Id>intensify_orange</Id>
 		<Ch>橙色</Ch>
 		<En>0</En>
+		<Id>intensify_orange</Id>
+		<Ch>橙色</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_gold</Id>
+		<Ch>金色</Ch>
+		<En>0</En>
 		<Id>intensify_gold</Id>
 		<Ch>金色</Ch>
 		<En>0</En>
@@ -184,8 +292,14 @@
 		<Id>intensify_red</Id>
 		<Ch>红色</Ch>
 		<En>0</En>
+		<Id>intensify_red</Id>
+		<Ch>红色</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_onbattlesort</Id>
+		<Ch>上阵排序</Ch>
+		<En>0</En>
 		<Id>intensify_onbattlesort</Id>
 		<Ch>上阵排序</Ch>
 		<En>0</En>
@@ -194,8 +308,14 @@
 		<Id>intensify_qualitysort</Id>
 		<Ch>品质排序</Ch>
 		<En>0</En>
+		<Id>intensify_qualitysort</Id>
+		<Ch>品质排序</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_swordsort</Id>
+		<Ch>战力排序</Ch>
+		<En>0</En>
 		<Id>intensify_swordsort</Id>
 		<Ch>战力排序</Ch>
 		<En>0</En>
@@ -204,8 +324,14 @@
 		<Id>intensify_levelsort</Id>
 		<Ch>等级排序</Ch>
 		<En>0</En>
+		<Id>intensify_levelsort</Id>
+		<Ch>等级排序</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_forgesort</Id>
+		<Ch>锻造排序</Ch>
+		<En>0</En>
 		<Id>intensify_forgesort</Id>
 		<Ch>锻造排序</Ch>
 		<En>0</En>
@@ -214,8 +340,14 @@
 		<Id>intensify_starsort</Id>
 		<Ch>星级排序</Ch>
 		<En>0</En>
+		<Id>intensify_starsort</Id>
+		<Ch>星级排序</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>intensify_totalsword</Id>
+		<Ch>总战力</Ch>
+		<En>0</En>
 		<Id>intensify_totalsword</Id>
 		<Ch>总战力</Ch>
 		<En>0</En>
@@ -224,8 +356,14 @@
 		<Id>Coin_name_1</Id>
 		<Ch>经验</Ch>
 		<En>0</En>
+		<Id>Coin_name_1</Id>
+		<Ch>经验</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Coin_name_2</Id>
+		<Ch>银两</Ch>
+		<En>0</En>
 		<Id>Coin_name_2</Id>
 		<Ch>银两</Ch>
 		<En>0</En>
@@ -234,8 +372,14 @@
 		<Id>Coin_name_3</Id>
 		<Ch>元宝</Ch>
 		<En>0</En>
+		<Id>Coin_name_3</Id>
+		<Ch>元宝</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Coin_name_4</Id>
+		<Ch>天梯点数</Ch>
+		<En>0</En>
 		<Id>Coin_name_4</Id>
 		<Ch>天梯点数</Ch>
 		<En>0</En>
@@ -244,8 +388,14 @@
 		<Id>Coin_name_5</Id>
 		<Ch>竞技点数</Ch>
 		<En>0</En>
+		<Id>Coin_name_5</Id>
+		<Ch>竞技点数</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Coin_name_6</Id>
+		<Ch>精华</Ch>
+		<En>0</En>
 		<Id>Coin_name_6</Id>
 		<Ch>精华</Ch>
 		<En>0</En>
@@ -254,8 +404,14 @@
 		<Id>Coin_name_11</Id>
 		<Ch>VIP经验</Ch>
 		<En>0</En>
+		<Id>Coin_name_11</Id>
+		<Ch>VIP经验</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Coin_desc_1</Id>
+		<Ch>这个世界的知识，用于提升英雄等级</Ch>
+		<En>0</En>
 		<Id>Coin_desc_1</Id>
 		<Ch>这个世界的知识，用于提升英雄等级</Ch>
 		<En>0</En>
@@ -264,8 +420,14 @@
 		<Id>Coin_desc_2</Id>
 		<Ch>一种稀有的贵金属，这个世界的基本货币</Ch>
 		<En>0</En>
+		<Id>Coin_desc_2</Id>
+		<Ch>一种稀有的贵金属，这个世界的基本货币</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Coin_desc_3</Id>
+		<Ch>一种可以产生奇迹的神奇物质，这个世界的稀有货币</Ch>
+		<En>0</En>
 		<Id>Coin_desc_3</Id>
 		<Ch>一种可以产生奇迹的神奇物质，这个世界的稀有货币</Ch>
 		<En>0</En>
@@ -274,8 +436,14 @@
 		<Id>Coin_desc_4</Id>
 		<Ch>参与天梯赛的奖励，可以在天梯商城买买买</Ch>
 		<En>0</En>
+		<Id>Coin_desc_4</Id>
+		<Ch>参与天梯赛的奖励，可以在天梯商城买买买</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Coin_desc_5</Id>
+		<Ch>参与竞技赛的奖励，可以在竞技商城买买买</Ch>
+		<En>0</En>
 		<Id>Coin_desc_5</Id>
 		<Ch>参与竞技赛的奖励，可以在竞技商城买买买</Ch>
 		<En>0</En>
@@ -284,8 +452,14 @@
 		<Id>Coin_desc_6</Id>
 		<Ch>英雄存世的本质，某些时候可以用于召唤英雄，</Ch>
 		<En>0</En>
+		<Id>Coin_desc_6</Id>
+		<Ch>英雄存世的本质，某些时候可以用于召唤英雄，</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Coin_desc_11</Id>
+		<Ch>高维世界的知识，用于提升VIP等级</Ch>
+		<En>0</En>
 		<Id>Coin_desc_11</Id>
 		<Ch>高维世界的知识，用于提升VIP等级</Ch>
 		<En>0</En>
@@ -294,8 +468,14 @@
 		<Id>lineup_1</Id>
 		<Ch>技能概率</Ch>
 		<En>0</En>
+		<Id>lineup_1</Id>
+		<Ch>技能概率</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_2</Id>
+		<Ch>详情</Ch>
+		<En>0</En>
 		<Id>lineup_2</Id>
 		<Ch>详情</Ch>
 		<En>0</En>
@@ -304,8 +484,14 @@
 		<Id>lineup_3</Id>
 		<Ch>队伍1</Ch>
 		<En>0</En>
+		<Id>lineup_3</Id>
+		<Ch>队伍1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_4</Id>
+		<Ch>队伍2</Ch>
+		<En>0</En>
 		<Id>lineup_4</Id>
 		<Ch>队伍2</Ch>
 		<En>0</En>
@@ -314,8 +500,14 @@
 		<Id>lineup_5</Id>
 		<Ch>队伍3</Ch>
 		<En>0</En>
+		<Id>lineup_5</Id>
+		<Ch>队伍3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_6</Id>
+		<Ch>{0}通关解锁</Ch>
+		<En>0</En>
 		<Id>lineup_6</Id>
 		<Ch>{0}通关解锁</Ch>
 		<En>0</En>
@@ -324,8 +516,14 @@
 		<Id>lineup_7</Id>
 		<Ch>更换</Ch>
 		<En>0</En>
+		<Id>lineup_7</Id>
+		<Ch>更换</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_8</Id>
+		<Ch>调整</Ch>
+		<En>0</En>
 		<Id>lineup_8</Id>
 		<Ch>调整</Ch>
 		<En>0</En>
@@ -334,8 +532,14 @@
 		<Id>lineup_9</Id>
 		<Ch>总战力：</Ch>
 		<En>0</En>
+		<Id>lineup_9</Id>
+		<Ch>总战力：</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_10</Id>
+		<Ch>队伍详情</Ch>
+		<En>0</En>
 		<Id>lineup_10</Id>
 		<Ch>队伍详情</Ch>
 		<En>0</En>
@@ -344,8 +548,14 @@
 		<Id>lineup_11</Id>
 		<Ch>优先发动队伍内靠前英雄技能</Ch>
 		<En>0</En>
+		<Id>lineup_11</Id>
+		<Ch>优先发动队伍内靠前英雄技能</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_12</Id>
+		<Ch>回合数</Ch>
+		<En>0</En>
 		<Id>lineup_12</Id>
 		<Ch>回合数</Ch>
 		<En>0</En>
@@ -354,8 +564,14 @@
 		<Id>lineup_13</Id>
 		<Ch>发动率</Ch>
 		<En>0</En>
+		<Id>lineup_13</Id>
+		<Ch>发动率</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_14</Id>
+		<Ch>发动率构成</Ch>
+		<En>0</En>
 		<Id>lineup_14</Id>
 		<Ch>发动率构成</Ch>
 		<En>0</En>
@@ -364,8 +580,14 @@
 		<Id>lineup_15</Id>
 		<Ch>暴击流</Ch>
 		<En>0</En>
+		<Id>lineup_15</Id>
+		<Ch>暴击流</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_16</Id>
+		<Ch>当前先攻提升{0}%的暴击伤害（无视闪避）</Ch>
+		<En>0</En>
 		<Id>lineup_16</Id>
 		<Ch>当前先攻提升{0}%的暴击伤害（无视闪避）</Ch>
 		<En>0</En>
@@ -374,8 +596,14 @@
 		<Id>lineup_17</Id>
 		<Ch>回复流</Ch>
 		<En>0</En>
+		<Id>lineup_17</Id>
+		<Ch>回复流</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_18</Id>
+		<Ch>当前闪避提升{0}%回复</Ch>
+		<En>0</En>
 		<Id>lineup_18</Id>
 		<Ch>当前闪避提升{0}%回复</Ch>
 		<En>0</En>
@@ -384,8 +612,14 @@
 		<Id>lineup_19</Id>
 		<Ch>纯粹流</Ch>
 		<En>0</En>
+		<Id>lineup_19</Id>
+		<Ch>纯粹流</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_20</Id>
+		<Ch>更多王者提升伤害，纯粹伤害（无视闪避与防御）</Ch>
+		<En>0</En>
 		<Id>lineup_20</Id>
 		<Ch>更多王者提升伤害，纯粹伤害（无视闪避与防御）</Ch>
 		<En>0</En>
@@ -394,8 +628,14 @@
 		<Id>lineup_21</Id>
 		<Ch>人品流</Ch>
 		<En>0</En>
+		<Id>lineup_21</Id>
+		<Ch>人品流</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_22</Id>
+		<Ch>追求几率触发技能</Ch>
+		<En>0</En>
 		<Id>lineup_22</Id>
 		<Ch>追求几率触发技能</Ch>
 		<En>0</En>
@@ -404,8 +644,14 @@
 		<Id>lineup_23</Id>
 		<Ch>替换</Ch>
 		<En>0</En>
+		<Id>lineup_23</Id>
+		<Ch>替换</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_24</Id>
+		<Ch>自动</Ch>
+		<En>0</En>
 		<Id>lineup_24</Id>
 		<Ch>自动</Ch>
 		<En>0</En>
@@ -414,8 +660,14 @@
 		<Id>lineup_25</Id>
 		<Ch>下阵</Ch>
 		<En>0</En>
+		<Id>lineup_25</Id>
+		<Ch>下阵</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>lineup_26</Id>
+		<Ch>已选英雄：{0}/{1}</Ch>
+		<En>0</En>
 		<Id>lineup_26</Id>
 		<Ch>已选英雄：{0}/{1}</Ch>
 		<En>0</En>
@@ -424,8 +676,14 @@
 		<Id>lineup_27</Id>
 		<Ch>保存</Ch>
 		<En>0</En>
+		<Id>lineup_27</Id>
+		<Ch>保存</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Draw_desc1_1</Id>
+		<Ch>每天5点重置</Ch>
+		<En>0</En>
 		<Id>Draw_desc1_1</Id>
 		<Ch>每天5点重置</Ch>
 		<En>0</En>
@@ -434,8 +692,14 @@
 		<Id>Draw_desc1_2</Id>
 		<Ch>累计10次必得紫将</Ch>
 		<En>0</En>
+		<Id>Draw_desc1_2</Id>
+		<Ch>累计10次必得紫将</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Draw_desc1_3</Id>
+		<Ch>累计10次必得橙将</Ch>
+		<En>0</En>
 		<Id>Draw_desc1_3</Id>
 		<Ch>累计10次必得橙将</Ch>
 		<En>0</En>
@@ -444,8 +708,14 @@
 		<Id>Draw_desc2_1</Id>
 		<Ch>绿~金</Ch>
 		<En>0</En>
+		<Id>Draw_desc2_1</Id>
+		<Ch>绿~金</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Draw_desc2_2</Id>
+		<Ch>蓝~金</Ch>
+		<En>0</En>
 		<Id>Draw_desc2_2</Id>
 		<Ch>蓝~金</Ch>
 		<En>0</En>
@@ -454,8 +724,14 @@
 		<Id>Draw_desc2_3</Id>
 		<Ch>紫~金</Ch>
 		<En>0</En>
+		<Id>Draw_desc2_3</Id>
+		<Ch>紫~金</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_101001</Id>
+		<Ch>枪兵</Ch>
+		<En>0</En>
 		<Id>Hero_name_101001</Id>
 		<Ch>枪兵</Ch>
 		<En>0</En>
@@ -464,8 +740,14 @@
 		<Id>Hero_name_101002</Id>
 		<Ch>盾兵</Ch>
 		<En>0</En>
+		<Id>Hero_name_101002</Id>
+		<Ch>盾兵</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_101003</Id>
+		<Ch>弓兵</Ch>
+		<En>0</En>
 		<Id>Hero_name_101003</Id>
 		<Ch>弓兵</Ch>
 		<En>0</En>
@@ -474,8 +756,14 @@
 		<Id>Hero_name_101004</Id>
 		<Ch>骑兵</Ch>
 		<En>0</En>
+		<Id>Hero_name_101004</Id>
+		<Ch>骑兵</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_101005</Id>
+		<Ch>策士</Ch>
+		<En>0</En>
 		<Id>Hero_name_101005</Id>
 		<Ch>策士</Ch>
 		<En>0</En>
@@ -484,8 +772,14 @@
 		<Id>Hero_name_102001</Id>
 		<Ch>秦琼</Ch>
 		<En>0</En>
+		<Id>Hero_name_102001</Id>
+		<Ch>秦琼</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_102002</Id>
+		<Ch>裴元庆</Ch>
+		<En>0</En>
 		<Id>Hero_name_102002</Id>
 		<Ch>裴元庆</Ch>
 		<En>0</En>
@@ -494,8 +788,14 @@
 		<Id>Hero_name_102003</Id>
 		<Ch>程咬金</Ch>
 		<En>0</En>
+		<Id>Hero_name_102003</Id>
+		<Ch>程咬金</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_102004</Id>
+		<Ch>赵云</Ch>
+		<En>0</En>
 		<Id>Hero_name_102004</Id>
 		<Ch>赵云</Ch>
 		<En>0</En>
@@ -504,8 +804,14 @@
 		<Id>Hero_name_102005</Id>
 		<Ch>关羽</Ch>
 		<En>0</En>
+		<Id>Hero_name_102005</Id>
+		<Ch>关羽</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_102006</Id>
+		<Ch>张飞</Ch>
+		<En>0</En>
 		<Id>Hero_name_102006</Id>
 		<Ch>张飞</Ch>
 		<En>0</En>
@@ -514,8 +820,14 @@
 		<Id>Hero_name_102007</Id>
 		<Ch>黄忠</Ch>
 		<En>0</En>
+		<Id>Hero_name_102007</Id>
+		<Ch>黄忠</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_102008</Id>
+		<Ch>马超</Ch>
+		<En>0</En>
 		<Id>Hero_name_102008</Id>
 		<Ch>马超</Ch>
 		<En>0</En>
@@ -524,8 +836,14 @@
 		<Id>Hero_name_102009</Id>
 		<Ch>吕布</Ch>
 		<En>0</En>
+		<Id>Hero_name_102009</Id>
+		<Ch>吕布</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_102010</Id>
+		<Ch>貂蝉</Ch>
+		<En>0</En>
 		<Id>Hero_name_102010</Id>
 		<Ch>貂蝉</Ch>
 		<En>0</En>
@@ -534,8 +852,14 @@
 		<Id>Hero_name_103001</Id>
 		<Ch>后羿</Ch>
 		<En>0</En>
+		<Id>Hero_name_103001</Id>
+		<Ch>后羿</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_103002</Id>
+		<Ch>嫦娥</Ch>
+		<En>0</En>
 		<Id>Hero_name_103002</Id>
 		<Ch>嫦娥</Ch>
 		<En>0</En>
@@ -544,8 +868,14 @@
 		<Id>Hero_name_103003</Id>
 		<Ch>橙3</Ch>
 		<En>0</En>
+		<Id>Hero_name_103003</Id>
+		<Ch>橙3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_103004</Id>
+		<Ch>橙4</Ch>
+		<En>0</En>
 		<Id>Hero_name_103004</Id>
 		<Ch>橙4</Ch>
 		<En>0</En>
@@ -554,8 +884,14 @@
 		<Id>Hero_name_103005</Id>
 		<Ch>橙5</Ch>
 		<En>0</En>
+		<Id>Hero_name_103005</Id>
+		<Ch>橙5</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_103006</Id>
+		<Ch>橙6</Ch>
+		<En>0</En>
 		<Id>Hero_name_103006</Id>
 		<Ch>橙6</Ch>
 		<En>0</En>
@@ -564,8 +900,14 @@
 		<Id>Hero_name_103007</Id>
 		<Ch>橙7</Ch>
 		<En>0</En>
+		<Id>Hero_name_103007</Id>
+		<Ch>橙7</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_103008</Id>
+		<Ch>橙8</Ch>
+		<En>0</En>
 		<Id>Hero_name_103008</Id>
 		<Ch>橙8</Ch>
 		<En>0</En>
@@ -574,8 +916,14 @@
 		<Id>Hero_name_103009</Id>
 		<Ch>橙9</Ch>
 		<En>0</En>
+		<Id>Hero_name_103009</Id>
+		<Ch>橙9</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_103010</Id>
+		<Ch>橙10</Ch>
+		<En>0</En>
 		<Id>Hero_name_103010</Id>
 		<Ch>橙10</Ch>
 		<En>0</En>
@@ -584,8 +932,14 @@
 		<Id>Hero_name_103011</Id>
 		<Ch>橙11</Ch>
 		<En>0</En>
+		<Id>Hero_name_103011</Id>
+		<Ch>橙11</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_103012</Id>
+		<Ch>橙12</Ch>
+		<En>0</En>
 		<Id>Hero_name_103012</Id>
 		<Ch>橙12</Ch>
 		<En>0</En>
@@ -594,8 +948,14 @@
 		<Id>Hero_name_103013</Id>
 		<Ch>橙13</Ch>
 		<En>0</En>
+		<Id>Hero_name_103013</Id>
+		<Ch>橙13</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_103014</Id>
+		<Ch>橙14</Ch>
+		<En>0</En>
 		<Id>Hero_name_103014</Id>
 		<Ch>橙14</Ch>
 		<En>0</En>
@@ -604,8 +964,14 @@
 		<Id>Hero_name_103015</Id>
 		<Ch>橙15</Ch>
 		<En>0</En>
+		<Id>Hero_name_103015</Id>
+		<Ch>橙15</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_104001</Id>
+		<Ch>金1</Ch>
+		<En>0</En>
 		<Id>Hero_name_104001</Id>
 		<Ch>金1</Ch>
 		<En>0</En>
@@ -614,8 +980,14 @@
 		<Id>Hero_name_104002</Id>
 		<Ch>金2</Ch>
 		<En>0</En>
+		<Id>Hero_name_104002</Id>
+		<Ch>金2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_104003</Id>
+		<Ch>金3</Ch>
+		<En>0</En>
 		<Id>Hero_name_104003</Id>
 		<Ch>金3</Ch>
 		<En>0</En>
@@ -624,8 +996,14 @@
 		<Id>Hero_name_104004</Id>
 		<Ch>金4</Ch>
 		<En>0</En>
+		<Id>Hero_name_104004</Id>
+		<Ch>金4</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_104005</Id>
+		<Ch>金5</Ch>
+		<En>0</En>
 		<Id>Hero_name_104005</Id>
 		<Ch>金5</Ch>
 		<En>0</En>
@@ -634,8 +1012,14 @@
 		<Id>Hero_name_104006</Id>
 		<Ch>金6</Ch>
 		<En>0</En>
+		<Id>Hero_name_104006</Id>
+		<Ch>金6</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_104007</Id>
+		<Ch>金7</Ch>
+		<En>0</En>
 		<Id>Hero_name_104007</Id>
 		<Ch>金7</Ch>
 		<En>0</En>
@@ -644,8 +1028,14 @@
 		<Id>Hero_name_104008</Id>
 		<Ch>金8</Ch>
 		<En>0</En>
+		<Id>Hero_name_104008</Id>
+		<Ch>金8</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_name_104009</Id>
+		<Ch>金9</Ch>
+		<En>0</En>
 		<Id>Hero_name_104009</Id>
 		<Ch>金9</Ch>
 		<En>0</En>
@@ -654,8 +1044,14 @@
 		<Id>Hero_name_104010</Id>
 		<Ch>金10</Ch>
 		<En>0</En>
+		<Id>Hero_name_104010</Id>
+		<Ch>金10</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_101001</Id>
+		<Ch>枪兵描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_101001</Id>
 		<Ch>枪兵描述</Ch>
 		<En>0</En>
@@ -664,8 +1060,14 @@
 		<Id>Hero_Desc_101002</Id>
 		<Ch>盾兵描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_101002</Id>
+		<Ch>盾兵描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_101003</Id>
+		<Ch>弓兵描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_101003</Id>
 		<Ch>弓兵描述</Ch>
 		<En>0</En>
@@ -674,8 +1076,14 @@
 		<Id>Hero_Desc_101004</Id>
 		<Ch>骑兵描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_101004</Id>
+		<Ch>骑兵描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_101005</Id>
+		<Ch>策士描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_101005</Id>
 		<Ch>策士描述</Ch>
 		<En>0</En>
@@ -684,8 +1092,14 @@
 		<Id>Hero_Desc_102001</Id>
 		<Ch>秦琼描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_102001</Id>
+		<Ch>秦琼描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_102002</Id>
+		<Ch>裴元庆描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_102002</Id>
 		<Ch>裴元庆描述</Ch>
 		<En>0</En>
@@ -694,8 +1108,14 @@
 		<Id>Hero_Desc_102003</Id>
 		<Ch>程咬金描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_102003</Id>
+		<Ch>程咬金描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_102004</Id>
+		<Ch>赵云描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_102004</Id>
 		<Ch>赵云描述</Ch>
 		<En>0</En>
@@ -704,8 +1124,14 @@
 		<Id>Hero_Desc_102005</Id>
 		<Ch>关羽描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_102005</Id>
+		<Ch>关羽描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_102006</Id>
+		<Ch>张飞描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_102006</Id>
 		<Ch>张飞描述</Ch>
 		<En>0</En>
@@ -714,8 +1140,14 @@
 		<Id>Hero_Desc_102007</Id>
 		<Ch>黄忠描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_102007</Id>
+		<Ch>黄忠描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_102008</Id>
+		<Ch>马超描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_102008</Id>
 		<Ch>马超描述</Ch>
 		<En>0</En>
@@ -724,8 +1156,14 @@
 		<Id>Hero_Desc_102009</Id>
 		<Ch>吕布描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_102009</Id>
+		<Ch>吕布描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_102010</Id>
+		<Ch>貂蝉描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_102010</Id>
 		<Ch>貂蝉描述</Ch>
 		<En>0</En>
@@ -734,8 +1172,14 @@
 		<Id>Hero_Desc_103001</Id>
 		<Ch>后羿描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_103001</Id>
+		<Ch>后羿描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_103002</Id>
+		<Ch>嫦娥描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_103002</Id>
 		<Ch>嫦娥描述</Ch>
 		<En>0</En>
@@ -744,8 +1188,14 @@
 		<Id>Hero_Desc_103003</Id>
 		<Ch>橙3描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_103003</Id>
+		<Ch>橙3描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_103004</Id>
+		<Ch>橙4描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_103004</Id>
 		<Ch>橙4描述</Ch>
 		<En>0</En>
@@ -754,8 +1204,14 @@
 		<Id>Hero_Desc_103005</Id>
 		<Ch>橙5描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_103005</Id>
+		<Ch>橙5描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_103006</Id>
+		<Ch>橙6描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_103006</Id>
 		<Ch>橙6描述</Ch>
 		<En>0</En>
@@ -764,8 +1220,14 @@
 		<Id>Hero_Desc_103007</Id>
 		<Ch>橙7描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_103007</Id>
+		<Ch>橙7描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_103008</Id>
+		<Ch>橙8描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_103008</Id>
 		<Ch>橙8描述</Ch>
 		<En>0</En>
@@ -774,8 +1236,14 @@
 		<Id>Hero_Desc_103009</Id>
 		<Ch>橙9描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_103009</Id>
+		<Ch>橙9描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_103010</Id>
+		<Ch>橙10描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_103010</Id>
 		<Ch>橙10描述</Ch>
 		<En>0</En>
@@ -784,8 +1252,14 @@
 		<Id>Hero_Desc_103011</Id>
 		<Ch>橙11描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_103011</Id>
+		<Ch>橙11描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_103012</Id>
+		<Ch>橙12描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_103012</Id>
 		<Ch>橙12描述</Ch>
 		<En>0</En>
@@ -794,8 +1268,14 @@
 		<Id>Hero_Desc_103013</Id>
 		<Ch>橙13描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_103013</Id>
+		<Ch>橙13描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_103014</Id>
+		<Ch>橙14描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_103014</Id>
 		<Ch>橙14描述</Ch>
 		<En>0</En>
@@ -804,8 +1284,14 @@
 		<Id>Hero_Desc_103015</Id>
 		<Ch>橙15描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_103015</Id>
+		<Ch>橙15描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_104001</Id>
+		<Ch>金1描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_104001</Id>
 		<Ch>金1描述</Ch>
 		<En>0</En>
@@ -814,8 +1300,14 @@
 		<Id>Hero_Desc_104002</Id>
 		<Ch>金2描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_104002</Id>
+		<Ch>金2描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_104003</Id>
+		<Ch>金3描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_104003</Id>
 		<Ch>金3描述</Ch>
 		<En>0</En>
@@ -824,8 +1316,14 @@
 		<Id>Hero_Desc_104004</Id>
 		<Ch>金4描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_104004</Id>
+		<Ch>金4描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_104005</Id>
+		<Ch>金5描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_104005</Id>
 		<Ch>金5描述</Ch>
 		<En>0</En>
@@ -834,8 +1332,14 @@
 		<Id>Hero_Desc_104006</Id>
 		<Ch>金6描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_104006</Id>
+		<Ch>金6描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_104007</Id>
+		<Ch>金7描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_104007</Id>
 		<Ch>金7描述</Ch>
 		<En>0</En>
@@ -844,8 +1348,14 @@
 		<Id>Hero_Desc_104008</Id>
 		<Ch>金8描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_104008</Id>
+		<Ch>金8描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Hero_Desc_104009</Id>
+		<Ch>金9描述</Ch>
+		<En>0</En>
 		<Id>Hero_Desc_104009</Id>
 		<Ch>金9描述</Ch>
 		<En>0</En>
@@ -854,8 +1364,14 @@
 		<Id>Hero_Desc_104010</Id>
 		<Ch>金10描述</Ch>
 		<En>0</En>
+		<Id>Hero_Desc_104010</Id>
+		<Ch>金10描述</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_101001</Id>
+		<Ch>枪兵宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_101001</Id>
 		<Ch>枪兵宝具</Ch>
 		<En>0</En>
@@ -864,8 +1380,14 @@
 		<Id>Equip_name_101002</Id>
 		<Ch>盾兵宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_101002</Id>
+		<Ch>盾兵宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_101003</Id>
+		<Ch>弓兵宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_101003</Id>
 		<Ch>弓兵宝具</Ch>
 		<En>0</En>
@@ -874,8 +1396,14 @@
 		<Id>Equip_name_101004</Id>
 		<Ch>骑兵宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_101004</Id>
+		<Ch>骑兵宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_101005</Id>
+		<Ch>策士宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_101005</Id>
 		<Ch>策士宝具</Ch>
 		<En>0</En>
@@ -884,8 +1412,14 @@
 		<Id>Equip_name_102001</Id>
 		<Ch>秦琼宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_102001</Id>
+		<Ch>秦琼宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_102002</Id>
+		<Ch>裴元庆宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_102002</Id>
 		<Ch>裴元庆宝具</Ch>
 		<En>0</En>
@@ -894,8 +1428,14 @@
 		<Id>Equip_name_102003</Id>
 		<Ch>程咬金宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_102003</Id>
+		<Ch>程咬金宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_102004</Id>
+		<Ch>赵云宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_102004</Id>
 		<Ch>赵云宝具</Ch>
 		<En>0</En>
@@ -904,8 +1444,14 @@
 		<Id>Equip_name_102005</Id>
 		<Ch>关羽宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_102005</Id>
+		<Ch>关羽宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_102006</Id>
+		<Ch>张飞宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_102006</Id>
 		<Ch>张飞宝具</Ch>
 		<En>0</En>
@@ -914,8 +1460,14 @@
 		<Id>Equip_name_102007</Id>
 		<Ch>黄忠宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_102007</Id>
+		<Ch>黄忠宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_102008</Id>
+		<Ch>马超宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_102008</Id>
 		<Ch>马超宝具</Ch>
 		<En>0</En>
@@ -924,8 +1476,14 @@
 		<Id>Equip_name_102009</Id>
 		<Ch>吕布宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_102009</Id>
+		<Ch>吕布宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_102010</Id>
+		<Ch>貂蝉宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_102010</Id>
 		<Ch>貂蝉宝具</Ch>
 		<En>0</En>
@@ -934,8 +1492,14 @@
 		<Id>Equip_name_103001</Id>
 		<Ch>后羿宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_103001</Id>
+		<Ch>后羿宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_103002</Id>
+		<Ch>嫦娥宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_103002</Id>
 		<Ch>嫦娥宝具</Ch>
 		<En>0</En>
@@ -944,8 +1508,14 @@
 		<Id>Equip_name_103003</Id>
 		<Ch>橙3宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_103003</Id>
+		<Ch>橙3宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_103004</Id>
+		<Ch>橙4宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_103004</Id>
 		<Ch>橙4宝具</Ch>
 		<En>0</En>
@@ -954,8 +1524,14 @@
 		<Id>Equip_name_103005</Id>
 		<Ch>橙5宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_103005</Id>
+		<Ch>橙5宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_103006</Id>
+		<Ch>橙6宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_103006</Id>
 		<Ch>橙6宝具</Ch>
 		<En>0</En>
@@ -964,8 +1540,14 @@
 		<Id>Equip_name_103007</Id>
 		<Ch>橙7宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_103007</Id>
+		<Ch>橙7宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_103008</Id>
+		<Ch>橙8宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_103008</Id>
 		<Ch>橙8宝具</Ch>
 		<En>0</En>
@@ -974,8 +1556,14 @@
 		<Id>Equip_name_103009</Id>
 		<Ch>橙9宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_103009</Id>
+		<Ch>橙9宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_103010</Id>
+		<Ch>橙10宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_103010</Id>
 		<Ch>橙10宝具</Ch>
 		<En>0</En>
@@ -984,8 +1572,14 @@
 		<Id>Equip_name_103011</Id>
 		<Ch>橙11宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_103011</Id>
+		<Ch>橙11宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_103012</Id>
+		<Ch>橙12宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_103012</Id>
 		<Ch>橙12宝具</Ch>
 		<En>0</En>
@@ -994,8 +1588,14 @@
 		<Id>Equip_name_103013</Id>
 		<Ch>橙13宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_103013</Id>
+		<Ch>橙13宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_103014</Id>
+		<Ch>橙14宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_103014</Id>
 		<Ch>橙14宝具</Ch>
 		<En>0</En>
@@ -1004,8 +1604,14 @@
 		<Id>Equip_name_103015</Id>
 		<Ch>橙15宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_103015</Id>
+		<Ch>橙15宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_104001</Id>
+		<Ch>金1宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_104001</Id>
 		<Ch>金1宝具</Ch>
 		<En>0</En>
@@ -1014,8 +1620,14 @@
 		<Id>Equip_name_104002</Id>
 		<Ch>金2宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_104002</Id>
+		<Ch>金2宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_104003</Id>
+		<Ch>金3宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_104003</Id>
 		<Ch>金3宝具</Ch>
 		<En>0</En>
@@ -1024,8 +1636,14 @@
 		<Id>Equip_name_104004</Id>
 		<Ch>金4宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_104004</Id>
+		<Ch>金4宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_104005</Id>
+		<Ch>金5宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_104005</Id>
 		<Ch>金5宝具</Ch>
 		<En>0</En>
@@ -1034,8 +1652,14 @@
 		<Id>Equip_name_104006</Id>
 		<Ch>金6宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_104006</Id>
+		<Ch>金6宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_104007</Id>
+		<Ch>金7宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_104007</Id>
 		<Ch>金7宝具</Ch>
 		<En>0</En>
@@ -1044,8 +1668,14 @@
 		<Id>Equip_name_104008</Id>
 		<Ch>金8宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_104008</Id>
+		<Ch>金8宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Equip_name_104009</Id>
+		<Ch>金9宝具</Ch>
+		<En>0</En>
 		<Id>Equip_name_104009</Id>
 		<Ch>金9宝具</Ch>
 		<En>0</En>
@@ -1054,8 +1684,14 @@
 		<Id>Equip_name_104010</Id>
 		<Ch>金10宝具</Ch>
 		<En>0</En>
+		<Id>Equip_name_104010</Id>
+		<Ch>金10宝具</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210101</Id>
+		<Ch>小银两袋</Ch>
+		<En>0</En>
 		<Id>Item_name_210101</Id>
 		<Ch>小银两袋</Ch>
 		<En>0</En>
@@ -1064,8 +1700,14 @@
 		<Id>Item_name_210102</Id>
 		<Ch>中银两袋</Ch>
 		<En>0</En>
+		<Id>Item_name_210102</Id>
+		<Ch>中银两袋</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210103</Id>
+		<Ch>大银两袋</Ch>
+		<En>0</En>
 		<Id>Item_name_210103</Id>
 		<Ch>大银两袋</Ch>
 		<En>0</En>
@@ -1074,8 +1716,14 @@
 		<Id>Item_name_210201</Id>
 		<Ch>小经验丹</Ch>
 		<En>0</En>
+		<Id>Item_name_210201</Id>
+		<Ch>小经验丹</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210202</Id>
+		<Ch>中经验丹</Ch>
+		<En>0</En>
 		<Id>Item_name_210202</Id>
 		<Ch>中经验丹</Ch>
 		<En>0</En>
@@ -1084,8 +1732,14 @@
 		<Id>Item_name_210203</Id>
 		<Ch>大经验丹</Ch>
 		<En>0</En>
+		<Id>Item_name_210203</Id>
+		<Ch>大经验丹</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210301</Id>
+		<Ch>增加战力道具1</Ch>
+		<En>0</En>
 		<Id>Item_name_210301</Id>
 		<Ch>增加战力道具1</Ch>
 		<En>0</En>
@@ -1094,8 +1748,14 @@
 		<Id>Item_name_210302</Id>
 		<Ch>增加战力道具2</Ch>
 		<En>0</En>
+		<Id>Item_name_210302</Id>
+		<Ch>增加战力道具2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210303</Id>
+		<Ch>增加战力道具3</Ch>
+		<En>0</En>
 		<Id>Item_name_210303</Id>
 		<Ch>增加战力道具3</Ch>
 		<En>0</En>
@@ -1104,8 +1764,14 @@
 		<Id>Item_name_210401</Id>
 		<Ch>指定道具袋1</Ch>
 		<En>0</En>
+		<Id>Item_name_210401</Id>
+		<Ch>指定道具袋1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210402</Id>
+		<Ch>指定道具袋2</Ch>
+		<En>0</En>
 		<Id>Item_name_210402</Id>
 		<Ch>指定道具袋2</Ch>
 		<En>0</En>
@@ -1114,8 +1780,14 @@
 		<Id>Item_name_210403</Id>
 		<Ch>指定道具袋3</Ch>
 		<En>0</En>
+		<Id>Item_name_210403</Id>
+		<Ch>指定道具袋3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210501</Id>
+		<Ch>随机道具袋1</Ch>
+		<En>0</En>
 		<Id>Item_name_210501</Id>
 		<Ch>随机道具袋1</Ch>
 		<En>0</En>
@@ -1124,8 +1796,14 @@
 		<Id>Item_name_210502</Id>
 		<Ch>随机道具袋2</Ch>
 		<En>0</En>
+		<Id>Item_name_210502</Id>
+		<Ch>随机道具袋2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210503</Id>
+		<Ch>随机道具袋3</Ch>
+		<En>0</En>
 		<Id>Item_name_210503</Id>
 		<Ch>随机道具袋3</Ch>
 		<En>0</En>
@@ -1134,8 +1812,14 @@
 		<Id>Item_name_210601</Id>
 		<Ch>指定武将包1</Ch>
 		<En>0</En>
+		<Id>Item_name_210601</Id>
+		<Ch>指定武将包1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210602</Id>
+		<Ch>指定武将包2</Ch>
+		<En>0</En>
 		<Id>Item_name_210602</Id>
 		<Ch>指定武将包2</Ch>
 		<En>0</En>
@@ -1144,8 +1828,14 @@
 		<Id>Item_name_210603</Id>
 		<Ch>指定武将包3</Ch>
 		<En>0</En>
+		<Id>Item_name_210603</Id>
+		<Ch>指定武将包3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210701</Id>
+		<Ch>随机武将包1</Ch>
+		<En>0</En>
 		<Id>Item_name_210701</Id>
 		<Ch>随机武将包1</Ch>
 		<En>0</En>
@@ -1154,8 +1844,14 @@
 		<Id>Item_name_210702</Id>
 		<Ch>随机武将包2</Ch>
 		<En>0</En>
+		<Id>Item_name_210702</Id>
+		<Ch>随机武将包2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_210703</Id>
+		<Ch>随机武将包3</Ch>
+		<En>0</En>
 		<Id>Item_name_210703</Id>
 		<Ch>随机武将包3</Ch>
 		<En>0</En>
@@ -1164,8 +1860,14 @@
 		<Id>Item_name_220101</Id>
 		<Ch>突破材料1</Ch>
 		<En>0</En>
+		<Id>Item_name_220101</Id>
+		<Ch>突破材料1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220102</Id>
+		<Ch>突破材料2</Ch>
+		<En>0</En>
 		<Id>Item_name_220102</Id>
 		<Ch>突破材料2</Ch>
 		<En>0</En>
@@ -1174,8 +1876,14 @@
 		<Id>Item_name_220103</Id>
 		<Ch>突破材料3</Ch>
 		<En>0</En>
+		<Id>Item_name_220103</Id>
+		<Ch>突破材料3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220104</Id>
+		<Ch>突破材料4</Ch>
+		<En>0</En>
 		<Id>Item_name_220104</Id>
 		<Ch>突破材料4</Ch>
 		<En>0</En>
@@ -1184,8 +1892,14 @@
 		<Id>Item_name_220105</Id>
 		<Ch>突破材料5</Ch>
 		<En>0</En>
+		<Id>Item_name_220105</Id>
+		<Ch>突破材料5</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220106</Id>
+		<Ch>突破材料6</Ch>
+		<En>0</En>
 		<Id>Item_name_220106</Id>
 		<Ch>突破材料6</Ch>
 		<En>0</En>
@@ -1194,8 +1908,14 @@
 		<Id>Item_name_220107</Id>
 		<Ch>突破材料7</Ch>
 		<En>0</En>
+		<Id>Item_name_220107</Id>
+		<Ch>突破材料7</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220108</Id>
+		<Ch>突破材料8</Ch>
+		<En>0</En>
 		<Id>Item_name_220108</Id>
 		<Ch>突破材料8</Ch>
 		<En>0</En>
@@ -1204,8 +1924,14 @@
 		<Id>Item_name_220109</Id>
 		<Ch>突破材料9</Ch>
 		<En>0</En>
+		<Id>Item_name_220109</Id>
+		<Ch>突破材料9</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220201</Id>
+		<Ch>重铸材料1</Ch>
+		<En>0</En>
 		<Id>Item_name_220201</Id>
 		<Ch>重铸材料1</Ch>
 		<En>0</En>
@@ -1214,8 +1940,14 @@
 		<Id>Item_name_220202</Id>
 		<Ch>重铸材料2</Ch>
 		<En>0</En>
+		<Id>Item_name_220202</Id>
+		<Ch>重铸材料2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220203</Id>
+		<Ch>重铸材料3</Ch>
+		<En>0</En>
 		<Id>Item_name_220203</Id>
 		<Ch>重铸材料3</Ch>
 		<En>0</En>
@@ -1224,8 +1956,14 @@
 		<Id>Item_name_220204</Id>
 		<Ch>重铸材料4</Ch>
 		<En>0</En>
+		<Id>Item_name_220204</Id>
+		<Ch>重铸材料4</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220301</Id>
+		<Ch>铸造材料1-1</Ch>
+		<En>0</En>
 		<Id>Item_name_220301</Id>
 		<Ch>铸造材料1-1</Ch>
 		<En>0</En>
@@ -1234,8 +1972,14 @@
 		<Id>Item_name_220302</Id>
 		<Ch>铸造材料1-2</Ch>
 		<En>0</En>
+		<Id>Item_name_220302</Id>
+		<Ch>铸造材料1-2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220303</Id>
+		<Ch>铸造材料1-3</Ch>
+		<En>0</En>
 		<Id>Item_name_220303</Id>
 		<Ch>铸造材料1-3</Ch>
 		<En>0</En>
@@ -1244,8 +1988,14 @@
 		<Id>Item_name_220311</Id>
 		<Ch>铸造材料2-1</Ch>
 		<En>0</En>
+		<Id>Item_name_220311</Id>
+		<Ch>铸造材料2-1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220312</Id>
+		<Ch>铸造材料2-2</Ch>
+		<En>0</En>
 		<Id>Item_name_220312</Id>
 		<Ch>铸造材料2-2</Ch>
 		<En>0</En>
@@ -1254,8 +2004,14 @@
 		<Id>Item_name_220313</Id>
 		<Ch>铸造材料2-3</Ch>
 		<En>0</En>
+		<Id>Item_name_220313</Id>
+		<Ch>铸造材料2-3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220321</Id>
+		<Ch>铸造材料3-1</Ch>
+		<En>0</En>
 		<Id>Item_name_220321</Id>
 		<Ch>铸造材料3-1</Ch>
 		<En>0</En>
@@ -1264,8 +2020,14 @@
 		<Id>Item_name_220322</Id>
 		<Ch>铸造材料3-2</Ch>
 		<En>0</En>
+		<Id>Item_name_220322</Id>
+		<Ch>铸造材料3-2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220323</Id>
+		<Ch>铸造材料3-3</Ch>
+		<En>0</En>
 		<Id>Item_name_220323</Id>
 		<Ch>铸造材料3-3</Ch>
 		<En>0</En>
@@ -1274,8 +2036,14 @@
 		<Id>Item_name_220331</Id>
 		<Ch>铸造材料3-1</Ch>
 		<En>0</En>
+		<Id>Item_name_220331</Id>
+		<Ch>铸造材料3-1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220332</Id>
+		<Ch>铸造材料3-2</Ch>
+		<En>0</En>
 		<Id>Item_name_220332</Id>
 		<Ch>铸造材料3-2</Ch>
 		<En>0</En>
@@ -1284,8 +2052,14 @@
 		<Id>Item_name_220333</Id>
 		<Ch>铸造材料3-3</Ch>
 		<En>0</En>
+		<Id>Item_name_220333</Id>
+		<Ch>铸造材料3-3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220341</Id>
+		<Ch>铸造材料3-1</Ch>
+		<En>0</En>
 		<Id>Item_name_220341</Id>
 		<Ch>铸造材料3-1</Ch>
 		<En>0</En>
@@ -1294,8 +2068,14 @@
 		<Id>Item_name_220342</Id>
 		<Ch>铸造材料3-2</Ch>
 		<En>0</En>
+		<Id>Item_name_220342</Id>
+		<Ch>铸造材料3-2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_220343</Id>
+		<Ch>铸造材料3-3</Ch>
+		<En>0</En>
 		<Id>Item_name_220343</Id>
 		<Ch>铸造材料3-3</Ch>
 		<En>0</En>
@@ -1304,8 +2084,14 @@
 		<Id>Item_name_231001</Id>
 		<Ch>枪兵碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_231001</Id>
+		<Ch>枪兵碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_231002</Id>
+		<Ch>盾兵碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_231002</Id>
 		<Ch>盾兵碎片</Ch>
 		<En>0</En>
@@ -1314,8 +2100,14 @@
 		<Id>Item_name_231003</Id>
 		<Ch>弓兵碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_231003</Id>
+		<Ch>弓兵碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_231004</Id>
+		<Ch>骑兵碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_231004</Id>
 		<Ch>骑兵碎片</Ch>
 		<En>0</En>
@@ -1324,8 +2116,14 @@
 		<Id>Item_name_231005</Id>
 		<Ch>策士碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_231005</Id>
+		<Ch>策士碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_232001</Id>
+		<Ch>秦琼碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_232001</Id>
 		<Ch>秦琼碎片</Ch>
 		<En>0</En>
@@ -1334,8 +2132,14 @@
 		<Id>Item_name_232002</Id>
 		<Ch>裴元庆碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_232002</Id>
+		<Ch>裴元庆碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_232003</Id>
+		<Ch>程咬金碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_232003</Id>
 		<Ch>程咬金碎片</Ch>
 		<En>0</En>
@@ -1344,8 +2148,14 @@
 		<Id>Item_name_232004</Id>
 		<Ch>赵云碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_232004</Id>
+		<Ch>赵云碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_232005</Id>
+		<Ch>关羽碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_232005</Id>
 		<Ch>关羽碎片</Ch>
 		<En>0</En>
@@ -1354,8 +2164,14 @@
 		<Id>Item_name_232006</Id>
 		<Ch>张飞碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_232006</Id>
+		<Ch>张飞碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_232007</Id>
+		<Ch>黄忠碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_232007</Id>
 		<Ch>黄忠碎片</Ch>
 		<En>0</En>
@@ -1364,8 +2180,14 @@
 		<Id>Item_name_232008</Id>
 		<Ch>马超碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_232008</Id>
+		<Ch>马超碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_232009</Id>
+		<Ch>吕布碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_232009</Id>
 		<Ch>吕布碎片</Ch>
 		<En>0</En>
@@ -1374,8 +2196,14 @@
 		<Id>Item_name_232010</Id>
 		<Ch>貂蝉碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_232010</Id>
+		<Ch>貂蝉碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_233001</Id>
+		<Ch>后羿碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_233001</Id>
 		<Ch>后羿碎片</Ch>
 		<En>0</En>
@@ -1384,8 +2212,14 @@
 		<Id>Item_name_233002</Id>
 		<Ch>嫦娥碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_233002</Id>
+		<Ch>嫦娥碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_233003</Id>
+		<Ch>橙3碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_233003</Id>
 		<Ch>橙3碎片</Ch>
 		<En>0</En>
@@ -1394,8 +2228,14 @@
 		<Id>Item_name_233004</Id>
 		<Ch>橙4碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_233004</Id>
+		<Ch>橙4碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_233005</Id>
+		<Ch>橙5碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_233005</Id>
 		<Ch>橙5碎片</Ch>
 		<En>0</En>
@@ -1404,8 +2244,14 @@
 		<Id>Item_name_233006</Id>
 		<Ch>橙6碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_233006</Id>
+		<Ch>橙6碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_233007</Id>
+		<Ch>橙7碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_233007</Id>
 		<Ch>橙7碎片</Ch>
 		<En>0</En>
@@ -1414,8 +2260,14 @@
 		<Id>Item_name_233008</Id>
 		<Ch>橙8碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_233008</Id>
+		<Ch>橙8碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_233009</Id>
+		<Ch>橙9碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_233009</Id>
 		<Ch>橙9碎片</Ch>
 		<En>0</En>
@@ -1424,8 +2276,14 @@
 		<Id>Item_name_233010</Id>
 		<Ch>橙10碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_233010</Id>
+		<Ch>橙10碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_233011</Id>
+		<Ch>橙11碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_233011</Id>
 		<Ch>橙11碎片</Ch>
 		<En>0</En>
@@ -1434,8 +2292,14 @@
 		<Id>Item_name_233012</Id>
 		<Ch>橙12碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_233012</Id>
+		<Ch>橙12碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_233013</Id>
+		<Ch>橙13碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_233013</Id>
 		<Ch>橙13碎片</Ch>
 		<En>0</En>
@@ -1444,8 +2308,14 @@
 		<Id>Item_name_233014</Id>
 		<Ch>橙14碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_233014</Id>
+		<Ch>橙14碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_233015</Id>
+		<Ch>橙15碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_233015</Id>
 		<Ch>橙15碎片</Ch>
 		<En>0</En>
@@ -1454,8 +2324,14 @@
 		<Id>Item_name_234001</Id>
 		<Ch>金1碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_234001</Id>
+		<Ch>金1碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_234002</Id>
+		<Ch>金2碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_234002</Id>
 		<Ch>金2碎片</Ch>
 		<En>0</En>
@@ -1464,8 +2340,14 @@
 		<Id>Item_name_234003</Id>
 		<Ch>金3碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_234003</Id>
+		<Ch>金3碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_234004</Id>
+		<Ch>金4碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_234004</Id>
 		<Ch>金4碎片</Ch>
 		<En>0</En>
@@ -1474,8 +2356,14 @@
 		<Id>Item_name_234005</Id>
 		<Ch>金5碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_234005</Id>
+		<Ch>金5碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_234006</Id>
+		<Ch>金6碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_234006</Id>
 		<Ch>金6碎片</Ch>
 		<En>0</En>
@@ -1484,8 +2372,14 @@
 		<Id>Item_name_234007</Id>
 		<Ch>金7碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_234007</Id>
+		<Ch>金7碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_234008</Id>
+		<Ch>金8碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_234008</Id>
 		<Ch>金8碎片</Ch>
 		<En>0</En>
@@ -1494,8 +2388,14 @@
 		<Id>Item_name_234009</Id>
 		<Ch>金9碎片</Ch>
 		<En>0</En>
+		<Id>Item_name_234009</Id>
+		<Ch>金9碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_234010</Id>
+		<Ch>金10碎片</Ch>
+		<En>0</En>
 		<Id>Item_name_234010</Id>
 		<Ch>金10碎片</Ch>
 		<En>0</En>
@@ -1504,8 +2404,14 @@
 		<Id>Item_name_219901</Id>
 		<Ch>积分橙将包</Ch>
 		<En>0</En>
+		<Id>Item_name_219901</Id>
+		<Ch>积分橙将包</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_240101</Id>
+		<Ch>金币十连卷</Ch>
+		<En>0</En>
 		<Id>Item_name_240101</Id>
 		<Ch>金币十连卷</Ch>
 		<En>0</En>
@@ -1514,8 +2420,14 @@
 		<Id>Item_name_240102</Id>
 		<Ch>钻石单抽卷</Ch>
 		<En>0</En>
+		<Id>Item_name_240102</Id>
+		<Ch>钻石单抽卷</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_240103</Id>
+		<Ch>钻石十连卷</Ch>
+		<En>0</En>
 		<Id>Item_name_240103</Id>
 		<Ch>钻石十连卷</Ch>
 		<En>0</En>
@@ -1524,8 +2436,14 @@
 		<Id>Item_name_240104</Id>
 		<Ch>特权单抽卷</Ch>
 		<En>0</En>
+		<Id>Item_name_240104</Id>
+		<Ch>特权单抽卷</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_name_240105</Id>
+		<Ch>特权十连卷</Ch>
+		<En>0</En>
 		<Id>Item_name_240105</Id>
 		<Ch>特权十连卷</Ch>
 		<En>0</En>
@@ -1534,8 +2452,14 @@
 		<Id>Item_desc_210101</Id>
 		<Ch>小银两袋</Ch>
 		<En>0</En>
+		<Id>Item_desc_210101</Id>
+		<Ch>小银两袋</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_210102</Id>
+		<Ch>中银两袋</Ch>
+		<En>0</En>
 		<Id>Item_desc_210102</Id>
 		<Ch>中银两袋</Ch>
 		<En>0</En>
@@ -1544,8 +2468,14 @@
 		<Id>Item_desc_210103</Id>
 		<Ch>大银两袋</Ch>
 		<En>0</En>
+		<Id>Item_desc_210103</Id>
+		<Ch>大银两袋</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_210201</Id>
+		<Ch>小经验丹</Ch>
+		<En>0</En>
 		<Id>Item_desc_210201</Id>
 		<Ch>小经验丹</Ch>
 		<En>0</En>
@@ -1554,8 +2484,14 @@
 		<Id>Item_desc_210202</Id>
 		<Ch>中经验丹</Ch>
 		<En>0</En>
+		<Id>Item_desc_210202</Id>
+		<Ch>中经验丹</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_210203</Id>
+		<Ch>大经验丹</Ch>
+		<En>0</En>
 		<Id>Item_desc_210203</Id>
 		<Ch>大经验丹</Ch>
 		<En>0</En>
@@ -1564,8 +2500,14 @@
 		<Id>Item_desc_210301</Id>
 		<Ch>增加战力道具1</Ch>
 		<En>0</En>
+		<Id>Item_desc_210301</Id>
+		<Ch>增加战力道具1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_210302</Id>
+		<Ch>增加战力道具2</Ch>
+		<En>0</En>
 		<Id>Item_desc_210302</Id>
 		<Ch>增加战力道具2</Ch>
 		<En>0</En>
@@ -1574,8 +2516,14 @@
 		<Id>Item_desc_210303</Id>
 		<Ch>增加战力道具3</Ch>
 		<En>0</En>
+		<Id>Item_desc_210303</Id>
+		<Ch>增加战力道具3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_210401</Id>
+		<Ch>指定道具袋1</Ch>
+		<En>0</En>
 		<Id>Item_desc_210401</Id>
 		<Ch>指定道具袋1</Ch>
 		<En>0</En>
@@ -1584,8 +2532,14 @@
 		<Id>Item_desc_210402</Id>
 		<Ch>指定道具袋2</Ch>
 		<En>0</En>
+		<Id>Item_desc_210402</Id>
+		<Ch>指定道具袋2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_210403</Id>
+		<Ch>指定道具袋3</Ch>
+		<En>0</En>
 		<Id>Item_desc_210403</Id>
 		<Ch>指定道具袋3</Ch>
 		<En>0</En>
@@ -1594,8 +2548,14 @@
 		<Id>Item_desc_210501</Id>
 		<Ch>随机道具袋1</Ch>
 		<En>0</En>
+		<Id>Item_desc_210501</Id>
+		<Ch>随机道具袋1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_210502</Id>
+		<Ch>随机道具袋2</Ch>
+		<En>0</En>
 		<Id>Item_desc_210502</Id>
 		<Ch>随机道具袋2</Ch>
 		<En>0</En>
@@ -1604,8 +2564,14 @@
 		<Id>Item_desc_210503</Id>
 		<Ch>随机道具袋3</Ch>
 		<En>0</En>
+		<Id>Item_desc_210503</Id>
+		<Ch>随机道具袋3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_210601</Id>
+		<Ch>指定武将包1</Ch>
+		<En>0</En>
 		<Id>Item_desc_210601</Id>
 		<Ch>指定武将包1</Ch>
 		<En>0</En>
@@ -1614,8 +2580,14 @@
 		<Id>Item_desc_210602</Id>
 		<Ch>指定武将包2</Ch>
 		<En>0</En>
+		<Id>Item_desc_210602</Id>
+		<Ch>指定武将包2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_210603</Id>
+		<Ch>指定武将包3</Ch>
+		<En>0</En>
 		<Id>Item_desc_210603</Id>
 		<Ch>指定武将包3</Ch>
 		<En>0</En>
@@ -1624,8 +2596,14 @@
 		<Id>Item_desc_210701</Id>
 		<Ch>随机武将包1</Ch>
 		<En>0</En>
+		<Id>Item_desc_210701</Id>
+		<Ch>随机武将包1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_210702</Id>
+		<Ch>随机武将包2</Ch>
+		<En>0</En>
 		<Id>Item_desc_210702</Id>
 		<Ch>随机武将包2</Ch>
 		<En>0</En>
@@ -1634,8 +2612,14 @@
 		<Id>Item_desc_210703</Id>
 		<Ch>随机武将包3</Ch>
 		<En>0</En>
+		<Id>Item_desc_210703</Id>
+		<Ch>随机武将包3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220101</Id>
+		<Ch>突破材料1</Ch>
+		<En>0</En>
 		<Id>Item_desc_220101</Id>
 		<Ch>突破材料1</Ch>
 		<En>0</En>
@@ -1644,8 +2628,14 @@
 		<Id>Item_desc_220102</Id>
 		<Ch>突破材料2</Ch>
 		<En>0</En>
+		<Id>Item_desc_220102</Id>
+		<Ch>突破材料2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220103</Id>
+		<Ch>突破材料3</Ch>
+		<En>0</En>
 		<Id>Item_desc_220103</Id>
 		<Ch>突破材料3</Ch>
 		<En>0</En>
@@ -1654,8 +2644,14 @@
 		<Id>Item_desc_220104</Id>
 		<Ch>突破材料4</Ch>
 		<En>0</En>
+		<Id>Item_desc_220104</Id>
+		<Ch>突破材料4</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220105</Id>
+		<Ch>突破材料5</Ch>
+		<En>0</En>
 		<Id>Item_desc_220105</Id>
 		<Ch>突破材料5</Ch>
 		<En>0</En>
@@ -1664,8 +2660,14 @@
 		<Id>Item_desc_220106</Id>
 		<Ch>突破材料6</Ch>
 		<En>0</En>
+		<Id>Item_desc_220106</Id>
+		<Ch>突破材料6</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220107</Id>
+		<Ch>突破材料7</Ch>
+		<En>0</En>
 		<Id>Item_desc_220107</Id>
 		<Ch>突破材料7</Ch>
 		<En>0</En>
@@ -1674,8 +2676,14 @@
 		<Id>Item_desc_220108</Id>
 		<Ch>突破材料8</Ch>
 		<En>0</En>
+		<Id>Item_desc_220108</Id>
+		<Ch>突破材料8</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220109</Id>
+		<Ch>突破材料9</Ch>
+		<En>0</En>
 		<Id>Item_desc_220109</Id>
 		<Ch>突破材料9</Ch>
 		<En>0</En>
@@ -1684,8 +2692,14 @@
 		<Id>Item_desc_220201</Id>
 		<Ch>重铸材料1</Ch>
 		<En>0</En>
+		<Id>Item_desc_220201</Id>
+		<Ch>重铸材料1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220202</Id>
+		<Ch>重铸材料2</Ch>
+		<En>0</En>
 		<Id>Item_desc_220202</Id>
 		<Ch>重铸材料2</Ch>
 		<En>0</En>
@@ -1694,8 +2708,14 @@
 		<Id>Item_desc_220203</Id>
 		<Ch>重铸材料3</Ch>
 		<En>0</En>
+		<Id>Item_desc_220203</Id>
+		<Ch>重铸材料3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220204</Id>
+		<Ch>重铸材料4</Ch>
+		<En>0</En>
 		<Id>Item_desc_220204</Id>
 		<Ch>重铸材料4</Ch>
 		<En>0</En>
@@ -1704,8 +2724,14 @@
 		<Id>Item_desc_220301</Id>
 		<Ch>铸造材料1-1</Ch>
 		<En>0</En>
+		<Id>Item_desc_220301</Id>
+		<Ch>铸造材料1-1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220302</Id>
+		<Ch>铸造材料1-2</Ch>
+		<En>0</En>
 		<Id>Item_desc_220302</Id>
 		<Ch>铸造材料1-2</Ch>
 		<En>0</En>
@@ -1714,8 +2740,14 @@
 		<Id>Item_desc_220303</Id>
 		<Ch>铸造材料1-3</Ch>
 		<En>0</En>
+		<Id>Item_desc_220303</Id>
+		<Ch>铸造材料1-3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220311</Id>
+		<Ch>铸造材料2-1</Ch>
+		<En>0</En>
 		<Id>Item_desc_220311</Id>
 		<Ch>铸造材料2-1</Ch>
 		<En>0</En>
@@ -1724,8 +2756,14 @@
 		<Id>Item_desc_220312</Id>
 		<Ch>铸造材料2-2</Ch>
 		<En>0</En>
+		<Id>Item_desc_220312</Id>
+		<Ch>铸造材料2-2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220313</Id>
+		<Ch>铸造材料2-3</Ch>
+		<En>0</En>
 		<Id>Item_desc_220313</Id>
 		<Ch>铸造材料2-3</Ch>
 		<En>0</En>
@@ -1734,8 +2772,14 @@
 		<Id>Item_desc_220321</Id>
 		<Ch>铸造材料3-1</Ch>
 		<En>0</En>
+		<Id>Item_desc_220321</Id>
+		<Ch>铸造材料3-1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220322</Id>
+		<Ch>铸造材料3-2</Ch>
+		<En>0</En>
 		<Id>Item_desc_220322</Id>
 		<Ch>铸造材料3-2</Ch>
 		<En>0</En>
@@ -1744,8 +2788,14 @@
 		<Id>Item_desc_220323</Id>
 		<Ch>铸造材料3-3</Ch>
 		<En>0</En>
+		<Id>Item_desc_220323</Id>
+		<Ch>铸造材料3-3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220331</Id>
+		<Ch>铸造材料3-1</Ch>
+		<En>0</En>
 		<Id>Item_desc_220331</Id>
 		<Ch>铸造材料3-1</Ch>
 		<En>0</En>
@@ -1754,8 +2804,14 @@
 		<Id>Item_desc_220332</Id>
 		<Ch>铸造材料3-2</Ch>
 		<En>0</En>
+		<Id>Item_desc_220332</Id>
+		<Ch>铸造材料3-2</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220333</Id>
+		<Ch>铸造材料3-3</Ch>
+		<En>0</En>
 		<Id>Item_desc_220333</Id>
 		<Ch>铸造材料3-3</Ch>
 		<En>0</En>
@@ -1764,8 +2820,14 @@
 		<Id>Item_desc_220341</Id>
 		<Ch>铸造材料3-1</Ch>
 		<En>0</En>
+		<Id>Item_desc_220341</Id>
+		<Ch>铸造材料3-1</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_220342</Id>
+		<Ch>铸造材料3-2</Ch>
+		<En>0</En>
 		<Id>Item_desc_220342</Id>
 		<Ch>铸造材料3-2</Ch>
 		<En>0</En>
@@ -1774,8 +2836,14 @@
 		<Id>Item_desc_220343</Id>
 		<Ch>铸造材料3-3</Ch>
 		<En>0</En>
+		<Id>Item_desc_220343</Id>
+		<Ch>铸造材料3-3</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_231001</Id>
+		<Ch>枪兵碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_231001</Id>
 		<Ch>枪兵碎片</Ch>
 		<En>0</En>
@@ -1784,8 +2852,14 @@
 		<Id>Item_desc_231002</Id>
 		<Ch>盾兵碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_231002</Id>
+		<Ch>盾兵碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_231003</Id>
+		<Ch>弓兵碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_231003</Id>
 		<Ch>弓兵碎片</Ch>
 		<En>0</En>
@@ -1794,8 +2868,14 @@
 		<Id>Item_desc_231004</Id>
 		<Ch>骑兵碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_231004</Id>
+		<Ch>骑兵碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_231005</Id>
+		<Ch>策士碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_231005</Id>
 		<Ch>策士碎片</Ch>
 		<En>0</En>
@@ -1804,8 +2884,14 @@
 		<Id>Item_desc_232001</Id>
 		<Ch>秦琼碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_232001</Id>
+		<Ch>秦琼碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_232002</Id>
+		<Ch>裴元庆碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_232002</Id>
 		<Ch>裴元庆碎片</Ch>
 		<En>0</En>
@@ -1814,8 +2900,14 @@
 		<Id>Item_desc_232003</Id>
 		<Ch>程咬金碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_232003</Id>
+		<Ch>程咬金碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_232004</Id>
+		<Ch>赵云碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_232004</Id>
 		<Ch>赵云碎片</Ch>
 		<En>0</En>
@@ -1824,8 +2916,14 @@
 		<Id>Item_desc_232005</Id>
 		<Ch>关羽碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_232005</Id>
+		<Ch>关羽碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_232006</Id>
+		<Ch>张飞碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_232006</Id>
 		<Ch>张飞碎片</Ch>
 		<En>0</En>
@@ -1834,8 +2932,14 @@
 		<Id>Item_desc_232007</Id>
 		<Ch>黄忠碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_232007</Id>
+		<Ch>黄忠碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_232008</Id>
+		<Ch>马超碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_232008</Id>
 		<Ch>马超碎片</Ch>
 		<En>0</En>
@@ -1844,8 +2948,14 @@
 		<Id>Item_desc_232009</Id>
 		<Ch>吕布碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_232009</Id>
+		<Ch>吕布碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_232010</Id>
+		<Ch>貂蝉碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_232010</Id>
 		<Ch>貂蝉碎片</Ch>
 		<En>0</En>
@@ -1854,8 +2964,14 @@
 		<Id>Item_desc_233001</Id>
 		<Ch>后羿碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_233001</Id>
+		<Ch>后羿碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_233002</Id>
+		<Ch>嫦娥碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_233002</Id>
 		<Ch>嫦娥碎片</Ch>
 		<En>0</En>
@@ -1864,8 +2980,14 @@
 		<Id>Item_desc_233003</Id>
 		<Ch>橙3碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_233003</Id>
+		<Ch>橙3碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_233004</Id>
+		<Ch>橙4碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_233004</Id>
 		<Ch>橙4碎片</Ch>
 		<En>0</En>
@@ -1874,8 +2996,14 @@
 		<Id>Item_desc_233005</Id>
 		<Ch>橙5碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_233005</Id>
+		<Ch>橙5碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_233006</Id>
+		<Ch>橙6碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_233006</Id>
 		<Ch>橙6碎片</Ch>
 		<En>0</En>
@@ -1884,8 +3012,14 @@
 		<Id>Item_desc_233007</Id>
 		<Ch>橙7碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_233007</Id>
+		<Ch>橙7碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_233008</Id>
+		<Ch>橙8碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_233008</Id>
 		<Ch>橙8碎片</Ch>
 		<En>0</En>
@@ -1894,8 +3028,14 @@
 		<Id>Item_desc_233009</Id>
 		<Ch>橙9碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_233009</Id>
+		<Ch>橙9碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_233010</Id>
+		<Ch>橙10碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_233010</Id>
 		<Ch>橙10碎片</Ch>
 		<En>0</En>
@@ -1904,8 +3044,14 @@
 		<Id>Item_desc_233011</Id>
 		<Ch>橙11碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_233011</Id>
+		<Ch>橙11碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_233012</Id>
+		<Ch>橙12碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_233012</Id>
 		<Ch>橙12碎片</Ch>
 		<En>0</En>
@@ -1914,8 +3060,14 @@
 		<Id>Item_desc_233013</Id>
 		<Ch>橙13碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_233013</Id>
+		<Ch>橙13碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_233014</Id>
+		<Ch>橙14碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_233014</Id>
 		<Ch>橙14碎片</Ch>
 		<En>0</En>
@@ -1924,8 +3076,14 @@
 		<Id>Item_desc_233015</Id>
 		<Ch>橙15碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_233015</Id>
+		<Ch>橙15碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_234001</Id>
+		<Ch>金1碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_234001</Id>
 		<Ch>金1碎片</Ch>
 		<En>0</En>
@@ -1934,8 +3092,14 @@
 		<Id>Item_desc_234002</Id>
 		<Ch>金2碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_234002</Id>
+		<Ch>金2碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_234003</Id>
+		<Ch>金3碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_234003</Id>
 		<Ch>金3碎片</Ch>
 		<En>0</En>
@@ -1944,8 +3108,14 @@
 		<Id>Item_desc_234004</Id>
 		<Ch>金4碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_234004</Id>
+		<Ch>金4碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_234005</Id>
+		<Ch>金5碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_234005</Id>
 		<Ch>金5碎片</Ch>
 		<En>0</En>
@@ -1954,8 +3124,14 @@
 		<Id>Item_desc_234006</Id>
 		<Ch>金6碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_234006</Id>
+		<Ch>金6碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_234007</Id>
+		<Ch>金7碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_234007</Id>
 		<Ch>金7碎片</Ch>
 		<En>0</En>
@@ -1964,8 +3140,14 @@
 		<Id>Item_desc_234008</Id>
 		<Ch>金8碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_234008</Id>
+		<Ch>金8碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_234009</Id>
+		<Ch>金9碎片</Ch>
+		<En>0</En>
 		<Id>Item_desc_234009</Id>
 		<Ch>金9碎片</Ch>
 		<En>0</En>
@@ -1974,8 +3156,14 @@
 		<Id>Item_desc_234010</Id>
 		<Ch>金10碎片</Ch>
 		<En>0</En>
+		<Id>Item_desc_234010</Id>
+		<Ch>金10碎片</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_219901</Id>
+		<Ch>积分橙将包</Ch>
+		<En>0</En>
 		<Id>Item_desc_219901</Id>
 		<Ch>积分橙将包</Ch>
 		<En>0</En>
@@ -1984,8 +3172,14 @@
 		<Id>Item_desc_240101</Id>
 		<Ch>金币十连卷</Ch>
 		<En>0</En>
+		<Id>Item_desc_240101</Id>
+		<Ch>金币十连卷</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_240102</Id>
+		<Ch>钻石单抽卷</Ch>
+		<En>0</En>
 		<Id>Item_desc_240102</Id>
 		<Ch>钻石单抽卷</Ch>
 		<En>0</En>
@@ -1994,8 +3188,14 @@
 		<Id>Item_desc_240103</Id>
 		<Ch>钻石十连卷</Ch>
 		<En>0</En>
+		<Id>Item_desc_240103</Id>
+		<Ch>钻石十连卷</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Item_desc_240104</Id>
+		<Ch>特权单抽卷</Ch>
+		<En>0</En>
 		<Id>Item_desc_240104</Id>
 		<Ch>特权单抽卷</Ch>
 		<En>0</En>
@@ -2004,8 +3204,14 @@
 		<Id>Item_desc_240105</Id>
 		<Ch>特权十连卷</Ch>
 		<En>0</En>
+		<Id>Item_desc_240105</Id>
+		<Ch>特权十连卷</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Gacha_1</Id>
+		<Ch>购买1次卡带</Ch>
+		<En>0</En>
 		<Id>Gacha_1</Id>
 		<Ch>购买1次卡带</Ch>
 		<En>0</En>
@@ -2014,8 +3220,14 @@
 		<Id>Gacha_2</Id>
 		<Ch>购买10次卡带</Ch>
 		<En>0</En>
+		<Id>Gacha_2</Id>
+		<Ch>购买10次卡带</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Gacha_3</Id>
+		<Ch>成功购买1盘卡带</Ch>
+		<En>0</En>
 		<Id>Gacha_3</Id>
 		<Ch>成功购买1盘卡带</Ch>
 		<En>0</En>
@@ -2024,8 +3236,14 @@
 		<Id>Gacha_4</Id>
 		<Ch>成功购买10盘卡带</Ch>
 		<En>0</En>
+		<Id>Gacha_4</Id>
+		<Ch>成功购买10盘卡带</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Gacha_5</Id>
+		<Ch>再来一次</Ch>
+		<En>0</En>
 		<Id>Gacha_5</Id>
 		<Ch>再来一次</Ch>
 		<En>0</En>
@@ -2034,8 +3252,14 @@
 		<Id>Gacha_6</Id>
 		<Ch>确定</Ch>
 		<En>0</En>
+		<Id>Gacha_6</Id>
+		<Ch>确定</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Gacha_7</Id>
+		<Ch>点击任意区域关闭</Ch>
+		<En>0</En>
 		<Id>Gacha_7</Id>
 		<Ch>点击任意区域关闭</Ch>
 		<En>0</En>
@@ -2044,8 +3268,14 @@
 		<Id>Gacha_8</Id>
 		<Ch>概率说明</Ch>
 		<En>0</En>
+		<Id>Gacha_8</Id>
+		<Ch>概率说明</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Help_90100101_title</Id>
+		<Ch>英雄类</Ch>
+		<En>0</En>
 		<Id>Help_90100101_title</Id>
 		<Ch>英雄类</Ch>
 		<En>0</En>
@@ -2054,8 +3284,14 @@
 		<Id>Help_90100101_des</Id>
 		<Ch>金色-10%</Ch>
 		<En>0</En>
+		<Id>Help_90100101_des</Id>
+		<Ch>金色-10%</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>Help_90100102_title</Id>
+		<Ch>道具类</Ch>
+		<En>0</En>
 		<Id>Help_90100102_title</Id>
 		<Ch>道具类</Ch>
 		<En>0</En>
@@ -2064,8 +3300,14 @@
 		<Id>Help_90100102_des</Id>
 		<Ch>白色-10%</Ch>
 		<En>0</En>
+		<Id>Help_90100102_des</Id>
+		<Ch>白色-10%</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>personalinfo_1</Id>
+		<Ch>个人信息</Ch>
+		<En>0</En>
 		<Id>personalinfo_1</Id>
 		<Ch>个人信息</Ch>
 		<En>0</En>
@@ -2074,8 +3316,14 @@
 		<Id>personalinfo_2</Id>
 		<Ch>音乐</Ch>
 		<En>0</En>
+		<Id>personalinfo_2</Id>
+		<Ch>音乐</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>personalinfo_3</Id>
+		<Ch>音效</Ch>
+		<En>0</En>
 		<Id>personalinfo_3</Id>
 		<Ch>音效</Ch>
 		<En>0</En>
@@ -2084,8 +3332,14 @@
 		<Id>personalinfo_4</Id>
 		<Ch>小</Ch>
 		<En>0</En>
+		<Id>personalinfo_4</Id>
+		<Ch>小</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>personalinfo_5</Id>
+		<Ch>大</Ch>
+		<En>0</En>
 		<Id>personalinfo_5</Id>
 		<Ch>大</Ch>
 		<En>0</En>
@@ -2094,8 +3348,14 @@
 		<Id>personalinfo_6</Id>
 		<Ch>公告</Ch>
 		<En>0</En>
+		<Id>personalinfo_6</Id>
+		<Ch>公告</Ch>
+		<En>0</En>
 	</Node>
 	<Node>
+		<Id>personalinfo_7</Id>
+		<Ch>切换账号</Ch>
+		<En>0</En>
 		<Id>personalinfo_7</Id>
 		<Ch>切换账号</Ch>
 		<En>0</En>

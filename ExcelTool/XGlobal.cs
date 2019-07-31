@@ -76,5 +76,76 @@ namespace ExcelTool
         }
 
 
+        public static int ToInt(this string str)
+        {
+            int.TryParse(str, out int result);
+            return result;
+        }
+        public static float ToFloat(this string str)
+        {
+            float.TryParse(str, out float result);
+            return result;
+        }
+        public static string[] Split(this string s, string separator)
+        {
+            if (string.IsNullOrEmpty(s))
+                return new string[0];
+
+            return s.Split(new string[] { separator }, StringSplitOptions.RemoveEmptyEntries);
+        }
+        public static List<string> ToListString(this string str, string strSeparator = "|")
+        {
+            string[] nodes = str.Split(strSeparator);
+            return nodes.ToList();
+        }
+        public static List<List<string>> ToListListString(this string str, string strSeparator1 = "|", string strSeparator2 = "_")
+        {
+            string[] nodes1 = str.Split(strSeparator1);
+            var result = new List<List<string>>();
+            foreach (var nn in nodes1)
+            {
+                string[] nodes2 = nn.Split(strSeparator2);
+                result.Add(nodes2.ToList());
+            }
+            return result;
+        }
+        public static List<int> ToListInt(this string str, string strSeparator = "|")
+        {
+            string[] nodes = str.Split(strSeparator);
+            int[] nodesresult = Array.ConvertAll(nodes, delegate (string s) { return s.ToInt(); });
+            return nodesresult.ToList();
+        }
+        public static List<List<int>> ToListListInt(this string str, string strSeparator1 = "|", string strSeparator2 = "_")
+        {
+            string[] nodes1 = str.Split(strSeparator1);
+            var result = new List<List<int>>();
+            foreach (var nn in nodes1)
+            {
+                string[] nodes2 = nn.Split(strSeparator2);
+                int[] nodesresult = Array.ConvertAll(nodes2, delegate (string s) { return s.ToInt(); });
+                result.Add(nodesresult.ToList());
+            }
+            return result;
+        }
+        public static List<float> ToListFloat(this string str, string strSeparator = "|")
+        {
+            string[] nodes = str.Split(strSeparator);
+            float[] nodesresult = Array.ConvertAll(nodes, delegate (string s) { return s.ToFloat(); });
+            return nodesresult.ToList();
+        }
+        public static List<List<float>> ToListListFloat(this string str, string strSeparator1 = "|", string strSeparator2 = "_")
+        {
+            string[] nodes1 = str.Split(strSeparator1);
+            var result = new List<List<float>>();
+            foreach (var nn in nodes1)
+            {
+                string[] nodes2 = nn.Split(strSeparator2);
+                float[] nodesresult = Array.ConvertAll(nodes2, delegate (string s) { return s.ToFloat(); });
+                result.Add(nodesresult.ToList());
+            }
+            return result;
+        }
+
+
     }
 }

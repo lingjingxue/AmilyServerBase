@@ -43,6 +43,7 @@ namespace ExcelTool
             PathClass = PathOutput + @"\Class";
             PathXml = PathOutput + @"\Xml";
             PathJson = PathOutput + @"\Json";
+            PathJsonServer = PathOutput + @"\JsonServer";
             PathLua = PathOutput + @"\Lua";
 
             PathEnum = PathExcel + @"\A_公共枚举.xlsx";
@@ -135,6 +136,7 @@ namespace ExcelTool
                 PathClass = PathOutput + @"\Class";
                 PathXml = PathOutput + @"\Xml";
                 PathJson = PathOutput + @"\Json";
+                PathJsonServer = PathOutput + @"\JsonServer";
                 PathLua = PathOutput + @"\Lua";
             }
         }
@@ -167,6 +169,7 @@ namespace ExcelTool
             if (!Directory.Exists(PathClass)) { Directory.CreateDirectory(PathClass); }
             if (!Directory.Exists(PathXml)) { Directory.CreateDirectory(PathXml); }
             if (!Directory.Exists(PathJson)) { Directory.CreateDirectory(PathJson); }
+            if (!Directory.Exists(PathJsonServer)) { Directory.CreateDirectory(PathJsonServer); }
             if (!Directory.Exists(PathLua)) { Directory.CreateDirectory(PathLua); }
 
             SetEnabled(false);
@@ -174,6 +177,7 @@ namespace ExcelTool
             XGlobal.EmptyFolder(PathClass);
             XGlobal.EmptyFolder(PathXml);
             XGlobal.EmptyFolder(PathJson);
+            XGlobal.EmptyFolder(PathJsonServer);
             XGlobal.EmptyFolder(PathLua);
 
             try

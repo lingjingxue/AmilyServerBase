@@ -5,8 +5,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>0</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>1</MailText>
+		<LangChs>系统</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>1</MailText>
 		<LangChs>系统</LangChs>
 		<LangEn>0</LangEn>
@@ -17,8 +25,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>2</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>3</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>3</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -29,8 +45,16 @@
 		<LangChs>红包领取信息</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>4</MailText>
+		<LangChs>红包领取信息</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>5</MailText>
+		<LangChs>您在 {0} 发送了一个红包，以下为领取情况</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>5</MailText>
 		<LangChs>您在 {0} 发送了一个红包，以下为领取情况</LangChs>
 		<LangEn>0</LangEn>
@@ -41,8 +65,16 @@
 		<LangChs>共发送红包：{0} 个</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>6</MailText>
+		<LangChs>共发送红包：{0} 个</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>7</MailText>
+		<LangChs>已领取红包：{0} 个</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>7</MailText>
 		<LangChs>已领取红包：{0} 个</LangChs>
 		<LangEn>0</LangEn>
@@ -53,8 +85,16 @@
 		<LangChs>共 发 元宝：{0} 元宝</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>8</MailText>
+		<LangChs>共 发 元宝：{0} 元宝</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>9</MailText>
+		<LangChs>剩 余 元宝：{0} 元宝</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>9</MailText>
 		<LangChs>剩 余 元宝：{0} 元宝</LangChs>
 		<LangEn>0</LangEn>
@@ -65,8 +105,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>10</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>11</MailText>
+		<LangChs>拍卖行成交</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>11</MailText>
 		<LangChs>拍卖行成交</LangChs>
 		<LangEn>0</LangEn>
@@ -77,8 +125,16 @@
 		<LangChs>交易时间：{0}</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>12</MailText>
+		<LangChs>交易时间：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>13</MailText>
+		<LangChs>物品名称：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>13</MailText>
 		<LangChs>物品名称：{0}</LangChs>
 		<LangEn>0</LangEn>
@@ -89,8 +145,16 @@
 		<LangChs>交易数量：{0}</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>14</MailText>
+		<LangChs>交易数量：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>15</MailText>
+		<LangChs>交易总价：{0}金币</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>15</MailText>
 		<LangChs>交易总价：{0}金币</LangChs>
 		<LangEn>0</LangEn>
@@ -101,8 +165,16 @@
 		<LangChs>成交税：{0}金币</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>16</MailText>
+		<LangChs>成交税：{0}金币</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>17</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>17</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -113,8 +185,16 @@
 		<LangChs>长安夺宝战报</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>18</MailText>
+		<LangChs>长安夺宝战报</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>19</MailText>
+		<LangChs>长安夺宝幸运奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>19</MailText>
 		<LangChs>长安夺宝幸运奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -125,8 +205,16 @@
 		<LangChs>长安夺宝活动奖励</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>20</MailText>
+		<LangChs>长安夺宝活动奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>21</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>21</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -137,8 +225,16 @@
 		<LangChs>恭喜您在进攻[{0}]的战斗中，获得了[{0}]金币，敬请查收</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>22</MailText>
+		<LangChs>恭喜您在进攻[{0}]的战斗中，获得了[{0}]金币，敬请查收</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>23</MailText>
+		<LangChs>恭喜您在进攻[{0}]的战斗中，成功拿下敌方守军首级，特此奖励您[{1}]金币，以资鼓励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>23</MailText>
 		<LangChs>恭喜您在进攻[{0}]的战斗中，成功拿下敌方守军首级，特此奖励您[{1}]金币，以资鼓励</LangChs>
 		<LangEn>0</LangEn>
@@ -149,8 +245,16 @@
 		<LangChs>恭喜您在长安夺宝活动中，荣获[{0}]战区第[{1}]名，奖励已作为附件发送，请尽快领取</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>24</MailText>
+		<LangChs>恭喜您在长安夺宝活动中，荣获[{0}]战区第[{1}]名，奖励已作为附件发送，请尽快领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>25</MailText>
+		<LangChs>恭喜您在长安夺宝活动中，荣获[{0}]个人榜第[{1}]名，奖励已作为附件发送，请尽快领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>25</MailText>
 		<LangChs>恭喜您在长安夺宝活动中，荣获[{0}]个人榜第[{1}]名，奖励已作为附件发送，请尽快领取</LangChs>
 		<LangEn>0</LangEn>
@@ -161,8 +265,16 @@
 		<LangChs>在您和势力成员的共同努力之下，成功斩获长安夺宝-[{ConfBankZone[item].Name.TextLanguage()}]战区第[{i}]名，奖励已作为附件发送，请尽快领取</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>26</MailText>
+		<LangChs>在您和势力成员的共同努力之下，成功斩获长安夺宝-[{ConfBankZone[item].Name.TextLanguage()}]战区第[{i}]名，奖励已作为附件发送，请尽快领取</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>27</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>27</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -173,8 +285,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>28</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>29</MailText>
+		<LangChs>交易挂买成交</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>29</MailText>
 		<LangChs>交易挂买成交</LangChs>
 		<LangEn>0</LangEn>
@@ -185,8 +305,16 @@
 		<LangChs>交易挂卖成交</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>30</MailText>
+		<LangChs>交易挂卖成交</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>31</MailText>
+		<LangChs>交易买入成交</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>31</MailText>
 		<LangChs>交易买入成交</LangChs>
 		<LangEn>0</LangEn>
@@ -197,8 +325,16 @@
 		<LangChs>交易卖出成交</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>32</MailText>
+		<LangChs>交易卖出成交</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>33</MailText>
+		<LangChs>交易撤销</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>33</MailText>
 		<LangChs>交易撤销</LangChs>
 		<LangEn>0</LangEn>
@@ -209,8 +345,16 @@
 		<LangChs>交易时间：{0}</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>34</MailText>
+		<LangChs>交易时间：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>35</MailText>
+		<LangChs>交易数量：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>35</MailText>
 		<LangChs>交易数量：{0}</LangChs>
 		<LangEn>0</LangEn>
@@ -221,8 +365,16 @@
 		<LangChs>交易单价：{0}元宝/{1}金币</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>36</MailText>
+		<LangChs>交易单价：{0}元宝/{1}金币</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>37</MailText>
+		<LangChs>交易总价：{0}元宝</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>37</MailText>
 		<LangChs>交易总价：{0}元宝</LangChs>
 		<LangEn>0</LangEn>
@@ -233,8 +385,16 @@
 		<LangChs>交易税：{0}元宝</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>38</MailText>
+		<LangChs>交易税：{0}元宝</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>39</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>39</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -245,8 +405,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>40</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>41</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>41</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -257,8 +425,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>42</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>43</MailText>
+		<LangChs>发放时间：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>43</MailText>
 		<LangChs>发放时间：{0}</LangChs>
 		<LangEn>0</LangEn>
@@ -269,8 +445,16 @@
 		<LangChs>发放金币：{0}</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>44</MailText>
+		<LangChs>发放金币：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>45</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>45</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -281,8 +465,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>46</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>47</MailText>
+		<LangChs>竞技场排名奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>47</MailText>
 		<LangChs>竞技场排名奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -293,8 +485,16 @@
 		<LangChs>竞技场每日奖励</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>48</MailText>
+		<LangChs>竞技场每日奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>49</MailText>
+		<LangChs>竞技场每周奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>49</MailText>
 		<LangChs>竞技场每周奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -305,8 +505,16 @@
 		<LangChs>时间：{0}</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>50</MailText>
+		<LangChs>时间：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>51</MailText>
+		<LangChs>名次：{0}名</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>51</MailText>
 		<LangChs>名次：{0}名</LangChs>
 		<LangEn>0</LangEn>
@@ -317,8 +525,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>52</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>53</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>53</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -329,8 +545,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>54</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>55</MailText>
+		<LangChs>讨伐黄巾终结奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>55</MailText>
 		<LangChs>讨伐黄巾终结奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -341,8 +565,16 @@
 		<LangChs>讨伐黄巾胜利奖励</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>56</MailText>
+		<LangChs>讨伐黄巾胜利奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>57</MailText>
+		<LangChs>讨伐黄巾战斗奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>57</MailText>
 		<LangChs>讨伐黄巾战斗奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -353,8 +585,16 @@
 		<LangChs>本次讨伐黄巾(势力名:{0})的战斗中，由您终结了本次战斗，可以额外获得以下奖励。</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>58</MailText>
+		<LangChs>本次讨伐黄巾(势力名:{0})的战斗中，由您终结了本次战斗，可以额外获得以下奖励。</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>59</MailText>
+		<LangChs>本次讨伐黄巾(势力名:{0})的战斗中，您所在势力获得了最终胜利。战斗额外获得以下奖励。</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>59</MailText>
 		<LangChs>本次讨伐黄巾(势力名:{0})的战斗中，您所在势力获得了最终胜利。战斗额外获得以下奖励。</LangChs>
 		<LangEn>0</LangEn>
@@ -365,8 +605,16 @@
 		<LangChs>本次讨伐黄巾(势力:{0})的战斗中，由于您出色的战斗表现可以获得以下奖励。</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>60</MailText>
+		<LangChs>本次讨伐黄巾(势力:{0})的战斗中，由于您出色的战斗表现可以获得以下奖励。</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>61</MailText>
+		<LangChs>造成伤害：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>61</MailText>
 		<LangChs>造成伤害：{0}</LangChs>
 		<LangEn>0</LangEn>
@@ -377,8 +625,16 @@
 		<LangChs>伤害排名：第{0}名</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>62</MailText>
+		<LangChs>伤害排名：第{0}名</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>63</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>63</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -389,8 +645,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>64</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>65</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>65</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -401,8 +665,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>66</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>67</MailText>
+		<LangChs>资源采集</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>67</MailText>
 		<LangChs>资源采集</LangChs>
 		<LangEn>0</LangEn>
@@ -413,8 +685,16 @@
 		<LangChs>您占领了{0}收获了如下奖励</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>68</MailText>
+		<LangChs>您占领了{0}收获了如下奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>69</MailText>
+		<LangChs>您的{0}被{1}占领了，清点物质后获得了如下奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>69</MailText>
 		<LangChs>您的{0}被{1}占领了，清点物质后获得了如下奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -425,8 +705,16 @@
 		<LangChs>您成功占领了{0}的{1}，获得了如下奖励</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>70</MailText>
+		<LangChs>您成功占领了{0}的{1}，获得了如下奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>71</MailText>
+		<LangChs>您放弃了{0}，获得了如下奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>71</MailText>
 		<LangChs>您放弃了{0}，获得了如下奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -437,8 +725,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>72</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>73</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>73</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -449,8 +745,16 @@
 		<LangChs>演武管理员</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>74</MailText>
+		<LangChs>演武管理员</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>75</MailText>
+		<LangChs>演武每日奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>75</MailText>
 		<LangChs>演武每日奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -461,8 +765,16 @@
 		<LangChs>演武每周奖励</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>76</MailText>
+		<LangChs>演武每周奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>77</MailText>
+		<LangChs>尊敬的大人：这是您本日的演武奖励，请注意查收，祝您玩的愉快。</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>77</MailText>
 		<LangChs>尊敬的大人：这是您本日的演武奖励，请注意查收，祝您玩的愉快。</LangChs>
 		<LangEn>0</LangEn>
@@ -473,8 +785,16 @@
 		<LangChs>尊敬的大人：这是您本周的演武奖励，请注意查收，祝您玩的愉快。</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>78</MailText>
+		<LangChs>尊敬的大人：这是您本周的演武奖励，请注意查收，祝您玩的愉快。</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>79</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>79</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -485,8 +805,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>80</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>81</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>81</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -497,8 +825,16 @@
 		<LangChs>征讨匪寇战报</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>82</MailText>
+		<LangChs>征讨匪寇战报</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>83</MailText>
+		<LangChs>时间：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>83</MailText>
 		<LangChs>时间：{0}</LangChs>
 		<LangEn>0</LangEn>
@@ -509,8 +845,16 @@
 		<LangChs>{0}{1}级{2}</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>84</MailText>
+		<LangChs>{0}{1}级{2}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>85</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>85</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -521,8 +865,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>86</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>87</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>87</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -533,8 +885,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>88</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>89</MailText>
+		<LangChs>诸侯宝箱</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>89</MailText>
 		<LangChs>诸侯宝箱</LangChs>
 		<LangEn>0</LangEn>
@@ -545,8 +905,16 @@
 		<LangChs>太守宝箱</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>90</MailText>
+		<LangChs>太守宝箱</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>91</MailText>
+		<LangChs>势力宝箱</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>91</MailText>
 		<LangChs>势力宝箱</LangChs>
 		<LangEn>0</LangEn>
@@ -557,8 +925,16 @@
 		<LangChs>时间：{0}</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>92</MailText>
+		<LangChs>时间：{0}</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>93</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>93</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -569,8 +945,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>94</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>95</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>95</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -581,8 +965,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>96</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>97</MailText>
+		<LangChs>郡城排名奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>97</MailText>
 		<LangChs>郡城排名奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -593,8 +985,16 @@
 		<LangChs>郡城排名奖励</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>98</MailText>
+		<LangChs>郡城排名奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>99</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>99</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -605,8 +1005,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>100</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>101</MailText>
+		<LangChs>首次攻占城池奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>101</MailText>
 		<LangChs>首次攻占城池奖励</LangChs>
 		<LangEn>0</LangEn>
@@ -617,8 +1025,16 @@
 		<LangChs>首次攻占城池奖励</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>102</MailText>
+		<LangChs>首次攻占城池奖励</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>103</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>103</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -629,8 +1045,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>104</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>105</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>105</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -641,8 +1065,16 @@
 		<LangChs>掠夺战报</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>106</MailText>
+		<LangChs>掠夺战报</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>107</MailText>
+		<LangChs>掠夺管理员</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>107</MailText>
 		<LangChs>掠夺管理员</LangChs>
 		<LangEn>0</LangEn>
@@ -653,8 +1085,16 @@
 		<LangChs>流亡军侦查管理员</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>108</MailText>
+		<LangChs>流亡军侦查管理员</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>109</MailText>
+		<LangChs>流亡军被侦查</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>109</MailText>
 		<LangChs>流亡军被侦查</LangChs>
 		<LangEn>0</LangEn>
@@ -665,8 +1105,16 @@
 		<LangChs>流亡军侦查失败</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>110</MailText>
+		<LangChs>流亡军侦查失败</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>111</MailText>
+		<LangChs>流亡军侦查成功</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>111</MailText>
 		<LangChs>流亡军侦查成功</LangChs>
 		<LangEn>0</LangEn>
@@ -677,8 +1125,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>112</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>113</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>113</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -689,8 +1145,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>114</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>115</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>115</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -701,8 +1165,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>116</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>117</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>117</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -713,8 +1185,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>118</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>119</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>119</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -725,8 +1205,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>120</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>121</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>121</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -737,8 +1225,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>122</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>123</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>123</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -749,8 +1245,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>124</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>125</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>125</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -761,8 +1265,16 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>126</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>127</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>127</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
@@ -773,14 +1285,26 @@
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>128</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
 		<MailText>129</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>
 		<LangKo>0</LangKo>
+		<MailText>129</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 	</Node>
 	<Node>
+		<MailText>130</MailText>
+		<LangChs>0</LangChs>
+		<LangEn>0</LangEn>
+		<LangKo>0</LangKo>
 		<MailText>130</MailText>
 		<LangChs>0</LangChs>
 		<LangEn>0</LangEn>

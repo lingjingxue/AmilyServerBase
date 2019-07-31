@@ -23,7 +23,6 @@ namespace ExcelTool
 
         public static string PathCurrent = "";
         public static string PathEnum = "";
-        public static string PathResult = "";
         public static string PathGlobalId = "";
 
         public static string PathExcel = "";
@@ -31,6 +30,7 @@ namespace ExcelTool
         public static string PathClass = "";
         public static string PathXml = "";
         public static string PathJson = "";
+        public static string PathJsonServer = "";
         public static string PathLua = "";
 
         //文件列表
@@ -38,11 +38,6 @@ namespace ExcelTool
         //枚举列表
         public static ConcurrentDictionary<string, Dictionary<string, string>> CDictDictEnums = new ConcurrentDictionary<string, Dictionary<string, string>>();
         public static Dictionary<string, Dictionary<string, string>> DictDictEnums = new Dictionary<string, Dictionary<string, string>>();
-
-        public static StringBuilder SbClassServer = new StringBuilder();
-
-
-
 
 
         public static ConcurrentDictionary<string, PageInfo> CDictPages = new ConcurrentDictionary<string, PageInfo>();
