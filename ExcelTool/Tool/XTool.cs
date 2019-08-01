@@ -108,17 +108,6 @@ namespace ExcelTool
                         var TypeServer = nn.TypeServer[iii];
                         if (TypeServer != "")
                         {
-                            if (head.IsLang())
-                            {
-                                if (head.IsLangCur())
-                                {
-                                    head = StrLang;
-                                }
-                                else
-                                {
-                                    continue;
-                                }
-                            }
                             string nodeJsonServer = "";
                             if (TypeServer == "int" || TypeServer == "long" || TypeServer == "float" || TypeServer == "double")
                             {
