@@ -35,6 +35,7 @@ namespace ProtocolTool
                 ProtocolConverterClassId();
                 ProtocolConverterClassBase();
                 ProtocolConverterClassSerialization();
+                ProtocolConverterClassTypeScript();
                 //ProtocolConverterDump();
                 Show("\n生成 C# 文件成功！\n");
 

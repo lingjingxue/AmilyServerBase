@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Converter.cs" />
     <Compile Include="HtmlConverter.cs" />
+    <Compile Include="TypeScriptConverter.cs" />
     <Compile Include="LuaConverter.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="LuaPub.cs" />

@@ -79,6 +79,8 @@ $Class$
 
 ";
 
+        
+
         //ClassDump
         public static readonly string Filepath_ClassDump = @"ProtocolDump.cs";
 
