@@ -33,6 +33,23 @@ $Class$
 
 ";
 
+        public static string TypeScriptCheckNumbaer(string v)
+        {
+            if (v == "byte"
+                || v == "short"
+                || v == "int"
+                || v == "uint"
+                || v == "long"
+                || v == "float"
+                || v == "DateTime"
+                || v == "TimeSpan"
+                )
+            {
+                return "number";
+            }
+            return v;
+        }
+
         //成员和初始化
         public static string GetClassBodyTypeScriptFromNode(CClassNode v)
         {
@@ -50,7 +67,7 @@ $Class$
 
                 case "list":
                     //sb.Append($"    var {v.Body}:{v.Ctype1}[];");
-                    sb.Append($"    {v.Body}:{v.Ctype1}[];");
+                    sb.Append($"    {v.Body}:{TypeScriptCheckNumbaer(v.Ctype1)}[];");
                     break;
 
                 default:

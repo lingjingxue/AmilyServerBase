@@ -278,6 +278,9 @@ namespace ExcelTool
 
         public void TransferOutput()
         {
+            TransferData();
+            progressBar1Value = progressBar1Max;
+
             TransferHtml();
             progressBar1ValueAdd();
 
@@ -302,8 +305,8 @@ namespace ExcelTool
             TransferClassClientLua();
             progressBar1ValueAdd();
 
-            TransferData();
-            progressBar1Value = progressBar1Max;
+            TransferClassClientJavaScript();
+            progressBar1ValueAdd();
 
             BenchmarkStopwatch.Stop();
             toolStripStatusLabel1.Text = $"耗时 {BenchmarkStopwatch.ElapsedMilliseconds} 毫秒";

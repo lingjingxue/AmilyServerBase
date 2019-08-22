@@ -19,12 +19,15 @@ namespace ExcelTool
     {
         public static void TransferData()
         {
+            sbJsonJavaScript = new StringBuilder();
+
             foreach (var nn in DictPages.Values)
             {
                 var sbXml = new StringBuilder();
                 var sbJson = new StringBuilder();
                 var sbJsonServer = new StringBuilder();
                 var sbLua = new StringBuilder();
+                var sbJsonJs = new StringBuilder();
 
                 sbXml.Append($"<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n");
                 sbXml.Append($"<{Xml_head}>\r\n");
@@ -35,9 +38,16 @@ namespace ExcelTool
 
                 sbLua.Append($"{nn.Name}=\r\n{{\r\n");
 
+                if (true)
+                {
+                    var confname = nn.Name.Replace("Config", "Conf");
+                    sbJsonJs.Append($"var {confname} = {{\r\n");
+                }
+
                 var listdataJson = new List<string>();
                 var listdataJsonServer = new List<string>();
                 var listdataLua = new List<string>();
+                var listdataJsonJs = new List<string>();
 
                 foreach (var nnn in nn.ListValue)
                 {
@@ -45,6 +55,7 @@ namespace ExcelTool
 
                     var listnodeJson = new List<string>();
                     var listnodeLua = new List<string>();
+                    var listnodeJsonJs = new List<string>();
                     for (int iii = 0; iii < nn.Head.Count; iii++)
                     {
                         var head = nn.Head[iii];
@@ -74,22 +85,29 @@ namespace ExcelTool
                             }
                             string nodeJson = "";
                             string nodeLua = "";
+                            string nodeJsonJs = "";
                             if (TypeClient == "int" || TypeClient == "long" || TypeClient == "float" || TypeClient == "double")
                             {
                                 nodeJson = $"\t\t\"{head}\":{nnn[iii]}";
                                 nodeLua = $"{head}={nnn[iii]}";
+                                nodeJsonJs = $"\t\t\"{head}\":{nnn[iii]}";
                             }
                             else
                             {
                                 nodeJson = $"\t\t\"{head}\":\"{nnn[iii]}\"";
                                 nodeLua = $"{head}=\"{nnn[iii]}\"";
+                                nodeJsonJs = $"\t\t\"{head}\":\"{nnn[iii]}\"";
                             }
                             listnodeJson.Add(nodeJson);
                             listnodeLua.Add(nodeLua);
+                            listnodeJsonJs.Add(nodeJsonJs);
                         }
                     }
                     string dataJson = $"\t\"{nnn[0]}\":{{\r\n{string.Join(",\r\n", listnodeJson)}\r\n\t}}";
                     listdataJson.Add(dataJson);
+
+                    string dataJsonJs = $"\t{nnn[0]}:{{\r\n{string.Join(",\r\n", listnodeJsonJs)}\r\n\t}}";
+                    listdataJsonJs.Add(dataJsonJs);
 
                     var listnodeJsonServer = new List<string>();
                     for (int iii = 0; iii < nn.Head.Count; iii++)
@@ -221,6 +239,9 @@ namespace ExcelTool
                 sbLua.Append(string.Join(",\r\n", listdataLua));
                 sbLua.Append("\r\n}\r\n");
 
+                sbJsonJs.Append(string.Join(",\r\n", listdataJsonJs));
+                sbJsonJs.Append("\r\n}\r\n");
+
                 if (nn.ValidType == EValidType.公共 || nn.ValidType == EValidType.仅服务器)
                 {
                     if (true)
@@ -261,6 +282,10 @@ namespace ExcelTool
                         StreamWriter swLua = new StreamWriter(fsLua);
                         swLua.Write(sbLua.ToString());
                         swLua.Close();
+                    }
+                    if (true)
+                    {
+                        sbJsonJavaScript.Append(sbJsonJs);
                     }
                 }
             }

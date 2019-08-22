@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tool\XToolJavaScript.cs" />
     <Compile Include="Tool\XToolLua.cs" />
     <Compile Include="Tool\XToolHtml.cs" />
     <Compile Include="Tool\XToolEnum.cs" />
