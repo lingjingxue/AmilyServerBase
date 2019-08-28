@@ -106,8 +106,17 @@ namespace ExcelTool
                     string dataJson = $"\t\"{nnn[0]}\":{{\r\n{string.Join(",\r\n", listnodeJson)}\r\n\t}}";
                     listdataJson.Add(dataJson);
 
-                    string dataJsonJs = $"\t{nnn[0]}:{{\r\n{string.Join(",\r\n", listnodeJsonJs)}\r\n\t}}";
-                    listdataJsonJs.Add(dataJsonJs);
+                    string dataJsonClientKeyType = nn.TypeClient[0];
+                    if (dataJsonClientKeyType == "string")
+                    {
+                        string dataJsonJs = $"\t\"{nnn[0]}\":{{\r\n{string.Join(",\r\n", listnodeJsonJs)}\r\n\t}}";
+                        listdataJsonJs.Add(dataJsonJs);
+                    }
+                    else
+                    {
+                        string dataJsonJs = $"\t{nnn[0]}:{{\r\n{string.Join(",\r\n", listnodeJsonJs)}\r\n\t}}";
+                        listdataJsonJs.Add(dataJsonJs);
+                    }
 
                     var listnodeJsonServer = new List<string>();
                     for (int iii = 0; iii < nn.Head.Count; iii++)
