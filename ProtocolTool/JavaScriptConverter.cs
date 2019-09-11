@@ -31,6 +31,10 @@ $Class32$
     }
 };
 
+
+$Class2$
+
+
 ";
 
         /// <summary>
@@ -48,7 +52,11 @@ $Class32$
             {
                 if (kvp.Value.ClassType == 0)
                 {
-                    if (kvp.Value.Name.StartsWith("G2C") || kvp.Value.Name.StartsWith("L2C"))
+                    if (kvp.Value.Name.StartsWith("G2C")
+                        || kvp.Value.Name.StartsWith("L2C")
+                        || kvp.Value.Name.StartsWith("ALL")
+                        || kvp.Value.Name.StartsWith("All")
+                        )
                     {
                         if (kvp.Value.Desc != "")
                         {
@@ -64,11 +72,36 @@ $Class32$
                     sb32.Append($"        {kvp.Value.Id}: {{ name: \"{kvp.Value.NameId}\", value: {kvp.Value.Id}, desc: \"{kvp.Value.Desc}\" }},\r\n");
                 }
             }
+
+            foreach (var kvp in DictEnum)
+            {
+                if (kvp.Value.Desc != "")
+                {
+                    sb2.Append($"// {kvp.Value.Desc}\r\n");
+                }
+                sb2.Append($"var Map{kvp.Value.Name} = {{\r\n");
+                foreach (var kvp2 in kvp.Value.DictBody)
+                {
+                    sb2.Append($"    {kvp2.Value.Body}");
+                    if (kvp2.Value.Value != -100000)
+                    {
+                        sb2.Append($": {kvp2.Value.Value},");
+                    }
+                    if (kvp2.Value.Desc != "")
+                    {
+                        sb2.Append($"// {kvp2.Value.Desc}");
+                    }
+                    sb2.Append("\r\n");
+                }
+                sb2.Append("}\r\n\r\n");
+            }
+
+
             string txt = Template_ClassJavaScript;
             FileStream fs = new FileStream(PathCurrent + Filepath_ClassJavaScript, FileMode.Create);
             StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
             txt = txt.Replace("$Class1$", sb1.ToString());
-            //txt = txt.Replace("$Class2$", sb2.ToString());
+            txt = txt.Replace("$Class2$", sb2.ToString());
             txt = txt.Replace("$Class31$", sb31.ToString());
             txt = txt.Replace("$Class32$", sb32.ToString());
             sw.Write(txt);
