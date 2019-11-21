@@ -25,6 +25,7 @@ namespace ExcelTool
             {
                 var sbXml = new StringBuilder();
                 var sbJson = new StringBuilder();
+                var sbJsonClient = new StringBuilder();
                 var sbJsonServer = new StringBuilder();
                 var sbLua = new StringBuilder();
                 var sbJsonJs = new StringBuilder();
@@ -33,8 +34,9 @@ namespace ExcelTool
                 sbXml.Append($"<{Xml_head}>\r\n");
 
                 sbJson.Append("{\r\n");
+                sbJsonClient.Append("{\r\n");
 
-                sbJsonServer.Append("[\r\n");
+                sbJsonServer.Append("{\r\n");
 
                 sbLua.Append($"{nn.Name}=\r\n{{\r\n");
 
@@ -45,6 +47,7 @@ namespace ExcelTool
                 }
 
                 var listdataJson = new List<string>();
+                var listdataJsonClient = new List<string>();
                 var listdataJsonServer = new List<string>();
                 var listdataLua = new List<string>();
                 var listdataJsonJs = new List<string>();
@@ -54,6 +57,7 @@ namespace ExcelTool
                     sbXml.Append($"\t<{Xml_node}>\r\n");
 
                     var listnodeJson = new List<string>();
+                    var listnodeJsonClient = new List<string>();
                     var listnodeLua = new List<string>();
                     var listnodeJsonJs = new List<string>();
                     for (int iii = 0; iii < nn.Head.Count; iii++)
@@ -84,21 +88,25 @@ namespace ExcelTool
                                 }
                             }
                             string nodeJson = "";
+                            string nodeJsonClient = "";
                             string nodeLua = "";
                             string nodeJsonJs = "";
                             if (TypeClient == "int" || TypeClient == "long" || TypeClient == "float" || TypeClient == "double")
                             {
                                 nodeJson = $"\t\t\"{head}\":{nnn[iii]}";
+                                nodeJsonClient = $"\t\t\"{head}\":{nnn[iii]}";
                                 nodeLua = $"{head}={nnn[iii]}";
                                 nodeJsonJs = $"\t\t\"{head}\":{nnn[iii]}";
                             }
                             else
                             {
                                 nodeJson = $"\t\t\"{head}\":\"{nnn[iii]}\"";
+                                nodeJsonClient = $"\t\t\"{head}\":\"{nnn[iii]}\"";
                                 nodeLua = $"{head}=\"{nnn[iii]}\"";
                                 nodeJsonJs = $"\t\t\"{head}\":\"{nnn[iii]}\"";
                             }
                             listnodeJson.Add(nodeJson);
+                            listnodeJsonClient.Add(nodeJsonClient);
                             listnodeLua.Add(nodeLua);
                             listnodeJsonJs.Add(nodeJsonJs);
                         }
@@ -109,11 +117,17 @@ namespace ExcelTool
                     string dataJsonClientKeyType = nn.TypeClient[0];
                     if (dataJsonClientKeyType == "string")
                     {
+                        string dataJsonClient = $"\t\"{nnn[0]}\":{{\r\n{string.Join(",\r\n", listnodeJsonClient)}\r\n\t}}";
+                        listdataJsonClient.Add(dataJsonClient);
+
                         string dataJsonJs = $"\t\"{nnn[0]}\":{{\r\n{string.Join(",\r\n", listnodeJsonJs)}\r\n\t}}";
                         listdataJsonJs.Add(dataJsonJs);
                     }
                     else
                     {
+                        string dataJsonClient = $"\t{nnn[0]}:{{\r\n{string.Join(",\r\n", listnodeJsonClient)}\r\n\t}}";
+                        listdataJsonClient.Add(dataJsonClient);
+
                         string dataJsonJs = $"\t{nnn[0]}:{{\r\n{string.Join(",\r\n", listnodeJsonJs)}\r\n\t}}";
                         listdataJsonJs.Add(dataJsonJs);
                     }
@@ -203,9 +217,9 @@ namespace ExcelTool
                                     {
                                         continue;
                                     }
-                                    ListString.Add($"{{\"Key\":{item[0]},\"Value\":{item[1]}}}");
+                                    ListString.Add($"{item[0]}:{item[1]}");
                                 }
-                                nodeJsonServer = $"\"{head}\":[{string.Join(",", ListString)}]";
+                                nodeJsonServer = $"\"{head}\":{{{string.Join(",", ListString)}}}";
                             }
                             else if (TypeServer == "bool")
                             {
@@ -222,13 +236,12 @@ namespace ExcelTool
                     string dataJsonServerKeyType = nn.TypeServer[0];
                     if (dataJsonServerKeyType == "string")
                     {
-                        dataJsonServer += $"\t{{\"Key\":\"{nnn[0]}\"";
+                        dataJsonServer = $"\t\"{nnn[0]}\":{{\r\n{string.Join(",\r\n", listnodeJsonServer)}\r\n\t}}";
                     }
                     else
                     {
-                        dataJsonServer += $"\t{{\"Key\":{nnn[0]}";
+                        dataJsonServer = $"\t{nnn[0]}:{{\r\n{string.Join(",\r\n", listnodeJsonServer)}\r\n\t}}";
                     }
-                    dataJsonServer += $", \"Value\":{{{string.Join(", ", listnodeJsonServer)}}}}}";
                     listdataJsonServer.Add(dataJsonServer);
 
                     string dataLua = $"[\"{nnn[0]}\"]={{{string.Join(",", listnodeLua)},}}";
@@ -242,8 +255,11 @@ namespace ExcelTool
                 sbJson.Append(string.Join(",\r\n", listdataJson));
                 sbJson.Append("\r\n}\r\n");
 
+                sbJsonClient.Append(string.Join(",\r\n", listdataJsonClient));
+                sbJsonClient.Append("\r\n}\r\n");
+
                 sbJsonServer.Append(string.Join(",\r\n", listdataJsonServer));
-                sbJsonServer.Append("\r\n]\r\n");
+                sbJsonServer.Append("\r\n}\r\n");
 
                 sbLua.Append(string.Join(",\r\n", listdataLua));
                 sbLua.Append("\r\n}\r\n");
@@ -281,6 +297,15 @@ namespace ExcelTool
                         FileStream fsJson = new FileStream(pathJson, FileMode.OpenOrCreate);
                         StreamWriter swJson = new StreamWriter(fsJson);
                         swJson.Write(sbJson.ToString());
+                        swJson.Close();
+                    }
+                    if (true)
+                    {
+                        string pathJson = $"{PathJsonClient}\\{nn.Name}.json";
+                        XGlobal.DeleteFile(pathJson);
+                        FileStream fsJson = new FileStream(pathJson, FileMode.OpenOrCreate);
+                        StreamWriter swJson = new StreamWriter(fsJson);
+                        swJson.Write(sbJsonClient.ToString());
                         swJson.Close();
                     }
                     if (true)

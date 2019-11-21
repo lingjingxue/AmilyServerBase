@@ -246,7 +246,6 @@ namespace ExcelTool
             var sb = new StringBuilder();
 
             sb.Append($"using System.Collections.Generic;\r\n");
-            sb.Append($"using UtilLib;\r\n\r\n");
             sb.Append($"namespace ServerBase.Config\r\n{{\r\n");
             sb.Append($"\tpublic static partial class Conf\r\n\t{{\r\n");
 
@@ -258,7 +257,8 @@ namespace ExcelTool
                 }
                 sb.Append($"\t\t//{nn.NameCn}\t// {nn.NameFile}\r\n");
                 var confname = nn.Name.Replace("Config", "Conf");
-                var keytype = nn.TypeClient[0];
+                //var keytype = nn.TypeClient[0];
+                var keytype = "string";
                 sb.Append($"\t\tpublic static Dictionary<{keytype}, {nn.Name}> {confname} = new Dictionary<{keytype}, {nn.Name}>();\r\n");
             }
 
@@ -277,7 +277,6 @@ namespace ExcelTool
             var sb = new StringBuilder();
 
             sb.Append($"using System.Collections.Generic;\r\n");
-            sb.Append($"using UtilLib;\r\n\r\n");
             sb.Append($"namespace ServerBase.Config\r\n{{\r\n");
             sb.Append($"\tpublic static partial class Conf\r\n\t{{\r\n");
             sb.Append($"\t\tpublic static bool InitConfSettings()\r\n\t\t{{\r\n");

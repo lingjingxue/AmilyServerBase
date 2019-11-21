@@ -30,6 +30,7 @@ namespace ExcelTool
         public static string PathClass = "";
         public static string PathXml = "";
         public static string PathJson = "";
+        public static string PathJsonClient = "";
         public static string PathJsonServer = "";
         public static string PathLua = "";
 

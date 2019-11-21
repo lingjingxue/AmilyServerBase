@@ -43,6 +43,7 @@ namespace ExcelTool
             PathClass = PathOutput + @"\Class";
             PathXml = PathOutput + @"\Xml";
             PathJson = PathOutput + @"\Json";
+            PathJsonClient = PathOutput + @"\JsonClient";
             PathJsonServer = PathOutput + @"\JsonServer";
             PathLua = PathOutput + @"\Lua";
 
@@ -136,6 +137,7 @@ namespace ExcelTool
                 PathClass = PathOutput + @"\Class";
                 PathXml = PathOutput + @"\Xml";
                 PathJson = PathOutput + @"\Json";
+                PathJsonClient = PathOutput + @"\JsonClient";
                 PathJsonServer = PathOutput + @"\JsonServer";
                 PathLua = PathOutput + @"\Lua";
             }
@@ -169,6 +171,7 @@ namespace ExcelTool
             if (!Directory.Exists(PathClass)) { Directory.CreateDirectory(PathClass); }
             if (!Directory.Exists(PathXml)) { Directory.CreateDirectory(PathXml); }
             if (!Directory.Exists(PathJson)) { Directory.CreateDirectory(PathJson); }
+            if (!Directory.Exists(PathJsonClient)) { Directory.CreateDirectory(PathJsonClient); }
             if (!Directory.Exists(PathJsonServer)) { Directory.CreateDirectory(PathJsonServer); }
             if (!Directory.Exists(PathLua)) { Directory.CreateDirectory(PathLua); }
 
@@ -177,6 +180,7 @@ namespace ExcelTool
             XGlobal.EmptyFolder(PathClass);
             XGlobal.EmptyFolder(PathXml);
             XGlobal.EmptyFolder(PathJson);
+            XGlobal.EmptyFolder(PathJsonClient);
             XGlobal.EmptyFolder(PathJsonServer);
             XGlobal.EmptyFolder(PathLua);
 
