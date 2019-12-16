@@ -323,6 +323,16 @@ namespace ExcelTool
                     }
                 }
             }
+            ////给客户端目录打一个递增版本号
+            //if (true)
+            //{
+            //    string pathJson = $"{PathJson}\\version.txt";
+            //    XGlobal.DeleteFile(pathJson);
+            //    FileStream fsJson = new FileStream(pathJson, FileMode.OpenOrCreate);
+            //    StreamWriter swJson = new StreamWriter(fsJson);
+            //    swJson.Write(new Random(DateTime.Now.Millisecond).Next()%1_0000);
+            //    swJson.Close();
+            //}
         }
 
     }
