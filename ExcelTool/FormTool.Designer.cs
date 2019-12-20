@@ -83,7 +83,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(864, 29);
+            this.textBox2.Size = new System.Drawing.Size(864, 34);
             this.textBox2.TabIndex = 8;
             // 
             // dataGridView1
@@ -98,19 +98,22 @@
             this.dataGridView1.Location = new System.Drawing.Point(5, 123);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(1374, 709);
+            this.dataGridView1.Size = new System.Drawing.Size(1374, 702);
             this.dataGridView1.TabIndex = 12;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "文件";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Width = 1050;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "导出耗时";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.Width = 250;
             // 
@@ -121,7 +124,7 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(864, 29);
+            this.textBox1.Size = new System.Drawing.Size(864, 34);
             this.textBox1.TabIndex = 20;
             // 
             // button10
@@ -144,7 +147,7 @@
             this.comboBox1.Location = new System.Drawing.Point(515, 83);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(864, 29);
+            this.comboBox1.Size = new System.Drawing.Size(864, 35);
             this.comboBox1.TabIndex = 22;
             // 
             // button7
@@ -175,24 +178,25 @@
             // statusStrip1
             // 
             this.statusStrip1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripProgressBar1,
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 835);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 828);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1384, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1384, 33);
             this.statusStrip1.TabIndex = 27;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripProgressBar1
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(600, 20);
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(600, 25);
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(171, 21);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(215, 27);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // tableLayoutPanel3
@@ -221,7 +225,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1384, 835);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1384, 828);
             this.tableLayoutPanel3.TabIndex = 28;
             // 
             // button2
@@ -240,7 +244,7 @@
             // 
             // FormTool
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1384, 861);
             this.Controls.Add(this.tableLayoutPanel3);
