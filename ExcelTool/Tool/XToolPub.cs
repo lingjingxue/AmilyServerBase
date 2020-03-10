@@ -24,15 +24,15 @@ namespace ExcelTool
                 foreach (var dirname in Directory.GetDirectories(path))
                 {
                     EValidType ValidType = EValidType.公共;
-                    if (dirname.Contains("备份"))
+                    if (dirname.Contains("备份") || dirname.Contains("backup") || dirname.Contains("Backup"))
                     {
                         continue;
                     }
-                    if (dirname.Contains("服务器"))
+                    if (dirname.Contains("服务器") || dirname.Contains("server") || dirname.Contains("Server"))
                     {
                         ValidType = EValidType.仅服务器;
                     }
-                    else if (dirname.Contains("客户端"))
+                    else if (dirname.Contains("客户端") || dirname.Contains("client") || dirname.Contains("Client"))
                     {
                         ValidType = EValidType.仅客户端;
                     }

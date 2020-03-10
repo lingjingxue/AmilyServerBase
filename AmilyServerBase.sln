@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelTool", "ExcelTool\Exce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePublishFolder", "CreatePublishFolder\CreatePublishFolder.csproj", "{88A9E818-C95E-4150-A6F3-FD84F97DC3B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAsyncAwait", "TestAsyncAwait\TestAsyncAwait.csproj", "{29E9C18A-E809-4559-B36F-1F5B975777DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{88A9E818-C95E-4150-A6F3-FD84F97DC3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88A9E818-C95E-4150-A6F3-FD84F97DC3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88A9E818-C95E-4150-A6F3-FD84F97DC3B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E9C18A-E809-4559-B36F-1F5B975777DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E9C18A-E809-4559-B36F-1F5B975777DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E9C18A-E809-4559-B36F-1F5B975777DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E9C18A-E809-4559-B36F-1F5B975777DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

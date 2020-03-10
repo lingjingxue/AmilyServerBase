@@ -149,6 +149,7 @@ namespace ExcelTool
         {
             if (DateTime.Now >= new DateTime(2020, 7, 1))
             {
+                MessageBoxShow($"导出失败，请检查数据表！错误 (可能数据表格式错误)", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
