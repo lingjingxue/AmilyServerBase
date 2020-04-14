@@ -22,26 +22,21 @@ namespace ExcelTool
             string Template_Html = @"<!DOCTYPE html>
 <html>
 <head>
-<link rel=""stylesheet"" href=""http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"" >
-<script src = ""http://code.jquery.com/jquery-1.8.3.min.js""></script >
-<script src=""http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"" ></script>
+<title id=""titlegamename"">表格结构</title>
+<meta charset=""utf - 8"">
+<meta name=""viewport"" content=""width=device-width, initial-scale=1"">
+<link rel=""stylesheet"" href=""https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css"">
+<script src=""https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js""></script >
+<script src=""https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js""></script >
+<script src=""https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js""></script>
 </head>
 <body>
-
-<div data-role=""page"" id=""pageone"" >
-    <div data-role=""header"" >
         <h1>表格结构</h1>
-    </div>
 
-    <div data-role=""content"" >
+<div>
 
 $CONTENT$
 
-    </div>
-  
-    <div data-role=""footer"" >
-        <h1>完</h1>
-    </div>
 </div> 
 
 </body>
@@ -52,7 +47,6 @@ $CONTENT$
 
             foreach (var kvp1 in DictFilePages)
             {
-                //sb.Append($"<div data-role=\"collapsible\">\r\n");
                 sb.Append($"<h3>文件：{kvp1.Key}</h3>\r\n");
                 foreach (var itemname in kvp1.Value)
                 {
@@ -61,7 +55,6 @@ $CONTENT$
                         sb.Append($"<p>页面：{item.NameCn} {item.Name} 有效列：{item.HeadC.Count} 有效行：{item.ListValue.Count}</p>\r\n");
                     }
                 }
-                //sb.Append($"</div>\r\n");
             }
 
             string txt = Template_Html;

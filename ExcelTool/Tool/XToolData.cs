@@ -23,7 +23,6 @@ namespace ExcelTool
 
         public static string PathCurrent = "";
         public static string PathEnum = "";
-        public static string PathGlobalId = "";
 
         public static string PathExcel = "";
         public static string PathOutput = "";
