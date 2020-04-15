@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>表格工具</AssemblyName>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\APublish\表格工具新\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="App.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="App.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Tool\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NPOI" Version="2.4.1" />
+  </ItemGroup>
+
+</Project>
