@@ -58,6 +58,7 @@ namespace ToolExcelApp
     public class XFileInfo
     {
         public string FileName { get; set; } = "文件名";
+        public string FileTime { get; set; } = "修改时间";
         public bool NeedRead { get; set; } = false;
 
         public EValidType ValidType = EValidType.公共;

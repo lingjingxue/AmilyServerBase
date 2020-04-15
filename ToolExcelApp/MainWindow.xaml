@@ -5,27 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToolExcelApp"
         mc:Ignorable="d"
-        Title="表格工具V2" Height="400" Width="800" Icon="/App.jpg" WindowStartupLocation="CenterScreen" FontSize="16">
+        Title="表格工具V2" Height="900" Width="1400" Icon="/App.jpg" WindowStartupLocation="CenterScreen" FontSize="24">
     <Grid>
         <Button Content="选择表格目录" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Button Content="选择输出目录" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TextBoxExcel" Margin="115,11,10,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox x:Name="TextBoxOutput" Margin="115,40,10,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxExcel" Margin="163,11,10,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxOutput" Margin="163,40,10,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Label Content="选择语言" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom"/>
-        <ComboBox x:Name="ComboBoxLang" HorizontalAlignment="Left" Margin="89,0,0,12" VerticalAlignment="Bottom" Width="120"/>
-        <Button Content="全部选择" HorizontalAlignment="Right" Margin="0,0,353,10" VerticalAlignment="Bottom" Click="Button_Click_Select"/>
-        <Button Content="全部取消" HorizontalAlignment="Right" Margin="0,0,280,10" VerticalAlignment="Bottom" Click="Button_Click_Unselect"/>
-        <Button Content="仅导出选择项" HorizontalAlignment="Right" Margin="0,0,175,10" VerticalAlignment="Bottom" Click="Button_Click_OutputSelect"/>
-        <Button Content="获取列表" HorizontalAlignment="Right" Margin="0,0,83,10" VerticalAlignment="Bottom" Click="Button_Click_GetFiles"/>
-        <Button Content="全部导出" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Click="Button_Click_OutputAll"/>
-        <Label x:Name="LabelDump" Content="" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" Width="780"/>
-        <Grid Margin="10,103,10,46">
-            <DataGrid x:Name="DataGridFile" AutoGenerateColumns="False" CanUserAddRows="False" ItemsSource="{Binding}">
+        <ComboBox x:Name="ComboBoxLang" HorizontalAlignment="Left" Margin="121,0,0,10" VerticalAlignment="Bottom" Width="260"/>
+        <Button Content="全部选择√" HorizontalAlignment="Right" Margin="0,0,581,10" VerticalAlignment="Bottom" Click="Button_Click_Select" Background="#FFF7B50D"/>
+        <Button Content="全部取消×" HorizontalAlignment="Right" Margin="0,0,458,10" VerticalAlignment="Bottom" Click="Button_Click_Unselect"/>
+        <Button Content="仅导出选择项" HorizontalAlignment="Right" Margin="0,0,305,10" VerticalAlignment="Bottom" Click="Button_Click_OutputSelect" Background="#FF4CE842"/>
+        <Button Content="获取列表" HorizontalAlignment="Right" Margin="0,0,115,10" VerticalAlignment="Bottom" Click="Button_Click_GetFiles" Background="#FF37F0E6"/>
+        <Button Content="全部导出" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Click="Button_Click_OutputAll" Background="#FF5A92E5"/>
+        <Label x:Name="LabelDump" Content="" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" Width="1400"/>
+        <Grid Margin="10,103,10,56">
+            <DataGrid x:Name="DataGridFile" AutoGenerateColumns="False" CanUserAddRows="False" ItemsSource="{Binding ObservableCollectionXFileInfo}">
                 <DataGrid.Columns>
-                    <DataGridTextColumn x:Name="DataGridTextColumnFileName" Binding="{Binding FileName, Mode=TwoWay}" Header="文件名" Width="9*"/>
+                    <DataGridTextColumn x:Name="DataGridTextColumnFileName" Binding="{Binding FileName, Mode=TwoWay}" Header="文件名" Width="6*"/>
+                    <DataGridTextColumn x:Name="DataGridTextColumnFileTime" Binding="{Binding FileTime, Mode=TwoWay}" Header="最后修改时间" Width="2*"/>
                     <DataGridCheckBoxColumn x:Name="DataGridTextColumnNeedRead" Binding="{Binding NeedRead, Mode=TwoWay}" Header="是否选择" Width="*"/>
+                    <!--<DataGridTemplateColumn x:Name="DataGridTextColumnNeedRead" Width="*">
+                        <DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="是否选择"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding NeedRead, Mode=TwoWay}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>-->
                 </DataGrid.Columns>
-            </DataGrid> 
+            </DataGrid>
         </Grid>
     </Grid>
 </Window>

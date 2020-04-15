@@ -40,11 +40,13 @@ namespace ToolExcelApp
                         if (File.Exists(filename))
                         {
                             string filename_excel = Path.GetFileNameWithoutExtension(filename);
+                            FileInfo fi = new FileInfo(filename);
                             if (!filename_excel.Equals("A_公共枚举"))
                             {
                                 XFileInfo finfo = new XFileInfo()
                                 {
                                     FileName = filename,
+                                    FileTime = fi.LastWriteTime.ToString("u"),
                                     ValidType = ValidType,
                                     NeedRead = true,
                                 };
@@ -59,11 +61,13 @@ namespace ToolExcelApp
                     if (File.Exists(filename))
                     {
                         string filename_excel = Path.GetFileNameWithoutExtension(filename);
+                            FileInfo fi = new FileInfo(filename);
                         if (!filename_excel.Equals("A_公共枚举"))
                         {
                             XFileInfo finfo = new XFileInfo()
                             {
                                 FileName = filename,
+                                FileTime = fi.LastWriteTime.ToString("u"),
                                 ValidType = ValidType,
                                 NeedRead = true,
                             };
